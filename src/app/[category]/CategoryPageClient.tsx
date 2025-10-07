@@ -1,10 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 interface Item {
   id?: string;
@@ -26,8 +24,6 @@ export default function CategoryPageClient({ category }: CategoryPageClientProps
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    AOS.init({ duration: 800, once: true });
-
     async function fetchItems() {
       setLoading(true);
       setError(null);
@@ -43,114 +39,89 @@ export default function CategoryPageClient({ category }: CategoryPageClientProps
         setLoading(false);
       }
     }
+
     fetchItems();
   }, [category]);
 
-  const generateSlug = (item: Item) =>
-    item.slug ||
-    item.id ||
-    (item.title
-      ? item.title.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]+/g, "")
-      : "");
+  const generateSlug = (item: Item) => {
+    if (item.slug) return item.slug;
+    if (item.id) return item.id;
+    if (item.title) return item.title.toLowerCase().replace(/\s+/g, "-");
+    return "";
+  };
 
   return (
     <>
-      {/* Banner/Header */}
-      <header className="shadow-sm">
-        <div className="banner">
-          <div className="text-center py-5">
-            <h1 className="display-4 text-white fw-bold">
-              {category.charAt(0).toUpperCase() + category.slice(1)}
-            </h1>
-            <p className="lead text-white">
-              Explore the best {category} of Maharashtra
-            </p>
-          </div>
-        </div>
+      {/* Banner */}
+      <header className="shadow-sm bg-blue-700 text-white py-5 text-center">
+        <h1 className="text-4xl font-bold capitalize">{category}</h1>
+        <p className="mt-2 text-lg">
+          Explore the best {category} of Maharashtra
+        </p>
       </header>
 
       {/* Overview */}
-      <section className="container py-5">
-        <div className="home text-center mb-4">
-          <h2 className="section-title mt-2">Overview</h2>
-          <p>
-            Maharashtra&apos;s{" "}
-            {category === "beaches"
-              ? "coastline stretches over 700 km with pristine beaches and vibrant culture."
-              : category === "hills"
-              ? "hill stations are known for their lush greenery, cool climate, and trekking trails."
-              : category === "forts"
-              ? "forts showcase the valor of Maratha empire and historic significance."
-              : `amazing ${category}.`}
-          </p>
-        </div>
+      <section className="container py-5 text-center">
+        <h2 className="section-title mb-3">Overview</h2>
+        <p className="text-gray-700">
+          {category === "beaches"
+            ? "Maharashtra's coastline stretches over 700 km with pristine beaches and vibrant culture."
+            : category === "hills"
+            ? "Hill stations are known for lush greenery, cool climate, and trekking trails."
+            : category === "forts"
+            ? "Forts showcase the valor of Maratha empire and historic significance."
+            : `Discover amazing ${category}.`}
+        </p>
+      </section>
 
-        {/* Timeline Items */}
-        <div className="timeline">
-          {loading ? (
-            <div className="page-loader text-center">
-              <div className="spinner"></div>
-              <div className="txt pt-4">
-                <Image
-                  src="/assets/images/logo_icon.png"
-                  alt="Logo"
-                  width={200}
-                  height={200}
-                  className="rounded"
-                  priority
-                />
-                <p className="pt-5">Loading...</p>
-              </div>
-            </div>
-          ) : error ? (
-            <p className="text-center text-danger">Error: {error}</p>
-          ) : items.length === 0 ? (
-            <p className="text-center">No items found in this category.</p>
-          ) : (
-            items.map((item, index) => (
-              <div
-                key={item.id || index}
-                className={`containertimeline ${index % 2 === 0 ? "left" : "right"}`}
-              >
-                <div
-                  className="year"
-                  data-aos="fade-down"
-                  style={{ backgroundColor: item.color || "#00aaff" }}
+      {/* Timeline/List of Items */}
+      <section className="container py-5">
+        {loading ? (
+          <p className="text-center">Loading...</p>
+        ) : error ? (
+          <p className="text-center text-red-600">Error: {error}</p>
+        ) : items.length === 0 ? (
+          <p className="text-center">No items found in this category.</p>
+        ) : (
+          items.map((item, index) => (
+            <div
+              key={item.id || index}
+              className={`flex flex-col md:flex-row mb-8 items-center ${
+                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              }`}
+            >
+              {item.bannerImage && (
+                <div className="relative w-full md:w-1/2 h-64 md:h-80">
+                  <Image
+                    src={item.bannerImage}
+                    alt={item.title || item.name || "Image"}
+                    fill
+                    className="object-cover rounded shadow-md"
+                    priority={index < 2}
+                  />
+                </div>
+              )}
+              <div className="md:w-1/2 p-4">
+                <h3
+                  className="text-2xl font-semibold mb-2"
+                  style={{ color: item.color || "#00aaff" }}
                 >
                   {item.title || item.name}
-                </div>
-                <div
-                  className="content"
-                  data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+                </h3>
+                <p className="text-gray-700 mb-3">{item.subtitle}</p>
+                <Link
+                  href={`/${category}/${generateSlug(item)}`}
+                  className="inline-block px-4 py-2 text-white rounded"
+                  style={{
+                    backgroundColor: item.color || "#00aaff",
+                  }}
                 >
-                  {item.bannerImage && (
-                    <Image
-                      src={item.bannerImage}
-                      alt={item.title || item.name || "Image"}
-                      width={600}
-                      height={300}
-                      className="rounded"
-                      priority={index < 2}
-                    />
-                  )}
-                  <div className="contenttimeline mt-2">
-                    <p>{item.subtitle || "No description available."}</p>
-                    <Link
-                      href={`/${category}/${generateSlug(item)}`}
-                      className="btn btn-outline-primary mt-2"
-                      style={{
-                        backgroundColor: item.color || "#00aaff",
-                        borderColor: item.color || "#00aaff",
-                      }}
-                    >
-                      View More
-                    </Link>
-                  </div>
-                </div>
+                  View More
+                </Link>
               </div>
-            ))
-          )}
-        </div>
+            </div>
+          ))
+        )}
       </section>
     </>
   );
