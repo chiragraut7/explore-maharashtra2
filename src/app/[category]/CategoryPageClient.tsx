@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface Item {
   id?: string;
@@ -24,14 +26,14 @@ export default function CategoryPageClient({ category }: CategoryPageClientProps
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+
     async function fetchItems() {
       setLoading(true);
       setError(null);
       try {
         const res = await fetch(`/api/${category}`);
-        if (!res.ok) {
-          throw new Error(`Failed to fetch: ${res.statusText}`);
-        }
+        if (!res.ok) throw new Error(`Failed to fetch: ${res.statusText}`);
         const data: Item[] = await res.json();
         setItems(data);
       } catch (err) {
@@ -44,12 +46,12 @@ export default function CategoryPageClient({ category }: CategoryPageClientProps
     fetchItems();
   }, [category]);
 
-  const generateSlug = (item: Item) => {
-    if (item.slug) return item.slug;
-    if (item.id) return item.id;
-    if (item.title) return item.title.toLowerCase().replace(/\s+/g, "-");
-    return "";
-  };
+  const generateSlug = (item: Item) =>
+    item.slug ||
+    item.id ||
+    (item.title
+      ? item.title.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]+/g, "")
+      : "");
 
   return (
     <>
@@ -83,24 +85,23 @@ export default function CategoryPageClient({ category }: CategoryPageClientProps
           </p>
         </div>
 
-        {/* Timeline List */}
+        {/* Timeline Items */}
         <div className="timeline">
           {loading ? (
-              <div className="page-loader">
-                <div className="spinner"></div>
-                <div className="txt">
-                  <Image
-                    src="/assets/images/logo_icon.png"
-                    alt="Logo"
-                    width={200}
-                    height={200} // height can be adjusted to match aspect ratio
-                    className="rounded" // optional styling
-                    priority={true} // if you want it to load fast
-                  />
-
-                  <p className="pt-5">Loading...</p>
-                </div>
+            <div className="page-loader text-center">
+              <div className="spinner"></div>
+              <div className="txt pt-4">
+                <Image
+                  src="/assets/images/logo_icon.png"
+                  alt="Logo"
+                  width={200}
+                  height={200}
+                  className="rounded"
+                  priority
+                />
+                <p className="pt-5">Loading...</p>
               </div>
+            </div>
           ) : error ? (
             <p className="text-center text-danger">Error: {error}</p>
           ) : items.length === 0 ? (
@@ -132,12 +133,15 @@ export default function CategoryPageClient({ category }: CategoryPageClientProps
                       priority={index < 2}
                     />
                   )}
-                  <div className="contenttimeline">
-                    <p>{item.subtitle}</p>
+                  <div className="contenttimeline mt-2">
+                    <p>{item.subtitle || "No description available."}</p>
                     <Link
                       href={`/${category}/${generateSlug(item)}`}
-                      className="btn btn-outline-primary"
-                      style={{ backgroundColor: item.color || "#00aaff", borderColor: item.color || "#00aaff" }}
+                      className="btn btn-outline-primary mt-2"
+                      style={{
+                        backgroundColor: item.color || "#00aaff",
+                        borderColor: item.color || "#00aaff",
+                      }}
                     >
                       View More
                     </Link>

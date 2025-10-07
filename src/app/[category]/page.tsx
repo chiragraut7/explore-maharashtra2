@@ -5,8 +5,7 @@ interface CategoryPageProps {
 }
 
 export default function CategoryPage({ params }: CategoryPageProps) {
-  const { category } = params; // no await needed
+  const { category } = params;
 
-  // Pass category prop to client component
   return <CategoryPageClient category={category} />;
 }
