@@ -89,7 +89,15 @@ export default function CategoryPageClient({ category }: CategoryPageClientProps
               <div className="page-loader">
                 <div className="spinner"></div>
                 <div className="txt">
-                  <img src="/assets/images/logo_icon.png" width="200" alt="Logo" />
+                  <Image
+                    src="/assets/images/logo_icon.png"
+                    alt="Logo"
+                    width={200}
+                    height={200} // height can be adjusted to match aspect ratio
+                    className="rounded" // optional styling
+                    priority={true} // if you want it to load fast
+                  />
+
                   <p className="pt-5">Loading...</p>
                 </div>
               </div>

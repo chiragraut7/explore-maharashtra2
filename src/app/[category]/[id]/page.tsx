@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
+import Image from 'next/image'
 
 import Banner from '../../components/commonComponents/Banner'
 import Overview from '../../components/commonComponents/Overview'
@@ -14,9 +15,7 @@ import HowToReach from '../../components/commonComponents/HowToReach'
 import Gallery from '../../components/commonComponents/Gallery'
 import Hotels from '../../components/commonComponents/Hotels'
 import BookingTips from '../../components/commonComponents/BookingTips'
-
 import ComingSoon from '../../components/commonComponents/ComingSoon'
-
 
 export default function ItemPage() {
   const { category, id } = useParams() as { category?: string; id?: string }
@@ -34,8 +33,30 @@ export default function ItemPage() {
       .finally(() => setLoading(false))
   }, [category, id])
 
-  if (loading) return <div className="page-loader"><div className="spinner"></div><div className="txt"><img src="/assets/images/logo_icon.png" width="200" alt="Logo" /><p className="pt-5">Loading...</p></div></div>
-  if (!data) return <div className="text-center py-10 text-warning">Data not found</div>
+  if (loading)
+    return (
+      <div className="page-loader flex flex-col items-center justify-center min-h-screen">
+        <div className="spinner mb-4"></div>
+        <div className="txt text-center">
+          <Image
+            src="/assets/images/logo_icon.png"
+            alt="Logo"
+            width={200}
+            height={200}
+            className="rounded"
+            priority={true}
+          />
+          <p className="pt-5 text-lg font-semibold">Loading...</p>
+        </div>
+      </div>
+    )
+
+  if (!data)
+    return (
+      <div className="text-center py-10 text-warning text-lg font-semibold">
+        Data not found
+      </div>
+    )
 
   return (
     <>
@@ -43,7 +64,7 @@ export default function ItemPage() {
         title={data.title}
         subtitle={data.subtitle}
         image={data.bannerImage}
-        color={data.color}   // dynamically from JSON
+        color={data.color}   // JSON-driven color
         view={view}
         setView={setView}
       />
@@ -61,17 +82,16 @@ export default function ItemPage() {
             {data.marineLife && <MarineLife content={data.marineLife} color={data.color} />}
             {data.gallery?.length > 0 && <Gallery images={data.gallery} color={data.color} />}
             {data.howToReach?.length > 0 && <HowToReach transport={data.howToReach} color={data.color} />}
-
           </div>
         )}
 
         {view === 'hotels' && (
           <>
             <div id="comingSoon">
-              {/* need here comingSoon*/}
               <ComingSoon />
             </div>
-            <div id="hotelsList" style={{display:"none"}}>
+
+            <div id="hotelsList" className="hidden">
               <Hotels />
               {data.bookingTips?.length > 0 && <BookingTips tips={data.bookingTips} />}
             </div>

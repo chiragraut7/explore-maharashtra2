@@ -2,11 +2,21 @@ import { NextResponse } from "next/server"
 import fs from "fs/promises"
 import path from "path"
 
+interface Params {
+  category: string
+  id: string
+}
+
+interface IndexItem {
+  id: string
+  slug: string
+}
+
 export async function GET(
   req: Request,
-  { params }: { params: Promise<{ category: string; id: string }> }
+  { params }: { params: Params }
 ) {
-  const { category, id } = await params
+  const { category, id } = params
 
   // Helper function to check if file exists
   async function fileExists(filePath: string) {
@@ -31,8 +41,8 @@ export async function GET(
     // Otherwise check index.json for mapping id -> slug
     const indexFile = path.join(basePath, "index.json")
     if (await fileExists(indexFile)) {
-      const indexData = JSON.parse(await fs.readFile(indexFile, "utf-8"))
-      const found = indexData.find((item: any) => item.id === id)
+      const indexData: IndexItem[] = JSON.parse(await fs.readFile(indexFile, "utf-8"))
+      const found = indexData.find(item => item.id === id)
 
       if (found) {
         const mappedFile = path.join(basePath, `${found.slug}.json`)
@@ -44,10 +54,10 @@ export async function GET(
     }
 
     return NextResponse.json({ error: `No data found for ${id}` }, { status: 404 })
-  } catch (err: any) {
-    return NextResponse.json(
-      { error: err.message || "Something went wrong" },
-      { status: 500 }
-    )
+  } catch (err: unknown) {
+    let message = "Something went wrong"
+    if (err instanceof Error) message = err.message
+
+    return NextResponse.json({ error: message }, { status: 500 })
   }
 }

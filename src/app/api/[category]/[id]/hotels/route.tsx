@@ -1,42 +1,53 @@
 // app/api/[category]/[id]/hotels/route.ts
 import { NextResponse } from "next/server";
-import fs from "fs";
+import fs from "fs/promises";
 import path from "path";
 
-export async function GET(req: Request, context: any) {
-  // Await params
-  const params = await context.params;
-  const category = params.category;
-  const id = params.id;
+interface Context {
+  params: {
+    category: string;
+    id: string;
+  };
+}
 
-  // Base path to destination folder
-  const destinationFolder = path.join(
-    process.cwd(),
-    "public",
-    "data",
-    category,
-    id
-  );
+export async function GET(req: Request, context: Context) {
+  const { category, id } = context.params;
 
-  if (!fs.existsSync(destinationFolder)) {
-    return NextResponse.json(
-      { error: "Destination folder not found" },
-      { status: 404 }
-    );
+  const destinationFolder = path.join(process.cwd(), "public", "data", category, id);
+
+  // Helper to check folder existence
+  async function folderExists(folderPath: string) {
+    try {
+      const stat = await fs.stat(folderPath);
+      return stat.isDirectory();
+    } catch {
+      return false;
+    }
   }
 
-  // Look for 'hotels' subfolder first, fallback to destination folder
-  const hotelsFolder = path.join(destinationFolder, "hotels");
-  const folderToRead = fs.existsSync(hotelsFolder) ? hotelsFolder : destinationFolder;
+  if (!(await folderExists(destinationFolder))) {
+    return NextResponse.json({ error: "Destination folder not found" }, { status: 404 });
+  }
 
-  const files = fs.readdirSync(folderToRead).filter(f => f.endsWith(".json"));
+  const hotelsFolder = path.join(destinationFolder, "hotels");
+  const folderToRead = (await folderExists(hotelsFolder)) ? hotelsFolder : destinationFolder;
+
+  let files: string[] = [];
+  try {
+    const allFiles = await fs.readdir(folderToRead);
+    files = allFiles.filter(f => f.endsWith(".json"));
+  } catch {
+    return NextResponse.json({ error: "Failed to read folder" }, { status: 500 });
+  }
 
   if (files.length === 0) return NextResponse.json([], { status: 200 });
 
-  const hotels = files.map(file => {
-    const content = fs.readFileSync(path.join(folderToRead, file), "utf-8");
-    return JSON.parse(content);
-  });
+  const hotels = await Promise.all(
+    files.map(async file => {
+      const content = await fs.readFile(path.join(folderToRead, file), "utf-8");
+      return JSON.parse(content);
+    })
+  );
 
   return NextResponse.json(hotels, { status: 200 });
 }
