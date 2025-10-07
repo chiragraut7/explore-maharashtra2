@@ -1,0 +1,229 @@
+{
+  "title": "Lonavala",
+  "subtitle": "A Refreshing Hill Retreat in the Sahyadris",
+  "bannerImage": "/assets/images/hill_stations.jpg",
+  "overview":  [
+      "Lonavala is a picturesque hill station nestled in the Sahyadri range of Maharashtra. Known for its lush green valleys, scenic waterfalls, and historic forts, it serves as a favorite weekend getaway for travelers from Mumbai and Pune.",
+      "During monsoon, the hills come alive with misty trails, flowing streams, and verdant beauty, making it an ideal escape for nature lovers and trekkers.",
+      "Lonavala is also famous for its chikki (a traditional sweet snack), adventure parks, and wellness resorts."
+    ],
+  "highlights": [
+    {
+      "icon": "fas fa-mountain",
+      "title": "Scenic Views",
+      "description": "Panoramic valley views and mist-covered hills."
+    },
+    {
+      "icon": "fas fa-water",
+      "title": "Waterfalls",
+      "description": "Numerous waterfalls during the monsoon season."
+    },
+    {
+      "icon": "fas fa-fort",
+      "title": "Historic Forts",
+      "description": "Explore ancient forts like Lohagad and Rajmachi."
+    },
+    {
+      "icon": "fas fa-spa",
+      "title": "Luxury Stays",
+      "description": "Wellness resorts and luxury hotels for rejuvenation."
+    }
+  ],
+  "geography": {
+    "image": "/assets/images/hill_stations.jpg",
+    "intro": "Lonavala is located in the Pune district of Maharashtra, at an altitude of approximately 624 meters above sea level. It is part of the Western Ghats and lies between Mumbai and Pune.",
+    "details": [
+      {
+        "icon": "fas fa-map-marker-alt",
+        "label": "Location",
+        "value": "Pune District, Maharashtra"
+      },
+      {
+        "icon": "fas fa-road",
+        "label": "Distance from Mumbai",
+        "value": "Approx. 83 kilometers"
+      },
+      {
+        "icon": "fas fa-train",
+        "label": "Nearest Station",
+        "value": "Lonavala Railway Station"
+      },
+      {
+        "icon": "fas fa-tree",
+        "label": "Flora",
+        "value": "Evergreen forests, bamboo groves, and flowering plants"
+      }
+    ],
+    "climate": {
+      "description": "Lonavala enjoys a moderate climate year-round. Monsoon is especially beautiful with heavy rain and lush greenery. Winter is cool and pleasant.",
+      "seasons": [
+        {
+          "icon": "fas fa-cloud-rain",
+          "text": "Monsoon: June to September"
+        },
+        {
+          "icon": "fas fa-sun",
+          "text": "Best Season: October to February"
+        }
+      ]
+    },
+    "conclusion": "Its location and climate make Lonavala a year-round destination for relaxation, trekking, and sightseeing."
+  },
+  "activities": [
+    {
+      "icon": "fas fa-hiking",
+      "title": "Trekking",
+      "description": "Trek to forts and viewpoints across scenic trails.",
+      "info": ["Popular treks: Rajmachi, Lohagad, Duke&apos;s Nose"]
+    },
+    {
+      "icon": "fas fa-water",
+      "title": "Waterfall Exploration",
+      "description": "Visit seasonal waterfalls and streams during monsoon.",
+      "info": ["Best during July–September"]
+    },
+    {
+      "icon": "fas fa-camera",
+      "title": "Photography",
+      "description": "Capture nature, forts, and misty hills.",
+      "info": ["Carry protection for gear in monsoon"]
+    },
+    {
+      "icon": "fas fa-utensils",
+      "title": "Local Cuisine & Chikki",
+      "description": "Taste local food and famous Lonavala chikki.",
+      "info": ["Try fudge, vada pav, and street snacks"]
+    }
+  ],
+  "attractions": [
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Bhushi Dam",
+      "description": "A popular monsoon spot where water flows over steps creating natural waterfalls.",
+      "distance": "6 km from Lonavala",
+      "icon": "fas fa-water",
+      "value": "Dam & Picnic Spot"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Lohagad Fort",
+      "description": "Historic hill fort offering panoramic views and a thrilling trek.",
+      "distance": "12 km from Lonavala",
+      "icon": "fas fa-fort",
+      "value": "Trekking Fort"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Karla Caves",
+      "description": "Ancient Buddhist rock-cut caves with intricate carvings.",
+      "distance": "11 km from Lonavala",
+      "icon": "fas fa-landmark",
+      "value": "Archaeological Site"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Tiger’s Leap",
+      "description": "Dramatic cliff point with panoramic valley views and echo effect.",
+      "distance": "8 km from Lonavala",
+      "icon": "fas fa-binoculars",
+      "value": "Viewpoint"
+    }
+  ],
+  "marineLife": {
+    "intro": "Lonavala is a hill station and does not have marine life. However, the region is rich in terrestrial biodiversity and seasonal flora.",
+    "items": [
+      {
+        "icon": "fas fa-paw",
+        "title": "Wildlife",
+        "description": "Spot monkeys, birds, and small mammals in forested areas."
+      },
+      {
+        "icon": "fas fa-seedling",
+        "title": "Botanical Richness",
+        "description": "Lush green trees, herbs, and seasonal flowering plants."
+      },
+      {
+        "icon": "fas fa-dove",
+        "title": "Birdwatching",
+        "description": "Plenty of bird species around dams and forest trails."
+      }
+    ],
+    "conclusion": [
+      "While not coastal, Lonavala’s biodiversity and greenery offer a natural escape.",
+      "Explore flora, waterfalls, and scenic terrains ideal for eco-tourism."
+    ]
+  },
+  "howToReach": [
+    {
+      "icon": "fas fa-car",
+      "title": "By Road",
+      "details": [
+        "Connected via Mumbai-Pune Expressway",
+        "Regular buses and taxis from Mumbai and Pune"
+      ]
+    },
+    {
+      "icon": "fas fa-train",
+      "title": "By Train",
+      "details": [
+        "Lonavala has its own station",
+        "Well connected to Mumbai and Pune by local trains"
+      ]
+    },
+    {
+      "icon": "fas fa-plane",
+      "title": "By Air",
+      "details": [
+        "Nearest Airport: Pune Airport (64 km)",
+        "Chhatrapati Shivaji Maharaj International Airport, Mumbai (90 km)"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Lonavala Valley View"
+    },
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Bhushi Dam Monsoon"
+    },
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Lohagad Trek"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Della Resorts",
+      "image": "/assets/images/hill_stations.jpg",
+      "rating": "4.5",
+      "url": "https://example.com/della-resorts",
+      "facilities": ["wifi", "parking", "pool", "spa"]
+    },
+    {
+      "name": "Fariyas Resort",
+      "image": "/assets/images/hill_stations.jpg",
+      "rating": "4.3",
+      "url": "https://example.com/fariyas",
+      "facilities": ["wifi", "parking", "ac", "gym"]
+    }
+  ],
+  "bookingTips": [
+    {
+      "icon": "fas fa-calendar",
+      "description": "Book early during weekends and holidays"
+    },
+    {
+      "icon": "fas fa-cloud-rain",
+      "description": "Monsoon is peak season for scenic views"
+    },
+    {
+      "icon": "fas fa-car",
+      "description": "Private vehicle preferred for exploring nearby spots"
+    }
+  ]
+}

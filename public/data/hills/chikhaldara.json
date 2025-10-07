@@ -1,0 +1,224 @@
+{
+  "title": "Chikhaldara",
+  "subtitle": "The only coffee-growing hill station in Maharashtra",
+  "bannerImage": "/assets/images/hill_stations.jpg",
+  "overview": {
+    "paragraphs": [
+      "Chikhaldara is a picturesque hill station located in the Amravati district of Maharashtra. It stands as the only coffee-growing region in the state and offers refreshing weather, panoramic viewpoints, and rich wildlife.",
+      "Nestled in the Satpura ranges, it is known for its serene landscapes, dense forests, waterfalls, and ancient forts. The town has mythological significance as it is believed to be where Bhima killed Keechaka during the Mahabharata era.",
+      "Ideal for nature lovers, photographers, and those seeking peace, Chikhaldara is a lesser-explored gem in the Vidarbha region."
+    ]
+  },
+  "highlights": [
+    {
+      "icon": "fas fa-mug-hot",
+      "title": "Coffee Plantations",
+      "description": "Only place in Maharashtra where coffee is cultivated."
+    },
+    {
+      "icon": "fas fa-binoculars",
+      "title": "Wildlife Viewing",
+      "description": "Close to Melghat Tiger Reserve – rich in biodiversity."
+    },
+    {
+      "icon": "fas fa-mountain",
+      "title": "Panoramic Views",
+      "description": "Several viewpoints offering stunning sunrise/sunset views."
+    },
+    {
+      "icon": "fas fa-leaf",
+      "title": "Lush Forests",
+      "description": "Perfect for jungle walks and monsoon treks."
+    }
+  ],
+  "geography": {
+    "image": "/assets/images/hill_stations.jpg",
+    "intro": "Situated at an elevation of 1,100 meters, Chikhaldara lies in the Satpura hill ranges in northeastern Maharashtra, near the border of Madhya Pradesh.",
+    "details": [
+      {
+        "icon": "fas fa-map-marker-alt",
+        "label": "Location",
+        "value": "Amravati District, Maharashtra"
+      },
+      {
+        "icon": "fas fa-mountain",
+        "label": "Altitude",
+        "value": "1,100 meters above sea level"
+      },
+      {
+        "icon": "fas fa-seedling",
+        "label": "Vegetation",
+        "value": "Deciduous forest, coffee estates, wildflowers"
+      },
+      {
+        "icon": "fas fa-temperature-low",
+        "label": "Climate",
+        "value": "Cool and breezy all year"
+      }
+    ],
+    "climate": {
+      "description": "Chikhaldara enjoys cool temperatures throughout the year, with foggy monsoons and crisp winters. Ideal time to visit: July to February.",
+      "seasons": [
+        {
+          "icon": "fas fa-cloud-rain",
+          "text": "Best Season: Monsoon (July to September)"
+        },
+        {
+          "icon": "fas fa-snowflake",
+          "text": "Cool Winter: October to February"
+        }
+      ]
+    },
+    "conclusion": "With abundant greenery, lakes, and viewpoints, Chikhaldara offers a perfect escape for nature enthusiasts and photographers."
+  },
+  "activities": [
+    {
+      "icon": "fas fa-hiking",
+      "title": "Jungle Walks",
+      "description": "Explore forest trails rich in flora and fauna.",
+      "info": [
+        "Best during monsoon and early winter",
+        "Carry water and binoculars"
+      ]
+    },
+    {
+      "icon": "fas fa-binoculars",
+      "title": "Wildlife Safari",
+      "description": "Visit nearby Melghat Tiger Reserve for tiger and bird sightings.",
+      "info": [
+        "Safari permits required",
+        "Best sightings during early mornings"
+      ]
+    },
+    {
+      "icon": "fas fa-camera",
+      "title": "Photography",
+      "description": "Capture misty hills, lakes, and ancient ruins.",
+      "info": [
+        "Best light during golden hours",
+        "Wide-angle lens recommended"
+      ]
+    }
+  ],
+  "attractions": [
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Gavilgad Fort",
+      "description": "Ancient hilltop fort with panoramic views and Mughal-era ruins.",
+      "distance": "2 km from town center",
+      "icon": "fas fa-fort-awesome"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Bhimkund",
+      "description": "Sacred natural water tank believed to be linked to Bhima from Mahabharata.",
+      "distance": "5 km",
+      "icon": "fas fa-om"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Mozari Point",
+      "description": "Cliffside viewpoint with deep valley views and breezy winds.",
+      "distance": "1 km walk from market",
+      "icon": "fas fa-mountain"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Melghat Tiger Reserve",
+      "description": "Protected wildlife sanctuary home to tigers, leopards, and sloth bears.",
+      "distance": "20 km",
+      "icon": "fas fa-paw"
+    }
+  ],
+  "marineLife": {
+    "intro": "Being an inland hill region, Chikhaldara does not have marine life but offers rich biodiversity through its forest and freshwater ecosystems.",
+    "items": [
+      {
+        "icon": "fas fa-dove",
+        "title": "Bird Species",
+        "description": "Home to peacocks, hornbills, eagles, and migratory birds."
+      },
+      {
+        "icon": "fas fa-tree",
+        "title": "Forest Fauna",
+        "description": "Includes wild boars, deer, and smaller mammals."
+      }
+    ],
+    "conclusion": [
+      "Chikhaldara’s natural terrain supports sustainable eco-tourism.",
+      "Its cool forests and diverse species make it a must-visit for nature explorers."
+    ]
+  },
+  "howToReach": [
+    {
+      "icon": "fas fa-car",
+      "title": "By Road",
+      "details": [
+        "230 km from Nagpur, 80 km from Amravati",
+        "State transport and private taxis available"
+      ]
+    },
+    {
+      "icon": "fas fa-train",
+      "title": "By Train",
+      "details": [
+        "Nearest Station: Badnera Junction (Amravati)",
+        "From there, buses or cabs to Chikhaldara"
+      ]
+    },
+    {
+      "icon": "fas fa-plane",
+      "title": "By Air",
+      "details": [
+        "Nearest Airport: Nagpur (230 km)"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "View from Mozari Point"
+    },
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Sunrise at Gavilgad Fort"
+    },
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Forest trail in monsoon"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Harshawardhan Hotel",
+      "image": "/assets/images/hill_stations.jpg",
+      "rating": "4.0",
+      "url": "https://example.com/harshawardhan",
+      "facilities": ["parking", "restaurant", "forest view"]
+    },
+    {
+      "name": "MTDC Chikhaldara Resort",
+      "image": "/assets/images/hill_stations.jpg",
+      "rating": "4.3",
+      "url": "https://example.com/mtdc-chikhaldara",
+      "facilities": ["wifi", "ac", "nature walks"]
+    }
+  ],
+  "bookingTips": [
+    {
+      "icon": "fas fa-calendar",
+      "description": "Plan weekend stays ahead during Diwali and monsoon breaks"
+    },
+    {
+      "icon": "fas fa-binoculars",
+      "description": "Book safaris to Melghat Tiger Reserve early"
+    },
+    {
+      "icon": "fas fa-cloud",
+      "description": "Fog is frequent – carry warm clothing and torches"
+    }
+  ]
+}

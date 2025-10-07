@@ -1,0 +1,231 @@
+{
+  "title": "Matheran",
+  "subtitle": "Asia’s Only Automobile-Free Hill Station",
+  "bannerImage": "/assets/images/hill_stations.jpg",
+  "overview":  [
+      "Matheran is a quaint and eco-sensitive hill station located in the Western Ghats of Maharashtra. Perched at 800 meters above sea level, it offers breathtaking views, red mud pathways, and serene forests.",
+      "It is uniquely known for being Asia's only automobile-free hill station—no cars are allowed inside, preserving its peaceful atmosphere and clean air.",
+      "Visitors can explore Matheran on foot or horseback, making it ideal for a calm, nostalgic getaway close to Mumbai and Pune."
+    ],
+  "highlights": [
+    {
+      "icon": "fas fa-ban",
+      "title": "No Vehicles Allowed",
+      "description": "A pollution-free destination with no motor vehicles inside the town."
+    },
+    {
+      "icon": "fas fa-horse",
+      "title": "Horse Rides",
+      "description": "Enjoy rides across scenic viewpoints and forest trails."
+    },
+    {
+      "icon": "fas fa-tree",
+      "title": "Forest Trails",
+      "description": "Lush green woods perfect for walking, birdwatching, and meditation."
+    },
+    {
+      "icon": "fas fa-train",
+      "title": "Toy Train",
+      "description": "The heritage Neral–Matheran toy train offers a nostalgic experience."
+    }
+  ],
+  "geography": {
+    "image": "/assets/images/hill_stations.jpg",
+    "intro": "Matheran lies in the Raigad district, part of the Sahyadri range. With over 38 viewpoints, it offers stunning vistas of valleys and hills.",
+    "details": [
+      {
+        "icon": "fas fa-map-marker-alt",
+        "label": "Location",
+        "value": "Raigad District, Maharashtra"
+      },
+      {
+        "icon": "fas fa-road",
+        "label": "Distance from Mumbai",
+        "value": "Approx. 80 kilometers"
+      },
+      {
+        "icon": "fas fa-train",
+        "label": "Nearest Station",
+        "value": "Neral (Central Railway)"
+      },
+      {
+        "icon": "fas fa-tree",
+        "label": "Flora",
+        "value": "Evergreen forests, wildflowers, medicinal herbs"
+      }
+    ],
+    "climate": {
+      "description": "Matheran enjoys pleasant weather year-round. Summers are cool, monsoons are green and misty, and winters are crisp.",
+      "seasons": [
+        {
+          "icon": "fas fa-sun",
+          "text": "Best Season: October to March"
+        },
+        {
+          "icon": "fas fa-cloud-rain",
+          "text": "Monsoon: June to September"
+        }
+      ]
+    },
+    "conclusion": "Its pollution-free status and scenic viewpoints make it a favorite for trekkers, couples, and eco-tourists."
+  },
+  "activities": [
+    {
+      "icon": "fas fa-walking",
+      "title": "Viewpoint Hiking",
+      "description": "Explore famous points like Panorama, Echo, and Louisa Point.",
+      "info": [
+        "Wear walking shoes",
+        "Sunrise and sunset are most scenic"
+      ]
+    },
+    {
+      "icon": "fas fa-horse",
+      "title": "Horseback Riding",
+      "description": "Popular and fun way to explore the forested trails.",
+      "info": [
+        "Hire local guides near the main market"
+      ]
+    },
+    {
+      "icon": "fas fa-camera",
+      "title": "Photography",
+      "description": "Capture misty landscapes, monkeys, and forest paths.",
+      "info": [
+        "Be cautious with gear during rain",
+        "Wildlife can be photogenic"
+      ]
+    },
+    {
+      "icon": "fas fa-store",
+      "title": "Local Market Walk",
+      "description": "Explore shops selling leather goods, honey, chikki, and handicrafts.",
+      "info": [
+        "Best explored on foot"
+      ]
+    }
+  ],
+  "attractions": [
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Panorama Point",
+      "description": "Gives a 360-degree view of the Western Ghats and breathtaking sunrises.",
+      "distance": "2.5 km trek from market",
+      "icon": "fas fa-binoculars",
+      "value": "Viewpoint"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Louisa Point",
+      "description": "Offers a direct view of the Prabal Fort and waterfalls during monsoon.",
+      "distance": "20-minute walk",
+      "icon": "fas fa-mountain",
+      "value": "Viewpoint"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Charlotte Lake",
+      "description": "Main water source surrounded by dense forests and quiet picnic spots.",
+      "distance": "15 minutes from the town center",
+      "icon": "fas fa-water",
+      "value": "Lake"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "One Tree Hill",
+      "description": "A scenic hill with only one tree visible at the top.",
+      "distance": "Ideal for photography",
+      "icon": "fas fa-tree",
+      "value": "Trek Point"
+    }
+  ],
+  "marineLife": {
+    "intro": "Being a hill station, Matheran doesn’t feature marine life. However, its forest ecosystem is rich in fauna and flora.",
+    "items": [
+      {
+        "icon": "fas fa-dove",
+        "title": "Birdwatching",
+        "description": "Home to bulbuls, hornbills, and woodpeckers."
+      },
+      {
+        "icon": "fas fa-paw",
+        "title": "Wildlife",
+        "description": "Monkeys, civets, and small mammals often spotted."
+      },
+      {
+        "icon": "fas fa-seedling",
+        "title": "Botanical Life",
+        "description": "Evergreen forests with herbs, bamboo, and wildflowers."
+      }
+    ],
+    "conclusion": [
+      "Matheran’s biodiversity makes it ideal for nature lovers and wildlife photographers.",
+      "Its quiet natural environment supports ecotourism."
+    ]
+  },
+  "howToReach": [
+    {
+      "icon": "fas fa-train",
+      "title": "By Train",
+      "details": [
+        "Reach Neral station from Mumbai or Pune.",
+        "Take toy train (seasonal) or shared taxis to Dasturi Point."
+      ]
+    },
+    {
+      "icon": "fas fa-car",
+      "title": "By Road",
+      "details": [
+        "Drive or take taxi till Dasturi Car Park",
+        "From there, walk or ride a horse into Matheran"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Matheran Viewpoint"
+    },
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Horse Ride Trail"
+    },
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Charlotte Lake"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Verandah in the Forest",
+      "image": "/assets/images/hill_stations.jpg",
+      "rating": "4.4",
+      "url": "https://example.com/verandah-forest",
+      "facilities": ["wifi", "parking", "nature"]
+    },
+    {
+      "name": "Usha Ascot",
+      "image": "/assets/images/hill_stations.jpg",
+      "rating": "4.2",
+      "url": "https://example.com/usha-ascot",
+      "facilities": ["wifi", "pool", "ac"]
+    }
+  ],
+  "bookingTips": [
+    {
+      "icon": "fas fa-calendar",
+      "description": "Book resorts near main market or viewpoints"
+    },
+    {
+      "icon": "fas fa-mountain",
+      "description": "Avoid heavy monsoon if you dislike trekking in rain"
+    },
+    {
+      "icon": "fas fa-car",
+      "description": "Cars not allowed — pack accordingly for walking/horses"
+    }
+  ]
+}

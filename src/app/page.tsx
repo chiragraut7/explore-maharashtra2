@@ -1,103 +1,202 @@
-import Image from "next/image";
+'use client'
+
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import Link from "next/link"
+import Image from 'next/image'
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  useEffect(() => {
+    AOS.init({ duration: 1000 })
+  }, [])
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  useEffect(() => {
+    const links = document.querySelectorAll<HTMLAnchorElement>('.scroll-link')
+
+    // Only sections that exist
+    const sections = Array.from(links)
+      .map(link => link.getAttribute('href'))
+      .filter((href): href is string => href !== null)
+      .map(href => document.querySelector<HTMLElement>(href))
+      .filter((el): el is HTMLElement => el !== null)
+
+    const handleScroll = () => {
+      const scrollPos = window.scrollY + 150 // offset for header
+
+      sections.forEach((section, index) => {
+        if (
+          section.offsetTop <= scrollPos &&
+          section.offsetTop + section.offsetHeight > scrollPos
+        ) {
+          links.forEach(link => link.classList.remove('active'))
+          links[index].classList.add('active')
+        }
+      })
+    }
+
+    const smoothScroll = (e: Event) => {
+      e.preventDefault()
+      const targetId = (e.currentTarget as HTMLAnchorElement).getAttribute('href')
+      if (!targetId) return
+
+      const target = document.querySelector<HTMLElement>(targetId)
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop,
+          behavior: 'smooth',
+        })
+      }
+    }
+
+    links.forEach(link => link.addEventListener('click', smoothScroll))
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      links.forEach(link => link.removeEventListener('click', smoothScroll))
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  return (
+    <>
+      <header className="shadow-sm">
+        <div className="banner">
+          <div className="text-center py-5">
+            <h1 className="display-4 text-white fw-bold">Explore Maharashtra</h1>
+            <p className="lead text-white">
+              Discover Beaches, Forts, Nature, and Culture of Maharashtra
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+      </header>
+
+      <section className="container-fluid home">
+        {/* Navigation Links */}
+        <ul className="list-scroll">
+          <li><a href="#overview" className="scroll-link"><span>Overview</span></a></li>
+          <li><a href="#beaches" className="scroll-link"><span>Beaches</span></a></li>
+          <li><a href="#hill-stations" className="scroll-link"><span>Hill Stations</span></a></li>
+          <li><a href="#forts" className="scroll-link"><span>Forts & Historical Places</span></a></li>
+          <li><a href="#wildlife" className="scroll-link"><span>Wildlife & Nature</span></a></li>
+          <li><a href="#religious" className="scroll-link"><span>Religious Places</span></a></li>
+          <li><a href="#cultural" className="scroll-link"><span>Cultural & Unique</span></a></li>
+        </ul>
+
+        {/* Sections */}
+        <section className="container text-center py-5" id="overview">
+          <h2 className="section-title mt-2">Overview</h2>
+          <p>
+            Explore Maharashtra is your trusted travel companion, dedicated to showcasing the rich cultural
+            heritage, natural beauty, and historic wonders of Maharashtra.
+          </p>
+          <p>
+            Whether you&apos;re a weekend explorer, a history buff, or a nature lover, our platform offers
+            in-depth insights, travel guides, and local tips to make your journey unforgettable.
+          </p>
+          <Link href="/about" className="btn btn-outline-dark mt-2 w-auto">
+            Read More
+          </Link>
+        </section>
+
+        <div className="row">
+          {/* Beaches */}
+          <SectionCard
+            id="beaches"
+            title="Beaches"
+            text="From Kelwa to Ganpatipule, explore scenic coastlines along the Arabian Sea."
+            image="/assets/images/beaches.jpg"
+            link="/beaches"
+            reverse
+            aosDelay={0}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+
+          {/* Hill Stations */}
+          <SectionCard
+            id="hill-stations"
+            title="Hill Stations"
+            text="Breathtaking hill getaways like Mahabaleshwar, Lonavala, and Matheran await you."
+            image="/assets/images/hill_stations.jpg"
+            link="/hills"
+            reverse={false}
+            aosDelay={100}
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+
+          {/* Forts */}
+          <SectionCard
+            id="forts"
+            title="Forts & Historical Places"
+            text="Uncover tales of valour in places like Sinhagad, Raigad, and Pratapgad."
+            image="/assets/images/forts.jpg"
+            link="/forts"
+            reverse
+            aosDelay={200}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+          {/* Wildlife */}
+          <SectionCard
+            id="wildlife"
+            title="Wildlife & Nature"
+            text="Forests, waterfalls, and national parks like Tadoba and Bhimashankar await."
+            image="/assets/images/wildlife_nature.jpg"
+            link="/nature"
+            reverse={false}
+            aosDelay={0}
+          />
+
+          {/* Religious */}
+          <SectionCard
+            id="religious"
+            title="Religious Places"
+            text="Spiritual sanctuaries from Shirdi to Siddhivinayak and Pandharpur."
+            image="/assets/images/religious_places.jpg"
+            link="/religious"
+            reverse
+            aosDelay={100}
+          />
+
+          {/* Cultural */}
+          <SectionCard
+            id="cultural"
+            title="Cultural & Unique"
+            text="Fairs, food, folk dance, and festivals that define Maharashtra’s soul."
+            image="/assets/images/cultural_unique.jpg"
+            link="/cultural"
+            reverse={false}
+            aosDelay={200}
+          />
+        </div>
+      </section>
+    </>
+  )
+}
+
+// Reusable SectionCard Component
+interface SectionCardProps {
+  id: string
+  title: string
+  text: string
+  image: string
+  link: string
+  reverse?: boolean
+  aosDelay?: number
+}
+
+function SectionCard({ id, title, text, image, link, reverse = false, aosDelay = 0 }: SectionCardProps) {
+  return (
+    <div className="col-12" data-aos="fade-up" data-aos-delay={aosDelay} id={id}>
+      <div className={`card ${reverse ? 'flex-row-reverse' : 'flex-row'} h-100 overflow-hidden border-0 shadow-sm`}>
+        <div className="position-relative w-50" style={{ minHeight: '600px' }}>
+          <Image src={image} alt={title} fill className="object-cover" style={{ objectFit: 'cover' }} />
+        </div>
+        <div className="card-body w-50 d-flex flex-column justify-content-center p-4">
+          <div className="d-flex flex-column justify-content-center" style={{ maxWidth: '500px', width: '100%' }}>
+            <h3 className="card-title">{title}</h3>
+            <p className="card-text py-4">{text}</p>
+            <Link href={link} className="btn btn-outline-dark mt-2 w-auto">Read More</Link>
+          </div>
+        </div>
+      </div>
     </div>
-  );
+  )
 }

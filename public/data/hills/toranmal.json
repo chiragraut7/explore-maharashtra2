@@ -1,0 +1,223 @@
+{
+  "title": "Toranmal",
+  "subtitle": "A serene plateau surrounded by hills, valleys, and tribal culture",
+  "bannerImage": "/assets/images/hill_stations.jpg",
+  "overview": [
+      "Toranmal is a quiet and beautiful hill station located in the Satpura mountain range in Nandurbar district of Maharashtra. Perched at around 1,150 meters above sea level, it offers cool climate, stunning plateaus, lakes, waterfalls, and dense forests.",
+      "It is one of Maharashtra’s lesser-known destinations, often visited by pilgrims and nature enthusiasts alike. The area is also rich in tribal culture and biodiversity.",
+      "The highlight of Toranmal is its peacefulness and unspoiled natural charm, making it perfect for offbeat travelers seeking solitude and eco-retreats."
+    ],
+  "highlights": [
+    {
+      "icon": "fas fa-leaf",
+      "title": "Lush Forests",
+      "description": "Surrounded by dense trees and natural greenery"
+    },
+    {
+      "icon": "fas fa-water",
+      "title": "Yashwant Lake",
+      "description": "A calm lake in the heart of Toranmal ideal for boating and relaxing"
+    },
+    {
+      "icon": "fas fa-om",
+      "title": "Gorakhnath Temple",
+      "description": "Spiritual site visited by thousands during Mahashivratri"
+    },
+    {
+      "icon": "fas fa-hiking",
+      "title": "Tribal Culture",
+      "description": "Home to Bhil and Pawara tribes with rich heritage"
+    }
+  ],
+  "geography": {
+    "image": "/assets/images/hill_stations.jpg",
+    "intro": "Toranmal is located in the Satpura ranges of northern Maharashtra, close to the Madhya Pradesh border. It rests on a plateau and is surrounded by valleys and forests.",
+    "details": [
+      {
+        "icon": "fas fa-map-marker-alt",
+        "label": "Location",
+        "value": "Nandurbar District, Maharashtra"
+      },
+      {
+        "icon": "fas fa-mountain",
+        "label": "Altitude",
+        "value": "1,150 meters above sea level"
+      },
+      {
+        "icon": "fas fa-seedling",
+        "label": "Vegetation",
+        "value": "Deciduous forests, wildflowers, and medicinal plants"
+      },
+      {
+        "icon": "fas fa-temperature-low",
+        "label": "Climate",
+        "value": "Pleasant year-round with cool evenings"
+      }
+    ],
+    "climate": {
+      "description": "Toranmal experiences a pleasant climate throughout the year. Summers are mild, monsoons are lush, and winters are chilly.",
+      "seasons": [
+        {
+          "icon": "fas fa-sun",
+          "text": "Best Season: October to March"
+        },
+        {
+          "icon": "fas fa-cloud-rain",
+          "text": "Monsoon: June to September"
+        }
+      ]
+    },
+    "conclusion": "The hill station’s geography makes it ideal for hiking, meditation, and connecting with nature."
+  },
+  "activities": [
+    {
+      "icon": "fas fa-hiking",
+      "title": "Nature Walks",
+      "description": "Enjoy peaceful walks through forest trails and around the lake.",
+      "info": [
+        "Best done in early morning or sunset",
+        "Take guidance from locals for longer trails"
+      ]
+    },
+    {
+      "icon": "fas fa-water",
+      "title": "Boating at Yashwant Lake",
+      "description": "Soak in the calm vibes with paddle boating in the lake.",
+      "info": [
+        "Open during daytime",
+        "Small boats available for families"
+      ]
+    },
+    {
+      "icon": "fas fa-om",
+      "title": "Temple Visits",
+      "description": "Visit the Gorakhnath temple and surrounding shrines.",
+      "info": [
+        "Avoid peak Mahashivratri crowd if seeking peace",
+        "Dress modestly in temple zones"
+      ]
+    }
+  ],
+  "attractions": [
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Yashwant Lake",
+      "description": "Central freshwater lake surrounded by greenery and walking paths.",
+      "distance": "In the heart of Toranmal",
+      "icon": "fas fa-water"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Gorakhnath Temple",
+      "description": "Spiritual center that attracts pilgrims from Maharashtra and Madhya Pradesh.",
+      "distance": "1 km from main village",
+      "icon": "fas fa-om"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Check Dam Viewpoint",
+      "description": "Offers panoramic views of the dam and valley below.",
+      "distance": "2 km trek",
+      "icon": "fas fa-binoculars"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Sita Khai",
+      "description": "A deep gorge named after Sita with beautiful cliffs and viewpoints.",
+      "distance": "4 km drive and short walk",
+      "icon": "fas fa-mountain"
+    }
+  ],
+  "marineLife": {
+    "intro": "Toranmal is a hill station and does not feature marine life, but its freshwater ecosystems support rich biodiversity.",
+    "items": [
+      {
+        "icon": "fas fa-dove",
+        "title": "Bird Watching",
+        "description": "Spot kingfishers, eagles, and parakeets in forest and lake areas."
+      },
+      {
+        "icon": "fas fa-paw",
+        "title": "Local Wildlife",
+        "description": "Includes monkeys, civets, porcupines, and forest reptiles."
+      }
+    ],
+    "conclusion": [
+      "Toranmal encourages eco-tourism and preservation of tribal ecology.",
+      "Nature walks and lake visits are ideal for families and photographers."
+    ]
+  },
+  "howToReach": [
+    {
+      "icon": "fas fa-car",
+      "title": "By Road",
+      "details": [
+        "Nearest city: Nandurbar (75 km)",
+        "Drive from Nashik or Dhule via Shahada"
+      ]
+    },
+    {
+      "icon": "fas fa-train",
+      "title": "By Train",
+      "details": [
+        "Nearest Station: Nandurbar",
+        "Cabs available to Toranmal"
+      ]
+    },
+    {
+      "icon": "fas fa-plane",
+      "title": "By Air",
+      "details": [
+        "Nearest Airport: Aurangabad or Indore (200–250 km)",
+        "Plan road journey from airport"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Toranmal Yashwant Lake"
+    },
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Forest Walk View"
+    },
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Gorakhnath Temple Area"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "MTDC Toranmal Resort",
+      "image": "/assets/images/hill_stations.jpg",
+      "rating": "4.1",
+      "url": "https://example.com/mtdc-toranmal",
+      "facilities": ["parking", "restaurant", "nature view"]
+    },
+    {
+      "name": "Forest Guest House",
+      "image": "/assets/images/hill_stations.jpg",
+      "rating": "3.9",
+      "url": "https://example.com/forest-guest-toranmal",
+      "facilities": ["basic stay", "eco-friendly", "scenic"]
+    }
+  ],
+  "bookingTips": [
+    {
+      "icon": "fas fa-calendar",
+      "description": "Best time to book: October to February"
+    },
+    {
+      "icon": "fas fa-car",
+      "description": "Carry your own vehicle or driver for convenience"
+    },
+    {
+      "icon": "fas fa-mobile",
+      "description": "Limited mobile connectivity – download maps offline"
+    }
+  ]
+}

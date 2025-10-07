@@ -1,0 +1,12 @@
+{
+  "name": "Radisson Blu Resort & Spa",
+  "image": "/assets/images/beaches.jpg",
+  "rating": "4.5",
+  "facilities": ["wifi", "parking", "ac", "pool"],
+  "gallery": [
+    "/assets/images/beaches.jpg",
+    "/assets/images/beaches.jpg"
+  ],
+  "tariff": "₹6,000 - ₹10,000 per night",
+  "description": "Luxury resort near Alibaug beach with modern amenities and spa services."
+}

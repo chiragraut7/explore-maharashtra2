@@ -1,0 +1,12 @@
+{
+  "name": "Outpost @ Alibaug",
+  "rating": "4.5",
+  "tariff": "₹3000 - ₹6000 per night",
+  "description": "A quiet eco-resort with garden views and pool near Kihim beach.",
+  "gallery": ["/assets/images/outpost1.jpg", "/assets/images/outpost2.jpg"],
+  "facilities": ["wifi", "parking", "ac", "pool"],
+  "bookingUrl": "https://example.com/booking",
+  "contact": "+91-9876543210",
+  "website": "https://example.com/outpost-alibaug",
+  "location": "Outpost @ Alibaug, Kihim Beach Road"
+}

@@ -1,0 +1,102 @@
+{
+  "slug": "hill-zill",
+  "category": "beaches",
+  "subcategory": "bordi-beach",
+  "name": "Hill Zill",
+  "rating": "4.5",
+  "amenities": [
+    "wifi",
+    "ac",
+    "pool",
+    "parking"
+  ],
+  "overview": "Hill ZillHill ZillHill ZillHill ZillHill Zill",
+  "location": {
+    "address": "Kaulghar, Kelwa, Palghar",
+    "distance_from_beach": "Hill Zill",
+    "map_embed": "Hill Zill"
+  },
+  "rooms": [
+    {
+      "type": "Hill Zill",
+      "rate_for_two": "Hill Zill",
+      "extra_person": "Hill Zill"
+    }
+  ],
+  "occupancy_policy": {
+    "max_per_room": "5464",
+    "children": {
+      "under_4": "Hill Zill",
+      "age_4_to_8": "Hill Zill",
+      "above_8": "Hill Zill"
+    }
+  },
+  "food_packages": {
+    "one_day": [
+      "Hill Zill",
+      "Hill Zill",
+      "Hill Zill"
+    ],
+    "extended": [
+      "Hill Zill",
+      "Hill Zill",
+      "Hill Zill",
+      "Hill Zill"
+    ]
+  },
+  "facilities": [
+    "Hill Zill",
+    "Hill Zill",
+    "Hill Zill",
+    "Hill Zill",
+    "Hill Zill"
+  ],
+  "policies": {
+    "allowed": [
+      "Hill Zill"
+    ],
+    "not_allowed": [
+      "Hill Zill",
+      "Hill Zill",
+      "Hill Zill",
+      "Hill Zill"
+    ],
+    "booking": [
+      "Hill Zill",
+      "Hill Zill"
+    ],
+    "liability": [
+      "Hill Zill",
+      "Hill Zill"
+    ]
+  },
+  "gallery": [
+    "Hill Zill",
+    "Hill Zill",
+    "Hill Zill"
+  ],
+  "reviews": [
+    {
+      "author": "Hill Zill",
+      "text": "Hill Zill"
+    },
+    {
+      "author": "Hill Zill",
+      "text": "Hill Zill"
+    }
+  ],
+  "attractions_nearby": [
+    "Hill Zill",
+    "Hill Zill",
+    "Hill Zill"
+  ],
+  "notice": [
+    "Hill Zill"
+  ],
+  "contact": {
+    "host": "Hill Zill",
+    "phone": "09167337927",
+    "email": "chiragraut7@gmail.com",
+    "website": ""
+  }
+}

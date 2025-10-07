@@ -1,0 +1,240 @@
+{
+  "id": "murud",
+  "title": "Murud Beach",
+  "subtitle": "Historic forts, wide sandy shores, and water sports adventure",
+  "bannerImage": "/assets/images/beaches/murud-beach.jpg",
+    "color": "#5a005b",
+  "overview":  [
+      "Murud Beach is a scenic and clean beach located in the Raigad district of Maharashtra. It is best known for the historic Murud-Janjira Fort that stands offshore and is accessible by boat.",
+      "The beach is popular for its long stretch of white sand, clear waters, and relatively calm waves, making it ideal for family outings, swimming, and watersports.",
+      "With coconut palms lining the coast and charming resorts nearby, Murud offers a perfect mix of history, relaxation, and coastal beauty."
+    ],
+  "highlights": [
+    {
+      "icon": "fas fa-fort",
+      "title": "Murud-Janjira Fort",
+      "description": "Historic sea fort located off the coast, accessible by sailboats and known for its unconquered history."
+    },
+    {
+      "icon": "fas fa-umbrella-beach",
+      "title": "Wide Sandy Shore",
+      "description": "Clean, white-sand beach ideal for relaxing walks and family play."
+    },
+    {
+      "icon": "fas fa-water",
+      "title": "Water Sports",
+      "description": "Jet skiing, banana rides, and parasailing available during peak season."
+    },
+    {
+      "icon": "fas fa-tree",
+      "title": "Palm-lined Coast",
+      "description": "Aesthetic coconut palm backdrop adds tropical charm."
+    }
+  ],
+  "geography": {
+    "image": "/assets/images/beaches/murud-beach.jpg",
+    "intro": "Murud lies along the Konkan coast south of Alibaug in Raigad district. It is well connected and features a crescent-shaped beach fronting the Arabian Sea.",
+    "details": [
+      {
+        "icon": "fas fa-map-marker-alt",
+        "label": "Location",
+        "value": "Murud, Raigad District, Maharashtra"
+      },
+      {
+        "icon": "fas fa-road",
+        "label": "Distance from Mumbai",
+        "value": "Approx. 150 kilometers"
+      },
+      {
+        "icon": "fas fa-train",
+        "label": "Nearest Station",
+        "value": "Roha (Konkan Railway)"
+      },
+      {
+        "icon": "fas fa-water",
+        "label": "Coastline",
+        "value": "Arabian Sea"
+      },
+      {
+        "icon": "fas fa-tree",
+        "label": "Flora",
+        "value": "Coconut palms, sea-side vegetation"
+      }
+    ],
+    "climate": {
+      "description": "Murud has a warm coastal tropical climate. Winters are pleasant, summers are hot, and monsoon brings heavy rains.",
+      "seasons": [
+        {
+          "icon": "fas fa-sun",
+          "text": "Best Season: October to February"
+        },
+        {
+          "icon": "fas fa-cloud-rain",
+          "text": "Monsoon: June to September"
+        }
+      ]
+    },
+    "conclusion": "Murud&apos;s beach geography blends history, nature, and accessibility, making it a well-rounded coastal getaway."
+  },
+  "activities": [
+    {
+      "icon": "fas fa-ship",
+      "title": "Boat Ride to Janjira Fort",
+      "description": "Experience a sailboat trip to the famous sea fort.",
+      "info": [
+        "Starts from Rajapuri Jetty",
+        "Includes fort entrance and guide options"
+      ]
+    },
+    {
+      "icon": "fas fa-water",
+      "title": "Water Sports",
+      "description": "Enjoy banana rides, jet skiing, and bumper boats on the beach.",
+      "info": [
+        "Available during peak season",
+        "Vendors operate till sunset"
+      ]
+    },
+    {
+      "icon": "fas fa-camera",
+      "title": "Sunset Photography",
+      "description": "Capture the iconic view of Janjira Fort with the sun setting in the backdrop.",
+      "info": [
+        "Best view from the northern beach end",
+        "Golden hour between 5–6:30 PM"
+      ]
+    }
+  ],
+ "attractions": [
+  {
+    "image": "/assets/images/beaches.jpg",
+    "title": "Murud-Janjira Fort",
+    "description": "A majestic sea fort located 20 km from Kashid, famous for its stronghold history and architecture.",
+    "distance": "20 km from Kashid",
+    "icon": "fas fa-fort-awesome",
+    "value": "Historic Sea Fort"
+  },
+  {
+    "image": "/assets/images/beaches.jpg",
+    "title": "Phansad Wildlife Sanctuary",
+    "description": "Lush forest reserve home to leopards, birds, and medicinal plants.",
+    "distance": "12 km from Kashid",
+    "icon": "fas fa-leaf",
+    "value": "Nature Reserve"
+  },
+  {
+    "image": "/assets/images/beaches.jpg",
+    "title": "Datta Mandir Hill",
+    "description": "Small hilltop temple offering panoramic views of the beach.",
+    "distance": "2 km from beach",
+    "icon": "fas fa-place-of-worship",
+    "value": "Viewpoint & Temple"
+  }
+]
+ ,
+  "marineLife": {
+    "intro": "Murud’s beach features moderate marine biodiversity including shore fish, crabs, and occasional dolphins offshore.",
+    "items": [
+      {
+        "icon": "fas fa-fish",
+        "title": "Shore Fish",
+        "description": "Small marine fish like mullet and anchovies are common near the beachline."
+      },
+      {
+        "icon": "fas fa-water",
+        "title": "Crabs & Shells",
+        "description": "Children can find tiny crabs and seashells during low tide."
+      },
+      {
+        "icon": "fas fa-dove",
+        "title": "Bird Watching",
+        "description": "Seagulls, sandpipers, and kites are common around the beach and fort area."
+      }
+    ],
+    "conclusion": [
+      "Murud’s clean waters and gentle waves support safe marine interaction.",
+      "The beach is not suited for diving but offers nature lovers plenty to observe."
+    ]
+  },
+  "howToReach": [
+    {
+      "icon": "fas fa-plane",
+      "title": "By Air",
+      "details": [
+        "Nearest Airport: Mumbai (Chhatrapati Shivaji Maharaj International Airport)",
+        "From there, drive or take ferry to Alibaug and onward to Murud"
+      ]
+    },
+    {
+      "icon": "fas fa-train",
+      "title": "By Train",
+      "details": [
+        "Nearest Station: Roha (Konkan Railway)",
+        "From Roha, taxis and buses available to Murud"
+      ]
+    },
+    {
+      "icon": "fas fa-car",
+      "title": "By Road",
+      "details": [
+        "Approx. 150 km from Mumbai via Alibaug",
+        "Well connected through state highways"
+      ]
+    },
+    {
+      "icon": "fas fa-ship",
+      "title": "By Ferry",
+      "details": [
+        "Ferries from Gateway of India to Alibaug (Mandwa Jetty)",
+        "Continue by road to Murud (~50 km)"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/beaches.jpg",
+      "thumb": "/assets/images/beaches.jpg",
+      "alt": "Murud Beach with palm trees"
+    },
+    {
+      "src": "/assets/images/beaches.jpg",
+      "thumb": "/assets/images/beaches.jpg",
+      "alt": "Murud-Janjira Fort view"
+    },
+    {
+      "src": "/assets/images/beaches.jpg",
+      "thumb": "/assets/images/beaches.jpg",
+      "alt": "Water sports on beach"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Golden Swan Beach Resort",
+      "image": "/assets/images/beaches.jpg",
+      "rating": "4.3",
+      "url": "https://example.com/golden-swan",
+      "facilities": ["wifi", "parking", "ac"]
+    },
+    {
+      "name": "Sea Shell Resort Murud",
+      "image": "/assets/images/beaches.jpg",
+      "rating": "4.0",
+      "url": "https://example.com/sea-shell",
+      "facilities": ["wifi", "parking"]
+    }
+  ],
+  "bookingTips": [
+    {
+      "icon": "fas fa-calendar",
+      "description": "Book in advance during long weekends and holidays"
+    },
+    {
+      "icon": "fas fa-cloud-rain",
+      "description": "Avoid monsoon months for water activities"
+    },
+    {
+      "icon": "fas fa-car",
+      "description": "Private vehicle recommended for fort and nearby travel"
+    }
+  ]
+}

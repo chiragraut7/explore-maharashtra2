@@ -1,0 +1,30 @@
+import { NextResponse } from "next/server";
+import path from "path";
+import fs from "fs/promises";
+
+export async function GET(
+  req: Request,
+  { params }: { params: { category: string; id: string; hotelSlug: string } }
+) {
+  const { category, id, hotelSlug } = params;
+  const hotelFilePath = path.join(
+    process.cwd(),
+    "public",
+    "data",
+    category,
+    id,
+    "hotels",
+    `${hotelSlug}.json`
+  );
+
+  try {
+    const jsonData = await fs.readFile(hotelFilePath, "utf-8");
+    const hotel = JSON.parse(jsonData);
+    return NextResponse.json(hotel);
+  } catch (error) {
+    return NextResponse.json(
+      { error: `Hotel ${hotelSlug} not found in ${category}/${id}` },
+      { status: 404 }
+    );
+  }
+}

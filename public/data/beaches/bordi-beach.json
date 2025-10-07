@@ -1,0 +1,276 @@
+{
+  "id": "bordi-beach",
+  "title": "Bordi Beach",
+  "subtitle": "Golden sands, clear waters, and scuba diving paradise",
+  "bannerImage": "/assets/images/beaches/bordi-beach.jpg",
+  "color": "#09a5cf",
+  "overview": [
+    "Bordi Beach is a tranquil and lesser-known coastal destination located in the Dahanu region of Maharashtra, near the Gujarat border. It features a long, clean shoreline lined with chikoo orchards and is known for its peaceful and unspoiled charm.",
+    "The beach offers a flat stretch of sand, gentle waves, and safe swimming areas, making it ideal for family outings and quiet retreats. The surrounding area has Parsi and Warli cultural influences, giving Bordi a unique historical and ethnic flavor.",
+    "Its proximity to Mumbai (approximately 145 km) makes it an easy weekend getaway. The area is also famous for its annual Chikoo Festival and eco-tourism initiatives that promote local art, farming, and sustainable travel."
+  ],
+  "highlights": [
+    {
+      "icon": "fas fa-seedling",
+      "title": "Chikoo Orchards",
+      "description": "Rows of fruit-bearing chikoo trees line the village around the beach, offering agro-tourism experiences."
+    },
+    {
+      "icon": "fas fa-umbrella-beach",
+      "title": "Secluded Shore",
+      "description": "Long, uncrowded beach perfect for solitude, reading, or nature walks."
+    },
+    {
+      "icon": "fas fa-palette",
+      "title": "Warli Art & Culture",
+      "description": "Bordi is home to Warli tribal art, found on local walls and promoted through village tourism."
+    },
+    {
+      "icon": "fas fa-leaf",
+      "title": "Eco-Friendly Stay",
+      "description": "Many local resorts and homestays support sustainable farming and zero-waste tourism."
+    }
+  ],
+  "geography": {
+    "image": "/assets/images/beaches/bordi-beach.jpg",
+    "intro": "Bordi Beach lies in the northern coastal belt of Maharashtra, nestled between Dahanu and the Gujarat border. The beach is surrounded by lush chikoo orchards and traditional villages.",
+    "details": [
+      {
+        "icon": "fas fa-map-marker-alt",
+        "label": "Location",
+        "value": "Dahanu Taluka, Palghar District, Maharashtra"
+      },
+      {
+        "icon": "fas fa-road",
+        "label": "Distance from Mumbai",
+        "value": "Approx. 145 kilometers"
+      },
+      {
+        "icon": "fas fa-train",
+        "label": "Nearest Station",
+        "value": "Gholvad (Western Railway)"
+      },
+      {
+        "icon": "fas fa-tree",
+        "label": "Flora",
+        "value": "Chikoo trees, mango orchards, palms"
+      }
+    ],
+    "climate": {
+      "description": "Bordi enjoys a mild tropical coastal climate with hot summers, green monsoons, and pleasant winters. The best time to visit is between November and February.",
+      "seasons": [
+        {
+          "icon": "fas fa-sun",
+          "text": "Best Season: November to February"
+        },
+        {
+          "icon": "fas fa-cloud-rain",
+          "text": "Monsoon: June to September"
+        }
+      ]
+    },
+    "conclusion": "The flat terrain, chikoo groves, and undeveloped coastline make Bordi ideal for eco-tourism and slow travel."
+  },
+  "activities": [
+    {
+      "icon": "fas fa-walking",
+      "title": "Beach Walks",
+      "description": "Enjoy peaceful walks along the long stretch of clean, black-sand beach surrounded by casuarina trees.",
+      "info": [
+        "Best during morning or sunset hours",
+        "Ideal for families and solo travelers"
+      ]
+    },
+    {
+      "icon": "fas fa-leaf",
+      "title": "Chikoo Farm Visit",
+      "description": "Visit local chikoo farms and learn about organic farming techniques from local growers.",
+      "info": [
+        "Farms open for visitors during harvest season",
+        "Buy fresh chikoo and homemade jams"
+      ]
+    },
+    {
+      "icon": "fas fa-paint-brush",
+      "title": "Warli Art Workshops",
+      "description": "Join hands-on workshops where tribal artists teach traditional Warli painting styles.",
+      "info": [
+        "Usually hosted at eco-resorts or festivals",
+        "Great for kids and art lovers"
+      ]
+    },
+    {
+      "icon": "fas fa-fish",
+      "title": "Fishing Experience",
+      "description": "Participate in early morning fishing with local coastal communities using traditional techniques.",
+      "info": [
+        "Organized by homestays or local cooperatives"
+      ]
+    }
+  ],
+  "attractions": [
+    {
+      "image": "/assets/images/beaches.jpg",
+      "title": "Bahrot Caves",
+      "description": "Historic rock-cut caves with Zoroastrian significance, located about 10 km from Bordi.",
+      "distance": "Religious & Historic",
+      "icon": "fas fa-landmark",
+      "value": "Historic Site"
+    },
+    {
+      "image": "/assets/images/beaches.jpg",
+      "title": "Asavli Dam",
+      "description": "A peaceful reservoir surrounded by greenery, ideal for short drives and nature photography.",
+      "distance": "Picnic & Scenic Spot",
+      "icon": "fas fa-water",
+      "value": "Nature Spot"
+    },
+    {
+      "image": "/assets/images/beaches.jpg",
+      "title": "Gholvad Beach",
+      "description": "A neighboring beach popular for its tree-lined shore and cycling paths.",
+      "distance": "Cycling & Leisure",
+      "icon": "fas fa-bicycle",
+      "value": "Nearby Beach"
+    }
+  ],
+  "marineLife": {
+    "intro": "Bordi Beach, while not known for deep-sea marine biodiversity, features a coastal ecosystem enriched by tidal waves and organic agriculture nearby.",
+    "items": [
+      {
+        "icon": "fas fa-fish",
+        "title": "Shoreline Fish",
+        "description": "Small fish and crabs can be seen during low tide across wet sand and rock pools."
+      },
+      {
+        "icon": "fas fa-dove",
+        "title": "Birdlife",
+        "description": "Coastal and inland birds such as herons, egrets, and bulbuls frequent the trees and beachline."
+      },
+      {
+        "icon": "fas fa-seedling",
+        "title": "Mangrove Belt",
+        "description": "Small mangrove clusters near creek mouths support shellfish and wetland ecology."
+      }
+    ],
+    "conclusion": [
+      "The marine zone around Bordi promotes nature-based tourism with minimal environmental impact.",
+      "Its balance of farming and nature makes it an educational destination for families and eco-lovers."
+    ]
+  },
+  "howToReach": [
+    {
+      "icon": "fas fa-plane",
+      "title": "By Air",
+      "details": [
+        "Nearest Airport: Mumbai (Chhatrapati Shivaji Maharaj International Airport)",
+        "From there, drive or take a train to Gholvad or Dahanu"
+      ]
+    },
+    {
+      "icon": "fas fa-train",
+      "title": "By Train",
+      "details": [
+        "Nearest Station: Gholvad (Western Line)",
+        "Frequent trains from Mumbai and Gujarat",
+        "Auto-rickshaws and taxis available from station"
+      ]
+    },
+    {
+      "icon": "fas fa-car",
+      "title": "By Road",
+      "details": [
+        "Approx. 145 km from Mumbai via NH48 and Dahanu Road",
+        "Accessible via local buses or private cabs"
+      ]
+    },
+    {
+      "icon": "fas fa-bus",
+      "title": "By Bus",
+      "details": [
+        "MSRTC buses from Mumbai to Dahanu",
+        "Local buses from Dahanu to Bordi available"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/beaches.jpg",
+      "thumb": "/assets/images/beaches.jpg",
+      "alt": "Bordi Beach Calm Shore"
+    },
+    {
+      "src": "/assets/images/beaches.jpg",
+      "thumb": "/assets/images/beaches.jpg",
+      "alt": "Chikoo Orchard"
+    },
+    {
+      "src": "/assets/images/beaches.jpg",
+      "thumb": "/assets/images/beaches.jpg",
+      "alt": "Warli Art Display"
+    },
+    {
+      "src": "/assets/images/beaches.jpg",
+      "thumb": "/assets/images/beaches.jpg",
+      "alt": "Scenic Walk Path"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hill Zill Resort",
+      "image": "/assets/images/beaches.jpg",
+      "rating": "4.4",
+      "url": "https://example.com/hill-zill-resort",
+      "facilities": [
+        "wifi",
+        "parking",
+        "ac"
+      ]
+    },
+    {
+      "name": "Anand Resort Bordi",
+      "image": "/assets/images/beaches.jpg",
+      "rating": "4.3",
+      "url": "https://example.com/anand-resort",
+      "facilities": [
+        "wifi",
+        "parking"
+      ]
+    },
+    {
+      "name": "Chikoo Wadi Farmstay",
+      "image": "/assets/images/beaches.jpg",
+      "rating": "4.1",
+      "url": "https://example.com/chikoo-wadi",
+      "facilities": [
+        "wifi",
+        "ac"
+      ]
+    }
+  ],
+  "bookingTips": [
+    {
+      "icon": "fas fa-calendar",
+      "description": "Best Time to Book: 1–2 weeks in advance"
+    },
+    {
+      "icon": "fas fa-sun",
+      "description": "Peak Season: November to February"
+    },
+    {
+      "icon": "fas fa-cloud-rain",
+      "description": "Off-Season: Discounts available during monsoon"
+    },
+    {
+      "icon": "fas fa-gift",
+      "description": "Packages: Agro-tourism & cultural workshop combos"
+    },
+    {
+      "icon": "fas fa-car",
+      "description": "Transport: Some homestays offer station pick-up"
+    }
+  ],
+  "rating": "",
+  "amenities": [],
+  "category": "beaches"
+}

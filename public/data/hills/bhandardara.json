@@ -1,0 +1,223 @@
+{
+  "title": "Panchgani",
+  "subtitle": "Scenic plateau surrounded by five hills of the Sahyadris",
+  "bannerImage": "/assets/images/hill_stations.jpg",
+  "overview":  [
+      "Panchgani is a picturesque hill station nestled in the Sahyadri mountain ranges, located in the Satara district of Maharashtra. It is named after the five surrounding hills and offers panoramic views, lush greenery, and colonial-era charm.",
+      "Popular for its strawberry farms, boarding schools, and cool climate, Panchgani is an ideal retreat for nature lovers and families.",
+      "The town's pleasant weather, natural beauty, and historic landmarks make it one of Maharashtra’s top weekend getaways."
+    ],
+  "highlights": [
+    {
+      "icon": "fas fa-mountain",
+      "title": "Table Land",
+      "description": "One of Asia’s second-largest mountain plateaus with breathtaking valley views."
+    },
+    {
+      "icon": "fas fa-seedling",
+      "title": "Strawberry Fields",
+      "description": "Home to vibrant strawberry farms that bloom during the harvest season."
+    },
+    {
+      "icon": "fas fa-landmark",
+      "title": "Colonial Architecture",
+      "description": "British-era schools and bungalows dot the scenic landscape."
+    },
+    {
+      "icon": "fas fa-cloud-sun",
+      "title": "Year-Round Pleasant Climate",
+      "description": "Cool and refreshing weather attracts tourists throughout the year."
+    }
+  ],
+  "geography": {
+    "image": "/assets/images/hill_stations.jpg",
+    "intro": "Located at an elevation of around 1,334 meters, Panchgani is surrounded by hills, valleys, and the Krishna River.",
+    "details": [
+      {
+        "icon": "fas fa-map-marker-alt",
+        "label": "Location",
+        "value": "Satara District, Maharashtra"
+      },
+      {
+        "icon": "fas fa-mountain",
+        "label": "Altitude",
+        "value": "Approx. 1,334 meters above sea level"
+      },
+      {
+        "icon": "fas fa-tree",
+        "label": "Flora",
+        "value": "Strawberry farms, silver oaks, and flowering shrubs"
+      },
+      {
+        "icon": "fas fa-water",
+        "label": "River",
+        "value": "Krishna River"
+      }
+    ],
+    "climate": {
+      "description": "Panchgani has a cool and pleasant climate throughout the year. Summers are mild, and winters are chilly, making it a year-round destination.",
+      "seasons": [
+        {
+          "icon": "fas fa-sun",
+          "text": "Best Season: October to May"
+        },
+        {
+          "icon": "fas fa-cloud-rain",
+          "text": "Monsoon: June to September (lush greenery)"
+        }
+      ]
+    },
+    "conclusion": "With its unique geography and altitude, Panchgani offers incredible views and a relaxing ambiance perfect for rejuvenation."
+  },
+  "activities": [
+    {
+      "icon": "fas fa-hiking",
+      "title": "Trekking & Hiking",
+      "description": "Explore forest trails and scenic hills.",
+      "info": [
+        "Popular trails: Sydney Point, Parsi Point, and Devil’s Kitchen",
+        "Best explored during winter and spring"
+      ]
+    },
+    {
+      "icon": "fas fa-seedling",
+      "title": "Farm Visits",
+      "description": "Visit strawberry farms and enjoy fresh produce.",
+      "info": [
+        "Peak season: December to March",
+        "Try local jams, syrups, and fresh fruits"
+      ]
+    },
+    {
+      "icon": "fas fa-camera",
+      "title": "Photography",
+      "description": "Capture misty mountains and colonial charm.",
+      "info": [
+        "Ideal for landscape and nature photography",
+        "Golden hour offers dramatic lighting"
+      ]
+    }
+  ],
+  "attractions": [
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Table Land",
+      "description": "A flat mountain plateau with horse rides and panoramic views.",
+      "distance": "2 km from main market",
+      "icon": "fas fa-mountain"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Parsi Point",
+      "description": "A viewpoint offering breathtaking views of Krishna Valley.",
+      "distance": "1.5 km",
+      "icon": "fas fa-binoculars"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Devil’s Kitchen",
+      "description": "A mystical place with mythological connections to the Pandavas.",
+      "distance": "3 km",
+      "icon": "fas fa-fire"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Sydney Point",
+      "description": "Panoramic view of Dhom Dam and Krishna Valley.",
+      "distance": "1 km",
+      "icon": "fas fa-map-pin"
+    }
+  ],
+  "marineLife": {
+    "intro": "As a hill station, Panchgani does not have marine life, but it does host a rich ecosystem of flora and fauna.",
+    "items": [
+      {
+        "icon": "fas fa-dove",
+        "title": "Birdlife",
+        "description": "Home to various species of hill birds like bulbuls and warblers."
+      },
+      {
+        "icon": "fas fa-tree",
+        "title": "Botanical Diversity",
+        "description": "Flourishing trees, flowering plants, and grasslands support pollinators and local biodiversity."
+      }
+    ],
+    "conclusion": [
+      "The green landscapes, healthy climate, and agricultural activity make Panchgani ecologically rich and refreshing.",
+      "It serves as an important conservation and farming zone in the region."
+    ]
+  },
+  "howToReach": [
+    {
+      "icon": "fas fa-car",
+      "title": "By Road",
+      "details": [
+        "Panchgani is 100 km from Pune and 250 km from Mumbai.",
+        "Well-connected via NH48 and state highways."
+      ]
+    },
+    {
+      "icon": "fas fa-train",
+      "title": "By Train",
+      "details": [
+        "Nearest station: Wathar (45 km away)",
+        "Pune Railway Station is a major access point"
+      ]
+    },
+    {
+      "icon": "fas fa-plane",
+      "title": "By Air",
+      "details": [
+        "Nearest airport: Pune International Airport (110 km)",
+        "Mumbai International Airport (250 km) is also accessible"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "View from Table Land"
+    },
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Strawberry Farms"
+    },
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Parsi Point"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Ravine Hotel",
+      "image": "/assets/images/hill_stations.jpg",
+      "rating": "4.3",
+      "url": "https://example.com/ravine-hotel",
+      "facilities": ["wifi", "parking", "restaurant"]
+    },
+    {
+      "name": "Hotel Mount View",
+      "image": "/assets/images/hill_stations.jpg",
+      "rating": "4.0",
+      "url": "https://example.com/hotel-mount-view",
+      "facilities": ["wifi", "ac"]
+    }
+  ],
+  "bookingTips": [
+    {
+      "icon": "fas fa-calendar",
+      "description": "Book at least 1–2 weeks in advance during the strawberry season"
+    },
+    {
+      "icon": "fas fa-snowflake",
+      "description": "Carry light woolens during winter months"
+    },
+    {
+      "icon": "fas fa-gift",
+      "description": "Look for farm stay combos for authentic experiences"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "id" :"mahabaleshwar",
+  "title": "Mahabaleshwar",
+  "subtitle": "Lush green hills, strawberries, and panoramic viewpoints",
+  "bannerImage": "/assets/images/hill_stations.jpg",
+  "overview":  [
+      "Mahabaleshwar is a popular hill station nestled in the Western Ghats of Maharashtra. Known for its cool climate, scenic viewpoints, and strawberry farms, it is a top destination for nature lovers and honeymooners.",
+      "The town offers a mix of colonial charm, ancient temples, and breathtaking natural beauty. Venna Lake, Arthur’s Seat, and Wilson Point are just a few of its iconic attractions.",
+      "Easily accessible from Mumbai and Pune, Mahabaleshwar is ideal for a weekend getaway, with options for boating, trekking, and relaxing stays in resorts or homestays."
+    ],
+  "highlights": [
+    {
+      "icon": "fas fa-mountain",
+      "title": "Panoramic Viewpoints",
+      "description": "Catch sunrise and sunset at spots like Wilson Point, Arthur’s Seat, and Kate’s Point."
+    },
+    {
+      "icon": "fas fa-apple-alt",
+      "title": "Strawberry Farms",
+      "description": "Mahabaleshwar is famous for its juicy strawberries and fresh cream treats."
+    },
+    {
+      "icon": "fas fa-water",
+      "title": "Venna Lake",
+      "description": "Enjoy boating and horse rides around this scenic manmade lake."
+    },
+    {
+      "icon": "fas fa-church",
+      "title": "Colonial Architecture",
+      "description": "Explore old churches and British-era buildings amidst the misty hills."
+    }
+  ],
+  "geography": {
+    "image": "/assets/images/hill_stations.jpg",
+    "intro": "Mahabaleshwar lies in the Satara district of Maharashtra at an elevation of 1,353 meters above sea level.",
+    "details": [
+      {
+        "icon": "fas fa-map-marker-alt",
+        "label": "Location",
+        "value": "Satara District, Maharashtra"
+      },
+      {
+        "icon": "fas fa-road",
+        "label": "Distance from Mumbai",
+        "value": "Approx. 260 kilometers"
+      },
+      {
+        "icon": "fas fa-thermometer-half",
+        "label": "Elevation",
+        "value": "1,353 meters"
+      },
+      {
+        "icon": "fas fa-tree",
+        "label": "Flora",
+        "value": "Evergreen forests, strawberry fields"
+      }
+    ],
+    "climate": {
+      "description": "Mahabaleshwar enjoys a cool and misty climate throughout the year. Summers are mild, monsoons are lush and rainy, and winters are crisp and pleasant.",
+      "seasons": [
+        {
+          "icon": "fas fa-sun",
+          "text": "Best Season: October to June"
+        },
+        {
+          "icon": "fas fa-cloud-rain",
+          "text": "Monsoon: July to September"
+        }
+      ]
+    },
+    "conclusion": "With its lush hills, waterfalls, and farms, Mahabaleshwar is a serene retreat all year round."
+  },
+  "activities": [
+    {
+      "icon": "fas fa-hiking",
+      "title": "Trekking Trails",
+      "description": "Explore paths to viewpoints, waterfalls, and forested areas.",
+      "info": [
+        "Elephant’s Head Point trek",
+        "Lingmala Waterfall trail"
+      ]
+    },
+    {
+      "icon": "fas fa-boat",
+      "title": "Boating at Venna Lake",
+      "description": "Paddle or row through the scenic lake.",
+      "info": [
+        "Open 9AM to 6PM daily",
+        "Boats for 2 to 6 people"
+      ]
+    },
+    {
+      "icon": "fas fa-ice-cream",
+      "title": "Strawberry Picking",
+      "description": "Seasonal farms allow visitors to pick and taste strawberries.",
+      "info": [
+        "Best in December to February"
+      ]
+    }
+  ],
+  "attractions": [
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Arthur’s Seat",
+      "description": "A famous viewpoint with cliffs and valleys, resembling the Grand Canyon.",
+      "distance": "7 km from town center",
+      "icon": "fas fa-binoculars"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Pratapgad Fort",
+      "description": "Historic hill fort with panoramic views and Maratha heritage.",
+      "distance": "21 km from Mahabaleshwar",
+      "icon": "fas fa-fort-awesome"
+    },
+    {
+      "image": "/assets/images/hill_stations.jpg",
+      "title": "Mapro Garden",
+      "description": "Popular spot for strawberry products, ice creams, and food court.",
+      "distance": "12 km toward Panchgani",
+      "icon": "fas fa-store"
+    }
+  ],
+  "marineLife": {
+    "intro": "Being a hill station, Mahabaleshwar does not have marine life but offers rich biodiversity in its forest ecosystem.",
+    "items": [
+      {
+        "icon": "fas fa-tree",
+        "title": "Evergreen Forests",
+        "description": "Thick green cover with medicinal plants, mushrooms, and wild flora."
+      },
+      {
+        "icon": "fas fa-dove",
+        "title": "Bird Watching",
+        "description": "Spot Malabar whistling thrush, hornbills, and bulbuls in wooded areas."
+      },
+      {
+        "icon": "fas fa-paw",
+        "title": "Wildlife Sightings",
+        "description": "Occasional sightings of monkeys, deer, and wild boars."
+      }
+    ],
+    "conclusion": [
+      "Mahabaleshwar’s forest trails offer a great opportunity to reconnect with nature.",
+      "The biodiversity of the Western Ghats is rich and protected here."
+    ]
+  },
+  "howToReach": [
+    {
+      "icon": "fas fa-plane",
+      "title": "By Air",
+      "details": [
+        "Nearest airport: Pune (120 km)",
+        "Mumbai Airport: 260 km"
+      ]
+    },
+    {
+      "icon": "fas fa-train",
+      "title": "By Train",
+      "details": [
+        "Nearest station: Wathar (60 km)",
+        "Best connected via Pune and Satara"
+      ]
+    },
+    {
+      "icon": "fas fa-car",
+      "title": "By Road",
+      "details": [
+        "From Mumbai: 260 km via NH66 and Panchgani",
+        "From Pune: 120 km via NH48"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Sunrise at Wilson Point"
+    },
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Strawberry Farm"
+    },
+    {
+      "src": "/assets/images/hill_stations.jpg",
+      "thumb": "/assets/images/hill_stations.jpg",
+      "alt": "Boating at Venna Lake"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Evershine Resort",
+      "image": "/assets/images/hill_stations.jpg",
+      "rating": "4.5",
+      "url": "https://example.com/evershine",
+      "facilities": ["wifi", "ac", "pool", "parking"]
+    },
+    {
+      "name": "Brightland Resort",
+      "image": "/assets/images/hill_stations.jpg",
+      "rating": "4.4",
+      "url": "https://example.com/brightland",
+      "facilities": ["wifi", "ac", "spa"]
+    }
+  ],
+  "bookingTips": [
+    {
+      "icon": "fas fa-calendar",
+      "description": "Book resorts early for holidays and weekends."
+    },
+    {
+      "icon": "fas fa-sun",
+      "description": "Strawberry season and winter months are most crowded."
+    },
+    {
+      "icon": "fas fa-car",
+      "description": "Plan transport as hilly roads may delay travel during monsoons."
+    }
+  ]
+}
