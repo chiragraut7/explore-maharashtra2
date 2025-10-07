@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function ComingSoon() {
   const [heading, setHeading] = useState("");
@@ -39,35 +40,37 @@ export default function ComingSoon() {
       }
     }, speed);
 
-    return () => clearInterval(typeHeading);
+    return () => {
+      clearInterval(typeHeading);
+    };
   }, []);
 
   return (
-    <section className="highlight-item p-0 rounded overflow-hidden">
+    <section className="highlight-item p-0 rounded overflow-hidden relative">
       <div className="row align-items-center">
         <div className="col-12 relative">
-          <div className="hotelComingSoon">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-blue-800 mb-6 tracking-wide drop-shadow-sm leading-tight">
-            {heading}
-          </h1>
+          <div className="hotelComingSoon text-center px-4">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-blue-800 mb-6 tracking-wide drop-shadow-sm leading-tight">
+              {heading}
+            </h1>
 
-          {/* <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-medium max-w-3xl mb-5 leading-relaxed">
-            {line1}
-          </p>
-
-          <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-3xl leading-relaxed italic">
-            {line2}
-          </p> */}
           </div>
-          <img src="../../assets/images/hotel2.png" width="100%" alt="Hotel" />
-          </div> 
+
+          <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] mt-6">
+            <Image
+              src="/assets/images/hotel2.png"
+              alt="Hotel"
+              fill
+              className="object-cover rounded"
+              priority
+            />
+          </div>
+        </div>
       </div>
+
       {/* Floating gradient shapes */}
       <div className="absolute top-10 left-10 w-40 h-40 bg-blue-200/40 rounded-full blur-3xl animate-bounce-slow"></div>
       <div className="absolute bottom-10 right-10 w-52 h-52 bg-cyan-200/40 rounded-full blur-3xl animate-bounce-slow delay-500"></div>
-
-      {/* Text Content */}
-      
     </section>
   );
 }

@@ -17,18 +17,93 @@ import Hotels from '../../components/commonComponents/Hotels'
 import BookingTips from '../../components/commonComponents/BookingTips'
 import ComingSoon from '../../components/commonComponents/ComingSoon'
 
+// -------------------- Types --------------------
+type DetailItem = { icon?: string; label?: string; value?: string }
+
+type GeographyContent = {
+  image?: string
+  intro?: string
+  details?: DetailItem[]
+  climate?: { description?: string; seasons?: { icon?: string; text?: string }[] }
+  conclusion?: string
+}
+
+type Activity = {
+  icon?: string
+  title?: string
+  description?: string
+  details?: DetailItem[]
+}
+
+type Attraction = {
+  image?: string
+  title?: string
+  description?: string
+  icon?: string
+  label?: string
+  value?: string
+}
+
+type MarineItem = {
+  icon?: string
+  title?: string
+  description?: string
+}
+
+type MarineLifeContent = {
+  title?: string
+  intro?: string
+  items?: MarineItem[]
+  conclusion?: string[]
+}
+
+type TransportItem = {
+  icon?: string
+  title?: string
+  details?: string[]
+}
+
+type GalleryImage = {
+  src?: string
+  thumb?: string
+  alt?: string
+}
+
+type BookingTip = {
+  title?: string
+  description?: string
+}
+
+type Destination = {
+  title: string
+  subtitle?: string
+  bannerImage?: string
+  color?: string
+  overview?: { title?: string; description?: string }
+  highlights?: { icon?: string; title?: string; description?: string }[]
+  geography?: GeographyContent
+  activities?: Activity[]
+  attractions?: Attraction[]
+  marineLife?: MarineLifeContent
+  gallery?: GalleryImage[]
+  howToReach?: TransportItem[]
+  bookingTips?: BookingTip[]
+}
+
+// -------------------- Component --------------------
 export default function ItemPage() {
   const { category, id } = useParams() as { category?: string; id?: string }
-  const [data, setData] = useState<any>(null)
+  const [data, setData] = useState<Destination | null>(null)
   const [loading, setLoading] = useState(true)
   const [view, setView] = useState<'info' | 'hotels'>('info')
 
   useEffect(() => {
     if (!category || !id) return
     setLoading(true)
+
     fetch(`/api/${category}/${id}`)
       .then(res => res.json())
-      .then(json => setData(json))
+      .then((json: Destination) => setData(json))
       .catch(err => console.error('Failed to fetch data', err))
       .finally(() => setLoading(false))
   }, [category, id])
@@ -64,7 +139,7 @@ export default function ItemPage() {
         title={data.title}
         subtitle={data.subtitle}
         image={data.bannerImage}
-        color={data.color}   // JSON-driven color
+        color={data.color}
         view={view}
         setView={setView}
       />
@@ -72,16 +147,24 @@ export default function ItemPage() {
       <main className="container my-5">
         {view === 'info' && (
           <div id="overViewInfo">
-            <Overview content={data.overview} color={data.color} />
-            {data.highlights?.length > 0 && (
+            {data.overview && <Overview content={data.overview} color={data.color} />}
+            {data.highlights && data.highlights.length > 0 && (
               <Highlights highlights={data.highlights} color={data.color} />
             )}
             {data.geography && <Geography content={data.geography} color={data.color} />}
-            {data.activities?.length > 0 && <Activities activities={data.activities} color={data.color} />}
-            {data.attractions?.length > 0 && <Attractions items={data.attractions} color={data.color} />}
+            {data.activities && data.activities.length > 0 && (
+              <Activities activities={data.activities} color={data.color} />
+            )}
+            {data.attractions && data.attractions.length > 0 && (
+              <Attractions items={data.attractions} color={data.color} />
+            )}
             {data.marineLife && <MarineLife content={data.marineLife} color={data.color} />}
-            {data.gallery?.length > 0 && <Gallery images={data.gallery} color={data.color} />}
-            {data.howToReach?.length > 0 && <HowToReach transport={data.howToReach} color={data.color} />}
+            {data.gallery && data.gallery.length > 0 && (
+              <Gallery images={data.gallery} color={data.color} />
+            )}
+            {data.howToReach && data.howToReach.length > 0 && (
+              <HowToReach transport={data.howToReach} color={data.color} />
+            )}
           </div>
         )}
 
@@ -90,10 +173,11 @@ export default function ItemPage() {
             <div id="comingSoon">
               <ComingSoon />
             </div>
-
             <div id="hotelsList" className="hidden">
               <Hotels />
-              {data.bookingTips?.length > 0 && <BookingTips tips={data.bookingTips} />}
+              {data.bookingTips && data.bookingTips.length > 0 && (
+                <BookingTips tips={data.bookingTips} />
+              )}
             </div>
           </>
         )}

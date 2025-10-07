@@ -1,7 +1,8 @@
-"use client";
+'use client'
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 type Hotel = {
   slug?: string;
@@ -26,7 +27,6 @@ type Hotel = {
     rate_for_two: string;
     extra_person?: string;
   }[];
-  // Extend with other fields as per your data
 };
 
 export default function HotelDetail() {
@@ -45,10 +45,12 @@ export default function HotelDetail() {
         const res = await fetch(`/api/${category}/${id}/hotels/${hotelSlug}`);
         if (!res.ok) throw new Error(`Error fetching hotel: ${res.statusText}`);
 
-        const data: Hotel = await res.json();
+        const data = (await res.json()) as Hotel; // typed instead of any
         setHotel(data);
-      } catch (err: any) {
-        setError(err.message || "Failed to load hotel");
+      } catch (err) {
+        // safely extract message
+        const msg = err instanceof Error ? err.message : "Failed to load hotel";
+        setError(msg);
       } finally {
         setLoading(false);
       }
@@ -70,12 +72,15 @@ export default function HotelDetail() {
       {hotel.gallery && hotel.gallery.length > 0 && (
         <div className="mb-6 flex gap-3 overflow-x-auto">
           {hotel.gallery.map((img, i) => (
-            <img
-              key={i}
-              src={img.startsWith("http") ? img : `/${img.replace(/^\/+/, "")}`}
-              alt={`${hotel.name} image ${i + 1}`}
-              className="h-40 rounded"
-            />
+            <div key={i} className="relative w-60 h-40 flex-shrink-0 rounded overflow-hidden">
+              <Image
+                src={img.startsWith("http") ? img : `/${img.replace(/^\/+/, "")}`}
+                alt={`${hotel.name} image ${i + 1}`}
+                fill
+                className="object-cover"
+                priority={i < 2}
+              />
+            </div>
           ))}
         </div>
       )}
@@ -127,7 +132,12 @@ export default function HotelDetail() {
           {hotel.contact.website && (
             <p>
               Website:{" "}
-              <a href={hotel.contact.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+              <a
+                href={hotel.contact.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 underline"
+              >
                 {hotel.contact.website}
               </a>
             </p>

@@ -50,9 +50,10 @@ export default function Hotels() {
         if (!res.ok) throw new Error("Failed to fetch hotels");
         const data: Hotel[] = await res.json();
         setHotels(data);
-      } catch (err: any) {
+      } catch (err: unknown) {
+        const message = err instanceof Error ? err.message : "Unknown error";
         console.error(err);
-        setError(err.message || "Unknown error");
+        setError(message);
       } finally {
         setLoading(false);
       }
@@ -64,7 +65,7 @@ export default function Hotels() {
         if (!res.ok) throw new Error("Failed to fetch icons");
         const data: Record<string, string> = await res.json();
         setIcons(data);
-      } catch (err) {
+      } catch (err: unknown) {
         console.error(err);
       }
     }
@@ -85,46 +86,40 @@ export default function Hotels() {
           <h2 className="section-title text-2xl font-semibold mb-4">Nearby Hotels</h2>
         </div>
         <div className="col-auto">
-
-      {/* View Toggle Buttons */}
-      <div className="flex justify-end mb-4">
-        <div className="btn-group" role="group" aria-label="View Toggle">
-          <button
-            type="button"
-            className={`btn btn-secondary ${view === "tile" ? "active" : ""}`}
-            onClick={() => setView("tile")}
-            title="Tile View"
-          >
-            <i className="fa fa-th-large"></i>
-          </button>
-          <button
-            type="button"
-            className={`btn btn-secondary ${view === "list" ? "active" : ""}`}
-            onClick={() => setView("list")}
-            title="List View"
-          >
-            <i className="fa fa-list"></i>
-          </button>
+          <div className="flex justify-end mb-4">
+            <div className="btn-group" role="group" aria-label="View Toggle">
+              <button
+                type="button"
+                className={`btn btn-secondary ${view === "tile" ? "active" : ""}`}
+                onClick={() => setView("tile")}
+                title="Tile View"
+              >
+                <i className="fa fa-th-large"></i>
+              </button>
+              <button
+                type="button"
+                className={`btn btn-secondary ${view === "list" ? "active" : ""}`}
+                onClick={() => setView("list")}
+                title="List View"
+              >
+                <i className="fa fa-list"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
-        </div>
-      </div>
-
-
-      {/* Hotels Grid / List */}
       <div className={view === "tile" ? "grid md:grid-cols-2 lg:grid-cols-3 gap-6" : "flex flex-col gap-4"}>
-        {hotels.map((hotel: Hotel, i: number) => (
+        {hotels.map((hotel, i) => (
           <Link
             key={i}
-            href={`/${category}/${id}/${hotel.slug}`} // Link to hotel page
+            href={`/${category}/${id}/${hotel.slug}`}
             className={`hotel-card p-3 ${view === "list" ? "md:flex-row d-flex" : ""}`}
           >
-            {/* Image Slider */}
             {hotel.gallery && hotel.gallery.length > 0 && (
               <div className={`${view === "list" ? "md:w-1/3 pr-3" : "pb-3"} relative`}>
                 <Swiper modules={[Navigation, Pagination]} navigation pagination={{ clickable: true }}>
-                  {hotel.gallery.map((img: string, idx: number) => (
+                  {hotel.gallery.map((img, idx) => (
                     <SwiperSlide key={idx}>
                       <Image
                         src={img.startsWith("http") || img.startsWith("/") ? img : `/${img.replace(/^\/+/, "")}`}
@@ -138,7 +133,6 @@ export default function Hotels() {
               </div>
             )}
 
-            {/* Hotel Details */}
             <div className={`${view === "list" ? "md:w-2/3 p-0" : "p-0"} hotel-content`}>
               <div className="hotel-title">{hotel.name}</div>
 
@@ -146,7 +140,7 @@ export default function Hotels() {
                 <>
                   {hotel.rating && <div className="rating">⭐ {hotel.rating}</div>}
                   <div className="hotel-facilities flex gap-2">
-                    {(hotel.facilitiesN || []).slice(0, 4).map((f: string) => (
+                    {(hotel.facilitiesN || []).slice(0, 4).map((f) => (
                       <span key={f} dangerouslySetInnerHTML={{ __html: icons[f] || "" }} />
                     ))}
                   </div>
@@ -155,11 +149,9 @@ export default function Hotels() {
 
               {view === "list" && (
                 <>
-                  {hotel.overview && (
-                    <p className="text-sm text-gray-700 mb-2">{hotel.overview.slice(0, 500)}</p>
-                  )}
+                  {hotel.overview && <p className="text-sm text-gray-700 mb-2">{hotel.overview.slice(0, 500)}</p>}
                   <div className="hotel-facilities flex flex-wrap gap-2 mb-2">
-                    {(hotel.facilitiesN || []).map((f: string) => (
+                    {(hotel.facilitiesN || []).map((f) => (
                       <span key={f} dangerouslySetInnerHTML={{ __html: icons[f] || "" }} />
                     ))}
                   </div>
@@ -171,7 +163,10 @@ export default function Hotels() {
                       {hotel.contact.email && <p>Email: {hotel.contact.email}</p>}
                       {hotel.contact.website && (
                         <p>
-                          Website: <a href={hotel.contact.website} target="_blank" rel="noopener noreferrer">{hotel.contact.website}</a>
+                          Website:{" "}
+                          <a href={hotel.contact.website} target="_blank" rel="noopener noreferrer">
+                            {hotel.contact.website}
+                          </a>
                         </p>
                       )}
                     </div>
@@ -181,9 +176,7 @@ export default function Hotels() {
                     <div className="text-sm text-gray-600">
                       {hotel.location.address && <p>Address: {hotel.location.address}</p>}
                       {hotel.location.distance_from_beach && <p>Distance: {hotel.location.distance_from_beach}</p>}
-                      {hotel.location.map_embed && (
-                        <div dangerouslySetInnerHTML={{ __html: hotel.location.map_embed }} />
-                      )}
+                      {hotel.location.map_embed && <div dangerouslySetInnerHTML={{ __html: hotel.location.map_embed }} />}
                     </div>
                   )}
                 </>

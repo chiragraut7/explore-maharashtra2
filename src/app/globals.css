@@ -1218,6 +1218,7 @@ nextjs-portal {
     top: 20%;
     left: 18%;
     text-align: center;
+    z-index: 77;
 }
 .hotelComingSoon h1 {
     font-size: clamp(16px, 2.8dvw, 42px);
