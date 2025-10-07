@@ -1,4 +1,4 @@
-// app/layout.tsx
+/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
 
 import '@fortawesome/fontawesome-free/css/all.min.css'
@@ -25,7 +25,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body>
+      <body className={quicksand.className}>
         <Header />
         {children}
         <Footer />

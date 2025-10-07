@@ -54,6 +54,18 @@ export default function ComingSoon() {
               {heading}
             </h1>
 
+
+            {line1 && (
+              <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-medium max-w-3xl mb-5 leading-relaxed mx-auto hidden">
+                {line1}
+              </p>
+            )}
+
+            {line2 && (
+              <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-3xl leading-relaxed italic mx-auto hidden">
+                {line2}
+              </p>
+            )}
           </div>
 
           <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] mt-6">
