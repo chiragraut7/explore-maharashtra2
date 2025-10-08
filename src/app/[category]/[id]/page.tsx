@@ -13,7 +13,6 @@ import Attractions from '../../components/commonComponents/Attractions'
 import MarineLife from '../../components/commonComponents/MarineLife'
 import HowToReach from '../../components/commonComponents/HowToReach'
 import Gallery from '../../components/commonComponents/Gallery'
-import Hotels from '../../components/commonComponents/Hotels'
 import BookingTips from '../../components/commonComponents/BookingTips'
 import ComingSoon from '../../components/commonComponents/ComingSoon'
 
@@ -172,12 +171,6 @@ export default function ItemPage() {
           <>
             <div id="comingSoon">
               <ComingSoon />
-            </div>
-            <div id="hotelsList" className="hidden">
-              <Hotels />
-              {data.bookingTips && data.bookingTips.length > 0 && (
-                <BookingTips tips={data.bookingTips} />
-              )}
             </div>
           </>
         )}

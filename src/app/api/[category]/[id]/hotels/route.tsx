@@ -5,7 +5,7 @@ import fs from "fs/promises";
 
 export async function GET(
   req: Request,
-  context: { params: { category: string; id: string } }
+  context: { params: { [key: string]: string } } // <-- must be this
 ) {
   const { category, id } = context.params;
 
