@@ -7,13 +7,10 @@ interface IndexItem {
   slug: string;
 }
 
-export async function GET(
-  req: Request,
-  context: { params: { [key: string]: string } } // ✅ must be this
-) {
+export async function GET(req: Request, context: any) {
   const { category, id } = context.params;
 
-  // Helper to check if file exists
+  // Helper to check if a file exists
   async function fileExists(filePath: string) {
     try {
       await fs.access(filePath);
@@ -26,14 +23,14 @@ export async function GET(
   try {
     const basePath = path.join(process.cwd(), "public", "data", category);
 
-    // Try direct file match (e.g. kelva-beach.json)
+    // Try direct file match (e.g., kelwa-beach.json)
     const slugFile = path.join(basePath, `${id}.json`);
     if (await fileExists(slugFile)) {
       const jsonData = await fs.readFile(slugFile, "utf-8");
       return NextResponse.json(JSON.parse(jsonData));
     }
 
-    // Otherwise check index.json for mapping id -> slug
+    // Otherwise, check index.json mapping id -> slug
     const indexFile = path.join(basePath, "index.json");
     if (await fileExists(indexFile)) {
       const indexData: IndexItem[] = JSON.parse(await fs.readFile(indexFile, "utf-8"));
@@ -48,7 +45,7 @@ export async function GET(
       }
     }
 
-    return NextResponse.json({ error: `No data found for ${id}` }, { status: 404 });
+    return NextResponse.json({ error: `No data found for id "${id}"` }, { status: 404 });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : "Something went wrong";
     return NextResponse.json({ error: message }, { status: 500 });
