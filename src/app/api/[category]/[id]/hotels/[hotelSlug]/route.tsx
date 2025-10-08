@@ -1,4 +1,3 @@
-// ./src/app/api/[category]/[id]/hotels/[hotelSlug]/route.tsx
 import { NextResponse } from "next/server";
 import path from "path";
 import fs from "fs/promises";
@@ -9,11 +8,9 @@ interface Params {
   hotelSlug: string;
 }
 
-export async function GET(
-  req: Request,
-  { params }: { params: Params }
-) {
-  const { category, id, hotelSlug } = params;
+// ✅ FIX: The second argument must be named `context` with `.params`
+export async function GET(request: Request, context: { params: Params }) {
+  const { category, id, hotelSlug } = context.params;
 
   const hotelFilePath = path.join(
     process.cwd(),
