@@ -41,6 +41,7 @@ export default function Hotels() {
   const [error, setError] = useState<string | null>(null);
   const [view, setView] = useState<"tile" | "list">("tile");
 
+  // Fetch hotels and icons
   useEffect(() => {
     if (!category || !id) return;
 
@@ -51,9 +52,7 @@ export default function Hotels() {
         const data: Hotel[] = await res.json();
         setHotels(data);
       } catch (err: unknown) {
-        const message = err instanceof Error ? err.message : "Unknown error";
-        console.error(err);
-        setError(message);
+        setError(err instanceof Error ? err.message : "Unknown error");
       } finally {
         setLoading(false);
       }
@@ -65,7 +64,7 @@ export default function Hotels() {
         if (!res.ok) throw new Error("Failed to fetch icons");
         const data: Record<string, string> = await res.json();
         setIcons(data);
-      } catch (err: unknown) {
+      } catch (err) {
         console.error(err);
       }
     }
@@ -74,58 +73,60 @@ export default function Hotels() {
     fetchIcons();
   }, [category, id]);
 
-  if (!category || !id) return <p>Loading destination...</p>;
-  if (loading) return <p>Loading hotels...</p>;
-  if (error) return <p className="text-red-600">Error: {error}</p>;
-  if (!hotels.length) return <p>No hotels found.</p>;
+  if (!category || !id) return <p className="text-center py-4">Loading destination...</p>;
+  if (loading) return <p className="text-center py-4">Loading hotels...</p>;
+  if (error) return <p className="text-center text-red-600 py-4">Error: {error}</p>;
+  if (!hotels.length) return <p className="text-center py-4">No hotels found.</p>;
 
   return (
     <section id="hotels" className="mb-5">
-      <div className="row justify-content-between">
-        <div className="col-auto">
-          <h2 className="section-title text-2xl font-semibold mb-4">Nearby Hotels</h2>
-        </div>
-        <div className="col-auto">
-          <div className="flex justify-end mb-4">
-            <div className="btn-group" role="group" aria-label="View Toggle">
-              <button
-                type="button"
-                className={`btn btn-secondary ${view === "tile" ? "active" : ""}`}
-                onClick={() => setView("tile")}
-                title="Tile View"
-              >
-                <i className="fa fa-th-large"></i>
-              </button>
-              <button
-                type="button"
-                className={`btn btn-secondary ${view === "list" ? "active" : ""}`}
-                onClick={() => setView("list")}
-                title="List View"
-              >
-                <i className="fa fa-list"></i>
-              </button>
-            </div>
-          </div>
+      {/* Header + View Toggle */}
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="section-title text-2xl font-semibold">Nearby Hotels</h2>
+        <div className="flex gap-2">
+          <button
+            className={`btn btn-secondary ${view === "tile" ? "active" : ""}`}
+            onClick={() => setView("tile")}
+            title="Tile View"
+          >
+            <i className="fa fa-th-large"></i>
+          </button>
+          <button
+            className={`btn btn-secondary ${view === "list" ? "active" : ""}`}
+            onClick={() => setView("list")}
+            title="List View"
+          >
+            <i className="fa fa-list"></i>
+          </button>
         </div>
       </div>
 
+      {/* Hotels Grid/List */}
       <div className={view === "tile" ? "grid md:grid-cols-2 lg:grid-cols-3 gap-6" : "flex flex-col gap-4"}>
         {hotels.map((hotel, i) => (
           <Link
             key={i}
             href={`/${category}/${id}/${hotel.slug}`}
-            className={`hotel-card p-3 ${view === "list" ? "md:flex-row d-flex" : ""}`}
+            className={`hotel-card border rounded overflow-hidden hover:shadow-lg transition ${
+              view === "list" ? "flex flex-col md:flex-row" : ""
+            }`}
           >
+            {/* Image Gallery */}
             {hotel.gallery && hotel.gallery.length > 0 && (
-              <div className={`${view === "list" ? "md:w-1/3 pr-3" : "pb-3"} relative`}>
-                <Swiper modules={[Navigation, Pagination]} navigation pagination={{ clickable: true }}>
+              <div className={`${view === "list" ? "md:w-1/3 pr-3" : "w-full h-64"} relative`}>
+                <Swiper
+                  modules={[Navigation, Pagination]}
+                  navigation
+                  pagination={{ clickable: true }}
+                  className="h-full"
+                >
                   {hotel.gallery.map((img, idx) => (
                     <SwiperSlide key={idx}>
                       <Image
                         src={img.startsWith("http") || img.startsWith("/") ? img : `/${img.replace(/^\/+/, "")}`}
                         alt={hotel.name}
                         fill
-                        className="imgWidth"
+                        className="object-cover w-full h-full"
                       />
                     </SwiperSlide>
                   ))}
@@ -133,13 +134,14 @@ export default function Hotels() {
               </div>
             )}
 
-            <div className={`${view === "list" ? "md:w-2/3 p-0" : "p-0"} hotel-content`}>
-              <div className="hotel-title">{hotel.name}</div>
+            {/* Hotel Info */}
+            <div className={`${view === "list" ? "md:w-2/3 p-3" : "p-3"} flex flex-col justify-between`}>
+              <h3 className="text-xl font-semibold mb-2">{hotel.name}</h3>
 
               {view === "tile" && (
                 <>
-                  {hotel.rating && <div className="rating">⭐ {hotel.rating}</div>}
-                  <div className="hotel-facilities flex gap-2">
+                  {hotel.rating && <div className="mb-1">⭐ {hotel.rating}</div>}
+                  <div className="flex gap-2 flex-wrap">
                     {(hotel.facilitiesN || []).slice(0, 4).map((f) => (
                       <span key={f} dangerouslySetInnerHTML={{ __html: icons[f] || "" }} />
                     ))}
@@ -149,8 +151,9 @@ export default function Hotels() {
 
               {view === "list" && (
                 <>
-                  {hotel.overview && <p className="text-sm text-gray-700 mb-2">{hotel.overview.slice(0, 500)}</p>}
-                  <div className="hotel-facilities flex flex-wrap gap-2 mb-2">
+                  {hotel.overview && <p className="text-gray-700 mb-2">{hotel.overview.slice(0, 500)}</p>}
+
+                  <div className="flex flex-wrap gap-2 mb-2">
                     {(hotel.facilitiesN || []).map((f) => (
                       <span key={f} dangerouslySetInnerHTML={{ __html: icons[f] || "" }} />
                     ))}
@@ -164,7 +167,12 @@ export default function Hotels() {
                       {hotel.contact.website && (
                         <p>
                           Website:{" "}
-                          <a href={hotel.contact.website} target="_blank" rel="noopener noreferrer">
+                          <a
+                            href={hotel.contact.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 underline"
+                          >
                             {hotel.contact.website}
                           </a>
                         </p>
@@ -176,7 +184,9 @@ export default function Hotels() {
                     <div className="text-sm text-gray-600">
                       {hotel.location.address && <p>Address: {hotel.location.address}</p>}
                       {hotel.location.distance_from_beach && <p>Distance: {hotel.location.distance_from_beach}</p>}
-                      {hotel.location.map_embed && <div dangerouslySetInnerHTML={{ __html: hotel.location.map_embed }} />}
+                      {hotel.location.map_embed && (
+                        <div dangerouslySetInnerHTML={{ __html: hotel.location.map_embed }} />
+                      )}
                     </div>
                   )}
                 </>

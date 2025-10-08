@@ -2,11 +2,8 @@ import { NextResponse } from "next/server";
 import path from "path";
 import fs from "fs/promises";
 
-// ✅ Define params inline (no Next.js type import needed)
-export async function GET(
-  req: Request,
-  context: { params: { category: string; id: string; hotelSlug: string } }
-) {
+export async function GET(req: Request, context: any) {
+  // Extract params without TypeScript type
   const { category, id, hotelSlug } = context.params;
 
   const hotelFilePath = path.join(
