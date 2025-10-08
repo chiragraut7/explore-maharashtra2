@@ -2,18 +2,11 @@ import { NextRequest, NextResponse } from "next/server";
 import path from "path";
 import { promises as fs } from "fs";
 
-export async function GET(
-  req: NextRequest,
-  { params }: { params: { category: string } }
-) {
-  // Await params here as per Next.js 15 dynamic API change
-  const { category } = await params;
+export async function GET(req: NextRequest, context: any) {
+  const { category } = context.params;
 
   if (!category) {
-    return NextResponse.json(
-      { error: "Category is required" },
-      { status: 400 }
-    );
+    return NextResponse.json({ error: "Category is required" }, { status: 400 });
   }
 
   try {
@@ -24,20 +17,18 @@ export async function GET(
     try {
       files = await fs.readdir(folderPath);
     } catch {
-      // no folder → return empty array
       return NextResponse.json([]);
     }
 
     const items = await Promise.all(
       files
-        .filter((f) => f.endsWith(".json")) // only JSON files
+        .filter((f) => f.endsWith(".json"))
         .map(async (file) => {
           try {
             const filePath = path.join(folderPath, file);
             const content = await fs.readFile(filePath, "utf-8");
             const parsed = JSON.parse(content);
 
-            // normalize - always return an array
             return Array.isArray(parsed) ? parsed : [parsed];
           } catch (err) {
             console.error(`❌ Failed to read ${file}:`, err);
