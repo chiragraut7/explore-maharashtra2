@@ -130,8 +130,56 @@ footer {
 }
 
 header .navbar .nav-item .text-white {
-  color: var(--heading-color) !important;
+    color: var(--heading-color) !important;
+    height: 71px;
+    margin: -10px 0;
+    padding: 24px 10px;
 }
+
+header .navbar .nav-item .nav-link {
+  position: relative;
+  display: block;
+  padding: 24px 12px;
+  color: var(--heading-color) !important;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  z-index: 1;
+}
+
+/* Circular zoom effect */
+header .navbar .nav-item .nav-link::before,
+header .navbar .nav-item .nav-link.active::before  {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+/* Hover state */
+header .navbar .nav-item .nav-link:hover::before,
+header .navbar .nav-item .nav-link.active::before {
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -50%);
+}
+
+header .navbar .nav-item .nav-link:hover,
+header .navbar .nav-item .nav-link.active {
+  color: #fff !important;
+}
+
+header .navbar .nav-item .nav-link span{
+  position: relative;
+  z-index: 1;
+}
+
 
 header .banner h1,
 header .banner p {
@@ -1262,4 +1310,55 @@ nextjs-portal {
 .containertimeline .content .contenttimeline .btn-outline-primary:hover{
   color: #fff;
   opacity: .7;
+}
+.homeLinks a{
+  text-decoration: none;
+}
+.homeLinks a i{
+    font-size: 65px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.homeLinks a h3{
+    font-size: 16px;
+    color: var(--primary-color);
+}
+.homeLinks a .card {
+    border-radius: 0;
+    background-color: #ffffff;
+    height: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 16px;
+    box-shadow: 0 3px 7px rgb(0 0 0 / 30%);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.homeLinks a .card::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: var(--primary-color);
+  opacity: 0.2;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.homeLinks a .card:hover::before {
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.homeLinks a .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }

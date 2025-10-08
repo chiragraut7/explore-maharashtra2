@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-'use client'
-
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'aos/dist/aos.css'
@@ -12,11 +9,21 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import { ReactNode } from 'react'
 
+// ✅ Google Font
 const quicksand = Quicksand({
   subsets: ['latin'],
   weight: ['500', '700'],
   display: 'swap',
 })
+
+// ✅ Metadata (allowed only in server components)
+export const metadata = {
+  title: 'Explore Maharashtra',
+  description: 'Discover Beaches, Hill Stations, Forts, Nature, and Culture of Maharashtra.',
+  icons: {
+    icon: '/favicon.ico',
+  },
+}
 
 interface RootLayoutProps {
   children: ReactNode
