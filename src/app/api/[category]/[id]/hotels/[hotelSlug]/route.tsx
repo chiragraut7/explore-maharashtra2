@@ -2,14 +2,11 @@ import { NextResponse } from "next/server";
 import path from "path";
 import fs from "fs/promises";
 
-interface Params {
-  category: string;
-  id: string;
-  hotelSlug: string;
-}
-
-// ✅ FIX: The second argument must be named `context` with `.params`
-export async function GET(request: Request, context: { params: Params }) {
+// ✅ Define params inline (no Next.js type import needed)
+export async function GET(
+  req: Request,
+  context: { params: { category: string; id: string; hotelSlug: string } }
+) {
   const { category, id, hotelSlug } = context.params;
 
   const hotelFilePath = path.join(
@@ -27,7 +24,7 @@ export async function GET(request: Request, context: { params: Params }) {
     const hotel = JSON.parse(jsonData);
     return NextResponse.json(hotel);
   } catch (err) {
-    console.error(`Error fetching hotel data:`, err);
+    console.error("Error fetching hotel data:", err);
     return NextResponse.json(
       { error: `Hotel "${hotelSlug}" not found in ${category}/${id}` },
       { status: 404 }
