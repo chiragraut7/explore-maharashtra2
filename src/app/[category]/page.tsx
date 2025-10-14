@@ -1,14 +1,16 @@
-"use client";
+'use client';
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface Item {
-  id?: string;
+  id?: string | number;
   slug?: string;
-  title: string;
+  title?: string;
   name?: string;
   bannerImage?: string;
   subtitle?: string;
@@ -22,13 +24,18 @@ export default function CategoryPage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
+  useEffect(() => {
     async function fetchItems() {
       setLoading(true);
       setError(null);
       try {
         const res = await fetch(`/api/${category}`);
         if (!res.ok) throw new Error(`Failed to fetch: ${res.statusText}`);
-        const data: Item[] = await res.json();
+        const json = await res.json();
+        const data: Item[] = json.success ? json.data : [];
         setItems(data);
       } catch (err) {
         setError(err instanceof Error ? err.message : "Unknown error");
@@ -40,12 +47,17 @@ export default function CategoryPage() {
     if (category) fetchItems();
   }, [category]);
 
+  // Slug generator
   const generateSlug = (item: Item) => {
     if (item.slug) return item.slug;
-    if (item.id) return item.id;
+    if (item.id) return item.id.toString();
     if (item.title) return item.title.toLowerCase().replace(/\s+/g, "-");
+    if (item.name) return item.name.toLowerCase().replace(/\s+/g, "-");
     return "";
   };
+
+  // Capitalize category for display
+  const categoryTitle = category.charAt(0).toUpperCase() + category.slice(1);
 
   return (
     <>
@@ -53,11 +65,9 @@ export default function CategoryPage() {
       <header className="shadow-sm">
         <div className="banner">
           <div className="text-center py-5">
-            <h1 className="display-4 text-white fw-bold">
-              {category}
-            </h1>
+            <h1 className="display-4 text-white fw-bold">{categoryTitle}</h1>
             <p className="lead text-white">
-              Explore the best {category} of Maharashtra
+              Explore the best {categoryTitle} of Maharashtra
             </p>
           </div>
         </div>
@@ -69,17 +79,23 @@ export default function CategoryPage() {
           <h2 className="section-title mt-2">Overview</h2>
           <p>
             Maharashtra&apos;s{" "}
-            {category === "Beaches"
+            {category === "beaches"
               ? "coastline stretches over 700 km with pristine beaches and vibrant culture."
-              : category === "Hill Stations"
+              : category === "hills"
               ? "hill stations are known for their lush greenery, cool climate, and trekking trails."
-              : category === "Forts"
+              : category === "forts"
               ? "forts showcase the valor of Maratha empire and historic significance."
+              : category === "nature"
+              ? "nature spots include wildlife, waterfalls, and scenic landscapes."
+              : category === "religious"
+              ? "religious places reflect Maharashtra's rich spiritual heritage."
+              : category === "cultural"
+              ? "cultural sites display local arts, crafts, and unique traditions."
               : `amazing ${category}.`}
           </p>
         </div>
 
-        {/* Timeline List */}
+        {/* Timeline / Items */}
         <div className="timeline position-relative">
           {loading ? (
             <div className="page-loader text-center py-5">
@@ -129,10 +145,11 @@ export default function CategoryPage() {
                       width={600}
                       height={300}
                       priority={index < 2}
+                      className="rounded"
                     />
                   )}
                   <div className="contenttimeline">
-                    <p>{item.subtitle}</p>
+                    {item.subtitle && <p>{item.subtitle}</p>}
                     <Link
                       href={`/${category}/${generateSlug(item)}`}
                       className="btn btn-outline-primary"

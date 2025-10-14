@@ -1163,7 +1163,7 @@ nextjs-portal {
 }
 .swiper-button-prev,
 .swiper-button-next {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 .group:hover .swiper-button-prev,
@@ -1329,7 +1329,7 @@ nextjs-portal {
     background-color: #ffffff;
     height: 100%;
     border: 2px solid var(--primary-color);
-    border-radius: 16px;
+    border-radius: 15px;
     box-shadow: 0 3px 7px rgb(0 0 0 / 30%);
   position: relative;
   overflow: hidden;
@@ -1361,4 +1361,67 @@ nextjs-portal {
 .homeLinks a .card:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.herosection {
+    background-color: var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+.herosection::before {
+    content: '';
+    display: inline-block;
+    height: 24rem;
+    width: 100%;
+    width: 120%;
+    background-color: #fff;
+    background: linear-gradient(178deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(242, 81, 53, 1) 50%, rgba(242, 81, 53, 1) 100%);
+    transform-origin: top right;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.herosection::after {
+    content: '';
+    display: inline-block;
+    height: 24rem;
+    width: 120%;
+    background: linear-gradient(178deg, rgba(242, 81, 53, 1) 0%, rgba(242, 81, 53, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    /* transform: skewY(359deg); */
+    transform-origin: top right;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.homeSlide {
+    width: 100%;
+    height: 240px;
+    border: 2px solid #fff;
+    overflow: hidden;
+    z-index: 777;
+    position: relative;
+    border-radius: 15px;
+}
+.homeSilderText {
+    position: absolute;
+    bottom: 20px;
+    text-align: left !important;
+    background: hsl(0deg 0% 0% / 80%);
+    left: 20px;
+    border-radius: 10px;
+    max-width: calc(100% - 40px);
+}
+.homeSlide img {
+  height: 240px !important;
+  position: relative !important;
+}
+.homeSilderText h2{
+  color: #fff;
+  margin-top: 0;
+  text-align: left;
+}
+.homeSilderText p{
+  color: #fff;
+  margin-bottom: 0;
+  text-align: left;
 }
