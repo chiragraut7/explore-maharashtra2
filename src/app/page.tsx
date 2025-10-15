@@ -79,12 +79,12 @@ export default function Home() {
       <section className="container-fluid py-5 herosection">
         <div className="container">
           <div className="row g-4">
-            <div className="col-md-7"><div className="homeSlide"><BeachList /></div></div>
-            <div className="col-md-5"><div className="homeSlide"><HillList /></div></div>
-            <div className="col-md-5"><div className="homeSlide"><FortList /></div></div>
-            <div className="col-md-7"><div className="homeSlide"><NatureList /></div></div>
-            <div className="col-md-7"><div className="homeSlide"><ReligiousList /></div></div>
-            <div className="col-md-5"><div className="homeSlide"><CulturalList /></div></div>
+            <div className="col-md-12"><div className="homeSlide"><BeachList /></div></div>
+            <div className="col-md-12 odd"><div className="homeSlide"><HillList /></div></div>
+            <div className="col-md-12"><div className="homeSlide"><FortList /></div></div>
+            <div className="col-md-12 odd"><div className="homeSlide"><NatureList /></div></div>
+            <div className="col-md-12"><div className="homeSlide"><ReligiousList /></div></div>
+            <div className="col-md-12 odd"><div className="homeSlide"><CulturalList /></div></div>
           </div>
         </div>
       </section>

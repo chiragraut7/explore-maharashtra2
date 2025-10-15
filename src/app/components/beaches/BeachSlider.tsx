@@ -40,9 +40,13 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
-        slidesPerView={3}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 3000 }}
+        slidesPerView={1}
+        // pagination={{ clickable: true }}
+         autoplay={{
+          delay: 5000,
+          disableOnInteraction: false, // ✅ continue after user interaction
+          pauseOnMouseEnter: true,    // ✅ do NOT pause on hover
+        }}
         breakpoints={{
           320: { slidesPerView: 1 },
           768: { slidesPerView: 1 },

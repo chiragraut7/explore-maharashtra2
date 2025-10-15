@@ -21,22 +21,26 @@ const BeachCard: React.FC<BeachCardProps> = ({
   btnColor,
 }) => {
   return (
-    <div className="card h-100 shadow-sm border-0 rounded-3 overflow-hidden">
-      <Image
-        src={beach.bannerImage}
-        alt={beach.title}
-        width={500}
-        height={300}
-        className="card-img-top object-cover"
-      />
-      <div className="card-body">
-        <h5 className="card-title fw-bold">{beach.title}</h5>
-        <p className="card-text text-muted">{beach.subtitle}</p>
+    <div className="h-100 shadow-sm border-0 rounded-3">
+      <div className='homeSliderImg'>
+        <Image
+          src={beach.bannerImage}
+          alt={beach.title}
+          width={500}
+          height={300}
+          className="card-img-top object-cover"
+        />
+      </div>
+      <div className="homeSilderText p-3">
+        <h2>{beach.title}</h2>
+        <p>{beach.subtitle}</p>
         <Link
           key={beach.id}
-          href={`/${category}/${generateSlug(beach.id)}`} // ✅ pass beach.id
+          href={`/${category}/${generateSlug(beach.id)}`}
+          className="view-more-arrow"
         >
-          {btnLabel}
+          <span>View More</span>
+          <i className="fas fa-arrow-right"></i>
         </Link>
       </div>
     </div>
