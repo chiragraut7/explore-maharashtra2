@@ -7,37 +7,31 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import BeachCard from './BeachCard'
-
-interface Item {
-  id: string
-  title: string
-  subtitle: string
-  bannerImage: string
-  color?: string
-}
+import { Item } from '@/app/types'
 
 interface BeachSliderProps {
   beaches: Item[]
   category: string
-  generateSlug: (id: string) => string
+  generateSlug: (id: string) => string // ✅ accepts string
 }
 
-const categoryColors: { [key: string]: string } = {
+
+const categoryColors: Record<string, string> = {
   beaches: '#f45133',
   hills: '#4CAF50',
   forts: '#9C27B0',
   nature: '#3F51B5',
   religious: '#FF9800',
-  cultural: '#00BCD4'
+  cultural: '#00BCD4',
 }
 
-const categoryLabels: { [key: string]: string } = {
+const categoryLabels: Record<string, string> = {
   beaches: 'View Beach',
   hills: 'View Hill Station',
   forts: 'View Fort',
   nature: 'View Nature Spot',
   religious: 'View Religious Place',
-  cultural: 'View Cultural Spot'
+  cultural: 'View Cultural Spot',
 }
 
 const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSlug }) => {
@@ -52,7 +46,7 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
         breakpoints={{
           320: { slidesPerView: 1 },
           768: { slidesPerView: 1 },
-          1024: { slidesPerView: 1 }
+          1024: { slidesPerView: 1 },
         }}
         className="py-6"
       >

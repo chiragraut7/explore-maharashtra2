@@ -8,7 +8,9 @@ interface IndexItem {
 }
 
 export async function GET(req: Request, context: any) {
-  const { category, id } = context.params;
+  // ✅ FIX: Await context.params
+  const params = await context.params;
+  const { category, id } = params;
 
   // Helper to check if a file exists
   async function fileExists(filePath: string) {
@@ -45,9 +47,13 @@ export async function GET(req: Request, context: any) {
       }
     }
 
-    return NextResponse.json({ error: `No data found for id "${id}"` }, { status: 404 });
+    return NextResponse.json(
+      { error: `No data found for id "${id}" in category "${category}"` },
+      { status: 404 }
+    );
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : "Something went wrong";
+    console.error("Error in /api/[category]/[id]:", message);
     return NextResponse.json({ error: message }, { status: 500 });
   }
 }

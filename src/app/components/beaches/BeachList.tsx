@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import BeachSlider from '../BeachSlider'
+import BeachSlider from './BeachSlider'
 
 interface Beach {
   id: string

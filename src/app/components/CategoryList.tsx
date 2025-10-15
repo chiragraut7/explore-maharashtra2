@@ -2,13 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import BeachSlider from './beaches/BeachSlider'
-
-interface Item {
-  title: string
-  subtitle: string
-  bannerImage: string
-  color?: string
-}
+import { Item } from '@/app/types' // ✅ import shared type
 
 interface Props {
   category: string
@@ -24,7 +18,15 @@ const CategoryList: React.FC<Props> = ({ category }) => {
         const json = await res.json()
 
         if (Array.isArray(json)) {
-          setItems(json.slice(0, 5)) // first 5 items
+          // Map API response to match Item type
+          const formatted: Item[] = json.slice(0, 5).map((item: any) => ({
+            id: String(item.id ?? item.title ?? Math.random().toString()), // ensure string id
+            title: item.title,
+            subtitle: item.subtitle,
+            bannerImage: item.bannerImage,
+            color: item.color,
+          }))
+          setItems(formatted)
         } else {
           console.error('Unexpected API response', json)
         }
@@ -32,12 +34,13 @@ const CategoryList: React.FC<Props> = ({ category }) => {
         console.error(`Failed to fetch ${category}`, err)
       }
     }
+
     fetchItems()
   }, [category])
 
-  // generate slug for URLs
-  const generateSlug = (item: Item) =>
-    item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '')
+  // Generate slug from title
+  const generateSlug = (id: string) =>
+    id.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '')
 
   return (
     <>
