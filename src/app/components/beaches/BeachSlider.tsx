@@ -2,19 +2,19 @@
 
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules' // ✅ include EffectFade
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import 'swiper/css/effect-fade' // ✅ import fade effect CSS
 import BeachCard from './BeachCard'
 import { Item } from '@/app/types'
 
 interface BeachSliderProps {
   beaches: Item[]
   category: string
-  generateSlug: (id: string) => string // ✅ accepts string
+  generateSlug: (id: string) => string
 }
-
 
 const categoryColors: Record<string, string> = {
   beaches: '#f45133',
@@ -36,16 +36,18 @@ const categoryLabels: Record<string, string> = {
 
 const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSlug }) => {
   return (
-    <div className="relative">
+    <div className="relative fade-slider">
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[Navigation, Pagination, Autoplay, EffectFade]} // ✅ added EffectFade
         spaceBetween={20}
         slidesPerView={1}
-        // pagination={{ clickable: true }}
-         autoplay={{
+        effect="fade"
+        fadeEffect={{ crossFade: true }}
+        speed={1000} // ✅ transition duration
+        autoplay={{
           delay: 5000,
-          disableOnInteraction: false, // ✅ continue after user interaction
-          pauseOnMouseEnter: true,    // ✅ do NOT pause on hover
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true, // ✅ pauses on hover
         }}
         breakpoints={{
           320: { slidesPerView: 1 },

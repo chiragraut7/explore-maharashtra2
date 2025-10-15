@@ -1397,7 +1397,7 @@ nextjs-portal {
 }
 .homeSlide {
     width: 100%;
-    /* height: 426px; */
+    /* height: 225px; */
     z-index: 777;
     position: relative;
 }
@@ -1405,7 +1405,7 @@ nextjs-portal {
     position: absolute;
     bottom: 9px;
     text-align: left !important;
-    background: hsl(36.7deg 86.55% 53.33% / 94%);
+    background: hsla(0, 0%, 0%, 0.9);
     left: calc(90% - 238px);
     border-radius: 10px;
     max-width: calc(100% - 90% + 230px);
@@ -1413,27 +1413,30 @@ nextjs-portal {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
 }
 .homeSlide img {
-  height: 426px !important;
+  height: 225px !important;
   position: relative !important;
 }
 .homeSilderText h2{ 
-  color: #000;
+  color: #fff;
   margin-top: 0;
   text-align: left;
   font-size: 22px;
 }
 .homeSilderText p{
-  color: #000;
-  text-align: left;
-  font-size: 14px;
+    color: #fff;
+    text-align: left;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .homeSilderText a{
-  color: #000;
+  color: #fff;
   text-align: left;
 }
 .homeSliderImg{
   width: 90%;
-  height: 426px;
+  height: 225px;
   border: 2px solid #fff;
   border-radius: 15px;
   overflow: hidden;
@@ -1454,8 +1457,8 @@ nextjs-portal {
     gap: 0.5rem;
     font-weight: 500;
     text-decoration: none;
-    color: #000;
-    border: 2px solid #000;
+    color: #fff;
+    border: 1px solid #fff;
     padding: 0.2rem .5rem;
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -1470,7 +1473,7 @@ nextjs-portal {
 .view-more-arrow:hover {
     background: #000;
     color: #fff;
-    border-color: #000;
+    border-color: #fff;
 }
 
 .view-more-arrow:hover i {
