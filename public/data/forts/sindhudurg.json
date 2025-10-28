@@ -1,0 +1,99 @@
+{
+  "id": "sindhudurg",
+  "name": "Sindhudurg Fort",
+  "category": "Forts",
+  "bannerImage": "/images/forts/sindhudurg/sindhudurg-banner.jpg",
+  "sections": {
+    "overview": {
+      "title": "Overview",
+      "icon": "fa-solid fa-landmark",
+      "content": "Sindhudurg Fort, located on the scenic Malvan coast, is one of Maharashtra’s most iconic sea forts. Built by Chhatrapati Shivaji Maharaj in the 17th century, the fort stands proudly on an island surrounded by the Arabian Sea. It was designed to safeguard the Maratha Empire’s western coastline from foreign invaders."
+    },
+    "highlights": {
+      "title": "Highlights",
+      "icon": "fa-solid fa-star",
+      "points": [
+        "Built under the direct supervision of Chhatrapati Shivaji Maharaj in 1664 CE",
+        "Covers an area of 48 acres with strong laterite stone walls",
+        "Contains the only temple dedicated to Shivaji Maharaj",
+        "Panoramic views of the Malvan coastline and the Arabian Sea",
+        "Still accessible only by boats during high tide"
+      ]
+    },
+    "architecture": {
+      "title": "Architecture",
+      "icon": "fa-solid fa-monument",
+      "content": "Sindhudurg Fort is an architectural marvel of its time, built using laterite stones on a rocky island. The walls are 9 meters high and 3 meters thick, designed to withstand fierce sea waves and enemy attacks.",
+      "features": [
+        "Massive laterite stone walls rising directly from the sea",
+        "Secret escape routes and hidden entrances",
+        "Residences, wells, and temples within the fort",
+        "Famous hand and foot impressions of Shivaji Maharaj"
+      ]
+    },
+    "history": {
+      "title": "History",
+      "icon": "fa-solid fa-scroll",
+      "content": "Sindhudurg Fort was built by Chhatrapati Shivaji Maharaj between 1664 and 1667 to fortify the western coast against Portuguese and British powers. Over 100 Portuguese masons and local workers contributed to the fort’s construction, using an ingenious blend of lime and jaggery to bind the stones.",
+      "events": [
+        "Construction began in 1664 CE under Shivaji Maharaj’s supervision",
+        "Fort served as the naval base for the Maratha Navy",
+        "Contains the rare temple dedicated to Shivaji Maharaj himself",
+        "Witnessed battles against British and Portuguese fleets"
+      ]
+    },
+    "attractions": {
+      "title": "Attractions",
+      "icon": "fa-solid fa-binoculars",
+      "places": [
+        "Shivaji Maharaj Temple inside the fort",
+        "Hand and footprint impressions of Chhatrapati Shivaji",
+        "Sea-facing bastions offering panoramic views",
+        "Ancient freshwater well within the fort premises"
+      ]
+    },
+    "activities": {
+      "title": "Activities",
+      "icon": "fa-solid fa-person-hiking",
+      "options": [
+        "Take a boat ride to reach the fort from Malvan jetty",
+        "Explore the fort’s bastions, temples, and hidden tunnels",
+        "Visit the Shivaji Maharaj temple and historical points",
+        "Enjoy snorkeling and scuba diving in nearby Tarkarli waters"
+      ]
+    },
+    "howToReach": {
+      "title": "How to Reach",
+      "icon": "fa-solid fa-route",
+      "modes": {
+        "byRoad": "Malvan is around 530 km from Mumbai and 145 km from Ratnagiri. Regular state transport and private buses are available.",
+        "byTrain": "The nearest railway station is Kudal (about 30 km). From there, local transport is available to Malvan jetty.",
+        "byAir": "The nearest airport is Chipi Airport (Sindhudurg Airport), about 12 km from Malvan."
+      }
+    },
+    "bestTimeToVisit": {
+      "title": "Best Time to Visit",
+      "icon": "fa-solid fa-calendar-days",
+      "content": "The best time to visit Sindhudurg Fort is between October and March when the sea is calm and boat rides are operational."
+    },
+    "gallery": {
+      "title": "Gallery",
+      "icon": "fa-solid fa-image",
+      "images": [
+        "/images/forts/sindhudurg/gallery1.jpg",
+        "/images/forts/sindhudurg/gallery2.jpg",
+        "/images/forts/sindhudurg/gallery3.jpg",
+        "/images/forts/sindhudurg/gallery4.jpg"
+      ]
+    },
+    "tips": {
+      "title": "Travel Tips",
+      "icon": "fa-solid fa-lightbulb",
+      "points": [
+        "Boat services to the fort depend on weather conditions; check in advance.",
+        "Wear comfortable footwear and carry water for the short trek around the fort.",
+        "Avoid visiting during monsoon season (June to September) due to rough seas."
+      ]
+    }
+  }
+}

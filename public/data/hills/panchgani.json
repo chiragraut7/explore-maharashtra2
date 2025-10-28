@@ -1,223 +1,217 @@
 {
-  "title": "Panchgani",
-  "subtitle": "Scenic plateau surrounded by five hills of the Sahyadris",
-  "bannerImage": "/assets/images/hill_stations.jpg",
-  "overview":  [
-      "Panchgani is a picturesque hill station nestled in the Sahyadri mountain ranges, located in the Satara district of Maharashtra. It is named after the five surrounding hills and offers panoramic views, lush greenery, and colonial-era charm.",
-      "Popular for its strawberry farms, boarding schools, and cool climate, Panchgani is an ideal retreat for nature lovers and families.",
-      "The town's pleasant weather, natural beauty, and historic landmarks make it one of Maharashtra’s top weekend getaways."
-    ],
+  "id": "panchgani",
+  "title": "Panchgani Hill Station",
+  "subtitle": "The Plateau of Five Hills",
+  "bannerImage": "/images/panchgani/banner.jpg",
+  "color": "#2a4d69",
+  "overview": [
+    "Panchgani, meaning ‘land of five hills’, is one of Maharashtra’s most charming hill stations located near Mahabaleshwar.",
+    "Perched at an altitude of around 1,334 meters, Panchgani is famous for its breathtaking viewpoints, colonial architecture, and strawberry farms.",
+    "This hill retreat is a perfect blend of natural beauty, adventure, and tranquility, making it an ideal destination for tourists year-round."
+  ],
   "highlights": [
     {
-      "icon": "fas fa-mountain",
-      "title": "Table Land",
-      "description": "One of Asia’s second-largest mountain plateaus with breathtaking valley views."
+      "icon": "fa-solid fa-mountain-sun",
+      "title": "Scenic Viewpoints",
+      "description": "Enjoy panoramic views of valleys and the Krishna River from various iconic viewpoints."
     },
     {
-      "icon": "fas fa-seedling",
-      "title": "Strawberry Fields",
-      "description": "Home to vibrant strawberry farms that bloom during the harvest season."
+      "icon": "fa-solid fa-apple-whole",
+      "title": "Strawberry Farms",
+      "description": "Panchgani is part of the strawberry belt of Maharashtra, offering fresh farm visits and tastings."
     },
     {
-      "icon": "fas fa-landmark",
-      "title": "Colonial Architecture",
-      "description": "British-era schools and bungalows dot the scenic landscape."
-    },
-    {
-      "icon": "fas fa-cloud-sun",
-      "title": "Year-Round Pleasant Climate",
-      "description": "Cool and refreshing weather attracts tourists throughout the year."
+      "icon": "fa-solid fa-building-columns",
+      "title": "Colonial Charm",
+      "description": "British-era boarding schools and bungalows add a nostalgic old-world charm to the town."
     }
   ],
   "geography": {
-    "image": "/assets/images/hill_stations.jpg",
-    "intro": "Located at an elevation of around 1,334 meters, Panchgani is surrounded by hills, valleys, and the Krishna River.",
+    "image": "/images/panchgani/geography.jpg",
+    "intro": "Nestled in the Sahyadri range, Panchgani is surrounded by five scenic hills and the meandering Krishna River.",
     "details": [
       {
-        "icon": "fas fa-map-marker-alt",
-        "label": "Location",
-        "value": "Satara District, Maharashtra"
+        "icon": "fa-solid fa-location-dot",
+        "label": "District",
+        "value": "Satara"
       },
       {
-        "icon": "fas fa-mountain",
-        "label": "Altitude",
-        "value": "Approx. 1,334 meters above sea level"
+        "icon": "fa-solid fa-mountain",
+        "label": "Elevation",
+        "value": "1,334 meters"
       },
       {
-        "icon": "fas fa-tree",
-        "label": "Flora",
-        "value": "Strawberry farms, silver oaks, and flowering shrubs"
+        "icon": "fa-solid fa-tree",
+        "label": "Region",
+        "value": "Sahyadri Mountains"
       },
       {
-        "icon": "fas fa-water",
-        "label": "River",
-        "value": "Krishna River"
+        "icon": "fa-solid fa-road",
+        "label": "Nearest City",
+        "value": "Mahabaleshwar (18 km)"
+      },
+      {
+        "icon": "fa-solid fa-clock",
+        "label": "Best Time to Visit",
+        "value": "September to May"
       }
     ],
     "climate": {
-      "description": "Panchgani has a cool and pleasant climate throughout the year. Summers are mild, and winters are chilly, making it a year-round destination.",
+      "description": "Panchgani enjoys a pleasant and moderate climate all year round, with cool winters and mild summers.",
       "seasons": [
         {
-          "icon": "fas fa-sun",
-          "text": "Best Season: October to May"
+          "icon": "fa-solid fa-sun",
+          "text": "Summer: 20°C – 30°C"
         },
         {
-          "icon": "fas fa-cloud-rain",
-          "text": "Monsoon: June to September (lush greenery)"
+          "icon": "fa-solid fa-cloud-rain",
+          "text": "Monsoon: Heavy rainfall, misty views from June to September"
+        },
+        {
+          "icon": "fa-solid fa-snowflake",
+          "text": "Winter: 12°C – 22°C, ideal for sightseeing"
         }
       ]
     },
-    "conclusion": "With its unique geography and altitude, Panchgani offers incredible views and a relaxing ambiance perfect for rejuvenation."
+    "conclusion": "The moderate climate and lush greenery make Panchgani one of Maharashtra’s most loved hill destinations."
   },
   "activities": [
     {
-      "icon": "fas fa-hiking",
-      "title": "Trekking & Hiking",
-      "description": "Explore forest trails and scenic hills.",
+      "icon": "fa-solid fa-parachute-box",
+      "title": "Paragliding",
+      "description": "Experience the thrill of gliding over the scenic valleys of Panchgani.",
       "info": [
-        "Popular trails: Sydney Point, Parsi Point, and Devil’s Kitchen",
-        "Best explored during winter and spring"
+        "Table Land is one of India’s best paragliding spots.",
+        "Operates mostly between October and May."
       ]
     },
     {
-      "icon": "fas fa-seedling",
-      "title": "Farm Visits",
-      "description": "Visit strawberry farms and enjoy fresh produce.",
+      "icon": "fa-solid fa-person-hiking",
+      "title": "Trekking",
+      "description": "Explore trekking routes around Sydney Point, Parsi Point, and Devil’s Kitchen.",
       "info": [
-        "Peak season: December to March",
-        "Try local jams, syrups, and fresh fruits"
+        "Ideal for beginners and intermediate trekkers.",
+        "Morning and evening treks offer mesmerizing valley views."
       ]
     },
     {
-      "icon": "fas fa-camera",
-      "title": "Photography",
-      "description": "Capture misty mountains and colonial charm.",
+      "icon": "fa-solid fa-ice-cream",
+      "title": "Strawberry Picking",
+      "description": "Visit local strawberry farms to pick and taste fresh berries.",
       "info": [
-        "Ideal for landscape and nature photography",
-        "Golden hour offers dramatic lighting"
+        "Strawberry season peaks between December and February.",
+        "Don’t miss strawberry cream and milkshakes at local eateries."
       ]
     }
   ],
   "attractions": [
     {
-      "image": "/assets/images/hill_stations.jpg",
+      "image": "/images/panchgani/table-land.jpg",
       "title": "Table Land",
-      "description": "A flat mountain plateau with horse rides and panoramic views.",
-      "distance": "2 km from main market",
-      "icon": "fas fa-mountain"
+      "description": "Asia’s second-longest mountain plateau offering breathtaking views of valleys and lakes.",
+      "distance": "2 km from main town",
+      "icon": "fa-solid fa-mountain",
+      "value": "Paragliding & Horse rides"
     },
     {
-      "image": "/assets/images/hill_stations.jpg",
+      "image": "/images/panchgani/parsi-point.jpg",
       "title": "Parsi Point",
-      "description": "A viewpoint offering breathtaking views of Krishna Valley.",
-      "distance": "1.5 km",
-      "icon": "fas fa-binoculars"
+      "description": "A popular viewpoint overlooking the Krishna Valley and Dhom Dam.",
+      "distance": "3 km from Panchgani Market",
+      "icon": "fa-solid fa-camera",
+      "value": "Sunset photography"
     },
     {
-      "image": "/assets/images/hill_stations.jpg",
+      "image": "/images/panchgani/devils-kitchen.jpg",
       "title": "Devil’s Kitchen",
-      "description": "A mystical place with mythological connections to the Pandavas.",
-      "distance": "3 km",
-      "icon": "fas fa-fire"
+      "description": "A cave complex believed to have been used by the Pandavas during exile.",
+      "distance": "4 km from Table Land",
+      "icon": "fa-solid fa-landmark-dome",
+      "value": "Historical site"
     },
     {
-      "image": "/assets/images/hill_stations.jpg",
+      "image": "/images/panchgani/sydney-point.jpg",
       "title": "Sydney Point",
-      "description": "Panoramic view of Dhom Dam and Krishna Valley.",
-      "distance": "1 km",
-      "icon": "fas fa-map-pin"
+      "description": "Offers a panoramic view of the Krishna River valley and Wai town.",
+      "distance": "1 km from Panchgani Bus Stand",
+      "icon": "fa-solid fa-binoculars",
+      "value": "Scenic viewpoint"
     }
   ],
   "marineLife": {
-    "intro": "As a hill station, Panchgani does not have marine life, but it does host a rich ecosystem of flora and fauna.",
+    "intro": "As a hill station, Panchgani doesn’t have marine life but is surrounded by fertile agricultural lands and freshwater ecosystems.",
     "items": [
       {
-        "icon": "fas fa-dove",
-        "title": "Birdlife",
-        "description": "Home to various species of hill birds like bulbuls and warblers."
+        "icon": "fa-solid fa-fish",
+        "title": "Freshwater Fish",
+        "description": "Nearby Dhom Dam supports various freshwater fish species."
       },
       {
-        "icon": "fas fa-tree",
-        "title": "Botanical Diversity",
-        "description": "Flourishing trees, flowering plants, and grasslands support pollinators and local biodiversity."
+        "icon": "fa-solid fa-leaf",
+        "title": "Biodiversity",
+        "description": "The area around Panchgani is rich in local flora, especially during monsoon."
       }
     ],
     "conclusion": [
-      "The green landscapes, healthy climate, and agricultural activity make Panchgani ecologically rich and refreshing.",
-      "It serves as an important conservation and farming zone in the region."
+      "Panchgani’s ecological balance and fresh air make it a natural retreat.",
+      "Its flora and fauna add to its peaceful charm."
     ]
   },
   "howToReach": [
     {
-      "icon": "fas fa-car",
-      "title": "By Road",
-      "details": [
-        "Panchgani is 100 km from Pune and 250 km from Mumbai.",
-        "Well-connected via NH48 and state highways."
-      ]
-    },
-    {
-      "icon": "fas fa-train",
+      "icon": "fa-solid fa-train",
       "title": "By Train",
       "details": [
-        "Nearest station: Wathar (45 km away)",
-        "Pune Railway Station is a major access point"
+        "Nearest railway station: Wathar (45 km) or Pune (100 km).",
+        "Taxis and buses are available from both stations."
       ]
     },
     {
-      "icon": "fas fa-plane",
+      "icon": "fa-solid fa-bus",
+      "title": "By Road",
+      "details": [
+        "Panchgani is well-connected by road from Pune (100 km) and Mumbai (250 km).",
+        "MSRTC and private buses frequently operate routes to Panchgani."
+      ]
+    },
+    {
+      "icon": "fa-solid fa-plane",
       "title": "By Air",
       "details": [
-        "Nearest airport: Pune International Airport (110 km)",
-        "Mumbai International Airport (250 km) is also accessible"
+        "Nearest airport: Pune International Airport (100 km).",
+        "Regular taxis and car rentals are available from Pune."
       ]
     }
   ],
   "gallery": [
     {
-      "src": "/assets/images/hill_stations.jpg",
-      "thumb": "/assets/images/hill_stations.jpg",
-      "alt": "View from Table Land"
+      "src": "/images/panchgani/gallery1.jpg",
+      "thumb": "/images/panchgani/thumb1.jpg",
+      "alt": "Table Land Plateau"
     },
     {
-      "src": "/assets/images/hill_stations.jpg",
-      "thumb": "/assets/images/hill_stations.jpg",
-      "alt": "Strawberry Farms"
+      "src": "/images/panchgani/gallery2.jpg",
+      "thumb": "/images/panchgani/thumb2.jpg",
+      "alt": "Parsi Point View"
     },
     {
-      "src": "/assets/images/hill_stations.jpg",
-      "thumb": "/assets/images/hill_stations.jpg",
-      "alt": "Parsi Point"
-    }
-  ],
-  "hotels": [
-    {
-      "name": "Ravine Hotel",
-      "image": "/assets/images/hill_stations.jpg",
-      "rating": "4.3",
-      "url": "https://example.com/ravine-hotel",
-      "facilities": ["wifi", "parking", "restaurant"]
-    },
-    {
-      "name": "Hotel Mount View",
-      "image": "/assets/images/hill_stations.jpg",
-      "rating": "4.0",
-      "url": "https://example.com/hotel-mount-view",
-      "facilities": ["wifi", "ac"]
+      "src": "/images/panchgani/gallery3.jpg",
+      "thumb": "/images/panchgani/thumb3.jpg",
+      "alt": "Strawberry Farm"
     }
   ],
   "bookingTips": [
     {
-      "icon": "fas fa-calendar",
-      "description": "Book at least 1–2 weeks in advance during the strawberry season"
+      "icon": "fa-solid fa-calendar-days",
+      "description": "Book accommodation early during the strawberry festival season (January–February)."
     },
     {
-      "icon": "fas fa-snowflake",
-      "description": "Carry light woolens during winter months"
+      "icon": "fa-solid fa-umbrella",
+      "description": "Avoid heavy monsoon months if you prefer outdoor sightseeing."
     },
     {
-      "icon": "fas fa-gift",
-      "description": "Look for farm stay combos for authentic experiences"
+      "icon": "fa-solid fa-camera",
+      "description": "Carry a camera for panoramic landscape shots at viewpoints."
     }
   ]
 }
