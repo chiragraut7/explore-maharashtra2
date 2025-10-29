@@ -1,0 +1,186 @@
+{
+  "id": "kaas",
+  "title": "Kaas Plateau (Valley of Flowers)",
+  "subtitle": "A UNESCO World Natural Heritage Site known for its seasonal bloom of wildflowers",
+  "bannerImage": "/assets/images/nature/kaas-plateau.jpg",
+  "color": "#3b5f3c",
+  "overview": [
+    "Kaas Plateau, also called the Valley of Flowers of Maharashtra, is a stunning biodiversity hotspot near Satara in the Western Ghats. Every year between August and October, this plateau turns into a mesmerizing carpet of colorful wildflowers.",
+    "Recognized as a UNESCO World Natural Heritage Site, Kaas Plateau hosts more than 850 species of flowering plants, including rare orchids and carnivorous plants. It attracts botanists, photographers, and nature lovers from all over India."
+  ],
+  "highlights": [
+    {
+      "icon": "fas fa-spa",
+      "title": "Floral Wonderland",
+      "description": "Over 850 species of vibrant wildflowers bloom during the monsoon season."
+    },
+    {
+      "icon": "fas fa-globe",
+      "title": "UNESCO Heritage Site",
+      "description": "Declared a UNESCO World Natural Heritage Site in 2012 for its unique biodiversity."
+    }
+  ],
+  "geography": {
+    "image": "/assets/images/nature/kaas-plateau-map.jpg",
+    "intro": "Kaas Plateau lies about 25 km from Satara city at an altitude of 1200 meters in the Sahyadri mountain range of the Western Ghats.",
+    "details": [
+      {
+        "icon": "fas fa-map-marker-alt",
+        "label": "Location",
+        "value": "Satara District, Maharashtra"
+      },
+      {
+        "icon": "fas fa-mountain",
+        "label": "Altitude",
+        "value": "Approx. 1200 meters"
+      },
+      {
+        "icon": "fas fa-ruler-combined",
+        "label": "Area",
+        "value": "Around 10 sq. km"
+      },
+      {
+        "icon": "fas fa-leaf",
+        "label": "Ecosystem Type",
+        "value": "Montane grassland and plateau ecosystem"
+      },
+      {
+        "icon": "fas fa-water",
+        "label": "Nearby Waterbody",
+        "value": "Kaas Lake"
+      }
+    ],
+    "climate": {
+      "description": "Kaas experiences a tropical monsoon climate with heavy rainfall from June to September. The plateau is at its most colorful between August and October.",
+      "seasons": [
+        {
+          "icon": "fas fa-cloud-rain",
+          "text": "Monsoon: June to September – peak blooming season"
+        },
+        {
+          "icon": "fas fa-sun",
+          "text": "Winter: October to February – pleasant and cool for sightseeing"
+        }
+      ]
+    },
+    "conclusion": "With its stunning biodiversity and monsoon charm, Kaas Plateau is one of Maharashtra’s most enchanting natural treasures."
+  },
+  "activities": [
+    {
+      "icon": "fas fa-camera",
+      "title": "Photography",
+      "description": "Capture the breathtaking floral carpets and misty landscapes.",
+      "info": [
+        "Best during early morning or after rain",
+        "Tripods allowed with permission"
+      ]
+    },
+    {
+      "icon": "fas fa-hiking",
+      "title": "Nature Walks",
+      "description": "Explore the walking trails surrounded by colorful blooms.",
+      "info": [
+        "Entry limited to 3000 visitors per day",
+        "Guided tours available at entry gate"
+      ]
+    },
+    {
+      "icon": "fas fa-binoculars",
+      "title": "Bird Watching",
+      "description": "Spot various endemic birds like Malabar lark and bulbuls.",
+      "info": [
+        "Carry binoculars and wear neutral colors",
+        "Avoid loud noise near nesting areas"
+      ]
+    }
+  ],
+  "attractions": [
+    {
+      "image": "/assets/images/nature/kaas-lake.jpg",
+      "title": "Kaas Lake",
+      "description": "A serene lake surrounded by rolling hills, ideal for photography and picnics.",
+      "distance": "1 km from Kaas Plateau",
+      "icon": "fas fa-water",
+      "value": "Scenic Lake"
+    },
+    {
+      "image": "/assets/images/nature/ajinkyatara-fort.jpg",
+      "title": "Ajinkyatara Fort",
+      "description": "Historic fort offering panoramic views of Satara city and nearby hills.",
+      "distance": "25 km from Kaas",
+      "icon": "fas fa-fort-awesome",
+      "value": "Historic Fort"
+    }
+  ],
+  "marineLife": {
+    "intro": "While Kaas Plateau is not a marine destination, it showcases an exceptional variety of terrestrial flora and microfauna unique to the Western Ghats.",
+    "items": [
+      {
+        "icon": "fas fa-seedling",
+        "title": "Endemic Flora",
+        "description": "Includes insectivorous plants like Drosera and Utricularia, and seasonal orchids."
+      },
+      {
+        "icon": "fas fa-bug",
+        "title": "Microfauna",
+        "description": "Various butterflies, insects, and pollinators thrive during the blooming months."
+      }
+    ],
+    "conclusion": [
+      "Kaas Plateau is a terrestrial biodiversity hotspot rather than a coastal ecosystem.",
+      "It represents the ecological richness of Maharashtra’s Western Ghats."
+    ]
+  },
+  "howToReach": [
+    {
+      "icon": "fas fa-car",
+      "title": "By Road",
+      "details": [
+        "Satara to Kaas: 25 km (approx. 45 min drive)",
+        "Buses and taxis available from Satara city"
+      ]
+    },
+    {
+      "icon": "fas fa-train",
+      "title": "By Train",
+      "details": [
+        "Nearest Railway Station: Satara (25 km)",
+        "Connected to major cities like Pune and Mumbai"
+      ]
+    },
+    {
+      "icon": "fas fa-plane",
+      "title": "By Air",
+      "details": [
+        "Nearest Airport: Pune International Airport (140 km)",
+        "Private taxis available from airport"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/nature/kaas-flowers.jpg",
+      "thumb": "/assets/images/nature/kaas-flowers-thumb.jpg",
+      "alt": "Blooming flowers at Kaas Plateau"
+    },
+    {
+      "src": "/assets/images/nature/kaas-lake-view.jpg",
+      "thumb": "/assets/images/nature/kaas-lake-view-thumb.jpg",
+      "alt": "Kaas Lake surrounded by hills"
+    }
+  ],
+  "bookingTips": [
+    {
+      "icon": "fas fa-ticket-alt",
+      "description": "Online booking mandatory during the flowering season (August–October)."
+    },
+    {
+      "icon": "fas fa-clock",
+      "description": "Best time to visit: Early morning (7 AM–10 AM) for misty views."
+    },
+    {
+      "icon": "fas fa-leaf",
+      "description": "Avoid picking or stepping on flowers – preserve the biodiversity."
+    }
+  ]
+}

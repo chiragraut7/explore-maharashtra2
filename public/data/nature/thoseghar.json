@@ -1,0 +1,186 @@
+{
+  "id": "thoseghar",
+  "title": "Thoseghar Waterfalls",
+  "subtitle": "Majestic cascades amid lush valleys near Satara",
+  "bannerImage": "/assets/images/nature/thoseghar-waterfall.jpg",
+  "color": "#1a4a3d",
+  "overview": [
+    "Thoseghar Waterfalls is one of Maharashtra's most spectacular natural attractions, located near Satara in the Western Ghats. It is famous for its series of cascading waterfalls plunging from heights ranging between 15 to 500 meters.",
+    "Surrounded by dense forests and mist-covered valleys, the site offers an immersive nature experience for trekkers, photographers, and peace seekers. During the monsoon, the falls swell with immense power, creating breathtaking views."
+  ],
+  "highlights": [
+    {
+      "icon": "fas fa-water",
+      "title": "Massive Waterfall Series",
+      "description": "Multiple cascades ranging up to 500 meters surrounded by green cliffs."
+    },
+    {
+      "icon": "fas fa-cloud-showers-heavy",
+      "title": "Monsoon Paradise",
+      "description": "Best experienced during the rainy season when the falls are in full flow."
+    }
+  ],
+  "geography": {
+    "image": "/assets/images/nature/thoseghar-map.jpg",
+    "intro": "Thoseghar village is situated around 20 km from Satara in western Maharashtra, within the Sahyadri mountain range.",
+    "details": [
+      {
+        "icon": "fas fa-map-marker-alt",
+        "label": "Location",
+        "value": "Thoseghar, Satara District, Maharashtra"
+      },
+      {
+        "icon": "fas fa-mountain",
+        "label": "Altitude",
+        "value": "Approximately 900 meters"
+      },
+      {
+        "icon": "fas fa-ruler-vertical",
+        "label": "Waterfall Height",
+        "value": "15 to 500 meters"
+      },
+      {
+        "icon": "fas fa-water",
+        "label": "River Source",
+        "value": "Part of the Urmodi River system"
+      },
+      {
+        "icon": "fas fa-tree",
+        "label": "Surroundings",
+        "value": "Evergreen forest and Western Ghats hills"
+      }
+    ],
+    "climate": {
+      "description": "Thoseghar experiences a tropical monsoon climate. Heavy rains between June and September make it the most spectacular time to visit. Winters are cool and pleasant.",
+      "seasons": [
+        {
+          "icon": "fas fa-cloud-rain",
+          "text": "Monsoon: June to September – peak waterfall season"
+        },
+        {
+          "icon": "fas fa-sun",
+          "text": "Winter: October to February – ideal for trekking and sightseeing"
+        }
+      ]
+    },
+    "conclusion": "With its dramatic drop and misty surroundings, Thoseghar offers one of Maharashtra’s most memorable monsoon experiences."
+  },
+  "activities": [
+    {
+      "icon": "fas fa-hiking",
+      "title": "Trekking",
+      "description": "Hike through scenic trails leading to the main waterfall viewpoint.",
+      "info": [
+        "Trail difficulty: Easy to moderate",
+        "Guides available near entry point"
+      ]
+    },
+    {
+      "icon": "fas fa-camera",
+      "title": "Photography",
+      "description": "Capture stunning shots of the roaring waterfalls and surrounding greenery.",
+      "info": [
+        "Best during early morning or post-rain showers",
+        "Use protective gear for your camera due to mist"
+      ]
+    },
+    {
+      "icon": "fas fa-binoculars",
+      "title": "Bird Watching",
+      "description": "Observe local and migratory bird species around the forested valleys.",
+      "info": [
+        "Common sightings include bulbuls and drongos",
+        "Carry binoculars for a better experience"
+      ]
+    }
+  ],
+  "attractions": [
+    {
+      "image": "/assets/images/nature/sajjangad-fort.jpg",
+      "title": "Sajjangad Fort",
+      "description": "Historic fort and spiritual site of Sant Ramdas, offering panoramic valley views.",
+      "distance": "12 km from Thoseghar",
+      "icon": "fas fa-fort-awesome",
+      "value": "Historic & Religious Site"
+    },
+    {
+      "image": "/assets/images/nature/kaas-plateau.jpg",
+      "title": "Kaas Plateau",
+      "description": "A nearby UNESCO World Heritage site famous for its seasonal bloom of wildflowers.",
+      "distance": "25 km from Thoseghar",
+      "icon": "fas fa-spa",
+      "value": "Valley of Flowers"
+    }
+  ],
+  "marineLife": {
+    "intro": "Being a mountain waterfall, Thoseghar does not support marine life, but its surroundings are rich in freshwater and forest ecosystems.",
+    "items": [
+      {
+        "icon": "fas fa-frog",
+        "title": "Amphibians",
+        "description": "Various species of frogs and toads thrive in the moist ecosystem."
+      },
+      {
+        "icon": "fas fa-leaf",
+        "title": "Flora & Fauna",
+        "description": "Home to mosses, ferns, and small reptiles native to the Western Ghats."
+      }
+    ],
+    "conclusion": [
+      "Though not a marine site, Thoseghar’s biodiversity adds to its natural charm.",
+      "The monsoon enhances its lush vegetation and thriving ecosystems."
+    ]
+  },
+  "howToReach": [
+    {
+      "icon": "fas fa-car",
+      "title": "By Road",
+      "details": [
+        "Satara to Thoseghar: 20 km via Kaas Road",
+        "Private taxis and local buses available"
+      ]
+    },
+    {
+      "icon": "fas fa-train",
+      "title": "By Train",
+      "details": [
+        "Nearest Railway Station: Satara (20 km)",
+        "Well connected to Pune, Kolhapur, and Mumbai"
+      ]
+    },
+    {
+      "icon": "fas fa-plane",
+      "title": "By Air",
+      "details": [
+        "Nearest Airport: Pune International Airport (140 km)",
+        "Taxi services available to Satara and onwards"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/nature/thoseghar-main.jpg",
+      "thumb": "/assets/images/nature/thoseghar-main-thumb.jpg",
+      "alt": "Main view of Thoseghar Waterfall"
+    },
+    {
+      "src": "/assets/images/nature/thoseghar-viewpoint.jpg",
+      "thumb": "/assets/images/nature/thoseghar-viewpoint-thumb.jpg",
+      "alt": "Viewpoint overlooking the waterfall valley"
+    }
+  ],
+  "bookingTips": [
+    {
+      "icon": "fas fa-ticket-alt",
+      "description": "Nominal entry fee is charged at the site gate; parking available nearby."
+    },
+    {
+      "icon": "fas fa-clock",
+      "description": "Best visiting hours: 8 AM – 5 PM during monsoon months."
+    },
+    {
+      "icon": "fas fa-umbrella",
+      "description": "Carry rain gear and wear non-slip shoes due to wet and muddy paths."
+    }
+  ]
+}
