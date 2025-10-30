@@ -1,0 +1,178 @@
+{
+    "id": "saptashrungi",
+    "title": "Saptashrungi Devi Temple",
+    "subtitle": "The Hill of Seven Peaks — Abode of Goddess Saptashrungi Nivasini",
+    "bannerImage": "/images/religious/saptashrungi/banner.jpg",
+    "color": "#F97316",
+    "overview": [
+      "Saptashrungi Devi Temple, near Nashik, is one of the most revered Shakti Peethas of Maharashtra. The temple is perched atop a hill surrounded by seven mountain peaks, symbolizing the seven arms of the goddess.",
+      "Pilgrims climb over 500 steps or take a ropeway to reach the temple, which offers panoramic views and divine peace."
+    ],
+    "highlights": [
+      {
+        "icon": "fas fa-church",
+        "title": "Saptashrungi Devi Idol",
+        "description": "The 10-foot tall idol carved into a rock face, adorned with sindoor and ornaments."
+      },
+      {
+        "icon": "fas fa-hiking",
+        "title": "Scenic Ropeway Ride",
+        "description": "Modern ropeway facility provides easy access and stunning views."
+      }
+    ],
+    "geography": {
+      "image": "/images/religious/saptashrungi/map.jpg",
+      "intro": "Located 60 km from Nashik city, near the village of Vani, amidst the Western Ghats.",
+      "details": [
+        {
+          "icon": "fas fa-map-marker-alt",
+          "label": "District",
+          "value": "Nashik"
+        },
+        {
+          "icon": "fas fa-mountain",
+          "label": "Elevation",
+          "value": "1230 meters"
+        },
+        {
+          "icon": "fas fa-road",
+          "label": "Nearest Highway",
+          "value": "NH 60 (Nashik–Dhule Road)"
+        },
+        {
+          "icon": "fas fa-plane",
+          "label": "Nearest Airport",
+          "value": "Nashik Airport (65 km)"
+        },
+        {
+          "icon": "fas fa-train",
+          "label": "Nearest Railway Station",
+          "value": "Nashik Road (70 km)"
+        }
+      ],
+      "climate": {
+        "description": "The hill temple enjoys cool weather during winter and becomes lush green in monsoon.",
+        "seasons": [
+          {
+            "icon": "fas fa-sun",
+            "text": "Summer: 25°C to 38°C (March–June)"
+          },
+          {
+            "icon": "fas fa-cloud-rain",
+            "text": "Monsoon: Heavy rainfall (July–September)"
+          }
+        ]
+      },
+      "conclusion": "October to February is the best time to visit for clear skies and pleasant weather."
+    },
+    "activities": [
+      {
+        "icon": "fas fa-praying-hands",
+        "title": "Darshan and Aarti",
+        "description": "Participate in daily prayers and aarti ceremonies filled with devotion.",
+        "info": [
+          "Morning and evening aartis are mesmerizing.",
+          "Devotees often climb barefoot as a sign of respect."
+        ]
+      },
+      {
+        "icon": "fas fa-hiking",
+        "title": "Ropeway & Trek",
+        "description": "Enjoy a thrilling ropeway ride or take the traditional 510-step path.",
+        "info": [
+          "Ropeway tickets available at the base station.",
+          "Steps shaded with resting areas."
+        ]
+      },
+      {
+        "icon": "fas fa-leaf",
+        "title": "Explore the Surrounding Peaks",
+        "description": "Hike around the seven peaks and enjoy panoramic views.",
+        "info": [
+          "Ideal for nature lovers and photographers.",
+          "Wear comfortable shoes."
+        ]
+      }
+    ],
+    "attractions": [
+      {
+        "image": "/images/religious/saptashrungi/temple.jpg",
+        "title": "Main Temple",
+        "description": "The rock-carved idol of Goddess Saptashrungi.",
+        "distance": "0 km",
+        "icon": "fas fa-place-of-worship",
+        "value": "Main Shrine"
+      },
+      {
+        "image": "/images/religious/saptashrungi/view.jpg",
+        "title": "Hill Viewpoint",
+        "description": "Offers breathtaking vistas of the surrounding valleys.",
+        "distance": "0.3 km",
+        "icon": "fas fa-mountain",
+        "value": "Scenic Spot"
+      }
+    ],
+    "marineLife": {
+      "intro": "While not coastal, the region’s natural springs and forests support rich biodiversity.",
+      "items": [
+        {
+          "icon": "fas fa-tree",
+          "title": "Mountain Flora",
+          "description": "Forests around Saptashrungi are home to various medicinal plants."
+        },
+        {
+          "icon": "fas fa-dove",
+          "title": "Peaceful Habitat",
+          "description": "Birdsong and wind create a tranquil spiritual setting."
+        }
+      ],
+      "conclusion": [
+        "The temple is a harmony of faith and nature.",
+        "Perfect for spiritual rejuvenation and scenic exploration."
+      ]
+    },
+    "howToReach": [
+      {
+        "icon": "fas fa-bus",
+        "title": "By Road",
+        "details": [
+          "Buses and taxis are available from Nashik and Vani.",
+          "Good road connectivity via NH 60."
+        ]
+      },
+      {
+        "icon": "fas fa-train",
+        "title": "By Rail",
+        "details": [
+          "Nashik Road railway station connects major cities like Mumbai and Pune.",
+          "From there, local transport takes 2 hours to reach."
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/images/religious/saptashrungi/1.jpg",
+        "thumb": "/images/religious/saptashrungi/thumb1.jpg",
+        "alt": "Saptashrungi Devi Temple"
+      },
+      {
+        "src": "/images/religious/saptashrungi/2.jpg",
+        "thumb": "/images/religious/saptashrungi/thumb2.jpg",
+        "alt": "Ropeway at Saptashrungi"
+      }
+    ],
+    "bookingTips": [
+      {
+        "icon": "fas fa-ticket-alt",
+        "description": "Buy ropeway tickets in advance on weekends."
+      },
+      {
+        "icon": "fas fa-clock",
+        "description": "Morning visits offer cooler weather and fewer crowds."
+      },
+      {
+        "icon": "fas fa-shoe-prints",
+        "description": "Climbing barefoot is customary for devotees."
+      }
+    ]
+  }
