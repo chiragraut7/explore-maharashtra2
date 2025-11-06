@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { customCorrections } from './customCorrections' // ✅ import your correction dictionary
 
 interface TranslatorProps {
   text: string
@@ -33,7 +34,22 @@ export default function Translator({ text, targetLang }: TranslatorProps) {
         }
 
         const data = await res.json()
-        setTranslatedText(data.translatedText)
+        let output = data.translatedText || text
+
+        // 🪄 Apply custom Marathi corrections from dictionary
+        if (targetLang === 'mr') {
+          Object.entries(customCorrections).forEach(([wrong, correct]) => {
+            const regex = new RegExp(wrong, 'g')
+            output = output.replace(regex, correct)
+          })
+
+          // ✅ Fix for “Explore” cases
+          output = output
+            .replace(/\bExplore Maharashtra\b/gi, 'महाराष्ट्राचा शोध घ्या')
+            .replace(/\bExplore\b/gi, 'शोध घ्या')
+        }
+
+        setTranslatedText(output)
       } catch (err) {
         console.error('Translation error:', err)
       }
