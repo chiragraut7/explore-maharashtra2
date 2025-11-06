@@ -6,6 +6,8 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useLanguage } from '../components/context/LanguageContext'
+import Translator from "../components/commonComponents/Translator";
 
 interface Item {
   id?: string | number;
@@ -18,6 +20,7 @@ interface Item {
 }
 
 export default function CategoryPage() {
+  const { language } = useLanguage()
   const { category } = useParams() as { category: string };
   const [items, setItems] = useState<Item[]>([]);
   const [loading, setLoading] = useState(true);
@@ -65,9 +68,9 @@ export default function CategoryPage() {
       <header className="shadow-sm">
         <div className="banner">
           <div className="text-center py-5">
-            <h1 className="display-4 text-white fw-bold">{categoryTitle}</h1>
+            <h1 className="display-4 text-white fw-bold"><Translator text={categoryTitle} targetLang={language}/></h1>
             <p className="lead text-white">
-              Explore the best {categoryTitle} of Maharashtra
+              <Translator text={`Explore the best ${categoryTitle} of Maharashtra`} targetLang={language}/>
             </p>
           </div>
         </div>
@@ -76,23 +79,28 @@ export default function CategoryPage() {
       {/* Overview */}
       <section className="container py-5">
         <div className="home text-center mb-4">
-          <h2 className="section-title mt-2">Overview</h2>
+          <h2 className="section-title mt-2"><Translator text='Overview' targetLang={language}/></h2>
           <p>
-            Maharashtra&apos;s{" "}
-            {category === "beaches"
-              ? "coastline stretches over 700 km with pristine beaches and vibrant culture."
-              : category === "hills"
-              ? "hill stations are known for their lush greenery, cool climate, and trekking trails."
-              : category === "forts"
-              ? "forts showcase the valor of Maratha empire and historic significance."
-              : category === "nature"
-              ? "nature spots include wildlife, waterfalls, and scenic landscapes."
-              : category === "religious"
-              ? "religious places reflect Maharashtra's rich spiritual heritage."
-              : category === "cultural"
-              ? "cultural sites display local arts, crafts, and unique traditions."
-              : `amazing ${category}.`}
+            <Translator
+              text={`Maharashtra's ${
+                category === "beaches"
+                  ? "coastline stretches over 700 km with pristine beaches and vibrant culture."
+                  : category === "hills"
+                  ? "hill stations are known for their lush greenery, cool climate, and trekking trails."
+                  : category === "forts"
+                  ? "forts showcase the valor of the Maratha Empire and historic significance."
+                  : category === "nature"
+                  ? "nature spots include wildlife, waterfalls, and scenic landscapes."
+                  : category === "religious"
+                  ? "religious places reflect Maharashtra's rich spiritual heritage."
+                  : category === "cultural"
+                  ? "cultural sites display local arts, crafts, and unique traditions."
+                  : `amazing ${category}.`
+              }`}
+              targetLang={language}
+            />
           </p>
+
         </div>
 
         {/* Timeline / Items */}
@@ -132,7 +140,7 @@ export default function CategoryPage() {
                     borderRadius: "8px",
                   }}
                 >
-                  {item.title || item.name}
+                  <Translator text={item.title || item.name || ''} targetLang={language} />
                 </div>
                 <div
                   className="content"
@@ -149,7 +157,11 @@ export default function CategoryPage() {
                     />
                   )}
                   <div className="contenttimeline">
-                    {item.subtitle && <p>{item.subtitle}</p>}
+                    {item.subtitle && (
+                      <p className="mb-3">
+                        <Translator text={item.subtitle} targetLang={language} />
+                      </p>
+                    )}
                     <Link
                       href={`/${category}/${generateSlug(item)}`}
                       className="btn btn-outline-primary"
@@ -159,7 +171,7 @@ export default function CategoryPage() {
                         color: "#fff",
                       }}
                     >
-                      View More
+                      <Translator text="View More" targetLang={language} />
                     </Link>
                   </div>
                 </div>

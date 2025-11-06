@@ -159,7 +159,7 @@ header .navbar .nav-item .nav-link.active::before  {
   background-color: var(--primary-color);
   border-radius: 100%;
   transition: all 0.5s ease;
-  z-index: 0;
+  z-index: -1;
 }
 
 /* Hover state */
@@ -1137,7 +1137,7 @@ nextjs-portal {
 .timeline-row .btn-outline-dark{
   overflow: hidden;
 }
-.timeline-row .btn-outline-dark:hover{
+.timeline-row .timeline-content .btn-outline-dark{
   position: absolute;
 }
 .noimg img{

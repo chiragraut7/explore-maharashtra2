@@ -6,6 +6,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import { useLanguage } from "../context/LanguageContext";
+import Translator from "../commonComponents/Translator";
+
 interface HighlightItem {
   icon?: string;
   title?: string;
@@ -14,22 +17,28 @@ interface HighlightItem {
 
 interface HighlightsProps {
   highlights?: HighlightItem[];
-  color?: string; // ✅ add color here
+  color?: string;
 }
 
 const Highlights: React.FC<HighlightsProps> = ({
   highlights = [],
-  color = "#00aaff", // default fallback color
+  color = "#00aaff",
 }) => {
+  const { language } = useLanguage();
+
   if (!highlights.length) return null;
 
   return (
     <section id="highlights" className="my-4">
       <h2
-        className="section-title"
-        style={{ borderColor: color }}
+        className="section-title mb-3"
+        style={{
+          borderColor: color,
+          color,
+          fontWeight: 600,
+        }}
       >
-        Highlights
+        <Translator text="Highlights" targetLang={language} />
       </h2>
 
       <div className="relative group">
@@ -44,6 +53,7 @@ const Highlights: React.FC<HighlightsProps> = ({
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
+          pagination={{ clickable: true }}
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
@@ -53,13 +63,30 @@ const Highlights: React.FC<HighlightsProps> = ({
         >
           {highlights.map((item, index) => (
             <SwiperSlide key={index} className="h-full">
-              <div className="highlight-item h-full flex flex-col justify-between p-4 border rounded-lg shadow-sm">
+              <div
+                className="highlight-item h-full flex flex-col justify-between p-4 border rounded-lg shadow-sm bg-white hover:shadow-md transition-shadow duration-300"
+                style={{ borderColor: `${color}33` }}
+              >
                 {item.icon && (
-                  <i className={`${item.icon} text-4xl mb-3`} style={{ color }} />
+                  <i
+                    className={`${item.icon} text-4xl mb-3`}
+                    style={{ color }}
+                  />
                 )}
                 <div className="flex-1">
-                  <h3 className="font-semibold text-lg">{item.title}</h3>
-                  <p className="text-gray-600 text-sm">{item.description}</p>
+                  {item.title && (
+                    <h3 className="font-semibold text-lg mb-2">
+                      <Translator text={item.title} targetLang={language} />
+                    </h3>
+                  )}
+                  {item.description && (
+                    <p className="text-gray-600 text-sm">
+                      <Translator
+                        text={item.description}
+                        targetLang={language}
+                      />
+                    </p>
+                  )}
                 </div>
               </div>
             </SwiperSlide>

@@ -1,17 +1,14 @@
 'use client'
 
-import { useEffect } from 'react'
-import AOS from 'aos'
+import { useLanguage } from './context/LanguageContext'
 import Link from "next/link"
-import Image from 'next/image'
+import Image from "next/image"
 import { usePathname } from 'next/navigation'
+import Translator from './commonComponents/Translator'
 
 export default function Header() {
-  useEffect(() => {
-    AOS.init({ duration: 1000 })
-  }, [])
-
-  const pathname = usePathname() // current route
+  const { language, setLanguage } = useLanguage()
+  const pathname = usePathname()
 
   const navItems = [
     { title: "Home", href: "/" },
@@ -29,11 +26,24 @@ export default function Header() {
     <header className="shadow-sm">
       <nav className="navbar navbar-expand-lg navbar-light px-3">
         <a className="navbar-brand d-flex align-items-center text-white" href="#">
-          <Image src="/assets/images/logo.png" alt="Explore Maharashtra Logo" height={50} width={190} className="me-2" />
+          <Image
+            src="/assets/images/logo.png"
+            alt="Explore Maharashtra Logo"
+            height={50}
+            width={190}
+            className="me-2"
+          />
         </a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             {navItems.map((item) => (
@@ -42,10 +52,19 @@ export default function Header() {
                   href={item.href}
                   className={`nav-link text-white ${pathname === item.href ? 'active' : ''}`}
                 >
-                  <span>{item.title}</span>
+                  {/* ✅ Translate navigation labels */}
+                  <Translator text={item.title} targetLang={language} />
                 </Link>
               </li>
             ))}
+            <li className="nav-item ms-3 pt-2">
+              <button
+                onClick={() => setLanguage(language === 'en' ? 'mr' : 'en')}
+                className="btn btn-primary btn-sm mt-1"
+              >
+                {language === 'en' ? 'मराठी' : 'English'}
+              </button>
+            </li>
           </ul>
         </div>
       </nav>

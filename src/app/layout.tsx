@@ -8,6 +8,7 @@ import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { ReactNode } from 'react'
+import { LanguageProvider } from './components/context/LanguageContext'
 
 // ✅ Google Font
 const quicksand = Quicksand({
@@ -33,9 +34,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={quicksand.className}>
+        <LanguageProvider>
         <Header />
         {children}
         <Footer />
+        </LanguageProvider>
       </body>
     </html>
   )

@@ -3,6 +3,8 @@ import React from "react";
 import SectionTitle from "./SectionTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import { useLanguage } from "../context/LanguageContext";
+import Translator from "../commonComponents/Translator";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,10 +24,13 @@ const HowToReach: React.FC<HowToReachProps> = ({
   transport = [],
   color = "#00aaff", // default accent color
 }) => {
+  const { language } = useLanguage();
+
   if (!transport.length) return null;
 
   return (
     <section id="reach" className="mb-8">
+      {/* 🗺️ Section Title */}
       <SectionTitle title="How to Reach" color={color} />
 
       <div className="relative group">
@@ -49,8 +54,8 @@ const HowToReach: React.FC<HowToReachProps> = ({
         >
           {transport.map((item, idx) => (
             <SwiperSlide key={idx} className="!h-auto px-1">
-              <div className="highlight-item h-full flex flex-col">
-                {/* Icon */}
+              <div className="highlight-item h-full flex flex-col p-4 border rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
+                {/* 🚗 Icon */}
                 {item.icon && (
                   <i
                     className={`${item.icon} text-3xl mb-3`}
@@ -58,24 +63,20 @@ const HowToReach: React.FC<HowToReachProps> = ({
                   />
                 )}
 
-                {/* Title */}
+                {/* 🚆 Title */}
                 {item.title && (
-                  <h3
-                    className="font-semibold text-lg mb-2"
-                    style={{ color }}
-                  >
-                    {item.title}
+                  <h3 className="font-semibold text-lg mb-2" style={{ color }}>
+                    <Translator text={item.title} targetLang={language} />
                   </h3>
                 )}
 
-                {/* Details */}
+                {/* ✈️ Details */}
                 {item.details && item.details.length > 0 && (
                   <div className="text-gray-700 text-sm mt-2 space-y-1">
                     {item.details.map((line, lineIdx) => (
-                      <p
-                        key={lineIdx}
-                        dangerouslySetInnerHTML={{ __html: line }}
-                      />
+                      <p key={lineIdx}>
+                        <Translator text={line} targetLang={language} />
+                      </p>
                     ))}
                   </div>
                 )}

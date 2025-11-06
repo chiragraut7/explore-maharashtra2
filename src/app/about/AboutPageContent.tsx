@@ -3,10 +3,13 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useLanguage } from '../components/context/LanguageContext'
+import Translator from '../components/commonComponents/Translator';
 
 
 
 export default function AboutPageContent() {
+  const { language } = useLanguage()
     useEffect(() => {
     if (typeof window !== "undefined") {
       // Dynamically import Bootstrap JS
@@ -22,30 +25,30 @@ export default function AboutPageContent() {
       <header className="shadow-sm">
         <div className="banner">
           <div className="text-center py-5">
-            <h1 className="display-4 text-white fw-bold">About Us</h1>
-            <p className="lead text-white">Explore Maharashtra</p>
+            <h1 className="display-4 text-white fw-bold"><Translator text='About Us'  targetLang={language}/></h1>
+            <p className="lead text-white"><Translator text='Explore Maharashtra'  targetLang={language}/></p>
           </div>
         </div>
       </header>
 
       <section className="container py-5">
         <div className="home text-center">
-          <h2 className="section-title mt-2 mb-4">Overview</h2>
+          <h2 className="section-title mt-2 mb-4"><Translator text='Overview' targetLang={language}/></h2>
           <p>
-            Explore Maharashtra is your trusted travel companion, dedicated to showcasing the rich cultural
+            <Translator text='Explore Maharashtra is your trusted travel companion, dedicated to showcasing the rich cultural
             heritage, natural beauty, and historic wonders of Maharashtra. From tranquil beaches and majestic
             forts to verdant hill stations and sacred temples, our mission is to help travelers experience every
-            corner of this vibrant state.
+            corner of this vibrant state.'  targetLang={language}/>
           </p>
           <p>
-            Whether you&apos;re a weekend explorer, a history buff, or a nature lover, our platform offers
-            in-depth insights, travel guides, and local tips to make your journey unforgettable.
+            <Translator text='Whether you&apos;re a weekend explorer, a history buff, or a nature lover, our platform offers
+            in-depth insights, travel guides, and local tips to make your journey unforgettable.'  targetLang={language}/>
           </p>
           <p>
-            Join us in discovering the real Maharashtra &mdash; beyond the tourist brochures.
+            <Translator text='Join us in discovering the real Maharashtra &mdash; beyond the tourist brochures.'  targetLang={language}/>
           </p>
 
-        <h2 className="section-title mt-5 mb-0">Journey Through Maharashtra - Timeline</h2>
+        <h2 className="section-title mt-5 mb-0"><Translator text='Journey Through Maharashtra - Timeline'  targetLang={language}/></h2>
         <div className="timeline-container mt-0">
           <div className="timeline-line"></div>
 
@@ -55,22 +58,22 @@ export default function AboutPageContent() {
               className={`timeline-row ${i % 2 === 0 ? 'odd' : 'even'} timeline-hover`}
             >
               <div className="timeline-year" data-aos="fade-down">
-                {item.year}
+                <Translator text={item.year}  targetLang={language}/>
               </div>
               <div
                 className="timeline-content"
                 data-aos={i % 2 === 0 ? 'fade-right' : 'fade-left'}
                 data-aos-delay="600"
               >
-                <h4>{item.title}</h4>
-                <p>{item.description}</p>
+                <h4><Translator text={item.title} targetLang={language}/></h4>
+                <p><Translator text={item.description} targetLang={language}/></p>
                 <button
                   type="button"
                   className={`btn ${item.btnClass || 'btn-outline-dark'} view-more-btn`}
                   data-bs-toggle="modal"
                   data-bs-target={item.modalId}
                 >
-                  View More
+                  <Translator text='View More' targetLang={language}/>
                 </button>
               </div>
             </div>
@@ -94,7 +97,7 @@ export default function AboutPageContent() {
                       className="modal-title fw-bold text-dark"
                       id={`${modal.id.replace('#', '')}Label`}
                     >
-                      {modal.title}
+                      <Translator text={modal.title} targetLang={language}/>
                     </h5>
                     <button
                       type="button"

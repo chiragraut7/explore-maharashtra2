@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import SectionTitle from "./SectionTitle";
+import { useLanguage } from "../context/LanguageContext";
+import Translator from "../commonComponents/Translator";
 
 interface Tip {
   icon?: string;
@@ -10,22 +12,42 @@ interface Tip {
 
 interface BookingTipsProps {
   tips?: Tip[];
+  color?: string;
 }
 
-export default function BookingTips({ tips = [] }: BookingTipsProps) {
+const BookingTips: React.FC<BookingTipsProps> = ({ tips = [], color = "#00aaff" }) => {
+  const { language } = useLanguage();
+
   if (!tips.length) return null;
 
   return (
     <section id="booking-tips" className="mb-5">
-      <SectionTitle title="Hotel Booking Tips" />
-      <div className="card p-4">
+      {/* 🏨 Section Title */}
+      <SectionTitle title="Hotel Booking Tips" color={color} />
+
+      {/* 💬 Tips List */}
+      <div className="card p-4 bg-white shadow-sm rounded-lg">
         <div className="tips icon-list space-y-2">
           {tips.map((tip, idx) => (
             <div key={idx} className="flex items-start text-gray-800">
-              {tip.icon && <i className={`${tip.icon} mt-1 attraction-icon`}></i>}
-              <span>
-                {tip.title && <strong>{tip.title}: </strong>}
-                {tip.description}
+              {/* Icon */}
+              {tip.icon && (
+                <i
+                  className={`${tip.icon} mt-1 attraction-icon mr-2`}
+                  style={{ color }}
+                ></i>
+              )}
+
+              {/* Translated Text */}
+              <span className="leading-relaxed">
+                {tip.title && (
+                  <strong>
+                    <Translator text={tip.title} targetLang={language} />:
+                  </strong>
+                )}{" "}
+                {tip.description && (
+                  <Translator text={tip.description} targetLang={language} />
+                )}
               </span>
             </div>
           ))}
@@ -33,4 +55,6 @@ export default function BookingTips({ tips = [] }: BookingTipsProps) {
       </div>
     </section>
   );
-}
+};
+
+export default BookingTips;

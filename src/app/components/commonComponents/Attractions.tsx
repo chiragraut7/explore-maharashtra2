@@ -4,6 +4,8 @@ import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import { useLanguage } from "../context/LanguageContext";
+import Translator from "../commonComponents/Translator";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -23,10 +25,13 @@ interface AttractionsProps {
 }
 
 const Attractions: React.FC<AttractionsProps> = ({ items = [], color = "#00aaff" }) => {
+  const { language } = useLanguage();
+
   if (!items.length) return null;
 
   return (
     <section id="attractions" className="mb-8">
+      {/* 🌍 Auto-translated section heading */}
       <SectionTitle title="Nearby Attractions" color={color} />
 
       <div className="relative group">
@@ -51,7 +56,7 @@ const Attractions: React.FC<AttractionsProps> = ({ items = [], color = "#00aaff"
           {items.map((attr, idx) => (
             <SwiperSlide key={idx} className="!h-auto px-1">
               <div className="attraction-card h-full flex flex-col border rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
-                {/* Image */}
+                {/* 🖼️ Image */}
                 {attr.image && (
                   <div className="relative w-full h-48">
                     <Image
@@ -63,23 +68,26 @@ const Attractions: React.FC<AttractionsProps> = ({ items = [], color = "#00aaff"
                   </div>
                 )}
 
-                {/* Content */}
+                {/* 🧾 Content */}
                 <div className="p-4 flex flex-col flex-grow">
+                  {/* Title */}
                   {attr.title && (
                     <h3
                       className="font-semibold text-lg mb-1"
                       style={{ color }}
                     >
-                      {attr.title}
+                      <Translator text={attr.title} targetLang={language} />
                     </h3>
                   )}
 
+                  {/* Description */}
                   {attr.description && (
                     <p className="text-gray-600 text-sm mb-2">
-                      {attr.description}
+                      <Translator text={attr.description} targetLang={language} />
                     </p>
                   )}
 
+                  {/* Label + Value */}
                   {attr.label && attr.value && (
                     <p className="text-sm text-gray-700 mt-auto">
                       {attr.icon && (
@@ -88,7 +96,10 @@ const Attractions: React.FC<AttractionsProps> = ({ items = [], color = "#00aaff"
                           style={{ color }}
                         ></i>
                       )}
-                      <strong>{attr.label}:</strong> {attr.value}
+                      <strong>
+                        <Translator text={attr.label} targetLang={language} />:
+                      </strong>{" "}
+                      <Translator text={attr.value} targetLang={language} />
                     </p>
                   )}
                 </div>

@@ -3,6 +3,8 @@ import React from "react";
 import SectionTitle from "./SectionTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import { useLanguage } from "../context/LanguageContext";
+import Translator from "../commonComponents/Translator";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -16,9 +18,9 @@ interface MarineItem {
 interface MarineLifeProps {
   content?: {
     title?: string;
-    intro?: string;
+    intro?: string | string[];
     items?: MarineItem[];
-    conclusion?: string[];
+    conclusion?: string | string[];
   };
   color?: string;
 }
@@ -27,21 +29,33 @@ const MarineLife: React.FC<MarineLifeProps> = ({
   content,
   color = "#00aaff", // default ocean blue
 }) => {
+  const { language } = useLanguage();
+
   if (!content) return null;
+
+  // 🧠 Helper to handle both string and string[] (intro & conclusion)
+  const renderParagraphs = (text?: string | string[]) => {
+    if (!text) return null;
+    const paragraphs = Array.isArray(text) ? text : [text];
+    return paragraphs.map((p, i) => (
+      <p
+        key={i}
+        className="text-gray-700 mb-4 text-sm md:text-base leading-relaxed"
+      >
+        <Translator text={p} targetLang={language} />
+      </p>
+    ));
+  };
 
   return (
     <section id="marine" className="mb-8">
-      {/* Section Title */}
+      {/* 🌊 Section Title */}
       {content.title && <SectionTitle title={content.title} color={color} />}
 
-      {/* Intro Paragraph */}
-      {content.intro && (
-        <p className="text-gray-600 mb-4 text-sm md:text-base leading-relaxed">
-          {content.intro}
-        </p>
-      )}
+      {/* 🪸 Intro Paragraph */}
+      {renderParagraphs(content.intro)}
 
-      {/* Marine Life Carousel */}
+      {/* 🐠 Marine Life Carousel */}
       {content.items && content.items.length > 0 && (
         <div className="relative group">
           <Swiper
@@ -64,8 +78,8 @@ const MarineLife: React.FC<MarineLifeProps> = ({
           >
             {content.items.map((item, idx) => (
               <SwiperSlide key={idx} className="!h-auto px-1">
-                <div className="highlight-item h-full flex flex-col p-4">
-                  {/* Icon */}
+                <div className="highlight-item h-full flex flex-col p-4 border rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
+                  {/* 🐚 Icon */}
                   {item.icon && (
                     <i
                       className={`${item.icon} text-3xl mb-3`}
@@ -73,19 +87,17 @@ const MarineLife: React.FC<MarineLifeProps> = ({
                     />
                   )}
 
-                  {/* Title */}
+                  {/* 🧭 Title */}
                   {item.title && (
-                    <h3
-                      className="font-semibold text-lg mb-1"
-                    >
-                      {item.title}
+                    <h3 className="font-semibold text-lg mb-1">
+                      <Translator text={item.title} targetLang={language} />
                     </h3>
                   )}
 
-                  {/* Description */}
+                  {/* 🌊 Description */}
                   {item.description && (
                     <p className="text-gray-600 text-sm mt-2 leading-relaxed">
-                      {item.description}
+                      <Translator text={item.description} targetLang={language} />
                     </p>
                   )}
                 </div>
@@ -95,15 +107,8 @@ const MarineLife: React.FC<MarineLifeProps> = ({
         </div>
       )}
 
-      {/* Conclusion Paragraphs */}
-      {content.conclusion?.map((para, idx) => (
-        <p
-          key={idx}
-          className="mt-4 text-gray-700 text-sm md:text-base leading-relaxed"
-        >
-          {para}
-        </p>
-      ))}
+      {/* 🪼 Conclusion Paragraphs */}
+      {renderParagraphs(content.conclusion)}
     </section>
   );
 };

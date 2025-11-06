@@ -5,6 +5,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useLanguage } from './components/context/LanguageContext'
 
 // Import category sliders
 import BeachList from './components/beaches/BeachList'
@@ -13,21 +14,16 @@ import FortList from './components/FortList'
 import NatureList from './components/NatureList'
 import ReligiousList from './components/ReligiousList'
 import CulturalList from './components/CulturalList'
-
-// Section type
-interface Section {
-  id: string
-  title: string
-  image: string
-  link: string
-}
+import Translator from './components/commonComponents/Translator'
 
 export default function Home() {
+  const { language } = useLanguage()
+
   useEffect(() => {
     AOS.init({ duration: 1000 })
   }, [])
 
-  const sections: Section[] = [
+  const sections = [
     { id: 'beaches', title: 'Beaches', image: '/assets/images/home_iocn/beach-umbrella.svg', link: '/beaches' },
     { id: 'hill-stations', title: 'Hill Stations', image: '/assets/images/home_iocn/hills.svg', link: '/hills' },
     { id: 'forts', title: 'Forts', image: '/assets/images/home_iocn/castle-3.svg', link: '/forts' },
@@ -38,74 +34,75 @@ export default function Home() {
 
   return (
     <>
-      {/* Banner */}
+      {/* 🌅 Banner */}
       <header className="shadow-sm">
         <div className="banner">
           <div className="text-center py-5">
-            <h1 className="display-4 text-white fw-bold">Explore Maharashtra</h1>
+            <h1 className="display-4 text-white fw-bold">
+              <Translator text="Explore Maharashtra" targetLang={language} />
+            </h1>
             <p className="lead text-white">
-              Discover Beaches, Forts, Nature, and Culture of Maharashtra
+              <Translator text="Discover Beaches, Forts, Nature, and Culture of Maharashtra" targetLang={language} />
             </p>
           </div>
         </div>
       </header>
 
-      {/* Overview Section */}
+      {/* 🧭 Overview Section */}
       <section className="container text-center py-5 home" id="overview">
-        <h2 className="section-title mt-2">Overview</h2>
+        <h2 className="section-title mt-2">
+          <Translator text="Overview" targetLang={language} />
+        </h2>
         <p>
-          Explore Maharashtra is your trusted travel companion, dedicated to showcasing the rich cultural
-          heritage, natural beauty, and historic wonders of Maharashtra.
+          <Translator
+            text="Explore Maharashtra is your trusted travel companion, dedicated to showcasing the rich cultural heritage, natural beauty, and historic wonders of Maharashtra."
+            targetLang={language}
+          />
         </p>
         <p>
-          Whether you&apos;re a weekend explorer, a history buff, or a nature lover, our platform offers
-          in-depth insights, travel guides, and local tips to make your journey unforgettable.
+          <Translator
+            text="Whether you're a weekend explorer, a history buff, or a nature lover, our platform offers in-depth insights, travel guides, and local tips to make your journey unforgettable."
+            targetLang={language}
+          />
         </p>
         <Link href="/about" className="btn btn-outline-dark mt-2 w-auto">
-          Read More
+          <Translator text="Read More" targetLang={language} />
         </Link>
       </section>
 
-      {/* Section Cards */}
+      {/* 🏖️ Section Cards */}
       <section className="container homeLinks py-5">
         <div className="row g-4">
           {sections.map((section) => (
-            <SectionCard key={section.id} {...section} />
+            <div className="col" id={section.id} key={section.id}>
+              <Link href={section.link}>
+                <div className="card text-center shadow-sm hover:shadow-lg transition-all duration-300">
+                  <div className="card-body p-4">
+                    <Image src={section.image} alt={section.title} width={100} height={100} className="m-auto" />
+                    <h3 className="card-title mt-3">
+                      <Translator text={section.title} targetLang={language} />
+                    </h3>
+                  </div>
+                </div>
+              </Link>
+            </div>
           ))}
         </div>
       </section>
 
-      {/* Category Sliders */}
+      {/* 🏞️ Category Sliders */}
       <section className="container-fluid py-5 herosection">
         <div className="container">
           <div className="row g-4">
-            <div className="col-md-12"><div className="homeSlide"><BeachList /></div></div>
-            <div className="col-md-12 odd"><div className="homeSlide"><HillList /></div></div>
-            <div className="col-md-12"><div className="homeSlide"><FortList /></div></div>
-            <div className="col-md-12 odd"><div className="homeSlide"><NatureList /></div></div>
-            <div className="col-md-12"><div className="homeSlide"><ReligiousList /></div></div>
-            <div className="col-md-12 odd"><div className="homeSlide"><CulturalList /></div></div>
+            <div className="col-md-12"><BeachList /></div>
+            <div className="col-md-12 odd"><HillList /></div>
+            <div className="col-md-12"><FortList /></div>
+            <div className="col-md-12 odd"><NatureList /></div>
+            <div className="col-md-12"><ReligiousList /></div>
+            <div className="col-md-12 odd"><CulturalList /></div>
           </div>
         </div>
       </section>
     </>
-  )
-}
-
-// Reusable SectionCard Component
-interface SectionCardProps extends Section {}
-
-function SectionCard({ id, title, image, link }: SectionCardProps) {
-  return (
-    <div className="col" id={id}>
-      <Link href={link}>
-        <div className="card text-center shadow-sm hover:shadow-lg transition-all duration-300">
-          <div className="card-body p-4">
-            <Image src={image} alt={title} width={100} height={100} className="m-auto" />
-            <h3 className="card-title mt-3">{title}</h3>
-          </div>
-        </div>
-      </Link>
-    </div>
   )
 }
