@@ -45,8 +45,8 @@ export default function Translator({ text, targetLang }: TranslatorProps) {
 
           // ✅ Fix for “Explore” cases
           output = output
-            .replace(/\bExplore Maharashtra\b/gi, 'महाराष्ट्राचा शोध घ्या')
-            .replace(/\bExplore\b/gi, 'शोध घ्या')
+            .replace(/\bमहाराष्ट्र एक्सप्लोर करा\b/gi, 'महाराष्ट्राचा शोध घ्या')
+            .replace(/\bएक्सप्लोर करा\b/gi, 'शोध घ्या')
         }
 
         setTranslatedText(output)

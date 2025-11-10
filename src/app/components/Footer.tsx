@@ -11,7 +11,10 @@ export default function Footer() {
     <footer className="text-center py-3 bg-dark text-white mt-5">
       <p className="text-sm md:text-base">
         &copy; 2025{' '}
-        <span className="fw-semibold text-primary">Explore Maharashtra</span>.{' '}
+        <span className="fw-semibold text-primary"><Translator
+          text="Explore Maharashtra"
+          targetLang={language}
+        /> </span>.
         <Translator
           text="Discover its Beauty & Culture."
           targetLang={language}
