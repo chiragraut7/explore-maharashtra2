@@ -77,6 +77,7 @@ type Destination = {
   title: string
   subtitle?: string
   bannerImage?: string
+  insideBannerImage?: string
   color?: string
   overview?: { title?: string; description?: string }
   highlights?: { icon?: string; title?: string; description?: string }[]
@@ -137,7 +138,7 @@ export default function ItemPage() {
       <Banner
         title={data.title}
         subtitle={data.subtitle}
-        image={data.bannerImage}
+        image={data.insideBannerImage ?? data.bannerImage}
         color={data.color}
         view={view}
         setView={setView}

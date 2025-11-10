@@ -1480,3 +1480,6 @@ nextjs-portal {
     transform: translateX(5px);
     color: #fff;
 }
+.h3, h3 {
+    font-size: 1.25rem;
+}

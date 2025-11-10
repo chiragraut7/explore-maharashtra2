@@ -3,6 +3,7 @@
   "title": "Malvan Beach",
   "subtitle": "Adventure, coral reefs, and the historic Sindhudurg Fort",
   "bannerImage": "/assets/images/beaches/malvan.jpg",
+  "insideBannerImage": "/assets/images/beaches/00/malvan.jpg",
   "color": "#1a2a3a",
   "overview": [
     "Malvan Beach, located in the Sindhudurg district of Maharashtra, is a paradise for adventure lovers and history enthusiasts alike. Known for its crystal-clear waters, coral reefs, and the iconic Sindhudurg Fort, this coastal town offers a perfect blend of natural beauty and heritage.",
@@ -32,7 +33,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/malvan-map.jpg",
+    "image": "/assets/images/beaches/00/info2.jpg",
     "intro": "Malvan Beach lies along the southern Konkan coast, near the town of Malvan in Sindhudurg district.",
     "details": [
       {
@@ -115,7 +116,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/sindhudurg-fort.jpg",
+      "image": "/assets/images/beaches/00/sindhudurg-fort.jpg",
       "title": "Sindhudurg Fort",
       "description": "A historic sea fort built in 1664 by Chhatrapati Shivaji Maharaj, located on an island near Malvan coast.",
       "distance": "2 km from Malvan Jetty",
@@ -123,7 +124,7 @@
       "value": "Historical Fort"
     },
     {
-      "image": "/assets/images/beaches/tarkarli.jpg",
+      "image": "/assets/images/beaches/00/tarkarli.jpg",
       "title": "Tarkarli Beach",
       "description": "Famous for scuba diving and long sandy stretches; just a few kilometers from Malvan.",
       "distance": "6 km from Malvan",
@@ -131,7 +132,7 @@
       "value": "Water Sports Destination"
     },
     {
-      "image": "/assets/images/beaches/rock-garden.jpg",
+      "image": "/assets/images/beaches/00/rock-garden.jpg",
       "title": "Rock Garden",
       "description": "A landscaped viewpoint on Malvan’s rocky shore offering panoramic sunset views.",
       "distance": "1 km from Malvan Town",
@@ -139,7 +140,7 @@
       "value": "Viewpoint"
     },
     {
-      "image": "/assets/images/beaches/tsunami-island.jpg",
+      "image": "/assets/images/beaches/00/tsunami-island.jpg",
       "title": "Tsunami Island",
       "description": "A small island formed by a 2004 tsunami, now a hotspot for water sports and boating.",
       "distance": "5 km from Malvan",
@@ -199,23 +200,23 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/malvan1.jpg",
-      "thumb": "/assets/images/beaches/malvan1.jpg",
+      "src": "/assets/images/beaches/00/malvan1.jpg",
+      "thumb": "/assets/images/beaches/00/malvan1.jpg",
       "alt": "Malvan Beach Sunset"
     },
     {
-      "src": "/assets/images/beaches/malvan2.jpg",
-      "thumb": "/assets/images/beaches/malvan2.jpg",
+      "src": "/assets/images/beaches/00/malvan2.jpg",
+      "thumb": "/assets/images/beaches/00/malvan2.jpg",
       "alt": "Scuba Diving in Malvan"
     },
     {
-      "src": "/assets/images/beaches/malvan3.jpg",
-      "thumb": "/assets/images/beaches/malvan3.jpg",
+      "src": "/assets/images/beaches/00/sindhudurg-fort.jpg",
+      "thumb": "/assets/images/beaches/00/sindhudurg-fort.jpg",
       "alt": "Sindhudurg Fort from Sea"
     },
     {
-      "src": "/assets/images/beaches/malvan4.jpg",
-      "thumb": "/assets/images/beaches/malvan4.jpg",
+      "src": "/assets/images/beaches/00/rock-garden.jpg",
+      "thumb": "/assets/images/beaches/00/rock-garden.jpg",
       "alt": "Rock Garden Viewpoint"
     }
   ],
