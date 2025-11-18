@@ -4,6 +4,7 @@
   "category":"Beach",
   "subtitle": "Golden sands, shady trees, and tranquil vibes near Mumbai",
   "bannerImage": "/assets/images/beaches/kelva-beach.jpg",
+  "insideBannerImage": "/assets/images/beaches/02/bannerImg.jpg",
     "color": "#fea200",
    "overview":  [
     "Kelwa Beach, also known as Kelva Beach, is a beautiful and serene destination located in the Palghar district of Maharashtra. Surrounded by Suru trees and stretching across several kilometers, it&apos;s popular for its peaceful vibe, less crowded shores, and accessibility from Mumbai."
@@ -31,7 +32,7 @@
   }
 ],
   "geography": {
-  "image": "/assets/images/beaches/kelva-beach.jpg",
+  "image": "/assets/images/beaches/02/info3.jpg",
   "intro": "Kelwa Beach is located in the Palghar district of Maharashtra, situated along the Arabian Sea coast. It spans over 7 kilometers of golden shoreline and is surrounded by coconut plantations, dense Suru (Casuarina) trees, and small fishing villages. Its proximity to Mumbai makes it a popular weekend getaway.",
   "details": [
     {
@@ -131,7 +132,7 @@
 ,
  "attractions": [
   {
-    "image": "/assets/images/beaches.jpg",
+    "image": "/assets/images/beaches/02/img1.jpg",
     "title": "Shitladevi Temple",
     "description": "A peaceful and spiritual temple located near the beach. The serene environment and traditional architecture make it a great place to unwind and offer prayers.",
     "icon": "fas fa-pray",
@@ -139,7 +140,7 @@
     "value": "Religious & Cultural"
   },
   {
-    "image": "/assets/images/beaches.jpg",
+    "image": "/assets/images/beaches/02/img2.jpg",
     "title": "Kelwa Fort",
     "description": "A small but historically significant fort near the beach that offers a quick trek and scenic views. Perfect for history buffs and explorers.",
     "icon": "fas fa-map-marker-alt",
@@ -147,7 +148,7 @@
     "value": "1 km from Kelwa Beach"
   },
   {
-    "image": "/assets/images/beaches.jpg",
+    "image": "/assets/images/beaches/02/img3.jpg",
     "title": "Kelwa Dam",
     "description": "A calm spot ideal for picnics and scenic photography. It&apos;s a popular weekend hangout for local families and nature lovers.",
     "icon": "fas fa-camera",
@@ -155,7 +156,7 @@
     "value": "Picnic & Photography"
   },
   {
-    "image": "/assets/images/beaches.jpg",
+    "image": "/assets/images/beaches/02/img4.jpg",
     "title": "Pankot Ruins",
     "description": "Explore the lesser-known ruins of Pankot, which reflect the forgotten tales of Kelwa&apos;s past. A quiet and offbeat location.",
     "icon": "fas fa-landmark",
@@ -163,7 +164,7 @@
     "value": "Heritage Site"
   },
   {
-    "image": "/assets/images/beaches.jpg",
+    "image": "/assets/images/beaches/02/img5.jpg",
     "title": "Mahim Fort",
     "description": "An old sea-facing fort near the Mahim creek. It offers picturesque views and an atmospheric setting for explorers.",
     "icon": "fas fa-map-marker-alt",
@@ -171,7 +172,7 @@
     "value": "Approx. 12 km"
   },
   {
-    "image": "/assets/images/beaches.jpg",
+    "image": "/assets/images/beaches/02/img6.jpg",
     "title": "Shirgaon Fort",
     "description": "This 16th-century fort offers stunning views from the top and a quiet historical escape. A great place to click panoramic photos.",
     "icon": "fas fa-camera",
@@ -262,24 +263,34 @@
 ,
 "gallery": [
   {
-    "src": "/assets/images/kelwa1.jpg",
-    "thumb": "/assets/images/beaches.jpg",
+    "src": "/assets/images/beaches/02/img1.jpg",
+    "thumb": "/assets/images/beaches/02/img1.jpg",
     "alt": "Kelwa Beach Sunrise"
   },
   {
-    "src": "/assets/images/kelwa2.jpg",
-    "thumb": "/assets/images/beaches.jpg",
+    "src": "/assets/images/beaches/02/img2.jpg",
+    "thumb": "/assets/images/beaches/02/img2.jpg",
     "alt": "Evening by the Beach"
   },
   {
-    "src": "/assets/images/kelwa3.jpg",
-    "thumb": "/assets/images/beaches.jpg",
-    "alt": "Suru Trees View"
+    "src": "/assets/images/beaches/02/img3.jpg",
+    "thumb": "/assets/images/beaches/02/img3.jpg",
+    "alt": "Kelwa Beach Sunrise"
   },
   {
-    "src": "/assets/images/kelwa4.jpg",
-    "thumb": "/assets/images/beaches.jpg",
-    "alt": "Cottage Stay"
+    "src": "/assets/images/beaches/02/img4.jpg",
+    "thumb": "/assets/images/beaches/02/img4.jpg",
+    "alt": "Evening by the Beach"
+  },
+  {
+    "src": "/assets/images/beaches/02/img5.jpg",
+    "thumb": "/assets/images/beaches/02/img5.jpg",
+    "alt": "Kelwa Beach Sunrise"
+  },
+  {
+    "src": "/assets/images/beaches/02/img6.jpg",
+    "thumb": "/assets/images/beaches/02/img6.jpg",
+    "alt": "Evening by the Beach"
   }
 ],
 "bookingTips": [

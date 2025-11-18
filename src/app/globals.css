@@ -1015,6 +1015,9 @@ nextjs-portal {
   position: relative !important;
   height: auto !important;
 }
+.card-img-top.h-100{
+  height: 100% !important;
+}
 
 .home .row .col-12{
   padding: 0;
@@ -1482,4 +1485,442 @@ nextjs-portal {
 }
 .h3, h3 {
     font-size: 1.25rem;
+}
+
+/* ======================================================
+   EXPLORE MAHARASHTRA – HOTEL PRODUCT CATALOG STYLING
+   ====================================================== */
+/* Section Container */
+.product-section {
+  background: var(--primary-bg);
+  min-height: 100vh;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Section Title */
+.product-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.filter-select,
+.filter-search {
+  border: 2px solid var(--primary-color);
+  padding: 10px 16px;
+  border-radius: 30px;
+  background: #fff;
+  font-size: 1rem;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+.filter-select:hover,
+.filter-search:focus {
+  box-shadow: 0 0 8px rgba(24, 124, 171, 0.3);
+  outline: none;
+}
+
+.filter-search {
+  min-width: 220px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+/* Product Card */
+.product-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 28px rgba(24, 124, 171, 0.2);
+  border-color: var(--active-color);
+}
+
+/* Image Section */
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 230px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+
+/* Product Info */
+.product-info {
+  padding: 18px 14px 26px;
+}
+
+.product-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.product-info .category {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.product-info .price {
+  font-weight: 600;
+  color: var(--primary-color);
+  background: var(--primary-select);
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+
+.product-card:hover::after {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 1.8rem;
+  }
+  .filter-bar {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .filter-search {
+    width: 100%;
+  }
+}
+/* ======================================================
+   PRODUCT DETAIL PAGE - Explore Maharashtra
+   ====================================================== */
+
+/* Container */
+.product-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  background: var(--primary-bg);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Title */
+.product-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.product-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.product-header p {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+/* Grid Layout */
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+/* Image Gallery */
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product-gallery img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(24, 124, 171, 0.25);
+}
+
+/* Product Info Section */
+.product-info {
+  background: #fff;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.product-info:hover {
+  box-shadow: 0 10px 30px rgba(24, 124, 171, 0.15);
+}
+
+.product-info p {
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+/* Subheadings */
+.product-info h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+/* Features List */
+.product-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.product-features li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.product-features li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--active-color);
+  font-weight: bold;
+}
+
+/* Price Tag */
+.price-box {
+  background: linear-gradient(90deg, var(--primary-color), var(--active-color));
+  color: #fff;
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 14px rgba(24, 124, 171, 0.3);
+  margin-top: 12px;
+}
+
+/* Button */
+.enquiry-btn {
+  margin-top: 30px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(24, 124, 171, 0.3);
+  transition: all 0.3s ease;
+}
+
+.enquiry-btn:hover {
+  background: var(--active-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(163, 180, 57, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-detail-container {
+    padding: 40px 16px;
+  }
+  .product-header h1 {
+    font-size: 1.8rem;
+  }
+  .product-info {
+    padding: 24px;
+  }
+}
+/* ============================================
+   PRODUCT LIST PAGE - EXPLORE MAHARASHTRA STYLE
+   ============================================ */
+
+.product-list-container {
+  background: #f8fafc;
+  min-height: 100vh;
+  padding: 60px 20px 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+/* Product Card */
+.product-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(24, 124, 171, 0.15);
+}
+
+/* Image */
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+
+/* Info Section */
+.product-info {
+  padding: 18px 16px 26px;
+}
+
+.product-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2e2e2e;
+  margin-bottom: 8px;
+}
+
+.product-info .category {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.product-info .price {
+  background: var(--primary-select);
+  color: var(--primary-color);
+  padding: 6px 14px;
+  display: inline-block;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* View More Button below card */
+.view-more-link {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(24, 124, 171, 0.3);
+}
+
+.view-more-link:hover {
+  background: var(--active-color);
+  box-shadow: 0 4px 14px rgba(163, 180, 57, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Bottom Back Link */
+.back-link-wrapper {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 40px;
+  padding: 10px 24px;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background: var(--primary-color);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(24, 124, 171, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 1.8rem;
+  }
+  .image-wrapper {
+    height: 200px;
+  }
 }

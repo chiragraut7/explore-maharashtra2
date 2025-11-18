@@ -3,6 +3,7 @@
   "title": "Alibaug Beach",
   "subtitle": "A perfect blend of sun, sand, and historic charm near Mumbai",
   "bannerImage": "/assets/images/beaches/alibaug-beach.jpg",
+  "insideBannerImage": "/assets/images/beaches/01/bannerimg.jpg",
     "color": "#f25135",
   "overview":  [
       "Alibaug Beach is one of the most popular coastal destinations in Maharashtra, located about 100 kilometers from Mumbai. It offers a wide sandy stretch, coconut groves, and a stunning view of the Arabian Sea.",
@@ -32,7 +33,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/alibaug-beach.jpg",
+    "image": "/assets/images/beaches/01/info2.jpg",
     "intro": "Alibaug lies in the Raigad district along the western coast of Maharashtra and features several beaches like Varsoli, Kihim, and Nagaon nearby.",
     "details": [
       {
@@ -93,21 +94,21 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches.jpg",
+      "image": "/assets/images/beaches/01/img1.jpg",
       "title": "Kolaba Fort",
       "description": "Sea fort with historical cannons and panoramic views.",
       "distance": "1.5 km from beach",
       "icon": "fas fa-fort-awesome"
     },
     {
-      "image": "/assets/images/beaches.jpg",
+      "image": "/assets/images/beaches/01/img2.jpg",
       "title": "Varsoli Beach",
       "description": "A quieter beach ideal for swimming and relaxation.",
       "distance": "2 km from Alibaug Beach",
       "icon": "fas fa-water"
     },
     {
-      "image": "/assets/images/beaches.jpg",
+      "image": "/assets/images/beaches/01/img3.jpg",
       "title": "Kihim Beach",
       "description": "Famous for birdwatching, dense flora, and clean sand.",
       "distance": "12 km north",
@@ -166,18 +167,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches.jpg",
-      "thumb": "/assets/images/beaches.jpg",
+      "src": "/assets/images/beaches/01/img1.jpg",
+      "thumb": "/assets/images/beaches/01/img1.jpg",
       "alt": "Alibaug Beach Shoreline"
     },
     {
-      "src": "/assets/images/beaches.jpg",
-      "thumb": "/assets/images/beaches.jpg",
+      "src": "/assets/images/beaches/01/img2.jpg",
+      "thumb": "/assets/images/beaches/01/img2.jpg",
       "alt": "Kolaba Fort Entrance"
     },
     {
-      "src": "/assets/images/beaches.jpg",
-      "thumb": "/assets/images/beaches.jpg",
+      "src": "/assets/images/beaches/01/img3.jpg",
+      "thumb": "/assets/images/beaches/01/img3.jpg",
       "alt": "Sunset at Alibaug"
     }
   ],

@@ -1,7 +1,10 @@
 export interface Item {
-  id: string
-  title: string
-  subtitle: string
-  bannerImage: string
+  id?: string | number
+  slug?: string
+  title?: string
+  name?: string
+  bannerImage?: string
+  insideBannerImage?: string  // ✅ Added field
+  subtitle?: string
   color?: string
 }
