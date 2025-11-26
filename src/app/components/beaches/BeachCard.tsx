@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useLanguage } from '../context/LanguageContext'
@@ -15,6 +15,8 @@ interface BeachCardProps {
   btnColor: string
 }
 
+const DEFAULT_FALLBACK = '/assets/images/maharashtra-state-of-india.svg'
+
 const BeachCard: React.FC<BeachCardProps> = ({
   beach,
   category,
@@ -24,20 +26,42 @@ const BeachCard: React.FC<BeachCardProps> = ({
 }) => {
   const { language } = useLanguage()
 
-  // ✅ Safe image fallback logic
-  const imageSrc = beach.insideBannerImage || beach.bannerImage || '/images/noimage.jpg'
+  // use state for image src so we can swap to fallback on error
+  const initialSrc =
+    typeof beach?.bannerImage === 'string' && beach.bannerImage.trim() !== ''
+      ? beach.bannerImage
+      : DEFAULT_FALLBACK
+
+  const [src, setSrc] = useState<string>(initialSrc)
+
+  // If beach.bannerImage changes (hot reload / prop change), update src
+  useEffect(() => {
+    const newSrc =
+      typeof beach?.bannerImage === 'string' && beach.bannerImage.trim() !== ''
+        ? beach.bannerImage
+        : DEFAULT_FALLBACK
+    setSrc(newSrc)
+  }, [beach?.bannerImage])
+
+  // optional: guard to avoid infinite onError loops
+  const handleImgError = () => {
+    if (src !== DEFAULT_FALLBACK) {
+      setSrc(DEFAULT_FALLBACK)
+    }
+  }
 
   return (
-    <div className="h-100 shadow-sm border-0 rounded-3 overflow-hidden transition-all duration-300">
+    <div className="h-100 border-0 overflow-hidden transition-all duration-300">
       {/* 🏖️ Beach Image */}
       <div className="homeSliderImg overflow-hidden">
         <Image
-          src={imageSrc}
+          src={src}
           alt={beach.title || 'Beach Image'}
           width={600}
           height={350}
           className="card-img-top object-cover hover:scale-105 transition-transform duration-500 h-100"
           priority
+          onError={handleImgError}
         />
       </div>
 
@@ -48,23 +72,25 @@ const BeachCard: React.FC<BeachCardProps> = ({
         </h2>
 
         {beach.subtitle && (
-          <p className="text-gray-600 mb-3 text-sm leading-relaxed">
+          <p className="text-gray-600 mb-0 text-sm leading-relaxed">
             <Translator text={beach.subtitle || ''} targetLang={language} />
           </p>
         )}
 
-        {/* 🔗 View More Button */}
+        {/* 🔗 View More Button (uncomment to use) */}
+        {/*
         <Link
           href={`/${category}/${generateSlug(beach.id?.toString() || '')}`}
           className="btn btn-outline-dark"
           style={{
             backgroundColor: btnColor || 'var(--primary-color)',
             color: '#fff',
-            border:"0",
+            border: "0",
           }}
         >
-          <Translator text={'View More'} targetLang={language} />
+          <Translator text={btnLabel || 'View More'} targetLang={language} />
         </Link>
+        */}
       </div>
     </div>
   )

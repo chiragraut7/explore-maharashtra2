@@ -17,7 +17,7 @@ const CulturalList: React.FC = () => {
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const res = await fetch('/api/culture')
+        const res = await fetch('/api/cultural')
         const json = await res.json()
         if (json.success) setItems(json.data.slice(0, 5))
       } catch (err) {

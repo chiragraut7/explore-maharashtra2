@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Link from 'next/link'
@@ -16,11 +16,168 @@ import ReligiousList from './components/ReligiousList'
 import CulturalList from './components/CulturalList'
 import Translator from './components/commonComponents/Translator'
 
+type ParallaxBannerProps = {
+  image?: string
+  minScale?: number
+  maxScale?: number
+  title?: string
+  subtitle?: string
+}
+
+/**
+ * ParallaxBanner
+ * scale goes from minScale -> maxScale as the banner scrolls up
+ * Starts when banner bottom enters viewport bottom and finishes when banner center reaches viewport center.
+ */
+function ParallaxBanner({
+  image = '/assets/images/beachBanner.png',
+  minScale = 0.5,
+  maxScale = 1,
+  title = '',
+  subtitle = '',
+}: ParallaxBannerProps) {
+  const ref = useRef<HTMLDivElement | null>(null)
+  const ticking = useRef(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!ref.current) return
+
+      if (!ticking.current) {
+        requestAnimationFrame(() => {
+          const rect = ref.current!.getBoundingClientRect()
+          const viewportHeight = window.innerHeight
+          const bannerTop = rect.top
+          const bannerHeight = rect.height
+
+          // START: when banner bottom enters viewport bottom
+          const start = viewportHeight
+
+          // END: when banner center reaches viewport center
+          const bannerCenter = bannerTop + bannerHeight / 2
+          const viewportCenter = viewportHeight / 2
+          const end = viewportCenter - bannerHeight / 2
+
+          // progress 0..1
+          let progress = (start - bannerTop) / (start - end)
+          progress = Math.min(Math.max(progress, 0), 1)
+
+          const scale = minScale + (maxScale - minScale) * progress
+          ref.current!.style.transform = `scale(${scale})`
+
+          ticking.current = false
+        })
+
+        ticking.current = true
+      }
+    }
+
+    // initial set
+    if (ref.current) ref.current.style.transform = `scale(${minScale})`
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    window.addEventListener('resize', handleScroll)
+    handleScroll() // initial
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleScroll)
+    }
+  }, [minScale, maxScale])
+
+  return (
+    <div className="parallax-wrapper" style={{ position: 'relative', height: '56vh', overflow: 'hidden' }}>
+      <div
+        ref={ref}
+        className="parallax-inner"
+        style={{
+          position: 'absolute',
+          inset: 0,
+          transformOrigin: 'center',
+          transition: 'transform 0.08s linear',
+          willChange: 'transform',
+        }}
+      >
+        <Image
+          src={image}
+          alt={title || 'Banner'}
+          priority
+          fill
+          sizes="(max-width: 768px) 100vw, 1600px"
+          style={{ objectFit: 'cover' }}
+        />
+        <div className="parallax-overlay" />
+      </div>
+
+      <div className="parallax-content">
+        <h1 className="display-4 text-white fw-bold">
+          <Translator text={title || ''} targetLang={useLanguage().language} />
+        </h1>
+        {subtitle && (
+          <p className="lead text-white">
+            <Translator text={subtitle} targetLang={useLanguage().language} />
+          </p>
+        )}
+      </div>
+
+      <style jsx>{`
+        .parallax-wrapper {
+          background: linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.06));
+        }
+        .parallax-inner {
+          will-change: transform;
+        }
+        .parallax-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(180deg, rgba(2,6,23,0.28), rgba(2,6,23,0.12));
+          pointer-events: none;
+        }
+        .parallax-content {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          z-index: 2;
+          padding: 3rem 1.25rem;
+          pointer-events: none;
+        }
+      `}</style>
+    </div>
+  )
+}
+
 export default function Home() {
   const { language } = useLanguage()
 
   useEffect(() => {
     AOS.init({ duration: 1000 })
+  }, [])
+
+  // IntersectionObserver for .section-title reveal
+  useEffect(() => {
+    const titles = Array.from(document.querySelectorAll<HTMLElement>('.section-title'))
+
+    if (!titles.length) return
+    const io = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          const el = entry.target as HTMLElement
+          if (entry.isIntersecting) {
+            el.classList.add('reveal')
+            // if you want one-time animation, unobserve
+            obs.unobserve(el)
+          }
+        })
+      },
+      { threshold: 0.28 }
+    )
+
+    titles.forEach((t) => io.observe(t))
+    return () => io.disconnect()
   }, [])
 
   const sections = [
@@ -91,18 +248,129 @@ export default function Home() {
       </section>
 
       {/* 🏞️ Category Sliders */}
-      <section className="container-fluid py-5 herosection">
-        <div className="container">
-          <div className="row g-4">
-            <div className="col-md-12"><BeachList /></div>
-            <div className="col-md-12 odd"><HillList /></div>
-            <div className="col-md-12"><FortList /></div>
-            <div className="col-md-12 odd"><NatureList /></div>
-            <div className="col-md-12"><ReligiousList /></div>
-            <div className="col-md-12 odd"><CulturalList /></div>
-          </div>
+      <section className="container-fluid herosection py-5 px-0">
+        <div className="homeBeachesBanner mb-4">
+          <ParallaxBanner image="/assets/images/beachBanner.png" minScale={0.1} maxScale={1} title="Beaches" subtitle="" />
         </div>
+        <section className="container">
+          <div className="row">
+            <div className="col">
+              <div className="row g-4">
+                <div className="col-md-12">
+                  <BeachList />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
+
+      <section className="container-fluid herosection py-5 px-0">
+        <div className="homeBeachesBanner mb-4">
+          <ParallaxBanner image="/assets/images/hill_stations.jpg" minScale={0.1} maxScale={1} title="Hill Stations" subtitle="" />
+        </div>
+        <section className="container">
+          <div className="row">
+            <div className="col">
+              <div className="row g-4">
+                <div className="col-md-12 odd">
+                  <HillList />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section className="container-fluid herosection py-5 px-0">
+        <div className="homeBeachesBanner mb-4">
+          <ParallaxBanner image="/assets/images/forts.jpg" minScale={0.1} maxScale={1} title="Forts" subtitle="" />
+        </div>
+        <section className="container">
+          <div className="row">
+            <div className="col">
+              <div className="row g-4">
+                <div className="col-md-12">
+                  <FortList />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section className="container-fluid herosection py-5 px-0">
+        <div className="homeBeachesBanner mb-4">
+          <ParallaxBanner image="/assets/images/wildlife_nature.jpg" minScale={0.1} maxScale={1} title="Wildlife & Nature" subtitle="" />
+        </div>
+        <section className="container">
+          <div className="row">
+            <div className="col">
+              <div className="row g-4">
+                <div className="col-md-12 odd">
+                  <NatureList />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section className="container-fluid herosection py-5 px-0">
+        <div className="homeBeachesBanner mb-4">
+          <ParallaxBanner image="/assets/images/religious_places.jpg" minScale={0.1} maxScale={1} title="Religious Places" subtitle="" />
+        </div>
+        <section className="container">
+          <div className="row">
+            <div className="col">
+              <div className="row g-4">
+                <div className="col-md-12">
+                  <ReligiousList />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section className="container-fluid herosection py-5 px-0">
+        <div className="homeBeachesBanner mb-4">
+          <ParallaxBanner image="/assets/images/cultural_unique.jpg" minScale={0.1} maxScale={1} title="Cultural & Unique" subtitle="" />
+        </div>
+        <section className="container">
+          <div className="row">
+            <div className="col">
+              <div className="row g-4">
+                <div className="col-md-12 odd">
+                  <CulturalList />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      {/* Scoped styles for clip-path reveal and minor tweaks */}
+      <style jsx>{`
+        .section-title {
+          display: inline-block;
+          font-weight: 800;
+          opacity: 0;
+          clip-path: inset(100% 0 0 0);
+          transition: clip-path 800ms cubic-bezier(0.2, 0.9, 0.2, 1), opacity 600ms ease;
+        }
+        .section-title.reveal {
+          opacity: 1;
+          clip-path: inset(0 0 0 0);
+        }
+
+        /* small responsive adjustments */
+        .parallax-wrapper { height: 56vh; }
+        @media (max-width: 768px) {
+          .parallax-wrapper { height: 40vh; }
+          .parallax-content h1 { font-size: 26px !important; }
+        }
+      `}</style>
     </>
   )
 }

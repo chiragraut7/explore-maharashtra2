@@ -2,11 +2,11 @@
 
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules' // ✅ include EffectFade
+import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import 'swiper/css/effect-fade' // ✅ import fade effect CSS
+import 'swiper/css/effect-fade'
 import BeachCard from './BeachCard'
 import { Item } from '@/app/types'
 
@@ -38,22 +38,21 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
   return (
     <div className="relative fade-slider">
       <Swiper
-        modules={[Navigation, Pagination, Autoplay, EffectFade]} // ✅ added EffectFade
-        spaceBetween={20}
-        slidesPerView={1}
-        effect="fade"
-        fadeEffect={{ crossFade: true }}
-        speed={1000} // ✅ transition duration
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true, // ✅ pauses on hover
-        }}
-        breakpoints={{
-          320: { slidesPerView: 1 },
-          768: { slidesPerView: 1 },
-          1024: { slidesPerView: 1 },
-        }}
+          modules={[Navigation, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={3}
+          navigation
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
         className="py-6"
       >
         {beaches.map((beach) => (
