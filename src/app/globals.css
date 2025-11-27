@@ -1957,3 +1957,85 @@ nextjs-portal {
   width: 100dvw;
   height: 100dvh;
 }
+
+/* globals.css additions */
+
+/* smooth anchor scrolling (optional) */
+html { scroll-behavior: smooth; }
+
+/* --- Section item (text & items) --- */
+/* section-item used for text blocks, headings, and can be added to image wrappers too */
+.section-item {
+  --section-translate: 18px;           /* control reveal translate */
+  --parallax-translate: 0px;          /* populated by JS for images */
+  --parallax-scale: 0.995;            /* scale before reveal */
+  opacity: 0;
+  will-change: transform, opacity;
+  /* combine parallax translate + section reveal translate */
+  transform: translateY(calc(var(--parallax-translate, 0px) + var(--section-translate, 0px))) scale(var(--parallax-scale, 1));
+  transition:
+    opacity 260ms ease,
+    transform 320ms cubic-bezier(.22,.9,.32,1);
+}
+
+/* revealed state: section translate -> 0, scale -> 1, opacity -> 1 */
+.section-item.in-view {
+  --section-translate: 0px;
+  --parallax-scale: 1;
+  opacity: 1;
+}
+
+/* slight elevation at reveal */
+.section-item.in-view {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* --- Image wrapper rules (parallax + reveal) --- */
+.scrollsmooth,
+.scrollsmooth-parallax {
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  will-change: transform, opacity;
+  /* variables default (JS updates --parallax-translate for parallax-enabled items) */
+  --parallax-translate: 0px;
+  --parallax-scale: 0.995;
+  --section-translate: 18px; /* allows them to participate in section reveal too */
+  transform: translateY(calc(var(--parallax-translate, 0px) + var(--section-translate, 0px))) scale(var(--parallax-scale, 1));
+  opacity: 0;
+  transition:
+    opacity 260ms ease,
+    transform 320ms cubic-bezier(.22,.9,.32,1);
+}
+
+.scrollsmooth.in-view,
+.scrollsmooth-parallax.in-view {
+  --section-translate: 0px;
+  --parallax-scale: 1;
+  opacity: 1;
+}
+
+/* ensure image element fits wrapper */
+.scrollsmooth :where(img, .next-image, .img-fluid),
+.scrollsmooth-parallax :where(img, .next-image, .img-fluid) {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* change to contain if you want no crop */
+  border-radius: inherit;
+}
+
+/* mobile tweaks */
+@media (max-width: 640px) {
+  .scrollsmooth,
+  .scrollsmooth-parallax,
+  .section-item {
+    border-radius: 8px;
+  }
+  .scrollsmooth :where(img, .next-image, .img-fluid),
+  .scrollsmooth-parallax :where(img, .next-image, .img-fluid) {
+    border-radius: 8px;
+  }
+}
