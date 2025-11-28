@@ -1,4 +1,3 @@
-// app/page.tsx  (or components/Home.tsx) - client component
 "use client";
 
 import React, { useEffect } from "react";
@@ -18,129 +17,6 @@ import CulturalList from "./components/CulturalList";
 import Translator from "./components/commonComponents/Translator";
 
 import useFastParallax from "@/hooks/useFastParallax";
-
-type ParallaxBannerProps = {
-  image?: string;
-  minScale?: number;
-  maxScale?: number;
-  title?: string;
-  subtitle?: string;
-};
-
-/**
- * ParallaxBanner
- * scale goes from minScale -> maxScale as the banner scrolls up
- */
-function ParallaxBanner({
-  image = "/assets/images/beachBanner.png",
-  minScale = 0.5,
-  maxScale = 1,
-  title = "",
-  subtitle = "",
-}: ParallaxBannerProps) {
-  const ref = React.useRef<HTMLDivElement | null>(null);
-  const ticking = React.useRef(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!ref.current) return;
-
-      if (!ticking.current) {
-        requestAnimationFrame(() => {
-          const rect = ref.current!.getBoundingClientRect();
-          const viewportHeight = window.innerHeight;
-          const bannerTop = rect.top;
-          const bannerHeight = rect.height;
-
-          // START: when banner bottom enters viewport bottom
-          const start = viewportHeight;
-          // END: when banner center reaches viewport center
-          const bannerCenter = bannerTop + bannerHeight / 2;
-          const viewportCenter = viewportHeight / 2;
-          const end = viewportCenter - bannerHeight / 2;
-
-          // progress 0..1
-          let progress = (start - bannerTop) / (start - end);
-          progress = Math.min(Math.max(progress, 0), 1);
-
-          const scale = minScale + (maxScale - minScale) * progress;
-          ref.current!.style.transform = `scale(${scale})`;
-
-          ticking.current = false;
-        });
-
-        ticking.current = true;
-      }
-    };
-
-    if (ref.current) ref.current.style.transform = `scale(${minScale})`;
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("resize", handleScroll);
-    handleScroll();
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleScroll);
-    };
-  }, [minScale, maxScale]);
-
-  return (
-    <div className="parallax-wrapper" style={{ position: "relative", height: "56vh", overflow: "hidden" }}>
-      <div
-        ref={ref}
-        className="parallax-inner"
-        style={{
-          position: "absolute",
-          inset: 0,
-          transformOrigin: "center",
-          transition: "transform 0.08s linear",
-          willChange: "transform",
-        }}
-      >
-        <Image src={image} alt={title || "Banner"} priority fill sizes="(max-width: 768px) 100vw, 1600px" style={{ objectFit: "cover" }} />
-        <div className="parallax-overlay" />
-      </div>
-
-      <div className="parallax-content">
-        <h1 className="display-4 text-white fw-bold">
-          <Translator text={title || ""} targetLang={useLanguage().language} />
-        </h1>
-        {subtitle && (
-          <p className="lead text-white">
-            <Translator text={subtitle} targetLang={useLanguage().language} />
-          </p>
-        )}
-      </div>
-
-      <style jsx>{`
-        .parallax-wrapper {
-          background: linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.06));
-        }
-        .parallax-inner {
-          will-change: transform;
-        }
-        .parallax-overlay {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(180deg, rgba(2,6,23,0.28), rgba(2,6,23,0.12));
-          pointer-events: none;
-        }
-        .parallax-content {
-          position: absolute;
-          inset: 0;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          z-index: 2;
-          padding: 3rem 1.25rem;
-          pointer-events: none;
-        }
-      `}</style>
-    </div>
-  );
-}
 
 export default function Home() {
   const { language } = useLanguage();
@@ -185,7 +61,7 @@ export default function Home() {
 
   return (
     <>
-      {/* Banner */}
+      {/* Top Banner */}
       <header className="shadow-sm">
         <div className="banner">
           <div className="text-center py-5">
@@ -241,136 +117,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Beaches Section */}
-      <section className="container-fluid herosection py-5 px-0">
-        <div className="homeBeachesBanner mb-4">
-          <ParallaxBanner image="/assets/images/beachBanner.png" minScale={0.1} maxScale={1} title="Beaches" subtitle="" />
-        </div>
-        <section className="container">
-          <div className="row py-4 justify-content-between">
-            <div className="col-md-4">
-              <div className="img scrollsmooth-parallax">
-              <p>
-                Maharashtra&rsquo;s long and scenic Konkan coastline stretches over 720 km, offering some of India&rsquo;s most diverse and picturesque beaches. From serene golden sands to adventure-filled shores, the state&rsquo;s beaches are a blend of natural beauty, rich culture, water sports, historic forts, temples, and authentic coastal cuisine.
-              </p>
-              <p>
-                These beaches are perfect for family vacations, romantic getaways, photography, camping, adventure activities, dolphin spotting, seafood experiences, and peaceful relaxation. With clean surroundings, welcoming locals, and a variety of homestays and resorts, Maharashtra&rsquo;s coastal destinations provide a complete and memorable seaside experience for every traveler.
-              </p>
-              </div>
-
-              <div className="img scrollsmooth-parallax">
-                <Image src="/assets/images/hill_stations.jpg" alt="Hill Stations" width={600} height={400} className="img-fluid" />
-              </div>
-            </div>
-
-            <div className="col-md-6 pt-5">
-              <div className="img scrollsmooth-parallax">
-                <Image src="/assets/images/hill_stations.jpg" alt="Hill Stations" width={600} height={400} className="img-fluid" />
-              </div>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-12">
-              <div className="row g-4">
-                <div className="col-md-12">
-                  <BeachList />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-
+      {/* Beaches (moved completely into BeachList) */}
+      <BeachList />
       {/* Hill stations */}
-      <section className="container-fluid herosection py-5 px-0">
-        <div className="homeBeachesBanner mb-4">
-          <ParallaxBanner image="/assets/images/hill_stations.jpg" minScale={0.1} maxScale={1} title="Hill Stations" subtitle="" />
-        </div>
-        <section className="container">
-          <div className="row">
-            <div className="col">
-              <div className="row g-4">
-                <div className="col-md-12 odd">
-                  <HillList />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-
+      <HillList />
       {/* Forts */}
-      <section className="container-fluid herosection py-5 px-0">
-        <div className="homeBeachesBanner mb-4">
-          <ParallaxBanner image="/assets/images/forts.jpg" minScale={0.1} maxScale={1} title="Forts" subtitle="" />
-        </div>
-        <section className="container">
-          <div className="row">
-            <div className="col">
-              <div className="row g-4">
-                <div className="col-md-12">
-                  <FortList />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
+      <FortList />
 
       {/* Wildlife */}
-      <section className="container-fluid herosection py-5 px-0">
-        <div className="homeBeachesBanner mb-4">
-          <ParallaxBanner image="/assets/images/wildlife_nature.jpg" minScale={0.1} maxScale={1} title="Wildlife & Nature" subtitle="" />
-        </div>
-        <section className="container">
-          <div className="row">
-            <div className="col">
-              <div className="row g-4">
-                <div className="col-md-12 odd">
-                  <NatureList />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
+      <NatureList />
 
       {/* Religious */}
-      <section className="container-fluid herosection py-5 px-0">
-        <div className="homeBeachesBanner mb-4">
-          <ParallaxBanner image="/assets/images/religious_places.jpg" minScale={0.1} maxScale={1} title="Religious Places" subtitle="" />
-        </div>
-        <section className="container">
-          <div className="row">
-            <div className="col">
-              <div className="row g-4">
-                <div className="col-md-12">
-                  <ReligiousList />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
+      <ReligiousList />
 
       {/* Cultural */}
-      <section className="container-fluid herosection py-5 px-0">
-        <div className="homeBeachesBanner mb-4">
-          <ParallaxBanner image="/assets/images/cultural_unique.jpg" minScale={0.1} maxScale={1} title="Cultural & Unique" subtitle="" />
-        </div>
-        <section className="container">
-          <div className="row">
-            <div className="col">
-              <div className="row g-4">
-                <div className="col-md-12 odd">
-                  <CulturalList />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
+      <CulturalList />
 
       {/* small responsive tweaks scoped */}
       <style jsx>{`
