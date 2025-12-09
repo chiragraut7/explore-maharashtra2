@@ -3,6 +3,7 @@
   "title": "Ganpatipule Beach",
   "subtitle": "Sacred shores, golden sands, and serene getaways",
   "bannerImage": "/assets/images/beaches/ganpatipule.jpg",
+  "insideBannerImage": "/assets/images/beaches/09/bannerImg.jpg",
     "color": "#FF9F55",
   "overview": [
       "Ganpatipule Beach is a sacred and scenic coastal destination located in the Ratnagiri district of Maharashtra. It is renowned for its serene beaches, natural beauty, and the 400-year-old Swayambhu Ganpati Temple right on the shore.",
@@ -32,7 +33,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/ganpatipule.jpg",
+    "image": "/assets/images/beaches/09/info3.jpg",
     "intro": "Ganpatipule is situated on the Konkan coast of Maharashtra in Ratnagiri district, offering a blend of spiritual and seaside charm.",
     "details": [
       {
@@ -116,7 +117,7 @@
   ],
  "attractions": [
   {
-    "image": "/assets/images/beaches.jpg",
+      "image": "/assets/images/beaches/09/img1.jpg",
     "title": "Prachin Konkan Museum",
     "description": "An open-air museum showcasing life and culture in ancient Konkan region.",
     "distance": "1 km from Ganpatipule Temple",
@@ -124,7 +125,7 @@
     "value": "Cultural Experience"
   },
   {
-    "image": "/assets/images/beaches.jpg",
+      "image": "/assets/images/beaches/09/img2.jpg",
     "title": "Malgund Village",
     "description": "Birthplace of poet Keshavsut, offering heritage houses and quiet rural experience.",
     "distance": "2 km from beach",
@@ -132,7 +133,7 @@
     "value": "Literary Heritage"
   },
   {
-    "image": "/assets/images/beaches.jpg",
+      "image": "/assets/images/beaches/09/img3.jpg",
     "title": "Jaigad Fort",
     "description": "Historic sea fort with views of the Arabian Sea and harbor.",
     "distance": "20 km from Ganpatipule",
@@ -193,24 +194,19 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches.jpg",
-      "thumb": "/assets/images/beaches.jpg",
+      "src": "/assets/images/beaches/09/img1.jpg",
+      "thumb": "/assets/images/beaches/09/img1.jpg",
       "alt": "Ganpatipule Temple View"
     },
     {
-      "src": "/assets/images/beaches.jpg",
-      "thumb": "/assets/images/beaches.jpg",
+      "src": "/assets/images/beaches/09/img2.jpg",
+      "thumb": "/assets/images/beaches/09/img2.jpg",
       "alt": "Beach Shore"
     },
     {
-      "src": "/assets/images/beaches.jpg",
-      "thumb": "/assets/images/beaches.jpg",
+      "src": "/assets/images/beaches/09/img3.jpg",
+      "thumb": "/assets/images/beaches/09/img3.jpg",
       "alt": "Coconut Grove"
-    },
-    {
-      "src": "/assets/images/beaches.jpg",
-      "thumb": "/assets/images/beaches.jpg",
-      "alt": "Scenic Cliff"
     }
   ],
   "hotels": [
