@@ -3,6 +3,7 @@
   "title": "Guhagar Beach",
   "subtitle": "A Pristine White Sand Beach along the Konkan Coast",
   "bannerImage": "/assets/images/beaches/guhagar-banner.jpg",
+  "insideBannerImage": "/assets/images/beaches/15/bannerImg.jpg",
   "color": "#0284C7",
   "overview": [
     "Guhagar Beach, located in the Ratnagiri district of Maharashtra, is one of the cleanest and most serene beaches along the Konkan coast. The beach stretches for about 6 km, covered in soft white sand and lined with suru trees, creating a peaceful and scenic atmosphere.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/beaches/guhagar/guhagar-map.jpg",
+    "image": "/assets/images/beaches/15/info3.jpg",
     "intro": "Guhagar lies between the Vashishti River and the Jaigad Creek on the western coast of Maharashtra. It’s around 45 km from Chiplun and known for its unspoiled coastal beauty.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/beaches/guhagar/vyadeshwar-temple.jpg",
+      "image": "/assets/images/beaches/15/img1.jpg",
       "title": "Vyadeshwar Temple",
       "description": "A revered Shiva temple believed to be self-manifested, located near the beach.",
       "distance": "0.5 km",
@@ -104,7 +105,7 @@
       "value": "Religious Attraction"
     },
     {
-      "image": "/images/beaches/guhagar/velneshwar-beach.jpg",
+      "image": "/assets/images/beaches/15/img2.jpg",
       "title": "Velneshwar Beach",
       "description": "Another clean and calm beach located just 15 km away, popular among pilgrims and surfers.",
       "distance": "15 km",
@@ -112,7 +113,7 @@
       "value": "Nearby Scenic Spot"
     },
     {
-      "image": "/images/beaches/guhagar/hedvi-temple.jpg",
+      "image": "/assets/images/beaches/15/img3.jpg",
       "title": "Dashbhuja Ganesh Temple, Hedvi",
       "description": "Famous for its rare idol with ten hands, located amid scenic surroundings.",
       "distance": "20 km",
@@ -167,18 +168,18 @@
   ],
   "gallery": [
     {
-      "src": "/images/beaches/guhagar/guhagar1.jpg",
-      "thumb": "/images/beaches/guhagar/guhagar1-thumb.jpg",
+      "src": "/assets/images/beaches/15/img1.jpg",
+      "thumb": "/assets/images/beaches/15/img1.jpg",
       "alt": "Guhagar Beach Panorama"
     },
     {
-      "src": "/images/beaches/guhagar/guhagar2.jpg",
-      "thumb": "/images/beaches/guhagar/guhagar2-thumb.jpg",
+      "src": "/assets/images/beaches/15/img2.jpg",
+      "thumb": "/assets/images/beaches/15/img2.jpg",
       "alt": "Sunset at Guhagar Beach"
     },
     {
-      "src": "/images/beaches/guhagar/guhagar3.jpg",
-      "thumb": "/images/beaches/guhagar/guhagar3-thumb.jpg",
+      "src": "/assets/images/beaches/15/img3.jpg",
+      "thumb": "/assets/images/beaches/15/img3.jpg",
       "alt": "Vyadeshwar Temple near Guhagar Beach"
     }
   ],

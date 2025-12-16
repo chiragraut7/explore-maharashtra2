@@ -3,7 +3,8 @@
   "title": "Tarkarli Beach",
   "subtitle": "Golden sands, clear waters, and scuba diving paradise",
     "bannerImage": "/assets/images/beaches/tarkarli-beache.jpg",
-    "color": "#69f9d9",
+  "insideBannerImage": "/assets/images/beaches/10/bannerImg.jpg",
+    "color": "#008d6e",
   "overview": [
     "Tarkarli Beach is a pristine coastal gem located in the Sindhudurg district of Maharashtra, India. This stunning beach destination sits at the confluence of the Karli River and the Arabian Sea, offering visitors a unique blend of river and ocean experiences.",
     "Located approximately 8 kilometers south of Malvan and 546 kilometers from Mumbai, Tarkarli Beach is renowned for its pristine beauty and is considered one of the hidden treasures of Maharashtra&apos;s Konkan coast. The beach is particularly famous for its excellent scuba diving opportunities.",
@@ -18,7 +19,7 @@
     { "icon": "fas fa-jet-ski", "title": "Water Sports Hub", "description": "Wide range of water sports activities including jet skiing, banana boat rides, and parasailing." }
   ],
   "geography": {
-  "image": "/assets/images/beaches/tarkarli-beache.jpg",
+    "image": "/assets/images/beaches/10/info3.jpg",
   "intro": "Tarkarli Beach is strategically located in the Sindhudurg district of Maharashtra, positioned at the unique confluence of the Karli River and the Arabian Sea. This geographical positioning gives the beach its distinctive character, offering both riverine and marine experiences to visitors.",
   "details": [
     {
@@ -108,7 +109,7 @@
     "icon": "fas fa-map-marker-alt",
     "distance": "2 km from Tarkarli",
     "value": "Historic Fort",
-    "image": "/assets/images/beaches.jpg"
+      "image": "/assets/images/beaches/10/img4.jpg"
   },
   {
     "title": "Chivla Beach",
@@ -116,7 +117,7 @@
     "icon": "fas fa-clock",
     "distance": "Evening for sunset views",
     "value": "Sunset Beach",
-    "image": "/assets/images/beaches.jpg"
+      "image": "/assets/images/beaches/10/img1.jpg"
   },
   {
     "title": "Malvan Beach",
@@ -124,7 +125,7 @@
     "icon": "fas fa-map-marker-alt",
     "distance": "8 km from Tarkarli",
     "value": "Town Beach",
-    "image": "/assets/images/beaches.jpg"
+      "image": "/assets/images/beaches/10/img2.jpg"
   },
   {
     "title": "Rameshwar Temple",
@@ -132,7 +133,7 @@
     "icon": "fas fa-pray",
     "distance": "Religious and cultural heritage site",
     "value": "Religious Site",
-    "image": "/assets/images/beaches.jpg"
+      "image": "/assets/images/beaches/10/img3.jpg"
   },
   {
     "title": "Tsunami Island",
@@ -140,7 +141,7 @@
     "icon": "fas fa-clock",
     "distance": "Low tide periods",
     "value": "Marine Spot",
-    "image": "/assets/images/beaches.jpg"
+      "image": "/assets/images/beaches/10/tsunami-island.jpg"
   },
   {
     "title": "Sarjekot",
@@ -148,7 +149,7 @@
     "icon": "fas fa-camera",
     "distance": "Photography & sightseeing",
     "value": "Viewpoint",
-    "image": "/assets/images/beaches.jpg"
+      "image": "/assets/images/beaches/10/img5.jpg"
   }
 ]
 ,
@@ -232,24 +233,34 @@
   
 "gallery": [
   {
-    "src": "/assets/images/kelwa1.jpg",
-    "thumb": "/assets/images/beaches.jpg",
-    "alt": "Kelwa Beach Sunrise"
+    "src": "/assets/images/beaches/10/img4.jpg",
+    "thumb": "/assets/images/beaches/10/img4.jpg",
+    "alt": ""
   },
   {
-    "src": "/assets/images/kelwa2.jpg",
-    "thumb": "/assets/images/beaches.jpg",
-    "alt": "Evening by the Beach"
+    "src": "/assets/images/beaches/10/img1.jpg",
+    "thumb": "/assets/images/beaches/10/img1.jpg",
+    "alt": ""
   },
   {
-    "src": "/assets/images/kelwa3.jpg",
-    "thumb": "/assets/images/beaches.jpg",
-    "alt": "Suru Trees View"
+    "src": "/assets/images/beaches/10/img2.jpg",
+    "thumb": "/assets/images/beaches/10/img2.jpg",
+    "alt": ""
   },
   {
-    "src": "/assets/images/kelwa4.jpg",
-    "thumb": "/assets/images/beaches.jpg",
-    "alt": "Cottage Stay"
+    "src": "/assets/images/beaches/10/img3.jpg",
+    "thumb": "/assets/images/beaches/10/img3.jpg",
+    "alt": ""
+  },
+  {
+    "src": "/assets/images/beaches/10/tsunami-island.jpg",
+    "thumb": "/assets/images/beaches/10/tsunami-island.jpg",
+    "alt": ""
+  },
+  {
+    "src": "/assets/images/beaches/10/img5.jpg",
+    "thumb": "/assets/images/beaches/10/img5.jpg",
+    "alt": ""
   }
 ],
   "hotels": [

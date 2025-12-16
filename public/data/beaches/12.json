@@ -3,6 +3,7 @@
   "title": "Harihareshwar Beach",
   "subtitle": "Spiritual bliss, scenic shores, and sacred temples",
   "bannerImage": "/assets/images/beaches/harihareshwar.jpg",
+  "insideBannerImage": "/assets/images/beaches/12/bannerImg.jpg",
     "color": "#104644",
   "overview":  [
       "Harihareshwar Beach is a picturesque coastal town located in the Raigad district of Maharashtra, known for its spiritual significance and scenic beauty. The beach is flanked by hills, temples, and a tranquil shoreline.",
@@ -32,7 +33,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/harihareshwar.jpg",
+    "image": "/assets/images/beaches/12/info3.jpg",
     "intro": "Harihareshwar is located on the Konkan coast in Raigad district, surrounded by the Sahyadri hills and the Arabian Sea.",
     "details": [
       {
@@ -100,21 +101,21 @@
 ,
   "attractions": [
     {
-      "image": "/assets/images/beaches.jpg",
+      "image": "/assets/images/beaches/12/img1.jpg",
       "title": "Harihareshwar Temple",
       "description": "A sacred temple dedicated to Lord Shiva with rich history and architectural beauty.",
       "distance": "At the beach entrance",
       "icon": "fas fa-pray"
     },
     {
-      "image": "/assets/images/beaches.jpg",
+      "image": "/assets/images/beaches/12/img2.jpg",
       "title": "Bagmandala",
       "description": "A serene riverside village where Savitri River meets the sea—ideal for boating.",
       "distance": "4 km from Harihareshwar",
       "icon": "fas fa-water"
     },
     {
-      "image": "/assets/images/beaches.jpg",
+      "image": "/assets/images/beaches/12/img3.jpg",
       "title": "Diveagar Beach",
       "description": "A nearby beach with golden sand and an ancient temple of Lord Ganesha.",
       "distance": "35 km from Harihareshwar",
@@ -177,18 +178,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches.jpg",
-      "thumb": "/assets/images/beaches.jpg",
+      "src": "/assets/images/beaches/12/img1.jpg",
+      "thumb": "/assets/images/beaches/12/img1.jpg",
       "alt": "Harihareshwar Temple View"
     },
     {
-      "src": "/assets/images/beaches.jpg",
-      "thumb": "/assets/images/beaches.jpg",
+      "src": "/assets/images/beaches/12/img2.jpg",
+      "thumb": "/assets/images/beaches/12/img2.jpg",
       "alt": "Pradakshina Path Cliff"
     },
     {
-      "src": "/assets/images/beaches.jpg",
-      "thumb": "/assets/images/beaches.jpg",
+      "src": "/assets/images/beaches/12/img3.jpg",
+      "thumb": "/assets/images/beaches/12/img3.jpg",
       "alt": "Peaceful Beach"
     }
   ],
