@@ -1,9 +1,6 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* Other config options here */
-
-  // Disable ESLint during builds to prevent compilation errors
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Disable ESLint during builds
   eslint: {
     ignoreDuringBuilds: true,
   },
