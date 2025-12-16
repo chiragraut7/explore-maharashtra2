@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&family=Playwrite+DE+SAS:wght@100..400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&family=Playwrite+DE+SAS:wght@100..400&display=swap'); */
 
 
 
@@ -2210,7 +2210,7 @@ html {
 }
 
 /* slider area polish (global class expected on slider root) */
-:global(.beach-slider) {
+.beach-slider {
   margin-top: 1rem;
   padding: 1rem 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.00), rgba(245, 250, 252, 0.8));
