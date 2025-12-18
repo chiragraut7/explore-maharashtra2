@@ -15,7 +15,7 @@ interface ParallaxBannerProps {
 
 const ParallaxBanner: React.FC<ParallaxBannerProps> = ({
   image = "/assets/images/beachBanner.png",
-  minScale = 0.5,
+  minScale = 0.9,
   maxScale = 1,
   title = "",
   subtitle = "",
@@ -33,21 +33,22 @@ const ParallaxBanner: React.FC<ParallaxBannerProps> = ({
           const rect = ref.current!.getBoundingClientRect();
           const viewportHeight = window.innerHeight;
 
-          const bannerTop = rect.top;
-          const bannerHeight = rect.height;
+          const progress =
+            1 - Math.min(Math.max(rect.top / viewportHeight, 0), 1);
 
-          const start = viewportHeight; // Starts when bottom enters viewport
-          const bannerCenter = bannerTop + bannerHeight / 2;
-          const viewportCenter = viewportHeight / 2;
-
-          const end = viewportCenter - bannerHeight / 2;
-
-          // progress 0..1
-          let progress = (start - bannerTop) / (start - end);
-          progress = Math.min(Math.max(progress, 0), 1);
-
+          // Scale
           const scale = minScale + (maxScale - minScale) * progress;
-          ref.current!.style.transform = `scale(${scale})`;
+
+          // Flip effect (window opening)
+          const rotateX = 15 - progress * 15; // 15deg → 0deg
+          const translateY = (1 - progress) * 40;
+
+          ref.current!.style.transform = `
+            perspective(1200px)
+            translateY(${translateY}px)
+            scale(${scale})
+            rotateX(${rotateX}deg)
+          `;
 
           ticking.current = false;
         });
@@ -56,10 +57,9 @@ const ParallaxBanner: React.FC<ParallaxBannerProps> = ({
       }
     };
 
-    if (ref.current) ref.current.style.transform = `scale(${minScale})`;
+    handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     window.addEventListener("resize", handleScroll);
-    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -68,20 +68,9 @@ const ParallaxBanner: React.FC<ParallaxBannerProps> = ({
   }, [minScale, maxScale]);
 
   return (
-    <div className="parallax-wrapper" style={{ position: "relative", height: "56vh", overflow: "hidden" }}>
-      
-      {/* Background Parallax Layer */}
-      <div
-        ref={ref}
-        className="parallax-inner"
-        style={{
-          position: "absolute",
-          inset: 0,
-          transformOrigin: "center",
-          transition: "transform 0.08s linear",
-          willChange: "transform",
-        }}
-      >
+    <div className="parallax-wrapper">
+      {/* Background Layer */}
+      <div ref={ref} className="parallax-inner">
         <Image
           src={image}
           alt={title || "Banner"}
@@ -90,14 +79,13 @@ const ParallaxBanner: React.FC<ParallaxBannerProps> = ({
           sizes="(max-width: 768px) 100vw, 1600px"
           style={{ objectFit: "cover" }}
         />
-
         <div className="parallax-overlay" />
       </div>
 
       {/* Text Overlay */}
       <div className="parallax-content">
         <h1 className="display-4 text-white fw-bold">
-          <Translator text={title || ""} targetLang={language} />
+          <Translator text={title} targetLang={language} />
         </h1>
 
         {subtitle && (
@@ -109,34 +97,53 @@ const ParallaxBanner: React.FC<ParallaxBannerProps> = ({
 
       <style jsx>{`
         .parallax-wrapper {
+          position: relative;
+          height: 56vh;
+          overflow: hidden;
+          perspective: 1200px;
+          background: #000;
+        }
+        .parallax-wrapper {
           background: linear-gradient(180deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06));
         }
+
         .parallax-inner {
+          position: absolute;
+          inset: 0;
+          transform-origin: center;
+          transition: transform 0.12s ease-out;
           will-change: transform;
         }
+
         .parallax-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(180deg, rgba(2, 6, 23, 0.28), rgba(2, 6, 23, 0.12));
-          pointer-events: none;
+          background: linear-gradient(
+            180deg,
+            rgba(2, 6, 23, 0.35),
+            rgba(2, 6, 23, 0.15)
+          );
         }
+
         .parallax-content {
           position: absolute;
           inset: 0;
+          z-index: 2;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           text-align: center;
-          z-index: 2;
           padding: 3rem 1.25rem;
           pointer-events: none;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
           .parallax-wrapper {
             height: 40vh;
+          }
+          .parallax-inner {
+            transform: scale(1) rotateX(0deg) !important;
           }
           .parallax-content h1 {
             font-size: 26px !important;

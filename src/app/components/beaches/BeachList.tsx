@@ -97,8 +97,8 @@ const BeachList: React.FC = () => {
       <div className="homeBeachesBanner mb-4 p-0">
         <ParallaxBanner
           image="/assets/images/beachHomeBanner.jpg"
-          minScale={0.1}
-          maxScale={1}
+          // minScale={0.1}
+          // maxScale={1}
           title="Beaches"
         />
       </div>
