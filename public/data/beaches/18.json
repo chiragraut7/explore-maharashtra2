@@ -3,6 +3,7 @@
   "title": "Aare Ware Beach",
   "subtitle": "Twin Hidden Gems of Ratnagiri’s Pristine Coastline",
   "bannerImage": "/assets/images/beaches/aare-ware-banner.jpg",
+  "insideBannerImage": "/assets/images/beaches/17/bannerImg.jpg",
   "color": "#0D9488",
   "overview": [
     "Aare Ware are twin beaches located about 15 km from Ratnagiri town, forming a breathtaking coastal stretch along the Konkan coast. These beaches are known for their untouched natural beauty, soft golden sands, and crystal-clear waters that remain relatively unexplored by tourists.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/beaches/aare-ware/aare-ware-map.jpg",
+    "image": "/assets/images/beaches/18/info3.jpg",
     "intro": "Aare Ware beaches are located on the Ratnagiri-Ganpatipule coastal stretch, forming part of the Sahyadri’s western slopes meeting the Arabian Sea.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/beaches/aare-ware/ganpatipule.jpg",
+      "image": "/assets/images/beaches/18/img1.jpg",
       "title": "Ganpatipule Beach",
       "description": "A popular pilgrimage and tourist destination known for its Swayambhu Ganesh temple.",
       "distance": "10 km",
@@ -104,7 +105,7 @@
       "value": "Nearby Religious Spot"
     },
     {
-      "image": "/images/beaches/aare-ware/jaigad-fort.jpg",
+      "image": "/assets/images/beaches/18/img2.jpg",
       "title": "Jaigad Fort",
       "description": "A historical sea fort offering magnificent views of the Arabian Sea and Jaigad Creek.",
       "distance": "12 km",
@@ -151,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/beaches/aare-ware/aare-ware1.jpg",
-      "thumb": "/images/beaches/aare-ware/aare-ware1-thumb.jpg",
+      "src": "/assets/images/beaches/18/img1.jpg",
+      "thumb": "/assets/images/beaches/18/img1.jpg",
       "alt": "Aare Ware Beach Coastal Road"
     },
     {
-      "src": "/images/beaches/aare-ware/aare-ware2.jpg",
-      "thumb": "/images/beaches/aare-ware/aare-ware2-thumb.jpg",
+      "src": "/assets/images/beaches/18/img2.jpg",
+      "thumb": "/assets/images/beaches/18/img2.jpg",
       "alt": "Golden Sands of Aare Ware Beach"
     }
   ],
