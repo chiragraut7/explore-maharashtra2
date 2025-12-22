@@ -2,7 +2,8 @@
   "id": "05",
   "title": "Matheran Hill Station",
   "subtitle": "The Eco-Friendly Gem of the Western Ghats",
-  "bannerImage": "/images/hillstations/matheran/banner.jpg",
+  "bannerImage": "/assets/images/hills/05.jpg",
+  "insideBannerImage": "/assets/images/hills/05/bannerimg.jpg",
   "color": "#2d8659",
   "overview": [
     "Matheran, located in the Raigad district of Maharashtra, is India’s smallest and most eco-friendly hill station. Situated at an altitude of 800 meters, this charming destination is famous for its red-soil pathways, colonial architecture, toy train, and breathtaking viewpoints.",
@@ -27,7 +28,7 @@
     }
   ],
   "geography": {
-    "image": "/images/hillstations/matheran/geography.jpg",
+    "image": "/assets/images/hills/05/info2.jpg",
     "intro": "Nestled in the Western Ghats, Matheran lies about 90 km from Mumbai and 120 km from Pune. The hill station sits at 800 meters above sea level, surrounded by dense forests and cliffs overlooking the Sahyadris.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Raigad District, Maharashtra" },
@@ -82,7 +83,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/hillstations/matheran/panorama-point.jpg",
+      "image": "/assets/images/hills/05/img1.jpg",
       "title": "Panorama Point",
       "description": "Offers a 360-degree view of the surrounding valleys — ideal for sunrise lovers.",
       "distance": "3 km from Matheran Market",
@@ -90,7 +91,7 @@
       "value": "Scenic viewpoint"
     },
     {
-      "image": "/images/hillstations/matheran/louisa-point.jpg",
+      "image": "/assets/images/hills/05/img2.jpg",
       "title": "Louisa Point",
       "description": "Known for stunning sunset views and panoramic sight of the Prabal Fort.",
       "distance": "2 km from main market",
@@ -98,7 +99,7 @@
       "value": "Popular viewpoint"
     },
     {
-      "image": "/images/hillstations/matheran/charlotte-lake.jpg",
+      "image": "/assets/images/hills/05/img3.jpg",
       "title": "Charlotte Lake",
       "description": "A tranquil lake surrounded by forest — the main water source for Matheran.",
       "distance": "1 km from market",
@@ -106,7 +107,7 @@
       "value": "Nature attraction"
     },
     {
-      "image": "/images/hillstations/matheran/echo-point.jpg",
+      "image": "/assets/images/hills/05/img4.jpg",
       "title": "Echo Point",
       "description": "A famous spot where your voice echoes through the valley — fun for families and kids.",
       "distance": "2.5 km from town center",
@@ -161,18 +162,23 @@
   ],
   "gallery": [
     {
-      "src": "/images/hillstations/matheran/gallery1.jpg",
-      "thumb": "/images/hillstations/matheran/thumb1.jpg",
+      "src": "/assets/images/hills/05/img1.jpg",
+      "thumb": "/assets/images/hills/05/img1.jpg",
       "alt": "Matheran Toy Train through forest"
     },
     {
-      "src": "/images/hillstations/matheran/gallery2.jpg",
-      "thumb": "/images/hillstations/matheran/thumb2.jpg",
+      "src": "/assets/images/hills/05/img2.jpg",
+      "thumb": "/assets/images/hills/05/img2.jpg",
       "alt": "Panorama Point View"
     },
     {
-      "src": "/images/hillstations/matheran/gallery3.jpg",
-      "thumb": "/images/hillstations/matheran/thumb3.jpg",
+      "src": "/assets/images/hills/05/img3.jpg",
+      "thumb": "/assets/images/hills/05/img3.jpg",
+      "alt": "Charlotte Lake in Matheran"
+    },
+    {
+      "src": "/assets/images/hills/05/img4.jpg",
+      "thumb": "/assets/images/hills/05/img4.jpg",
       "alt": "Charlotte Lake in Matheran"
     }
   ],

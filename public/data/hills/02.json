@@ -2,7 +2,8 @@
   "id": "02",
   "title": "Panchgani Hill Station",
   "subtitle": "The Plateau of Five Hills",
-  "bannerImage": "/images/panchgani/banner.jpg",
+  "bannerImage": "/assets/images/hills/02.jpg",
+  "insideBannerImage": "/assets/images/hills/02/bannerimg.jpg",
   "color": "#2a4d69",
   "overview": [
     "Panchgani, meaning ‘land of five hills’, is one of Maharashtra’s most charming hill stations located near Mahabaleshwar.",
@@ -27,7 +28,7 @@
     }
   ],
   "geography": {
-    "image": "/images/panchgani/geography.jpg",
+    "image": "/assets/images/hills/02/info2.jpg",
     "intro": "Nestled in the Sahyadri range, Panchgani is surrounded by five scenic hills and the meandering Krishna River.",
     "details": [
       {
@@ -106,7 +107,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/panchgani/table-land.jpg",
+      "image": "/assets/images/hills/02/img1.jpg",
       "title": "Table Land",
       "description": "Asia’s second-longest mountain plateau offering breathtaking views of valleys and lakes.",
       "distance": "2 km from main town",
@@ -114,7 +115,7 @@
       "value": "Paragliding & Horse rides"
     },
     {
-      "image": "/images/panchgani/parsi-point.jpg",
+      "image": "/assets/images/hills/02/img2.jpg",
       "title": "Parsi Point",
       "description": "A popular viewpoint overlooking the Krishna Valley and Dhom Dam.",
       "distance": "3 km from Panchgani Market",
@@ -122,7 +123,7 @@
       "value": "Sunset photography"
     },
     {
-      "image": "/images/panchgani/devils-kitchen.jpg",
+      "image": "/assets/images/hills/02/img3.jpg",
       "title": "Devil’s Kitchen",
       "description": "A cave complex believed to have been used by the Pandavas during exile.",
       "distance": "4 km from Table Land",
@@ -130,7 +131,7 @@
       "value": "Historical site"
     },
     {
-      "image": "/images/panchgani/sydney-point.jpg",
+      "image": "/assets/images/hills/02/img4.jpg",
       "title": "Sydney Point",
       "description": "Offers a panoramic view of the Krishna River valley and Wai town.",
       "distance": "1 km from Panchgani Bus Stand",
@@ -185,18 +186,23 @@
   ],
   "gallery": [
     {
-      "src": "/images/panchgani/gallery1.jpg",
-      "thumb": "/images/panchgani/thumb1.jpg",
+      "src": "/assets/images/hills/02/img1.jpg",
+      "thumb": "/assets/images/hills/02/img1.jpg",
       "alt": "Table Land Plateau"
     },
     {
-      "src": "/images/panchgani/gallery2.jpg",
-      "thumb": "/images/panchgani/thumb2.jpg",
+      "src": "/assets/images/hills/02/img2.jpg",
+      "thumb": "/assets/images/hills/02/img2.jpg",
       "alt": "Parsi Point View"
     },
     {
-      "src": "/images/panchgani/gallery3.jpg",
-      "thumb": "/images/panchgani/thumb3.jpg",
+      "src": "/assets/images/hills/02/img3.jpg",
+      "thumb": "/assets/images/hills/02/img3.jpg",
+      "alt": "Strawberry Farm"
+    },
+    {
+      "src": "/assets/images/hills/02/img4.jpg",
+      "thumb": "/assets/images/hills/02/img4.jpg",
       "alt": "Strawberry Farm"
     }
   ],

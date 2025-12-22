@@ -2,7 +2,8 @@
   "id": "08",
   "title": "Mhaismal Hill Station",
   "subtitle": "A Peaceful Hill Retreat near Aurangabad",
-  "bannerImage": "/images/hills/mhaismal/banner.jpg",
+  "bannerImage": "/assets/images/hills/08.jpg",
+  "insideBannerImage": "/assets/images/hills/08/bannerimg.jpg",
   "color": "#3c8b57",
   "overview": [
     "Mhaismal is a serene and lesser-known hill station located near Aurangabad in Maharashtra. It sits gracefully in the Sahyadri ranges, offering sweeping views of lush greenery, valleys, and nearby historical marvels.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/hills/mhaismal/geography.jpg",
+    "image": "/assets/images/hills/08/info2.jpg",
     "intro": "Mhaismal lies in the Sahyadri hill ranges of the Aurangabad district, around 40 km from the city. Its altitude ensures a pleasant climate throughout the year.",
     "details": [
       {
@@ -97,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/hills/mhaismal/ellora.jpg",
+      "image": "/assets/images/hills/08/img1.jpg",
       "title": "Ellora Caves",
       "description": "UNESCO World Heritage Site featuring 34 rock-cut caves representing Buddhist, Hindu, and Jain traditions.",
       "distance": "15 km from Mhaismal",
@@ -105,7 +106,7 @@
       "value": "Ancient heritage marvel near Mhaismal"
     },
     {
-      "image": "/images/hills/mhaismal/daulatabad.jpg",
+      "image": "/assets/images/hills/08/img2.jpg",
       "title": "Daulatabad Fort",
       "description": "Historic fort with magnificent architecture and panoramic views of the plains.",
       "distance": "25 km from Mhaismal",
@@ -152,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/hills/mhaismal/gallery1.jpg",
-      "thumb": "/images/hills/mhaismal/gallery1_thumb.jpg",
+      "src": "/assets/images/hills/08/img1.jpg",
+      "thumb": "/assets/images/hills/08/img1.jpg",
       "alt": "Mhaismal hill view in monsoon"
     },
     {
-      "src": "/images/hills/mhaismal/gallery2.jpg",
-      "thumb": "/images/hills/mhaismal/gallery2_thumb.jpg",
+      "src": "/assets/images/hills/08/img2.jpg",
+      "thumb": "/assets/images/hills/08/img2.jpg",
       "alt": "Fog-covered Mhaismal landscape"
     }
   ],

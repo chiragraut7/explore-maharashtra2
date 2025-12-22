@@ -2,7 +2,8 @@
   "id": "03",
   "title": "Lonavala Hill Station",
   "subtitle": "The Jewel of the Sahyadris",
-  "bannerImage": "/images/hillstations/lonavala/banner.jpg",
+  "bannerImage": "/assets/images/hills/03.jpg",
+  "insideBannerImage": "/assets/images/hills/03/bannerimg.jpg",
   "color": "#2e7d32",
   "overview": [
     "Lonavala, located between Mumbai and Pune, is one of Maharashtra’s most visited hill stations. Known for its lush green valleys, stunning waterfalls, ancient caves, and pleasant climate, it is rightly called the 'Jewel of the Sahyadris.'",
@@ -26,7 +27,7 @@
     }
   ],
   "geography": {
-    "image": "/images/hillstations/lonavala/geography.jpg",
+    "image": "/assets/images/hills/03/info2.jpg",
     "intro": "Situated in the Western Ghats of Maharashtra, Lonavala is surrounded by hills, valleys, and dams. It lies 64 km from Pune and 96 km from Mumbai.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Pune District, Maharashtra" },
@@ -81,7 +82,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/hillstations/lonavala/lohgad-fort.jpg",
+      "image": "/assets/images/hills/03/img1.jpg",
       "title": "Lohagad Fort",
       "description": "A historic fort that offers a panoramic view of the Pawna Dam and lush valleys.",
       "distance": "11 km from Lonavala",
@@ -89,7 +90,7 @@
       "value": "Trekking spot"
     },
     {
-      "image": "/images/hillstations/lonavala/karla-caves.jpg",
+      "image": "/assets/images/hills/03/img2.jpg",
       "title": "Karla Caves",
       "description": "Ancient Buddhist caves dating back to 200 BCE, showcasing rock-cut architecture.",
       "distance": "8 km from Lonavala",
@@ -97,7 +98,7 @@
       "value": "Historic site"
     },
     {
-      "image": "/images/hillstations/lonavala/bhushi-dam.jpg",
+      "image": "/assets/images/hills/03/img3.jpg",
       "title": "Bhushi Dam",
       "description": "A favorite monsoon picnic spot known for its gushing overflow and rocky steps.",
       "distance": "6 km from Lonavala Market",
@@ -105,7 +106,7 @@
       "value": "Water attraction"
     },
     {
-      "image": "/images/hillstations/lonavala/tiger-leap.jpg",
+      "image": "/assets/images/hills/03/img4.jpg",
       "title": "Tiger’s Leap (Tiger Point)",
       "description": "A cliff-top viewpoint resembling a leaping tiger, offering breathtaking valley views.",
       "distance": "12 km from Lonavala",
@@ -159,18 +160,23 @@
   ],
   "gallery": [
     {
-      "src": "/images/hillstations/lonavala/gallery1.jpg",
-      "thumb": "/images/hillstations/lonavala/thumb1.jpg",
+      "src": "/assets/images/hills/03/img1.jpg",
+      "thumb": "/assets/images/hills/03/img1.jpg",
       "alt": "Lonavala Valley View"
     },
     {
-      "src": "/images/hillstations/lonavala/gallery2.jpg",
-      "thumb": "/images/hillstations/lonavala/thumb2.jpg",
+      "src": "/assets/images/hills/03/img2.jpg",
+      "thumb": "/assets/images/hills/03/img2.jpg",
       "alt": "Bhushi Dam Overflow"
     },
     {
-      "src": "/images/hillstations/lonavala/gallery3.jpg",
-      "thumb": "/images/hillstations/lonavala/thumb3.jpg",
+      "src": "/assets/images/hills/03/img3.jpg",
+      "thumb": "/assets/images/hills/03/img3.jpg",
+      "alt": "Karla Caves Entrance"
+    },
+    {
+      "src": "/assets/images/hills/03/img4.jpg",
+      "thumb": "/assets/images/hills/03/img4.jpg",
       "alt": "Karla Caves Entrance"
     }
   ],

@@ -2,7 +2,8 @@
   "id": "01",
   "title": "Mahabaleshwar",
   "subtitle": "The Queen of Hill Stations in Maharashtra",
-  "bannerImage": "/images/hillstations/mahabaleshwar/banner.jpg",
+  "bannerImage": "/assets/images/hills/01.jpg",
+  "insideBannerImage": "/assets/images/hills/01/bannerimg.jpg",
   "color": "#3b7d5c",
   "overview": [
     "Mahabaleshwar, nestled in the Satara district, is the most popular hill station in Maharashtra. Located at an altitude of 1,353 meters, it offers a refreshing escape with its lush greenery, valleys, and misty landscapes.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/hillstations/mahabaleshwar/geography.jpg",
+    "image": "/assets/images/hills/01/info2.jpg",
     "intro": "Located in the Western Ghats, Mahabaleshwar’s landscape features lush hills, cascading waterfalls, and dense evergreen forests.",
     "details": [
       {
@@ -97,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/hillstations/mahabaleshwar/arthurs-seat.jpg",
+      "image": "/assets/images/hills/01/img1.jpg",
       "title": "Arthur’s Seat Point",
       "description": "Known as the ‘Queen of All Points’, it offers panoramic views of the Savitri River valley.",
       "distance": "7 km from Mahabaleshwar town",
@@ -105,7 +106,7 @@
       "value": "Major viewpoint"
     },
     {
-      "image": "/images/hillstations/mahabaleshwar/venna-lake.jpg",
+      "image": "/assets/images/hills/01/img2.jpg",
       "title": "Venna Lake",
       "description": "A picturesque man-made lake offering boating and horse rides.",
       "distance": "2 km from bus stand",
@@ -113,7 +114,7 @@
       "value": "Boating spot"
     },
     {
-      "image": "/images/hillstations/mahabaleshwar/mapro-garden.jpg",
+      "image": "/assets/images/hills/01/img3.jpg",
       "title": "Mapro Garden",
       "description": "Famous for strawberry products, chocolates, and fresh juices with beautiful seating areas.",
       "distance": "8 km from Mahabaleshwar",
@@ -168,18 +169,18 @@
   ],
   "gallery": [
     {
-      "src": "/images/hillstations/mahabaleshwar/gallery1.jpg",
-      "thumb": "/images/hillstations/mahabaleshwar/gallery1-thumb.jpg",
+      "src": "/assets/images/hills/01/img1.jpg",
+      "thumb": "/assets/images/hills/01/img1.jpg",
       "alt": "View from Wilson Point"
     },
     {
-      "src": "/images/hillstations/mahabaleshwar/gallery2.jpg",
-      "thumb": "/images/hillstations/mahabaleshwar/gallery2-thumb.jpg",
+      "src": "/assets/images/hills/01/img2.jpg",
+      "thumb": "/assets/images/hills/01/img2.jpg",
       "alt": "Venna Lake Boating"
     },
     {
-      "src": "/images/hillstations/mahabaleshwar/gallery3.jpg",
-      "thumb": "/images/hillstations/mahabaleshwar/gallery3-thumb.jpg",
+      "src": "/assets/images/hills/01/img3.jpg",
+      "thumb": "/assets/images/hills/01/img3.jpg",
       "alt": "Strawberry Farm"
     }
   ],

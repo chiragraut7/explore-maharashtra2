@@ -2,7 +2,8 @@
   "id": "04",
   "title": "Khandala",
   "subtitle": "The Scenic Gateway to the Western Ghats",
-  "bannerImage": "/images/hillstations/khandala/banner.jpg",
+  "bannerImage": "/assets/images/hills/04.jpg",
+  "insideBannerImage": "/assets/images/hills/04/bannerimg.jpg",
   "color": "#4b6a87",
   "overview": [
     "Khandala, a charming hill station nestled in the Sahyadri ranges of Maharashtra, is a twin hill town to Lonavala, offering breathtaking natural beauty and misty valleys.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/hillstations/khandala/geography.jpg",
+    "image": "/assets/images/hills/04/info2.jpg",
     "intro": "Khandala lies at the top of the Bhor Ghat, connecting the Deccan Plateau with the Konkan plains. Its strategic location makes it a natural hill pass surrounded by forested slopes and valleys.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Pune District, Maharashtra" },
@@ -62,7 +63,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/hillstations/khandala/dukes-nose.jpg",
+      "image": "/assets/images/hills/04/img1.jpg",
       "title": "Duke’s Nose (Nagphani Point)",
       "description": "A cliff resembling the nose of Duke Wellington, ideal for rock climbing and rappelling.",
       "distance": "7 km from Khandala Market",
@@ -70,7 +71,7 @@
       "value": "Adventure Spot"
     },
     {
-      "image": "/images/hillstations/khandala/kune-falls.jpg",
+      "image": "/assets/images/hills/04/img2.jpg",
       "title": "Kune Falls",
       "description": "A stunning 3-tier waterfall cascading from a height of 200 meters, surrounded by green valleys.",
       "distance": "2 km from Khandala Station",
@@ -116,9 +117,8 @@
     }
   ],
   "gallery": [
-    { "src": "/images/hillstations/khandala/gallery1.jpg", "thumb": "/images/hillstations/khandala/thumb1.jpg", "alt": "Khandala Valley View" },
-    { "src": "/images/hillstations/khandala/gallery2.jpg", "thumb": "/images/hillstations/khandala/thumb2.jpg", "alt": "Kune Waterfalls" },
-    { "src": "/images/hillstations/khandala/gallery3.jpg", "thumb": "/images/hillstations/khandala/thumb3.jpg", "alt": "Tiger’s Leap Viewpoint" }
+    { "src": "/assets/images/hills/04/img1.jpg", "thumb": "/assets/images/hills/04/img1.jpg", "alt": "Khandala Valley View" },
+    { "src": "/assets/images/hills/04/img2.jpg", "thumb": "/assets/images/hills/04/img2.jpg", "alt": "Kune Waterfalls" }
   ],
   "bookingTips": [
     {

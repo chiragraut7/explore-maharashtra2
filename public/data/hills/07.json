@@ -2,7 +2,8 @@
   "id": "07",
   "title": "Igatpuri",
   "subtitle": "Gateway to the Sahyadris and the Monsoon Haven",
-  "bannerImage": "/images/hillstations/igatpuri/banner.jpg",
+  "bannerImage": "/assets/images/hills/07.jpg",
+  "insideBannerImage": "/assets/images/hills/07/bannerimg.jpg",
   "color": "#38664a",
   "overview": [
     "Igatpuri, located in the Nashik district of Maharashtra, is a serene hill station surrounded by the rugged peaks of the Western Ghats.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/hillstations/igatpuri/geography.jpg",
+    "image": "/assets/images/hills/07/info2.jpg",
     "intro": "Located at an altitude of 600 meters in the Western Ghats, Igatpuri lies on the Mumbai–Nashik highway and is surrounded by Sahyadri peaks.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Nashik District, Maharashtra" },
@@ -71,7 +72,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/hillstations/igatpuri/vipassana-center.jpg",
+      "image": "/assets/images/hills/07/img1.jpg",
       "title": "Vipassana International Academy",
       "description": "A serene meditation center surrounded by hills, promoting mindfulness and tranquility.",
       "distance": "2 km from Igatpuri Station",
@@ -79,7 +80,7 @@
       "value": "Spiritual Center"
     },
     {
-      "image": "/images/hillstations/igatpuri/kalsubai-peak.jpg",
+      "image": "/assets/images/hills/07/img2.jpg",
       "title": "Kalsubai Peak",
       "description": "The highest peak in Maharashtra offering breathtaking sunrise views and thrilling treks.",
       "distance": "32 km from Igatpuri",
@@ -134,13 +135,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/hillstations/igatpuri/gallery1.jpg",
-      "thumb": "/images/hillstations/igatpuri/gallery1-thumb.jpg",
+      "src": "/assets/images/hills/07/img1.jpg",
+      "thumb": "/assets/images/hills/07/img1.jpg",
       "alt": "Vipassana Igatpuri"
     },
     {
-      "src": "/images/hillstations/igatpuri/gallery2.jpg",
-      "thumb": "/images/hillstations/igatpuri/gallery2-thumb.jpg",
+      "src": "/assets/images/hills/07/img2.jpg",
+      "thumb": "/assets/images/hills/07/img2.jpg",
       "alt": "Kalsubai Peak"
     }
   ],
