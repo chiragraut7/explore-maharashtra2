@@ -2,7 +2,8 @@
   "id": "17",
   "title": "Malshej Ghat Hill Station",
   "subtitle": "Where Clouds Kiss the Mountains",
-  "bannerImage": "/images/hillstations/malshej/banner.jpg",
+  "bannerImage": "/assets/images/hills/17.jpg",
+  "insideBannerImage": "/assets/images/hills/17/bannerimg.jpg",
   "color": "#33691e",
   "overview": [
     "Malshej Ghat, nestled in the Western Ghats of Maharashtra, is a mountain pass and hill station renowned for its misty valleys, roaring waterfalls, and rich flora and fauna.",
@@ -27,7 +28,7 @@
     }
   ],
   "geography": {
-    "image": "/images/hillstations/malshej/geography.jpg",
+    "image": "/assets/images/hills/17/info2.jpg",
     "intro": "Malshej Ghat is situated on the Kalyan–Ahmednagar Road (NH 61), about 130 km from Mumbai and 120 km from Pune. It lies in the Western Ghats at around 700 meters above sea level.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Pune District, Maharashtra" },
@@ -82,7 +83,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/hillstations/malshej/pimpalgaon-dam.jpg",
+      "image": "/assets/images/hills/17/img1.jpg",
       "title": "Pimpalgaon Joga Dam",
       "description": "A serene dam surrounded by hills and forests, known for flamingo sightings during monsoon.",
       "distance": "5 km from Malshej viewpoint",
@@ -90,7 +91,7 @@
       "value": "Birdwatching spot"
     },
     {
-      "image": "/images/hillstations/malshej/harishchandragad-fort.jpg",
+      "image": "/assets/images/hills/17/img2.jpg",
       "title": "Harishchandragad Fort",
       "description": "A historic hill fort offering a panoramic view of the Konkan region.",
       "distance": "15 km from Malshej Ghat",
@@ -98,7 +99,7 @@
       "value": "Trekking site"
     },
     {
-      "image": "/images/hillstations/malshej/malshej-waterfall.jpg",
+      "image": "/assets/images/hills/17/img3.jpg",
       "title": "Malshej Waterfalls",
       "description": "Hundreds of seasonal waterfalls make this place magical during monsoon.",
       "distance": "Along Malshej Ghat Road",
@@ -106,7 +107,7 @@
       "value": "Scenic waterfalls"
     },
     {
-      "image": "/images/hillstations/malshej/ajoba-hill.jpg",
+      "image": "/assets/images/hills/17/img4.jpg",
       "title": "Ajoba Hill Fort",
       "description": "A trekking hotspot believed to be connected to the Ramayana legend.",
       "distance": "20 km from Malshej",
@@ -161,18 +162,23 @@
   ],
   "gallery": [
     {
-      "src": "/images/hillstations/malshej/gallery1.jpg",
-      "thumb": "/images/hillstations/malshej/thumb1.jpg",
+      "src": "/assets/images/hills/17/img1.jpg",
+      "thumb": "/assets/images/hills/17/img1.jpg",
       "alt": "Malshej Waterfalls"
     },
     {
-      "src": "/images/hillstations/malshej/gallery2.jpg",
-      "thumb": "/images/hillstations/malshej/thumb2.jpg",
+      "src": "/assets/images/hills/17/img2.jpg",
+      "thumb": "/assets/images/hills/17/img2.jpg",
       "alt": "Misty Malshej Roads"
     },
     {
-      "src": "/images/hillstations/malshej/gallery3.jpg",
-      "thumb": "/images/hillstations/malshej/thumb3.jpg",
+      "src": "/assets/images/hills/17/img3.jpg",
+      "thumb": "/assets/images/hills/17/img3.jpg",
+      "alt": "Pimpalgaon Joga Dam View"
+    },
+    {
+      "src": "/assets/images/hills/17/img4.jpg",
+      "thumb": "/assets/images/hills/17/img4.jpg",
       "alt": "Pimpalgaon Joga Dam View"
     }
   ],

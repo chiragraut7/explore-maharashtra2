@@ -2,7 +2,8 @@
   "id": "14",
   "title": "Jawhar Hill Station",
   "subtitle": "The Mini Mahabaleshwar of Thane District",
-  "bannerImage": "/images/hillstations/jawhar/banner.jpg",
+  "bannerImage": "/assets/images/hills/14.jpg",
+  "insideBannerImage": "/assets/images/hills/14/bannerimg.jpg",
   "color": "#2e7d32",
   "overview": [
     "Jawhar, located in the Palghar district (formerly part of Thane) of Maharashtra, is one of the state’s lesser-known yet stunning hill stations. Situated at an altitude of about 518 meters, Jawhar is surrounded by dense forests, rolling hills, and picturesque waterfalls.",
@@ -27,7 +28,7 @@
     }
   ],
   "geography": {
-    "image": "/images/hillstations/jawhar/geography.jpg",
+    "image": "/assets/images/hills/14/info2.jpg",
     "intro": "Jawhar lies in the northern Sahyadri range, about 80 km from Nashik and 165 km from Mumbai. Surrounded by forests, it offers serene landscapes and a tranquil environment ideal for nature lovers.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Palghar District, Maharashtra" },
@@ -82,7 +83,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/hillstations/jawhar/dabdaba-falls.jpg",
+      "image": "/assets/images/hills/14/img1.jpg",
       "title": "Dabdaba Falls",
       "description": "A magnificent waterfall located within dense forest, perfect for a refreshing visit during monsoon.",
       "distance": "2 km from Jawhar Bus Stand",
@@ -90,7 +91,7 @@
       "value": "Waterfall"
     },
     {
-      "image": "/images/hillstations/jawhar/jai-vilas-palace.jpg",
+      "image": "/assets/images/hills/14/img2.jpg",
       "title": "Jai Vilas Palace",
       "description": "Built by Raja Yashwant Rao Mukne, this 20th-century palace is an architectural masterpiece.",
       "distance": "3 km from Jawhar",
@@ -98,7 +99,7 @@
       "value": "Historic Palace"
     },
     {
-      "image": "/images/hillstations/jawhar/sunset-point.jpg",
+      "image": "/assets/images/hills/14/img3.jpg",
       "title": "Sunset Point",
       "description": "Offers mesmerizing views of the setting sun over the hills and valleys of Jawhar.",
       "distance": "1.5 km from town center",
@@ -106,7 +107,7 @@
       "value": "Viewpoint"
     },
     {
-      "image": "/images/hillstations/jawhar/hanuman-point.jpg",
+      "image": "/assets/images/hills/14/img4.jpg",
       "title": "Hanuman Point",
       "description": "A serene viewpoint named after Lord Hanuman, overlooking the stunning valleys below.",
       "distance": "2 km from Bus Stand",
@@ -160,19 +161,24 @@
   ],
   "gallery": [
     {
-      "src": "/images/hillstations/jawhar/gallery1.jpg",
-      "thumb": "/images/hillstations/jawhar/thumb1.jpg",
+      "src": "/assets/images/hills/14/img1.jpg",
+      "thumb": "/assets/images/hills/14/img1.jpg",
       "alt": "Jai Vilas Palace"
     },
     {
-      "src": "/images/hillstations/jawhar/gallery2.jpg",
-      "thumb": "/images/hillstations/jawhar/thumb2.jpg",
+      "src": "/assets/images/hills/14/img2.jpg",
+      "thumb": "/assets/images/hills/14/img2.jpg",
+      "alt": "Warli Art"
+    },
+    {
+      "src": "/assets/images/hills/14/img3.jpg",
+      "thumb": "/assets/images/hills/14/img3.jpg",
       "alt": "Dabdaba Falls"
     },
     {
-      "src": "/images/hillstations/jawhar/gallery3.jpg",
-      "thumb": "/images/hillstations/jawhar/thumb3.jpg",
-      "alt": "Warli Art"
+      "src": "/assets/images/hills/14/img4.jpg",
+      "thumb": "/assets/images/hills/14/img4.jpg",
+      "alt": "Dabdaba Falls"
     }
   ],
   "bookingTips": [

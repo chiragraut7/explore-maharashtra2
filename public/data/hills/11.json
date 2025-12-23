@@ -2,7 +2,8 @@
   "id": "11",
   "title": "Dajipur Hill Station",
   "subtitle": "The Wildlife Heaven in the Sahyadri Range near Radhanagari",
-  "bannerImage": "/images/hills/dajipur/banner.jpg",
+  "bannerImage": "/assets/images/hills/11.jpg",
+  "insideBannerImage": "/assets/images/hills/11/bannerimg.jpg",
   "color": "#2c5f2d",
   "overview": [
     "Nestled in the dense forests of the Sahyadri mountain range, Dajipur Hill Station, also known as the Dajipur Wildlife Sanctuary, is a tranquil retreat located near Radhanagari in Kolhapur district.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/hills/dajipur/geography.jpg",
+    "image": "/assets/images/hills/11/info2.jpg",
     "intro": "Located about 120 km from Kolhapur, Dajipur sits on the border of Sindhudurg and Kolhapur districts, surrounded by dense forests and rolling Sahyadri hills.",
     "details": [
       {
@@ -97,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/hills/dajipur/radhanagari-dam.jpg",
+      "image": "/assets/images/hills/11/img1.jpg",
       "title": "Radhanagari Dam",
       "description": "Built on the Bhogawati River, this massive dam is surrounded by misty hills and serves as a scenic picnic spot.",
       "distance": "15 km",
@@ -105,7 +106,7 @@
       "value": "Beautiful backwaters and panoramic views."
     },
     {
-      "image": "/images/hills/dajipur/kalammawadi-dam.jpg",
+      "image": "/assets/images/hills/11/img2.jpg",
       "title": "Kalammawadi Dam",
       "description": "A serene dam located nearby offering calm waters, boating, and beautiful sunset views.",
       "distance": "25 km",
@@ -152,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/hills/dajipur/gallery1.jpg",
-      "thumb": "/images/hills/dajipur/thumb1.jpg",
+      "src": "/assets/images/hills/11/img1.jpg",
+      "thumb": "/assets/images/hills/11/img1.jpg",
       "alt": "Dajipur Wildlife Sanctuary Forest"
     },
     {
-      "src": "/images/hills/dajipur/gallery2.jpg",
-      "thumb": "/images/hills/dajipur/thumb2.jpg",
+      "src": "/assets/images/hills/11/img2.jpg",
+      "thumb": "/assets/images/hills/11/img2.jpg",
       "alt": "Radhanagari Dam Backwaters"
     }
   ],

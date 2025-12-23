@@ -2,7 +2,8 @@
   "id": "16",
   "title": "Chikhaldara Hill Station",
   "subtitle": "The Verdant Retreat of Vidarbha",
-  "bannerImage": "/images/hillstations/chikhaldara/banner.jpg",
+  "bannerImage": "/assets/images/hills/16.jpg",
+  "insideBannerImage": "/assets/images/hills/16/bannerimg.jpg",
   "color": "#4b7d4a",
   "overview": [
     "Chikhaldara, the only coffee-growing hill station in Vidarbha, is a picturesque getaway located in the Amravati district of Maharashtra. Situated at an altitude of 1118 meters, it offers a pleasant climate, scenic viewpoints, and rich wildlife.",
@@ -27,7 +28,7 @@
     }
   ],
   "geography": {
-    "image": "/images/hillstations/chikhaldara/geography.jpg",
+    "image": "/assets/images/hills/16/info2.jpg",
     "intro": "Nestled in the Satpura mountain ranges, Chikhaldara lies at an elevation of 1118 meters above sea level and is known for its cool climate and lush valleys.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Amravati District, Maharashtra" },
@@ -82,7 +83,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/hillstations/chikhaldara/hurricane-point.jpg",
+      "image": "/assets/images/hills/16/img1.jpg",
       "title": "Hurricane Point",
       "description": "Offers panoramic views of the surrounding valleys and forests — especially beautiful during sunrise.",
       "distance": "2 km from main town",
@@ -90,7 +91,7 @@
       "value": "Scenic viewpoint"
     },
     {
-      "image": "/images/hillstations/chikhaldara/gawilgad-fort.jpg",
+      "image": "/assets/images/hills/16/img2.jpg",
       "title": "Gawilgad Fort",
       "description": "An ancient hill fort built during the 12th century, featuring Persian inscriptions and old fort walls.",
       "distance": "3 km from Chikhaldara",
@@ -98,7 +99,7 @@
       "value": "Historical monument"
     },
     {
-      "image": "/images/hillstations/chikhaldara/melghat-reserve.jpg",
+      "image": "/assets/images/hills/16/img3.jpg",
       "title": "Melghat Tiger Reserve",
       "description": "One of India’s oldest tiger reserves, known for its dense forests and rich wildlife.",
       "distance": "25 km from Chikhaldara",
@@ -106,7 +107,7 @@
       "value": "Wildlife sanctuary"
     },
     {
-      "image": "/images/hillstations/chikhaldara/devi-point.jpg",
+      "image": "/assets/images/hills/16/img4.jpg",
       "title": "Devi Point",
       "description": "Named after a temple nearby, this viewpoint overlooks the stunning Sakkar Lake valley.",
       "distance": "1.5 km from town",
@@ -166,18 +167,23 @@
   ],
   "gallery": [
     {
-      "src": "/images/hillstations/chikhaldara/gallery1.jpg",
-      "thumb": "/images/hillstations/chikhaldara/thumb1.jpg",
+      "src": "/assets/images/hills/16/img1.jpg",
+      "thumb": "/assets/images/hills/16/img1.jpg",
       "alt": "Hurricane Point View"
     },
     {
-      "src": "/images/hillstations/chikhaldara/gallery2.jpg",
-      "thumb": "/images/hillstations/chikhaldara/thumb2.jpg",
+      "src": "/assets/images/hills/16/img2.jpg",
+      "thumb": "/assets/images/hills/16/img2.jpg",
       "alt": "Gawilgad Fort Ruins"
     },
     {
-      "src": "/images/hillstations/chikhaldara/gallery3.jpg",
-      "thumb": "/images/hillstations/chikhaldara/thumb3.jpg",
+      "src": "/assets/images/hills/16/img3.jpg",
+      "thumb": "/assets/images/hills/16/img3.jpg",
+      "alt": "Melghat Forest Safari"
+    },
+    {
+      "src": "/assets/images/hills/16/img4.jpg",
+      "thumb": "/assets/images/hills/16/img4.jpg",
       "alt": "Melghat Forest Safari"
     }
   ],

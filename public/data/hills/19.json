@@ -2,7 +2,8 @@
   "id": "19",
   "title": "Tamhini Ghat",
   "subtitle": "A Misty Monsoon Retreat near Mulshi",
-  "bannerImage": "/images/hills/tamhini/banner.jpg",
+  "bannerImage": "/assets/images/hills/19.jpg",
+  "insideBannerImage": "/assets/images/hills/19/bannerimg.jpg",
   "color": "#3c6e71",
   "overview": [
     "Tamhini Ghat, nestled in the Sahyadri mountain range near Mulshi, is a stunning hill pass renowned for its scenic monsoon landscapes, lush greenery, and sparkling waterfalls.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/hills/tamhini/geography.jpg",
+    "image": "/assets/images/hills/19/info2.jpg",
     "intro": "Tamhini Ghat lies between Mulshi and Kolad, forming a scenic link between Pune and the Konkan region. Its dense forests, valleys, and rivers make it a natural wonderland during monsoon.",
     "details": [
       {
@@ -97,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/hills/tamhini/devkund.jpg",
+      "image": "/assets/images/hills/19/img1.jpg",
       "title": "Devkund Waterfall",
       "description": "A hidden gem near Bhira village, Devkund is a plunge waterfall surrounded by dense forest.",
       "distance": "20 km",
@@ -105,7 +106,7 @@
       "value": "Popular trekking and picnic spot near Tamhini."
     },
     {
-      "image": "/images/hills/tamhini/mulshi-lake.jpg",
+      "image": "/assets/images/hills/19/img2.jpg",
       "title": "Mulshi Lake",
       "description": "A serene lake offering boating, bird watching, and stunning sunset views.",
       "distance": "15 km",
@@ -152,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/hills/tamhini/gallery1.jpg",
-      "thumb": "/images/hills/tamhini/thumb1.jpg",
+      "src": "/assets/images/hills/19/img1.jpg",
+      "thumb": "/assets/images/hills/19/img1.jpg",
       "alt": "Misty Tamhini Ghat road during monsoon"
     },
     {
-      "src": "/images/hills/tamhini/gallery2.jpg",
-      "thumb": "/images/hills/tamhini/thumb2.jpg",
+      "src": "/assets/images/hills/19/img2.jpg",
+      "thumb": "/assets/images/hills/19/img2.jpg",
       "alt": "Waterfalls along Tamhini Ghat"
     }
   ],
