@@ -2,29 +2,46 @@ import { NextRequest, NextResponse } from "next/server";
 import path from "path";
 import { promises as fs } from "fs";
 
-export async function GET(req: NextRequest, context: any) {
-  // Await params properly in Next.js 14+ dynamic routes
-  const { category } = context.params;
+export async function GET(
+  req: NextRequest,
+  { params }: { params: { category?: string } }
+) {
+  const category = params?.category;
 
+  // 1️⃣ Validation
   if (!category) {
-    return NextResponse.json({ success: false, error: "Category is required" }, { status: 400 });
+    return NextResponse.json(
+      { success: false, error: "Category is required" },
+      { status: 400 }
+    );
   }
 
   try {
-    const folderPath = path.join(process.cwd(), "public", "data", category);
+    // 2️⃣ Build path using SAME folder name
+    const folderPath = path.join(
+      process.cwd(),
+      "public",
+      "data",
+      category
+    );
 
-    // Check if folder exists
+    // 3️⃣ Read files
     let files: string[] = [];
     try {
       files = await fs.readdir(folderPath);
     } catch {
-      return NextResponse.json({ success: true, data: [] });
+      // Folder does not exist → return empty array
+      return NextResponse.json({
+        success: true,
+        count: 0,
+        data: [],
+      });
     }
 
-    // Read all JSON files in folder
+    // 4️⃣ Read & parse JSON files
     const items = await Promise.all(
       files
-        .filter((f) => f.endsWith(".json"))
+        .filter((file) => file.endsWith(".json"))
         .map(async (file) => {
           try {
             const filePath = path.join(folderPath, file);
@@ -32,16 +49,23 @@ export async function GET(req: NextRequest, context: any) {
             const parsed = JSON.parse(content);
             return Array.isArray(parsed) ? parsed : [parsed];
           } catch (err) {
-            console.error(`❌ Failed to read ${file}:`, err);
+            console.error(`❌ Error reading ${file}`, err);
             return [];
           }
         })
     );
 
-    // Flatten array and return with success
-    return NextResponse.json({ success: true, data: items.flat() });
+    // 5️⃣ Response
+    return NextResponse.json({
+      success: true,
+      count: items.flat().length,
+      data: items.flat(),
+    });
   } catch (error: any) {
-    console.error("API error:", error);
-    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+    console.error("API Error:", error);
+    return NextResponse.json(
+      { success: false, error: error.message },
+      { status: 500 }
+    );
   }
 }

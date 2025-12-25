@@ -56,7 +56,7 @@ export default function Home() {
     { id: "forts", title: "Forts", image: "/assets/images/home_iocn/castle-3.svg", link: "/forts" },
     { id: "wildlife", title: "Wildlife & Nature", image: "/assets/images/home_iocn/tree.svg", link: "/nature" },
     { id: "religious", title: "Religious Places", image: "/assets/images/home_iocn/temple.svg", link: "/religious" },
-    { id: "cultural", title: "Cultural & Unique", image: "/assets/images/home_iocn/castle.svg", link: "/cultural" },
+    { id: "culture", title: "Cultural & Unique", image: "/assets/images/home_iocn/castle.svg", link: "/culture" },
   ];
 
   return (

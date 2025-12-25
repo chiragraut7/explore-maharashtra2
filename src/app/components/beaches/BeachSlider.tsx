@@ -49,6 +49,7 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
             pauseOnMouseEnter: true,
           }}
           breakpoints={{
+            220: { slidesPerView: 1 },
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },

@@ -18,7 +18,7 @@ export default function Header() {
     { title: "Forts", href: "/forts" },
     { title: "Wildlife & Nature", href: "/nature" },
     { title: "Religious", href: "/religious" },
-    { title: "Cultural", href: "/cultural" },
+    { title: "Cultural", href: "/culture" },
     { title: "Contact", href: "/contact" },
   ]
 

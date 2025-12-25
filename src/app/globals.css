@@ -2225,6 +2225,11 @@ html {
     bottom: 0.8rem;
     padding: 0.5rem 0.7rem;
   }
+  .homeLinks .col{
+    width: 33.33%;
+    max-width: 33.33%;
+    min-width: 33.33%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2254,5 +2259,10 @@ html {
       right: inherit;
       left: 50%;
       transform: translate(-50%, -50%) !important;
+  }
+  .homeLinks .col{
+    width: 50%;
+    max-width: 50%;
+    min-width: 50%;
   }
 }
