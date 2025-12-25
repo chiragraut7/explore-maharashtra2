@@ -122,7 +122,7 @@ const BeachList: React.FC = () => {
             <div className="parallax-image image-block">
               <div className="image-wrap">
                 <Image
-                  src="/assets/images/beaches/00/info2.jpg"
+                  src="/assets/images/info2.jpg"
                   alt="Beautiful Beaches"
                   width={900}
                   height={600}
@@ -138,7 +138,7 @@ const BeachList: React.FC = () => {
             <div className="parallax-image hero-image">
               <div className="image-wrap">
                 <Image
-                  src="/assets/images/beaches/04/info3.jpg"
+                  src="/assets/images/info3.jpg"
                   alt="Konkan Coast"
                   width={1200}
                   height={800}
