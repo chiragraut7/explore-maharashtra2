@@ -1,23 +1,20 @@
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import 'aos/dist/aos.css'
 import 'leaflet/dist/leaflet.css'
-
 import './globals.css'
 
 import { ReactNode } from 'react'
-import { Quicksand, Playwrite_AU_TAS, Playwrite_DE_SAS } from 'next/font/google'
+import { Quicksand } from 'next/font/google'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { LanguageProvider } from './components/context/LanguageContext'
+import BootstrapClient from './BootstrapClient'
 
 /* ----------------------------
    Fonts
 ----------------------------- */
-
-// Body font (supports subsets)
 const quicksand = Quicksand({
   subsets: ['latin'],
   weight: ['500', '700'],
@@ -46,12 +43,13 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body
-        className={`${quicksand.className}`}
-      >
+      <body className={quicksand.className}>
+        {/* ✅ Client-only Bootstrap JS */}
+        <BootstrapClient />
+
         <LanguageProvider>
           <Header />
-          {children}
+          <main>{children}</main>
           <Footer />
         </LanguageProvider>
       </body>

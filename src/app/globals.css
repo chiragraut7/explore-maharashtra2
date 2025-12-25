@@ -2240,4 +2240,19 @@ html {
   .hero-caption {
     display: none;
   }
+  .containertimeline{
+    width: 100%;
+  }
+  .containertimeline:after{
+    display: none;
+  }
+  .containertimeline.right{
+    left: 0;
+  }
+  .right .year,
+  .left .year {
+      right: inherit;
+      left: 50%;
+      transform: translate(-50%, -50%) !important;
+  }
 }
