@@ -2,7 +2,8 @@
   "id": "42",
   "title": "Shri Nrusinha Saraswati Temple, Narsobachi Wadi",
   "subtitle": "A Sacred Abode of Lord Dattatreya on the Banks of River Krishna",
-  "bannerImage": "/images/religious/narsobachi-wadi/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#8B0000",
   "overview": [
     "Narsobachi Wadi, located near Sangli in Maharashtra, is a revered pilgrimage site dedicated to Shri Nrusinha Saraswati, an incarnation of Lord Dattatreya.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/narsobachi-wadi/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Narsobachi Wadi is situated in Shirol taluka near Sangli, close to the Karnataka border, surrounded by fertile plains and riverbanks.",
     "details": [
       {

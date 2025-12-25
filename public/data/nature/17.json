@@ -2,7 +2,8 @@
   "id": "17",
   "title": "Lonar Lake",
   "subtitle": "The Meteoric Marvel of Maharashtra",
-  "bannerImage": "/images/nature/lonar/banner.jpg",
+  "bannerImage": "/assets/images/nature/01.jpg",
+  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
   "color": "#3A8D8E",
   "overview": [
     "Lonar Lake, located in the Buldhana district of Maharashtra, is one of the world’s only hyper-velocity impact crater lakes formed by a meteor strike about 52,000 years ago.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/nature/lonar/geography.jpg",
+    "image": "/assets/images/nature/01/info2.jpg",
     "intro": "Lonar Lake sits inside a massive basaltic crater that spans over 1.8 km in diameter and plunges nearly 150 meters deep, surrounded by dense forest and temple ruins.",
     "details": [
       {
@@ -97,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/nature/lonar/daitya-sudan.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Daitya Sudan Temple",
       "description": "An ancient temple dedicated to Lord Vishnu, showcasing intricate Hemadpanthi architecture near the lake.",
       "distance": "1 km from Lonar Lake",
@@ -105,7 +106,7 @@
       "value": "Historical Site"
     },
     {
-      "image": "/images/nature/lonar/gomukh-temple.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Gomukh Temple",
       "description": "Located near the crater rim, this temple features a freshwater spring believed to originate from the lake’s sacred source.",
       "distance": "2 km from lake center",
@@ -152,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/lonar/gallery1.jpg",
-      "thumb": "/images/nature/lonar/thumb1.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Aerial view of Lonar Crater Lake"
     },
     {
-      "src": "/images/nature/lonar/gallery2.jpg",
-      "thumb": "/images/nature/lonar/thumb2.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Sunset over Lonar Lake rim"
     }
   ],

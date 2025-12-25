@@ -2,7 +2,8 @@
   "id": "27",
   "title": "Chintamani Temple, Theur",
   "subtitle": "The Lord Who Removes Worries — Fifth Temple of the Sacred Ashtavinayak Yatra",
-  "bannerImage": "/images/religious/theur/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#ef4444",
   "overview": [
     "The Chintamani Temple at Theur, located near Pune, is one of the eight revered Ashtavinayak temples dedicated to Lord Ganesha. The deity here is known as 'Chintamani', meaning 'The One Who Removes All Worries'.",
@@ -28,7 +29,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/theur/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Theur is a peaceful village located around 25 km east of Pune, in the Haveli taluka. The temple lies near the confluence of three rivers, surrounded by serene countryside and traditional Warkari settlements.",
     "details": [
       {

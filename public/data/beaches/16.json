@@ -2,8 +2,8 @@
   "id": "16",
   "title": "Shiroda Beach",
   "subtitle": "A Serene Coastal Paradise near the Goa Border",
-  "bannerImage": "/assets/images/beaches/shiroda-banner.jpg",
-  "insideBannerImage": "/assets/images/beaches/16/bannerImg.jpg",
+  "bannerImage": "/assets/images/beaches/01.jpg",
+  "insideBannerImage": "/assets/images/beaches/01/bannerimg.jpg",
   "color": "#0EA5E9",
   "overview": [
     "Shiroda Beach, located in Sindhudurg district near the Goa border, is a hidden gem known for its tranquil environment, white sandy shores, and clear blue waters. The beach remains unspoiled by heavy tourism, offering an ideal retreat for peace-seekers and nature lovers.",
@@ -22,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/16/info3.jpg",
+    "image": "/assets/images/beaches/01/info3.jpg",
     "intro": "Shiroda lies along the southern Konkan coast in Sindhudurg district, around 30 km from Vengurla. It borders Goa and is part of the scenic Konkan coastal belt.",
     "details": [
       {
@@ -97,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/16/img1.jpg",
+      "image": "/assets/images/beaches/01/img1.jpg",
       "title": "Swayambhu Shiva Temple",
       "description": "An ancient seaside temple dedicated to Lord Shiva, believed to be self-manifested.",
       "distance": "1 km",
@@ -105,7 +105,7 @@
       "value": "Religious Attraction"
     },
     {
-      "image": "/assets/images/beaches/16/img2.jpg",
+      "image": "/assets/images/beaches/01/img2.jpg",
       "title": "Vengurla Rocks (Burnt Islands)",
       "description": "A cluster of rocky islands off Vengurla’s coast, ideal for boating and photography.",
       "distance": "25 km",
@@ -152,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/16/img1.jpg",
-      "thumb": "/assets/images/beaches/16/img1.jpg",
+      "src": "/assets/images/beaches/01/img1.jpg",
+      "thumb": "/assets/images/beaches/01/img1.jpg",
       "alt": "Shiroda Beach Aerial View"
     },
     {
-      "src": "/assets/images/beaches/16/img2.jpg",
-      "thumb": "/assets/images/beaches/16/img2.jpg",
+      "src": "/assets/images/beaches/01/img2.jpg",
+      "thumb": "/assets/images/beaches/01/img2.jpg",
       "alt": "Sunset at Shiroda Beach"
     }
   ],

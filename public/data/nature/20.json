@@ -2,7 +2,8 @@
   "id": "20",
   "title": "Devkund Waterfall",
   "subtitle": "The Hidden Gem of Raigad District",
-  "bannerImage": "/images/nature/devkund/banner.jpg",
+  "bannerImage": "/assets/images/nature/01.jpg",
+  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
   "color": "#3baea0",
   "overview": [
     "Devkund Waterfall, located near Bhira village in the Raigad district, is one of Maharashtra’s most enchanting natural spots. Hidden deep within the forest, this plunge waterfall forms a turquoise pool at its base, making it a favorite among trekkers and photographers.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/nature/devkund/geography.jpg",
+    "image": "/assets/images/nature/01/info2.jpg",
     "intro": "Devkund Waterfall lies near Bhira village in Raigad district, nestled amidst the Sahyadri ranges and surrounded by dense forest cover.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/nature/devkund/bhira-dam.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Bhira Dam",
       "description": "A scenic reservoir located near the starting point of the Devkund trek, built for hydroelectric generation.",
       "distance": "2 km",
@@ -104,7 +105,7 @@
       "value": "Beautiful viewpoint for sunrise and boating."
     },
     {
-      "image": "/images/nature/devkund/kolad.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Kolad River Rafting",
       "description": "Experience thrilling white-water rafting on the Kundalika River near Kolad.",
       "distance": "22 km",
@@ -151,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/devkund/devkund1.jpg",
-      "thumb": "/images/nature/devkund/devkund1_thumb.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Devkund Waterfall Main Pool"
     },
     {
-      "src": "/images/nature/devkund/devkund2.jpg",
-      "thumb": "/images/nature/devkund/devkund2_thumb.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Trek Path to Devkund Waterfall"
     }
   ],

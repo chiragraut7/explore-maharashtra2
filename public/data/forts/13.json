@@ -2,7 +2,8 @@
   "id": "13",
   "title": "Korigad Fort",
   "subtitle": "Scenic Hill Fort Overlooking Aamby Valley near Lonavala",
-  "bannerImage": "/images/forts/korigad/korigad-banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#6b21a8",
   "overview": [
     "Korigad Fort is a beautiful hill fort located near Lonavala, overlooking the luxurious Aamby Valley. Built around the 15th century, it offers panoramic views of the surrounding valleys and artificial lakes.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/korigad/korigad-geo.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Located around 20 km from Lonavala, Korigad lies at an altitude of 3,050 feet. It’s a table-top fort surrounded by deep valleys and connected to the neighboring Ambavne village.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/forts/korigad/attraction1.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Koraidevi Temple",
       "description": "An ancient temple dedicated to Goddess Koraidevi, located at the fort’s summit.",
       "distance": "Top of Fort",
@@ -104,7 +105,7 @@
       "value": "Spiritual Site"
     },
     {
-      "image": "/images/forts/korigad/attraction2.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Aamby Valley Viewpoint",
       "description": "A breathtaking viewpoint offering wide views of Aamby Valley and the surrounding hills.",
       "distance": "South Bastion",
@@ -151,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/korigad/gallery1.jpg",
-      "thumb": "/images/forts/korigad/gallery1-thumb.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Korigad Fort Top View"
     },
     {
-      "src": "/images/forts/korigad/gallery2.jpg",
-      "thumb": "/images/forts/korigad/gallery2-thumb.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Koraidevi Temple at Korigad"
     }
   ],

@@ -2,7 +2,8 @@
   "id": "08",
   "title": "Lohagad Fort",
   "subtitle": "The Iron Fort of Maharashtra",
-  "bannerImage": "/images/forts/lohagad/lohagad-banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#5a3e1b",
   "overview": [
     "Lohagad Fort, meaning 'Iron Fort', stands proudly near Lonavala in the Pune district of Maharashtra. It is one of the best-preserved and most accessible forts in the Sahyadri range, located at an altitude of 3,389 feet.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/lohagad/lohagad-geography.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Located about 52 km from Pune and 11 km from Lonavala, Lohagad Fort divides the basins of Indrayani and Pavna rivers. The fort’s walls still stand strong, overlooking the lush valleys of the Western Ghats.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/forts/lohagad/vinchu-kata.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Vinchu Kata (Scorpion’s Tail)",
       "description": "A long, narrow fortified spur resembling a scorpion’s tail offering breathtaking views of the valley.",
       "distance": "Within the fort complex",
@@ -104,7 +105,7 @@
       "value": "Scenic Cliff Point"
     },
     {
-      "image": "/images/forts/lohagad/ganesh-darwaja.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Ganesh Darwaja",
       "description": "One of the four grand entrances to the fort, built with strong stone arches and carvings.",
       "distance": "Main entrance area",
@@ -112,7 +113,7 @@
       "value": "Historic Gateway"
     },
     {
-      "image": "/images/forts/lohagad/pawna-view.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Pawna Lake Viewpoint",
       "description": "A perfect spot for photography with mesmerizing views of Pawna Dam and Tung Fort.",
       "distance": "Edge of the fort wall",
@@ -167,18 +168,18 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/lohagad/gallery1.jpg",
-      "thumb": "/images/forts/lohagad/thumb1.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Lohagad Fort entrance in monsoon"
     },
     {
-      "src": "/images/forts/lohagad/gallery2.jpg",
-      "thumb": "/images/forts/lohagad/thumb2.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Vinchu Kata viewpoint from top"
     },
     {
-      "src": "/images/forts/lohagad/gallery3.jpg",
-      "thumb": "/images/forts/lohagad/thumb3.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Pawna Lake view from Lohagad"
     }
   ],

@@ -2,7 +2,8 @@
   "id": "13",
   "title": "Dajipur Wildlife Sanctuary",
   "subtitle": "The Bison Sanctuary of Maharashtra",
-  "bannerImage": "/images/nature/dajipur/banner.jpg",
+  "bannerImage": "/assets/images/nature/01.jpg",
+  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
   "color": "#2E7D32",
   "overview": [
     "Nestled in the Sahyadri mountain ranges near Kolhapur, Dajipur Wildlife Sanctuary, also known as the Bison Sanctuary, is a lush forest reserve famous for its rich biodiversity and scenic beauty.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/nature/dajipur/geography.jpg",
+    "image": "/assets/images/nature/01/info2.jpg",
     "intro": "Spread over 120 square kilometers, Dajipur Wildlife Sanctuary lies on the border of Sindhudurg and Kolhapur districts. It is part of the Radhanagari Wildlife Sanctuary and forms a vital corridor for Western Ghats fauna.",
     "details": [
       {
@@ -97,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/nature/dajipur/radhanagari-dam.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Radhanagari Dam",
       "description": "A scenic reservoir offering picturesque views and a peaceful atmosphere, located near the sanctuary.",
       "distance": "15 km from Dajipur",
@@ -105,7 +106,7 @@
       "value": "Scenic Reservoir"
     },
     {
-      "image": "/images/nature/dajipur/panhalgad.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Panhala Fort",
       "description": "A historic Maratha fort with panoramic views and deep connections to Chhatrapati Shivaji Maharaj.",
       "distance": "45 km from Dajipur",
@@ -152,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/dajipur/gallery1.jpg",
-      "thumb": "/images/nature/dajipur/thumb1.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Indian Bison grazing in Dajipur Sanctuary"
     },
     {
-      "src": "/images/nature/dajipur/gallery2.jpg",
-      "thumb": "/images/nature/dajipur/thumb2.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Dense green forest of Dajipur"
     }
   ],

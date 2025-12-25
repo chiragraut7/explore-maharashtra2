@@ -2,7 +2,8 @@
   "id": "36",
   "title": "Kopeshwar Temple, Khidrapur",
   "subtitle": "An Architectural Marvel Dedicated to Lord Shiva and Vishnu",
-  "bannerImage": "/images/religious/test/kopeshwar-khidrapur/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#4b2e83",
   "overview": [
     "The Kopeshwar Temple, located in Khidrapur near Kolhapur, is one of Maharashtra’s finest examples of Chalukyan-style architecture dedicated to Lord Shiva and Lord Vishnu.",
@@ -23,7 +24,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/test/kopeshwar-khidrapur/geography.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Khidrapur is a serene village on the banks of the Krishna River, near the Maharashtra-Karnataka border in Kolhapur district.",
     "details": [
       {

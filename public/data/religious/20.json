@@ -2,7 +2,8 @@
   "id": "20",
   "title": "Parli Vaijnath Temple",
   "subtitle": "One of the Twelve Jyotirlingas of Lord Shiva",
-  "bannerImage": "/images/religious/parli-vaijnath/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#B91C1C",
   "overview": [
     "Parli Vaijnath Temple, situated in the Beed district of Maharashtra, is one of the twelve revered Jyotirlingas of Lord Shiva. It is said that worshipping here brings healing, peace, and liberation from worldly suffering.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/parli-vaijnath/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Parli Vaijnath lies amidst the scenic Balaghat range in Beed district, surrounded by hills and greenery that enhance its spiritual ambiance.",
     "details": [
       {
@@ -97,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/religious/parli-vaijnath/amrit-kund.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Amrit Kund",
       "description": "A sacred tank near the temple believed to possess healing powers.",
       "distance": "0.5 km",
@@ -105,7 +106,7 @@
       "value": "Holy Water Pond"
     },
     {
-      "image": "/images/religious/parli-vaijnath/somnath-hill.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Somnath Hill",
       "description": "A serene viewpoint offering panoramic views of Parli and its surrounding forests.",
       "distance": "2 km",
@@ -152,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/parli-vaijnath/1.jpg",
-      "thumb": "/images/religious/parli-vaijnath/thumb1.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Parli Vaijnath Temple Front View"
     },
     {
-      "src": "/images/religious/parli-vaijnath/2.jpg",
-      "thumb": "/images/religious/parli-vaijnath/thumb2.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Devotees performing Aarti"
     }
   ],

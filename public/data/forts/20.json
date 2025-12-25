@@ -1,99 +1,201 @@
 {
   "id": "20",
-  "name": "Vijaydurg Fort",
-  "category": "Forts",
-  "bannerImage": "/images/forts/vijaydurg/vijaydurg-banner.jpg",
-  "sections": {
-    "overview": {
-      "title": "Overview",
-      "icon": "fa-solid fa-landmark",
-      "content": "Known as the 'Gibraltar of the East', Vijaydurg Fort is one of Maharashtra’s oldest and strongest sea forts. Originally built by Raja Bhoja II and later expanded by Chhatrapati Shivaji Maharaj, the fort stands majestically on the Konkan coast, surrounded by the Arabian Sea on three sides."
+  "title": "Vijaydurg Fort",
+  "subtitle": "The Gibraltar of the East",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
+  "color": "#1e3a8a",
+
+  "overview": [
+    "Known as the 'Gibraltar of the East', Vijaydurg Fort is one of Maharashtra’s oldest and strongest sea forts. Originally built by Raja Bhoja II of the Shilahar dynasty, the fort stands majestically on the Konkan coast, surrounded by the Arabian Sea on three sides.",
+    "Later captured and expanded by Chhatrapati Shivaji Maharaj, Vijaydurg became one of the most important naval bases of the Maratha Empire and played a key role in coastal defense and maritime trade."
+  ],
+
+  "highlights": [
+    {
+      "icon": "fa-solid fa-shield-halved",
+      "title": "Strongest Sea Fort",
+      "description": "A massive fort with triple-layered defensive walls and over 20 bastions."
     },
-    "highlights": {
-      "title": "Highlights",
-      "icon": "fa-solid fa-star",
-      "points": [
-        "Massive sea fort with triple-layered walls and 20 bastions",
-        "Served as the main base of the Maratha Navy under Kanhoji Angre",
-        "Hidden underwater wall built to trap enemy ships",
-        "Spectacular views of the Arabian Sea and surrounding coastline",
-        "Historical ship anchorage visible during low tide"
-      ]
+    {
+      "icon": "fa-solid fa-ship",
+      "title": "Maratha Naval Base",
+      "description": "Served as the main base of the Maratha Navy under Admiral Kanhoji Angre."
     },
-    "architecture": {
-      "title": "Architecture",
-      "icon": "fa-solid fa-monument",
-      "content": "Vijaydurg Fort’s architecture showcases the brilliance of Maratha engineering. The fort is built using laterite stones and has strong defensive walls, bastions, granaries, wells, and hidden escape tunnels.",
-      "features": [
-        "Triple-layered defensive walls",
-        "Secret passageways and hidden chambers",
-        "Granaries, wells, and storage areas inside the fort",
-        "Stone carvings and old temple remnants"
-      ]
-    },
-    "history": {
-      "title": "History",
-      "icon": "fa-solid fa-scroll",
-      "content": "Built in the 12th century by Raja Bhoja II of the Shilahar dynasty, the fort was later captured and strengthened by Chhatrapati Shivaji Maharaj in 1653. It became one of the key naval bases of the Maratha Empire and played an important role in sea defense and trade.",
-      "events": [
-        "Built by Raja Bhoja II in the 12th century",
-        "Captured and renovated by Shivaji Maharaj in 1653",
-        "Served as the headquarters of Maratha Navy under Kanhoji Angre",
-        "Witnessed British-Maratha conflicts in the 18th century"
-      ]
-    },
-    "attractions": {
-      "title": "Attractions",
-      "icon": "fa-solid fa-binoculars",
-      "places": [
-        "Ancient bastions and sea-facing watchtowers",
-        "Hidden tunnels and old granaries",
-        "Ruins of temples and residential areas",
-        "Panoramic sea views from the ramparts"
-      ]
-    },
-    "activities": {
-      "title": "Activities",
-      "icon": "fa-solid fa-person-hiking",
-      "options": [
-        "Explore the massive sea fort and bastions",
-        "Boating around the fort during high tide",
-        "Photography and heritage exploration",
-        "Taste authentic Malvani cuisine in nearby villages"
-      ]
-    },
-    "howToReach": {
-      "title": "How to Reach",
-      "icon": "fa-solid fa-route",
-      "modes": {
-        "byRoad": "Vijaydurg is about 490 km from Mumbai and 220 km from Ratnagiri. Regular buses and private vehicles are available via NH66.",
-        "byTrain": "Nearest railway station is Rajapur Road, about 60 km away. Local taxis and buses connect to Vijaydurg.",
-        "byAir": "Nearest airport is Ratnagiri Airport (220 km)."
+    {
+      "icon": "fa-solid fa-water",
+      "title": "Hidden Underwater Wall",
+      "description": "A secret underwater wall built to trap enemy ships during low tide."
+    }
+  ],
+
+  "geography": {
+    "image": "/assets/images/forts/01/info2.jpg",
+    "intro": "Vijaydurg Fort is located along the Konkan coast in Sindhudurg district, overlooking the Arabian Sea. Its strategic coastal position made it ideal for naval dominance.",
+    "details": [
+      {
+        "icon": "fa-solid fa-location-dot",
+        "label": "Location",
+        "value": "Vijaydurg, Sindhudurg District, Maharashtra"
+      },
+      {
+        "icon": "fa-solid fa-water",
+        "label": "Surroundings",
+        "value": "Arabian Sea (three sides)"
+      },
+      {
+        "icon": "fa-solid fa-building",
+        "label": "Built By",
+        "value": "Raja Bhoja II (12th century)"
+      },
+      {
+        "icon": "fa-solid fa-crown",
+        "label": "Expanded By",
+        "value": "Chhatrapati Shivaji Maharaj (1653)"
       }
-    },
-    "bestTimeToVisit": {
-      "title": "Best Time to Visit",
-      "icon": "fa-solid fa-calendar-days",
-      "content": "The ideal time to visit Vijaydurg Fort is from October to March, when the weather is pleasant and the sea views are stunning."
-    },
-    "gallery": {
-      "title": "Gallery",
-      "icon": "fa-solid fa-image",
-      "images": [
-        "/images/forts/vijaydurg/gallery1.jpg",
-        "/images/forts/vijaydurg/gallery2.jpg",
-        "/images/forts/vijaydurg/gallery3.jpg",
-        "/images/forts/vijaydurg/gallery4.jpg"
+    ],
+    "climate": {
+      "description": "Vijaydurg experiences a tropical coastal climate with warm temperatures and high humidity.",
+      "seasons": [
+        {
+          "icon": "fa-solid fa-sun",
+          "text": "Best time to visit is from October to March."
+        },
+        {
+          "icon": "fa-solid fa-cloud-showers-heavy",
+          "text": "Avoid monsoon season due to slippery terrain and rough seas."
+        }
       ]
     },
-    "tips": {
-      "title": "Travel Tips",
-      "icon": "fa-solid fa-lightbulb",
-      "points": [
-        "Carry enough drinking water and snacks; options near the fort are limited.",
-        "Wear comfortable shoes for walking and climbing.",
-        "Hire a local guide to learn about the fort’s history and hidden underwater wall."
+    "conclusion": "Overlooking the Arabian Sea, Vijaydurg Fort remains a symbol of Maratha naval power and coastal defense."
+  },
+
+  "activities": [
+    {
+      "icon": "fa-solid fa-person-hiking",
+      "title": "Fort Exploration",
+      "description": "Walk along massive ramparts, bastions, and ancient structures.",
+      "info": [
+        "Wear sturdy footwear.",
+        "Allow at least 2–3 hours for exploration."
+      ]
+    },
+    {
+      "icon": "fa-solid fa-camera",
+      "title": "Photography",
+      "description": "Capture panoramic sea views and fort architecture.",
+      "info": [
+        "Early morning and sunset offer best lighting.",
+        "Be cautious near sea-facing edges."
+      ]
+    },
+    {
+      "icon": "fa-solid fa-utensils",
+      "title": "Local Cuisine",
+      "description": "Taste authentic Malvani seafood in nearby villages.",
+      "info": [
+        "Try local fish curry and solkadhi.",
+        "Small eateries available nearby."
       ]
     }
-  }
+  ],
+
+  "attractions": [
+    {
+      "image": "/assets/images/forts/01/img1.jpg",
+      "title": "Sea-Facing Bastions",
+      "description": "Massive watchtowers offering breathtaking views of the Arabian Sea.",
+      "distance": "Inside Fort",
+      "icon": "fa-solid fa-binoculars",
+      "value": "Scenic Viewpoints"
+    },
+    {
+      "image": "/assets/images/forts/01/img1.jpg",
+      "title": "Hidden Tunnels & Granaries",
+      "description": "Secret tunnels, storage rooms, and granaries inside the fort.",
+      "distance": "Central Fort Area",
+      "icon": "fa-solid fa-vault",
+      "value": "Historic Structures"
+    }
+  ],
+
+  "marineLife": {
+    "intro": "The waters around Vijaydurg Fort support a diverse marine ecosystem due to clean coastal currents.",
+    "items": [
+      {
+        "icon": "fa-solid fa-fish",
+        "title": "Marine Fish",
+        "description": "Pomfret, mackerel, and other Konkan coastal species."
+      },
+      {
+        "icon": "fa-solid fa-water",
+        "title": "Coastal Biodiversity",
+        "description": "Clear waters and rocky seabed visible during low tide."
+      }
+    ],
+    "conclusion": [
+      "Vijaydurg’s marine environment enhances its scenic beauty.",
+      "Low tide reveals the famous underwater defensive wall."
+    ]
+  },
+
+  "howToReach": [
+    {
+      "icon": "fa-solid fa-car",
+      "title": "By Road",
+      "details": [
+        "Around 490 km from Mumbai via NH66.",
+        "Buses and private vehicles available."
+      ]
+    },
+    {
+      "icon": "fa-solid fa-train",
+      "title": "By Train",
+      "details": [
+        "Nearest railway station is Rajapur Road (60 km).",
+        "Taxis and buses connect to Vijaydurg."
+      ]
+    },
+    {
+      "icon": "fa-solid fa-plane",
+      "title": "By Air",
+      "details": [
+        "Nearest airport is Ratnagiri Airport (220 km).",
+        "Road transport available from the airport."
+      ]
+    }
+  ],
+
+  "gallery": [
+    {
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
+      "alt": "Vijaydurg Fort Aerial View"
+    },
+    {
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
+      "alt": "Vijaydurg Fort Bastions"
+    },
+    {
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
+      "alt": "Arabian Sea View from Vijaydurg"
+    }
+  ],
+
+  "bookingTips": [
+    {
+      "icon": "fa-solid fa-bottle-water",
+      "description": "Carry sufficient drinking water and snacks."
+    },
+    {
+      "icon": "fa-solid fa-shoe-prints",
+      "description": "Wear comfortable shoes for long walks."
+    },
+    {
+      "icon": "fa-solid fa-user-tie",
+      "description": "Hire a local guide to understand the fort’s history and underwater wall."
+    }
+  ]
 }

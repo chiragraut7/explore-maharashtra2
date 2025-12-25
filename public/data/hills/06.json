@@ -2,8 +2,8 @@
   "id": "06",
   "title": "Bhandardara",
   "subtitle": "The Hidden Gem of the Sahyadris",
-  "bannerImage": "/assets/images/hills/06.jpg",
-  "insideBannerImage": "/assets/images/hills/06/bannerimg.jpg",
+  "bannerImage": "/assets/images/hills/01.jpg",
+  "insideBannerImage": "/assets/images/hills/01/bannerimg.jpg",
   "color": "#2e5e45",
   "overview": [
     "Bhandardara, located near Igatpuri in the Ahmednagar district, is one of Maharashtra’s most scenic hill stations surrounded by lush green mountains and serene lakes.",
@@ -23,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/hills/06/info2.jpg",
+    "image": "/assets/images/hills/01/info2.jpg",
     "intro": "Situated at 750 meters above sea level, Bhandardara lies in the Western Ghats near the Pravara River.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Ahmednagar District, Maharashtra" },
@@ -72,7 +72,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/hills/06/img1.jpg",
+      "image": "/assets/images/hills/01/img1.jpg",
       "title": "Arthur Lake",
       "description": "A tranquil lake ideal for boating and reflection, surrounded by Sahyadri peaks.",
       "distance": "2 km from Bhandardara",
@@ -80,7 +80,7 @@
       "value": "Lake View"
     },
     {
-      "image": "/assets/images/hills/06/img2.jpg",
+      "image": "/assets/images/hills/01/img2.jpg",
       "title": "Randha Falls",
       "description": "A 170-ft waterfall on the Pravara River, a sight to behold during monsoon.",
       "distance": "10 km from Bhandardara",
@@ -135,13 +135,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/hills/06/img1.jpg",
-      "thumb": "/assets/images/hills/06/img1.jpg",
+      "src": "/assets/images/hills/01/img1.jpg",
+      "thumb": "/assets/images/hills/01/img1.jpg",
       "alt": "Bhandardara Lake"
     },
     {
-      "src": "/assets/images/hills/06/img2.jpg",
-      "thumb": "/assets/images/hills/06/img2.jpg",
+      "src": "/assets/images/hills/01/img2.jpg",
+      "thumb": "/assets/images/hills/01/img2.jpg",
       "alt": "Randha Falls"
     }
   ],

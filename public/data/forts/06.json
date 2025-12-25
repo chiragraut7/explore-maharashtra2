@@ -2,7 +2,8 @@
   "id": "06",
   "title": "Torna Fort",
   "subtitle": "Prachandgad – The First Fort Captured by Chhatrapati Shivaji Maharaj",
-  "bannerImage": "/images/forts/torna/torna-banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#6b3e26",
   "overview": [
     "Torna Fort, also known as Prachandgad, is located in Pune district and holds a special place in Maratha history as the first fort captured by Chhatrapati Shivaji Maharaj at the young age of 16 in 1646.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/torna/torna-map.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Torna Fort lies approximately 50 km southwest of Pune, nestled amidst the Western Ghats. It offers scenic views of valleys, lush greenery, and nearby forts.",
     "details": [
       {
@@ -97,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/forts/torna/menghai-temple.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Menghai Devi Temple",
       "description": "A small but sacred temple dedicated to Goddess Menghai (Tornaji), considered the protector deity of the fort.",
       "distance": "Inside Fort",
@@ -105,7 +106,7 @@
       "value": "Spiritual center of the fort."
     },
     {
-      "image": "/images/forts/torna/budhla-machi.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Budhla Machi Point",
       "description": "A massive plateau resembling an inverted pot, offering a perfect spot for camping and scenic views.",
       "distance": "Short trek within fort",
@@ -152,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/torna/gallery1.jpg",
-      "thumb": "/images/forts/torna/thumb1.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Torna Fort aerial view"
     },
     {
-      "src": "/images/forts/torna/gallery2.jpg",
-      "thumb": "/images/forts/torna/thumb2.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Sunrise from Torna Fort"
     }
   ],

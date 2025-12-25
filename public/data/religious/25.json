@@ -2,7 +2,8 @@
   "id": "25",
   "title": "Ballaleshwar Temple, Pali",
   "subtitle": "The only Ashtavinayak temple named after its devotee Ballal",
-  "bannerImage": "/images/religious/pali/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#f97316",
   "overview": [
     "The Ballaleshwar Temple at Pali in Raigad district is one of the eight revered Ashtavinayak shrines dedicated to Lord Ganesha. It holds the unique distinction of being the only temple named after a devotee — Ballal.",
@@ -23,7 +24,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/pali/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Pali is located in the Sudhagad taluka of Raigad district, surrounded by lush hills and near the Amba River. The temple’s setting combines nature’s calm with spiritual grace.",
     "details": [
       {

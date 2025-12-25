@@ -2,7 +2,8 @@
   "id": "09",
   "title": "Visapur Fort",
   "subtitle": "Twin of Lohagad with Majestic Views of the Sahyadris",
-  "bannerImage": "/images/forts/visapur/visapur-banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#b38b6d",
   "overview": [
     "Visapur Fort, located near Lonavala in the Pune district, is a twin fort of Lohagad and one of the most popular trekking destinations in Maharashtra. Built during the early 18th century, this fort stands taller than its twin and offers sweeping views of the surrounding valleys and hills.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/visapur/visapur-map.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Visapur Fort lies at an elevation of 3,556 feet above sea level, overlooking the Pawna region of the Western Ghats, close to Lonavala and Malavli.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/forts/visapur/hanuman-sculpture.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Hanuman Sculptures",
       "description": "Intricate carvings of Lord Hanuman found across the fort walls.",
       "distance": "On the fort plateau",
@@ -104,7 +105,7 @@
       "value": "Spiritual Landmark"
     },
     {
-      "image": "/images/forts/visapur/lohagadvue.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Lohagad Viewpoint",
       "description": "A scenic point offering a perfect view of the twin Lohagad Fort.",
       "distance": "Short walk from fort top",
@@ -151,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/visapur/visapur1.jpg",
-      "thumb": "/images/forts/visapur/visapur1-thumb.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Visapur Fort plateau"
     },
     {
-      "src": "/images/forts/visapur/visapur2.jpg",
-      "thumb": "/images/forts/visapur/visapur2-thumb.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "View of Lohagad from Visapur"
     }
   ],

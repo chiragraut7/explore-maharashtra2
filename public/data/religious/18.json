@@ -2,7 +2,8 @@
   "id": "18",
   "title": "Shri Vitthal-Rukmini Temple",
   "subtitle": "Dehu, Pune",
-  "bannerImage": "/images/religious/vitthal-dehu/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#f7e6b2",
   "overview": [
     "The Shri Vitthal-Rukmini Temple in Dehu is one of the most sacred pilgrimage centers in Maharashtra. It is closely associated with the revered saint Sant Tukaram Maharaj, who was a key figure in the Bhakti movement. Dehu is considered his birthplace and the starting point of the famous Tukaram Palkhi Yatra to Pandharpur.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/vitthal-dehu/geography.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Dehu is located on the banks of the Indrayani River, around 30 km from Pune. The serene riverside setting and the constant chanting of abhangas create a deeply spiritual environment.",
     "details": [
       {
@@ -87,7 +88,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/religious/vitthal-dehu/tukaram-temple.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Sant Tukaram Temple",
       "description": "A grand temple built in memory of Sant Tukaram Maharaj, featuring intricate carvings and a spiritual aura.",
       "distance": "0.1 km",
@@ -95,7 +96,7 @@
       "value": "Dehu Village"
     },
     {
-      "image": "/images/religious/vitthal-dehu/indrayani-ghat.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Indrayani River Ghat",
       "description": "The sacred ghat where Tukaram Maharaj performed kirtans and spiritual gatherings.",
       "distance": "0.2 km",
@@ -141,18 +142,18 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/vitthal-dehu/gallery1.jpg",
-      "thumb": "/images/religious/vitthal-dehu/gallery1-thumb.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Vitthal Temple at Dehu"
     },
     {
-      "src": "/images/religious/vitthal-dehu/gallery2.jpg",
-      "thumb": "/images/religious/vitthal-dehu/gallery2-thumb.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Sant Tukaram Temple"
     },
     {
-      "src": "/images/religious/vitthal-dehu/gallery3.jpg",
-      "thumb": "/images/religious/vitthal-dehu/gallery3-thumb.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Indrayani River Ghat"
     }
   ],

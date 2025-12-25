@@ -2,7 +2,8 @@
   "id": "19",
   "title": "Sagareshwar Wildlife Sanctuary",
   "subtitle": "A Man-Made Forest and Sacred Sanctuary in Sangli",
-  "bannerImage": "/images/nature/sagareshwar/banner.jpg",
+  "bannerImage": "/assets/images/nature/01.jpg",
+  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
   "color": "#4caf50",
   "overview": [
     "Sagareshwar Wildlife Sanctuary is a unique man-made forest located in the Sangli district of Maharashtra. Spanning over 10.87 square kilometers, this sanctuary is renowned for its combination of spiritual significance and ecological balance.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/nature/sagareshwar/geography.jpg",
+    "image": "/assets/images/nature/01/info2.jpg",
     "intro": "Located near the Krishna River in Sangli district, Sagareshwar Wildlife Sanctuary consists of rolling hills, dry deciduous forests, and scenic valleys.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/nature/sagareshwar/temple.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Sagareshwar Temple",
       "description": "An ancient Shiva temple located in the heart of the sanctuary, surrounded by serene greenery.",
       "distance": "Within sanctuary",
@@ -104,7 +105,7 @@
       "value": "Cultural and spiritual centerpiece of the park."
     },
     {
-      "image": "/images/nature/sagareshwar/viewpoint.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Sagareshwar Viewpoint",
       "description": "Offers panoramic views of the sanctuary’s rolling hills and forest canopy.",
       "distance": "1 km from temple",
@@ -159,13 +160,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/sagareshwar/sagareshwar1.jpg",
-      "thumb": "/images/nature/sagareshwar/sagareshwar1_thumb.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Sagareshwar Temple and Forest"
     },
     {
-      "src": "/images/nature/sagareshwar/sagareshwar2.jpg",
-      "thumb": "/images/nature/sagareshwar/sagareshwar2_thumb.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Panoramic view of Sagareshwar Hills"
     }
   ],

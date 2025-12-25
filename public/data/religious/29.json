@@ -2,7 +2,8 @@
   "id": "29",
   "title": "Vighneshwar Temple, Ozar",
   "subtitle": "The Remover of Obstacles – One of the Sacred Ashtavinayak Temples",
-  "bannerImage": "/images/religious/vighneshwar-ozar/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#f5a623",
   "overview": [
     "The Vighneshwar Temple, located in the tranquil village of Ozar in Pune district, is one of the revered Ashtavinayak shrines dedicated to Lord Ganesha.",
@@ -23,7 +24,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/vighneshwar-ozar/geography.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Ozar is located on the banks of the Kukadi River, surrounded by lush greenery and serene landscapes that enhance the spiritual aura of the temple.",
     "details": [
       {

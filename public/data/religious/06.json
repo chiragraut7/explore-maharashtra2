@@ -2,7 +2,8 @@
   "id": "06",
   "title": "Aundha Nagnath Temple",
   "subtitle": "The First Jyotirlinga of Lord Shiva in Maharashtra",
-  "bannerImage": "/images/religious/aundha-nagnath/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#5c4b8a",
   "overview": [
     "Aundha Nagnath Temple, located in Hingoli district, is revered as the first of the twelve Jyotirlingas of Lord Shiva. This ancient temple holds immense significance among Shaivites and is believed to have been built by the Yadava dynasty in the 13th century.",
@@ -26,7 +27,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/aundha-nagnath/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Situated in Aundha town, Hingoli district, the temple stands amidst serene rural surroundings with historical and mythological significance.",
     "details": [
       {
@@ -105,7 +106,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/religious/aundha-nagnath/nearby1.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Sant Namdev Samadhi",
       "description": "A revered shrine dedicated to Sant Namdev, who is believed to have meditated here.",
       "distance": "1 km",
@@ -113,7 +114,7 @@
       "value": "Spiritual site"
     },
     {
-      "image": "/images/religious/aundha-nagnath/nearby2.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Nanded Gurudwara",
       "description": "A sacred Sikh pilgrimage site — Takht Sri Hazur Sahib — located in nearby Nanded.",
       "distance": "65 km",
@@ -168,13 +169,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/aundha-nagnath/1.jpg",
-      "thumb": "/images/religious/aundha-nagnath/thumb1.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Aundha Nagnath Temple Entrance"
     },
     {
-      "src": "/images/religious/aundha-nagnath/2.jpg",
-      "thumb": "/images/religious/aundha-nagnath/thumb2.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Temple Architecture and Carvings"
     },
     {

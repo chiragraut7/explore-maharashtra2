@@ -2,7 +2,8 @@
   "id": "03",
   "title": "Tulja Bhavani Temple",
   "subtitle": "Divine Abode of Goddess Bhavani in Osmanabad",
-  "bannerImage": "/images/religious/tuljapur/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#C2410C",
   "overview": [
     "The Tulja Bhavani Temple in Tuljapur, Osmanabad district, is one of the most revered Shakti Peethas in Maharashtra. Dedicated to Goddess Bhavani, the temple holds immense significance as the kuldevi (family deity) of the Bhosale Royal family, including Chhatrapati Shivaji Maharaj.",
@@ -26,7 +27,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/tuljapur/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Tuljapur is situated in the Osmanabad district of Maharashtra, around 45 km from Solapur and 300 km from Pune.",
     "details": [
       {
@@ -105,7 +106,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/religious/tuljapur/temple.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Tulja Bhavani Temple Complex",
       "description": "A majestic stone structure housing the main sanctum of Goddess Bhavani.",
       "distance": "0 km",
@@ -113,7 +114,7 @@
       "value": "Main Shrine"
     },
     {
-      "image": "/images/religious/tuljapur/river.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Kallola Tirtha",
       "description": "A sacred pond near the temple believed to purify the soul of sins.",
       "distance": "0.5 km",
@@ -168,18 +169,18 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/tuljapur/1.jpg",
-      "thumb": "/images/religious/tuljapur/thumb1.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Tulja Bhavani Temple Entrance"
     },
     {
-      "src": "/images/religious/tuljapur/2.jpg",
-      "thumb": "/images/religious/tuljapur/thumb2.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Idol of Goddess Bhavani"
     },
     {
-      "src": "/images/religious/tuljapur/3.jpg",
-      "thumb": "/images/religious/tuljapur/thumb3.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Devotees during Navratri Festival"
     }
   ],

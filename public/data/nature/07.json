@@ -2,7 +2,8 @@
   "id": "07",
   "title": "Malshej Ghat",
   "subtitle": "The Misty Mountain Pass of Maharashtra",
-  "bannerImage": "/images/nature/malshej/banner.jpg",
+  "bannerImage": "/assets/images/nature/01.jpg",
+  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
   "color": "#3c8d40",
   "overview": [
     "Malshej Ghat, nestled in the Western Ghats of Maharashtra, is a stunning mountain pass known for its misty peaks, lush valleys, and enchanting waterfalls. Located near Junnar in Pune district, it is one of the most scenic getaways for nature lovers and trekkers alike.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/nature/malshej/geography.jpg",
+    "image": "/assets/images/nature/01/info2.jpg",
     "intro": "Malshej Ghat lies at an elevation of about 700 meters in the Sahyadri range, offering panoramic views of deep valleys and rugged cliffs.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/nature/malshej/pimpalgaon-dam.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Pimpalgaon Joga Dam",
       "description": "A scenic reservoir surrounded by mountains, known for flamingo sightings and calm boat rides.",
       "distance": "5 km",
@@ -104,7 +105,7 @@
       "value": "Ideal picnic and photography spot."
     },
     {
-      "image": "/images/nature/malshej/harishchandragad.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Harishchandragad Fort",
       "description": "A popular trekking destination offering breathtaking views of Konkan cliffs.",
       "distance": "20 km",
@@ -151,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/malshej/malshej1.jpg",
-      "thumb": "/images/nature/malshej/malshej1_thumb.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Malshej Ghat Waterfalls"
     },
     {
-      "src": "/images/nature/malshej/malshej2.jpg",
-      "thumb": "/images/nature/malshej/malshej2_thumb.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Viewpoint with Clouds at Malshej"
     }
   ],

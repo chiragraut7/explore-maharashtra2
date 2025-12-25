@@ -2,8 +2,8 @@
   "id": "13",
   "title": "Shrivardhan Beach",
   "subtitle": "A Peaceful Coastal Getaway with Historical Charm",
-  "bannerImage": "/assets/images/beaches/shrivardhan-banner.jpg",
-  "insideBannerImage": "/assets/images/beaches/13/bannerImg.jpg",
+  "bannerImage": "/assets/images/beaches/01.jpg",
+  "insideBannerImage": "/assets/images/beaches/01/bannerimg.jpg",
   "color": "#007C91",
   "overview": [
     "Shrivardhan Beach is one of the most beautiful and historically significant beaches along the Konkan coastline of Maharashtra. Located in Raigad district, this tranquil beach is famous for its golden sands, gentle waves, and rich heritage associated with the Peshwa rulers of the Maratha Empire.",
@@ -28,7 +28,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/13/info3.jpg",
+    "image": "/assets/images/beaches/01/info3.jpg",
     "intro": "Shrivardhan lies on the Konkan coast of Maharashtra, about 185 km from Mumbai and 160 km from Pune. The region is characterized by rolling hills, coconut groves, and a serene shoreline.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Raigad District, Maharashtra" },
@@ -68,7 +68,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/13/img1.jpg",
+      "image": "/assets/images/beaches/01/img1.jpg",
       "title": "Peshwa Memorial Temple",
       "description": "Built in memory of Peshwa Balaji Vishwanath, this simple yet historic temple highlights Shrivardhan’s Maratha heritage.",
       "distance": "1 km from beach",
@@ -76,7 +76,7 @@
       "value": "Historic Site"
     },
     {
-      "image": "/assets/images/beaches/13/img2.jpg",
+      "image": "/assets/images/beaches/01/img2.jpg",
       "title": "Harihareshwar Beach",
       "description": "Known as ‘Dakshin Kashi’, this beach is just 20 km away and home to the Harihareshwar Temple complex.",
       "distance": "20 km",
@@ -84,7 +84,7 @@
       "value": "Religious Destination"
     },
     {
-      "image": "/assets/images/beaches/13/img3.jpg",
+      "image": "/assets/images/beaches/01/img3.jpg",
       "title": "Diveagar Beach",
       "description": "A scenic beach just 12 km away, known for the Suvarna Ganesh Temple and turtle sightings.",
       "distance": "12 km",
@@ -138,9 +138,9 @@
     }
   ],
   "gallery": [
-    { "src": "/assets/images/beaches/13/img1.jpg", "thumb": "/assets/images/beaches/13/img1.jpg", "alt": "Golden sands of Shrivardhan Beach" },
-    { "src": "/assets/images/beaches/13/img2.jpg", "thumb": "/assets/images/beaches/13/img2.jpg", "alt": "Sunset at Shrivardhan" },
-    { "src": "/assets/images/beaches/13/img3.jpg", "thumb": "/assets/images/beaches/13/img3.jpg", "alt": "View of palm-fringed coastline" }
+    { "src": "/assets/images/beaches/01/img1.jpg", "thumb": "/assets/images/beaches/01/img1.jpg", "alt": "Golden sands of Shrivardhan Beach" },
+    { "src": "/assets/images/beaches/01/img2.jpg", "thumb": "/assets/images/beaches/01/img2.jpg", "alt": "Sunset at Shrivardhan" },
+    { "src": "/assets/images/beaches/01/img3.jpg", "thumb": "/assets/images/beaches/01/img3.jpg", "alt": "View of palm-fringed coastline" }
   ],
   "bookingTips": [
     { "icon": "fa-solid fa-bed", "description": "Opt for homestays or small beachside resorts for a local experience." },

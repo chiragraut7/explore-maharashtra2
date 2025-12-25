@@ -2,7 +2,8 @@
   "id": "01",
   "title": "Shirdi Sai Baba Temple",
   "subtitle": "The Sacred Abode of Shri Sai Baba in Ahmednagar",
-  "bannerImage": "/images/religious/shirdi/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#FFB300",
   "overview": [
     "Shirdi, located in the Ahmednagar district of Maharashtra, is the sacred home of Shri Sai Baba, one of India’s most loved saints. The temple complex attracts millions of devotees from around the world every year, offering a deeply spiritual experience.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/shirdi/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Shirdi is a small town located in the Rahata taluka of Ahmednagar district, around 240 km from Mumbai and Pune.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/religious/shirdi/dwarkamai.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Dwarkamai Mosque",
       "description": "Historic mosque where Sai Baba lived, offering blessings to all.",
       "distance": "0.2 km",
@@ -104,7 +105,7 @@
       "value": "Spiritual Heritage"
     },
     {
-      "image": "/images/religious/shirdi/shanishingnapur.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Shani Shingnapur Temple",
       "description": "Famous temple dedicated to Lord Shani, about 70 km away from Shirdi.",
       "distance": "70 km",
@@ -151,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/shirdi/1.jpg",
-      "thumb": "/images/religious/shirdi/thumb1.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Shirdi Sai Baba Temple Front View"
     },
     {
-      "src": "/images/religious/shirdi/2.jpg",
-      "thumb": "/images/religious/shirdi/thumb2.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Devotees during Aarti"
     }
   ],

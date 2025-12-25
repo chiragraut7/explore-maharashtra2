@@ -2,7 +2,8 @@
   "id": "21",
   "title": "Mumbadevi Temple",
   "subtitle": "The Ancient Goddess Who Gave Mumbai Its Name",
-  "bannerImage": "/images/religious/mumbadevi/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#D97706",
   "overview": [
     "The Mumbadevi Temple, nestled in the bustling Bhuleshwar area of South Mumbai, is dedicated to Goddess Mumbadevi — the patron goddess after whom the city of Mumbai derives its name. The temple is one of the oldest shrines in the city and a symbol of its cultural and spiritual heritage.",
@@ -26,7 +27,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/mumbadevi/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "The Mumbadevi Temple is situated in Bhuleshwar, near Zaveri Bazaar — the heart of South Mumbai’s traditional jewelry and textile markets.",
     "details": [
       {
@@ -105,7 +106,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/religious/mumbadevi/temple.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Main Sanctum",
       "description": "The idol of Mumbadevi — dressed in red and adorned with nose rings and necklaces.",
       "distance": "0 km",
@@ -113,7 +114,7 @@
       "value": "Main Shrine"
     },
     {
-      "image": "/images/religious/mumbadevi/market.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Zaveri Bazaar",
       "description": "Famous market surrounding the temple offering jewelry, flowers, and sweets.",
       "distance": "0.5 km",
@@ -168,18 +169,18 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/mumbadevi/1.jpg",
-      "thumb": "/images/religious/mumbadevi/thumb1.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Mumbadevi Temple Entrance"
     },
     {
-      "src": "/images/religious/mumbadevi/2.jpg",
-      "thumb": "/images/religious/mumbadevi/thumb2.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Idol of Goddess Mumbadevi"
     },
     {
-      "src": "/images/religious/mumbadevi/3.jpg",
-      "thumb": "/images/religious/mumbadevi/thumb3.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Zaveri Bazaar near Mumbadevi Temple"
     }
   ],

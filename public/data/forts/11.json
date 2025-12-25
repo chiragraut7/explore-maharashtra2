@@ -2,7 +2,8 @@
   "id": "11",
   "title": "Harishchandragad Fort",
   "subtitle": "Ancient Fort of Sahyadri – Home to Konkan Kada and Kedareshwar Cave Temple",
-  "bannerImage": "/images/forts/harishchandragad/harishchandragad-banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#3a4f3c",
   "overview": [
     "Harishchandragad is one of the most remarkable hill forts in Maharashtra, located in the Ahmednagar district. Known for its breathtaking cliffs, ancient temples, and historical significance, it stands as a crown jewel of the Western Ghats.",
@@ -26,7 +27,7 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/harishchandragad/harishchandragad-map.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Perched at an altitude of around 1,424 meters, Harishchandragad lies in the Ahmednagar district within the Kalsubai-Harishchandragad Wildlife Sanctuary. Its rugged terrain and mesmerizing views make it a paradise for nature enthusiasts.",
     "details": [
       {
@@ -102,7 +103,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/forts/harishchandragad/konkan-kada.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Konkan Kada",
       "description": "A colossal concave cliff offering mesmerizing views of the Konkan plateau. Known for its unique semicircular shape.",
       "distance": "Within fort",
@@ -110,7 +111,7 @@
       "value": "Top attraction"
     },
     {
-      "image": "/images/forts/harishchandragad/kedareshwar-temple.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Kedareshwar Cave Temple",
       "description": "A rock-cut Shiva temple with a linga submerged in icy water surrounded by four broken pillars symbolizing four Yugas.",
       "distance": "Within fort",
@@ -118,7 +119,7 @@
       "value": "Spiritual heritage site"
     },
     {
-      "image": "/images/forts/harishchandragad/taramati-peak.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Taramati Peak",
       "description": "The second highest peak in Maharashtra offering stunning 360° views of Malshej Ghat and surrounding hills.",
       "distance": "Within fort area",
@@ -126,7 +127,7 @@
       "value": "Scenic viewpoint"
     },
     {
-      "image": "/images/forts/harishchandragad/ganesh-caves.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Ganesh & Buddhist Caves",
       "description": "Ancient caves showcasing carvings and inscriptions dating back to the 6th century.",
       "distance": "On fort slopes",
@@ -178,18 +179,18 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/harishchandragad/gallery1.jpg",
-      "thumb": "/images/forts/harishchandragad/thumb1.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Konkan Kada view from Harishchandragad"
     },
     {
-      "src": "/images/forts/harishchandragad/gallery2.jpg",
-      "thumb": "/images/forts/harishchandragad/thumb2.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Kedareshwar Temple inside Harishchandragad cave"
     },
     {
-      "src": "/images/forts/harishchandragad/gallery3.jpg",
-      "thumb": "/images/forts/harishchandragad/thumb3.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Taramati Peak sunrise at Harishchandragad"
     }
   ],

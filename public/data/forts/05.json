@@ -2,7 +2,8 @@
   "id": "05",
   "title": "Purandar Fort",
   "subtitle": "The Fort of Heritage and Strategic Power",
-  "bannerImage": "/images/forts/purandar/purandar-banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#8b4513",
   "overview": [
     "Purandar Fort, located about 50 km southeast of Pune, is one of the most prominent hill forts in Maharashtra’s Deccan plateau. Standing tall at 4,472 feet, it offers panoramic views of the surrounding countryside and holds immense historical importance.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/purandar/purandar-geography.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Perched in the Western Ghats near Saswad, Purandar Fort consists of two levels — the lower fort (Machi) and the upper fort (Balekilla). It served as a crucial defensive structure for the Maratha Empire.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/forts/purandar/balekilla.jpg",
+    "image": "/assets/images/forts/01/img1.jpg",
       "title": "Balekilla (Upper Fort)",
       "description": "The highest point of Purandar offering commanding views and historic remains of Maratha watchtowers.",
       "distance": "Top of the fort",
@@ -104,7 +105,7 @@
       "value": "Historic Fortification"
     },
     {
-      "image": "/images/forts/purandar/kedareshwar-temple.jpg",
+    "image": "/assets/images/forts/01/img1.jpg",
       "title": "Kedareshwar Temple",
       "description": "An ancient Shiva temple inside the fort complex, revered for its calm ambiance.",
       "distance": "Within the fort area",
@@ -112,7 +113,7 @@
       "value": "Spiritual Landmark"
     },
     {
-      "image": "/images/forts/purandar/sambhaji-birthplace.jpg",
+    "image": "/assets/images/forts/01/img1.jpg",
       "title": "Birthplace of Sambhaji Maharaj",
       "description": "Historical site marking the birthplace of Chhatrapati Sambhaji Maharaj, son of Shivaji Maharaj.",
       "distance": "Upper Fort area",
@@ -167,18 +168,18 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/purandar/gallery1.jpg",
-      "thumb": "/images/forts/purandar/thumb1.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Balekilla view from base village"
     },
     {
-      "src": "/images/forts/purandar/gallery2.jpg",
-      "thumb": "/images/forts/purandar/thumb2.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Kedareshwar Temple on Purandar Fort"
     },
     {
-      "src": "/images/forts/purandar/gallery3.jpg",
-      "thumb": "/images/forts/purandar/thumb3.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Panoramic view from Purandar summit"
     }
   ],

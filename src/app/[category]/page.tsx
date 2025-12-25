@@ -93,7 +93,7 @@ export default function CategoryPage() {
                   ? "nature spots include wildlife, waterfalls, and scenic landscapes."
                   : category === "religious"
                   ? "religious places reflect Maharashtra's rich spiritual heritage."
-                  : category === "cultural"
+                  : category === "culture"
                   ? "cultural sites display local arts, crafts, and unique traditions."
                   : `amazing ${category}.`
               }`}

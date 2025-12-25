@@ -2,7 +2,8 @@
   "id": "39",
   "title": "Balaji Temple, Nerul",
   "subtitle": "A Majestic Replica of Tirupati Balaji in Navi Mumbai",
-  "bannerImage": "/images/religious/test/balaji-nerul/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#b48a3b",
   "overview": [
     "Balaji Temple in Nerul, Navi Mumbai, is a serene South Indian-style temple dedicated to Lord Venkateswara (Balaji).",
@@ -23,7 +24,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/test/balaji-nerul/geography.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Situated on a hillock in Nerul, Navi Mumbai, the temple offers panoramic views of the surrounding cityscape and greenery.",
     "details": [
       {

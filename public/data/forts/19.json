@@ -2,7 +2,8 @@
   "id": "19",
   "title": "Ratnagiri Fort (Bhagwati Fort)",
   "subtitle": "A Coastal Guardian Overlooking the Arabian Sea",
-  "bannerImage": "/images/forts/ratnagiri-fort/banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#0a3d62",
   "overview": [
     "Ratnagiri Fort, also known as Bhagwati Fort, stands majestically on a hill along the Arabian Sea coast in the Ratnagiri district. This historic fort is an enduring symbol of the Konkan’s maritime heritage and strategic importance.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/ratnagiri-fort/geography.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Situated on a small hill along the Konkan coastline, Ratnagiri Fort enjoys a commanding view of the Arabian Sea and the town of Ratnagiri below.",
     "details": [
       {
@@ -97,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/forts/ratnagiri-fort/bhagwati-temple.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Bhagwati Temple",
       "description": "An ancient temple inside the fort complex, revered by locals and visitors alike.",
       "distance": "Inside the fort",
@@ -105,7 +106,7 @@
       "value": "Religious & Historical"
     },
     {
-      "image": "/images/forts/ratnagiri-fort/beach-view.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Mandavi Beach",
       "description": "A serene beach located near the base of the fort, ideal for evening walks.",
       "distance": "1 km from fort",
@@ -152,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/ratnagiri-fort/gallery1.jpg",
-      "thumb": "/images/forts/ratnagiri-fort/thumb1.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Sea view from Ratnagiri Fort bastions"
     },
     {
-      "src": "/images/forts/ratnagiri-fort/gallery2.jpg",
-      "thumb": "/images/forts/ratnagiri-fort/thumb2.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Bhagwati Temple inside Ratnagiri Fort"
     }
   ],

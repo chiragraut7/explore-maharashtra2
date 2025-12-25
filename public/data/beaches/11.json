@@ -2,8 +2,8 @@
   "id": "11",
   "title": "Diveagar Beach",
   "subtitle": "Golden sands, serene shores, and hidden coastal charm",
-  "bannerImage": "/assets/images/beaches/diveagar.jpg",
-  "insideBannerImage": "/assets/images/beaches/11/bannerImg.jpg",
+  "bannerImage": "/assets/images/beaches/01.jpg",
+  "insideBannerImage": "/assets/images/beaches/01/bannerimg.jpg",
     "color": "#023e8a",
   "overview": [
       "Diveagar Beach is a quiet and clean beach located in the Raigad district of Maharashtra, known for its pristine shoreline and tranquil atmosphere.",
@@ -33,7 +33,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/11/info3.jpg",
+    "image": "/assets/images/beaches/01/info3.jpg",
     "intro": "Diveagar Beach lies on the Konkan coast, about 170 km from Pune and 190 km from Mumbai, in the Shrivardhan Taluka of Raigad district.",
     "details": [
       {
@@ -108,7 +108,7 @@
   ],
  "attractions": [
   {
-      "image": "/assets/images/beaches/11/img1.jpg",
+      "image": "/assets/images/beaches/01/img1.jpg",
     "title": "Suvarna Ganesh Temple",
     "description": "Spiritual and historical landmark famous for once housing a golden idol.",
     "distance": "Walkable from beach",
@@ -116,7 +116,7 @@
     "value": "Spiritual Site"
   },
   {
-      "image": "/assets/images/beaches/11/img2.jpg",
+      "image": "/assets/images/beaches/01/img2.jpg",
     "title": "Harihareshwar",
     "description": "A scenic temple town about 35 km away, known for its coastal temples and sacred beach.",
     "distance": "35 km from Diveagar",
@@ -124,7 +124,7 @@
     "value": "Temple Town"
   },
   {
-      "image": "/assets/images/beaches/11/img3.jpg",
+      "image": "/assets/images/beaches/01/img3.jpg",
     "title": "Shrivardhan Beach",
     "description": "Popular nearby beach known for water sports and seafood shacks.",
     "distance": "20 km from Diveagar",
@@ -185,18 +185,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/11/img1.jpg",
-      "thumb": "/assets/images/beaches/11/img1.jpg",
+      "src": "/assets/images/beaches/01/img1.jpg",
+      "thumb": "/assets/images/beaches/01/img1.jpg",
       "alt": "Sunset at Diveagar Beach"
     },
     {
-      "src": "/assets/images/beaches/11/img2.jpg",
-      "thumb": "/assets/images/beaches/11/img2.jpg",
+      "src": "/assets/images/beaches/01/img2.jpg",
+      "thumb": "/assets/images/beaches/01/img2.jpg",
       "alt": "Coconut Groves"
     },
     {
-      "src": "/assets/images/beaches/11/img3.jpg",
-      "thumb": "/assets/images/beaches/11/img3.jpg",
+      "src": "/assets/images/beaches/01/img3.jpg",
+      "thumb": "/assets/images/beaches/01/img3.jpg",
       "alt": "Suvarna Ganesh Temple"
     }
   ],

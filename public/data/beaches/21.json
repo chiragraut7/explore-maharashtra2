@@ -2,8 +2,8 @@
   "id": "21",
   "title": "Anjarle Beach",
   "subtitle": "A Scenic Turtle Nesting Paradise in Konkan",
-  "bannerImage": "/assets/images/beaches/anjarle-banner.jpg",
-  "insideBannerImage": "/assets/images/beaches/21/bannerImg.jpg",
+  "bannerImage": "/assets/images/beaches/01.jpg",
+  "insideBannerImage": "/assets/images/beaches/01/bannerimg.jpg",
   "color": "#006B8F",
   "overview": [
     "Anjarle Beach is one of the most picturesque and serene beaches on Maharashtra’s Konkan coast, located near Dapoli in Ratnagiri district. Known for its clean white sand, calm waves, and the famous turtle nesting activities, this beach offers a perfect blend of natural beauty and tranquility.",
@@ -28,7 +28,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/21/info3.jpg",
+    "image": "/assets/images/beaches/01/info3.jpg",
     "intro": "Anjarle Beach lies about 26 km from Dapoli in the Ratnagiri district of Maharashtra, on the northern Konkan coast. The area is known for its river estuaries, mangroves, and lush coconut groves.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Ratnagiri District, Maharashtra" },
@@ -74,7 +74,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/21/img1.jpg",
+      "image": "/assets/images/beaches/01/img1.jpg",
       "title": "Kadyavarcha Ganpati Temple",
       "description": "A historical temple built during the Peshwa period, located on a hilltop overlooking Anjarle Beach.",
       "distance": "1 km from beach",
@@ -82,7 +82,7 @@
       "value": "Heritage Temple"
     },
     {
-      "image": "/assets/images/beaches/21/img3.jpg",
+      "image": "/assets/images/beaches/01/img3.jpg",
       "title": "Harnai Fort",
       "description": "A coastal fort just 8 km away, known for its maritime history and panoramic sea views.",
       "distance": "8 km",
@@ -136,8 +136,8 @@
     }
   ],
   "gallery": [
-    { "src": "/assets/images/beaches/21/img1.jpg", "thumb": "/assets/images/beaches/21/img1.jpg", "alt": "Anjarle Beach scenic view" },
-    { "src": "/assets/images/beaches/21/img3.jpg", "thumb": "/assets/images/beaches/21/img3.jpg", "alt": "Olive Ridley turtle nesting site" }
+    { "src": "/assets/images/beaches/01/img1.jpg", "thumb": "/assets/images/beaches/01/img1.jpg", "alt": "Anjarle Beach scenic view" },
+    { "src": "/assets/images/beaches/01/img3.jpg", "thumb": "/assets/images/beaches/01/img3.jpg", "alt": "Olive Ridley turtle nesting site" }
   ],
   "bookingTips": [
     { "icon": "fa-solid fa-bed", "description": "Book local homestays or eco-lodges for authentic Konkan hospitality." },

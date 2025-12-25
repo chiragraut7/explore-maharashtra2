@@ -2,7 +2,8 @@
   "id": "34",
   "title": "Sant Dnyaneshwar Temple, Alandi",
   "subtitle": "Sacred Samadhi of Saint Dnyaneshwar – The Divine Poet of Maharashtra",
-  "bannerImage": "/images/religious/test/dnyaneshwar-alandi/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#a65c2b",
   "overview": [
     "Alandi, located on the banks of the Indrayani River near Pune, is one of the most revered pilgrimage towns in Maharashtra.",
@@ -23,7 +24,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/test/dnyaneshwar-alandi/geography.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Alandi is a serene town on the banks of the holy Indrayani River, located about 25 km from Pune.",
     "details": [
       {

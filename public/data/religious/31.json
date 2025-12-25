@@ -2,7 +2,8 @@
   "id": "31",
   "title": "Jyotiba Temple, Kolhapur",
   "subtitle": "Abode of Lord Jyotiba — The Guardian Deity of Kolhapur",
-  "bannerImage": "/images/religious/jyotiba-temple/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#7C3AED",
   "overview": [
     "The Jyotiba Temple, located near Wadi Ratnagiri in Kolhapur district, is one of Maharashtra’s most revered pilgrimage sites dedicated to Lord Jyotiba — an incarnation of Lord Shiva, Vishnu, and Brahma. It is believed that Lord Jyotiba helped Goddess Mahalaxmi in her battle against demons, symbolizing the triumph of good over evil.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/jyotiba-temple/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "The Jyotiba Temple lies 17 km northwest of Kolhapur city in the Sahyadri hills, surrounded by lush greenery and scenic valleys.",
     "details": [
       {

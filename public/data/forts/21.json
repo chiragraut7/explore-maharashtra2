@@ -2,7 +2,8 @@
   "id": "21",
   "title": "Ajinkyatara Fort",
   "subtitle": "The Sentinel Fort Overlooking Satara City",
-  "bannerImage": "/images/forts/ajinkyatara-fort/ajinkyatara-banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#b87333",
   "overview": [
     "Ajinkyatara Fort stands majestically atop one of the seven hills surrounding Satara city in Maharashtra. It is historically significant as one of the ‘Satara Killa’ (seven forts) and offers breathtaking panoramic views of the city and surrounding Sahyadri ranges.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/ajinkyatara-fort/ajinkyatara-view.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Located 3,300 feet above sea level, Ajinkyatara is a hill fort in the Satara district and part of the Sahyadri mountain range.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Satara, Maharashtra" },
@@ -70,7 +71,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/forts/ajinkyatara-fort/kaas-plateau.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Kaas Plateau",
       "description": "A UNESCO World Heritage Site known as the 'Valley of Flowers of Maharashtra', located nearby.",
       "distance": "22 km",
@@ -78,7 +79,7 @@
       "value": "Floral biodiversity hotspot"
     },
     {
-      "image": "/images/forts/ajinkyatara-fort/thoseghar-waterfall.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Thoseghar Waterfall",
       "description": "A spectacular waterfall near Satara, popular for its scenic surroundings.",
       "distance": "25 km",
@@ -125,13 +126,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/ajinkyatara-fort/ajinkyatara-view.jpg",
-      "thumb": "/images/forts/ajinkyatara-fort/ajinkyatara-view-thumb.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Ajinkyatara Fort view over Satara city"
     },
     {
-      "src": "/images/forts/ajinkyatara-fort/sunset.jpg",
-      "thumb": "/images/forts/ajinkyatara-fort/sunset-thumb.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Sunset at Ajinkyatara Fort"
     }
   ],

@@ -2,7 +2,8 @@
   "id": "12",
   "title": "Shani Shingnapur Temple",
   "subtitle": "The village protected by Lord Shani — where doors have no locks",
-  "bannerImage": "/images/religious/shani-shingnapur/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#d9c6a5",
   "overview": [
     "Shani Shingnapur, located in Ahmednagar district, is one of Maharashtra’s most mystical and unique religious sites. Dedicated to Lord Shani, the village is renowned for its faith-driven tradition where houses have no doors or locks — a testament to the villagers’ belief in Lord Shani’s protection.",
@@ -21,20 +22,46 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/shani-shingnapur/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Situated near Ahmednagar, the temple is surrounded by serene rural landscapes and farmlands that reflect peace and devotion.",
     "details": [
-      { "icon": "fas fa-map-marker-alt", "label": "Location", "value": "Ahmednagar District, Maharashtra" },
-      { "icon": "fas fa-mountain", "label": "Elevation", "value": "558 m above sea level" },
-      { "icon": "fas fa-tree", "label": "Environment", "value": "Rural and peaceful" },
-      { "icon": "fas fa-water", "label": "Nearest River", "value": "Pravara River" },
-      { "icon": "fas fa-city", "label": "Nearest City", "value": "Ahmednagar (35 km)" }
+      {
+        "icon": "fas fa-map-marker-alt",
+        "label": "Location",
+        "value": "Ahmednagar District, Maharashtra"
+      },
+      {
+        "icon": "fas fa-mountain",
+        "label": "Elevation",
+        "value": "558 m above sea level"
+      },
+      {
+        "icon": "fas fa-tree",
+        "label": "Environment",
+        "value": "Rural and peaceful"
+      },
+      {
+        "icon": "fas fa-water",
+        "label": "Nearest River",
+        "value": "Pravara River"
+      },
+      {
+        "icon": "fas fa-city",
+        "label": "Nearest City",
+        "value": "Ahmednagar (35 km)"
+      }
     ],
     "climate": {
       "description": "The area experiences moderate weather, with cool winters and warm summers.",
       "seasons": [
-        { "icon": "fas fa-sun", "text": "Best visited between October and February" },
-        { "icon": "fas fa-cloud-sun", "text": "Avoid peak summer afternoons" }
+        {
+          "icon": "fas fa-sun",
+          "text": "Best visited between October and February"
+        },
+        {
+          "icon": "fas fa-cloud-sun",
+          "text": "Avoid peak summer afternoons"
+        }
       ]
     },
     "conclusion": "The temple’s divine aura and the villagers’ unwavering faith make Shani Shingnapur one of the most spiritually charged destinations in Maharashtra."
@@ -70,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/religious/shani-shingnapur/ahmednagar-fort.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Ahmednagar Fort",
       "description": "A historic Mughal-era fort located nearby — once a stronghold of Maratha history.",
       "distance": "35 km",
@@ -78,7 +105,7 @@
       "value": "Historical Site"
     },
     {
-      "image": "/images/religious/shani-shingnapur/sai-baba-temple.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Shirdi Sai Baba Temple",
       "description": "The world-famous shrine of Sai Baba is only an hour’s drive away from Shani Shingnapur.",
       "distance": "70 km",
@@ -89,8 +116,16 @@
   "marineLife": {
     "intro": "Though not a coastal location, the temple’s essence lies in its spiritual energy and the simplicity of rural life.",
     "items": [
-      { "icon": "fas fa-hands-helping", "title": "Faith & Trust", "description": "A society built purely on trust and belief in divine justice." },
-      { "icon": "fas fa-heart", "title": "Devotion", "description": "Unwavering faith of villagers has made this site a symbol of spiritual purity." }
+      {
+        "icon": "fas fa-hands-helping",
+        "title": "Faith & Trust",
+        "description": "A society built purely on trust and belief in divine justice."
+      },
+      {
+        "icon": "fas fa-heart",
+        "title": "Devotion",
+        "description": "Unwavering faith of villagers has made this site a symbol of spiritual purity."
+      }
     ],
     "conclusion": [
       "The open-air temple design symbolizes transparency and faith.",
@@ -116,12 +151,29 @@
     }
   ],
   "gallery": [
-    { "src": "/images/religious/shani-shingnapur/1.jpg", "thumb": "/images/religious/shani-shingnapur/thumb1.jpg", "alt": "Shani Shingnapur Temple" },
-    { "src": "/images/religious/shani-shingnapur/2.jpg", "thumb": "/images/religious/shani-shingnapur/thumb2.jpg", "alt": "Open-Air Idol of Lord Shani" }
+    {
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
+      "alt": "Shani Shingnapur Temple"
+    },
+    {
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
+      "alt": "Open-Air Idol of Lord Shani"
+    }
   ],
   "bookingTips": [
-    { "icon": "fas fa-calendar-check", "description": "Visit on Saturdays or Amavasya for special rituals and large gatherings." },
-    { "icon": "fas fa-water-bottle", "description": "Carry water and an umbrella during summer visits." },
-    { "icon": "fas fa-user-shield", "description": "Dress modestly and follow temple traditions respectfully." }
+    {
+      "icon": "fas fa-calendar-check",
+      "description": "Visit on Saturdays or Amavasya for special rituals and large gatherings."
+    },
+    {
+      "icon": "fas fa-water-bottle",
+      "description": "Carry water and an umbrella during summer visits."
+    },
+    {
+      "icon": "fas fa-user-shield",
+      "description": "Dress modestly and follow temple traditions respectfully."
+    }
   ]
 }

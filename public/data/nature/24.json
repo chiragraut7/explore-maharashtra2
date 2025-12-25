@@ -2,7 +2,8 @@
   "id": "24",
   "title": "Pench National Park",
   "subtitle": "The Land of Mowgli and the Jungle Book",
-  "bannerImage": "/images/nature/pench/banner.jpg",
+  "bannerImage": "/assets/images/nature/01.jpg",
+  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
   "color": "#2e7d32",
   "overview": [
     "Pench National Park, straddling the borders of Maharashtra and Madhya Pradesh, is one of India's premier tiger reserves. It is renowned for its dense teak forests, rich biodiversity, and as the setting that inspired Rudyard Kipling’s ‘The Jungle Book’.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/nature/pench/geography.jpg",
+    "image": "/assets/images/nature/01/info2.jpg",
     "intro": "Situated in the southern reaches of the Satpura Hills, Pench National Park lies in Seoni and Chhindwara districts of Madhya Pradesh, extending partly into Maharashtra’s Nagpur district.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/nature/pench/sillari.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Sillari Gate",
       "description": "Main entry point in Maharashtra for Pench safaris, equipped with eco-tourism facilities.",
       "distance": "80 km from Nagpur",
@@ -104,7 +105,7 @@
       "value": "Official eco-tourism entrance."
     },
     {
-      "image": "/images/nature/pench/pench-river.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Pench River",
       "description": "The lifeline of the forest, flowing gently through the park’s heart and supporting diverse flora and fauna.",
       "distance": "Within reserve",
@@ -159,13 +160,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/pench/pench1.jpg",
-      "thumb": "/images/nature/pench/pench1_thumb.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Tiger in Pench National Park"
     },
     {
-      "src": "/images/nature/pench/pench2.jpg",
-      "thumb": "/images/nature/pench/pench2_thumb.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Pench River and Forest View"
     }
   ],

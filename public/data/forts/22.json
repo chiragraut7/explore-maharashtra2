@@ -2,7 +2,8 @@
   "id": "22",
   "title": "Panhala",
   "subtitle": "The Historic Hill Station of Shivaji Maharaj",
-  "bannerImage": "/images/hillstations/panhala/banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#4a5d73",
   "overview": [
     "Panhala, located near Kolhapur in Maharashtra, is a charming hill station steeped in history. It is most famous for the majestic Panhala Fort, closely associated with Chhatrapati Shivaji Maharaj.",
@@ -27,20 +28,46 @@
     }
   ],
   "geography": {
-    "image": "/images/hillstations/panhala/geography.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Situated about 20 km northwest of Kolhapur, Panhala lies in the Western Ghats at an altitude of 977 meters, surrounded by dense forests and historic ramparts.",
     "details": [
-      { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Kolhapur District, Maharashtra" },
-      { "icon": "fa-solid fa-mountain", "label": "Elevation", "value": "977 meters above sea level" },
-      { "icon": "fa-solid fa-map", "label": "Coordinates", "value": "16.81°N, 74.11°E" },
-      { "icon": "fa-solid fa-landmark", "label": "Main Landmark", "value": "Panhala Fort" },
-      { "icon": "fa-solid fa-tree", "label": "Region", "value": "Western Ghats (Sahyadri Range)" }
+      {
+        "icon": "fa-solid fa-location-dot",
+        "label": "Location",
+        "value": "Kolhapur District, Maharashtra"
+      },
+      {
+        "icon": "fa-solid fa-mountain",
+        "label": "Elevation",
+        "value": "977 meters above sea level"
+      },
+      {
+        "icon": "fa-solid fa-map",
+        "label": "Coordinates",
+        "value": "16.81°N, 74.11°E"
+      },
+      {
+        "icon": "fa-solid fa-landmark",
+        "label": "Main Landmark",
+        "value": "Panhala Fort"
+      },
+      {
+        "icon": "fa-solid fa-tree",
+        "label": "Region",
+        "value": "Western Ghats (Sahyadri Range)"
+      }
     ],
     "climate": {
       "description": "Panhala has a temperate climate with pleasant summers, misty monsoons, and cool winters.",
       "seasons": [
-        { "icon": "fa-solid fa-cloud-rain", "text": "Monsoon (June–September): Ideal for enjoying misty landscapes and waterfalls." },
-        { "icon": "fa-solid fa-snowflake", "text": "Winter (November–February): Perfect time for sightseeing and historical exploration." }
+        {
+          "icon": "fa-solid fa-cloud-rain",
+          "text": "Monsoon (June–September): Ideal for enjoying misty landscapes and waterfalls."
+        },
+        {
+          "icon": "fa-solid fa-snowflake",
+          "text": "Winter (November–February): Perfect time for sightseeing and historical exploration."
+        }
       ]
     },
     "conclusion": "Panhala’s natural beauty combined with its historical grandeur makes it one of Maharashtra’s most unique hill getaways."
@@ -50,24 +77,31 @@
       "icon": "fa-solid fa-landmark-flag",
       "title": "Fort Exploration",
       "description": "Walk through the massive Panhala Fort, exploring its ancient gateways, secret passages, and watchtowers.",
-      "info": ["Key spots: Teen Darwaza, Ambarkhana, Sajja Kothi", "Guided tours available on weekends"]
+      "info": [
+        "Key spots: Teen Darwaza, Ambarkhana, Sajja Kothi",
+        "Guided tours available on weekends"
+      ]
     },
     {
       "icon": "fa-solid fa-person-hiking",
       "title": "Trekking & Nature Walks",
       "description": "Enjoy gentle treks around the fort or longer trails leading into the surrounding forests and viewpoints.",
-      "info": ["Popular: Ambarkhana trek, Sunset Point trail"]
+      "info": [
+        "Popular: Ambarkhana trek, Sunset Point trail"
+      ]
     },
     {
       "icon": "fa-solid fa-camera-retro",
       "title": "Photography & Heritage Tours",
       "description": "Capture the fort’s grandeur, scenic hills, and cloud-kissed landscapes.",
-      "info": ["Morning and sunset light ideal for photography"]
+      "info": [
+        "Morning and sunset light ideal for photography"
+      ]
     }
   ],
   "attractions": [
     {
-      "image": "/images/hillstations/panhala/panhala-fort.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Panhala Fort",
       "description": "A massive fort with historic importance in Maratha history, featuring ancient architecture and panoramic views.",
       "distance": "Within town limits",
@@ -75,7 +109,7 @@
       "value": "Historic Fort"
     },
     {
-      "image": "/images/hillstations/panhala/sajja-kothi.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Sajja Kothi",
       "description": "An elegant structure built by the Adil Shahi rulers, offering sweeping valley views and historical significance.",
       "distance": "Inside Panhala Fort complex",
@@ -83,7 +117,7 @@
       "value": "Historic Monument"
     },
     {
-      "image": "/images/hillstations/panhala/pariksha-point.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Pariksha Point",
       "description": "A serene viewpoint offering mesmerizing sunsets and panoramic views of the Kolhapur valley.",
       "distance": "2 km from Panhala Fort",
@@ -137,9 +171,21 @@
     }
   ],
   "gallery": [
-    { "src": "/images/hillstations/panhala/gallery1.jpg", "thumb": "/images/hillstations/panhala/thumb1.jpg", "alt": "Panhala Fort" },
-    { "src": "/images/hillstations/panhala/gallery2.jpg", "thumb": "/images/hillstations/panhala/thumb2.jpg", "alt": "Sajja Kothi" },
-    { "src": "/images/hillstations/panhala/gallery3.jpg", "thumb": "/images/hillstations/panhala/thumb3.jpg", "alt": "Sunset at Pariksha Point" }
+    {
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
+      "alt": "Panhala Fort"
+    },
+    {
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
+      "alt": "Sajja Kothi"
+    },
+    {
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
+      "alt": "Sunset at Pariksha Point"
+    }
   ],
   "bookingTips": [
     {

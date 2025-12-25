@@ -2,8 +2,8 @@
   "id": "06",
   "title": "Arnala Beach",
   "subtitle": "A Serene Coastal Escape in Vasai–Virar",
-  "bannerImage": "/assets/images/beaches/arnala-banner.jpg",
-  "insideBannerImage": "/assets/images/beaches/06/bannerImg.jpg",
+  "bannerImage": "/assets/images/beaches/01.jpg",
+  "insideBannerImage": "/assets/images/beaches/01/bannerimg.jpg",
   "color": "#007B84",
   "overview": [
     "Arnala Beach, located in the Palghar district near Virar, is one of the most popular beaches in North Konkan. Known for its black sand and gentle waves, Arnala offers a perfect blend of serenity and local coastal culture.",
@@ -23,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/06/info3.jpg",
+    "image": "/assets/images/beaches/01/info3.jpg",
     "intro": "Arnala Beach lies around 8 km from Virar in Palghar district, forming part of the northernmost stretch of the Konkan coastline. It’s known for its gentle sea gradient and soft sandy shore.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Virar, Palghar District, Maharashtra" },
@@ -63,7 +63,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/06/img1.jpg",
+      "image": "/assets/images/beaches/01/img1.jpg",
       "title": "Arnala Fort",
       "description": "A 16th-century fort built by the Portuguese, accessible by a 10-minute boat ride from the beach.",
       "distance": "1 km offshore",
@@ -71,7 +71,7 @@
       "value": "Historic site"
     },
     {
-      "image": "/assets/images/beaches/06/img2.jpg",
+      "image": "/assets/images/beaches/01/img2.jpg",
       "title": "Virar & Rajodi Beaches",
       "description": "Nearby beaches offering water sports and quieter settings.",
       "distance": "5–7 km",
@@ -117,8 +117,8 @@
     }
   ],
   "gallery": [
-    { "src": "/assets/images/beaches/06/img2.jpg", "thumb": "/assets/images/beaches/06/img2.jpg", "alt": "Arnala Beach sunset view" },
-    { "src": "/assets/images/beaches/06/img3.jpg", "thumb": "/assets/images/beaches/06/img3.jpg", "alt": "Arnala Fort boat ride" }
+    { "src": "/assets/images/beaches/01/img2.jpg", "thumb": "/assets/images/beaches/01/img2.jpg", "alt": "Arnala Beach sunset view" },
+    { "src": "/assets/images/beaches/01/img3.jpg", "thumb": "/assets/images/beaches/01/img3.jpg", "alt": "Arnala Fort boat ride" }
   ],
   "bookingTips": [
     { "icon": "fa-solid fa-hotel", "description": "Budget resorts and homestays are available near the beach." },

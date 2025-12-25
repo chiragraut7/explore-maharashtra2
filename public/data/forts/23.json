@@ -2,7 +2,8 @@
   "id": "23",
   "title": "Daulatabad Fort (Devgiri Fort)",
   "subtitle": "A Marvel of Defense and Architecture near Aurangabad",
-  "bannerImage": "/images/forts/daulatabad/daulatabad-banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#8b7355",
   "overview": [
     "Daulatabad Fort, also known as Devgiri Fort, is an architectural masterpiece located about 15 km from Aurangabad, Maharashtra. Originally built in the 12th century by King Bhillama V of the Yadava dynasty, this fort later became one of the most powerful and impregnable strongholds in India.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/daulatabad/daulatabad-map.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Situated atop a conical hill 650 feet above the plains, Daulatabad Fort dominates the landscape around Aurangabad with panoramic views of the Deccan plateau.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/forts/daulatabad/chand-minar.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Chand Minar",
       "description": "A 210-feet tall tower built in Persian style to commemorate victory in war.",
       "distance": "Inside the fort complex",
@@ -104,7 +105,7 @@
       "value": "Historical Landmark"
     },
     {
-      "image": "/images/forts/daulatabad/moat.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Moat and Tunnel System",
       "description": "Ingenious traps, twisting tunnels, and moats designed to confuse and capture invaders.",
       "distance": "Surrounding the main citadel",
@@ -151,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/daulatabad/daulatabad1.jpg",
-      "thumb": "/images/forts/daulatabad/daulatabad1-thumb.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Daulatabad Fort view"
     },
     {
-      "src": "/images/forts/daulatabad/daulatabad2.jpg",
-      "thumb": "/images/forts/daulatabad/daulatabad2-thumb.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Chand Minar at Daulatabad"
     }
   ],

@@ -2,7 +2,8 @@
   "id": "14",
   "title": "Navegaon National Park",
   "subtitle": "A Serene Forest Haven in Gondia",
-  "bannerImage": "/images/nature/navegaon/banner.jpg",
+  "bannerImage": "/assets/images/nature/01.jpg",
+  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
   "color": "#388e3c",
   "overview": [
     "Navegaon National Park, located in the Gondia district of eastern Maharashtra, is one of the most scenic wildlife sanctuaries in the Vidarbha region. It is famous for its lush forests, a large picturesque lake, and a beautiful watchtower offering panoramic views.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/nature/navegaon/geography.jpg",
+    "image": "/assets/images/nature/01/info2.jpg",
     "intro": "Situated near Arjuni Morgaon in Gondia, Navegaon National Park forms part of the central Indian landscape characterized by undulating hills, dense forests, and rich biodiversity.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/nature/navegaon/watchtower.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Navegaon Watchtower",
       "description": "A tall structure overlooking the lake and forest, offering a breathtaking view of the entire park.",
       "distance": "Inside park",
@@ -104,7 +105,7 @@
       "value": "Ideal spot for sunrise and sunset views."
     },
     {
-      "image": "/images/nature/navegaon/lake.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Navegaon Lake",
       "description": "A serene waterbody at the heart of the park, perfect for boating and birdwatching.",
       "distance": "Within park",
@@ -159,13 +160,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/navegaon/navegaon1.jpg",
-      "thumb": "/images/nature/navegaon/navegaon1_thumb.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Navegaon Lake"
     },
     {
-      "src": "/images/nature/navegaon/navegaon2.jpg",
-      "thumb": "/images/nature/navegaon/navegaon2_thumb.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Navegaon Forest and Birds"
     }
   ],

@@ -2,7 +2,8 @@
   "id": "24",
   "title": "Anjaneri Fort",
   "subtitle": "The Mythical Birthplace of Lord Hanuman near Nashik",
-  "bannerImage": "/images/forts/anjaneri/banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#c87f3d",
   "overview": [
     "Anjaneri Fort, located near Nashik in Maharashtra, holds immense mythological and historical importance. Believed to be the birthplace of Lord Hanuman, this fort lies amid the lush Anjaneri Hills, part of the Sahyadri range.",
@@ -21,20 +22,46 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/anjaneri/geography.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Anjaneri Fort is located about 20 km from Nashik and 6 km from Trimbakeshwar, situated at an altitude of around 1,300 meters above sea level.",
     "details": [
-      { "icon": "fa-solid fa-map-location-dot", "label": "District", "value": "Nashik" },
-      { "icon": "fa-solid fa-mountain-sun", "label": "Altitude", "value": "1,300 meters" },
-      { "icon": "fa-solid fa-route", "label": "Nearest City", "value": "Nashik (20 km)" },
-      { "icon": "fa-solid fa-person-hiking", "label": "Trek Difficulty", "value": "Easy to Moderate" },
-      { "icon": "fa-solid fa-tree", "label": "Range", "value": "Sahyadri Range" }
+      {
+        "icon": "fa-solid fa-map-location-dot",
+        "label": "District",
+        "value": "Nashik"
+      },
+      {
+        "icon": "fa-solid fa-mountain-sun",
+        "label": "Altitude",
+        "value": "1,300 meters"
+      },
+      {
+        "icon": "fa-solid fa-route",
+        "label": "Nearest City",
+        "value": "Nashik (20 km)"
+      },
+      {
+        "icon": "fa-solid fa-person-hiking",
+        "label": "Trek Difficulty",
+        "value": "Easy to Moderate"
+      },
+      {
+        "icon": "fa-solid fa-tree",
+        "label": "Range",
+        "value": "Sahyadri Range"
+      }
     ],
     "climate": {
       "description": "The region experiences pleasant weather most of the year, with monsoon offering lush greenery and cool winds.",
       "seasons": [
-        { "icon": "fa-solid fa-cloud-sun", "text": "Best time: October to February for clear views" },
-        { "icon": "fa-solid fa-cloud-showers-heavy", "text": "Monsoon (June–September) enhances greenery but trails get slippery" }
+        {
+          "icon": "fa-solid fa-cloud-sun",
+          "text": "Best time: October to February for clear views"
+        },
+        {
+          "icon": "fa-solid fa-cloud-showers-heavy",
+          "text": "Monsoon (June–September) enhances greenery but trails get slippery"
+        }
       ]
     },
     "conclusion": "The combination of spirituality, scenic beauty, and adventure makes Anjaneri Fort a unique destination in Maharashtra."
@@ -70,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/forts/anjaneri/attraction1.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Anjani Mata Temple",
       "description": "A small yet significant temple marking the mythical birthplace of Lord Hanuman.",
       "distance": "Atop Anjaneri Hill",
@@ -78,7 +105,7 @@
       "value": "Spiritual landmark"
     },
     {
-      "image": "/images/forts/anjaneri/attraction2.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Trimbakeshwar Temple",
       "description": "One of the 12 Jyotirlingas of Lord Shiva, located close to Anjaneri.",
       "distance": "6 km",
@@ -89,8 +116,16 @@
   "marineLife": {
     "intro": "Although inland, Anjaneri’s natural life is vibrant with diverse flora and fauna.",
     "items": [
-      { "icon": "fa-solid fa-leaf", "title": "Flora", "description": "Dense forests with wildflowers and medicinal herbs" },
-      { "icon": "fa-solid fa-dove", "title": "Fauna", "description": "Monkeys, peacocks, and a variety of birds common in the region" }
+      {
+        "icon": "fa-solid fa-leaf",
+        "title": "Flora",
+        "description": "Dense forests with wildflowers and medicinal herbs"
+      },
+      {
+        "icon": "fa-solid fa-dove",
+        "title": "Fauna",
+        "description": "Monkeys, peacocks, and a variety of birds common in the region"
+      }
     ],
     "conclusion": [
       "Ideal for nature lovers and bird watchers.",
@@ -116,12 +151,29 @@
     }
   ],
   "gallery": [
-    { "src": "/images/forts/anjaneri/gallery1.jpg", "thumb": "/images/forts/anjaneri/gallery1-thumb.jpg", "alt": "Anjaneri Hills Trek Path" },
-    { "src": "/images/forts/anjaneri/gallery2.jpg", "thumb": "/images/forts/anjaneri/gallery2-thumb.jpg", "alt": "Anjani Mata Temple atop the hill" }
+    {
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
+      "alt": "Anjaneri Hills Trek Path"
+    },
+    {
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
+      "alt": "Anjani Mata Temple atop the hill"
+    }
   ],
   "bookingTips": [
-    { "icon": "fa-solid fa-clock", "description": "Start early morning to avoid afternoon heat during the climb." },
-    { "icon": "fa-solid fa-shoe-prints", "description": "Wear trekking shoes and carry enough water, especially in summer." },
-    { "icon": "fa-solid fa-umbrella", "description": "Avoid heavy rains; trails can get slippery in monsoon." }
+    {
+      "icon": "fa-solid fa-clock",
+      "description": "Start early morning to avoid afternoon heat during the climb."
+    },
+    {
+      "icon": "fa-solid fa-shoe-prints",
+      "description": "Wear trekking shoes and carry enough water, especially in summer."
+    },
+    {
+      "icon": "fa-solid fa-umbrella",
+      "description": "Avoid heavy rains; trails can get slippery in monsoon."
+    }
   ]
 }

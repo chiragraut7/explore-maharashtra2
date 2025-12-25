@@ -2,7 +2,8 @@
   "id": "12",
   "title": "Tikona Fort",
   "subtitle": "The Triangular Fort of the Sahyadris",
-  "bannerImage": "/images/forts/tikona/tikona-banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#9c6b30",
   "overview": [
     "Tikona Fort, also known as Vitandgad, is a beautiful hill fort located near Lonavala in Maharashtra. The name 'Tikona' comes from its triangular shape, and it stands as one of the most scenic trekking destinations in the Sahyadri mountain range.",
@@ -26,7 +27,7 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/tikona/tikona-map.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Tikona Fort rises to about 3,500 feet above sea level and is located near Kamshet, close to Lonavala. Its triangular shape gives it its name and distinct identity among Maharashtra’s hill forts.",
     "details": [
       {
@@ -101,7 +102,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/forts/tikona/pawna-lake.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Pawna Lake",
       "description": "A serene lake popular for camping and boating, offering stunning views from Tikona Fort.",
       "distance": "5 km",
@@ -109,7 +110,7 @@
       "value": "Nearby Lake"
     },
     {
-      "image": "/images/forts/tikona/tung-fort.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Tung Fort",
       "description": "Another beautiful hill fort across Pawna Lake, often visited together with Tikona.",
       "distance": "10 km",
@@ -156,13 +157,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/tikona/gallery1.jpg",
-      "thumb": "/images/forts/tikona/gallery1-thumb.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Tikona Fort top view"
     },
     {
-      "src": "/images/forts/tikona/gallery2.jpg",
-      "thumb": "/images/forts/tikona/gallery2-thumb.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Pawna Lake view from Tikona Fort"
     }
   ],

@@ -2,7 +2,8 @@
   "id": "18",
   "title": "Suvarnadurg Fort",
   "subtitle": "The Golden Sea Fort of Konkan",
-  "bannerImage": "/images/forts/suvarnadurg-fort/suvarnadurg-fort-view.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#d4af37",
   "overview": [
     "Suvarnadurg Fort, situated off the coast of Harnai in Dapoli taluka, is one of Maharashtra’s most impressive sea forts. Originally built by the Adil Shahi rulers and later strengthened by Chhatrapati Shivaji Maharaj, the fort symbolized Maratha naval strength.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/suvarnadurg-fort/harnai-coast.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Located on a rocky island just off Harnai port, Suvarnadurg is surrounded by turquoise waters and connected to the mainland by short boat rides.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Off Harnai coast, Dapoli, Ratnagiri District" },
@@ -70,7 +71,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/forts/suvarnadurg-fort/kanakdurg.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Kanakdurg Fort",
       "description": "The mainland twin of Suvarnadurg, located directly opposite Harnai port. Offers views of Suvarnadurg island.",
       "distance": "1 km",
@@ -78,7 +79,7 @@
       "value": "Historic twin fort on the mainland"
     },
     {
-      "image": "/images/forts/suvarnadurg-fort/anjarle.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Anjarle Ganpati Temple",
       "description": "A beautiful seaside temple dedicated to Lord Ganesh, located near Dapoli.",
       "distance": "12 km",
@@ -125,13 +126,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/suvarnadurg-fort/fort-view.jpg",
-      "thumb": "/images/forts/suvarnadurg-fort/fort-view-thumb.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Suvarnadurg Fort view from the sea"
     },
     {
-      "src": "/images/forts/suvarnadurg-fort/sunset.jpg",
-      "thumb": "/images/forts/suvarnadurg-fort/sunset-thumb.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Sunset over Suvarnadurg Fort"
     }
   ],

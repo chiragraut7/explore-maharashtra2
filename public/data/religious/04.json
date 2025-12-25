@@ -2,7 +2,8 @@
   "id": "04",
   "title": "Mahalaxmi Temple, Kolhapur",
   "subtitle": "One of the Shakti Peethas of Goddess Laxmi",
-  "bannerImage": "/images/religious/mahalaxmi-kolhapur/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#B91C1C",
   "overview": [
     "The Mahalaxmi Temple in Kolhapur, also known as Ambabai Temple, is one of the most revered Shakti Peethas in India. It is believed that the temple marks the spot where the eyes of Goddess Sati fell, making it a sacred place of immense spiritual power.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/mahalaxmi-kolhapur/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "The Mahalaxmi Temple is located in the heart of Kolhapur city on the banks of the Panchganga River in southern Maharashtra.",
     "details": [
       {
@@ -97,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/religious/mahalaxmi-kolhapur/rankala-lake.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Rankala Lake",
       "description": "A scenic lake near the temple ideal for evening strolls and local food stalls.",
       "distance": "2 km",
@@ -105,7 +106,7 @@
       "value": "Scenic Spot"
     },
     {
-      "image": "/images/religious/mahalaxmi-kolhapur/jyotiba-temple.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Jyotiba Temple",
       "description": "A revered temple dedicated to Lord Jyotiba, located on a hill about 17 km from Kolhapur.",
       "distance": "17 km",
@@ -152,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/mahalaxmi-kolhapur/1.jpg",
-      "thumb": "/images/religious/mahalaxmi-kolhapur/thumb1.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Mahalaxmi Temple Kolhapur Front View"
     },
     {
-      "src": "/images/religious/mahalaxmi-kolhapur/2.jpg",
-      "thumb": "/images/religious/mahalaxmi-kolhapur/thumb2.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Devotees during Kirnotsav"
     }
   ],

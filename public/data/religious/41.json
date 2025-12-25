@@ -2,7 +2,8 @@
     "id": "41",
     "title": "Mahur Renuka Devi Temple",
     "subtitle": "A Sacred Shakti Peetha in Nanded District",
-    "bannerImage": "/images/religious/mahur/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
     "color": "#B91C1C",
     "overview": [
       "Mahur, in the Nanded district of Maharashtra, is home to the ancient Renuka Devi Temple — one of the three and a half Shakti Peethas in the state. The temple sits atop a lush green hill, surrounded by forests and mythological significance.",
@@ -21,7 +22,7 @@
       }
     ],
     "geography": {
-      "image": "/images/religious/mahur/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
       "intro": "Mahur is a town in the Kinwat Taluka of Nanded district, located near the Maharashtra–Telangana border.",
       "details": [
         {

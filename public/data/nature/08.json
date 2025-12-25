@@ -2,7 +2,8 @@
   "id": "08",
   "title": "Koyna Wildlife Sanctuary",
   "subtitle": "A Biodiversity Gem in the Western Ghats",
-  "bannerImage": "/images/nature/koyna/banner.jpg",
+  "bannerImage": "/assets/images/nature/01.jpg",
+  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
   "color": "#2E4600",
   "overview": [
     "Koyna Wildlife Sanctuary is a UNESCO World Heritage Site nestled in the Satara district of Maharashtra. It forms an integral part of the Western Ghats and is known for its rich biodiversity, dense evergreen forests, and pristine water bodies.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/nature/koyna/geography.jpg",
+    "image": "/assets/images/nature/01/info2.jpg",
     "intro": "Koyna Wildlife Sanctuary lies in the Satara district of Maharashtra, covering the catchment area of the Koyna Dam and forming part of the Sahyadri Tiger Reserve.",
     "details": [
       {
@@ -97,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/nature/koyna/vasota-fort.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Vasota Fort",
       "description": "An ancient hill fort inside the sanctuary accessible via a thrilling forest and lake trek.",
       "distance": "25 km from Koynanagar",
@@ -105,7 +106,7 @@
       "value": "Historical Trek Spot"
     },
     {
-      "image": "/images/nature/koyna/shivsagar-lake.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Shivsagar Lake",
       "description": "A serene reservoir formed by Koyna Dam, perfect for boating and nature photography.",
       "distance": "Within Sanctuary",
@@ -152,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/koyna/gallery1.jpg",
-      "thumb": "/images/nature/koyna/thumb1.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Misty Forest Trails at Koyna"
     },
     {
-      "src": "/images/nature/koyna/gallery2.jpg",
-      "thumb": "/images/nature/koyna/thumb2.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Koyna Dam Backwaters and Green Hills"
     }
   ],

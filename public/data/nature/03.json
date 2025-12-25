@@ -2,7 +2,8 @@
   "id": "03",
   "title": "Bhimashankar Wildlife Sanctuary",
   "subtitle": "Sacred Forests of the Western Ghats",
-  "bannerImage": "/images/nature/bhimashankar/banner.jpg",
+  "bannerImage": "/assets/images/nature/01.jpg",
+  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
   "color": "#1B4D3E",
   "overview": [
     "Bhimashankar Wildlife Sanctuary, located in the Pune district of Maharashtra, is a part of the Western Ghats and is known for its rich biodiversity, dense forests, and sacred environment surrounding the Bhimashankar Temple — one of the twelve Jyotirlingas of Lord Shiva.",
@@ -22,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/images/nature/bhimashankar/geography.jpg",
+    "image": "/assets/images/nature/01/info2.jpg",
     "intro": "Situated in the Sahyadri ranges of the Western Ghats, Bhimashankar Wildlife Sanctuary spans across Pune, Raigad, and Thane districts.",
     "details": [
       {
@@ -97,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/nature/bhimashankar/temple.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Bhimashankar Temple",
       "description": "An ancient Jyotirlinga temple of Lord Shiva, renowned for its Nagara-style architecture and peaceful surroundings.",
       "distance": "Inside Sanctuary",
@@ -105,7 +106,7 @@
       "value": "Spiritual Landmark"
     },
     {
-      "image": "/images/nature/bhimashankar/gupt-bhimashankar.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Gupt Bhimashankar",
       "description": "A hidden waterfall believed to be the origin of the Bhima River, surrounded by dense greenery.",
       "distance": "3 km forest trail",
@@ -152,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/bhimashankar/gallery1.jpg",
-      "thumb": "/images/nature/bhimashankar/thumb1.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Bhimashankar Temple surrounded by misty hills"
     },
     {
-      "src": "/images/nature/bhimashankar/gallery2.jpg",
-      "thumb": "/images/nature/bhimashankar/thumb2.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Shekru – Indian Giant Squirrel on tree branch"
     }
   ],

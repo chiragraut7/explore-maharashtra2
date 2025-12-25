@@ -2,7 +2,8 @@
   "id": "05",
   "title": "Kaas Plateau",
   "subtitle": "The Valley of Flowers of Maharashtra – A UNESCO Biodiversity Site",
-  "bannerImage": "/assets/images/nature/kaas-plateau.jpg",
+  "bannerImage": "/assets/images/nature/01.jpg",
+  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
   "color": "#7b4b94",
   "overview": [
     "Kaas Plateau, also known as Kaas Pathar, is a stunning UNESCO World Natural Heritage Site located near Satara in Maharashtra. This plateau bursts into a riot of colors every monsoon as thousands of wildflowers bloom across its vast expanse.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/nature/kaas-map.jpg",
+    "image": "/assets/images/nature/01/info2.jpg",
     "intro": "Located about 25 km from Satara city, Kaas Plateau is a lateritic plateau within the Sahyadri range of the Western Ghats.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/nature/kaas-lake.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Kaas Lake",
       "description": "A serene freshwater lake near the plateau, surrounded by forests and hills.",
       "distance": "2 km from main plateau",
@@ -104,7 +105,7 @@
       "value": "Natural Reservoir"
     },
     {
-      "image": "/assets/images/nature/ajinkyatara-fort.jpg",
+      "image": "/assets/images/nature/01/img1.jpg",
       "title": "Ajinkyatara Fort",
       "description": "A historic fort offering panoramic views of Satara and the Sahyadris.",
       "distance": "25 km from Kaas",
@@ -167,13 +168,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/kaas-flowers.jpg",
-      "thumb": "/assets/images/nature/kaas-flowers-thumb.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Colorful flowers blooming on Kaas Plateau"
     },
     {
-      "src": "/assets/images/nature/kaas-butterflies.jpg",
-      "thumb": "/assets/images/nature/kaas-butterflies-thumb.jpg",
+      "src": "/assets/images/nature/01/img1.jpg",
+      "thumb": "/assets/images/nature/01/img1.jpg",
       "alt": "Butterflies fluttering among the flowers"
     }
   ],

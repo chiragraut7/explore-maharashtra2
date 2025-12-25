@@ -2,8 +2,8 @@
   "id": "12",
   "title": "Ambaghat Hill Station",
   "subtitle": "A Hidden Gem in the Western Ghats of Maharashtra",
-  "bannerImage": "/assets/images/hills/12.jpg",
-  "insideBannerImage": "/assets/images/hills/12/bannerimg.jpg",
+  "bannerImage": "/assets/images/hills/01.jpg",
+  "insideBannerImage": "/assets/images/hills/01/bannerimg.jpg",
   "color": "#3c9d77",
   "overview": [
     "Ambaghat is a serene hill station located between Kolhapur and Ratnagiri districts in Maharashtra. Nestled in the Sahyadri mountain range, it is known for its misty hills, winding ghats, and lush greenery throughout the year.",
@@ -23,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/hills/12/info2.jpg",
+    "image": "/assets/images/hills/01/info2.jpg",
     "intro": "Ambaghat lies at an altitude of around 2000 feet above sea level, located between Amba village and Shahuwadi in Kolhapur district. It serves as a connecting route to Ratnagiri and the Konkan region.",
     "details": [
       {
@@ -98,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/hills/12/img1.jpg",
+      "image": "/assets/images/hills/01/img1.jpg",
       "title": "Ambaghat Viewpoint",
       "description": "A stunning spot offering panoramic views of the Sahyadri ranges and deep valleys below.",
       "distance": "2 km from main Ambaghat road",
@@ -106,7 +106,7 @@
       "value": "Ideal for sunrise and sunset views"
     },
     {
-      "image": "/assets/images/hills/12/img2.jpg",
+      "image": "/assets/images/hills/01/img2.jpg",
       "title": "Amreshwar Temple",
       "description": "A peaceful Shiva temple surrounded by forests and hills near Amba village.",
       "distance": "5 km from Ambaghat",
@@ -153,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/hills/12/img1.jpg",
-      "thumb": "/assets/images/hills/12/img1.jpg",
+      "src": "/assets/images/hills/01/img1.jpg",
+      "thumb": "/assets/images/hills/01/img1.jpg",
       "alt": "Ambaghat valley view"
     },
     {
-      "src": "/assets/images/hills/12/img2.jpg",
-      "thumb": "/assets/images/hills/12/img2.jpg",
+      "src": "/assets/images/hills/01/img2.jpg",
+      "thumb": "/assets/images/hills/01/img2.jpg",
       "alt": "Amba Ghat road surrounded by fog"
     }
   ],

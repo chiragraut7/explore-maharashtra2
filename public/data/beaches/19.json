@@ -2,8 +2,8 @@
   "id": "19",
   "title": "Velneshwar Beach",
   "subtitle": "A Hidden Gem near Guhagar Known for Serenity and Temples",
-  "bannerImage": "/assets/images/beaches/velneshwar-banner.jpg",
-  "insideBannerImage": "/assets/images/beaches/19/bannerImg.jpg",
+  "bannerImage": "/assets/images/beaches/01.jpg",
+  "insideBannerImage": "/assets/images/beaches/01/bannerimg.jpg",
   "color": "#00897B",
   "overview": [
     "Velneshwar Beach is a serene coastal destination located near Guhagar in Ratnagiri district, Maharashtra. It is known for its peaceful ambiance, clean shoreline, and the ancient Velneshwar Shiva Temple situated right by the sea.",
@@ -28,7 +28,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/19/info3.jpg",
+    "image": "/assets/images/beaches/01/info3.jpg",
     "intro": "Velneshwar lies about 20 km north of Guhagar in Ratnagiri district, along the scenic Konkan coast of Maharashtra. It is surrounded by lush green hills and coconut plantations.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Near Guhagar, Ratnagiri District, Maharashtra" },
@@ -68,7 +68,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/19/img1.jpg",
+      "image": "/assets/images/beaches/01/img1.jpg",
       "title": "Velneshwar Shiva Temple",
       "description": "A revered seaside temple dedicated to Lord Shiva, blending spirituality with scenic beauty.",
       "distance": "0.2 km from beach",
@@ -76,7 +76,7 @@
       "value": "Religious Landmark"
     },
     {
-      "image": "/assets/images/beaches/19/img2.jpg",
+      "image": "/assets/images/beaches/01/img2.jpg",
       "title": "Guhagar Beach",
       "description": "A long, beautiful beach located 20 km away, known for its bustling market and coconut products.",
       "distance": "20 km",
@@ -84,7 +84,7 @@
       "value": "Nearby Attraction"
     },
     {
-      "image": "/assets/images/beaches/19/img3.jpg",
+      "image": "/assets/images/beaches/01/img3.jpg",
       "title": "Hedvi Dashabhuja Ganesh Temple",
       "description": "Located 7 km away, this temple houses a rare ten-armed idol of Lord Ganesh and the famous Bamnai waterfall.",
       "distance": "7 km",
@@ -138,9 +138,9 @@
     }
   ],
   "gallery": [
-    { "src": "/assets/images/beaches/19/img1.jpg", "thumb": "/assets/images/beaches/19/img1.jpg", "alt": "Velneshwar Beach coastline" },
-    { "src": "/assets/images/beaches/19/img2.jpg", "thumb": "/assets/images/beaches/19/img2.jpg", "alt": "Velneshwar Temple near the beach" },
-    { "src": "/assets/images/beaches/19/img3.jpg", "thumb": "/assets/images/beaches/19/img3.jpg", "alt": "Sunset view at Velneshwar" }
+    { "src": "/assets/images/beaches/01/img1.jpg", "thumb": "/assets/images/beaches/01/img1.jpg", "alt": "Velneshwar Beach coastline" },
+    { "src": "/assets/images/beaches/01/img2.jpg", "thumb": "/assets/images/beaches/01/img2.jpg", "alt": "Velneshwar Temple near the beach" },
+    { "src": "/assets/images/beaches/01/img3.jpg", "thumb": "/assets/images/beaches/01/img3.jpg", "alt": "Sunset view at Velneshwar" }
   ],
   "bookingTips": [
     { "icon": "fa-solid fa-bed", "description": "Book homestays or beachside cottages for a cozy stay near the temple." },

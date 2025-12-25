@@ -2,7 +2,8 @@
   "id": "22",
   "title": "Baneshwar Temple, Nasrapur",
   "subtitle": "An Ancient Shiva Temple Amidst Nature near Pune",
-  "bannerImage": "/images/religious/test/baneshwar-nasrapur/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#4b6043",
   "overview": [
     "Baneshwar Temple, located in Nasrapur near Pune, is a serene and historic temple dedicated to Lord Shiva.",
@@ -23,7 +24,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/test/baneshwar-nasrapur/geography.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Baneshwar Temple lies in the Sahyadri foothills, about 35 km southwest of Pune, offering scenic beauty and a cool atmosphere.",
     "details": [
       {
@@ -98,7 +99,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/religious/test/baneshwar-nasrapur/attraction1.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Baneshwar Wildlife Sanctuary",
       "description": "A small sanctuary rich in flora and fauna, managed by the Forest Department.",
       "distance": "Adjacent to the temple",
@@ -106,7 +107,7 @@
       "value": "Wildlife spot"
     },
     {
-      "image": "/images/religious/test/baneshwar-nasrapur/attraction2.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Balaji Temple, Ketkawale",
       "description": "A popular replica of Tirupati Balaji Temple located nearby on Pune–Bangalore Highway.",
       "distance": "15 km",
@@ -153,13 +154,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/test/baneshwar-nasrapur/1.jpg",
-      "thumb": "/images/religious/test/baneshwar-nasrapur/thumb1.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Baneshwar Temple main entrance"
     },
     {
-      "src": "/images/religious/test/baneshwar-nasrapur/2.jpg",
-      "thumb": "/images/religious/test/baneshwar-nasrapur/thumb2.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Baneshwar Waterfall near the temple"
     }
   ],

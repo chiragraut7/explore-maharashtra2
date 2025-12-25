@@ -2,7 +2,8 @@
   "id": "03",
   "title": "Pratapgad Fort",
   "subtitle": "The Fort of Victory and Valor",
-  "bannerImage": "/images/forts/pratapgad/pratapgad-banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#874c1a",
   "overview": [
     "Pratapgad Fort, located near Mahabaleshwar in the Satara district, is one of Maharashtra's most iconic hill forts. It gained immense historical importance as the site of the legendary battle between Chhatrapati Shivaji Maharaj and Afzal Khan in 1659.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/pratapgad/pratapgad-geography.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Situated about 21 km from Mahabaleshwar, Pratapgad Fort is perched on the crest of a mountain spur that divides the villages of Par and Kinesvar.",
     "details": [
       {
@@ -83,20 +84,11 @@
         "Ideal for sunrise and sunset photography.",
         "Drone shots (where permitted) capture the full grandeur."
       ]
-    },
-    {
-      "icon": "fa-solid fa-flag",
-      "title": "Cultural Exploration",
-      "description": "Explore the Mahadev Temple, Afzal Khan’s Tomb, and the equestrian statue of Shivaji Maharaj.",
-      "info": [
-        "The fort still hosts local fairs and traditional events.",
-        "Local guides narrate historical tales vividly."
-      ]
     }
   ],
   "attractions": [
     {
-      "image": "/images/forts/pratapgad/maha-durga.jpg",
+    "image": "/assets/images/forts/01/img1.jpg",
       "title": "Bhavani Mata Temple",
       "description": "Built by Shivaji Maharaj in honor of Goddess Bhavani, the temple remains an important pilgrimage site.",
       "distance": "Within fort complex",
@@ -104,20 +96,12 @@
       "value": "Spiritual & Historical Spot"
     },
     {
-      "image": "/images/forts/pratapgad/shivaji-statue.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Statue of Shivaji Maharaj",
       "description": "A grand bronze statue of Shivaji Maharaj stands proudly on the fort’s top, overlooking the valleys.",
       "distance": "Fort summit area",
       "icon": "fa-solid fa-person-military-pointing",
       "value": "Symbol of Valor"
-    },
-    {
-      "image": "/images/forts/pratapgad/afzal-khan-tomb.jpg",
-      "title": "Afzal Khan’s Tomb",
-      "description": "Located at the base of the fort, the tomb marks the spot of Afzal Khan’s demise during the famous encounter.",
-      "distance": "Base of Pratapgad",
-      "icon": "fa-solid fa-monument",
-      "value": "Historic Landmark"
     }
   ],
   "marineLife": {
@@ -167,18 +151,18 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/pratapgad/gallery1.jpg",
-      "thumb": "/images/forts/pratapgad/thumb1.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Aerial view of Pratapgad Fort"
     },
     {
-      "src": "/images/forts/pratapgad/gallery2.jpg",
-      "thumb": "/images/forts/pratapgad/thumb2.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Bhavani Temple at Pratapgad"
     },
     {
-      "src": "/images/forts/pratapgad/gallery3.jpg",
-      "thumb": "/images/forts/pratapgad/thumb3.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "Statue of Shivaji Maharaj at the fort top"
     }
   ],

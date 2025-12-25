@@ -2,7 +2,8 @@
   "id": "35",
   "title": "Sant Tukaram Maharaj Temple, Dehu",
   "subtitle": "A Sacred Abode of the Great Saint Tukaram Maharaj near Pune",
-  "bannerImage": "/images/religious/tukaram-dehu/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#C67C2F",
   "overview": [
     "Sant Tukaram Maharaj Temple in Dehu is one of the most revered pilgrimage sites in Maharashtra, dedicated to the great Marathi saint and poet, Sant Tukaram Maharaj. Situated on the banks of the Indrayani River, the temple is a key stop for Warkaris during the annual Pandharpur pilgrimage.",
@@ -27,7 +28,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/tukaram-dehu/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Dehu is a town in the Pune district of Maharashtra, located along the Indrayani River and surrounded by gentle hills and fertile plains.",
     "details": [
       {

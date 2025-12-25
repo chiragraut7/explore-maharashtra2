@@ -2,7 +2,8 @@
   "id": "26",
   "title": "Varadvinayak Temple, Mahad",
   "subtitle": "The Granter of Wishes among the revered Ashtavinayak Temples",
-  "bannerImage": "/images/religious/mahad/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#f59e0b",
   "overview": [
     "The Varadvinayak Temple at Mahad, located in the Khalapur taluka of Raigad district, is one of the eight sacred Ashtavinayak shrines of Lord Ganesha. The temple name 'Varadvinayak' means 'Bestower of Blessings' or 'Granter of Boons'.",
@@ -28,7 +29,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/mahad/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "The temple is located in Mahad village, about 8 km from Khopoli in Raigad district, nestled between scenic hills and ancient forests. Its location makes it easily accessible yet spiritually secluded.",
     "details": [
       {

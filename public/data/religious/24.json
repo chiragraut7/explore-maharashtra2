@@ -2,7 +2,8 @@
   "id": "24",
   "title": "Siddhivinayak Temple, Siddhatek",
   "subtitle": "The second Ashtavinayak shrine – Lord Ganesha as the Bestower of Success",
-  "bannerImage": "/images/religious/siddhatek/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#e07b39",
   "overview": [
     "Siddhivinayak Temple at Siddhatek, located on the banks of the Bhima River in Ahmednagar district, is the second temple in the Ashtavinayak pilgrimage circuit.",
@@ -23,7 +24,7 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/siddhatek/geo.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Siddhatek is a small village on the Bhima River in Karjat Taluka of Ahmednagar district. The temple sits atop a small hillock surrounded by natural beauty and calm waters.",
     "details": [
       {
@@ -98,7 +99,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/religious/siddhatek/attraction1.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Bhima River Ghats",
       "description": "Scenic and peaceful riverbanks where devotees perform rituals and meditate.",
       "distance": "0.2 km",
@@ -106,7 +107,7 @@
       "value": "Sacred River Spot"
     },
     {
-      "image": "/images/religious/siddhatek/attraction2.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Vishnu Temple Ruins",
       "description": "Ancient remains of a temple dedicated to Lord Vishnu, linked with the Ganesha legend.",
       "distance": "1 km",
@@ -153,13 +154,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/siddhatek/1.jpg",
-      "thumb": "/images/religious/siddhatek/thumb1.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Siddhivinayak Temple Front View"
     },
     {
-      "src": "/images/religious/siddhatek/2.jpg",
-      "thumb": "/images/religious/siddhatek/thumb2.jpg",
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
       "alt": "Bhima River near Siddhatek Temple"
     }
   ],

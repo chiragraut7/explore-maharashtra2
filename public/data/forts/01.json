@@ -2,7 +2,8 @@
   "id": "01",
   "title": "Raigad Fort",
   "subtitle": "The Capital of the Maratha Empire",
-  "bannerImage": "/images/forts/raigad/raigad-banner.jpg",
+  "bannerImage": "/assets/images/forts/01.jpg",
+  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#c47f3a",
   "overview": [
     "Raigad Fort, located in the Raigad district of Maharashtra, was the capital of the Maratha Empire under the rule of Chhatrapati Shivaji Maharaj. Built at a height of around 2,700 feet above sea level, it offers a commanding view of the Sahyadri mountain range.",
@@ -21,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/images/forts/raigad/raigad-geography.jpg",
+    "image": "/assets/images/forts/01/info2.jpg",
     "intro": "Situated in the Sahyadri range of the Western Ghats, Raigad Fort is strategically placed on a hilltop, making it almost invincible during its time.",
     "details": [
       {
@@ -96,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/forts/raigad/jagdishwar-temple.jpg",
+      "image": "/assets/images/forts/01/img1.jpg",
       "title": "Jagdishwar Temple",
       "description": "The temple dedicated to Lord Shiva, believed to be Chhatrapati Shivaji’s family deity.",
       "distance": "Inside the fort",
@@ -104,7 +105,7 @@
       "value": "Ancient Heritage"
     },
     {
-      "image": "/images/forts/raigad/hirkani-buruj.jpg",
+      "image": "/assets/images/forts/01/img2.jpg",
       "title": "Hirkani Buruj",
       "description": "A bastion with a famous legend of a brave mother who descended the fort’s cliff to reach her child.",
       "distance": "Within the fort complex",
@@ -151,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/raigad/gallery1.jpg",
-      "thumb": "/images/forts/raigad/thumb1.jpg",
+      "src": "/assets/images/forts/01/img1.jpg",
+      "thumb": "/assets/images/forts/01/img1.jpg",
       "alt": "View of Raigad Fort walls"
     },
     {
-      "src": "/images/forts/raigad/gallery2.jpg",
-      "thumb": "/images/forts/raigad/thumb2.jpg",
+      "src": "/assets/images/forts/01/img2.jpg",
+      "thumb": "/assets/images/forts/01/img2.jpg",
       "alt": "Jagdishwar Temple at Raigad Fort"
     }
   ],

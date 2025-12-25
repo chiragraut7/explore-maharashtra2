@@ -2,7 +2,8 @@
   "id": "13",
   "title": "Ekvira Devi Temple",
   "subtitle": "Ancient Cave Temple of Goddess Ekvira near Lonavala",
-  "bannerImage": "/images/religious/ekvira/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#c2410c",
   "overview": [
     "Ekvira Devi Temple, located near Karla Caves in Lonavala, is one of the most revered shrines in Maharashtra. Dedicated to Goddess Ekvira, the Kuldevi (family deity) of the Koli and Agri communities, this temple holds immense historical and spiritual significance.",
@@ -22,20 +23,46 @@
     }
   ],
   "geography": {
-    "image": "/images/religious/ekvira/map.jpg",
+    "image": "/assets/images/religious/01/info2.jpg",
     "intro": "Ekvira Devi Temple is located near Karla village, around 8 km from Lonavala in Pune district, nestled in the scenic Western Ghats.",
     "details": [
-      { "icon": "fa-solid fa-map-marker-alt", "label": "District", "value": "Pune" },
-      { "icon": "fa-solid fa-mountain", "label": "Elevation", "value": "671 meters" },
-      { "icon": "fa-solid fa-tree", "label": "Surroundings", "value": "Western Ghats near Karla Caves" },
-      { "icon": "fa-solid fa-road", "label": "Nearest Town", "value": "Lonavala (8 km)" },
-      { "icon": "fa-solid fa-calendar-day", "label": "Major Festival", "value": "Navratri & Chaitra Festival" }
+      {
+        "icon": "fa-solid fa-map-marker-alt",
+        "label": "District",
+        "value": "Pune"
+      },
+      {
+        "icon": "fa-solid fa-mountain",
+        "label": "Elevation",
+        "value": "671 meters"
+      },
+      {
+        "icon": "fa-solid fa-tree",
+        "label": "Surroundings",
+        "value": "Western Ghats near Karla Caves"
+      },
+      {
+        "icon": "fa-solid fa-road",
+        "label": "Nearest Town",
+        "value": "Lonavala (8 km)"
+      },
+      {
+        "icon": "fa-solid fa-calendar-day",
+        "label": "Major Festival",
+        "value": "Navratri & Chaitra Festival"
+      }
     ],
     "climate": {
       "description": "The Lonavala region enjoys a pleasant hill climate, with cool winters and refreshing monsoons ideal for temple visits.",
       "seasons": [
-        { "icon": "fa-solid fa-cloud-rain", "text": "Monsoon: June to September – Green hills and waterfalls enhance the journey." },
-        { "icon": "fa-solid fa-snowflake", "text": "Winter: October to February – Comfortable for climbing and exploring." }
+        {
+          "icon": "fa-solid fa-cloud-rain",
+          "text": "Monsoon: June to September – Green hills and waterfalls enhance the journey."
+        },
+        {
+          "icon": "fa-solid fa-snowflake",
+          "text": "Winter: October to February – Comfortable for climbing and exploring."
+        }
       ]
     },
     "conclusion": "Set amidst hills and ancient caves, Ekvira Devi Temple offers a divine experience wrapped in natural beauty."
@@ -71,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/images/religious/ekvira/karla-caves.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Karla Caves",
       "description": "A group of ancient Buddhist rock-cut caves beside the Ekvira Temple complex.",
       "distance": "Adjacent",
@@ -79,7 +106,7 @@
       "value": "Heritage Site"
     },
     {
-      "image": "/images/religious/ekvira/lonavala.jpg",
+      "image": "/assets/images/religious/01/img1.jpg",
       "title": "Lonavala Hill Station",
       "description": "A scenic getaway offering waterfalls, forts, and panoramic Sahyadri views.",
       "distance": "8 km",
@@ -133,14 +160,39 @@
     }
   ],
   "gallery": [
-    { "src": "/images/religious/ekvira/1.jpg", "thumb": "/images/religious/ekvira/thumb1.jpg", "alt": "Ekvira Devi Temple view" },
-    { "src": "/images/religious/ekvira/2.jpg", "thumb": "/images/religious/ekvira/thumb2.jpg", "alt": "Devotees climbing the temple steps" },
-    { "src": "/images/religious/ekvira/3.jpg", "thumb": "/images/religious/ekvira/thumb3.jpg", "alt": "Karla Caves near Ekvira Temple" },
-    { "src": "/images/religious/ekvira/4.jpg", "thumb": "/images/religious/ekvira/thumb4.jpg", "alt": "Goddess Ekvira idol decked in flowers" }
+    {
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
+      "alt": "Ekvira Devi Temple view"
+    },
+    {
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
+      "alt": "Devotees climbing the temple steps"
+    },
+    {
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
+      "alt": "Karla Caves near Ekvira Temple"
+    },
+    {
+      "src": "/assets/images/religious/01/img1.jpg",
+      "thumb": "/assets/images/religious/01/img1.jpg",
+      "alt": "Goddess Ekvira idol decked in flowers"
+    }
   ],
   "bookingTips": [
-    { "icon": "fa-solid fa-ticket-alt", "description": "Visit early morning to avoid crowds and heat during the climb." },
-    { "icon": "fa-solid fa-water-bottle", "description": "Carry water, especially in summer months." },
-    { "icon": "fa-solid fa-praying-hands", "description": "Offer coconuts and oil lamps — traditional offerings to Goddess Ekvira." }
+    {
+      "icon": "fa-solid fa-ticket-alt",
+      "description": "Visit early morning to avoid crowds and heat during the climb."
+    },
+    {
+      "icon": "fa-solid fa-water-bottle",
+      "description": "Carry water, especially in summer months."
+    },
+    {
+      "icon": "fa-solid fa-praying-hands",
+      "description": "Offer coconuts and oil lamps — traditional offerings to Goddess Ekvira."
+    }
   ]
 }
