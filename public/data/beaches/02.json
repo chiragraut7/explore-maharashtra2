@@ -271,6 +271,21 @@
     "alt": "Kelwa Beach Sunrise"
   },
   {
+    "src": "/assets/images/beaches/02/img7.jpg",
+    "thumb": "/assets/images/beaches/02/img7.jpg",
+    "alt": "Evening by the Beach"
+  },
+  {
+    "src": "/assets/images/beaches/02/img8.jpg",
+    "thumb": "/assets/images/beaches/02/img8.jpg",
+    "alt": "Evening by the Beach"
+  },
+  {
+    "src": "/assets/images/beaches/02/img9.jpg",
+    "thumb": "/assets/images/beaches/02/img9.jpg",
+    "alt": "Evening by the Beach"
+  },
+  {
     "src": "/assets/images/beaches/02/img2.jpg",
     "thumb": "/assets/images/beaches/02/img2.jpg",
     "alt": "Evening by the Beach"
@@ -293,21 +308,6 @@
   {
     "src": "/assets/images/beaches/02/img6.jpg",
     "thumb": "/assets/images/beaches/02/img6.jpg",
-    "alt": "Evening by the Beach"
-  },
-  {
-    "src": "/assets/images/beaches/02/img7.jpg",
-    "thumb": "/assets/images/beaches/02/img7.jpg",
-    "alt": "Evening by the Beach"
-  },
-  {
-    "src": "/assets/images/beaches/02/img8.jpg",
-    "thumb": "/assets/images/beaches/02/img8.jpg",
-    "alt": "Evening by the Beach"
-  },
-  {
-    "src": "/assets/images/beaches/02/img9.jpg",
-    "thumb": "/assets/images/beaches/02/img9.jpg",
     "alt": "Evening by the Beach"
   }
 ],
