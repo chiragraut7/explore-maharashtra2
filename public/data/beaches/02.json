@@ -3,8 +3,8 @@
   "title": "Kelwa Beach",
   "category":"Beach",
   "subtitle": "Golden sands, shady trees, and tranquil vibes near Mumbai",
-  "bannerImage": "/assets/images/beaches/01.jpg",
-  "insideBannerImage": "/assets/images/beaches/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/beaches/02.jpg",
+  "insideBannerImage": "/assets/images/beaches/02/bannerimg.jpg",
   
   "xPercent": 12,
   "yPercent": 35,
@@ -35,7 +35,7 @@
   }
 ],
   "geography": {
-  "image": "/assets/images/beaches/01/info3.jpg",
+  "image": "/assets/images/beaches/02/info3.jpg",
   "intro": "Kelwa Beach is located in the Palghar district of Maharashtra, situated along the Arabian Sea coast. It spans over 7 kilometers of golden shoreline and is surrounded by coconut plantations, dense Suru (Casuarina) trees, and small fishing villages. Its proximity to Mumbai makes it a popular weekend getaway.",
   "details": [
     {
@@ -220,8 +220,8 @@
     "icon": "fas fa-plane",
     "title": "By Air",
     "details": [
-      "<strong>Nearest Airport:</strong> Chhatrapati Shivaji Maharaj International Airport, Mumbai (Approx. 110 km)",
-      "<strong>Alternative:</strong> Pune International Airport (Approx. 240 km)",
+      "Nearest Airport: Chhatrapati Shivaji Maharaj International Airport, Mumbai (Approx. 110 km)",
+      "Alternative: Pune International Airport (Approx. 240 km)",
       "Kelwa does not have its own airport. From Mumbai or Pune, one can take a taxi or train to reach Palghar and then travel to Kelwa Beach."
     ]
   },
@@ -229,8 +229,8 @@
     "icon": "fas fa-train",
     "title": "By Train",
     "details": [
-      "<strong>Nearest Railway Station:</strong> Palghar Railway Station (Approx. 12 km)",
-      "<strong>Major Connections:</strong> Trains from Mumbai, Surat, Vapi, Dahanu",
+      "Nearest Railway Station: Palghar Railway Station (Approx. 12 km)",
+      "Major Connections: Trains from Mumbai, Surat, Vapi, Dahanu",
       "From Palghar station, local auto-rickshaws or buses are available to reach Kelwa Beach within 20–25 minutes."
     ]
   },
@@ -238,9 +238,9 @@
     "icon": "fas fa-car",
     "title": "By Road",
     "details": [
-      "<strong>From Mumbai:</strong> Approx. 110 km via NH48 and Manor–Wada Road (2.5 to 3 hours)",
-      "<strong>From Pune:</strong> Approx. 240 km via NH48 (5 to 6 hours)",
-      "<strong>From Palghar:</strong> 12 km via Kelwa Road",
+      "From Mumbai: Approx. 110 km via NH48 and Manor–Wada Road (2.5 to 3 hours)",
+      "From Pune: Approx. 240 km via NH48 (5 to 6 hours)",
+      "From Palghar: 12 km via Kelwa Road",
       "Route: Scenic drive with multiple roadside restaurants and stops available."
     ]
   },
@@ -248,8 +248,8 @@
     "icon": "fas fa-bus",
     "title": "By Bus",
     "details": [
-      "<strong>State Transport:</strong> MSRTC buses operate from Mumbai to Palghar frequently",
-      "<strong>Local Buses:</strong> Regular buses run between Palghar and Kelwa Beach",
+      "State Transport: MSRTC buses operate from Mumbai to Palghar frequently",
+      "Local Buses: Regular buses run between Palghar and Kelwa Beach",
       "Private operators provide tourist buses and minivans on weekends and holidays"
     ]
   },
@@ -266,33 +266,33 @@
 ,
 "gallery": [
   {
-    "src": "/assets/images/beaches/01/img1.jpg",
-    "thumb": "/assets/images/beaches/01/img1.jpg",
+    "src": "/assets/images/beaches/02/img1.jpg",
+    "thumb": "/assets/images/beaches/02/img1.jpg",
     "alt": "Kelwa Beach Sunrise"
   },
   {
-    "src": "/assets/images/beaches/01/img2.jpg",
-    "thumb": "/assets/images/beaches/01/img2.jpg",
+    "src": "/assets/images/beaches/02/img2.jpg",
+    "thumb": "/assets/images/beaches/02/img2.jpg",
     "alt": "Evening by the Beach"
   },
   {
-    "src": "/assets/images/beaches/01/img3.jpg",
-    "thumb": "/assets/images/beaches/01/img3.jpg",
+    "src": "/assets/images/beaches/02/img3.jpg",
+    "thumb": "/assets/images/beaches/02/img3.jpg",
     "alt": "Kelwa Beach Sunrise"
   },
   {
-    "src": "/assets/images/beaches/01/img4.jpg",
-    "thumb": "/assets/images/beaches/01/img4.jpg",
+    "src": "/assets/images/beaches/02/img4.jpg",
+    "thumb": "/assets/images/beaches/02/img4.jpg",
     "alt": "Evening by the Beach"
   },
   {
-    "src": "/assets/images/beaches/01/img5.jpg",
-    "thumb": "/assets/images/beaches/01/img5.jpg",
+    "src": "/assets/images/beaches/02/img5.jpg",
+    "thumb": "/assets/images/beaches/02/img5.jpg",
     "alt": "Kelwa Beach Sunrise"
   },
   {
-    "src": "/assets/images/beaches/01/img6.jpg",
-    "thumb": "/assets/images/beaches/01/img6.jpg",
+    "src": "/assets/images/beaches/02/img6.jpg",
+    "thumb": "/assets/images/beaches/02/img6.jpg",
     "alt": "Evening by the Beach"
   }
 ],

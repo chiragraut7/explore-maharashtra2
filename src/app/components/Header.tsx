@@ -19,7 +19,7 @@ export default function Header() {
     { title: "Wildlife & Nature", href: "/nature" },
     { title: "Religious", href: "/religious" },
     { title: "Cultural", href: "/culture" },
-    { title: "Contact", href: "/contact" },
+    // { title: "Contact", href: "/contact" },
   ]
 
   return (

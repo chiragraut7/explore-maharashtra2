@@ -4,9 +4,9 @@ import { promises as fs } from "fs";
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { category?: string } }
+  context: { params: Promise<{ category?: string }> }
 ) {
-  const category = params?.category;
+  const { category } = await context.params;
 
   // 1️⃣ Validation
   if (!category) {
