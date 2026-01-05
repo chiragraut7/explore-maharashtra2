@@ -2149,9 +2149,10 @@ html {
   line-height: 1.6;
 }
 
-.parallax-text .lead{
+.parallax-text .lead {
   color: #212529;
 }
+
 .text-block p {
   color: #254141;
 }
@@ -2225,7 +2226,8 @@ html {
     bottom: 0.8rem;
     padding: 0.5rem 0.7rem;
   }
-  .homeLinks .col{
+
+  .homeLinks .col {
     width: 33.33%;
     max-width: 33.33%;
     min-width: 33.33%;
@@ -2245,22 +2247,27 @@ html {
   .hero-caption {
     display: none;
   }
-  .containertimeline{
+
+  .containertimeline {
     width: 100%;
   }
-  .containertimeline:after{
+
+  .containertimeline:after {
     display: none;
   }
-  .containertimeline.right{
+
+  .containertimeline.right {
     left: 0;
   }
+
   .right .year,
   .left .year {
-      right: inherit;
-      left: 50%;
-      transform: translate(-50%, -50%) !important;
+    right: inherit;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
   }
-  .homeLinks .col{
+
+  .homeLinks .col {
     width: 50%;
     max-width: 50%;
     min-width: 50%;

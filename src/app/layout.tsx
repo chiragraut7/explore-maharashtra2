@@ -13,7 +13,7 @@ import { LanguageProvider } from './components/context/LanguageContext'
 import BootstrapClient from './BootstrapClient'
 
 /* ----------------------------
-   Fonts
+   Google Font
 ----------------------------- */
 const quicksand = Quicksand({
   subsets: ['latin'],
@@ -44,12 +44,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={quicksand.className}>
-        {/* ✅ Client-only Bootstrap JS */}
+        {/* Bootstrap JS (client only) */}
         <BootstrapClient />
 
         <LanguageProvider>
           <Header />
-          <main>{children}</main>
+          <main role="main">{children}</main>
           <Footer />
         </LanguageProvider>
       </body>

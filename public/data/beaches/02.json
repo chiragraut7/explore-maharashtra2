@@ -135,7 +135,7 @@
 ,
  "attractions": [
   {
-    "image": "/assets/images/beaches/01/img1.jpg",
+    "image": "/assets/images/beaches/02/img11.jpg",
     "title": "Shitladevi Temple",
     "description": "A peaceful and spiritual temple located near the beach. The serene environment and traditional architecture make it a great place to unwind and offer prayers.",
     "icon": "fas fa-pray",
@@ -151,7 +151,7 @@
     "value": "1 km from Kelwa Beach"
   },
   {
-    "image": "/assets/images/beaches/01/img3.jpg",
+    "image": "/assets/images/beaches/02/img12.jpg",
     "title": "Kelwa Dam",
     "description": "A calm spot ideal for picnics and scenic photography. It&apos;s a popular weekend hangout for local families and nature lovers.",
     "icon": "fas fa-camera",
@@ -159,7 +159,7 @@
     "value": "Picnic & Photography"
   },
   {
-    "image": "/assets/images/beaches/01/img4.jpg",
+    "image": "/assets/images/beaches/02/img10.jpg",
     "title": "Pankot Ruins",
     "description": "Explore the lesser-known ruins of Pankot, which reflect the forgotten tales of Kelwa&apos;s past. A quiet and offbeat location.",
     "icon": "fas fa-landmark",
@@ -265,6 +265,31 @@
 ]
 ,
 "gallery": [
+  {
+    "src": "/assets/images/beaches/02/img14.jpg",
+    "thumb": "/assets/images/beaches/02/img14.jpg",
+    "alt": "Evening by the Beach"
+  },
+  {
+    "src": "/assets/images/beaches/02/img10.jpg",
+    "thumb": "/assets/images/beaches/02/img10.jpg",
+    "alt": "Evening by the Beach"
+  },
+  {
+    "src": "/assets/images/beaches/02/img13.jpg",
+    "thumb": "/assets/images/beaches/02/img13.jpg",
+    "alt": "Evening by the Beach"
+  },
+  {
+    "src": "/assets/images/beaches/02/img11.jpg",
+    "thumb": "/assets/images/beaches/02/img11.jpg",
+    "alt": "Evening by the Beach"
+  },
+  {
+    "src": "/assets/images/beaches/02/img12.jpg",
+    "thumb": "/assets/images/beaches/02/img12.jpg",
+    "alt": "Evening by the Beach"
+  },
   {
     "src": "/assets/images/beaches/02/img1.jpg",
     "thumb": "/assets/images/beaches/02/img1.jpg",

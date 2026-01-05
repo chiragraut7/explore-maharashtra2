@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Disable ESLint during builds
-  eslint: {
-    ignoreDuringBuilds: true,
+  experimental: {
+    turbo: false, // ⛔ Disable Turbopack (fixes Google Font error)
   },
 };
 
