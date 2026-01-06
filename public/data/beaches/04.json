@@ -2,8 +2,8 @@
   "id": "04",
   "title": "Murud Beach",
   "subtitle": "Golden sands and the majestic Murud-Janjira Fort",
-  "bannerImage": "/assets/images/beaches/01.jpg",
-  "insideBannerImage": "/assets/images/beaches/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/beaches/010.jpg",
+  "insideBannerImage": "/assets/images/beaches/010/bannerimg.jpg",
   "color": "#1b4d89",
   "overview": [
     "Murud Beach, located in the Raigad district of Maharashtra, is one of the most scenic and historically rich coastal destinations on the Konkan coast. Known for its wide golden sands, calm blue waters, and proximity to the famous Murud-Janjira Fort, this beach beautifully blends natural beauty with Maratha history.",
@@ -33,7 +33,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/01/info3.jpg",
+    "image": "/assets/images/beaches/010/info3.jpg",
     "intro": "Murud Beach lies along the Konkan coast in Raigad district, around 160 km from Mumbai and 50 km from Alibaug.",
     "details": [
       {
@@ -117,7 +117,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/01/img1.jpg",
+      "image": "/assets/images/beaches/010/img1.jpg",
       "title": "Murud-Janjira Fort",
       "description": "A 17th-century island fort built by the Siddis, famous for its invincible design.",
       "distance": "2 km by boat from Murud Beach",
@@ -125,7 +125,7 @@
       "value": "Historic Sea Fort"
     },
     {
-      "image": "/assets/images/beaches/01/img4.jpg",
+      "image": "/assets/images/beaches/010/img4.jpg",
       "title": "Kashid Beach",
       "description": "A serene white sand beach just 18 km away, perfect for day trips and water sports.",
       "distance": "18 km",
@@ -133,7 +133,7 @@
       "value": "Nearby Scenic Beach"
     },
     {
-      "image": "/assets/images/beaches/01/img2.jpg",
+      "image": "/assets/images/beaches/010/img2.jpg",
       "title": "Phansad Wildlife Sanctuary",
       "description": "A dense forest reserve home to diverse flora and fauna, ideal for nature walks.",
       "distance": "15 km",
@@ -201,23 +201,23 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/01/img5.jpg",
-      "thumb": "/assets/images/beaches/01/img5.jpg",
+      "src": "/assets/images/beaches/010/img5.jpg",
+      "thumb": "/assets/images/beaches/010/img5.jpg",
       "alt": "Murud Beach shoreline"
     },
     {
-      "src": "/assets/images/beaches/01/img6.jpg",
-      "thumb": "/assets/images/beaches/01/img6.jpg",
+      "src": "/assets/images/beaches/010/img6.jpg",
+      "thumb": "/assets/images/beaches/010/img6.jpg",
       "alt": "View of Murud-Janjira Fort from the beach"
     },
     {
-      "src": "/assets/images/beaches/01/img7.jpg",
-      "thumb": "/assets/images/beaches/01/img7.jpg",
+      "src": "/assets/images/beaches/010/img7.jpg",
+      "thumb": "/assets/images/beaches/010/img7.jpg",
       "alt": "Golden sands and casuarina trees"
     },
     {
-      "src": "/assets/images/beaches/01/img8.jpg",
-      "thumb": "/assets/images/beaches/01/img8.jpg",
+      "src": "/assets/images/beaches/010/img8.jpg",
+      "thumb": "/assets/images/beaches/010/img8.jpg",
       "alt": "Sunset view at Murud Beach"
     }
   ],

@@ -2,7 +2,7 @@
   "id": "10",
   "title": "Tarkarli Beach",
   "subtitle": "Golden sands, clear waters, and scuba diving paradise",
-  "bannerImage": "/assets/images/beaches/01.jpg",
+  "bannerImage": "/assets/images/beaches/010.jpg",
   "insideBannerImage": "/assets/images/beaches/10/bannerimg.jpg",
   "color": "#008d6e",
   "overview": [
@@ -145,7 +145,7 @@
       "icon": "fas fa-map-marker-alt",
       "distance": "2 km from Tarkarli",
       "value": "Historic Fort",
-      "image": "/assets/images/beaches/01/img4.jpg"
+      "image": "/assets/images/beaches/010/img4.jpg"
     },
     {
       "title": "Chivla Beach",
@@ -153,7 +153,7 @@
       "icon": "fas fa-clock",
       "distance": "Evening for sunset views",
       "value": "Sunset Beach",
-      "image": "/assets/images/beaches/01/img1.jpg"
+      "image": "/assets/images/beaches/010/img1.jpg"
     },
     {
       "title": "Malvan Beach",
@@ -169,7 +169,7 @@
       "icon": "fas fa-pray",
       "distance": "Religious and cultural heritage site",
       "value": "Religious Site",
-      "image": "/assets/images/beaches/01/img3.jpg"
+      "image": "/assets/images/beaches/010/img3.jpg"
     },
     {
       "title": "Tsunami Island",
@@ -177,7 +177,7 @@
       "icon": "fas fa-clock",
       "distance": "Low tide periods",
       "value": "Marine Spot",
-      "image": "/assets/images/beaches/01/tsunami-island.jpg"
+      "image": "/assets/images/beaches/010/tsunami-island.jpg"
     },
     {
       "title": "Sarjekot",
@@ -185,7 +185,7 @@
       "icon": "fas fa-camera",
       "distance": "Photography & sightseeing",
       "value": "Viewpoint",
-      "image": "/assets/images/beaches/01/img5.jpg"
+      "image": "/assets/images/beaches/010/img5.jpg"
     }
   ],
   "marineLife": {

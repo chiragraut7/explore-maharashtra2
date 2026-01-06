@@ -2,9 +2,15 @@
 
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
+
 import BeachSlider from './beaches/BeachSlider'
 import ParallaxBanner from './commonComponents/ParallaxBanner'
+import Translator from './commonComponents/Translator'
+import { useLanguage } from './context/LanguageContext'
 
+/* ----------------------------------
+   Types
+----------------------------------- */
 interface Fort {
   id: string
   title: string
@@ -13,38 +19,52 @@ interface Fort {
   color?: string
 }
 
+/* ----------------------------------
+   Component
+----------------------------------- */
 const FortList: React.FC = () => {
   const [forts, setForts] = useState<Fort[]>([])
+  const { language } = useLanguage()
 
+  /* ----------------------------------
+     Fetch Forts
+  ----------------------------------- */
   useEffect(() => {
     const fetchForts = async () => {
       try {
         const res = await fetch('/api/forts')
         const json = await res.json()
-        if (json.success) setForts(json.data.slice(0, 5))
+        if (json.success) {
+          setForts(json.data.slice(0, 5))
+        }
       } catch (err) {
-        console.error(err)
+        console.error('Failed to fetch forts', err)
       }
     }
     fetchForts()
   }, [])
 
-  // FAST PARALLAX EFFECT
+  /* ----------------------------------
+     FAST PARALLAX EFFECT
+  ----------------------------------- */
   useEffect(() => {
-    const textEls = Array.from(document.querySelectorAll<HTMLElement>('.parallax-text'))
-    const imageEls = Array.from(document.querySelectorAll<HTMLElement>('.parallax-image'))
+    const textEls = Array.from(
+      document.querySelectorAll<HTMLElement>('.parallax-text')
+    )
+    const imageEls = Array.from(
+      document.querySelectorAll<HTMLElement>('.parallax-image')
+    )
 
     const textSpeed = 0.45
     const imageSpeed = 0.9
     const maxMove = 120
-
     let ticking = false
 
     const onScroll = () => {
       if (ticking) return
       ticking = true
 
-      window.requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
         const scrollY = window.scrollY
         const vh = window.innerHeight
 
@@ -53,7 +73,11 @@ const FortList: React.FC = () => {
             const rect = el.getBoundingClientRect()
             const elementTop = rect.top + scrollY
             const progress = (scrollY - elementTop + vh / 2) / vh
-            const translateY = Math.max(Math.min(progress * maxMove * speed, maxMove), -maxMove)
+
+            const translateY = Math.max(
+              Math.min(progress * maxMove * speed, maxMove),
+              -maxMove
+            )
 
             el.style.transform = `translate3d(0, ${translateY}px, 0)`
             el.style.transition = 'transform 0.08s linear'
@@ -82,9 +106,18 @@ const FortList: React.FC = () => {
     }
   }, [forts])
 
+  /* ----------------------------------
+     Helpers
+  ----------------------------------- */
   const generateSlug = (id?: string) =>
-    (id || '').toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '')
+    (id || '')
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[^\w-]+/g, '')
 
+  /* ----------------------------------
+     JSX
+  ----------------------------------- */
   return (
     <section className="container-fluid herosection py-5 px-0 fort-section">
 
@@ -92,8 +125,6 @@ const FortList: React.FC = () => {
       <div className="homeFortsBanner mb-4 p-0">
         <ParallaxBanner
           image="/assets/images/fortsHomeBanner.jpg"
-          minScale={0.1}
-          maxScale={1}
           title="Forts of Maharashtra"
         />
       </div>
@@ -105,13 +136,28 @@ const FortList: React.FC = () => {
           {/* LEFT SECTION */}
           <div className="col-md-5 mb-4 mb-md-0">
             <div className="parallax-text mb-5 pb-5">
-              <h2 className="section-subtitle text-start mb-4">Historic Forts & Legacy</h2>
+
+              <h2 className="section-subtitle text-start mb-4">
+                <Translator
+                  text="Historic Forts & Legacy"
+                  targetLang={language}
+                />
+              </h2>
+
               <p className="lead">
-                Maharashtra is home to some of the most iconic forts in India, carrying the valor and legacy of Chhatrapati Shivaji Maharaj.
+                <Translator
+                  text="Maharashtra is home to some of the most iconic forts in India, carrying the valor and legacy of Chhatrapati Shivaji Maharaj."
+                  targetLang={language}
+                />
               </p>
+
               <p>
-                From sea forts like Sindhudurg & Murud-Janjira to hill forts like Rajgad, Torna & Pratapgad — every fort tells a story of strategy, architecture and courage.
+                <Translator
+                  text="From sea forts like Sindhudurg and Murud-Janjira to hill forts like Rajgad, Torna and Pratapgad — every fort tells a story of strategy, architecture and courage."
+                  targetLang={language}
+                />
               </p>
+
             </div>
 
             <div className="parallax-image image-block">
@@ -138,10 +184,22 @@ const FortList: React.FC = () => {
                   height={800}
                   className="img-fluid rounded-4"
                 />
+
                 <div className="hero-caption">
-                  <h3>Warriors, History & Pride</h3>
-                  <p>Experience Maharashtra’s glorious Maratha heritage.</p>
+                  <h3>
+                    <Translator
+                      text="Warriors, History & Pride"
+                      targetLang={language}
+                    />
+                  </h3>
+                  <p>
+                    <Translator
+                      text="Experience Maharashtra’s glorious Maratha heritage."
+                      targetLang={language}
+                    />
+                  </p>
                 </div>
+
               </div>
             </div>
           </div>
@@ -151,9 +209,18 @@ const FortList: React.FC = () => {
         <div className="row mt-5 pt-5">
           <div className="col-12">
             {forts.length > 0 ? (
-              <BeachSlider beaches={forts} category="forts" generateSlug={generateSlug} />
+              <BeachSlider
+                beaches={forts}
+                category="forts"
+                generateSlug={generateSlug}
+              />
             ) : (
-              <p className="text-center py-4 text-muted">Loading forts...</p>
+              <p className="text-center py-4 text-muted">
+                <Translator
+                  text="Loading forts..."
+                  targetLang={language}
+                />
+              </p>
             )}
           </div>
         </div>

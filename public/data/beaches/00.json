@@ -132,7 +132,7 @@
       "value": "Water Sports Destination"
     },
     {
-      "image": "/assets/images/beaches/01/img1.jpg",
+      "image": "/assets/images/beaches/00/img11.jpg",
       "title": "Rock Garden",
       "description": "A landscaped viewpoint on Malvan’s rocky shore offering panoramic sunset views.",
       "distance": "1 km from Malvan Town",
@@ -140,7 +140,7 @@
       "value": "Viewpoint"
     },
     {
-      "image": "/assets/images/beaches/00/img9.jpg",
+      "image": "/assets/images/beaches/00/img10.jpg",
       "title": "Tsunami Island",
       "description": "A small island formed by a 2004 tsunami, now a hotspot for water sports and boating.",
       "distance": "5 km from Malvan",
@@ -242,6 +242,16 @@
     {
       "src": "/assets/images/beaches/00/img9.jpg",
       "thumb": "/assets/images/beaches/00/img9.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/00/img10.jpg",
+      "thumb": "/assets/images/beaches/00/img10.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/00/img11.jpg",
+      "thumb": "/assets/images/beaches/00/img11.jpg",
       "alt": ""
     }
   ],

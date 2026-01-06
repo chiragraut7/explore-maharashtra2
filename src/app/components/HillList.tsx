@@ -2,9 +2,15 @@
 
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import BeachSlider from './beaches/BeachSlider' // using your slider component
-import ParallaxBanner from './commonComponents/ParallaxBanner' // adjust path if needed
 
+import BeachSlider from './beaches/BeachSlider'
+import ParallaxBanner from './commonComponents/ParallaxBanner'
+import Translator from './commonComponents/Translator'
+import { useLanguage } from './context/LanguageContext'
+
+/* ----------------------------------
+   Types
+----------------------------------- */
 interface Hill {
   id: string
   title: string
@@ -13,37 +19,52 @@ interface Hill {
   color?: string
 }
 
+/* ----------------------------------
+   Component
+----------------------------------- */
 const HillList: React.FC = () => {
   const [hills, setHills] = useState<Hill[]>([])
+  const { language } = useLanguage()
 
+  /* ----------------------------------
+     Fetch Hills
+  ----------------------------------- */
   useEffect(() => {
     const fetchHills = async () => {
       try {
         const res = await fetch('/api/hills')
         const json = await res.json()
-        if (json.success) setHills(json.data.slice(0, 5))
+        if (json.success) {
+          setHills(json.data.slice(0, 5))
+        }
       } catch (err) {
-        console.error(err)
+        console.error('Failed to fetch hills', err)
       }
     }
     fetchHills()
   }, [])
 
-  // SUPER-FAST parallax: images move faster than text (same logic as BeachList)
+  /* ----------------------------------
+     FAST PARALLAX EFFECT
+  ----------------------------------- */
   useEffect(() => {
-    const textEls = Array.from(document.querySelectorAll<HTMLElement>('.parallax-text'))
-    const imageEls = Array.from(document.querySelectorAll<HTMLElement>('.parallax-image'))
+    const textEls = Array.from(
+      document.querySelectorAll<HTMLElement>('.parallax-text')
+    )
+    const imageEls = Array.from(
+      document.querySelectorAll<HTMLElement>('.parallax-image')
+    )
 
     const textSpeed = 0.45
     const imageSpeed = 0.9
     const maxMove = 120
-
     let ticking = false
 
     const onScroll = () => {
       if (ticking) return
       ticking = true
-      window.requestAnimationFrame(() => {
+
+      requestAnimationFrame(() => {
         const scrollY = window.scrollY
         const vh = window.innerHeight
 
@@ -52,7 +73,12 @@ const HillList: React.FC = () => {
             const rect = el.getBoundingClientRect()
             const elementTop = rect.top + scrollY
             const progress = (scrollY - elementTop + vh / 2) / vh
-            const translateY = Math.max(Math.min(progress * maxMove * speed, maxMove), -maxMove)
+
+            const translateY = Math.max(
+              Math.min(progress * maxMove * speed, maxMove),
+              -maxMove
+            )
+
             el.style.transform = `translate3d(0, ${translateY}px, 0)`
             el.style.transition = 'transform 0.08s linear'
 
@@ -80,9 +106,18 @@ const HillList: React.FC = () => {
     }
   }, [hills])
 
+  /* ----------------------------------
+     Helpers
+  ----------------------------------- */
   const generateSlug = (id?: string) =>
-    (id || '').toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '')
+    (id || '')
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[^\w-]+/g, '')
 
+  /* ----------------------------------
+     JSX
+  ----------------------------------- */
   return (
     <section className="container-fluid herosection pb-5 px-0 hill-section">
 
@@ -90,8 +125,6 @@ const HillList: React.FC = () => {
       <div className="homeHillsBanner mb-4 p-0">
         <ParallaxBanner
           image="/assets/images/hillsHomeBanner.jpg"
-          minScale={0.1}
-          maxScale={1}
           title="Hill Stations"
         />
       </div>
@@ -99,17 +132,32 @@ const HillList: React.FC = () => {
       {/* CONTENT */}
       <section className="container">
         <div className="row py-4 align-items-center justify-content-between">
-          
+
           {/* LEFT TEXT + IMAGE */}
           <div className="col-md-5 mb-4 mb-md-0">
             <div className="parallax-text mb-5 pb-5">
-              <h2 className="section-subtitle text-start mb-4">Western Ghats & Hill Escapes</h2>
+
+              <h2 className="section-subtitle text-start mb-4">
+                <Translator
+                  text="Western Ghats & Hill Escapes"
+                  targetLang={language}
+                />
+              </h2>
+
               <p className="lead">
-                Maharashtra's hill stations offer misty viewpoints, ancient temples, lush valleys and pleasant climates — perfect for weekend getaways.
+                <Translator
+                  text="Maharashtra's hill stations offer misty viewpoints, ancient temples, lush valleys and pleasant climates — perfect for weekend getaways."
+                  targetLang={language}
+                />
               </p>
+
               <p>
-                Explore spots like Mahabaleshwar, Lonavala, Matheran and quieter hill retreats for treks, viewpoints, fruit orchards and delicious local fare.
+                <Translator
+                  text="Explore spots like Mahabaleshwar, Lonavala, Matheran and quieter hill retreats for treks, viewpoints, fruit orchards and delicious local fare."
+                  targetLang={language}
+                />
               </p>
+
             </div>
 
             <div className="parallax-image image-block">
@@ -120,7 +168,6 @@ const HillList: React.FC = () => {
                   width={900}
                   height={600}
                   className="img-fluid rounded-4"
-                  priority={false}
                 />
               </div>
             </div>
@@ -136,29 +183,49 @@ const HillList: React.FC = () => {
                   width={1200}
                   height={800}
                   className="img-fluid rounded-4"
-                  priority={false}
                 />
+
                 <div className="hero-caption">
-                  <h3>Mists, Viewpoints & Trails</h3>
-                  <p>Perfect for monsoon treks, scenic drives and peaceful stays.</p>
+                  <h3>
+                    <Translator
+                      text="Mists, Viewpoints & Trails"
+                      targetLang={language}
+                    />
+                  </h3>
+                  <p>
+                    <Translator
+                      text="Perfect for monsoon treks, scenic drives and peaceful stays."
+                      targetLang={language}
+                    />
+                  </p>
                 </div>
+
               </div>
             </div>
           </div>
+
         </div>
 
         {/* Slider */}
         <div className="row mt-5 pt-5">
           <div className="col-12">
             {hills.length > 0 ? (
-              <BeachSlider beaches={hills} category="hills" generateSlug={generateSlug} />
+              <BeachSlider
+                beaches={hills}
+                category="hills"
+                generateSlug={generateSlug}
+              />
             ) : (
               <p className="text-center py-4 text-muted">
-                Loading hill stations...
+                <Translator
+                  text="Loading hill stations..."
+                  targetLang={language}
+                />
               </p>
             )}
           </div>
         </div>
+
       </section>
     </section>
   )

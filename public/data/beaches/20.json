@@ -2,8 +2,8 @@
   "id": "20",
   "title": "Kelshi Beach",
   "subtitle": "A Serene Hidden Gem on the Konkan Coast",
-  "bannerImage": "/assets/images/beaches/01.jpg",
-  "insideBannerImage": "/assets/images/beaches/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/beaches/010.jpg",
+  "insideBannerImage": "/assets/images/beaches/010/bannerimg.jpg",
   "color": "#00786F",
   "overview": [
     "Kelshi Beach, located in the Ratnagiri district of Maharashtra, is a peaceful and pristine coastal village on the Konkan shoreline. Known for its untouched natural beauty, black-sand shores, and calm atmosphere, it’s an ideal escape for solitude seekers and nature enthusiasts.",
@@ -28,7 +28,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/01/info3.jpg",
+    "image": "/assets/images/beaches/010/info3.jpg",
     "intro": "Kelshi is a small coastal village located around 35 km from Dapoli in Ratnagiri district, along the northern Konkan coastline.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Ratnagiri District, Maharashtra" },
@@ -74,7 +74,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/01/img1.jpg",
+      "image": "/assets/images/beaches/010/img1.jpg",
       "title": "Kelshi Sand Dunes",
       "description": "Natural formations of sand created by years of tidal activity — a must-see geological feature.",
       "distance": "On the beachfront",
@@ -82,7 +82,7 @@
       "value": "Natural Formation"
     },
     {
-      "image": "/assets/images/beaches/01/img1.jpg",
+      "image": "/assets/images/beaches/010/img1.jpg",
       "title": "Harnai Fort",
       "description": "A coastal fort located about 30 km from Kelshi, offering sea views and Maratha history.",
       "distance": "30 km",
@@ -136,8 +136,8 @@
     }
   ],
   "gallery": [
-    { "src": "/assets/images/beaches/01/img1.jpg", "thumb": "/assets/images/beaches/01/img1.jpg", "alt": "Peaceful shore of Kelshi Beach" },
-    { "src": "/assets/images/beaches/01/img2.jpg", "thumb": "/assets/images/beaches/01/img2.jpg", "alt": "Yakub Baba Dargah near the dunes" }
+    { "src": "/assets/images/beaches/010/img1.jpg", "thumb": "/assets/images/beaches/010/img1.jpg", "alt": "Peaceful shore of Kelshi Beach" },
+    { "src": "/assets/images/beaches/010/img2.jpg", "thumb": "/assets/images/beaches/010/img2.jpg", "alt": "Yakub Baba Dargah near the dunes" }
   ],
   "bookingTips": [
     { "icon": "fa-solid fa-house", "description": "Stay in local homestays to experience true Konkan hospitality." },

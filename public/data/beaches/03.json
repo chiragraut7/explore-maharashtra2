@@ -2,8 +2,8 @@
   "id": "03",
   "title": "Kashid Beach",
   "subtitle": "White sands, turquoise waters, and lush green hills",
-  "bannerImage": "/assets/images/beaches/01.jpg",
-  "insideBannerImage": "/assets/images/beaches/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/beaches/010.jpg",
+  "insideBannerImage": "/assets/images/beaches/010/bannerimg.jpg",
     "color": "#201f22",
   "overview": [
       "Kashid Beach is a picturesque seaside destination located along the Konkan coast between Alibaug and Murud in Maharashtra. Known for its white sand, clear blue waters, and green surroundings, it is a favorite weekend retreat for Mumbaikars and Punekars.",
@@ -33,7 +33,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/01/info3.jpg",
+    "image": "/assets/images/beaches/010/info3.jpg",
     "intro": "Kashid Beach lies on the Arabian Sea coastline in the Raigad district, about 30 km from Alibaug.",
     "details": [
       {
@@ -117,7 +117,7 @@
   ],
   "attractions": [
   {
-    "image": "/assets/images/beaches/01/img1.jpg",
+    "image": "/assets/images/beaches/010/img1.jpg",
     "title": "Murud-Janjira Fort",
     "description": "A majestic sea fort located 20 km from Kashid, famous for its stronghold history and architecture.",
     "distance": "20 km from Kashid",
@@ -125,7 +125,7 @@
     "value": "Historic Sea Fort"
   },
   {
-    "image": "/assets/images/beaches/01/img2.jpg",
+    "image": "/assets/images/beaches/010/img2.jpg",
     "title": "Phansad Wildlife Sanctuary",
     "description": "Lush forest reserve home to leopards, birds, and medicinal plants.",
     "distance": "12 km from Kashid",
@@ -133,7 +133,7 @@
     "value": "Nature Reserve"
   },
   {
-    "image": "/assets/images/beaches/01/img3.jpg",
+    "image": "/assets/images/beaches/010/img3.jpg",
     "title": "Datta Mandir Hill",
     "description": "Small hilltop temple offering panoramic views of the beach.",
     "distance": "2 km from beach",
@@ -202,18 +202,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/01/img1.jpg",
-      "thumb": "/assets/images/beaches/01/img1.jpg",
+      "src": "/assets/images/beaches/010/img1.jpg",
+      "thumb": "/assets/images/beaches/010/img1.jpg",
       "alt": "Kashid Beach White Sands"
     },
     {
-      "src": "/assets/images/beaches/01/img2.jpg",
-      "thumb": "/assets/images/beaches/01/img2.jpg",
+      "src": "/assets/images/beaches/010/img2.jpg",
+      "thumb": "/assets/images/beaches/010/img2.jpg",
       "alt": "Casuarina Tree Line"
     },
     {
-      "src": "/assets/images/beaches/01/img3.jpg",
-      "thumb": "/assets/images/beaches/01/img3.jpg",
+      "src": "/assets/images/beaches/010/img3.jpg",
+      "thumb": "/assets/images/beaches/010/img3.jpg",
       "alt": "Sunset at Kashid"
     }
   ],
