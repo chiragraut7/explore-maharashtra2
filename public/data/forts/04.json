@@ -2,8 +2,7 @@
   "id": "04",
   "title": "Sinhagad Fort",
   "subtitle": "The Fort of the Brave Lion",
-  "bannerImage": "/assets/images/forts/01.jpg",
-  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
+  "bannerImage": "/images/forts/sinhagad/sinhagad-banner.jpg",
   "color": "#6a3b12",
   "overview": [
     "Sinhagad Fort, perched atop the Bhuleshwar range of the Sahyadri Mountains near Pune, is one of Maharashtra’s most famous hill forts. Its name translates to 'Fort of the Lion,' commemorating the bravery of Maratha warrior Tanaji Malusare.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/forts/01/info2.jpg",
+    "image": "/images/forts/sinhagad/sinhagad-geography.jpg",
     "intro": "Sinhagad Fort stands about 35 km southwest of Pune at an elevation of around 4,300 feet. Its strategic location made it a vital defensive fortification during the Maratha Empire.",
     "details": [
       {
@@ -97,7 +96,7 @@
   ],
   "attractions": [
     {
-    "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/sinhagad/tanaji-samadhi.jpg",
       "title": "Tanaji Malusare Samadhi",
       "description": "The memorial of the brave Maratha warrior Tanaji Malusare who laid down his life in the 1670 battle.",
       "distance": "Fort interior",
@@ -105,7 +104,7 @@
       "value": "Historic Memorial"
     },
     {
-    "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/sinhagad/kalyan-darwaza.jpg",
       "title": "Kalyan Darwaza",
       "description": "One of the main entrances of the fort, showcasing ancient Maratha architecture and defensive design.",
       "distance": "Eastern entrance",
@@ -113,7 +112,7 @@
       "value": "Architectural Heritage"
     },
     {
-    "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/sinhagad/khadakwasla-view.jpg",
       "title": "Khadakwasla Viewpoint",
       "description": "A stunning viewpoint overlooking Khadakwasla Dam and the city of Pune in the distance.",
       "distance": "Fort top",
@@ -168,18 +167,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/sinhagad/gallery1.jpg",
+      "thumb": "/images/forts/sinhagad/thumb1.jpg",
       "alt": "View of Sinhagad Fort from base village"
     },
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/sinhagad/gallery2.jpg",
+      "thumb": "/images/forts/sinhagad/thumb2.jpg",
       "alt": "Tanaji Malusare Samadhi at Sinhagad"
     },
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/sinhagad/gallery3.jpg",
+      "thumb": "/images/forts/sinhagad/thumb3.jpg",
       "alt": "Sunrise view from Sinhagad Fort top"
     }
   ],

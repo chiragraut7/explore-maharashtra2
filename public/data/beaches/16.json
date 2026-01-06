@@ -2,8 +2,8 @@
   "id": "16",
   "title": "Shiroda Beach",
   "subtitle": "A Serene Coastal Paradise near the Goa Border",
-  "bannerImage": "/assets/images/beaches/16.jpg",
-  "insideBannerImage": "/assets/images/beaches/16/bannerimg.jpg",
+  "bannerImage": "/assets/images/beaches/shiroda-banner.jpg",
+  "insideBannerImage": "/assets/images/beaches/16/bannerImg.jpg",
   "color": "#0EA5E9",
   "overview": [
     "Shiroda Beach, located in Sindhudurg district near the Goa border, is a hidden gem known for its tranquil environment, white sandy shores, and clear blue waters. The beach remains unspoiled by heavy tourism, offering an ideal retreat for peace-seekers and nature lovers.",
@@ -97,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/16/img3.jpg",
+      "image": "/assets/images/beaches/16/img1.jpg",
       "title": "Swayambhu Shiva Temple",
       "description": "An ancient seaside temple dedicated to Lord Shiva, believed to be self-manifested.",
       "distance": "1 km",
@@ -154,16 +154,11 @@
     {
       "src": "/assets/images/beaches/16/img1.jpg",
       "thumb": "/assets/images/beaches/16/img1.jpg",
-      "alt": ""
+      "alt": "Shiroda Beach Aerial View"
     },
     {
       "src": "/assets/images/beaches/16/img2.jpg",
       "thumb": "/assets/images/beaches/16/img2.jpg",
-      "alt": "Sunset at Shiroda Beach"
-    },
-    {
-      "src": "/assets/images/beaches/16/img3.jpg",
-      "thumb": "/assets/images/beaches/16/img3.jpg",
       "alt": "Sunset at Shiroda Beach"
     }
   ],

@@ -2,8 +2,7 @@
   "id": "22",
   "title": "Randha Falls",
   "subtitle": "Majestic Waterfall on the Pravara River near Bhandardara",
-  "bannerImage": "/assets/images/nature/01.jpg",
-  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
+  "bannerImage": "/images/nature/randha/banner.jpg",
   "color": "#00796b",
   "overview": [
     "Randha Falls, located near Bhandardara in Ahmednagar district, is one of the most spectacular waterfalls in Maharashtra. The Pravara River plunges from a height of about 170 feet into a deep gorge, creating a mesmerizing view surrounded by lush greenery.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/nature/01/info2.jpg",
+    "image": "/images/nature/randha/geography.jpg",
     "intro": "Randha Falls is formed by the Pravara River near Bhandardara, located in the Sahyadri mountain range of western Maharashtra.",
     "details": [
       {
@@ -97,7 +96,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/randha/bhandardara-dam.jpg",
       "title": "Bhandardara Dam (Wilson Dam)",
       "description": "One of the oldest dams in India, known for its scenic reservoir and boating.",
       "distance": "10 km from Randha Falls",
@@ -105,7 +104,7 @@
       "value": "Ideal for sunrise and sunset views."
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/randha/arthur-lake.jpg",
       "title": "Arthur Lake",
       "description": "A serene lake surrounded by mountains, perfect for picnics and boating.",
       "distance": "12 km from Randha Falls",
@@ -113,7 +112,7 @@
       "value": "Peaceful lakeside environment."
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/randha/ratangad-fort.jpg",
       "title": "Ratangad Fort",
       "description": "A popular trekking destination offering panoramic views of Bhandardara valley.",
       "distance": "25 km from Randha Falls",
@@ -168,18 +167,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/randha/randha1.jpg",
+      "thumb": "/images/nature/randha/randha1_thumb.jpg",
       "alt": "Randha Falls during monsoon"
     },
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/randha/randha2.jpg",
+      "thumb": "/images/nature/randha/randha2_thumb.jpg",
       "alt": "Misty gorge view of Randha Falls"
     },
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/randha/randha3.jpg",
+      "thumb": "/images/nature/randha/randha3_thumb.jpg",
       "alt": "Surrounding greenery of Randha Falls"
     }
   ],

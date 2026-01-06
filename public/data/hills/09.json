@@ -2,8 +2,8 @@
   "id": "09",
   "title": "Lavasa Hill Station",
   "subtitle": "India’s First Planned Hill City near Pune",
-  "bannerImage": "/assets/images/hills/01.jpg",
-  "insideBannerImage": "/assets/images/hills/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/hills/09.jpg",
+  "insideBannerImage": "/assets/images/hills/09/bannerimg.jpg",
   "color": "#2a7ebf",
   "overview": [
     "Lavasa is a modern hill station and private city located near Pune in Maharashtra, inspired by the Italian town of Portofino. It is spread across seven hills covering over 25,000 acres and offers a perfect blend of natural beauty and urban planning.",
@@ -23,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/hills/01/info2.jpg",
+    "image": "/assets/images/hills/09/info2.jpg",
     "intro": "Lavasa is situated in the Mulshi Valley of the Western Ghats near Pune. It overlooks the Warasgaon Lake and is surrounded by lush hills and valleys.",
     "details": [
       {
@@ -98,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/hills/01/img1.jpg",
+      "image": "/assets/images/hills/09/img1.jpg",
       "title": "Warasgaon Lake",
       "description": "A vast, calm lake offering boating, kayaking, and stunning reflections of the hills.",
       "distance": "Within Lavasa city",
@@ -106,7 +106,7 @@
       "value": "Main attraction for water sports"
     },
     {
-      "image": "/assets/images/hills/01/img2.jpg",
+      "image": "/assets/images/hills/09/img2.jpg",
       "title": "Lakeside Promenade",
       "description": "Vibrant lakeside walkway with eateries, boutiques, and scenic seating spots.",
       "distance": "Central Lavasa",
@@ -153,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/hills/01/img1.jpg",
-      "thumb": "/assets/images/hills/01/img1.jpg",
+      "src": "/assets/images/hills/09/img1.jpg",
+      "thumb": "/assets/images/hills/09/img1.jpg",
       "alt": "Lavasa lakeside promenade"
     },
     {
-      "src": "/assets/images/hills/01/img2.jpg",
-      "thumb": "/assets/images/hills/01/img2.jpg",
+      "src": "/assets/images/hills/09/img2.jpg",
+      "thumb": "/assets/images/hills/09/img2.jpg",
       "alt": "Warasgaon Lake view"
     }
   ],

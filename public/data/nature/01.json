@@ -2,8 +2,7 @@
   "id": "01",
   "title": "Amboli Ghat",
   "subtitle": "The Queen of Sahyadri – A misty paradise in the Western Ghats",
-  "bannerImage": "/assets/images/nature/01.jpg",
-  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/nature/amboli-ghat.jpg",
   "color": "#2d5b4c",
   "overview": [
     "Amboli Ghat, located in the Sindhudurg district of Maharashtra, is one of the most scenic hill regions of the Western Ghats. It is known for its lush green forests, numerous waterfalls, and breathtaking viewpoints overlooking the Konkan coast.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/nature/01/info2.jpg",
+    "image": "/assets/images/nature/amboli-map.jpg",
     "intro": "Amboli lies in the southern range of the Sahyadris, near the Goa-Maharashtra border, overlooking the lush Konkan plains.",
     "details": [
       {
@@ -92,7 +91,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/assets/images/nature/amboli-waterfall.jpg",
       "title": "Amboli Waterfall",
       "description": "A popular attraction cascading down rocky cliffs, surrounded by dense greenery.",
       "distance": "2 km from Amboli town",
@@ -100,7 +99,7 @@
       "value": "Main Waterfall Spot"
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/assets/images/nature/hiranyakeshi-temple.jpg",
       "title": "Hiranyakeshi Temple",
       "description": "Ancient Shiva temple near the source of the Hiranyakeshi River.",
       "distance": "5 km from Amboli",
@@ -108,7 +107,7 @@
       "value": "Religious & Natural Site"
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/assets/images/nature/sea-view-point.jpg",
       "title": "Sea View Point",
       "description": "Offers breathtaking panoramic views of the Konkan coastline.",
       "distance": "3 km from main Amboli",
@@ -163,13 +162,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/assets/images/nature/amboli-fog.jpg",
+      "thumb": "/assets/images/nature/amboli-fog-thumb.jpg",
       "alt": "Misty roads at Amboli Ghat"
     },
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/assets/images/nature/amboli-forest.jpg",
+      "thumb": "/assets/images/nature/amboli-forest-thumb.jpg",
       "alt": "Dense forests around Amboli"
     }
   ],

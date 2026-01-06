@@ -2,8 +2,8 @@
   "id": "10",
   "title": "Amboli Hill Station",
   "subtitle": "The Queen of the Sahyadri Hills",
-  "bannerImage": "/assets/images/hills/01.jpg",
-  "insideBannerImage": "/assets/images/hills/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/hills/10.jpg",
+  "insideBannerImage": "/assets/images/hills/10/bannerimg.jpg",
   "color": "#0c3b2e",
   "overview": [
     "Amboli, known as the ‘Queen of the Sahyadri Hills’, is a picturesque hill station located in the Sindhudurg district of Maharashtra.",
@@ -28,7 +28,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/hills/01/info2.jpg",
+    "image": "/assets/images/hills/10/info2.jpg",
     "intro": "Located in the southern range of the Sahyadris, Amboli lies at an altitude of 690 meters, receiving the highest rainfall in Maharashtra.",
     "details": [
       {
@@ -107,7 +107,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/hills/01/img1.jpg",
+      "image": "/assets/images/hills/10/img1.jpg",
       "title": "Amboli Waterfall",
       "description": "A popular spot cascading down rocky terrain, especially vibrant during monsoon.",
       "distance": "3 km from main market",
@@ -115,7 +115,7 @@
       "value": "Natural beauty & adventure"
     },
     {
-      "image": "/assets/images/hills/01/img2.jpg",
+      "image": "/assets/images/hills/10/img2.jpg",
       "title": "Hiranyakeshi Temple",
       "description": "A sacred temple where the Hiranyakeshi River originates from a cave, dedicated to Goddess Parvati.",
       "distance": "5 km from Amboli Bus Stand",
@@ -123,7 +123,7 @@
       "value": "Spiritual & natural significance"
     },
     {
-      "image": "/assets/images/hills/01/img3.jpg",
+      "image": "/assets/images/hills/10/img3.jpg",
       "title": "Nangartas Waterfall",
       "description": "A breathtaking waterfall viewable from a viewpoint, located on the Sawantwadi–Amboli road.",
       "distance": "10 km from Amboli",
@@ -131,7 +131,7 @@
       "value": "Scenic spot for photography"
     },
     {
-      "image": "/assets/images/hills/01/img4.jpg",
+      "image": "/assets/images/hills/10/img4.jpg",
       "title": "Mahadevgad Point",
       "description": "Offers panoramic views of the Konkan region and stunning sunset vistas.",
       "distance": "2 km from town center",
@@ -186,23 +186,23 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/hills/01/img1.jpg",
-      "thumb": "/assets/images/hills/01/img1.jpg",
+      "src": "/assets/images/hills/10/img1.jpg",
+      "thumb": "/assets/images/hills/10/img1.jpg",
       "alt": "Amboli Waterfall"
     },
     {
-      "src": "/assets/images/hills/01/img2.jpg",
-      "thumb": "/assets/images/hills/01/img2.jpg",
+      "src": "/assets/images/hills/10/img2.jpg",
+      "thumb": "/assets/images/hills/10/img2.jpg",
       "alt": "Hiranyakeshi Temple Cave"
     },
     {
-      "src": "/assets/images/hills/01/img3.jpg",
-      "thumb": "/assets/images/hills/01/img3.jpg",
+      "src": "/assets/images/hills/10/img3.jpg",
+      "thumb": "/assets/images/hills/10/img3.jpg",
       "alt": "Amboli Hill View"
     },
     {
-      "src": "/assets/images/hills/01/img4.jpg",
-      "thumb": "/assets/images/hills/01/img4.jpg",
+      "src": "/assets/images/hills/10/img4.jpg",
+      "thumb": "/assets/images/hills/10/img4.jpg",
       "alt": "Amboli Hill View"
     }
   ],

@@ -2,8 +2,8 @@
   "id": "18",
   "title": "Bhimashankar",
   "subtitle": "Sacred Hills of Lord Shiva Amidst the Sahyadris",
-  "bannerImage": "/assets/images/hills/01.jpg",
-  "insideBannerImage": "/assets/images/hills/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/hills/18.jpg",
+  "insideBannerImage": "/assets/images/hills/18/bannerimg.jpg",
   "color": "#2e5c2c",
   "overview": [
     "Bhimashankar, nestled deep in the Sahyadri ranges of Maharashtra, is a serene hill destination renowned both as a wildlife sanctuary and one of the 12 Jyotirlinga shrines of Lord Shiva.",
@@ -23,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/hills/01/info2.jpg",
+    "image": "/assets/images/hills/18/info2.jpg",
     "intro": "Bhimashankar lies in the Western Ghats, straddling the border between Pune and Raigad districts. The area is covered in dense evergreen forests and rolling hills.",
     "details": [
       {
@@ -98,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/hills/01/img1.jpg",
+      "image": "/assets/images/hills/18/img1.jpg",
       "title": "Bhimashankar Temple",
       "description": "An ancient stone temple dedicated to Lord Shiva, reflecting exquisite Nagara-style architecture.",
       "distance": "In Bhimashankar town",
@@ -106,7 +106,7 @@
       "value": "One of the 12 Jyotirlingas of India."
     },
     {
-      "image": "/assets/images/hills/01/img2.jpg",
+      "image": "/assets/images/hills/18/img2.jpg",
       "title": "Hanuman Lake",
       "description": "A calm lake near the temple surrounded by forest trails and monkeys — ideal for short nature walks.",
       "distance": "1 km",
@@ -153,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/hills/01/img1.jpg",
-      "thumb": "/assets/images/hills/01/img1.jpg",
+      "src": "/assets/images/hills/18/img1.jpg",
+      "thumb": "/assets/images/hills/18/img1.jpg",
       "alt": "Bhimashankar Temple surrounded by mist"
     },
     {
-      "src": "/assets/images/hills/01/img2.jpg",
-      "thumb": "/assets/images/hills/01/img2.jpg",
+      "src": "/assets/images/hills/18/img2.jpg",
+      "thumb": "/assets/images/hills/18/img2.jpg",
       "alt": "Trekking trail through Bhimashankar forest"
     }
   ],

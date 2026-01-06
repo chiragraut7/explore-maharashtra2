@@ -2,8 +2,7 @@
   "id": "08",
   "title": "Jejuri Khandoba Temple",
   "subtitle": "The Golden Hill Shrine of Lord Khandoba — Guardian Deity of Maharashtra",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/jejuri/banner.jpg",
   "color": "#D97706",
   "overview": [
     "Jejuri, located near Pune, is one of the most famous pilgrimage centers in Maharashtra dedicated to Lord Khandoba, an incarnation of Lord Shiva. The temple, perched atop a hill, offers panoramic views of the surrounding region and holds immense cultural and spiritual significance.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/jejuri/map.jpg",
     "intro": "Jejuri is situated about 50 km southeast of Pune city, on the banks of the Karha River in Purandar taluka.",
     "details": [
       {
@@ -101,7 +100,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/jejuri/temple.jpg",
       "title": "Main Khandoba Temple",
       "description": "A grand temple built with yellow basalt stone, featuring exquisite carvings and a tall Dipmal (lamp tower).",
       "distance": "0 km",
@@ -109,7 +108,7 @@
       "value": "Main Shrine"
     },
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/jejuri/dipmal.jpg",
       "title": "Deepmal (Lamp Tower)",
       "description": "A magnificent stone lamp tower lit during special occasions, illuminating the entire temple hill.",
       "distance": "0.2 km",
@@ -117,7 +116,7 @@
       "value": "Historic Monument"
     },
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/jejuri/karha.jpg",
       "title": "Karha River Ghats",
       "description": "Sacred riverbank where devotees perform ritual baths before visiting the temple.",
       "distance": "1 km",
@@ -164,18 +163,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
+      "src": "/images/religious/jejuri/1.jpg",
+      "thumb": "/images/religious/jejuri/thumb1.jpg",
       "alt": "Jejuri Khandoba Temple Hill"
     },
     {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
+      "src": "/images/religious/jejuri/2.jpg",
+      "thumb": "/images/religious/jejuri/thumb2.jpg",
       "alt": "Bhandara Festival Turmeric Clouds"
     },
     {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
+      "src": "/images/religious/jejuri/3.jpg",
+      "thumb": "/images/religious/jejuri/thumb3.jpg",
       "alt": "Devotees at Jejuri Steps"
     }
   ],

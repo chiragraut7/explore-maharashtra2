@@ -2,8 +2,8 @@
   "id": "13",
   "title": "Kaas Plateau",
   "subtitle": "The Valley of Flowers of Maharashtra",
-  "bannerImage": "/assets/images/hills/01.jpg",
-  "insideBannerImage": "/assets/images/hills/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/hills/13.jpg",
+  "insideBannerImage": "/assets/images/hills/13/bannerimg.jpg",
   "color": "#8b5e3c",
   "overview": [
     "Kaas Plateau, located near Satara in Maharashtra, is a UNESCO World Natural Heritage site known for its breathtaking seasonal bloom of wildflowers.",
@@ -23,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/hills/01/info2.jpg",
+    "image": "/assets/images/hills/13/info2.jpg",
     "intro": "Perched high in the Sahyadri Range, Kaas Plateau overlooks the serene Kaas Lake and lies around 25 km from Satara city.",
     "details": [
       {
@@ -98,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/hills/01/img1.jpg",
+      "image": "/assets/images/hills/13/img1.jpg",
       "title": "Kaas Lake",
       "description": "A calm lake beside the plateau, surrounded by hills and lush greenery.",
       "distance": "1 km",
@@ -106,7 +106,7 @@
       "value": "Tranquil natural beauty ideal for peaceful moments."
     },
     {
-      "image": "/assets/images/hills/01/img2.jpg",
+      "image": "/assets/images/hills/13/img2.jpg",
       "title": "Kanher Dam",
       "description": "A large dam offering boating and panoramic views of the Western Ghats.",
       "distance": "15 km",
@@ -153,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/hills/01/img1.jpg",
-      "thumb": "/assets/images/hills/01/img1.jpg",
+      "src": "/assets/images/hills/13/img1.jpg",
+      "thumb": "/assets/images/hills/13/img1.jpg",
       "alt": "Colorful flower fields at Kaas Plateau"
     },
     {
-      "src": "/assets/images/hills/01/img2.jpg",
-      "thumb": "/assets/images/hills/01/img2.jpg",
+      "src": "/assets/images/hills/13/img2.jpg",
+      "thumb": "/assets/images/hills/13/img2.jpg",
       "alt": "Kaas Lake near the Plateau"
     }
   ],

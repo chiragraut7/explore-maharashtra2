@@ -2,8 +2,7 @@
   "id": "10",
   "title": "Melghat Tiger Reserve",
   "subtitle": "A Majestic Wilderness in the Satpura Ranges",
-  "bannerImage": "/assets/images/nature/01.jpg",
-  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
+  "bannerImage": "/images/nature/melghat-banner.jpg",
   "color": "#30534a",
   "overview": [
     "Melghat Tiger Reserve, located in the Amravati district of Maharashtra, is one of the first nine tiger reserves established under India’s Project Tiger in 1973. It is known for its rugged hills, deep valleys, and dense forests, forming part of the Satpura mountain ranges.",
@@ -22,46 +21,20 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/nature/01/info2.jpg",
+    "image": "/images/nature/melghat-geography.jpg",
     "intro": "Melghat Tiger Reserve lies in the Satpura hill ranges along the Maharashtra–Madhya Pradesh border, covering dense forests, rivers, and undulating plateaus.",
     "details": [
-      {
-        "icon": "fas fa-map-marker-alt",
-        "label": "District",
-        "value": "Amravati, Maharashtra"
-      },
-      {
-        "icon": "fas fa-ruler-combined",
-        "label": "Area",
-        "value": "1,676 sq km"
-      },
-      {
-        "icon": "fas fa-tree",
-        "label": "Vegetation",
-        "value": "Dry deciduous and moist forest mix"
-      },
-      {
-        "icon": "fas fa-water",
-        "label": "Major Rivers",
-        "value": "Tapti and Sipna Rivers"
-      },
-      {
-        "icon": "fas fa-mountain",
-        "label": "Terrain",
-        "value": "Hilly with steep valleys and plateaus"
-      }
+      { "icon": "fas fa-map-marker-alt", "label": "District", "value": "Amravati, Maharashtra" },
+      { "icon": "fas fa-ruler-combined", "label": "Area", "value": "1,676 sq km" },
+      { "icon": "fas fa-tree", "label": "Vegetation", "value": "Dry deciduous and moist forest mix" },
+      { "icon": "fas fa-water", "label": "Major Rivers", "value": "Tapti and Sipna Rivers" },
+      { "icon": "fas fa-mountain", "label": "Terrain", "value": "Hilly with steep valleys and plateaus" }
     ],
     "climate": {
       "description": "Melghat has a tropical climate with moderate winters and hot summers. The post-monsoon season brings lush greenery and scenic beauty.",
       "seasons": [
-        {
-          "icon": "fas fa-sun",
-          "text": "Best Season: October to March (cool and pleasant)"
-        },
-        {
-          "icon": "fas fa-cloud-rain",
-          "text": "Monsoon: June to September (dense forest and waterfalls)"
-        }
+        { "icon": "fas fa-sun", "text": "Best Season: October to March (cool and pleasant)" },
+        { "icon": "fas fa-cloud-rain", "text": "Monsoon: June to September (dense forest and waterfalls)" }
       ]
     },
     "conclusion": "The Satpura ranges make Melghat a perfect habitat for wildlife, with natural water sources and dense cover supporting rich biodiversity."
@@ -97,7 +70,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/semadoh.jpg",
       "title": "Semadoh Eco-Tourism Zone",
       "description": "Main safari entry point offering forest lodges, interpretation centers, and nature walks.",
       "distance": "80 km from Amravati",
@@ -105,7 +78,7 @@
       "value": "Tourism Hub"
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/hurricane-point.jpg",
       "title": "Hurricane Point",
       "description": "A popular viewpoint providing a panoramic view of Melghat’s valleys and forest canopy.",
       "distance": "Near Chikhaldara",
@@ -159,34 +132,13 @@
     }
   ],
   "gallery": [
-    {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
-      "alt": "Tiger at Melghat"
-    },
-    {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
-      "alt": "Safari vehicle in forest"
-    },
-    {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
-      "alt": "Dense forest view"
-    }
+    { "src": "/images/nature/melghat-tiger.jpg", "thumb": "/images/nature/melghat-tiger-thumb.jpg", "alt": "Tiger at Melghat" },
+    { "src": "/images/nature/melghat-safari.jpg", "thumb": "/images/nature/melghat-safari-thumb.jpg", "alt": "Safari vehicle in forest" },
+    { "src": "/images/nature/melghat-forest.jpg", "thumb": "/images/nature/melghat-forest-thumb.jpg", "alt": "Dense forest view" }
   ],
   "bookingTips": [
-    {
-      "icon": "fas fa-ticket-alt",
-      "description": "Book safaris online in advance through the official Melghat Tiger Reserve portal."
-    },
-    {
-      "icon": "fas fa-calendar-alt",
-      "description": "Ideal visiting season is October to March for pleasant weather."
-    },
-    {
-      "icon": "fas fa-lightbulb",
-      "description": "Carry binoculars, insect repellent, and lightweight clothing for safaris and treks."
-    }
+    { "icon": "fas fa-ticket-alt", "description": "Book safaris online in advance through the official Melghat Tiger Reserve portal." },
+    { "icon": "fas fa-calendar-alt", "description": "Ideal visiting season is October to March for pleasant weather." },
+    { "icon": "fas fa-lightbulb", "description": "Carry binoculars, insect repellent, and lightweight clothing for safaris and treks." }
   ]
 }

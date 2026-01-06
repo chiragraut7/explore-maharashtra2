@@ -2,8 +2,7 @@
   "id": "23",
   "title": "Mayureshwar Temple, Morgaon",
   "subtitle": "The first and foremost Ashtavinayak Temple of Lord Ganesha",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/mayureshwar/banner.jpg",
   "color": "#f5c542",
   "overview": [
     "Mayureshwar Temple at Morgaon is considered the first among the eight revered Ashtavinayak temples dedicated to Lord Ganesha.",
@@ -24,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/mayureshwar/geo.jpg",
     "intro": "Morgaon lies in Baramati Taluka of Pune district, about 65 km from Pune city. The area is part of the Deccan plateau and is surrounded by agricultural land and gentle hills.",
     "details": [
       {
@@ -99,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/mayureshwar/attraction1.jpg",
       "title": "Mayureshwar Temple",
       "description": "The main shrine dedicated to Lord Ganesha, showcasing beautiful carvings and a spiritual aura.",
       "distance": "Within Morgaon",
@@ -107,7 +106,7 @@
       "value": "Main attraction"
     },
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/mayureshwar/attraction2.jpg",
       "title": "Karha River Ghats",
       "description": "Peaceful riverbanks ideal for meditation and performing holy rituals.",
       "distance": "0.5 km",
@@ -154,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
+      "src": "/images/religious/mayureshwar/1.jpg",
+      "thumb": "/images/religious/mayureshwar/thumb1.jpg",
       "alt": "Mayureshwar Temple Front View"
     },
     {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
+      "src": "/images/religious/mayureshwar/2.jpg",
+      "thumb": "/images/religious/mayureshwar/thumb2.jpg",
       "alt": "Inner Sanctum and Carvings"
     }
   ],

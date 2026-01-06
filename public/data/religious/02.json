@@ -2,8 +2,7 @@
   "id": "02",
   "title": "Pandharpur Vitthal Rukmini Temple",
   "subtitle": "The Spiritual Capital of Maharashtra’s Bhakti Movement",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/pandharpur/banner.jpg",
   "color": "#e07a5f",
   "overview": [
     "Pandharpur, located on the banks of the Chandrabhaga River in Solapur district, is one of the most sacred pilgrimage centers in Maharashtra. It is home to the revered Lord Vitthal (an incarnation of Lord Krishna) and Goddess Rukmini.",
@@ -22,46 +21,20 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/pandharpur/map.jpg",
     "intro": "Pandharpur lies in the Solapur district of southern Maharashtra, located on the banks of the sacred Chandrabhaga River (also called Bhima River).",
     "details": [
-      {
-        "icon": "fas fa-map-marker-alt",
-        "label": "District",
-        "value": "Solapur"
-      },
-      {
-        "icon": "fas fa-ruler-combined",
-        "label": "Elevation",
-        "value": "458 meters"
-      },
-      {
-        "icon": "fas fa-globe-asia",
-        "label": "Region",
-        "value": "Southern Maharashtra"
-      },
-      {
-        "icon": "fas fa-water",
-        "label": "River",
-        "value": "Chandrabhaga (Bhima)"
-      },
-      {
-        "icon": "fas fa-route",
-        "label": "Best Time to Visit",
-        "value": "July (Ashadhi Ekadashi) & October (Kartik Ekadashi)"
-      }
+      { "icon": "fas fa-map-marker-alt", "label": "District", "value": "Solapur" },
+      { "icon": "fas fa-ruler-combined", "label": "Elevation", "value": "458 meters" },
+      { "icon": "fas fa-globe-asia", "label": "Region", "value": "Southern Maharashtra" },
+      { "icon": "fas fa-water", "label": "River", "value": "Chandrabhaga (Bhima)" },
+      { "icon": "fas fa-route", "label": "Best Time to Visit", "value": "July (Ashadhi Ekadashi) & October (Kartik Ekadashi)" }
     ],
     "climate": {
       "description": "Pandharpur experiences a hot and dry climate most of the year, with the monsoon offering much-needed relief.",
       "seasons": [
-        {
-          "icon": "fas fa-cloud-rain",
-          "text": "Monsoon (June–September): Best time for pilgrimage and the famous Wari festival."
-        },
-        {
-          "icon": "fas fa-sun",
-          "text": "Summer (March–May): Hot and humid, avoid for travel."
-        }
+        { "icon": "fas fa-cloud-rain", "text": "Monsoon (June–September): Best time for pilgrimage and the famous Wari festival." },
+        { "icon": "fas fa-sun", "text": "Summer (March–May): Hot and humid, avoid for travel." }
       ]
     },
     "conclusion": "Pilgrims prefer visiting during Ashadhi and Kartik Ekadashi festivals, when the town turns into a sea of devotion."
@@ -97,7 +70,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/pandharpur/chandrabhaga.jpg",
       "title": "Chandrabhaga River Ghat",
       "description": "Devotees take a sacred dip in the Chandrabhaga River before entering the Vitthal Temple, symbolizing purification.",
       "distance": "Adjacent to Temple",
@@ -105,7 +78,7 @@
       "value": "Holy Bathing Site"
     },
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/pandharpur/namdev.jpg",
       "title": "Sant Namdev Mandir",
       "description": "Dedicated to Sant Namdev, one of the greatest Warkari saints whose abhangas continue to inspire devotees.",
       "distance": "1 km from main temple",
@@ -159,29 +132,12 @@
     }
   ],
   "gallery": [
-    {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
-      "alt": "Pandharpur Vitthal Temple"
-    },
-    {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
-      "alt": "Wari Procession at Pandharpur"
-    }
+    { "src": "/images/religious/pandharpur/temple1.jpg", "thumb": "/images/religious/pandharpur/temple1_thumb.jpg", "alt": "Pandharpur Vitthal Temple" },
+    { "src": "/images/religious/pandharpur/wari.jpg", "thumb": "/images/religious/pandharpur/wari_thumb.jpg", "alt": "Wari Procession at Pandharpur" }
   ],
   "bookingTips": [
-    {
-      "icon": "fas fa-ticket-alt",
-      "description": "Plan your trip during Ashadhi or Kartik Ekadashi for a grand experience."
-    },
-    {
-      "icon": "fas fa-bed",
-      "description": "Temple trust and dharmashalas provide affordable accommodation for pilgrims."
-    },
-    {
-      "icon": "fas fa-clock",
-      "description": "Arrive early in the morning to avoid long queues during festival days."
-    }
+    { "icon": "fas fa-ticket-alt", "description": "Plan your trip during Ashadhi or Kartik Ekadashi for a grand experience." },
+    { "icon": "fas fa-bed", "description": "Temple trust and dharmashalas provide affordable accommodation for pilgrims." },
+    { "icon": "fas fa-clock", "description": "Arrive early in the morning to avoid long queues during festival days." }
   ]
 }

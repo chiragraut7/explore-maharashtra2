@@ -2,8 +2,7 @@
   "id": "10",
   "title": "Shivneri Fort",
   "subtitle": "Birthplace of Chhatrapati Shivaji Maharaj – Symbol of Maratha Pride",
-  "bannerImage": "/assets/images/forts/01.jpg",
-  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
+  "bannerImage": "/images/forts/shivneri/shivneri-banner.jpg",
   "color": "#4b3621",
   "overview": [
     "Shivneri Fort, located near Junnar in Pune district, holds immense historical importance as the birthplace of Chhatrapati Shivaji Maharaj in 1630. It stands as a symbol of Maratha pride, courage, and the beginnings of the Swarajya movement.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/forts/01/info2.jpg",
+    "image": "/images/forts/shivneri/shivneri-map.jpg",
     "intro": "Shivneri Fort is situated near Junnar in Pune district, at an elevation of about 1,050 meters above sea level. It overlooks the ancient trade routes and provides a commanding view of the region.",
     "details": [
       {
@@ -97,7 +96,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/shivneri/shivaji-birthplace.jpg",
       "title": "Birthplace Monument of Shivaji Maharaj",
       "description": "A beautifully preserved structure marking the room where Chhatrapati Shivaji Maharaj was born in 1630.",
       "distance": "Inside Fort",
@@ -105,7 +104,7 @@
       "value": "Major heritage attraction"
     },
     {
-      "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/shivneri/shivai-devi-temple.jpg",
       "title": "Shivai Devi Temple",
       "description": "A temple dedicated to Goddess Shivai Devi, after whom Shivaji Maharaj was named.",
       "distance": "Near entrance gate",
@@ -152,13 +151,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/shivneri/gallery1.jpg",
+      "thumb": "/images/forts/shivneri/thumb1.jpg",
       "alt": "View of Shivneri Fort entrance gate"
     },
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/shivneri/gallery2.jpg",
+      "thumb": "/images/forts/shivneri/thumb2.jpg",
       "alt": "Birthplace monument inside Shivneri Fort"
     }
   ],

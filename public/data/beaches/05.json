@@ -2,8 +2,8 @@
   "id": "05",
   "title": "Nagaon Beach",
   "subtitle": "A Water Sports Paradise Near Alibaug",
-  "bannerImage": "/assets/images/beaches/010.jpg",
-  "insideBannerImage": "/assets/images/beaches/010/bannerimg.jpg",
+  "bannerImage": "/assets/images/beaches/nagaon-banner.jpg",
+  "insideBannerImage": "/assets/images/beaches/05/bannerImg.jpg",
   "color": "#00786F",
   "overview": [
     "Nagaon Beach, located about 9 km from Alibaug in the Raigad district, is one of the most popular beaches on the Konkan coast. Known for its wide stretch of golden sand and clean waters, Nagaon attracts families, groups, and adventure lovers throughout the year.",
@@ -28,7 +28,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/010/info3.jpg",
+    "image": "/assets/images/beaches/05/info3.jpg",
     "intro": "Nagaon Beach lies on the western coast of Maharashtra, just 9 km from Alibaug, surrounded by lush coconut groves and paddy fields.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Raigad District, Maharashtra" },
@@ -68,7 +68,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/010/img1.jpg",
+      "image": "/assets/images/beaches/05/img1.jpg",
       "title": "Kolaba Fort",
       "description": "Historic sea fort accessible during low tide from Alibaug Beach, known for Maratha architecture.",
       "distance": "9 km",
@@ -76,7 +76,7 @@
       "value": "Historic Fort"
     },
     {
-      "image": "/assets/images/beaches/010/img2.jpg",
+      "image": "/assets/images/beaches/05/img2.jpg",
       "title": "Kihim Beach",
       "description": "A scenic and quieter beach located nearby, known for its flora and birdlife.",
       "distance": "12 km",
@@ -84,7 +84,7 @@
       "value": "Nearby Beach"
     },
     {
-      "image": "/assets/images/beaches/010/img3.jpg",
+      "image": "/assets/images/beaches/05/img3.jpg",
       "title": "Revdanda Fort",
       "description": "Ruins of a Portuguese-era fort located right by the sea, offering stunning views.",
       "distance": "10 km",
@@ -138,9 +138,9 @@
     }
   ],
   "gallery": [
-    { "src": "/assets/images/beaches/010/img4.jpg", "thumb": "/assets/images/beaches/010/img4.jpg", "alt": "Golden sand stretch of Nagaon Beach" },
-    { "src": "/assets/images/beaches/010/img5.jpg", "thumb": "/assets/images/beaches/010/img5.jpg", "alt": "Water sports at Nagaon Beach" },
-    { "src": "/assets/images/beaches/010/img6.jpg", "thumb": "/assets/images/beaches/010/img6.jpg", "alt": "Sunset view at Nagaon Beach" }
+    { "src": "/assets/images/beaches/05/img4.jpg", "thumb": "/assets/images/beaches/05/img4.jpg", "alt": "Golden sand stretch of Nagaon Beach" },
+    { "src": "/assets/images/beaches/05/img5.jpg", "thumb": "/assets/images/beaches/05/img5.jpg", "alt": "Water sports at Nagaon Beach" },
+    { "src": "/assets/images/beaches/05/img6.jpg", "thumb": "/assets/images/beaches/05/img6.jpg", "alt": "Sunset view at Nagaon Beach" }
   ],
   "bookingTips": [
     { "icon": "fa-solid fa-house", "description": "Choose beachfront homestays or resorts for a better view and quick beach access." },

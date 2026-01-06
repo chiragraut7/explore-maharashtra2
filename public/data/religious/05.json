@@ -2,8 +2,7 @@
   "id": "05",
   "title": "Trimbakeshwar Jyotirlinga Temple",
   "subtitle": "One of the twelve sacred Jyotirlingas dedicated to Lord Shiva",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/trimbakeshwar/banner.jpg",
   "color": "#c9b9a6",
   "overview": [
     "Trimbakeshwar Temple, located near Nashik, is one of the holiest shrines dedicated to Lord Shiva and one of the twelve Jyotirlingas in India.",
@@ -22,46 +21,20 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/trimbakeshwar/map.jpg",
     "intro": "Situated at the base of Brahmagiri Hills, Trimbakeshwar is surrounded by lush green forests and scenic mountain terrain.",
     "details": [
-      {
-        "icon": "fas fa-map-marker-alt",
-        "label": "Location",
-        "value": "Nashik District, Maharashtra"
-      },
-      {
-        "icon": "fas fa-mountain",
-        "label": "Elevation",
-        "value": "732 m above sea level"
-      },
-      {
-        "icon": "fas fa-tree",
-        "label": "Terrain",
-        "value": "Hilly and forested"
-      },
-      {
-        "icon": "fas fa-tint",
-        "label": "River Origin",
-        "value": "Godavari River"
-      },
-      {
-        "icon": "fas fa-city",
-        "label": "Nearest City",
-        "value": "Nashik (28 km)"
-      }
+      { "icon": "fas fa-map-marker-alt", "label": "Location", "value": "Nashik District, Maharashtra" },
+      { "icon": "fas fa-mountain", "label": "Elevation", "value": "732 m above sea level" },
+      { "icon": "fas fa-tree", "label": "Terrain", "value": "Hilly and forested" },
+      { "icon": "fas fa-tint", "label": "River Origin", "value": "Godavari River" },
+      { "icon": "fas fa-city", "label": "Nearest City", "value": "Nashik (28 km)" }
     ],
     "climate": {
       "description": "Trimbakeshwar experiences pleasant weather throughout the year, ideal for temple visits and pilgrimages.",
       "seasons": [
-        {
-          "icon": "fas fa-sun",
-          "text": "Best time to visit: October to March"
-        },
-        {
-          "icon": "fas fa-cloud-showers-heavy",
-          "text": "Avoid heavy rains during monsoon (June–September)"
-        }
+        { "icon": "fas fa-sun", "text": "Best time to visit: October to March" },
+        { "icon": "fas fa-cloud-showers-heavy", "text": "Avoid heavy rains during monsoon (June–September)" }
       ]
     },
     "conclusion": "The spiritual and natural aura of Trimbakeshwar makes it a must-visit for seekers of divine energy and peace."
@@ -97,7 +70,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/trimbakeshwar/godavari-origin.jpg",
       "title": "Godavari Source Point",
       "description": "The sacred point where the Godavari River emerges from the Brahmagiri Hills.",
       "distance": "2 km",
@@ -105,7 +78,7 @@
       "value": "Spiritual Site"
     },
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/trimbakeshwar/nashik-ghat.jpg",
       "title": "Panchavati (Nashik)",
       "description": "A major pilgrimage area on the banks of Godavari with temples like Kalaram Mandir.",
       "distance": "28 km",
@@ -116,16 +89,8 @@
   "marineLife": {
     "intro": "Though not coastal, the divine flow of the Godavari River gives Trimbakeshwar a sacred aquatic significance.",
     "items": [
-      {
-        "icon": "fas fa-tint",
-        "title": "Godavari River",
-        "description": "Regarded as a purifying and life-giving force in Hindu mythology."
-      },
-      {
-        "icon": "fas fa-water",
-        "title": "Holy Rituals",
-        "description": "Several important Hindu ceremonies are performed on the riverbanks."
-      }
+      { "icon": "fas fa-tint", "title": "Godavari River", "description": "Regarded as a purifying and life-giving force in Hindu mythology." },
+      { "icon": "fas fa-water", "title": "Holy Rituals", "description": "Several important Hindu ceremonies are performed on the riverbanks." }
     ],
     "conclusion": [
       "The sacred connection between water and divinity is evident throughout Trimbakeshwar.",
@@ -151,29 +116,12 @@
     }
   ],
   "gallery": [
-    {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
-      "alt": "Trimbakeshwar Temple Front View"
-    },
-    {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
-      "alt": "Kusavarta Kund"
-    }
+    { "src": "/images/religious/trimbakeshwar/1.jpg", "thumb": "/images/religious/trimbakeshwar/thumb1.jpg", "alt": "Trimbakeshwar Temple Front View" },
+    { "src": "/images/religious/trimbakeshwar/2.jpg", "thumb": "/images/religious/trimbakeshwar/thumb2.jpg", "alt": "Kusavarta Kund" }
   ],
   "bookingTips": [
-    {
-      "icon": "fas fa-calendar-alt",
-      "description": "Visit during Maha Shivratri or Shravan month for major celebrations."
-    },
-    {
-      "icon": "fas fa-clock",
-      "description": "Temple opens from 5:30 AM to 9:00 PM; early morning is ideal for darshan."
-    },
-    {
-      "icon": "fas fa-water-bottle",
-      "description": "Carry water and footwear for the Brahmagiri Hill trek."
-    }
+    { "icon": "fas fa-calendar-alt", "description": "Visit during Maha Shivratri or Shravan month for major celebrations." },
+    { "icon": "fas fa-clock", "description": "Temple opens from 5:30 AM to 9:00 PM; early morning is ideal for darshan." },
+    { "icon": "fas fa-water-bottle", "description": "Carry water and footwear for the Brahmagiri Hill trek." }
   ]
 }

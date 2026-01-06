@@ -2,8 +2,7 @@
   "id": "07",
   "title": "Grishneshwar Temple",
   "subtitle": "The Twelfth and Final Jyotirlinga of Lord Shiva near Ellora Caves",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/grishneshwar/banner.jpg",
   "color": "#8B0000",
   "overview": [
     "Grishneshwar Temple, located near Ellora in Aurangabad district, is the twelfth and last of the sacred Jyotirlingas dedicated to Lord Shiva. This temple holds immense spiritual importance and attracts devotees from all over India.",
@@ -23,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/grishneshwar/map.jpg",
     "intro": "Located in Verul village near the Ellora Caves, Grishneshwar Temple lies just 30 km from Aurangabad city, surrounded by scenic hills and historic monuments.",
     "details": [
       {
@@ -98,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/grishneshwar/ellora.jpg",
       "title": "Ellora Caves",
       "description": "Ancient rock-cut caves representing three religions—Hinduism, Buddhism, and Jainism.",
       "distance": "1 km",
@@ -106,7 +105,7 @@
       "value": "UNESCO Heritage"
     },
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/grishneshwar/daulatabad-fort.jpg",
       "title": "Daulatabad Fort",
       "description": "An impressive hilltop fort offering panoramic views of Aurangabad’s landscape.",
       "distance": "20 km",
@@ -153,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
+      "src": "/images/religious/grishneshwar/1.jpg",
+      "thumb": "/images/religious/grishneshwar/thumb1.jpg",
       "alt": "Grishneshwar Temple Entrance"
     },
     {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
+      "src": "/images/religious/grishneshwar/2.jpg",
+      "thumb": "/images/religious/grishneshwar/thumb2.jpg",
       "alt": "Main Shikhara of Grishneshwar Temple"
     }
   ],

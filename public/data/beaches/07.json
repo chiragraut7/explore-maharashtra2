@@ -2,8 +2,8 @@
   "id": "07",
   "title": "Bordi Beach",
   "subtitle": "Golden sands, clear waters, and scuba diving paradise",
-  "bannerImage": "/assets/images/beaches/010.jpg",
-  "insideBannerImage": "/assets/images/beaches/010/bannerimg.jpg",
+  "bannerImage": "/assets/images/beaches/bordi-beach.jpg",
+  "insideBannerImage": "/assets/images/beaches/07/bannerImg.jpg",
   "color": "#09a5cf",
   "overview": [
     "Bordi Beach is a tranquil and lesser-known coastal destination located in the Dahanu region of Maharashtra, near the Gujarat border. It features a long, clean shoreline lined with chikoo orchards and is known for its peaceful and unspoiled charm.",
@@ -33,7 +33,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/010/info3.jpg",
+    "image": "/assets/images/beaches/07/info3.jpg",
     "intro": "Bordi Beach lies in the northern coastal belt of Maharashtra, nestled between Dahanu and the Gujarat border. The beach is surrounded by lush chikoo orchards and traditional villages.",
     "details": [
       {
@@ -111,7 +111,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/010/img1.jpg",
+      "image": "/assets/images/beaches/07/img1.jpg",
       "title": "Bahrot Caves",
       "description": "Historic rock-cut caves with Zoroastrian significance, located about 10 km from Bordi.",
       "distance": "Religious & Historic",
@@ -119,7 +119,7 @@
       "value": "Historic Site"
     },
     {
-      "image": "/assets/images/beaches/010/img2.jpg",
+      "image": "/assets/images/beaches/07/img2.jpg",
       "title": "Asavli Dam",
       "description": "A peaceful reservoir surrounded by greenery, ideal for short drives and nature photography.",
       "distance": "Picnic & Scenic Spot",
@@ -127,7 +127,7 @@
       "value": "Nature Spot"
     },
     {
-      "image": "/assets/images/beaches/010/img3.jpg",
+      "image": "/assets/images/beaches/07/img3.jpg",
       "title": "Gholvad Beach",
       "description": "A neighboring beach popular for its tree-lined shore and cycling paths.",
       "distance": "Cycling & Leisure",
@@ -196,18 +196,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/010/img1.jpg",
-      "thumb": "/assets/images/beaches/010/img1.jpg",
+      "src": "/assets/images/beaches/07/img1.jpg",
+      "thumb": "/assets/images/beaches/07/img1.jpg",
       "alt": "Bordi Beach Calm Shore"
     },
     {
-      "src": "/assets/images/beaches/010/img2.jpg",
-      "thumb": "/assets/images/beaches/010/img2.jpg",
+      "src": "/assets/images/beaches/07/img2.jpg",
+      "thumb": "/assets/images/beaches/07/img2.jpg",
       "alt": "Chikoo Orchard"
     },
     {
-      "src": "/assets/images/beaches/010/img3.jpg",
-      "thumb": "/assets/images/beaches/010/img3.jpg",
+      "src": "/assets/images/beaches/07/img3.jpg",
+      "thumb": "/assets/images/beaches/07/img3.jpg",
       "alt": "Warli Art Display"
     }
   ],

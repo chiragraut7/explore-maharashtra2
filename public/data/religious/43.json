@@ -2,8 +2,7 @@
   "id": "43",
   "title": "Saptashrungi Temple",
   "subtitle": "Abode of Goddess Saptashrungi Nivasini in the Sahyadris",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/vani/banner.jpg",
   "color": "#e85d04",
   "overview": [
     "The Saptashrungi Temple, located near Vani in Nashik district, is one of Maharashtra’s most venerated Shakti Peethas. The temple is dedicated to Goddess Saptashrungi Nivasini — the seven-hill goddess — believed to be an incarnation of Goddess Durga.",
@@ -23,46 +22,20 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/vani/map.jpg",
     "intro": "Nestled in the Sahyadri range, the Saptashrungi Temple stands at an elevation of about 1,230 meters near the town of Vani in Nashik district.",
     "details": [
-      {
-        "icon": "fa-solid fa-map-marker-alt",
-        "label": "District",
-        "value": "Nashik"
-      },
-      {
-        "icon": "fa-solid fa-mountain",
-        "label": "Elevation",
-        "value": "1,230 meters"
-      },
-      {
-        "icon": "fa-solid fa-tree",
-        "label": "Surroundings",
-        "value": "Sahyadri Hills"
-      },
-      {
-        "icon": "fa-solid fa-sun",
-        "label": "Best Time to Visit",
-        "value": "October to February"
-      },
-      {
-        "icon": "fa-solid fa-calendar-day",
-        "label": "Major Festival",
-        "value": "Navratri & Chaitra Poornima"
-      }
+      { "icon": "fa-solid fa-map-marker-alt", "label": "District", "value": "Nashik" },
+      { "icon": "fa-solid fa-mountain", "label": "Elevation", "value": "1,230 meters" },
+      { "icon": "fa-solid fa-tree", "label": "Surroundings", "value": "Sahyadri Hills" },
+      { "icon": "fa-solid fa-sun", "label": "Best Time to Visit", "value": "October to February" },
+      { "icon": "fa-solid fa-calendar-day", "label": "Major Festival", "value": "Navratri & Chaitra Poornima" }
     ],
     "climate": {
       "description": "The region experiences moderate weather, with cool winters and pleasant monsoons, making it ideal for pilgrimage and trekking.",
       "seasons": [
-        {
-          "icon": "fa-solid fa-cloud-rain",
-          "text": "Monsoon: Lush greenery surrounds the temple (June–September)"
-        },
-        {
-          "icon": "fa-solid fa-snowflake",
-          "text": "Winter: Best time for comfortable travel (November–February)"
-        }
+        { "icon": "fa-solid fa-cloud-rain", "text": "Monsoon: Lush greenery surrounds the temple (June–September)" },
+        { "icon": "fa-solid fa-snowflake", "text": "Winter: Best time for comfortable travel (November–February)" }
       ]
     },
     "conclusion": "With its divine aura and mountain backdrop, Saptashrungi Temple offers both a spiritual and natural retreat."
@@ -160,39 +133,14 @@
     }
   ],
   "gallery": [
-    {
-      "src": "/images/religious/vani/1.jpg",
-      "thumb": "/images/religious/vani/thumb1.jpg",
-      "alt": "Saptashrungi Temple hill view"
-    },
-    {
-      "src": "/images/religious/vani/2.jpg",
-      "thumb": "/images/religious/vani/thumb2.jpg",
-      "alt": "Devotees climbing the steps"
-    },
-    {
-      "src": "/images/religious/vani/3.jpg",
-      "thumb": "/images/religious/vani/thumb3.jpg",
-      "alt": "Aerial view of temple and Sahyadris"
-    },
-    {
-      "src": "/images/religious/vani/4.jpg",
-      "thumb": "/images/religious/vani/thumb4.jpg",
-      "alt": "Evening aarti at the temple"
-    }
+    { "src": "/images/religious/vani/1.jpg", "thumb": "/images/religious/vani/thumb1.jpg", "alt": "Saptashrungi Temple hill view" },
+    { "src": "/images/religious/vani/2.jpg", "thumb": "/images/religious/vani/thumb2.jpg", "alt": "Devotees climbing the steps" },
+    { "src": "/images/religious/vani/3.jpg", "thumb": "/images/religious/vani/thumb3.jpg", "alt": "Aerial view of temple and Sahyadris" },
+    { "src": "/images/religious/vani/4.jpg", "thumb": "/images/religious/vani/thumb4.jpg", "alt": "Evening aarti at the temple" }
   ],
   "bookingTips": [
-    {
-      "icon": "fa-solid fa-ticket-alt",
-      "description": "Use the ropeway for quicker access during crowded festival days."
-    },
-    {
-      "icon": "fa-solid fa-water-bottle",
-      "description": "Carry water and light snacks as the climb can be tiring."
-    },
-    {
-      "icon": "fa-solid fa-hotel",
-      "description": "Accommodation is available at temple guesthouses and nearby lodges in Vani."
-    }
+    { "icon": "fa-solid fa-ticket-alt", "description": "Use the ropeway for quicker access during crowded festival days." },
+    { "icon": "fa-solid fa-water-bottle", "description": "Carry water and light snacks as the climb can be tiring." },
+    { "icon": "fa-solid fa-hotel", "description": "Accommodation is available at temple guesthouses and nearby lodges in Vani." }
   ]
 }

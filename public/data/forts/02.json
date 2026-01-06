@@ -1,9 +1,9 @@
 {
-  "id": "01",
+  "id": "02",
   "title": "Rajgad Fort",
   "subtitle": "The Royal Capital Before Raigad",
-  "bannerImage": "/assets/images/forts/01.jpg",
-  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/forts/02.jpg",
+  "insideBannerImage": "/assets/images/forts/02/bannerimg.jpg",
   "color": "#a05b2b",
   "overview": [
     "Rajgad Fort, meaning 'Royal Fort', served as the first capital of the Maratha Empire under Chhatrapati Shivaji Maharaj before Raigad. Located about 60 km from Pune, it stands as a symbol of Maratha glory and resilience.",
@@ -22,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/forts/01/info2.jpg",
+    "image": "/assets/images/forts/02/info2.jpg",
     "intro": "Rajgad Fort is located in the Pune district of Maharashtra, atop the Murumbadevi hill in the Sahyadri range.",
     "details": [
       {
@@ -97,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/assets/images/forts/02/img1.jpg",
       "title": "Padmavati Temple",
       "description": "A small temple dedicated to Goddess Padmavati, used as a resting spot by trekkers.",
       "distance": "Within fort complex",
@@ -105,7 +105,7 @@
       "value": "Spiritual & Historical Site"
     },
     {
-      "image": "/assets/images/forts/01/img2.jpg",
+      "image": "/assets/images/forts/02/img2.jpg",
       "title": "Sanjivani Machi",
       "description": "A long defensive structure with breathtaking views of the valley below.",
       "distance": "Fort’s western edge",
@@ -152,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/assets/images/forts/02/img1.jpg",
+      "thumb": "/assets/images/forts/02/img1.jpg",
       "alt": "Rajgad Fort view from the base"
     },
     {
-      "src": "/assets/images/forts/01/img2.jpg",
-      "thumb": "/assets/images/forts/01/img2.jpg",
+      "src": "/assets/images/forts/02/img2.jpg",
+      "thumb": "/assets/images/forts/02/img2.jpg",
       "alt": "Sanjivani Machi on Rajgad Fort"
     }
   ],

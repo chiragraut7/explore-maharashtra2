@@ -2,8 +2,7 @@
     "id": "10",
     "title": "Bhimashankar Temple",
     "subtitle": "Sacred Jyotirlinga of Lord Shiva Amid the Sahyadris",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+    "bannerImage": "/images/religious/bhimashankar/banner.jpg",
     "color": "#5A7D3C",
     "overview": [
       "Bhimashankar, one of the twelve Jyotirlingas of Lord Shiva, lies deep within the Sahyadri hills of Maharashtra. The temple combines ancient Nagara architecture with a peaceful forest ambiance, making it both a sacred pilgrimage and nature retreat.",
@@ -22,7 +21,7 @@
       }
     ],
     "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+      "image": "/images/religious/bhimashankar/map.jpg",
       "intro": "Situated about 110 km from Pune and 220 km from Mumbai, Bhimashankar sits at an altitude of 3,250 feet within the Western Ghats.",
       "details": [
         {
@@ -97,7 +96,7 @@
     ],
     "attractions": [
       {
-      "image": "/assets/images/religious/01/img1.jpg",
+        "image": "/images/religious/bhimashankar/1.jpg",
         "title": "Bhimashankar Temple Complex",
         "description": "The main shrine dedicated to Lord Shiva with intricate stone carvings.",
         "distance": "0 km",
@@ -105,7 +104,7 @@
         "value": "Main Pilgrimage"
       },
       {
-      "image": "/assets/images/religious/01/img1.jpg",
+        "image": "/images/religious/bhimashankar/2.jpg",
         "title": "Nagphani Point",
         "description": "A cliff shaped like a serpent’s hood offering panoramic valley views.",
         "distance": "3 km",
@@ -152,13 +151,13 @@
     ],
     "gallery": [
       {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
+        "src": "/images/religious/bhimashankar/1.jpg",
+        "thumb": "/images/religious/bhimashankar/thumb1.jpg",
         "alt": "Bhimashankar Temple View"
       },
       {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
+        "src": "/images/religious/bhimashankar/2.jpg",
+        "thumb": "/images/religious/bhimashankar/thumb2.jpg",
         "alt": "Surrounding Sahyadri Forest"
       }
     ],

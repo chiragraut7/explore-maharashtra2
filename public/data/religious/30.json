@@ -2,8 +2,7 @@
   "id": "30",
   "title": "Mahaganapati Temple",
   "subtitle": "Ranjangaon, Pune",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/mahaganapati-ranjangaon/banner.jpg",
   "color": "#f9c74f",
   "overview": [
     "The Mahaganapati Temple in Ranjangaon is one of the eight revered Ashtavinayak Temples of Maharashtra, dedicated to Lord Ganesha. It is believed to be the place where Lord Shiva worshipped Lord Ganesha before his battle with Tripurasura.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/mahaganapati-ranjangaon/geography.jpg",
     "intro": "Ranjangaon is a small yet spiritually significant village located about 50 km from Pune on the Pune–Ahmednagar highway. The temple stands beautifully amid serene surroundings, drawing devotees throughout the year.",
     "details": [
       {

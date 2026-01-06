@@ -2,8 +2,7 @@
   "id": "11",
   "title": "Renuka Devi Temple",
   "subtitle": "Sacred Abode of Goddess Renuka Devi, Mahur",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/mahur/banner.jpg",
   "color": "#d67b6e",
   "overview": [
     "The Renuka Devi Temple in Mahur is one of the most important Shakti Peethas in Maharashtra, dedicated to Goddess Renuka Devi, the mother of Lord Parashurama. Perched atop a hill amidst dense forests, this ancient temple holds deep mythological and spiritual significance.",
@@ -22,46 +21,20 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/mahur/map.jpg",
     "intro": "Mahur is a picturesque town located in Nanded district, surrounded by dense forests and hills that add to the temple’s serenity.",
     "details": [
-      {
-        "icon": "fa-solid fa-location-dot",
-        "label": "District",
-        "value": "Nanded"
-      },
-      {
-        "icon": "fa-solid fa-mountain",
-        "label": "Elevation",
-        "value": "550 meters"
-      },
-      {
-        "icon": "fa-solid fa-globe",
-        "label": "Region",
-        "value": "Marathwada"
-      },
-      {
-        "icon": "fa-solid fa-language",
-        "label": "Primary Language",
-        "value": "Marathi"
-      },
-      {
-        "icon": "fa-solid fa-tree",
-        "label": "Surroundings",
-        "value": "Forested hills"
-      }
+      { "icon": "fa-solid fa-location-dot", "label": "District", "value": "Nanded" },
+      { "icon": "fa-solid fa-mountain", "label": "Elevation", "value": "550 meters" },
+      { "icon": "fa-solid fa-globe", "label": "Region", "value": "Marathwada" },
+      { "icon": "fa-solid fa-language", "label": "Primary Language", "value": "Marathi" },
+      { "icon": "fa-solid fa-tree", "label": "Surroundings", "value": "Forested hills" }
     ],
     "climate": {
       "description": "Mahur has a tropical climate with hot summers, pleasant winters, and moderate monsoons.",
       "seasons": [
-        {
-          "icon": "fa-solid fa-sun",
-          "text": "Best time to visit: October to February"
-        },
-        {
-          "icon": "fa-solid fa-cloud-rain",
-          "text": "Avoid during heavy monsoon months"
-        }
+        { "icon": "fa-solid fa-sun", "text": "Best time to visit: October to February" },
+        { "icon": "fa-solid fa-cloud-rain", "text": "Avoid during heavy monsoon months" }
       ]
     },
     "conclusion": "The winter months are ideal for visiting Renuka Devi Temple when the climate is cool and comfortable for trekking up the hill."
@@ -97,7 +70,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/mahur/ansupa.jpg",
       "title": "Anasuya Devi Temple",
       "description": "Another important shrine in Mahur dedicated to Anasuya Devi, mother of the Trimurti — Brahma, Vishnu, and Mahesh.",
       "distance": "3 km",
@@ -105,7 +78,7 @@
       "value": "A major stop for pilgrims visiting Mahur"
     },
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/mahur/dattatreya.jpg",
       "title": "Lord Dattatreya Temple",
       "description": "Situated on a nearby hill, this ancient temple is believed to be the birthplace of Lord Dattatreya.",
       "distance": "2 km",
@@ -116,16 +89,8 @@
   "marineLife": {
     "intro": "While Mahur is located inland, its spiritual environment flourishes with rich traditions and rituals.",
     "items": [
-      {
-        "icon": "fa-solid fa-leaf",
-        "title": "Nature and Peace",
-        "description": "The temple surroundings are lush and tranquil, fostering meditation and reflection."
-      },
-      {
-        "icon": "fa-solid fa-people-group",
-        "title": "Cultural Heritage",
-        "description": "Mahur has a deep-rooted cultural connection to ancient Hindu scriptures and legends."
-      }
+      { "icon": "fa-solid fa-leaf", "title": "Nature and Peace", "description": "The temple surroundings are lush and tranquil, fostering meditation and reflection." },
+      { "icon": "fa-solid fa-people-group", "title": "Cultural Heritage", "description": "Mahur has a deep-rooted cultural connection to ancient Hindu scriptures and legends." }
     ],
     "conclusion": [
       "Mahur is a perfect blend of divinity and nature’s serenity.",
@@ -159,39 +124,14 @@
     }
   ],
   "gallery": [
-    {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
-      "alt": "Renuka Devi Temple on hilltop"
-    },
-    {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
-      "alt": "Main temple entrance"
-    },
-    {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
-      "alt": "Anasuya Devi Temple"
-    },
-    {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
-      "alt": "Lord Dattatreya Temple"
-    }
+    { "src": "/images/religious/mahur/1.jpg", "thumb": "/images/religious/mahur/thumb1.jpg", "alt": "Renuka Devi Temple on hilltop" },
+    { "src": "/images/religious/mahur/2.jpg", "thumb": "/images/religious/mahur/thumb2.jpg", "alt": "Main temple entrance" },
+    { "src": "/images/religious/mahur/3.jpg", "thumb": "/images/religious/mahur/thumb3.jpg", "alt": "Anasuya Devi Temple" },
+    { "src": "/images/religious/mahur/4.jpg", "thumb": "/images/religious/mahur/thumb4.jpg", "alt": "Lord Dattatreya Temple" }
   ],
   "bookingTips": [
-    {
-      "icon": "fa-solid fa-hotel",
-      "description": "Limited accommodation is available near the temple; book in advance during festivals."
-    },
-    {
-      "icon": "fa-solid fa-shoe-prints",
-      "description": "Wear comfortable footwear as the path involves a steep climb."
-    },
-    {
-      "icon": "fa-solid fa-sun",
-      "description": "Carry water and essentials when trekking, especially during summer visits."
-    }
+    { "icon": "fa-solid fa-hotel", "description": "Limited accommodation is available near the temple; book in advance during festivals." },
+    { "icon": "fa-solid fa-shoe-prints", "description": "Wear comfortable footwear as the path involves a steep climb." },
+    { "icon": "fa-solid fa-sun", "description": "Carry water and essentials when trekking, especially during summer visits." }
   ]
 }

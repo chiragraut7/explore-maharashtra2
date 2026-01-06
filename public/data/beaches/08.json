@@ -2,8 +2,8 @@
   "id": "08",
   "title": "Dahanu Beach",
   "subtitle": "A Peaceful Coastal Haven of Palghar District",
-  "bannerImage": "/assets/images/beaches/010.jpg",
-  "insideBannerImage": "/assets/images/beaches/010/bannerimg.jpg",
+  "bannerImage": "/assets/images/beaches/dahanu-banner.jpg",
+  "insideBannerImage": "/assets/images/beaches/08/bannerImg.jpg",
   "color": "#006B5E",
   "overview": [
     "Dahanu Beach, located in the Palghar district of Maharashtra, is a tranquil and less-crowded stretch of the Arabian Sea coast known for its pristine sands and serene ambiance.",
@@ -23,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/010/info3.jpg",
+    "image": "/assets/images/beaches/08/info3.jpg",
     "intro": "Dahanu lies around 120 km north of Mumbai along the Mumbai–Ahmedabad Highway. The region forms part of the North Konkan coastal belt, characterized by lush greenery, orchards, and sandy shores.",
     "details": [
       { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Palghar District, Maharashtra" },
@@ -63,7 +63,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/010/img1.jpg",
+      "image": "/assets/images/beaches/08/img1.jpg",
       "title": "Dahanu Fort",
       "description": "A historic 16th-century fort built by the Portuguese, now serving as a reminder of Dahanu’s colonial past.",
       "distance": "1 km from beach",
@@ -71,7 +71,7 @@
       "value": "Heritage Fort"
     },
     {
-      "image": "/assets/images/beaches/010/img2.jpg",
+      "image": "/assets/images/beaches/08/img2.jpg",
       "title": "Bordi Beach",
       "description": "A nearby, equally serene beach often combined with Dahanu in tourist circuits.",
       "distance": "17 km south",
@@ -117,8 +117,8 @@
     }
   ],
   "gallery": [
-    { "src": "/assets/images/beaches/010/img2.jpg", "thumb": "/assets/images/beaches/010/img2.jpg", "alt": "Sunset at Dahanu Beach" },
-    { "src": "/assets/images/beaches/010/img3.jpg", "thumb": "/assets/images/beaches/010/img3.jpg", "alt": "Chikoo orchards near Dahanu" }
+    { "src": "/assets/images/beaches/08/img2.jpg", "thumb": "/assets/images/beaches/08/img2.jpg", "alt": "Sunset at Dahanu Beach" },
+    { "src": "/assets/images/beaches/08/img3.jpg", "thumb": "/assets/images/beaches/08/img3.jpg", "alt": "Chikoo orchards near Dahanu" }
   ],
   "bookingTips": [
     { "icon": "fa-solid fa-hotel", "description": "Choose from beachside cottages or chikoo farm stays for a unique experience." },

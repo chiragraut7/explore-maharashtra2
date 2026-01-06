@@ -2,7 +2,7 @@
   "id":"01",
   "title": "Alibaug Beach",
   "subtitle": "A perfect blend of sun, sand, and historic charm near Mumbai",
-  "bannerImage": "/assets/images/beaches/01.jpg",
+  "bannerImage": "/assets/images/beaches/alibaug-beach.jpg",
   "insideBannerImage": "/assets/images/beaches/01/bannerimg.jpg",
     "color": "#f25135",
   "overview":  [
@@ -33,7 +33,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/01/info3.jpg",
+    "image": "/assets/images/beaches/01/info2.jpg",
     "intro": "Alibaug lies in the Raigad district along the western coast of Maharashtra and features several beaches like Varsoli, Kihim, and Nagaon nearby.",
     "details": [
       {
@@ -94,21 +94,21 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/010/img1.jpg",
+      "image": "/assets/images/beaches/01/img1.jpg",
       "title": "Kolaba Fort",
       "description": "Sea fort with historical cannons and panoramic views.",
       "distance": "1.5 km from beach",
       "icon": "fas fa-fort-awesome"
     },
     {
-      "image": "/assets/images/beaches/010/img2.jpg",
+      "image": "/assets/images/beaches/01/img2.jpg",
       "title": "Varsoli Beach",
       "description": "A quieter beach ideal for swimming and relaxation.",
       "distance": "2 km from Alibaug Beach",
       "icon": "fas fa-water"
     },
     {
-      "image": "/assets/images/beaches/010/img3.jpg",
+      "image": "/assets/images/beaches/01/img3.jpg",
       "title": "Kihim Beach",
       "description": "Famous for birdwatching, dense flora, and clean sand.",
       "distance": "12 km north",
@@ -167,14 +167,42 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/01/info3.jpg",
-      "thumb": "/assets/images/beaches/01/info3.jpg",
+      "src": "/assets/images/beaches/01/img1.jpg",
+      "thumb": "/assets/images/beaches/01/img1.jpg",
       "alt": "Alibaug Beach Shoreline"
     },
     {
-      "src": "/assets/images/beaches/01/img1.jpg",
-      "thumb": "/assets/images/beaches/01/img1.jpg",
+      "src": "/assets/images/beaches/01/img2.jpg",
+      "thumb": "/assets/images/beaches/01/img2.jpg",
       "alt": "Kolaba Fort Entrance"
+    },
+    {
+      "src": "/assets/images/beaches/01/img3.jpg",
+      "thumb": "/assets/images/beaches/01/img3.jpg",
+      "alt": "Sunset at Alibaug"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Radisson Blu Resort & Spa",
+      "image": "/assets/images/beaches.jpg",
+      "rating": "4.5",
+      "url": "https://example.com/radisson-alibaug",
+      "facilities": ["wifi", "parking", "ac", "pool"]
+    },
+    {
+      "name": "Outpost@Alibaug",
+      "image": "/assets/images/beaches.jpg",
+      "rating": "4.2",
+      "url": "https://example.com/outpost-alibaug",
+      "facilities": ["wifi", "ac", "parking"]
+    },
+    {
+      "name": "SaffronStays Aranya",
+      "image": "/assets/images/beaches.jpg",
+      "rating": "4.6",
+      "url": "https://example.com/saffron-alibaug",
+      "facilities": ["wifi", "ac", "pool"]
     }
   ],
   "bookingTips": [

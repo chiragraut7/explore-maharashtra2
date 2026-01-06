@@ -2,8 +2,7 @@
   "id": "07",
   "title": "Rajmachi Fort",
   "subtitle": "Twin Fortresses Overlooking the Sahyadri Ranges",
-  "bannerImage": "/assets/images/forts/01.jpg",
-  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
+  "bannerImage": "/images/forts/rajmachi/rajmachi-banner.jpg",
   "color": "#166534",
   "overview": [
     "Rajmachi Fort, located near Lonavala in the Sahyadri mountain ranges, is a popular trekking and historical destination in Maharashtra. The fort comprises two fortified peaks — Shrivardhan and Manaranjan — built to protect the Bor Ghat trade route between Mumbai and Pune.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/forts/01/info2.jpg",
+    "image": "/images/forts/rajmachi/rajmachi-geo.jpg",
     "intro": "Rajmachi is located between Lonavala and Karjat, at an elevation of about 2,710 feet above sea level. The twin fortresses stand overlooking the lush valleys and mountain passes of the Sahyadri ranges.",
     "details": [
       {
@@ -92,7 +91,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/rajmachi/attraction1.jpg",
       "title": "Shrivardhan Fort",
       "description": "The taller of the two peaks, offering panoramic views of the Sahyadris and the Konkan plains.",
       "distance": "Top Summit",
@@ -100,7 +99,7 @@
       "value": "Scenic Viewpoint"
     },
     {
-      "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/rajmachi/attraction2.jpg",
       "title": "Manaranjan Fort",
       "description": "Smaller peak with strong walls, water tanks, and a temple dedicated to Lord Shiva.",
       "distance": "Adjacent Summit",
@@ -108,7 +107,7 @@
       "value": "Ancient Ruins"
     },
     {
-      "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/rajmachi/attraction3.jpg",
       "title": "Kondane Caves",
       "description": "Ancient Buddhist caves near Karjat base, known for rock-cut architecture and carvings.",
       "distance": "12 km from Base Village",
@@ -163,18 +162,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/rajmachi/gallery1.jpg",
+      "thumb": "/images/forts/rajmachi/gallery1-thumb.jpg",
       "alt": "Rajmachi Fort in Monsoon"
     },
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/rajmachi/gallery2.jpg",
+      "thumb": "/images/forts/rajmachi/gallery2-thumb.jpg",
       "alt": "Trek Route to Rajmachi"
     },
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/rajmachi/gallery3.jpg",
+      "thumb": "/images/forts/rajmachi/gallery3-thumb.jpg",
       "alt": "Shrivardhan Fort Top View"
     }
   ],

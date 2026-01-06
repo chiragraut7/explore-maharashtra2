@@ -2,8 +2,7 @@
   "id": "21",
   "title": "Thoseghar Waterfall",
   "subtitle": "Maharashtra’s Majestic Cascading Wonder",
-  "bannerImage": "/assets/images/nature/01.jpg",
-  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/nature/thoseghar-waterfall.jpg",
   "color": "#1e88e5",
   "overview": [
     "Thoseghar Waterfall, located near Satara, is one of the highest and most beautiful waterfalls in Maharashtra. Surrounded by lush green forests and deep valleys, it offers a breathtaking view during the monsoon season when water gushes down from over 500 meters in multiple cascades.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/nature/01/info2.jpg",
+    "image": "/assets/images/nature/thoseghar-map.jpg",
     "intro": "Situated about 20 km from Satara city in western Maharashtra, Thoseghar lies in the Sahyadri range of the Western Ghats, an area known for its biodiversity and scenic landscapes.",
     "details": [
       {
@@ -97,7 +96,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/assets/images/nature/kaas-plateau.jpg",
       "title": "Kaas Plateau",
       "description": "UNESCO-recognized Valley of Flowers, just a short drive away from Thoseghar.",
       "distance": "25 km from Thoseghar",
@@ -105,7 +104,7 @@
       "value": "Biodiversity Hotspot"
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/assets/images/nature/sajjangad-fort.jpg",
       "title": "Sajjangad Fort",
       "description": "Spiritual fort and resting place of Sant Ramdas Swami, offering stunning valley views.",
       "distance": "18 km from Thoseghar",
@@ -113,7 +112,7 @@
       "value": "Historic & Religious Site"
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/assets/images/nature/ajinkyatara-fort.jpg",
       "title": "Ajinkyatara Fort",
       "description": "A fort with panoramic views of Satara city and surrounding mountains.",
       "distance": "22 km from Thoseghar",
@@ -168,13 +167,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/assets/images/nature/thoseghar-monsoon.jpg",
+      "thumb": "/assets/images/nature/thoseghar-monsoon-thumb.jpg",
       "alt": "Thoseghar Waterfall during monsoon"
     },
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/assets/images/nature/thoseghar-viewpoint.jpg",
+      "thumb": "/assets/images/nature/thoseghar-viewpoint-thumb.jpg",
       "alt": "Viewpoint overlooking the waterfall"
     }
   ],

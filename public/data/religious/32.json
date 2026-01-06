@@ -2,8 +2,7 @@
   "id": "32",
   "title": "Yogeshwari Devi Temple",
   "subtitle": "Ambajogai, Beed District",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/yogeshwari-ambajogai/banner.jpg",
   "color": "#f8e5cc",
   "overview": [
     "The Yogeshwari Devi Temple in Ambajogai is one of Maharashtra’s most revered Shakti Peethas and an important pilgrimage site in the Marathwada region. The temple is dedicated to Goddess Yogeshwari, considered a manifestation of Goddess Parvati and worshipped as the divine mother of the universe.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/yogeshwari-ambajogai/geography.jpg",
     "intro": "Ambajogai is located in the Beed district of Maharashtra and is often referred to as the 'Cultural Capital of Marathwada.' The town is surrounded by small hills and has numerous ancient temples and caves nearby.",
     "details": [
       {

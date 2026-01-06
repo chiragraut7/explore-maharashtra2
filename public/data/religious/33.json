@@ -2,8 +2,7 @@
   "id": "33",
   "title": "Ramtek Temple",
   "subtitle": "A Sacred Hill Shrine Dedicated to Lord Rama near Nagpur",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/ramtek-temple/banner.jpg",
   "color": "#C04000",
   "overview": [
     "Ramtek Temple, located about 50 km from Nagpur in Maharashtra, is a revered pilgrimage site dedicated to Lord Rama. Legend says that Lord Rama rested here during his exile, and the town derives its name from ‘Rama-tek’, meaning Rama’s Vow.",
@@ -28,7 +27,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/ramtek-temple/map.jpg",
     "intro": "Ramtek lies in the northeastern part of Maharashtra, surrounded by hills, forests, and serene lakes near Nagpur.",
     "details": [
       {

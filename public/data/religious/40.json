@@ -2,8 +2,7 @@
   "id": "40",
   "title": "Mahalaxmi Temple, Mumbai",
   "subtitle": "A Sacred Seaside Shrine Dedicated to Goddess Mahalaxmi",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/test/mahalaxmi-mumbai/banner.jpg",
   "color": "#b22222",
   "overview": [
     "The Mahalaxmi Temple in Mumbai is one of the city’s most visited and spiritually significant temples, dedicated to Goddess Mahalaxmi — the Goddess of Wealth, Prosperity, and Fortune.",
@@ -24,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/test/mahalaxmi-mumbai/geography.jpg",
     "intro": "The temple sits on the western coast of Mumbai, near the Mahalaxmi area, overlooking the sea.",
     "details": [
       {

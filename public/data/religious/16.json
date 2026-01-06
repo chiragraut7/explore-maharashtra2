@@ -2,8 +2,7 @@
   "id": "16",
   "title": "Dattatreya Temple, Gangapur",
   "subtitle": "A Sacred Abode of Lord Dattatreya on the Banks of Bhima River",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/test/dattatreya-gangapur/banner.jpg",
   "color": "#6b4226",
   "overview": [
     "Dattatreya Temple in Gangapur, located near Gulbarga (Karnataka-Maharashtra border), is one of the most revered pilgrimage sites dedicated to Lord Dattatreya.",
@@ -24,7 +23,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/test/dattatreya-gangapur/geography.jpg",
     "intro": "Gangapur is located near the Maharashtra–Karnataka border, on the serene banks of the Bhima River, surrounded by small hills and forests.",
     "details": [
       {
@@ -99,7 +98,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/test/dattatreya-gangapur/attraction1.jpg",
       "title": "Sangam of Bhima and Amarja Rivers",
       "description": "A serene confluence where devotees take holy dips and offer prayers.",
       "distance": "1 km",
@@ -107,7 +106,7 @@
       "value": "Sacred River Spot"
     },
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/test/dattatreya-gangapur/attraction2.jpg",
       "title": "Audumbar Tree",
       "description": "Believed to be the tree where Sri Narasimha Saraswati meditated and blessed devotees.",
       "distance": "Near temple premises",
@@ -154,13 +153,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
+      "src": "/images/religious/test/dattatreya-gangapur/1.jpg",
+      "thumb": "/images/religious/test/dattatreya-gangapur/thumb1.jpg",
       "alt": "Main shrine of Lord Dattatreya at Gangapur"
     },
     {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
+      "src": "/images/religious/test/dattatreya-gangapur/2.jpg",
+      "thumb": "/images/religious/test/dattatreya-gangapur/thumb2.jpg",
       "alt": "Bhima-Amarja Sangam near the temple"
     }
   ],

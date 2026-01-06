@@ -2,8 +2,8 @@
   "id": "04",
   "title": "Murud Beach",
   "subtitle": "Golden sands and the majestic Murud-Janjira Fort",
-  "bannerImage": "/assets/images/beaches/010.jpg",
-  "insideBannerImage": "/assets/images/beaches/010/bannerimg.jpg",
+  "bannerImage": "/assets/images/beaches/murud-banner.jpg",
+  "insideBannerImage": "/assets/images/beaches/04/bannerImg.jpg",
   "color": "#1b4d89",
   "overview": [
     "Murud Beach, located in the Raigad district of Maharashtra, is one of the most scenic and historically rich coastal destinations on the Konkan coast. Known for its wide golden sands, calm blue waters, and proximity to the famous Murud-Janjira Fort, this beach beautifully blends natural beauty with Maratha history.",
@@ -33,46 +33,20 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/010/info3.jpg",
+    "image": "/assets/images/beaches/04/info3.jpg",
     "intro": "Murud Beach lies along the Konkan coast in Raigad district, around 160 km from Mumbai and 50 km from Alibaug.",
     "details": [
-      {
-        "icon": "fas fa-map-marker-alt",
-        "label": "Location",
-        "value": "Murud, Raigad District, Maharashtra"
-      },
-      {
-        "icon": "fas fa-road",
-        "label": "Distance from Mumbai",
-        "value": "Approx. 160 km"
-      },
-      {
-        "icon": "fas fa-train",
-        "label": "Nearest Station",
-        "value": "Roha Railway Station (45 km)"
-      },
-      {
-        "icon": "fas fa-water",
-        "label": "Coastline",
-        "value": "Arabian Sea"
-      },
-      {
-        "icon": "fas fa-tree",
-        "label": "Surroundings",
-        "value": "Casuarina trees and rocky headlands"
-      }
+      { "icon": "fas fa-map-marker-alt", "label": "Location", "value": "Murud, Raigad District, Maharashtra" },
+      { "icon": "fas fa-road", "label": "Distance from Mumbai", "value": "Approx. 160 km" },
+      { "icon": "fas fa-train", "label": "Nearest Station", "value": "Roha Railway Station (45 km)" },
+      { "icon": "fas fa-water", "label": "Coastline", "value": "Arabian Sea" },
+      { "icon": "fas fa-tree", "label": "Surroundings", "value": "Casuarina trees and rocky headlands" }
     ],
     "climate": {
       "description": "Murud experiences tropical maritime weather — pleasant winters, warm summers, and heavy monsoons. The post-monsoon period is ideal for beach activities.",
       "seasons": [
-        {
-          "icon": "fas fa-sun",
-          "text": "Best Season: November to February"
-        },
-        {
-          "icon": "fas fa-cloud-rain",
-          "text": "Monsoon: June to September"
-        }
+        { "icon": "fas fa-sun", "text": "Best Season: November to February" },
+        { "icon": "fas fa-cloud-rain", "text": "Monsoon: June to September" }
       ]
     },
     "conclusion": "Its golden sands, calm waters, and proximity to historical forts make Murud a must-visit Konkan beach."
@@ -82,42 +56,30 @@
       "icon": "fas fa-jet-ski",
       "title": "Water Sports",
       "description": "Enjoy thrilling activities like banana rides, parasailing, and jet skiing.",
-      "info": [
-        "Available during peak season",
-        "Managed by local vendors with safety gear"
-      ]
+      "info": ["Available during peak season", "Managed by local vendors with safety gear"]
     },
     {
       "icon": "fas fa-horse",
       "title": "Horse & Buggy Rides",
       "description": "Experience traditional horse and buggy rides along the beach promenade.",
-      "info": [
-        "Ideal for kids and families",
-        "Best enjoyed during evenings"
-      ]
+      "info": ["Ideal for kids and families", "Best enjoyed during evenings"]
     },
     {
       "icon": "fas fa-camera",
       "title": "Photography & Sunset Views",
       "description": "Capture panoramic beach views and the distant Murud-Janjira Fort silhouette.",
-      "info": [
-        "Best lighting during sunrise and sunset",
-        "Fort visible clearly during low tide"
-      ]
+      "info": ["Best lighting during sunrise and sunset", "Fort visible clearly during low tide"]
     },
     {
       "icon": "fas fa-fish",
       "title": "Seafood Tasting",
       "description": "Relish local delicacies like fried fish, prawns, and crab curry at nearby eateries.",
-      "info": [
-        "Try homestay meals for authentic taste",
-        "Fresh catch served daily"
-      ]
+      "info": ["Try homestay meals for authentic taste", "Fresh catch served daily"]
     }
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/010/img1.jpg",
+      "image": "/assets/images/beaches/04/img1.jpg",
       "title": "Murud-Janjira Fort",
       "description": "A 17th-century island fort built by the Siddis, famous for its invincible design.",
       "distance": "2 km by boat from Murud Beach",
@@ -125,7 +87,7 @@
       "value": "Historic Sea Fort"
     },
     {
-      "image": "/assets/images/beaches/010/img4.jpg",
+      "image": "/assets/images/beaches/04/img4.jpg",
       "title": "Kashid Beach",
       "description": "A serene white sand beach just 18 km away, perfect for day trips and water sports.",
       "distance": "18 km",
@@ -133,7 +95,7 @@
       "value": "Nearby Scenic Beach"
     },
     {
-      "image": "/assets/images/beaches/010/img2.jpg",
+      "image": "/assets/images/beaches/04/img2.jpg",
       "title": "Phansad Wildlife Sanctuary",
       "description": "A dense forest reserve home to diverse flora and fauna, ideal for nature walks.",
       "distance": "15 km",
@@ -144,21 +106,9 @@
   "marineLife": {
     "intro": "Murud’s coastal waters support a moderate variety of marine and bird life, thriving in clean and undisturbed habitats.",
     "items": [
-      {
-        "icon": "fas fa-fish",
-        "title": "Fish & Crabs",
-        "description": "Common species like mackerel and crabs can be spotted near the shore."
-      },
-      {
-        "icon": "fas fa-dove",
-        "title": "Sea Birds",
-        "description": "Seagulls, egrets, and sandpipers often flock around during early mornings."
-      },
-      {
-        "icon": "fas fa-seedling",
-        "title": "Coastal Flora",
-        "description": "Casuarinas and mangrove clusters stabilize the dunes and enrich biodiversity."
-      }
+      { "icon": "fas fa-fish", "title": "Fish & Crabs", "description": "Common species like mackerel and crabs can be spotted near the shore." },
+      { "icon": "fas fa-dove", "title": "Sea Birds", "description": "Seagulls, egrets, and sandpipers often flock around during early mornings." },
+      { "icon": "fas fa-seedling", "title": "Coastal Flora", "description": "Casuarinas and mangrove clusters stabilize the dunes and enrich biodiversity." }
     ],
     "conclusion": [
       "The beach’s ecosystem is well-preserved due to local conservation efforts.",
@@ -200,47 +150,16 @@
     }
   ],
   "gallery": [
-    {
-      "src": "/assets/images/beaches/010/img5.jpg",
-      "thumb": "/assets/images/beaches/010/img5.jpg",
-      "alt": "Murud Beach shoreline"
-    },
-    {
-      "src": "/assets/images/beaches/010/img6.jpg",
-      "thumb": "/assets/images/beaches/010/img6.jpg",
-      "alt": "View of Murud-Janjira Fort from the beach"
-    },
-    {
-      "src": "/assets/images/beaches/010/img7.jpg",
-      "thumb": "/assets/images/beaches/010/img7.jpg",
-      "alt": "Golden sands and casuarina trees"
-    },
-    {
-      "src": "/assets/images/beaches/010/img8.jpg",
-      "thumb": "/assets/images/beaches/010/img8.jpg",
-      "alt": "Sunset view at Murud Beach"
-    }
+    { "src": "/assets/images/beaches/04/img5.jpg", "thumb": "/assets/images/beaches/04/img5.jpg", "alt": "Murud Beach shoreline" },
+    { "src": "/assets/images/beaches/04/img6.jpg", "thumb": "/assets/images/beaches/04/img6.jpg", "alt": "View of Murud-Janjira Fort from the beach" },
+    { "src": "/assets/images/beaches/04/img7.jpg", "thumb": "/assets/images/beaches/04/img7.jpg", "alt": "Golden sands and casuarina trees" },
+    { "src": "/assets/images/beaches/04/img8.jpg", "thumb": "/assets/images/beaches/04/img8.jpg", "alt": "Sunset view at Murud Beach" }
   ],
   "bookingTips": [
-    {
-      "icon": "fas fa-calendar",
-      "description": "Book stays early for weekends and public holidays."
-    },
-    {
-      "icon": "fas fa-sun",
-      "description": "Best season: November to February for calm weather."
-    },
-    {
-      "icon": "fas fa-cloud-rain",
-      "description": "Avoid visiting during heavy monsoon (June–September)."
-    },
-    {
-      "icon": "fas fa-utensils",
-      "description": "Try local seafood thalis and Malvani cuisine."
-    },
-    {
-      "icon": "fas fa-camera",
-      "description": "Carry a camera or drone for fort and beach views."
-    }
+    { "icon": "fas fa-calendar", "description": "Book stays early for weekends and public holidays." },
+    { "icon": "fas fa-sun", "description": "Best season: November to February for calm weather." },
+    { "icon": "fas fa-cloud-rain", "description": "Avoid visiting during heavy monsoon (June–September)." },
+    { "icon": "fas fa-utensils", "description": "Try local seafood thalis and Malvani cuisine." },
+    { "icon": "fas fa-camera", "description": "Carry a camera or drone for fort and beach views." }
   ]
 }

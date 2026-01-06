@@ -2,8 +2,7 @@
   "id": "28",
   "title": "Girijatmaj Temple, Lenyadri",
   "subtitle": "The Cave Temple Where Goddess Parvati Worshipped Lord Ganesha",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/lenyadri/banner.jpg",
   "color": "#d97706",
   "overview": [
     "The Girijatmaj Temple at Lenyadri, near Junnar in Pune district, is one of the eight revered Ashtavinayak Temples of Maharashtra. This temple holds a unique place as it is carved into a mountain cave complex and symbolizes divine motherhood.",
@@ -28,7 +27,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/lenyadri/map.jpg",
     "intro": "Lenyadri is located near Junnar in Pune district, surrounded by rugged hills and ancient caves dating back to the 1st–3rd century AD. The temple lies at an elevation of around 750 meters above sea level, offering scenic views of the Kukadi River valley.",
     "details": [
       {

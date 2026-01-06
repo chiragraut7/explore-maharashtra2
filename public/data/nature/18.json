@@ -2,8 +2,7 @@
   "id": "18",
   "title": "Radhanagari Wildlife Sanctuary",
   "subtitle": "A Haven for the Mighty Indian Bison",
-  "bannerImage": "/assets/images/nature/01.jpg",
-  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
+  "bannerImage": "/images/nature/radhanagari/banner.jpg",
   "color": "#1B5E20",
   "overview": [
     "Radhanagari Wildlife Sanctuary, also known as Dajipur Sanctuary, is one of Maharashtra’s most scenic and biodiverse protected areas, nestled in the Sahyadri ranges of the Western Ghats.",
@@ -23,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/nature/01/info2.jpg",
+    "image": "/images/nature/radhanagari/geography.jpg",
     "intro": "Located about 55 km from Kolhapur, Radhanagari Wildlife Sanctuary lies in the Sahyadri hill ranges, characterized by dense forests, hills, and water reservoirs.",
     "details": [
       {
@@ -98,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/radhanagari/dam.jpg",
       "title": "Radhanagari Dam",
       "description": "A scenic dam built across the Bhogawati River offering panoramic views and serene surroundings.",
       "distance": "Within Sanctuary",
@@ -106,7 +105,7 @@
       "value": "Scenic Spot"
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/radhanagari/viewpoint.jpg",
       "title": "Sunset Point",
       "description": "A popular viewpoint overlooking the lush valleys and reservoir, offering stunning sunset views.",
       "distance": "3 km from Dajipur Entrance",
@@ -153,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/radhanagari/gallery1.jpg",
+      "thumb": "/images/nature/radhanagari/thumb1.jpg",
       "alt": "Indian Bison in Radhanagari Sanctuary"
     },
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/radhanagari/gallery2.jpg",
+      "thumb": "/images/nature/radhanagari/thumb2.jpg",
       "alt": "Radhanagari Dam and forest landscape"
     }
   ],

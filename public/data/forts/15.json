@@ -2,8 +2,7 @@
   "id": "15",
   "title": "Vasai Fort",
   "subtitle": "Historic Portuguese Citadel near Mumbai",
-  "bannerImage": "/assets/images/forts/01.jpg",
-  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
+  "bannerImage": "/images/forts/vasai/vasai-banner.jpg",
   "color": "#4338ca",
   "overview": [
     "Vasai Fort, also known as Fort Bassein, is a massive coastal fort located in Vasai near Mumbai. Built by the Portuguese in the 16th century, it served as the northern capital of Portuguese India before falling to the Marathas under Chimaji Appa in 1739.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/forts/01/info2.jpg",
+    "image": "/images/forts/vasai/vasai-geo.jpg",
     "intro": "Spread across 110 acres, Vasai Fort is situated along the Arabian Sea, about 50 km north of Mumbai. The fort’s three main gates face the sea and the land, designed to guard the Bassein Creek.",
     "details": [
       {
@@ -97,7 +96,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/vasai/attraction1.jpg",
       "title": "Old Portuguese Churches",
       "description": "Ruins of ancient churches inside the fort reflect the Portuguese era of dominance.",
       "distance": "Inside Fort",
@@ -105,7 +104,7 @@
       "value": "Historic Ruins"
     },
     {
-      "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/vasai/attraction2.jpg",
       "title": "Sea-Facing Bastions",
       "description": "Strong bastions built to defend the fort against sea attacks offer stunning sunset views.",
       "distance": "Western Wall",
@@ -152,13 +151,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/vasai/gallery1.jpg",
+      "thumb": "/images/forts/vasai/gallery1-thumb.jpg",
       "alt": "Vasai Fort Ruins"
     },
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/vasai/gallery2.jpg",
+      "thumb": "/images/forts/vasai/gallery2-thumb.jpg",
       "alt": "Sea View from Vasai Fort"
     }
   ],

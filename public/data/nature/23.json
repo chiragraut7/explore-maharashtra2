@@ -2,8 +2,7 @@
   "id": "23",
   "title": "Matheran Hill Forest",
   "subtitle": "A Tranquil Eco-Sensitive Hill with Red Soil Trails and Dense Greenery",
-  "bannerImage": "/assets/images/nature/01.jpg",
-  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
+  "bannerImage": "/images/nature/matheran/banner.jpg",
   "color": "#4caf50",
   "overview": [
     "Matheran, meaning ‘Forest on the Forehead’, is a serene hill station located near Mumbai and Pune. It’s one of the few places in India where vehicles are banned, making it a pollution-free natural haven.",
@@ -23,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/nature/01/info2.jpg",
+    "image": "/images/nature/matheran/geo.jpg",
     "intro": "Situated in the Raigad district, Matheran is perched at about 800 meters above sea level in the Western Ghats.",
     "details": [
       {
@@ -98,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/matheran/charlotte.jpg",
       "title": "Charlotte Lake",
       "description": "A tranquil lake surrounded by forest, serving as Matheran’s main water source and a peaceful picnic spot.",
       "distance": "1 km from main market",
@@ -106,7 +105,7 @@
       "value": "Scenic lake and birdwatching"
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/matheran/panorama.jpg",
       "title": "Panorama Point",
       "description": "Offers a breathtaking 360° view of the Western Ghats, especially during sunrise.",
       "distance": "4 km trek from market",
@@ -153,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/matheran/gallery1.jpg",
+      "thumb": "/images/nature/matheran/thumb1.jpg",
       "alt": "Matheran valley view"
     },
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/matheran/gallery2.jpg",
+      "thumb": "/images/nature/matheran/thumb2.jpg",
       "alt": "Charlotte Lake Matheran"
     }
   ],

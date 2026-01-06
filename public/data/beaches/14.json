@@ -2,8 +2,8 @@
   "id": "14",
   "title": "Velas Beach",
   "subtitle": "Turtle nesting haven and eco-tourism escape in Konkan",
-  "bannerImage": "/assets/images/beaches/010.jpg",
-  "insideBannerImage": "/assets/images/beaches/010/bannerimg.jpg",
+  "bannerImage": "/assets/images/beaches/velas-beache.jpg",
+  "insideBannerImage": "/assets/images/beaches/14/bannerImg.jpg",
     "color": "#5699ba",
   "overview":  [
       "Velas Beach is a quaint and clean beach located in the Ratnagiri district of Maharashtra. It is best known for its Olive Ridley turtle conservation project, where baby turtles hatch and are released into the sea during nesting season.",
@@ -33,7 +33,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/beaches/010/info3.jpg",
+    "image": "/assets/images/beaches/14/info3.jpg",
     "intro": "Velas is a coastal village located in the northern part of Ratnagiri district. It lies near the mouth of the Savitri River and is surrounded by forested hills and untouched nature.",
     "details": [
       {
@@ -108,7 +108,7 @@
   ],
   "attractions": [
   {
-    "image": "/assets/images/beaches/010/img1.jpg",
+    "image": "/assets/images/beaches/14/img1.jpg",
     "title": "Bankot Fort",
     "description": "Historic fort with stunning views of the sea and river confluence.",
     "distance": "Approx. 4 km",
@@ -116,7 +116,7 @@
     "value": "Historical Viewpoint"
   },
   {
-      "image": "/assets/images/beaches/010/img2.jpg",
+      "image": "/assets/images/beaches/14/img2.jpg",
     "title": "Harihareshwar Temple",
     "description": "A sacred coastal temple complex just an hour&apos;s drive from Velas.",
     "distance": "Approx. 30 km",
@@ -124,7 +124,7 @@
     "value": "Religious Site"
   },
   {
-    "image": "/assets/images/beaches/010/img3.jpg",
+    "image": "/assets/images/beaches/14/img3.jpg",
     "title": "Anjarle Beach",
     "description": "Another quiet beach known for its turtle conservation and clean sands.",
     "distance": "Approx. 25 km",
@@ -185,18 +185,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/010/img1.jpg",
-      "thumb": "/assets/images/beaches/010/img1.jpg",
+      "src": "/assets/images/beaches/14/img1.jpg",
+      "thumb": "/assets/images/beaches/14/img1.jpg",
       "alt": "Turtle Nesting at Velas"
     },
     {
-      "src": "/assets/images/beaches/010/img2.jpg",
-      "thumb": "/assets/images/beaches/010/img2.jpg",
+      "src": "/assets/images/beaches/14/img2.jpg",
+      "thumb": "/assets/images/beaches/14/img2.jpg",
       "alt": "Velas Beach Shoreline"
     },
     {
-      "src": "/assets/images/beaches/010/img3.jpg",
-      "thumb": "/assets/images/beaches/010/img3.jpg",
+      "src": "/assets/images/beaches/14/img3.jpg",
+      "thumb": "/assets/images/beaches/14/img3.jpg",
       "alt": "Bankot Fort Views"
     }
   ],

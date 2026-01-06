@@ -2,8 +2,7 @@
   "id": "19",
   "title": "Kunkeshwar Temple",
   "subtitle": "Seaside Shiva Temple of Devotion and Beauty in Sindhudurg",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/kunkeshwar/banner.jpg",
   "color": "#0f766e",
   "overview": [
     "Kunkeshwar Temple, located on the serene Konkan coast of Sindhudurg district, is an ancient and revered shrine dedicated to Lord Shiva. Known as the 'Kashi of the South Konkan', this temple stands majestically on the shores of the Arabian Sea, offering both spiritual peace and natural splendor.",
@@ -28,46 +27,20 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/kunkeshwar/map.jpg",
     "intro": "Kunkeshwar Temple is located in Devgad Taluka, Sindhudurg district, on the western coast of Maharashtra, overlooking the vast Arabian Sea.",
     "details": [
-      {
-        "icon": "fa-solid fa-map-marker-alt",
-        "label": "District",
-        "value": "Sindhudurg"
-      },
-      {
-        "icon": "fa-solid fa-water",
-        "label": "Location",
-        "value": "Kunkeshwar Beach"
-      },
-      {
-        "icon": "fa-solid fa-road",
-        "label": "Nearest Town",
-        "value": "Devgad (14 km)"
-      },
-      {
-        "icon": "fa-solid fa-calendar-day",
-        "label": "Major Festival",
-        "value": "Maha Shivaratri"
-      },
-      {
-        "icon": "fa-solid fa-sun",
-        "label": "Climate",
-        "value": "Tropical coastal climate with moderate temperatures year-round."
-      }
+      { "icon": "fa-solid fa-map-marker-alt", "label": "District", "value": "Sindhudurg" },
+      { "icon": "fa-solid fa-water", "label": "Location", "value": "Kunkeshwar Beach" },
+      { "icon": "fa-solid fa-road", "label": "Nearest Town", "value": "Devgad (14 km)" },
+      { "icon": "fa-solid fa-calendar-day", "label": "Major Festival", "value": "Maha Shivaratri" },
+      { "icon": "fa-solid fa-sun", "label": "Climate", "value": "Tropical coastal climate with moderate temperatures year-round." }
     ],
     "climate": {
       "description": "The coastal region enjoys pleasant winters, humid summers, and heavy monsoon rains. The temple looks particularly divine in the monsoon mist.",
       "seasons": [
-        {
-          "icon": "fa-solid fa-sun",
-          "text": "Winter (November–February): Pleasant for temple visits and beach walks."
-        },
-        {
-          "icon": "fa-solid fa-cloud-rain",
-          "text": "Monsoon (June–September): The temple appears mystical amidst sea mist and rain."
-        }
+        { "icon": "fa-solid fa-sun", "text": "Winter (November–February): Pleasant for temple visits and beach walks." },
+        { "icon": "fa-solid fa-cloud-rain", "text": "Monsoon (June–September): The temple appears mystical amidst sea mist and rain." }
       ]
     },
     "conclusion": "Set between sea and sky, Kunkeshwar Temple embodies devotion, tranquility, and the timeless charm of Konkan’s coastal spirituality."
@@ -99,7 +72,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/kunkeshwar/beach.jpg",
       "title": "Kunkeshwar Beach",
       "description": "A pristine and clean beach located adjacent to the temple, offering stunning sunset views.",
       "distance": "0 km",
@@ -107,7 +80,7 @@
       "value": "Natural Beauty"
     },
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/kunkeshwar/devgad-fort.jpg",
       "title": "Devgad Fort",
       "description": "A coastal fort built in the 18th century by Kanhoji Angre, offering a glimpse into Maratha maritime history.",
       "distance": "14 km",
@@ -115,7 +88,7 @@
       "value": "Historical Site"
     },
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/kunkeshwar/mitbhav.jpg",
       "title": "Mitbhav Beach",
       "description": "Another scenic beach near Kunkeshwar, known for its quiet surroundings and natural beauty.",
       "distance": "20 km",
@@ -169,39 +142,14 @@
     }
   ],
   "gallery": [
-    {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
-      "alt": "Kunkeshwar Temple sea view"
-    },
-    {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
-      "alt": "Lord Shiva idol at Kunkeshwar"
-    },
-    {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
-      "alt": "Kunkeshwar Beach at sunset"
-    },
-    {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
-      "alt": "Devotees during Maha Shivaratri festival"
-    }
+    { "src": "/images/religious/kunkeshwar/1.jpg", "thumb": "/images/religious/kunkeshwar/thumb1.jpg", "alt": "Kunkeshwar Temple sea view" },
+    { "src": "/images/religious/kunkeshwar/2.jpg", "thumb": "/images/religious/kunkeshwar/thumb2.jpg", "alt": "Lord Shiva idol at Kunkeshwar" },
+    { "src": "/images/religious/kunkeshwar/3.jpg", "thumb": "/images/religious/kunkeshwar/thumb3.jpg", "alt": "Kunkeshwar Beach at sunset" },
+    { "src": "/images/religious/kunkeshwar/4.jpg", "thumb": "/images/religious/kunkeshwar/thumb4.jpg", "alt": "Devotees during Maha Shivaratri festival" }
   ],
   "bookingTips": [
-    {
-      "icon": "fa-solid fa-hotel",
-      "description": "Stay in nearby Devgad or Malvan for better accommodation options."
-    },
-    {
-      "icon": "fa-solid fa-umbrella-beach",
-      "description": "Carry light clothes and sun protection for beach visits."
-    },
-    {
-      "icon": "fa-solid fa-praying-hands",
-      "description": "Morning and evening aartis offer the most divine experience with sea breeze and chants."
-    }
+    { "icon": "fa-solid fa-hotel", "description": "Stay in nearby Devgad or Malvan for better accommodation options." },
+    { "icon": "fa-solid fa-umbrella-beach", "description": "Carry light clothes and sun protection for beach visits." },
+    { "icon": "fa-solid fa-praying-hands", "description": "Morning and evening aartis offer the most divine experience with sea breeze and chants." }
   ]
 }

@@ -2,8 +2,7 @@
   "id": "15",
   "title": "Chandoli National Park",
   "subtitle": "A Tranquil Haven of Wildlife and Nature in the Sahyadris",
-  "bannerImage": "/assets/images/nature/01.jpg",
-  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
+  "bannerImage": "/images/nature/chandoli/banner.jpg",
   "color": "#2e7d32",
   "overview": [
     "Chandoli National Park, located in the Sahyadri range of Maharashtra, is a lush green sanctuary known for its rich biodiversity, dense forests, and scenic landscapes. Spread across Sangli, Satara, Kolhapur, and Ratnagiri districts, it is part of the Sahyadri Tiger Reserve and offers a serene natural retreat for wildlife enthusiasts.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/nature/01/info2.jpg",
+    "image": "/images/nature/chandoli/geography.jpg",
     "intro": "Chandoli National Park is located in the western part of Maharashtra within the Sahyadri range, forming part of the UNESCO-recognized Western Ghats.",
     "details": [
       {
@@ -97,7 +96,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/chandoli/waterfall.jpg",
       "title": "Chandoli Waterfalls",
       "description": "Numerous waterfalls and streams dot the park, offering beautiful natural viewpoints.",
       "distance": "Within park limits",
@@ -105,7 +104,7 @@
       "value": "Best viewed during monsoon"
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/chandoli/prachitgad.jpg",
       "title": "Prachitgad Fort",
       "description": "An ancient fort within the park that offers panoramic views of the Western Ghats.",
       "distance": "Inside the park",
@@ -113,7 +112,7 @@
       "value": "Historical significance and scenic views"
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/chandoli/warna-dam.jpg",
       "title": "Warna Dam",
       "description": "A nearby attraction known for its tranquil backwaters and boating options.",
       "distance": "18 km from Chandoli",
@@ -168,18 +167,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/chandoli/chandoli1.jpg",
+      "thumb": "/images/nature/chandoli/chandoli1_thumb.jpg",
       "alt": "Dense forest trails in Chandoli National Park"
     },
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/chandoli/chandoli2.jpg",
+      "thumb": "/images/nature/chandoli/chandoli2_thumb.jpg",
       "alt": "Wildlife spotting at Chandoli"
     },
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/chandoli/chandoli3.jpg",
+      "thumb": "/images/nature/chandoli/chandoli3_thumb.jpg",
       "alt": "Scenic views from Prachitgad Fort"
     }
   ],

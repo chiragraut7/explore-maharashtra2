@@ -2,8 +2,7 @@
   "id": "25",
   "title": "Tung Fort (Kathingad)",
   "subtitle": "The Needle-Shaped Fort Overlooking Pawna Lake",
-  "bannerImage": "/assets/images/forts/01.jpg",
-  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
+  "bannerImage": "/images/forts/tung/tung-banner.jpg",
   "color": "#6b4f3f",
   "overview": [
     "Tung Fort, also known as Kathingad, is a stunning conical hill fort located near Pawna Lake in Maharashtra. Its name 'Kathingad' literally means 'difficult fort,' owing to its steep and narrow ascent.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/forts/01/info2.jpg",
+    "image": "/images/forts/tung/tung-map.jpg",
     "intro": "Tung Fort stands at about 1,075 meters (3,526 feet) above sea level near Lonavala, surrounded by lush hills and Pawna Lake.",
     "details": [
       {
@@ -97,7 +96,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/tung/tung-top.jpg",
       "title": "Fort Top and Bastion",
       "description": "The fort top offers a breathtaking 360° view of the Sahyadris and surrounding forts.",
       "distance": "At the summit",
@@ -105,7 +104,7 @@
       "value": "Viewpoint"
     },
     {
-      "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/tung/tung-temple.jpg",
       "title": "Tung Devi Temple",
       "description": "A small shrine dedicated to the local goddess Tung Devi stands on the peak.",
       "distance": "Near the summit",
@@ -152,13 +151,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/tung/tung1.jpg",
+      "thumb": "/images/forts/tung/tung1-thumb.jpg",
       "alt": "Tung Fort peak view"
     },
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/tung/tung2.jpg",
+      "thumb": "/images/forts/tung/tung2-thumb.jpg",
       "alt": "View of Pawna Lake from Tung Fort"
     }
   ],

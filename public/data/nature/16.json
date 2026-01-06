@@ -2,8 +2,7 @@
   "id": "16",
   "title": "Karnala Bird Sanctuary",
   "subtitle": "A Paradise for Birdwatchers near Mumbai",
-  "bannerImage": "/assets/images/nature/01.jpg",
-  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
+  "bannerImage": "/images/nature/karnala/banner.jpg",
   "color": "#388E3C",
   "overview": [
     "Located about 60 km from Mumbai, Karnala Bird Sanctuary is one of Maharashtra’s most accessible and loved nature reserves. It is a haven for birdwatchers, trekkers, and nature enthusiasts alike.",
@@ -23,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/nature/01/info2.jpg",
+    "image": "/images/nature/karnala/geography.jpg",
     "intro": "Situated in the Raigad district, Karnala Bird Sanctuary lies on the Mumbai–Goa Highway near Panvel. The sanctuary’s hilly terrain and dense forests make it a biodiversity hotspot of the Western Ghats foothills.",
     "details": [
       {
@@ -98,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/karnala/fort.jpg",
       "title": "Karnala Fort",
       "description": "An ancient hill fort within the sanctuary, known for its strategic position and breathtaking views.",
       "distance": "2.5 km trek from base",
@@ -106,7 +105,7 @@
       "value": "Historical Fort"
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/karnala/panvel.jpg",
       "title": "Panvel City",
       "description": "The nearest urban hub offering restaurants, hotels, and transport facilities for travelers.",
       "distance": "12 km from Karnala",
@@ -153,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/karnala/gallery1.jpg",
+      "thumb": "/images/nature/karnala/thumb1.jpg",
       "alt": "Colorful bird spotted in Karnala Sanctuary"
     },
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/karnala/gallery2.jpg",
+      "thumb": "/images/nature/karnala/thumb2.jpg",
       "alt": "Trekking trail leading to Karnala Fort"
     }
   ],

@@ -2,8 +2,8 @@
   "id": "15",
   "title": "Toranmal Hill Station",
   "subtitle": "A Serene Plateau Amid the Satpura Range",
-  "bannerImage": "/assets/images/hills/01.jpg",
-  "insideBannerImage": "/assets/images/hills/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/hills/15.jpg",
+  "insideBannerImage": "/assets/images/hills/15/bannerimg.jpg",
   "color": "#1a4c36",
   "overview": [
     "Toranmal is a tranquil hill station nestled in the Satpura ranges of Nandurbar district, Maharashtra.",
@@ -28,7 +28,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/hills/01/info2.jpg",
+    "image": "/assets/images/hills/15/info2.jpg",
     "intro": "Located in the Satpura range, Toranmal lies at an elevation of around 1,150 meters, offering a cool and refreshing climate all year round.",
     "details": [
       {
@@ -107,7 +107,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/hills/01/img1.jpg",
+      "image": "/assets/images/hills/15/img1.jpg",
       "title": "Yashavant Lake",
       "description": "A peaceful natural lake surrounded by forests, perfect for boating and picnicking.",
       "distance": "2 km from main town",
@@ -115,7 +115,7 @@
       "value": "Scenic beauty & tranquility"
     },
     {
-      "image": "/assets/images/hills/01/img2.jpg",
+      "image": "/assets/images/hills/15/img2.jpg",
       "title": "Gorakhnath Temple",
       "description": "An ancient temple dedicated to Lord Shiva, visited by thousands during Mahashivratri.",
       "distance": "3 km from Yashavant Lake",
@@ -123,7 +123,7 @@
       "value": "Spiritual significance"
     },
     {
-      "image": "/assets/images/hills/01/img3.jpg",
+      "image": "/assets/images/hills/15/img3.jpg",
       "title": "Sita Khunda",
       "description": "A sacred tank associated with the Ramayana legend, known for its spiritual importance.",
       "distance": "2.5 km from town center",
@@ -178,18 +178,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/hills/01/img1.jpg",
-      "thumb": "/assets/images/hills/01/img1.jpg",
+      "src": "/assets/images/hills/15/img1.jpg",
+      "thumb": "/assets/images/hills/15/img1.jpg",
       "alt": "Yashavant Lake view"
     },
     {
-      "src": "/assets/images/hills/01/img2.jpg",
-      "thumb": "/assets/images/hills/01/img2.jpg",
+      "src": "/assets/images/hills/15/img2.jpg",
+      "thumb": "/assets/images/hills/15/img2.jpg",
       "alt": "Toranmal hilltop landscape"
     },
     {
-      "src": "/assets/images/hills/01/img3.jpg",
-      "thumb": "/assets/images/hills/01/img3.jpg",
+      "src": "/assets/images/hills/15/img3.jpg",
+      "thumb": "/assets/images/hills/15/img3.jpg",
       "alt": "Gorakhnath Temple"
     }
   ],

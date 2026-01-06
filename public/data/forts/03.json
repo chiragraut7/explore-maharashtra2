@@ -2,8 +2,8 @@
   "id": "03",
   "title": "Pratapgad Fort",
   "subtitle": "The Fort of Victory and Valor",
-  "bannerImage": "/assets/images/forts/01.jpg",
-  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/forts/03.jpg",
+  "insideBannerImage": "/assets/images/forts/03/bannerimg.jpg",
   "color": "#874c1a",
   "overview": [
     "Pratapgad Fort, located near Mahabaleshwar in the Satara district, is one of Maharashtra's most iconic hill forts. It gained immense historical importance as the site of the legendary battle between Chhatrapati Shivaji Maharaj and Afzal Khan in 1659.",
@@ -22,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/forts/01/info2.jpg",
+    "image": "/images/forts/pratapgad/pratapgad-geography.jpg",
     "intro": "Situated about 21 km from Mahabaleshwar, Pratapgad Fort is perched on the crest of a mountain spur that divides the villages of Par and Kinesvar.",
     "details": [
       {
@@ -88,7 +88,7 @@
   ],
   "attractions": [
     {
-    "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/pratapgad/maha-durga.jpg",
       "title": "Bhavani Mata Temple",
       "description": "Built by Shivaji Maharaj in honor of Goddess Bhavani, the temple remains an important pilgrimage site.",
       "distance": "Within fort complex",
@@ -96,7 +96,7 @@
       "value": "Spiritual & Historical Spot"
     },
     {
-      "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/pratapgad/shivaji-statue.jpg",
       "title": "Statue of Shivaji Maharaj",
       "description": "A grand bronze statue of Shivaji Maharaj stands proudly on the fort’s top, overlooking the valleys.",
       "distance": "Fort summit area",
@@ -151,18 +151,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/pratapgad/gallery1.jpg",
+      "thumb": "/images/forts/pratapgad/thumb1.jpg",
       "alt": "Aerial view of Pratapgad Fort"
     },
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/pratapgad/gallery2.jpg",
+      "thumb": "/images/forts/pratapgad/thumb2.jpg",
       "alt": "Bhavani Temple at Pratapgad"
     },
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/pratapgad/gallery3.jpg",
+      "thumb": "/images/forts/pratapgad/thumb3.jpg",
       "alt": "Statue of Shivaji Maharaj at the fort top"
     }
   ],

@@ -2,8 +2,7 @@
   "id": "14",
   "title": "Akkalkot Swami Samarth Temple",
   "subtitle": "The Sacred Abode of Shri Swami Samarth Maharaj in Solapur District",
-  "bannerImage": "/assets/images/religious/01.jpg",
-  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
+  "bannerImage": "/images/religious/akkalkot/banner.jpg",
   "color": "#D97706",
   "overview": [
     "Akkalkot, located in the Solapur district of Maharashtra, is a revered pilgrimage site dedicated to Shri Swami Samarth Maharaj, believed to be an incarnation of Lord Dattatreya. The temple, also known as Swami Samarth Math, draws devotees from across India seeking blessings, peace, and spiritual enlightenment.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/religious/01/info2.jpg",
+    "image": "/images/religious/akkalkot/map.jpg",
     "intro": "Akkalkot lies 38 km southeast of Solapur and close to the Karnataka border, making it easily accessible from both states.",
     "details": [
       {
@@ -97,7 +96,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/akkalkot/temple.jpg",
       "title": "Swami Samarth Math",
       "description": "Main spiritual center built around the sacred Audumbar tree, where devotees gather for meditation and prayers.",
       "distance": "0 km",
@@ -105,7 +104,7 @@
       "value": "Main Shrine"
     },
     {
-      "image": "/assets/images/religious/01/img1.jpg",
+      "image": "/images/religious/akkalkot/solapur.jpg",
       "title": "Solapur Siddheshwar Temple",
       "description": "A famous Shiva temple located on a lake island in Solapur city, just an hour away.",
       "distance": "38 km",
@@ -152,13 +151,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
+      "src": "/images/religious/akkalkot/1.jpg",
+      "thumb": "/images/religious/akkalkot/thumb1.jpg",
       "alt": "Akkalkot Swami Samarth Temple Main Entrance"
     },
     {
-      "src": "/assets/images/religious/01/img1.jpg",
-      "thumb": "/assets/images/religious/01/img1.jpg",
+      "src": "/images/religious/akkalkot/2.jpg",
+      "thumb": "/images/religious/akkalkot/thumb2.jpg",
       "alt": "Devotees performing Aarti at the temple"
     }
   ],

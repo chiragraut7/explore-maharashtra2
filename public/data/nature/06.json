@@ -2,8 +2,7 @@
   "id": "06",
   "title": "Chikhaldara Wildlife Sanctuary",
   "subtitle": "A Scenic Hill Retreat and Wildlife Haven in the Satpura Ranges",
-  "bannerImage": "/assets/images/nature/01.jpg",
-  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
+  "bannerImage": "/images/nature/chikhaldara/banner.jpg",
   "color": "#2e7d32",
   "overview": [
     "Chikhaldara, located in the Amravati district, is the only hill station in the Vidarbha region of Maharashtra. Nestled at an altitude of about 1118 meters, it offers a rare combination of lush forests, wildlife, waterfalls, and panoramic viewpoints.",
@@ -23,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/nature/01/info2.jpg",
+    "image": "/images/nature/chikhaldara/geo.jpg",
     "intro": "Situated in the Satpura mountain ranges, Chikhaldara is surrounded by dense forests and deep valleys, making it an ecological treasure.",
     "details": [
       {
@@ -98,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/chikhaldara/gavilgad.jpg",
       "title": "Gavilgad Fort",
       "description": "An ancient hill fort offering panoramic views of the surrounding forest and valleys.",
       "distance": "3 km from Chikhaldara town",
@@ -106,7 +105,7 @@
       "value": "Historic fort and scenic viewpoint"
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/chikhaldara/panchbol.jpg",
       "title": "Panchbol Point",
       "description": "A natural acoustic wonder where sounds echo five times — a fascinating natural phenomenon.",
       "distance": "4 km from main town",
@@ -153,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/chikhaldara/gallery1.jpg",
+      "thumb": "/images/nature/chikhaldara/thumb1.jpg",
       "alt": "Chikhaldara valley view"
     },
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/chikhaldara/gallery2.jpg",
+      "thumb": "/images/nature/chikhaldara/thumb2.jpg",
       "alt": "Gavilgad Fort Chikhaldara"
     }
   ],

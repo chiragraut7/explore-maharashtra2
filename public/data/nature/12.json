@@ -2,8 +2,7 @@
   "id": "12",
   "title": "Phansad Wildlife Sanctuary",
   "subtitle": "A coastal forest paradise rich in biodiversity near Alibaug",
-  "bannerImage": "/assets/images/nature/01.jpg",
-  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
+  "bannerImage": "/assets/images/nature/phansad.jpg",
   "color": "#1b3a2d",
   "overview": [
     "Phansad Wildlife Sanctuary, located between Murud and Roha in Raigad district, is a hidden ecological gem of the Konkan coast. Spread over 52 square kilometers, it preserves the semi-evergreen coastal forest ecosystem of the Western Ghats.",
@@ -23,7 +22,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/nature/01/info2.jpg",
+    "image": "/assets/images/nature/phansad-map.jpg",
     "intro": "Phansad lies between Murud and Roha towns in Raigad district, covering both hilly and coastal forest regions.",
     "details": [
       {
@@ -98,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/assets/images/nature/phansad-trail.jpg",
       "title": "Sable Machi Trail",
       "description": "A scenic trekking route inside the sanctuary leading to a viewpoint.",
       "distance": "4 km from sanctuary gate",
@@ -106,7 +105,7 @@
       "value": "Nature Trail"
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/assets/images/nature/phansad-pond.jpg",
       "title": "Pond Ecosystem",
       "description": "Natural ponds where animals gather to drink and birds nest nearby.",
       "distance": "Within sanctuary",
@@ -153,13 +152,13 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/assets/images/nature/phansad-forest.jpg",
+      "thumb": "/assets/images/nature/phansad-forest.jpg",
       "alt": "Phansad Forest Trail"
     },
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/assets/images/nature/phansad-birds.jpg",
+      "thumb": "/assets/images/nature/phansad-birds.jpg",
       "alt": "Birdwatching at Phansad Sanctuary"
     }
   ],

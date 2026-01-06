@@ -2,8 +2,7 @@
   "id": "11",
   "title": "Rajmachi Fort & Nature Trail",
   "subtitle": "A Scenic Trek Amidst the Sahyadri Mountains",
-  "bannerImage": "/assets/images/nature/01.jpg",
-  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
+  "bannerImage": "/images/nature/rajmachi/banner.jpg",
   "color": "#2e7d32",
   "overview": [
     "Rajmachi Fort, located near Lonavala in the Sahyadri mountain range, is one of Maharashtra’s most beloved trekking and nature destinations. Surrounded by dense forests, waterfalls, and misty hills, it offers breathtaking views and a rich historical legacy.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/nature/01/info2.jpg",
+    "image": "/images/nature/rajmachi/geography.jpg",
     "intro": "Rajmachi lies between the famous hill stations of Lonavala and Karjat, offering scenic trekking routes through forested hills and valleys.",
     "details": [
       {
@@ -97,7 +96,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/rajmachi/shrivardhan.jpg",
       "title": "Shrivardhan Fort",
       "description": "One of the twin peaks, offering panoramic views of the Sahyadri range and lush valleys.",
       "distance": "Within the fort complex",
@@ -105,7 +104,7 @@
       "value": "Ideal for sunrise views."
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/rajmachi/manaranjan.jpg",
       "title": "Manaranjan Fort",
       "description": "The second fortified peak with ancient walls and bastions overlooking deep gorges.",
       "distance": "Within the fort complex",
@@ -113,7 +112,7 @@
       "value": "Less crowded and perfect for solitude seekers."
     },
     {
-      "image": "/assets/images/nature/01/img1.jpg",
+      "image": "/images/nature/rajmachi/kondane.jpg",
       "title": "Kondane Caves",
       "description": "Ancient Buddhist rock-cut caves located near the base of the Karjat route.",
       "distance": "5 km from Rajmachi base",
@@ -168,18 +167,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/rajmachi/rajmachi1.jpg",
+      "thumb": "/images/nature/rajmachi/rajmachi1_thumb.jpg",
       "alt": "Rajmachi Fort and Green Valleys"
     },
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/rajmachi/rajmachi2.jpg",
+      "thumb": "/images/nature/rajmachi/rajmachi2_thumb.jpg",
       "alt": "Misty Trails of Rajmachi"
     },
     {
-      "src": "/assets/images/nature/01/img1.jpg",
-      "thumb": "/assets/images/nature/01/img1.jpg",
+      "src": "/images/nature/rajmachi/rajmachi3.jpg",
+      "thumb": "/images/nature/rajmachi/rajmachi3_thumb.jpg",
       "alt": "Camping under the stars at Rajmachi"
     }
   ],

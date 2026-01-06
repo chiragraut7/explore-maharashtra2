@@ -2,8 +2,7 @@
   "id": "16",
   "title": "Murud-Janjira Fort",
   "subtitle": "The Invincible Sea Fort of Maharashtra",
-  "bannerImage": "/assets/images/forts/01.jpg",
-  "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
+  "bannerImage": "/images/forts/murud-janjira/murud-banner.jpg",
   "color": "#0f766e",
   "overview": [
     "Murud-Janjira Fort is one of the strongest marine forts in India, located on an island off the coastal village of Murud in Raigad district. Built by the Siddis in the 15th century, this impregnable fort stood unconquered through attacks by the Portuguese, British, and Marathas.",
@@ -22,7 +21,7 @@
     }
   ],
   "geography": {
-    "image": "/assets/images/forts/01/info2.jpg",
+    "image": "/images/forts/murud-janjira/murud-geo.jpg",
     "intro": "Murud-Janjira Fort stands proudly in the Arabian Sea, about 2 km off the coastal village of Murud. The oval-shaped island fort covers an area of nearly 22 acres and rises majestically above the waves.",
     "details": [
       {
@@ -97,7 +96,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/murud-janjira/attraction1.jpg",
       "title": "Three Mighty Cannons",
       "description": "Kalal Bangdi, Landa Kasam, and Chavri are massive cannons that once guarded the fort.",
       "distance": "Inside Fort Premises",
@@ -105,7 +104,7 @@
       "value": "Historic Weaponry"
     },
     {
-      "image": "/assets/images/forts/01/img1.jpg",
+      "image": "/images/forts/murud-janjira/attraction2.jpg",
       "title": "Palace Ruins & Water Tanks",
       "description": "Remains of royal palaces, secret passages, and freshwater ponds within the fort.",
       "distance": "Central Fort Area",
@@ -160,18 +159,18 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/murud-janjira/gallery1.jpg",
+      "thumb": "/images/forts/murud-janjira/gallery1-thumb.jpg",
       "alt": "Murud-Janjira Fort from Sea"
     },
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/murud-janjira/gallery2.jpg",
+      "thumb": "/images/forts/murud-janjira/gallery2-thumb.jpg",
       "alt": "Boat Ride to Janjira Fort"
     },
     {
-      "src": "/assets/images/forts/01/img1.jpg",
-      "thumb": "/assets/images/forts/01/img1.jpg",
+      "src": "/images/forts/murud-janjira/gallery3.jpg",
+      "thumb": "/images/forts/murud-janjira/gallery3-thumb.jpg",
       "alt": "Ancient Cannons of Janjira"
     }
   ],

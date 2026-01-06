@@ -2,8 +2,8 @@
   "id": "17",
   "title": "Vengurla Beach",
   "subtitle": "A Serene Coastal Paradise in Sindhudurg",
-  "bannerImage": "/assets/images/beaches/17.jpg",
-  "insideBannerImage": "/assets/images/beaches/17/bannerimg.jpg",
+  "bannerImage": "/assets/images/beaches/vengurla-banner.jpg",
+  "insideBannerImage": "/assets/images/beaches/17/bannerImg.jpg",
   "color": "#00796B",
   "overview": [
     "Vengurla Beach, nestled in the Sindhudurg district of Maharashtra, is known for its crystal-clear waters, pristine white sands, and peaceful surroundings. This unspoiled coastal destination offers a perfect escape for travelers seeking tranquility away from crowded beaches.",
@@ -97,7 +97,7 @@
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/17/img5.jpg",
+      "image": "/assets/images/beaches/17/img1.jpg",
       "title": "Sagareshwar Temple",
       "description": "A serene seaside temple dedicated to Lord Shiva, located right by the coast.",
       "distance": "2 km",
@@ -105,7 +105,7 @@
       "value": "Religious & Scenic Spot"
     },
     {
-      "image": "/assets/images/beaches/17/img4.jpg",
+      "image": "/assets/images/beaches/17/img2.jpg",
       "title": "Shiroda Beach",
       "description": "Another pristine beach known for its peaceful ambiance and golden sands.",
       "distance": "10 km",
@@ -152,94 +152,14 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/17/img18.jpg",
-      "thumb": "/assets/images/beaches/17/img18.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img17.jpg",
-      "thumb": "/assets/images/beaches/17/img17.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img16.jpg",
-      "thumb": "/assets/images/beaches/17/img16.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img15.jpg",
-      "thumb": "/assets/images/beaches/17/img15.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img14.jpg",
-      "thumb": "/assets/images/beaches/17/img14.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img13.jpg",
-      "thumb": "/assets/images/beaches/17/img13.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img12.jpg",
-      "thumb": "/assets/images/beaches/17/img12.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img11.jpg",
-      "thumb": "/assets/images/beaches/17/img11.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img10.jpg",
-      "thumb": "/assets/images/beaches/17/img10.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img9.jpg",
-      "thumb": "/assets/images/beaches/17/img9.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img8.jpg",
-      "thumb": "/assets/images/beaches/17/img8.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img17.jpg",
-      "thumb": "/assets/images/beaches/17/img17.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img6.jpg",
-      "thumb": "/assets/images/beaches/17/img6.jpg",
-      "alt": ""
-    },
-    {
       "src": "/assets/images/beaches/17/img1.jpg",
       "thumb": "/assets/images/beaches/17/img1.jpg",
-      "alt": ""
+      "alt": "Vengurla Beach Aerial View"
     },
     {
       "src": "/assets/images/beaches/17/img2.jpg",
       "thumb": "/assets/images/beaches/17/img2.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img3.jpg",
-      "thumb": "/assets/images/beaches/17/img3.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img4.jpg",
-      "thumb": "/assets/images/beaches/17/img4.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/17/img5.jpg",
-      "thumb": "/assets/images/beaches/17/img5.jpg",
-      "alt": ""
+      "alt": "Golden Sands of Vengurla"
     }
   ],
   "bookingTips": [
