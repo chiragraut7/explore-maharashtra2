@@ -2,14 +2,11 @@
 import React from "react";
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
 import { useLanguage } from "../context/LanguageContext";
 import Translator from "../commonComponents/Translator";
+import { motion } from "framer-motion";
 
-import "swiper/css";
-import "swiper/css/navigation";
-
+// -------------------- Interfaces --------------------
 interface Attraction {
   image?: string;
   title?: string;
@@ -24,90 +21,135 @@ interface AttractionsProps {
   color?: string;
 }
 
+// -------------------- Component --------------------
 const Attractions: React.FC<AttractionsProps> = ({ items = [], color = "#00aaff" }) => {
   const { language } = useLanguage();
 
   if (!items.length) return null;
 
   return (
-    <section id="attractions" className="mb-8">
-      {/* 🌍 Auto-translated section heading */}
-      <SectionTitle title="Nearby Attractions" color={color} />
+    <section id="attractions" className="mb-5">
+      <SectionTitle title="Top Attractions" color={color} />
 
-      <div className="relative group">
-        <Swiper
-          modules={[Navigation, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={1}
-          navigation
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 },
-          }}
-          className="attractions-swiper py-2"
-        >
-          {items.map((attr, idx) => (
-            <SwiperSlide key={idx} className="!h-auto px-1">
-              <div className="attraction-card h-full flex flex-col border rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
-                {/* 🖼️ Image */}
-                {attr.image && (
-                  <div className="relative w-full h-48">
-                    <Image
-                      src={attr.image}
-                      alt={attr.title || "Attraction"}
-                      fill
-                      className="object-cover rounded-t-lg"
-                    />
-                  </div>
-                )}
+      <div className="row g-0 rounded-4 overflow-hidden shadow-sm bg-white border content-box-compact">
+        
+        {/* 📸 LEFT: STICKY FEATURE IMAGE */}
+        <div className="col-lg-4 p-0 bg-light">
+          <div className="sticky-media-compact">
+            <Image
+              src={items[0]?.image || "/assets/images/attraction-placeholder.jpg"}
+              alt="Main Attraction"
+              fill
+              className="object-cover"
+              sizes="(max-width: 991px) 100vw, 33vw"
+              priority
+            />
+            <div className="image-overlay-subtle" />
+            
+            {/* Minimalist Floating Label */}
+            <div className="image-label-mini">
+              <span className="badge-text-mini text-uppercase">
+                <Translator text="Must See" targetLang={language} />
+              </span>
+            </div>
+          </div>
+        </div>
 
-                {/* 🧾 Content */}
-                <div className="p-4 flex flex-col flex-grow">
-                  {/* Title */}
-                  {attr.title && (
-                    <h3
-                      className="font-semibold text-lg mb-1"
-                      style={{ color }}
-                    >
-                      <Translator text={attr.title} targetLang={language} />
-                    </h3>
+        {/* 🏛️ RIGHT: CONDENSED SCROLLABLE LIST */}
+        <div className="col-lg-8">
+          <div className="p-3 p-md-4">
+            {items.map((item: Attraction, idx: number) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, x: 15 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className={`py-2 ${idx !== items.length - 1 ? 'border-bottom' : ''}`}
+              >
+                <div className="d-flex align-items-center">
+                  {/* Circle Thumbnail */}
+                  {item.image && (
+                    <div className="flex-shrink-0 me-3 d-none d-sm-block">
+                      <div className="position-relative rounded-circle overflow-hidden border border-2" style={{ width: '50px', height: '50px', borderColor: `${color}20` }}>
+                        <Image src={item.image} alt={item.title || ""} fill className="object-cover" />
+                      </div>
+                    </div>
                   )}
 
-                  {/* Description */}
-                  {attr.description && (
-                    <p className="text-gray-600 text-sm mb-2">
-                      <Translator text={attr.description} targetLang={language} />
-                    </p>
-                  )}
-
-                  {/* Label + Value */}
-                  {attr.label && attr.value && (
-                    <p className="text-sm text-gray-700 mt-auto">
-                      {attr.icon && (
-                        <i
-                          className={`${attr.icon} mr-2`}
-                          style={{ color }}
-                        ></i>
+                  <div className="flex-grow-1">
+                    <div className="d-flex justify-content-between align-items-center">
+                      <h3 className="h6 fw-bold mb-0" style={{ fontSize: '0.9rem' }}>
+                        <Translator text={item.title || ""} targetLang={language} />
+                      </h3>
+                      {item.value && (
+                        <span className="dist-badge" style={{ color: color, backgroundColor: `${color}10` }}>
+                          <Translator text={item.value} targetLang={language} />
+                        </span>
                       )}
-                      <strong>
-                        <Translator text={attr.label} targetLang={language} />:
-                      </strong>{" "}
-                      <Translator text={attr.value} targetLang={language} />
+                    </div>
+
+                    <p className="text-muted mb-1 lh-sm" style={{ fontSize: '0.8rem' }}>
+                      <Translator text={item.description || ""} targetLang={language} />
                     </p>
-                  )}
+
+                    {item.label && (
+                      <div className="d-flex align-items-center opacity-75" style={{ fontSize: '0.7rem' }}>
+                        <i className={`${item.icon || 'fas fa-map-marker-alt'} me-1`} style={{ color }}></i>
+                        <span className="fw-bold">
+                          <Translator text={item.label} targetLang={language} />
+                        </span>
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
+
+      <style jsx>{`
+        .content-box-compact { border-color: #eee !important; }
+
+        .sticky-media-compact {
+          position: sticky;
+          top: 0;
+          height: 100%;
+          min-height: 350px;
+          overflow: hidden;
+        }
+
+        .image-overlay-subtle {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to top, rgba(0,0,0,0.2), transparent);
+        }
+
+        .image-label-mini {
+          position: absolute;
+          bottom: 12px;
+          left: 12px;
+          background: rgba(0,0,0,0.6);
+          padding: 2px 8px;
+          border-radius: 4px;
+          backdrop-filter: blur(4px);
+        }
+
+        .badge-text-mini { color: white; font-weight: 700; font-size: 0.6rem; letter-spacing: 1px; }
+
+        .lh-sm { line-height: 1.3 !important; }
+        
+        .dist-badge {
+          font-size: 0.65rem;
+          padding: 1px 6px;
+          border-radius: 3px;
+          font-weight: 700;
+        }
+
+        @media (max-width: 991px) {
+          .sticky-media-compact { height: 200px; position: relative; min-height: 200px; }
+        }
+      `}</style>
     </section>
   );
 };

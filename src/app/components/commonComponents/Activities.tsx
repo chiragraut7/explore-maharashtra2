@@ -1,15 +1,14 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import SectionTitle from "./SectionTitle";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
 import { useLanguage } from "../context/LanguageContext";
 import Translator from "../commonComponents/Translator";
+import { motion } from "framer-motion";
 
-import "swiper/css";
-import "swiper/css/navigation";
-
+// -------------------- Interfaces --------------------
 interface DetailItem {
+  icon?: string;
   label?: string;
   value?: string;
 }
@@ -19,6 +18,7 @@ interface Activity {
   title?: string;
   description?: string;
   details?: DetailItem[];
+  image?: string; 
 }
 
 interface ActivitiesProps {
@@ -26,84 +26,113 @@ interface ActivitiesProps {
   color?: string;
 }
 
-const Activities: React.FC<ActivitiesProps> = ({
-  activities = [],
-  color = "#00aaff",
-}) => {
+// -------------------- Component --------------------
+const Activities: React.FC<ActivitiesProps> = ({ activities = [], color = "#00aaff" }) => {
   const { language } = useLanguage();
 
   if (!activities.length) return null;
 
   return (
-    <section id="activities" className="mb-8">
-      {/* 🏷️ Auto-translated title */}
-      <SectionTitle title="Activities" color={color} />
+    <section id="activities" className="mb-4">
+      <SectionTitle title="Things to Do" color={color} />
 
-      <div className="relative group">
-        <Swiper
-          modules={[Navigation, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={1}
-          navigation
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 },
-          }}
-          className="activities-swiper py-2"
-        >
-          {activities.map((act, idx) => (
-            <SwiperSlide key={idx} className="!h-auto px-1">
-              <div className="highlight-item h-full flex flex-col justify-start p-4 border rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
-                {/* 🎯 Icon */}
-                {act.icon && (
-                  <i className={`${act.icon} text-3xl mb-3`} style={{ color }} />
-                )}
+      <div className="row g-0 rounded-4 overflow-hidden shadow-sm bg-white border flex-row-reverse">
+        
+        {/* 🏄‍♂️ RIGHT: COMPACT STICKY IMAGE */}
+        <div className="col-lg-4 p-0 bg-dark">
+          <div className="sticky-media-wrapper">
+            <Image
+              src={activities[0]?.image || "/assets/images/activity-placeholder.jpg"} 
+              alt="Activities"
+              fill
+              className="object-cover opacity-90"
+              sizes="(max-width: 991px) 100vw, 33vw"
+              priority
+            />
+            <div className="image-vignette" />
+          </div>
+        </div>
 
-                {/* 🧭 Title */}
-                {act.title && (
-                  <h3 className="font-semibold text-lg">
-                    <Translator text={act.title} targetLang={language} />
-                  </h3>
-                )}
-
-                {/* 📝 Description */}
-                {act.description && (
-                  <p className="text-gray-600 text-sm mb-2">
-                    <Translator text={act.description} targetLang={language} />
-                  </p>
-                )}
-
-                {/* 📋 Details */}
-                {act.details && act.details.length > 0 && (
-                  <div className="mt-auto text-sm text-gray-700 space-y-1">
-                    {act.details.map((detail, i) => (
-                      <p key={i}>
-                        {detail.label && (
-                          <>
-                            <strong>
-                              <Translator text={detail.label} targetLang={language} />:
-                            </strong>{" "}
-                          </>
-                        )}
-                        {detail.value && (
-                          <Translator text={detail.value} targetLang={language} />
-                        )}
-                      </p>
-                    ))}
+        {/* 📝 LEFT: CONDENSED LIST */}
+        <div className="col-lg-8">
+          <div className="p-3 p-md-4">
+            {activities.map((activity: Activity, idx: number) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                className={`py-2 ${idx !== activities.length - 1 ? 'border-bottom' : ''}`}
+              >
+                <div className="d-flex align-items-start">
+                  {/* Small Activity Icon */}
+                  <div className="activity-mini-icon me-3 mt-1" style={{ color, backgroundColor: `${color}10` }}>
+                    <i className={`${activity.icon || "fas fa-star"} fs-6`}></i>
                   </div>
-                )}
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+                  
+                  <div className="flex-grow-1">
+                    <h3 className="h6 fw-bold mb-1" style={{ fontSize: '0.95rem' }}>
+                      <Translator text={activity.title || ""} targetLang={language} />
+                    </h3>
+                    
+                    <p className="small text-muted mb-2 lh-sm" style={{ fontSize: '0.85rem' }}>
+                      <Translator text={activity.description || ""} targetLang={language} />
+                    </p>
+
+                    {/* Ultra-Compact Detail Row */}
+                    {activity.details?.length ? (
+                      <div className="d-flex flex-wrap gap-x-3 gap-y-1">
+                        {activity.details.map((detail: DetailItem, dIdx: number) => (
+                          <div key={dIdx} className="d-flex align-items-center me-3" style={{ fontSize: '0.75rem' }}>
+                            <i className={`${detail.icon} me-1 opacity-75`} style={{ color }}></i>
+                            <span className="fw-bold me-1">
+                              <Translator text={detail.label || ""} targetLang={language} />:
+                            </span>
+                            <span className="text-muted">
+                              <Translator text={detail.value || ""} targetLang={language} />
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    ) : null}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
+
+      <style jsx>{`
+        .sticky-media-wrapper {
+          position: sticky;
+          top: 0;
+          height: 100%;
+          min-height: 400px;
+        }
+
+        .image-vignette {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to left, rgba(0,0,0,0.2), transparent);
+        }
+
+        .activity-mini-icon {
+          width: 28px;
+          height: 28px;
+          min-width: 28px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 6px;
+        }
+
+        .lh-sm { line-height: 1.4 !important; }
+
+        @media (max-width: 991px) {
+          .sticky-media-wrapper { height: 200px; position: relative; }
+        }
+      `}</style>
     </section>
   );
 };

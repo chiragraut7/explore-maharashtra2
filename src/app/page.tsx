@@ -16,6 +16,8 @@ import ReligiousList from "./components/ReligiousList";
 import CulturalList from "./components/CulturalList";
 import Translator from "./components/commonComponents/Translator";
 
+import MaharashtraChat from "./components/MaharashtraChat";
+
 import useFastParallax from "@/hooks/useFastParallax";
 
 export default function Home() {
@@ -132,6 +134,8 @@ export default function Home() {
 
       {/* Cultural */}
       <CulturalList />
+
+      <MaharashtraChat />
 
       {/* small responsive tweaks scoped */}
       <style jsx>{`

@@ -1,8 +1,9 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { useParams } from 'next/navigation'
 import Image from 'next/image'
+import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion'
 
 import Banner from '../../components/commonComponents/Banner'
 import Overview from '../../components/commonComponents/Overview'
@@ -10,15 +11,13 @@ import Highlights from '../../components/commonComponents/Highlights'
 import Geography from '../../components/commonComponents/Geography'
 import Activities from '../../components/commonComponents/Activities'
 import Attractions from '../../components/commonComponents/Attractions'
-import MarineLife from '../../components/commonComponents/MarineLife'
+import MarineLife from '../../components/commonComponents/UniversalContent'
 import HowToReach from '../../components/commonComponents/HowToReach'
 import Gallery from '../../components/commonComponents/Gallery'
-import BookingTips from '../../components/commonComponents/BookingTips'
 import ComingSoon from '../../components/commonComponents/ComingSoon'
 
 // -------------------- Types --------------------
 type DetailItem = { icon?: string; label?: string; value?: string }
-
 type GeographyContent = {
   image?: string
   intro?: string
@@ -26,52 +25,13 @@ type GeographyContent = {
   climate?: { description?: string; seasons?: { icon?: string; text?: string }[] }
   conclusion?: string
 }
-
-type Activity = {
-  icon?: string
-  title?: string
-  description?: string
-  details?: DetailItem[]
-}
-
-type Attraction = {
-  image?: string
-  title?: string
-  description?: string
-  icon?: string
-  label?: string
-  value?: string
-}
-
-type MarineItem = {
-  icon?: string
-  title?: string
-  description?: string
-}
-
-type MarineLifeContent = {
-  title?: string
-  intro?: string
-  items?: MarineItem[]
-  conclusion?: string[]
-}
-
-type TransportItem = {
-  icon?: string
-  title?: string
-  details?: string[]
-}
-
-type GalleryImage = {
-  src?: string
-  thumb?: string
-  alt?: string
-}
-
-type BookingTip = {
-  title?: string
-  description?: string
-}
+type Activity = { icon?: string; title?: string; description?: string; details?: DetailItem[] }
+type Attraction = { image?: string; title?: string; description?: string; icon?: string; label?: string; value?: string }
+type MarineItem = { icon?: string; title?: string; description?: string }
+type MarineLifeContent = { title?: string; intro?: string; items?: MarineItem[]; conclusion?: string[] }
+type TransportItem = { icon?: string; title?: string; details?: string[] }
+type GalleryImage = { src?: string; thumb?: string; alt?: string }
+type BookingTip = { title?: string; description?: string }
 
 type Destination = {
   title: string
@@ -96,11 +56,16 @@ export default function ItemPage() {
   const [data, setData] = useState<Destination | null>(null)
   const [loading, setLoading] = useState(true)
   const [view, setView] = useState<'info' | 'hotels'>('info')
+  const [activeSection, setActiveSection] = useState('overview')
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  // Top Scroll Progress Bar
+  const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30 })
 
   useEffect(() => {
     if (!category || !id) return
     setLoading(true)
-
     fetch(`/api/${category}/${id}`)
       .then(res => res.json())
       .then((json: Destination) => setData(json))
@@ -108,33 +73,54 @@ export default function ItemPage() {
       .finally(() => setLoading(false))
   }, [category, id])
 
-  if (loading)
-    return (
-      <div className="page-loader flex flex-col items-center justify-center min-h-screen">
-        <div className="spinner mb-4"></div>
-        <div className="txt text-center">
-          <Image
-            src="/assets/images/logo_icon.png"
-            alt="Logo"
-            width={200}
-            height={200}
-            className="rounded"
-            priority={true}
-          />
-          <p className="pt-5 text-lg font-semibold">Loading...</p>
-        </div>
-      </div>
-    )
+  // Intersection Observer for Scroll Spy
+  useEffect(() => {
+    if (loading || view !== 'info') return
+    const observerOptions = { root: null, rootMargin: '-20% 0px -70% 0px', threshold: 0 }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) setActiveSection(entry.target.id)
+      })
+    }, observerOptions)
 
-  if (!data)
-    return (
-      <div className="text-center py-10 text-warning text-lg font-semibold">
-        Data not found
-      </div>
-    )
+    const sections = ['overview', 'highlights', 'geography', 'activities', 'attractions', 'gallery', 'reach']
+    sections.forEach((id) => {
+      const el = document.getElementById(id)
+      if (el) observer.observe(el)
+    })
+    return () => observer.disconnect()
+  }, [loading, view])
+
+  if (loading) return (
+    <div className="page-loader d-flex flex-column align-items-center justify-content-center min-vh-100 bg-white">
+      <motion.div animate={{ scale: [1, 1.1, 1] }} transition={{ repeat: Infinity, duration: 2 }}>
+        <Image src="/assets/images/logo_icon.png" alt="Logo" width={150} height={150} priority />
+      </motion.div>
+      <p className="mt-4 fw-bold">Loading {id?.replace(/-/g, ' ')}...</p>
+    </div>
+  )
+
+  if (!data) return <div className="text-center py-5">Data not found</div>
+
+  const navLinks = [
+    { id: 'overview', label: 'Overview', icon: 'fa-info-circle' },
+    { id: 'highlights', label: 'Highlights', icon: 'fa-star' },
+    { id: 'geography', label: 'Geography', icon: 'fa-map' },
+    { id: 'activities', label: 'Activities', icon: 'fa-swimmer' },
+    { id: 'attractions', label: 'Attractions', icon: 'fa-camera' },
+    { id: 'gallery', label: 'Gallery', icon: 'fa-images' },
+    { id: 'reach', label: 'Reach', icon: 'fa-route' },
+  ]
 
   return (
-    <>
+    <div className="item-page-container bg-[#fcfaf8]">
+      {/* Scroll Progress Bar */}
+      <motion.div 
+        className="fixed-top" 
+        style={{ scaleX, height: '4px', background: data.color || '#ff5722', zIndex: 10001 }} 
+      />
+
+      {/* --- REVERTED TO ORIGINAL BANNER PROPS --- */}
       <Banner
         title={data.title}
         subtitle={data.subtitle}
@@ -144,38 +130,107 @@ export default function ItemPage() {
         setView={setView}
       />
 
-      <main className="container my-5">
-        {view === 'info' && (
-          <div id="overViewInfo">
-            {data.overview && <Overview content={data.overview} color={data.color} />}
-            {data.highlights && data.highlights.length > 0 && (
-              <Highlights highlights={data.highlights} color={data.color} />
-            )}
-            {data.geography && <Geography content={data.geography} color={data.color} />}
-            {data.activities && data.activities.length > 0 && (
-              <Activities activities={data.activities} color={data.color} />
-            )}
-            {data.attractions && data.attractions.length > 0 && (
-              <Attractions items={data.attractions} color={data.color} />
-            )}
-            {data.marineLife && <MarineLife content={data.marineLife} color={data.color} />}
-            {data.gallery && data.gallery.length > 0 && (
-              <Gallery images={data.gallery} color={data.color} />
-            )}
-            {data.howToReach && data.howToReach.length > 0 && (
-              <HowToReach transport={data.howToReach} color={data.color} />
-            )}
-          </div>
-        )}
+      {/* MOBILE FLOATING ACTION BUTTON */}
+      <div className="d-lg-none fixed-bottom p-3 d-flex justify-content-end" style={{ zIndex: 9999 }}>
+        <button 
+          className="btn shadow-lg rounded-circle p-0 d-flex align-items-center justify-content-center"
+          style={{ background: data.color || '#ff5722', width: '56px', height: '56px', color: '#fff' }}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-list-ul'} fs-4`}></i>
+        </button>
+        
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.8, y: 20 }}
+              className="mobile-nav-popup shadow-lg bg-white rounded-4 p-2 mb-2 border"
+            >
+              {navLinks.map((link) => (
+                <a 
+                  key={link.id} 
+                  href={`#${link.id}`} 
+                  className="d-flex align-items-center p-3 text-decoration-none text-dark border-bottom small fw-bold"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <i className={`fas ${link.icon} me-3`} style={{ color: data.color }}></i>
+                  {link.label}
+                </a>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
 
-        {view === 'hotels' && (
-          <>
-            <div id="comingSoon">
-              <ComingSoon />
+      <div className="container-fluid py-5 px-lg-5">
+        <div className="row g-4 justify-content-center">
+          
+          {/* DESKTOP STICKY SIDEBAR */}
+          <aside className="col-lg-2 d-none d-lg-block">
+            <div className="sticky-top" style={{ top: '100px' }}>
+              <nav className="bg-white p-3 rounded-4 shadow-sm border">
+                <p className="small text-uppercase fw-bold text-muted mb-3 opacity-50">Quick Links</p>
+                {navLinks.map((link) => (
+                  <a
+                    key={link.id}
+                    href={`#${link.id}`}
+                    className={`nav-link-item mb-2 ${activeSection === link.id ? 'active' : ''}`}
+                    style={{ 
+                      color: activeSection === link.id ? data.color : '#666',
+                      background: activeSection === link.id ? `${data.color}15` : 'transparent',
+                      borderLeft: activeSection === link.id ? `4px solid ${data.color}` : '4px solid transparent'
+                    }}
+                  >
+                    <i className={`fas ${link.icon} me-2`}></i>
+                    <span className="small fw-bold">{link.label}</span>
+                  </a>
+                ))}
+              </nav>
             </div>
-          </>
-        )}
-      </main>
-    </>
+          </aside>
+
+          {/* MAIN CONTENT AREA */}
+          <div className="col-lg-9">
+            <AnimatePresence mode="wait">
+              {view === 'info' ? (
+                <motion.div key="info" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
+                  <div id="overview" className="section-card shadow-sm"><Overview content={data.overview} color={data.color} /></div>
+                  <div id="highlights" className="mb-5"><Highlights highlights={data.highlights} color={data.color} /></div>
+                  <Geography content={data.geography} color={data.color} />
+                  <div id="activities" className="mb-5"><Activities activities={data.activities} color={data.color} /></div>
+                  <div id="attractions" className="mb-5">
+                    <Attractions items={data.attractions} color={data.color} />
+                    {data.marineLife && (
+                      
+                        <MarineLife content={data.marineLife} color={data.color} />
+                    )}
+                  </div>
+                  <div id="gallery" className="mb-5"><Gallery images={data.gallery} color={data.color} /></div>
+                  <HowToReach transport={data.howToReach} color={data.color} />
+                </motion.div>
+              ) : (
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                  <ComingSoon />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+        </div>
+      </div>
+
+      <style jsx global>{`
+        .section-card { background: #fff; padding: 2.5rem; border-radius: 1.5rem; margin-bottom: 3.5rem; border: 1px solid #eee; }
+        .nav-link-item { display: flex; align-items: center; padding: 12px 15px; border-radius: 8px; text-decoration: none; transition: 0.3s ease; }
+        .nav-link-item:hover { background: #f8f9fa; }
+        .mobile-nav-popup { position: absolute; bottom: 70px; right: 0; width: 220px; z-index: 10000; overflow: hidden; }
+        div[id] { scroll-margin-top: 120px; }
+        @media (max-width: 768px) {
+            .section-card { padding: 1.5rem; border-radius: 1rem; }
+        }
+      `}</style>
+    </div>
   )
 }

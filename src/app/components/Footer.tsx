@@ -8,7 +8,7 @@ export default function Footer() {
   const { language } = useLanguage()
 
   return (
-    <footer className="text-center py-3 bg-dark text-white mt-5">
+    <footer className="text-center py-3 bg-dark text-white mt-0">
       <p className="text-sm md:text-base">
         &copy; 2025{' '}
         <span className="fw-semibold text-primary"><Translator
