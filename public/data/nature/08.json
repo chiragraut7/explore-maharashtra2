@@ -4,6 +4,7 @@
   "subtitle": "A Biodiversity Gem in the Western Ghats",
   "bannerImage": "/images/nature/koyna/banner.jpg",
   "color": "#2E4600",
+  "coordinates": { "lat": 17.5500, "lng": 73.7167 },
   "overview": [
     "Koyna Wildlife Sanctuary is a UNESCO World Heritage Site nestled in the Satara district of Maharashtra. It forms an integral part of the Western Ghats and is known for its rich biodiversity, dense evergreen forests, and pristine water bodies.",
     "Spread over 423 square kilometers, this sanctuary surrounds the famous Koyna Dam and Shivsagar Lake, making it one of the most scenic protected regions in Maharashtra.",
@@ -101,7 +102,7 @@
       "title": "Vasota Fort",
       "description": "An ancient hill fort inside the sanctuary accessible via a thrilling forest and lake trek.",
       "distance": "25 km from Koynanagar",
-      "icon": "fas fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Historical Trek Spot"
     },
     {

@@ -40,10 +40,11 @@ header .banner {
   min-height: 324px;
   position: relative;
 }
+
 header.banner-main {
-    position: sticky;
-    top: -245px;
-    z-index: 7;
+  position: sticky;
+  top: -245px;
+  z-index: 7;
 }
 
 header .banner::before {
@@ -785,12 +786,13 @@ footer {
 }
 
 .section-title {
-  font-size: 2rem;
-  color: #2f3e66;
-  margin-bottom: 20px;
-  border-left: 5px solid var(--primary-color);
-  padding-left: 15px;
-  text-align: start;
+      color: rgb(47, 62, 102);
+    border-left: 5px solid var(--primary-color);
+    text-align: start;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
 }
 
 .attractions-container {
@@ -2274,7 +2276,8 @@ html {
 .discovery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: 200px; /* Base height */
+  grid-auto-rows: 200px;
+  /* Base height */
   gap: 20px;
 }
 
@@ -2300,7 +2303,7 @@ html {
 .discovery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 60%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -2333,7 +2336,7 @@ html {
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;  
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
@@ -2344,9 +2347,48 @@ html {
 .shadow-hover:hover {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
+
 .row-right .row {
-    justify-content: end;
+  justify-content: end;
 }
+
 .sticky-image-wrapper {
-    height: 100%;
+  height: 100%;
 }
+
+.beach-magazine-section .postcard-accent-bg {
+  background-color: rgb(230, 247, 255) !important;
+  opacity: 1 !important;
+  border: 1px solid #00000008;
+}
+.hill-magazine-section .postcard-accent-bg {
+  background-color: rgb(246, 255, 237) !important;
+  opacity: 1 !important;
+  border: 1px solid #00000008;
+}
+.fort-magazine-section .postcard-accent-bg {
+  background-color: #fff7e6 !important;
+  opacity: 1 !important;
+  border: 1px solid #00000008;
+}
+.nature-magazine-section .postcard-accent-bg {
+  background-color: #f9f0ff !important;
+  opacity: 1 !important;
+  border: 1px solid #00000008;
+}
+.spiritual-magazine-section .postcard-accent-bg {
+  background-color: #fff1f0 !important;
+  opacity: 1 !important;
+  border: 1px solid #00000008;
+}
+.cultural-magazine-section .postcard-accent-bg {
+  background-color: #fcffe6 !important;
+  opacity: 1 !important;
+  border: 1px solid #00000008;
+}
+
+.menu-nav-link{
+            text-decoration: none;
+    font-weight: bold;
+    color:  var(--primary-color);
+        }

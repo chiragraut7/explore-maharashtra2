@@ -5,6 +5,10 @@
   "bannerImage": "/assets/images/forts/01.jpg",
   "insideBannerImage": "/assets/images/forts/01/bannerimg.jpg",
   "color": "#c47f3a",
+  "coordinates": {
+    "lat": 18.2347,
+    "lng": 73.4464
+  },
   "overview": [
     "Raigad Fort, located in the Raigad district of Maharashtra, was the capital of the Maratha Empire under the rule of Chhatrapati Shivaji Maharaj. Built at a height of around 2,700 feet above sea level, it offers a commanding view of the Sahyadri mountain range.",
     "The fort is renowned for its architectural brilliance, strategic location, and historical importance. It served as the coronation site of Shivaji Maharaj in 1674 and is often referred to as the 'Gibraltar of the East'."

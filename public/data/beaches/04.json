@@ -17,7 +17,7 @@
       "description": "Wide stretch of clean, golden sand perfect for relaxation and strolls."
     },
     {
-      "icon": "fas fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "title": "Murud-Janjira Fort View",
       "description": "The iconic sea fort visible from the shore adds historical grandeur."
     },
@@ -83,7 +83,7 @@
       "title": "Murud-Janjira Fort",
       "description": "A 17th-century island fort built by the Siddis, famous for its invincible design.",
       "distance": "2 km by boat from Murud Beach",
-      "icon": "fas fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Historic Sea Fort"
     },
     {
@@ -161,5 +161,9 @@
     { "icon": "fas fa-cloud-rain", "description": "Avoid visiting during heavy monsoon (June–September)." },
     { "icon": "fas fa-utensils", "description": "Try local seafood thalis and Malvani cuisine." },
     { "icon": "fas fa-camera", "description": "Carry a camera or drone for fort and beach views." }
-  ]
+  ],
+  "coordinates": {
+    "lat": 18.2831,
+    "lng": 72.9620
+  }
 }

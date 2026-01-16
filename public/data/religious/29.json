@@ -4,6 +4,7 @@
   "subtitle": "The Remover of Obstacles – One of the Sacred Ashtavinayak Temples",
   "bannerImage": "/images/religious/vighneshwar-ozar/banner.jpg",
   "color": "#f5a623",
+  "coordinates": { "lat": 19.1667, "lng": 74.0000 },
   "overview": [
     "The Vighneshwar Temple, located in the tranquil village of Ozar in Pune district, is one of the revered Ashtavinayak shrines dedicated to Lord Ganesha.",
     "Lord Ganesha is worshipped here as 'Vighneshwar', the remover of all obstacles and harbinger of success and prosperity.",
@@ -110,7 +111,7 @@
       "title": "Shivneri Fort",
       "description": "The birthplace of Chhatrapati Shivaji Maharaj, this historic fort is located close to Ozar.",
       "distance": "20 km",
-      "icon": "fa-solid fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "20 km away"
     }
   ],

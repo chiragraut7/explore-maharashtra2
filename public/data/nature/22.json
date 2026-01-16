@@ -4,6 +4,7 @@
   "subtitle": "Majestic Waterfall on the Pravara River near Bhandardara",
   "bannerImage": "/images/nature/randha/banner.jpg",
   "color": "#00796b",
+  "coordinates": { "lat": 19.5478, "lng": 73.7444 },
   "overview": [
     "Randha Falls, located near Bhandardara in Ahmednagar district, is one of the most spectacular waterfalls in Maharashtra. The Pravara River plunges from a height of about 170 feet into a deep gorge, creating a mesmerizing view surrounded by lush greenery.",
     "It is especially popular during the monsoon season when the waterfall roars with full force, offering a breathtaking sight for photographers and nature lovers alike."
@@ -116,7 +117,7 @@
       "title": "Ratangad Fort",
       "description": "A popular trekking destination offering panoramic views of Bhandardara valley.",
       "distance": "25 km from Randha Falls",
-      "icon": "fas fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Trek level: Moderate"
     }
   ],

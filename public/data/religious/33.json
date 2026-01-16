@@ -4,6 +4,7 @@
   "subtitle": "A Sacred Hill Shrine Dedicated to Lord Rama near Nagpur",
   "bannerImage": "/images/religious/ramtek-temple/banner.jpg",
   "color": "#C04000",
+  "coordinates": { "lat": 21.3931, "lng": 79.3275 },
   "overview": [
     "Ramtek Temple, located about 50 km from Nagpur in Maharashtra, is a revered pilgrimage site dedicated to Lord Rama. Legend says that Lord Rama rested here during his exile, and the town derives its name from ‘Rama-tek’, meaning Rama’s Vow.",
     "Perched atop a hill, the temple offers panoramic views of the surrounding landscape and holds great mythological, spiritual, and architectural significance.",
@@ -126,7 +127,7 @@
       "title": "Nagardhan Fort",
       "description": "An ancient fort dating back to the Vakataka dynasty, showcasing medieval architecture.",
       "distance": "9 km",
-      "icon": "fas fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Historical Fort"
     }
   ],

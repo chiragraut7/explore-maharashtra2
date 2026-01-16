@@ -4,12 +4,16 @@
   "subtitle": "Turtle nesting haven and eco-tourism escape in Konkan",
   "bannerImage": "/assets/images/beaches/velas-beache.jpg",
   "insideBannerImage": "/assets/images/beaches/14/bannerImg.jpg",
-    "color": "#5699ba",
-  "overview":  [
-      "Velas Beach is a quaint and clean beach located in the Ratnagiri district of Maharashtra. It is best known for its Olive Ridley turtle conservation project, where baby turtles hatch and are released into the sea during nesting season.",
-      "This beach is part of an eco-friendly village that promotes sustainable tourism. Visitors can witness natural turtle hatchings and enjoy a peaceful coastal environment surrounded by greenery.",
-      "Apart from the beach, Velas offers a unique rural Konkan experience with local food, homestays, and scenic treks."
-    ],
+  "color": "#5699ba",
+  "coordinates": {
+    "lat": 17.9554,
+    "lng": 73.0234
+  },
+  "overview": [
+    "Velas Beach is a quaint and clean beach located in the Ratnagiri district of Maharashtra. It is best known for its Olive Ridley turtle conservation project, where baby turtles hatch and are released into the sea during nesting season.",
+    "This beach is part of an eco-friendly village that promotes sustainable tourism. Visitors can witness natural turtle hatchings and enjoy a peaceful coastal environment surrounded by greenery.",
+    "Apart from the beach, Velas offers a unique rural Konkan experience with local food, homestays, and scenic treks."
+  ],
   "highlights": [
     {
       "icon": "fas fa-turtle",
@@ -107,32 +111,31 @@
     }
   ],
   "attractions": [
-  {
-    "image": "/assets/images/beaches/14/img1.jpg",
-    "title": "Bankot Fort",
-    "description": "Historic fort with stunning views of the sea and river confluence.",
-    "distance": "Approx. 4 km",
-    "icon": "fas fa-fort",
-    "value": "Historical Viewpoint"
-  },
-  {
+    {
+      "image": "/assets/images/beaches/14/img1.jpg",
+      "title": "Bankot Fort",
+      "description": "Historic fort with stunning views of the sea and river confluence.",
+      "distance": "Approx. 4 km",
+      "icon": "fas fa-fort",
+      "value": "Historical Viewpoint"
+    },
+    {
       "image": "/assets/images/beaches/14/img2.jpg",
-    "title": "Harihareshwar Temple",
-    "description": "A sacred coastal temple complex just an hour&apos;s drive from Velas.",
-    "distance": "Approx. 30 km",
-    "icon": "fas fa-om",
-    "value": "Religious Site"
-  },
-  {
-    "image": "/assets/images/beaches/14/img3.jpg",
-    "title": "Anjarle Beach",
-    "description": "Another quiet beach known for its turtle conservation and clean sands.",
-    "distance": "Approx. 25 km",
-    "icon": "fas fa-umbrella-beach",
-    "value": "Nearby Beach"
-  }
-]
-,
+      "title": "Harihareshwar Temple",
+      "description": "A sacred coastal temple complex just an hour's drive from Velas.",
+      "distance": "Approx. 30 km",
+      "icon": "fas fa-om",
+      "value": "Religious Site"
+    },
+    {
+      "image": "/assets/images/beaches/14/img3.jpg",
+      "title": "Anjarle Beach",
+      "description": "Another quiet beach known for its turtle conservation and clean sands.",
+      "distance": "Approx. 25 km",
+      "icon": "fas fa-umbrella-beach",
+      "value": "Nearby Beach"
+    }
+  ],
   "marineLife": {
     "intro": "Velas beach is part of an ecological effort to protect marine biodiversity, especially the Olive Ridley turtle species.",
     "items": [
@@ -206,14 +209,21 @@
       "image": "/assets/images/beaches.jpg",
       "rating": "4.5",
       "url": "https://example.com/velas-homestay",
-      "facilities": ["wifi", "parking", "ac"]
+      "facilities": [
+        "wifi",
+        "parking",
+        "ac"
+      ]
     },
     {
       "name": "MTDC Guest House",
       "image": "/assets/images/beaches.jpg",
       "rating": "4.2",
       "url": "https://example.com/mtdc-velas",
-      "facilities": ["wifi", "parking"]
+      "facilities": [
+        "wifi",
+        "parking"
+      ]
     }
   ],
   "bookingTips": [

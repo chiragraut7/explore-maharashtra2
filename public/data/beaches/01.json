@@ -1,15 +1,15 @@
 {
-  "id":"01",
+  "id": "01",
   "title": "Alibaug Beach",
   "subtitle": "A perfect blend of sun, sand, and historic charm near Mumbai",
   "bannerImage": "/assets/images/beaches/alibaug-beach.jpg",
   "insideBannerImage": "/assets/images/beaches/01/bannerimg.jpg",
-    "color": "#f25135",
-  "overview":  [
-      "Alibaug Beach is one of the most popular coastal destinations in Maharashtra, located about 100 kilometers from Mumbai. It offers a wide sandy stretch, coconut groves, and a stunning view of the Arabian Sea.",
-      "This beach is also known for the iconic Kolaba Fort, which can be accessed during low tide by foot or horse cart. The area is famous for its scenic sunsets, beach sports, and local seafood cuisine.",
-      "Being close to Mumbai and accessible by road and ferry, Alibaug is a favored weekend getaway for families, friends, and solo travelers alike."
-    ],
+  "color": "#f25135",
+  "overview": [
+    "Alibaug Beach is one of the most popular coastal destinations in Maharashtra, located about 100 kilometers from Mumbai. It offers a wide sandy stretch, coconut groves, and a stunning view of the Arabian Sea.",
+    "This beach is also known for the iconic Kolaba Fort, which can be accessed during low tide by foot or horse cart. The area is famous for its scenic sunsets, beach sports, and local seafood cuisine.",
+    "Being close to Mumbai and accessible by road and ferry, Alibaug is a favored weekend getaway for families, friends, and solo travelers alike."
+  ],
   "highlights": [
     {
       "icon": "fas fa-landmark",
@@ -77,19 +77,28 @@
       "icon": "fas fa-water",
       "title": "Water Sports",
       "description": "Engage in parasailing, jet skiing, and banana boat rides.",
-      "info": ["Operated on Alibaug and Nagaon Beach", "Seasonal availability"]
+      "info": [
+        "Operated on Alibaug and Nagaon Beach",
+        "Seasonal availability"
+      ]
     },
     {
       "icon": "fas fa-horse",
       "title": "Horse Cart Rides",
       "description": "Traditional horse-drawn cart rides along the shore.",
-      "info": ["Popular among families", "Best during evening time"]
+      "info": [
+        "Popular among families",
+        "Best during evening time"
+      ]
     },
     {
       "icon": "fas fa-ship",
       "title": "Ferry Ride",
       "description": "Take a ferry from Gateway of India to Mandwa Jetty and a short ride to Alibaug.",
-      "info": ["Available year-round", "Quicker than road travel"]
+      "info": [
+        "Available year-round",
+        "Quicker than road travel"
+      ]
     }
   ],
   "attractions": [
@@ -98,21 +107,24 @@
       "title": "Kolaba Fort",
       "description": "Sea fort with historical cannons and panoramic views.",
       "distance": "1.5 km from beach",
-      "icon": "fas fa-fort-awesome"
+      "icon": "fas fa-chess-rook",
+      "value": "Historic Island Fort"
     },
     {
       "image": "/assets/images/beaches/01/img2.jpg",
       "title": "Varsoli Beach",
       "description": "A quieter beach ideal for swimming and relaxation.",
       "distance": "2 km from Alibaug Beach",
-      "icon": "fas fa-water"
+      "icon": "fas fa-water",
+      "value": "Quiet Beach"
     },
     {
       "image": "/assets/images/beaches/01/img3.jpg",
       "title": "Kihim Beach",
       "description": "Famous for birdwatching, dense flora, and clean sand.",
       "distance": "12 km north",
-      "icon": "fas fa-binoculars"
+      "icon": "fas fa-binoculars",
+      "value": "Nature Spot"
     }
   ],
   "marineLife": {
@@ -188,21 +200,34 @@
       "image": "/assets/images/beaches.jpg",
       "rating": "4.5",
       "url": "https://example.com/radisson-alibaug",
-      "facilities": ["wifi", "parking", "ac", "pool"]
+      "facilities": [
+        "wifi",
+        "parking",
+        "ac",
+        "pool"
+      ]
     },
     {
       "name": "Outpost@Alibaug",
       "image": "/assets/images/beaches.jpg",
       "rating": "4.2",
       "url": "https://example.com/outpost-alibaug",
-      "facilities": ["wifi", "ac", "parking"]
+      "facilities": [
+        "wifi",
+        "ac",
+        "parking"
+      ]
     },
     {
       "name": "SaffronStays Aranya",
       "image": "/assets/images/beaches.jpg",
       "rating": "4.6",
       "url": "https://example.com/saffron-alibaug",
-      "facilities": ["wifi", "ac", "pool"]
+      "facilities": [
+        "wifi",
+        "ac",
+        "pool"
+      ]
     }
   ],
   "bookingTips": [
@@ -226,5 +251,9 @@
       "icon": "fas fa-car",
       "description": "Parking can be limited during peak hours"
     }
-  ]
+  ],
+  "coordinates": {
+    "lat": 18.6423,
+    "lng": 72.8715
+  }
 }

@@ -7,147 +7,152 @@ import { useLanguage } from "../context/LanguageContext";
 
 interface ParallaxBannerProps {
   image?: string;
-  minScale?: number;
-  maxScale?: number;
   title?: string;
   subtitle?: string;
 }
 
 const ParallaxBanner: React.FC<ParallaxBannerProps> = ({
   image = "/assets/images/beachBanner.png",
-  minScale = 0.9,
-  maxScale = 1,
-  title = "",
-  subtitle = "",
+  title = "Konkan Coast",
+  subtitle = "Discover the hidden gems of Maharashtra",
 }) => {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const ticking = useRef(false);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const imageRef = useRef<HTMLDivElement | null>(null);
   const { language } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!ref.current) return;
+      if (!containerRef.current || !imageRef.current) return;
 
-      if (!ticking.current) {
-        requestAnimationFrame(() => {
-          const rect = ref.current!.getBoundingClientRect();
-          const viewportHeight = window.innerHeight;
+      const rect = containerRef.current.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      
+      // Calculate how much of the banner is visible (0 to 1)
+      const scrollFraction = Math.max(0, Math.min(1, (windowHeight - rect.top) / (windowHeight + rect.height)));
+      
+      // Window Closing Effect: Pinching the clip-path
+      // At 0.5 (center of screen), it is fully open (0% and 100%)
+      // As it leaves the screen, the percentages move toward the center (50%)
+      const pinch = Math.abs(0.5 - scrollFraction) * 40; 
+      const topEdge = pinch;
+      const bottomEdge = 100 - pinch;
 
-          const progress =
-            1 - Math.min(Math.max(rect.top / viewportHeight, 0), 1);
-
-          // Scale
-          const scale = minScale + (maxScale - minScale) * progress;
-
-          // Flip effect (window opening)
-          const rotateX = 15 - progress * 15; // 15deg → 0deg
-          const translateY = (1 - progress) * 40;
-
-          ref.current!.style.transform = `
-            perspective(1200px)
-            translateY(${translateY}px)
-            scale(${scale})
-            rotateX(${rotateX}deg)
-          `;
-
-          ticking.current = false;
-        });
-
-        ticking.current = true;
-      }
+      // Apply the "Window Shutter" clip path
+      imageRef.current.style.clipPath = `polygon(0% ${topEdge}%, 100% ${topEdge}%, 100% ${bottomEdge}%, 0% ${bottomEdge}%)`;
+      
+      // Subtle 3D tilt
+      const rotation = (scrollFraction - 0.5) * 20;
+      imageRef.current.style.transform = `scale(${1.1 - pinch/100}) rotateX(${rotation}deg)`;
     };
 
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("resize", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleScroll);
-    };
-  }, [minScale, maxScale]);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="parallax-wrapper">
-      {/* Background Layer */}
-      <div ref={ref} className="parallax-inner">
+    <div className="window-container" ref={containerRef}>
+      <div className="window-shutter" ref={imageRef}>
         <Image
           src={image}
-          alt={title || "Banner"}
-          priority
+          alt={title}
           fill
-          sizes="(max-width: 768px) 100vw, 1600px"
+          priority
           style={{ objectFit: "cover" }}
         />
-        <div className="parallax-overlay" />
+        <div className="overlay-gradient" />
       </div>
 
-      {/* Text Overlay */}
-      <div className="parallax-content">
-        <h1 className="display-4 text-white fw-bold">
+      <div className="content-layer">
+        <div className="editorial-badge">Maharashtra</div>
+        <h1 className="main-title">
           <Translator text={title} targetLang={language} />
         </h1>
-
-        {subtitle && (
-          <p className="lead text-white">
-            <Translator text={subtitle} targetLang={language} />
-          </p>
-        )}
+        <div className="orange-divider"></div>
+        <p className="sub-text">
+          <Translator text={subtitle} targetLang={language} />
+        </p>
       </div>
 
       <style jsx>{`
-        .parallax-wrapper {
+        .window-container {
           position: relative;
-          height: 56vh;
-          overflow: hidden;
+          height: 60vh; /* Taller for better cinematic effect */
+          margin: 0;
+          // background: #fff;
+          overflow: visible;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           perspective: 1200px;
-          background: #000;
-        }
-        .parallax-wrapper {
-          background: linear-gradient(180deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06));
         }
 
-        .parallax-inner {
+        .window-shutter {
           position: absolute;
-          inset: 0;
-          transform-origin: center;
-          transition: transform 0.12s ease-out;
-          will-change: transform;
+          width: 90%;
+          height: 100%;
+          overflow: hidden;
+          will-change: clip-path, transform;
+          transition: transform 0.1s linear;
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }
 
-        .parallax-overlay {
+        .overlay-gradient {
           position: absolute;
           inset: 0;
           background: linear-gradient(
-            180deg,
-            rgba(2, 6, 23, 0.35),
-            rgba(2, 6, 23, 0.15)
+            to bottom,
+            rgba(0,0,0,0.4) 0%,
+            transparent 50%,
+            rgba(0,0,0,0.6) 100%
           );
         }
 
-        .parallax-content {
-          position: absolute;
-          inset: 0;
-          z-index: 2;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+        .content-layer {
+          position: relative;
+          z-index: 10;
           text-align: center;
-          padding: 3rem 1.25rem;
+          color: white;
           pointer-events: none;
         }
 
+        .editorial-badge {
+          font-size: 0.8rem;
+          letter-spacing: 6px;
+          text-transform: uppercase;
+          margin-bottom: 15px;
+          color: #FF6B00;
+          font-weight: 800;
+        }
+
+        .main-title {
+          font-size: clamp(3rem, 8vw, 6rem);
+          font-weight: 900;
+          text-transform: uppercase;
+          line-height: 0.85;
+          margin: 0;
+          letter-spacing: -2px;
+          text-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .orange-divider {
+          width: 60px;
+          height: 4px;
+          background: #FF6B00;
+          margin: 25px auto;
+        }
+
+        .sub-text {
+          font-size: 1.2rem;
+          max-width: 500px;
+          margin: 0 auto;
+          font-weight: 300;
+          letter-spacing: 1px;
+          opacity: 0.9;
+        }
+
         @media (max-width: 768px) {
-          .parallax-wrapper {
-            height: 40vh;
-          }
-          .parallax-inner {
-            transform: scale(1) rotateX(0deg) !important;
-          }
-          .parallax-content h1 {
-            font-size: 26px !important;
-          }
+          .window-container { height: 50vh; margin: 50px 0; }
+          .window-shutter { width: 100%; clip-path: none !important; }
         }
       `}</style>
     </div>

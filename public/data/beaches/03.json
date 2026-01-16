@@ -4,11 +4,11 @@
   "subtitle": "White sands, turquoise waters, and lush green hills",
   "bannerImage": "/assets/images/beaches/kashid.jpg",
   "insideBannerImage": "/assets/images/beaches/03/bannerImg.jpg",
-    "color": "#201f22",
+  "color": "#201f22",
   "overview": [
-      "Kashid Beach is a picturesque seaside destination located along the Konkan coast between Alibaug and Murud in Maharashtra. Known for its white sand, clear blue waters, and green surroundings, it is a favorite weekend retreat for Mumbaikars and Punekars.",
-      "The beach is relatively clean and well-maintained, stretching over 3 kilometers. It&apos;s nestled between two hills and surrounded by casuarina groves, making it ideal for relaxing, photography, and gentle adventure activities.",
-      "Kashid offers the perfect blend of scenic beauty and accessibility, being just around 125 km from Mumbai. It attracts families, couples, and solo travelers looking for peace, fun, and nature."
+    "Kashid Beach is a picturesque seaside destination located along the Konkan coast between Alibaug and Murud in Maharashtra. Known for its white sand, clear blue waters, and green surroundings, it is a favorite weekend retreat for Mumbaikars and Punekars.",
+    "The beach is relatively clean and well-maintained, stretching over 3 kilometers. It's nestled between two hills and surrounded by casuarina groves, making it ideal for relaxing, photography, and gentle adventure activities.",
+    "Kashid offers the perfect blend of scenic beauty and accessibility, being just around 125 km from Mumbai. It attracts families, couples, and solo travelers looking for peace, fun, and nature."
   ],
   "highlights": [
     {
@@ -116,34 +116,33 @@
     }
   ],
   "attractions": [
-  {
-    "image": "/assets/images/beaches/03/img1.jpg",
-    "title": "Murud-Janjira Fort",
-    "description": "A majestic sea fort located 20 km from Kashid, famous for its stronghold history and architecture.",
-    "distance": "20 km from Kashid",
-    "icon": "fas fa-fort-awesome",
-    "value": "Historic Sea Fort"
-  },
-  {
-    "image": "/assets/images/beaches/03/img2.jpg",
-    "title": "Phansad Wildlife Sanctuary",
-    "description": "Lush forest reserve home to leopards, birds, and medicinal plants.",
-    "distance": "12 km from Kashid",
-    "icon": "fas fa-leaf",
-    "value": "Nature Reserve"
-  },
-  {
-    "image": "/assets/images/beaches/03/img3.jpg",
-    "title": "Datta Mandir Hill",
-    "description": "Small hilltop temple offering panoramic views of the beach.",
-    "distance": "2 km from beach",
-    "icon": "fas fa-place-of-worship",
-    "value": "Viewpoint & Temple"
-  }
-]
-,
+    {
+      "image": "/assets/images/beaches/03/img1.jpg",
+      "title": "Murud-Janjira Fort",
+      "description": "A majestic sea fort located 20 km from Kashid, famous for its stronghold history and architecture.",
+      "distance": "20 km from Kashid",
+      "icon": "fas fa-chess-rook",
+      "value": "Historic Sea Fort"
+    },
+    {
+      "image": "/assets/images/beaches/03/img2.jpg",
+      "title": "Phansad Wildlife Sanctuary",
+      "description": "Lush forest reserve home to leopards, birds, and medicinal plants.",
+      "distance": "12 km from Kashid",
+      "icon": "fas fa-leaf",
+      "value": "Nature Reserve"
+    },
+    {
+      "image": "/assets/images/beaches/03/img3.jpg",
+      "title": "Datta Mandir Hill",
+      "description": "Small hilltop temple offering panoramic views of the beach.",
+      "distance": "2 km from beach",
+      "icon": "fas fa-place-of-worship",
+      "value": "Viewpoint & Temple"
+    }
+  ],
   "marineLife": {
-    "intro": "Kashid&apos;s clean, undeveloped shoreline allows a modest variety of intertidal life to thrive in tide pools and shallow zones.",
+    "intro": "Kashid's clean, undeveloped shoreline allows a modest variety of intertidal life to thrive in tide pools and shallow zones.",
     "items": [
       {
         "icon": "fas fa-fish",
@@ -162,7 +161,7 @@
       }
     ],
     "conclusion": [
-      "Kashid&apos;s clean shoreline makes it a great spot for families and nature lovers.",
+      "Kashid's clean shoreline makes it a great spot for families and nature lovers.",
       "While not ideal for diving, its calm environment supports small marine and bird life."
     ]
   },
@@ -223,21 +222,31 @@
       "image": "/assets/images/beaches.jpg",
       "rating": "4.2",
       "url": "https://example.com/kashid-beach-resort",
-      "facilities": ["wifi", "parking", "ac"]
+      "facilities": [
+        "wifi",
+        "parking",
+        "ac"
+      ]
     },
     {
       "name": "Royal Villa Resort",
       "image": "/assets/images/beaches.jpg",
       "rating": "4.0",
       "url": "https://example.com/royal-villa",
-      "facilities": ["parking", "pool"]
+      "facilities": [
+        "parking",
+        "pool"
+      ]
     },
     {
       "name": "Casuarina Homestay",
       "image": "/assets/images/beaches.jpg",
       "rating": "4.3",
       "url": "https://example.com/casuarina-home",
-      "facilities": ["wifi", "ac"]
+      "facilities": [
+        "wifi",
+        "ac"
+      ]
     }
   ],
   "bookingTips": [
@@ -261,5 +270,9 @@
       "icon": "fas fa-car",
       "description": "Transport: Hire cars or bikes from Alibaug for flexibility"
     }
-  ]
+  ],
+  "coordinates": {
+    "lat": 18.4419,
+    "lng": 72.9105
+  }
 }

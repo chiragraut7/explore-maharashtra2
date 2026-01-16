@@ -4,6 +4,7 @@
   "subtitle": "The Historic Hill Station of Shivaji Maharaj",
   "bannerImage": "/images/hillstations/panhala/banner.jpg",
   "color": "#4a5d73",
+  "coordinates": { "lat": 16.8114, "lng": 74.1103 },
   "overview": [
     "Panhala, located near Kolhapur in Maharashtra, is a charming hill station steeped in history. It is most famous for the majestic Panhala Fort, closely associated with Chhatrapati Shivaji Maharaj.",
     "At an altitude of around 977 meters, Panhala offers cool breezes, lush landscapes, and panoramic views of the Sahyadri range.",
@@ -11,7 +12,7 @@
   ],
   "highlights": [
     {
-      "icon": "fa-solid fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "title": "Historic Panhala Fort",
       "description": "A grand fort built in the 12th century that played a crucial role during the Maratha Empire, offering a glimpse into Maharashtra’s glorious past."
     },

@@ -5,6 +5,7 @@
   "bannerImage": "/assets/images/hills/17.jpg",
   "insideBannerImage": "/assets/images/hills/17/bannerimg.jpg",
   "color": "#33691e",
+  "coordinates": {"lat": 19.3400, "lng": 73.7700},
   "overview": [
     "Malshej Ghat, nestled in the Western Ghats of Maharashtra, is a mountain pass and hill station renowned for its misty valleys, roaring waterfalls, and rich flora and fauna.",
     "Located in the Pune district, it stands at an altitude of 700 meters and is surrounded by rugged hills that come alive with vibrant greenery during the monsoon season.",
@@ -95,7 +96,7 @@
       "title": "Harishchandragad Fort",
       "description": "A historic hill fort offering a panoramic view of the Konkan region.",
       "distance": "15 km from Malshej Ghat",
-      "icon": "fa-solid fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Trekking site"
     },
     {

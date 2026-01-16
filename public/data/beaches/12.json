@@ -4,12 +4,16 @@
   "subtitle": "Spiritual bliss, scenic shores, and sacred temples",
   "bannerImage": "/assets/images/beaches/harihareshwar.jpg",
   "insideBannerImage": "/assets/images/beaches/12/bannerImg.jpg",
-    "color": "#104644",
-  "overview":  [
-      "Harihareshwar Beach is a picturesque coastal town located in the Raigad district of Maharashtra, known for its spiritual significance and scenic beauty. The beach is flanked by hills, temples, and a tranquil shoreline.",
-      "Often referred to as the 'Kashi of the South', Harihareshwar is home to an ancient Shiva temple and attracts pilgrims as well as tourists seeking a serene escape.",
-      "The town offers a blend of heritage, nature, and calm waters, making it ideal for peaceful beach holidays and spiritual retreats."
-    ],
+  "color": "#104644",
+  "coordinates": {
+    "lat": 17.9947,
+    "lng": 73.0189
+  },
+  "overview": [
+    "Harihareshwar Beach is a picturesque coastal town located in the Raigad district of Maharashtra, known for its spiritual significance and scenic beauty. The beach is flanked by hills, temples, and a tranquil shoreline.",
+    "Often referred to as the 'Kashi of the South', Harihareshwar is home to an ancient Shiva temple and attracts pilgrims as well as tourists seeking a serene escape.",
+    "The town offers a blend of heritage, nature, and calm waters, making it ideal for peaceful beach holidays and spiritual retreats."
+  ],
   "highlights": [
     {
       "icon": "fas fa-church",
@@ -60,45 +64,50 @@
     "climate": {
       "description": "Harihareshwar has a tropical coastal climate with warm summers, lush monsoons, and pleasant winters. Best time to visit is between October and February.",
       "seasons": [
-        { "icon": "fas fa-sun", "text": "Best Season: October to February" },
-        { "icon": "fas fa-cloud-rain", "text": "Monsoon: June to September" }
+        {
+          "icon": "fas fa-sun",
+          "text": "Best Season: October to February"
+        },
+        {
+          "icon": "fas fa-cloud-rain",
+          "text": "Monsoon: June to September"
+        }
       ]
     },
     "conclusion": "The unique combination of hills, sea, and sacred paths makes Harihareshwar a balanced destination for both nature and culture lovers."
   },
- "activities": [
-  {
-    "icon": "fas fa-walking",
-    "title": "Pradakshina Walk",
-    "description": "Take the scenic circumambulatory path around the temple by the rocky coastline.",
-    "info": [
-      "Only accessible during low tide",
-      "Carry good footwear for the uneven terrain"
-    ],
-    "value": "Spiritual Trek"
-  },
-  {
-    "icon": "fas fa-water",
-    "title": "Beach Relaxation",
-    "description": "Relax on the soft sands and enjoy the calming waves of the beach.",
-    "info": [
-      "Best during mornings and sunsets",
-      "Avoid swimming during high tide"
-    ],
-    "value": "Leisure"
-  },
-  {
-    "icon": "fas fa-camera",
-    "title": "Photography",
-    "description": "Capture stunning views of sea, hills, and coastal life.",
-    "info": [
-      "Ideal spots: temple complex, beachside, and viewpoints",
-      "Best light during sunrise/sunset"
-    ],
-    "value": "Scenic Exploration"
-  }
-]
-,
+  "activities": [
+    {
+      "icon": "fas fa-walking",
+      "title": "Pradakshina Walk",
+      "description": "Take the scenic circumambulatory path around the temple by the rocky coastline.",
+      "info": [
+        "Only accessible during low tide",
+        "Carry good footwear for the uneven terrain"
+      ],
+      "value": "Spiritual Trek"
+    },
+    {
+      "icon": "fas fa-water",
+      "title": "Beach Relaxation",
+      "description": "Relax on the soft sands and enjoy the calming waves of the beach.",
+      "info": [
+        "Best during mornings and sunsets",
+        "Avoid swimming during high tide"
+      ],
+      "value": "Leisure"
+    },
+    {
+      "icon": "fas fa-camera",
+      "title": "Photography",
+      "description": "Capture stunning views of sea, hills, and coastal life.",
+      "info": [
+        "Ideal spots: temple complex, beachside, and viewpoints",
+        "Best light during sunrise/sunset"
+      ],
+      "value": "Scenic Exploration"
+    }
+  ],
   "attractions": [
     {
       "image": "/assets/images/beaches/12/img1.jpg",
@@ -138,7 +147,7 @@
     ],
     "conclusion": [
       "Harihareshwar offers a peaceful coastal environment enriched by clean shores and undisturbed marine patches.",
-      "While not suited for scuba diving, it&apos;s ideal for mindful nature observation and relaxation."
+      "While not suited for scuba diving, it's ideal for mindful nature observation and relaxation."
     ]
   },
   "howToReach": [
@@ -199,21 +208,31 @@
       "image": "/assets/images/beaches.jpg",
       "rating": "4.2",
       "url": "https://mtdc.co.in",
-      "facilities": ["wifi", "parking", "ac"]
+      "facilities": [
+        "wifi",
+        "parking",
+        "ac"
+      ]
     },
     {
       "name": "Tranquil Beach Resort",
       "image": "/assets/images/beaches.jpg",
       "rating": "4.0",
       "url": "https://example.com/tranquil",
-      "facilities": ["wifi", "parking"]
+      "facilities": [
+        "wifi",
+        "parking"
+      ]
     },
     {
       "name": "Sahyadri Homestay",
       "image": "/assets/images/beaches.jpg",
       "rating": "4.1",
       "url": "https://example.com/sahyadri",
-      "facilities": ["ac", "parking"]
+      "facilities": [
+        "ac",
+        "parking"
+      ]
     }
   ],
   "bookingTips": [

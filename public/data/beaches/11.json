@@ -4,12 +4,16 @@
   "subtitle": "Golden sands, serene shores, and hidden coastal charm",
   "bannerImage": "/assets/images/beaches/diveagar.jpg",
   "insideBannerImage": "/assets/images/beaches/11/bannerImg.jpg",
-    "color": "#023e8a",
+  "color": "#023e8a",
+  "coordinates": {
+    "lat": 18.1714,
+    "lng": 72.9836
+  },
   "overview": [
-      "Diveagar Beach is a quiet and clean beach located in the Raigad district of Maharashtra, known for its pristine shoreline and tranquil atmosphere.",
-      "It stretches for about 6 kilometers and is surrounded by coconut and betel nut plantations, making it a perfect weekend escape.",
-      "The beach is also known for its historic Suvarna Ganesh temple and untouched natural beauty."
-    ],
+    "Diveagar Beach is a quiet and clean beach located in the Raigad district of Maharashtra, known for its pristine shoreline and tranquil atmosphere.",
+    "It stretches for about 6 kilometers and is surrounded by coconut and betel nut plantations, making it a perfect weekend escape.",
+    "The beach is also known for its historic Suvarna Ganesh temple and untouched natural beauty."
+  ],
   "highlights": [
     {
       "icon": "fas fa-umbrella-beach",
@@ -106,33 +110,32 @@
       ]
     }
   ],
- "attractions": [
-  {
+  "attractions": [
+    {
       "image": "/assets/images/beaches/11/img1.jpg",
-    "title": "Suvarna Ganesh Temple",
-    "description": "Spiritual and historical landmark famous for once housing a golden idol.",
-    "distance": "Walkable from beach",
-    "icon": "fas fa-landmark",
-    "value": "Spiritual Site"
-  },
-  {
+      "title": "Suvarna Ganesh Temple",
+      "description": "Spiritual and historical landmark famous for once housing a golden idol.",
+      "distance": "Walkable from beach",
+      "icon": "fas fa-landmark",
+      "value": "Spiritual Site"
+    },
+    {
       "image": "/assets/images/beaches/11/img2.jpg",
-    "title": "Harihareshwar",
-    "description": "A scenic temple town about 35 km away, known for its coastal temples and sacred beach.",
-    "distance": "35 km from Diveagar",
-    "icon": "fas fa-pray",
-    "value": "Temple Town"
-  },
-  {
+      "title": "Harihareshwar",
+      "description": "A scenic temple town about 35 km away, known for its coastal temples and sacred beach.",
+      "distance": "35 km from Diveagar",
+      "icon": "fas fa-pray",
+      "value": "Temple Town"
+    },
+    {
       "image": "/assets/images/beaches/11/img3.jpg",
-    "title": "Shrivardhan Beach",
-    "description": "Popular nearby beach known for water sports and seafood shacks.",
-    "distance": "20 km from Diveagar",
-    "icon": "fas fa-water",
-    "value": "Adventure & Food"
-  }
-]
-,
+      "title": "Shrivardhan Beach",
+      "description": "Popular nearby beach known for water sports and seafood shacks.",
+      "distance": "20 km from Diveagar",
+      "icon": "fas fa-water",
+      "value": "Adventure & Food"
+    }
+  ],
   "marineLife": {
     "intro": "Diveagar Beach supports a modest but vibrant coastal ecosystem with migratory birds, shellfish, and tidal organisms.",
     "items": [
@@ -206,21 +209,31 @@
       "image": "/assets/images/beaches.jpg",
       "rating": "4.2",
       "url": "https://example.com/oceano-pearl",
-      "facilities": ["wifi", "parking", "ac"]
+      "facilities": [
+        "wifi",
+        "parking",
+        "ac"
+      ]
     },
     {
       "name": "Exotica Sea View",
       "image": "/assets/images/beaches.jpg",
       "rating": "4.4",
       "url": "https://example.com/exotica",
-      "facilities": ["wifi", "ac"]
+      "facilities": [
+        "wifi",
+        "ac"
+      ]
     },
     {
       "name": "Diveagar Homestay",
       "image": "/assets/images/beaches.jpg",
       "rating": "4.0",
       "url": "https://example.com/diveagar-homestay",
-      "facilities": ["wifi", "parking"]
+      "facilities": [
+        "wifi",
+        "parking"
+      ]
     }
   ],
   "bookingTips": [

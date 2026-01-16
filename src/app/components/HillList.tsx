@@ -2,15 +2,13 @@
 
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import BeachSlider from './beaches/BeachSlider'
 import ParallaxBanner from './commonComponents/ParallaxBanner'
 import Translator from './commonComponents/Translator'
 import { useLanguage } from './context/LanguageContext'
 
-/* ----------------------------------
-   Types
------------------------------------ */
 interface Hill {
   id: string
   title: string
@@ -19,24 +17,16 @@ interface Hill {
   color?: string
 }
 
-/* ----------------------------------
-   Component
------------------------------------ */
 const HillList: React.FC = () => {
   const [hills, setHills] = useState<Hill[]>([])
   const { language } = useLanguage()
 
-  /* ----------------------------------
-     Fetch Hills
-  ----------------------------------- */
   useEffect(() => {
     const fetchHills = async () => {
       try {
         const res = await fetch('/api/hills')
         const json = await res.json()
-        if (json.success) {
-          setHills(json.data.slice(0, 5))
-        }
+        if (json.success) setHills(json.data.slice(0, 5))
       } catch (err) {
         console.error('Failed to fetch hills', err)
       }
@@ -44,171 +34,100 @@ const HillList: React.FC = () => {
     fetchHills()
   }, [])
 
-  /* ----------------------------------
-     FAST PARALLAX EFFECT
-  ----------------------------------- */
-  useEffect(() => {
-    const textEls = Array.from(
-      document.querySelectorAll<HTMLElement>('.parallax-text')
-    )
-    const imageEls = Array.from(
-      document.querySelectorAll<HTMLElement>('.parallax-image')
-    )
-
-    const textSpeed = 0.45
-    const imageSpeed = 0.9
-    const maxMove = 120
-    let ticking = false
-
-    const onScroll = () => {
-      if (ticking) return
-      ticking = true
-
-      requestAnimationFrame(() => {
-        const scrollY = window.scrollY
-        const vh = window.innerHeight
-
-        const apply = (els: HTMLElement[], speed: number) => {
-          els.forEach((el) => {
-            const rect = el.getBoundingClientRect()
-            const elementTop = rect.top + scrollY
-            const progress = (scrollY - elementTop + vh / 2) / vh
-
-            const translateY = Math.max(
-              Math.min(progress * maxMove * speed, maxMove),
-              -maxMove
-            )
-
-            el.style.transform = `translate3d(0, ${translateY}px, 0)`
-            el.style.transition = 'transform 0.08s linear'
-
-            if (el.classList.contains('parallax-text')) {
-              const opacity = Math.max(1 - Math.abs(progress) * 0.5, 0.35)
-              el.style.opacity = `${opacity}`
-            }
-          })
-        }
-
-        apply(textEls, textSpeed)
-        apply(imageEls, imageSpeed)
-
-        ticking = false
-      })
-    }
-
-    onScroll()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    window.addEventListener('resize', onScroll)
-
-    return () => {
-      window.removeEventListener('scroll', onScroll)
-      window.removeEventListener('resize', onScroll)
-    }
-  }, [hills])
-
-  /* ----------------------------------
-     Helpers
-  ----------------------------------- */
   const generateSlug = (id?: string) =>
-    (id || '')
-      .toLowerCase()
-      .replace(/\s+/g, '-')
-      .replace(/[^\w-]+/g, '')
+    (id || '').toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '')
 
-  /* ----------------------------------
-     JSX
-  ----------------------------------- */
   return (
-    <section className="container-fluid herosection pb-5 px-0 hill-section">
-
-      {/* Banner */}
-      <div className="homeHillsBanner mb-4 p-0">
+    <section className="hill-magazine-section">
+      {/* ⛰️ HERO BANNER */}
+      <div className="banner-wrapper mb-5">
         <ParallaxBanner
           image="/assets/images/hillsHomeBanner.jpg"
           title="Hill Stations"
         />
+        <div className="banner-bottom-fade"></div>
       </div>
 
-      {/* CONTENT */}
-      <section className="container">
-        <div className="row py-4 align-items-center justify-content-between">
+      <div className="container py-5">
+        <div className="row align-items-center g-5">
+          
+          {/* 🖼️ LEFT: OVERLAPPING MOUNTAIN IMAGES */}
+          <div className="col-lg-6 position-relative mb-5 mb-lg-0">
+            <div className="hill-main-frame shadow-lg">
+              <Image
+                src="/assets/images/hillsHomeImg.jpg"
+                alt="Hill Station Hero"
+                width={800}
+                height={1000}
+                className="img-fluid heritage-img"
+              />
+              {/* Decorative Brand Badge */}
+              <div className="hill-badge">
+                <i className="fas fa-mountain-sun"></i>
+              </div>
+            </div>
+            
+            <div className="hill-sub-frame shadow-2xl d-none d-md-block">
+              <Image
+                src="/assets/images/hillsHomeImg1.jpg"
+                alt="Misty Valleys"
+                width={400}
+                height={300}
+                className="img-fluid rounded-3"
+              />
+            </div>
+          </div>
 
-          {/* LEFT TEXT + IMAGE */}
-          <div className="col-md-5 mb-4 mb-md-0">
-            <div className="parallax-text mb-5 pb-5">
-
-              <h2 className="section-subtitle text-start mb-4">
-                <Translator
-                  text="Western Ghats & Hill Escapes"
-                  targetLang={language}
-                />
+          {/* ✍️ RIGHT: EDITORIAL CONTENT */}
+          <div className="col-lg-6 ps-lg-5">
+            <div className="content-editorial">
+              <span className="top-category-label">
+                <Translator text="Western Ghats Escapes" targetLang={language} />
+              </span>
+              
+              <h2 className="display-4 fw-bold hill-title mb-4">
+                Mists, Trails & <br />
+                <span className="text-secondary-brand">Ancient Valleys</span>
               </h2>
-
-              <p className="lead">
+              
+              <div className="heritage-divider mb-4"></div>
+              
+              <p className="lead text-dark fw-medium mb-4">
                 <Translator
                   text="Maharashtra's hill stations offer misty viewpoints, ancient temples, lush valleys and pleasant climates — perfect for weekend getaways."
                   targetLang={language}
                 />
               </p>
-
-              <p>
+              
+              <p className="text-muted fs-5 mb-5">
                 <Translator
-                  text="Explore spots like Mahabaleshwar, Lonavala, Matheran and quieter hill retreats for treks, viewpoints, fruit orchards and delicious local fare."
+                  text="From the world's only forest without roads in Matheran to the strawberry fields of Mahabaleshwar, explore the heart of the Sahyadris."
                   targetLang={language}
                 />
               </p>
 
-            </div>
-
-            <div className="parallax-image image-block">
-              <div className="image-wrap">
-                <Image
-                  src="/assets/images/hillsHomeImg1.jpg"
-                  alt="Hill Station Side"
-                  width={900}
-                  height={600}
-                  className="img-fluid rounded-4"
-                />
+              <div className="cta-wrapper">
+                <Link href="/hills" className="hill-magazine-btn">
+                  <Translator text="Explore All Peaks" targetLang={language} />
+                  <span className="ms-3">→</span>
+                </Link>
               </div>
             </div>
           </div>
-
-          {/* RIGHT IMAGE */}
-          <div className="col-md-6 pt-md-5">
-            <div className="parallax-image hero-image">
-              <div className="image-wrap">
-                <Image
-                  src="/assets/images/hillsHomeImg.jpg"
-                  alt="Hill Station Hero"
-                  width={1200}
-                  height={800}
-                  className="img-fluid rounded-4"
-                />
-
-                <div className="hero-caption">
-                  <h3>
-                    <Translator
-                      text="Mists, Viewpoints & Trails"
-                      targetLang={language}
-                    />
-                  </h3>
-                  <p>
-                    <Translator
-                      text="Perfect for monsoon treks, scenic drives and peaceful stays."
-                      targetLang={language}
-                    />
-                  </p>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
         </div>
 
-        {/* Slider */}
-        <div className="row mt-5 pt-5">
-          <div className="col-12">
+        {/* 🎢 THE SLIDER: Minimalist Floating */}
+        <div className="mt-10 slider-block-heritage">
+          <div className="d-flex justify-content-between align-items-end mb-5">
+             <div>
+                <h3 className="fw-bold h2 text-secondary-brand m-0">
+                  <Translator text="Misty Destinations" targetLang={language} />
+                </h3>
+                <p className="text-muted m-0">Handpicked retreats for your next trek</p>
+             </div>
+          </div>
+          
+          <div className="slider-bg-accent rounded-4 p-4 p-md-4 shadow-sm">
             {hills.length > 0 ? (
               <BeachSlider
                 beaches={hills}
@@ -216,17 +135,111 @@ const HillList: React.FC = () => {
                 generateSlug={generateSlug}
               />
             ) : (
-              <p className="text-center py-4 text-muted">
-                <Translator
-                  text="Loading hill stations..."
-                  targetLang={language}
-                />
-              </p>
+              <div className="shimmer-loader"></div>
             )}
           </div>
         </div>
+      </div>
 
-      </section>
+      <style jsx>{`
+        .hill-magazine-section {
+          background-color: rgb(246, 255, 237);
+          overflow: hidden;
+          padding-bottom: 100px;
+        }
+
+        .text-secondary-brand { color: var(--secondary-color); }
+
+        /* Typography */
+        .top-category-label {
+          color: var(--primary-color);
+          font-weight: 800;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          font-size: 0.85rem;
+        }
+
+        .hill-title {
+          line-height: 1.1;
+          color: #1a1a1a;
+          letter-spacing: -1.5px;
+        }
+
+        /* Image Stack Styling */
+        .hill-main-frame {
+          position: relative;
+          z-index: 2;
+          border-left: 12px solid var(--secondary-color);
+        }
+
+        .hill-sub-frame {
+          position: absolute;
+          bottom: -50px;
+          right: -30px;
+          width: 55%;
+          z-index: 3;
+          border: 0 solid #fff;
+        }
+
+        .hill-badge {
+          position: absolute;
+          top: 30px;
+          left: -30px;
+          width: 60px;
+          height: 60px;
+          background: var(--primary-color);
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          font-size: 1.5rem;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+          animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+        }
+
+        /* UI Elements */
+        .heritage-divider {
+          width: 70px;
+          height: 5px;
+          background: var(--accent-color);
+        }
+
+        .hill-magazine-btn {
+          display: inline-flex;
+          align-items: center;
+          background: var(--secondary-color);
+          color: #fff;
+          padding: 1rem 2.5rem;
+          text-decoration: none;
+          font-weight: 700;
+          border-radius: 5px;
+          transition: 0.3s ease;
+        }
+
+        .hill-magazine-btn:hover {
+          background: var(--primary-color);
+          transform: translateY(-5px);
+          box-shadow: 0 15px 30px rgba(242, 81, 53, 0.2);
+        }
+
+        .slider-bg-accent {
+          background: #fff;
+          border: 1px solid rgba(47, 81, 48, 0.05);
+        }
+
+        .mt-10 { margin-top: 10rem; }
+
+        @media (max-width: 991px) {
+          .mt-10 { margin-top: 5rem; }
+          .hill-sub-frame { right: 0; bottom: -30px; }
+        }
+      `}</style>
     </section>
   )
 }

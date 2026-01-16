@@ -1,10 +1,14 @@
 {
   "id": "07",
   "title": "Bordi Beach",
-  "subtitle": "Golden sands, clear waters, and scuba diving paradise",
+  "subtitle": "Tranquil shores, chikoo orchards, and cultural heritage",
   "bannerImage": "/assets/images/beaches/bordi-beach.jpg",
   "insideBannerImage": "/assets/images/beaches/07/bannerImg.jpg",
   "color": "#09a5cf",
+  "coordinates": {
+    "lat": 20.1164,
+    "lng": 72.7400
+  },
   "overview": [
     "Bordi Beach is a tranquil and lesser-known coastal destination located in the Dahanu region of Maharashtra, near the Gujarat border. It features a long, clean shoreline lined with chikoo orchards and is known for its peaceful and unspoiled charm.",
     "The beach offers a flat stretch of sand, gentle waves, and safe swimming areas, making it ideal for family outings and quiet retreats. The surrounding area has Parsi and Warli cultural influences, giving Bordi a unique historical and ethnic flavor.",
@@ -20,16 +24,6 @@
       "icon": "fas fa-umbrella-beach",
       "title": "Secluded Shore",
       "description": "Long, uncrowded beach perfect for solitude, reading, or nature walks."
-    },
-    {
-      "icon": "fas fa-palette",
-      "title": "Warli Art & Culture",
-      "description": "Bordi is home to Warli tribal art, found on local walls and promoted through village tourism."
-    },
-    {
-      "icon": "fas fa-leaf",
-      "title": "Eco-Friendly Stay",
-      "description": "Many local resorts and homestays support sustainable farming and zero-waste tourism."
     }
   ],
   "geography": {
@@ -81,32 +75,6 @@
         "Best during morning or sunset hours",
         "Ideal for families and solo travelers"
       ]
-    },
-    {
-      "icon": "fas fa-leaf",
-      "title": "Chikoo Farm Visit",
-      "description": "Visit local chikoo farms and learn about organic farming techniques from local growers.",
-      "info": [
-        "Farms open for visitors during harvest season",
-        "Buy fresh chikoo and homemade jams"
-      ]
-    },
-    {
-      "icon": "fas fa-paint-brush",
-      "title": "Warli Art Workshops",
-      "description": "Join hands-on workshops where tribal artists teach traditional Warli painting styles.",
-      "info": [
-        "Usually hosted at eco-resorts or festivals",
-        "Great for kids and art lovers"
-      ]
-    },
-    {
-      "icon": "fas fa-fish",
-      "title": "Fishing Experience",
-      "description": "Participate in early morning fishing with local coastal communities using traditional techniques.",
-      "info": [
-        "Organized by homestays or local cooperatives"
-      ]
     }
   ],
   "attractions": [
@@ -117,22 +85,6 @@
       "distance": "Religious & Historic",
       "icon": "fas fa-landmark",
       "value": "Historic Site"
-    },
-    {
-      "image": "/assets/images/beaches/07/img2.jpg",
-      "title": "Asavli Dam",
-      "description": "A peaceful reservoir surrounded by greenery, ideal for short drives and nature photography.",
-      "distance": "Picnic & Scenic Spot",
-      "icon": "fas fa-water",
-      "value": "Nature Spot"
-    },
-    {
-      "image": "/assets/images/beaches/07/img3.jpg",
-      "title": "Gholvad Beach",
-      "description": "A neighboring beach popular for its tree-lined shore and cycling paths.",
-      "distance": "Cycling & Leisure",
-      "icon": "fas fa-bicycle",
-      "value": "Nearby Beach"
     }
   ],
   "marineLife": {
@@ -142,16 +94,6 @@
         "icon": "fas fa-fish",
         "title": "Shoreline Fish",
         "description": "Small fish and crabs can be seen during low tide across wet sand and rock pools."
-      },
-      {
-        "icon": "fas fa-dove",
-        "title": "Birdlife",
-        "description": "Coastal and inland birds such as herons, egrets, and bulbuls frequent the trees and beachline."
-      },
-      {
-        "icon": "fas fa-seedling",
-        "title": "Mangrove Belt",
-        "description": "Small mangrove clusters near creek mouths support shellfish and wetland ecology."
       }
     ],
     "conclusion": [
@@ -167,81 +109,13 @@
         "Nearest Airport: Mumbai (Chhatrapati Shivaji Maharaj International Airport)",
         "From there, drive or take a train to Gholvad or Dahanu"
       ]
-    },
-    {
-      "icon": "fas fa-train",
-      "title": "By Train",
-      "details": [
-        "Nearest Station: Gholvad (Western Line)",
-        "Frequent trains from Mumbai and Gujarat",
-        "Auto-rickshaws and taxis available from station"
-      ]
-    },
-    {
-      "icon": "fas fa-car",
-      "title": "By Road",
-      "details": [
-        "Approx. 145 km from Mumbai via NH48 and Dahanu Road",
-        "Accessible via local buses or private cabs"
-      ]
-    },
-    {
-      "icon": "fas fa-bus",
-      "title": "By Bus",
-      "details": [
-        "MSRTC buses from Mumbai to Dahanu",
-        "Local buses from Dahanu to Bordi available"
-      ]
     }
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/07/img1.jpg",
-      "thumb": "/assets/images/beaches/07/img1.jpg",
-      "alt": "Bordi Beach Calm Shore"
-    },
-    {
-      "src": "/assets/images/beaches/07/img2.jpg",
-      "thumb": "/assets/images/beaches/07/img2.jpg",
-      "alt": "Chikoo Orchard"
-    },
-    {
       "src": "/assets/images/beaches/07/img3.jpg",
       "thumb": "/assets/images/beaches/07/img3.jpg",
       "alt": "Warli Art Display"
-    }
-  ],
-  "hotels": [
-    {
-      "name": "Hill Zill Resort",
-      "image": "/assets/images/beaches.jpg",
-      "rating": "4.4",
-      "url": "https://example.com/hill-zill-resort",
-      "facilities": [
-        "wifi",
-        "parking",
-        "ac"
-      ]
-    },
-    {
-      "name": "Anand Resort Bordi",
-      "image": "/assets/images/beaches.jpg",
-      "rating": "4.3",
-      "url": "https://example.com/anand-resort",
-      "facilities": [
-        "wifi",
-        "parking"
-      ]
-    },
-    {
-      "name": "Chikoo Wadi Farmstay",
-      "image": "/assets/images/beaches.jpg",
-      "rating": "4.1",
-      "url": "https://example.com/chikoo-wadi",
-      "facilities": [
-        "wifi",
-        "ac"
-      ]
     }
   ],
   "bookingTips": [
@@ -252,21 +126,15 @@
     {
       "icon": "fas fa-sun",
       "description": "Peak Season: November to February"
-    },
-    {
-      "icon": "fas fa-cloud-rain",
-      "description": "Off-Season: Discounts available during monsoon"
-    },
-    {
-      "icon": "fas fa-gift",
-      "description": "Packages: Agro-tourism & cultural workshop combos"
-    },
-    {
-      "icon": "fas fa-car",
-      "description": "Transport: Some homestays offer station pick-up"
     }
   ],
-  "rating": "",
-  "amenities": [],
+  "rating": "4.5",
+  "amenities": [
+    "Beachfront Access",
+    "Chikoo Orchard Tours",
+    "Warli Art Workshops",
+    "Safe Swimming",
+    "Eco-stays"
+  ],
   "category": "beaches"
 }

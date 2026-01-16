@@ -5,6 +5,10 @@
   "bannerImage": "/assets/images/beaches/vengurla-banner.jpg",
   "insideBannerImage": "/assets/images/beaches/17/bannerImg.jpg",
   "color": "#00796B",
+  "coordinates": {
+    "lat": 15.8611,
+    "lng": 73.6339
+  },
   "overview": [
     "Vengurla Beach, nestled in the Sindhudurg district of Maharashtra, is known for its crystal-clear waters, pristine white sands, and peaceful surroundings. This unspoiled coastal destination offers a perfect escape for travelers seeking tranquility away from crowded beaches.",
     "Surrounded by lush green coconut groves and cashew orchards, Vengurla is also a hub for nature lovers and photographers. The beach stretches for several kilometers, offering panoramic views of the Arabian Sea, making it a must-visit spot on the Konkan coastline."

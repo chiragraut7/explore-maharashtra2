@@ -35,7 +35,7 @@ export default function AboutPageContent() {
   };
 
   return (
-    <div className="min-vh-100 bg-[#fcfaf8] pb-5" ref={containerRef}>
+    <div className="min-vh-100 bg-[#fcfaf8]" ref={containerRef}>
       {/* Dynamic Scroll Progress Bar */}
       <motion.div 
         className="fixed-top" 
@@ -62,7 +62,7 @@ export default function AboutPageContent() {
         </div>
       </header>
 
-      <section className="container py-5 position-relative mt-5">
+      <section className="container py-5 position-relative">
         <div className="timeline-wrapper">
           {/* Central Vertical Red/Orange Track */}
           <div className="timeline-track d-none d-md-block">
@@ -161,6 +161,7 @@ export default function AboutPageContent() {
         .timeline-track { 
           position: absolute; left: 50%; transform: translateX(-50%); 
           width: 4px; height: 100%; background: #e9ecef; z-index: 1; 
+          top:0;
         }
         .timeline-progress { 
           width: 100%; height: 100%; 

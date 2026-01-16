@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import BeachSlider from './beaches/BeachSlider'
-import { Item } from '@/app/types' // ✅ import shared type
+import { Item } from '@/app/types'
 
 interface Props {
   category: string
@@ -18,9 +18,8 @@ const CategoryList: React.FC<Props> = ({ category }) => {
         const json = await res.json()
 
         if (Array.isArray(json)) {
-          // Map API response to match Item type
           const formatted: Item[] = json.slice(0, 5).map((item: any) => ({
-            id: String(item.id ?? item.title ?? Math.random().toString()), // ensure string id
+            id: String(item.id ?? item.title ?? Math.random().toString()),
             title: item.title,
             subtitle: item.subtitle,
             bannerImage: item.bannerImage,
@@ -38,16 +37,31 @@ const CategoryList: React.FC<Props> = ({ category }) => {
     fetchItems()
   }, [category])
 
-  // Generate slug from title
-  const generateSlug = (id: string) =>
-    id.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '')
+  /**
+   * ✅ FIX: Updated signature to accept optional string (id?: string)
+   * This matches the prop type expected by BeachSlider.
+   */
+  const generateSlug = (id?: string): string => {
+    if (!id) return 'details'; // Fallback if id is missing
+    return id
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[^\w-]+/g, '')
+  }
 
   return (
     <>
       {items.length > 0 ? (
-        <BeachSlider beaches={items} category={category} generateSlug={generateSlug} />
+        <BeachSlider 
+          beaches={items} 
+          category={category} 
+          generateSlug={generateSlug} 
+        />
       ) : (
-        <p className="text-center py-10 text-gray-600">Loading {category}...</p>
+        <div className="text-center py-10">
+           {/* Consider adding a pulse loader here for better UX */}
+           <p className="text-gray-600 animate-pulse">Loading {category}...</p>
+        </div>
       )}
     </>
   )

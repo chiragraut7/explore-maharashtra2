@@ -4,6 +4,7 @@
   "subtitle": "The Twelfth and Final Jyotirlinga of Lord Shiva near Ellora Caves",
   "bannerImage": "/images/religious/grishneshwar/banner.jpg",
   "color": "#8B0000",
+  "coordinates": { "lat": 20.0247, "lng": 75.1692 },
   "overview": [
     "Grishneshwar Temple, located near Ellora in Aurangabad district, is the twelfth and last of the sacred Jyotirlingas dedicated to Lord Shiva. This temple holds immense spiritual importance and attracts devotees from all over India.",
     "The temple, built in the traditional South Indian architectural style, features intricate carvings and a majestic five-tiered shikhara. Its sanctum houses the self-manifested Shivalinga, believed to fulfill the wishes of devotees.",
@@ -109,7 +110,7 @@
       "title": "Daulatabad Fort",
       "description": "An impressive hilltop fort offering panoramic views of Aurangabad’s landscape.",
       "distance": "20 km",
-      "icon": "fas fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Historic Fort"
     }
   ],

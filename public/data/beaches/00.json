@@ -2,7 +2,7 @@
   "id": "00",
   "title": "Malvan Beach",
   "subtitle": "Adventure, coral reefs, and the historic Sindhudurg Fort",
-  "bannerImage": "/assets/images/beaches/00.jpg",
+  "bannerImage": "/assets/images/beaches/malvan.jpg",
   "insideBannerImage": "/assets/images/beaches/00/bannerimg.jpg",
   "color": "#1a2a3a",
   "overview": [
@@ -17,7 +17,7 @@
       "description": "Malvan is Maharashtra’s most famous diving destination, known for coral reefs and rich marine life."
     },
     {
-      "icon": "fas fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "title": "Sindhudurg Fort",
       "description": "An architectural marvel built by Chhatrapati Shivaji Maharaj on an island off the coast."
     },
@@ -27,7 +27,7 @@
       "description": "See colorful fish, corals, and sea plants during underwater exploration."
     },
     {
-      "icon": "fas fa-utensils", 
+      "icon": "fas fa-utensils",
       "title": "Malvani Cuisine",
       "description": "Taste delicious local seafood like bombil fry, prawns curry, and solkadhi."
     }
@@ -202,57 +202,17 @@
     {
       "src": "/assets/images/beaches/00/img1.jpg",
       "thumb": "/assets/images/beaches/00/img1.jpg",
-      "alt": ""
+      "alt": "Malvan Beach View"
     },
     {
       "src": "/assets/images/beaches/00/img2.jpg",
       "thumb": "/assets/images/beaches/00/img2.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/00/img3.jpg",
-      "thumb": "/assets/images/beaches/00/img3.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/00/img4.jpg",
-      "thumb": "/assets/images/beaches/00/img4.jpg",
-      "alt": ""
+      "alt": "Boats at Malvan"
     },
     {
       "src": "/assets/images/beaches/00/img5.jpg",
       "thumb": "/assets/images/beaches/00/img5.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/00/img6.jpg",
-      "thumb": "/assets/images/beaches/00/img6.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/00/img7.jpg",
-      "thumb": "/assets/images/beaches/00/img7.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/00/img8.jpg",
-      "thumb": "/assets/images/beaches/00/img8.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/00/img9.jpg",
-      "thumb": "/assets/images/beaches/00/img9.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/00/img10.jpg",
-      "thumb": "/assets/images/beaches/00/img10.jpg",
-      "alt": ""
-    },
-    {
-      "src": "/assets/images/beaches/00/img11.jpg",
-      "thumb": "/assets/images/beaches/00/img11.jpg",
-      "alt": ""
+      "alt": "Sindhudurg Fort"
     }
   ],
   "bookingTips": [
@@ -272,5 +232,9 @@
       "icon": "fas fa-camera",
       "description": "Carry waterproof gear for photography during beach and diving activities."
     }
-  ]
+  ],
+  "coordinates": {
+    "lat": 16.0617,
+    "lng": 73.4619
+  }
 }

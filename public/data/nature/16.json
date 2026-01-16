@@ -4,6 +4,7 @@
   "subtitle": "A Paradise for Birdwatchers near Mumbai",
   "bannerImage": "/images/nature/karnala/banner.jpg",
   "color": "#388E3C",
+  "coordinates": { "lat": 18.8878, "lng": 73.1167 },
   "overview": [
     "Located about 60 km from Mumbai, Karnala Bird Sanctuary is one of Maharashtra’s most accessible and loved nature reserves. It is a haven for birdwatchers, trekkers, and nature enthusiasts alike.",
     "Spread across 12 square kilometers, the sanctuary is home to over 200 species of resident and migratory birds, including the Malabar whistling thrush, golden oriole, and the rare Ashy minivet.",

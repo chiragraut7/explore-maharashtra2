@@ -72,7 +72,7 @@
       "title": "Kolaba Fort",
       "description": "Historic sea fort accessible during low tide from Alibaug Beach, known for Maratha architecture.",
       "distance": "9 km",
-      "icon": "fa-solid fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Historic Fort"
     },
     {
@@ -146,5 +146,9 @@
     { "icon": "fa-solid fa-house", "description": "Choose beachfront homestays or resorts for a better view and quick beach access." },
     { "icon": "fa-solid fa-umbrella-beach", "description": "Book water sports early, especially on weekends." },
     { "icon": "fa-solid fa-info-circle", "description": "Carry cash as smaller stalls and rides often do not accept digital payments." }
-  ]
+  ],
+  "coordinates": {
+    "lat": 18.6019,
+    "lng": 72.8986
+  }
 }

@@ -4,6 +4,7 @@
   "subtitle": "Maharashtra’s Majestic Cascading Wonder",
   "bannerImage": "/assets/images/nature/thoseghar-waterfall.jpg",
   "color": "#1e88e5",
+  "coordinates": { "lat": 17.5997, "lng": 73.8539 },
   "overview": [
     "Thoseghar Waterfall, located near Satara, is one of the highest and most beautiful waterfalls in Maharashtra. Surrounded by lush green forests and deep valleys, it offers a breathtaking view during the monsoon season when water gushes down from over 500 meters in multiple cascades.",
     "The serene surroundings, chirping birds, and cool breeze make Thoseghar an ideal getaway for nature lovers and photographers seeking peace and scenic beauty."
@@ -116,7 +117,7 @@
       "title": "Ajinkyatara Fort",
       "description": "A fort with panoramic views of Satara city and surrounding mountains.",
       "distance": "22 km from Thoseghar",
-      "icon": "fas fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Scenic Fort"
     }
   ],

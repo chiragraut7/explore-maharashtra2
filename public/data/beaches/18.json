@@ -5,6 +5,10 @@
   "bannerImage": "/assets/images/beaches/aare-ware-banner.jpg",
   "insideBannerImage": "/assets/images/beaches/17/bannerImg.jpg",
   "color": "#0D9488",
+  "coordinates": {
+    "lat": 17.0765,
+    "lng": 73.2842
+  },
   "overview": [
     "Aare Ware are twin beaches located about 15 km from Ratnagiri town, forming a breathtaking coastal stretch along the Konkan coast. These beaches are known for their untouched natural beauty, soft golden sands, and crystal-clear waters that remain relatively unexplored by tourists.",
     "The scenic Aare Ware road connecting these beaches is one of the most picturesque routes in Maharashtra, offering stunning views of the Arabian Sea from the cliffs. It’s an ideal getaway for solitude seekers, photographers, and road trip enthusiasts."
@@ -109,7 +113,7 @@
       "title": "Jaigad Fort",
       "description": "A historical sea fort offering magnificent views of the Arabian Sea and Jaigad Creek.",
       "distance": "12 km",
-      "icon": "fa-solid fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Historic Attraction"
     }
   ],

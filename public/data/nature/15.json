@@ -4,6 +4,7 @@
   "subtitle": "A Tranquil Haven of Wildlife and Nature in the Sahyadris",
   "bannerImage": "/images/nature/chandoli/banner.jpg",
   "color": "#2e7d32",
+  "coordinates": { "lat": 17.1558, "lng": 73.8569 },
   "overview": [
     "Chandoli National Park, located in the Sahyadri range of Maharashtra, is a lush green sanctuary known for its rich biodiversity, dense forests, and scenic landscapes. Spread across Sangli, Satara, Kolhapur, and Ratnagiri districts, it is part of the Sahyadri Tiger Reserve and offers a serene natural retreat for wildlife enthusiasts.",
     "The park features grasslands, plateaus, rivers, and evergreen forests that support a wide variety of flora and fauna, including tigers, leopards, deer, and numerous bird species."
@@ -108,7 +109,7 @@
       "title": "Prachitgad Fort",
       "description": "An ancient fort within the park that offers panoramic views of the Western Ghats.",
       "distance": "Inside the park",
-      "icon": "fas fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Historical significance and scenic views"
     },
     {

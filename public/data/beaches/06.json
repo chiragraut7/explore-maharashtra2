@@ -24,74 +24,50 @@
   ],
   "geography": {
     "image": "/assets/images/beaches/06/info3.jpg",
-    "intro": "Arnala Beach lies around 8 km from Virar in Palghar district, forming part of the northernmost stretch of the Konkan coastline. It’s known for its gentle sea gradient and soft sandy shore.",
+    "intro": "Arnala Beach lies around 8 km from Virar and is part of the Vasai-Virar coastal belt in Palghar district.",
     "details": [
-      { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Virar, Palghar District, Maharashtra" },
+      { "icon": "fa-solid fa-location-dot", "label": "Location", "value": "Palghar District, Maharashtra" },
       { "icon": "fa-solid fa-water", "label": "Coastline", "value": "Arabian Sea" },
-      { "icon": "fa-solid fa-ruler", "label": "Length", "value": "Approximately 2 km" },
-      { "icon": "fa-solid fa-mountain", "label": "Elevation", "value": "Sea level" },
-      { "icon": "fa-solid fa-tree", "label": "Landscape", "value": "Flat sandy beach lined with palms" }
+      { "icon": "fa-solid fa-tree", "label": "Surroundings", "value": "Coconut plantations and coastal villages" }
     ],
     "climate": {
-      "description": "Arnala enjoys a tropical coastal climate with warm summers, moderate winters, and heavy monsoons.",
+      "description": "The beach enjoys a humid tropical climate, with heavy rains during the monsoon and pleasant evenings during winter.",
       "seasons": [
-        { "icon": "fa-solid fa-sun", "text": "Best visited between November and February" },
-        { "icon": "fa-solid fa-cloud-showers-heavy", "text": "Avoid during monsoon (June–September) due to high tides" }
+        { "icon": "fa-solid fa-sun", "text": "Best Season: October to March" },
+        { "icon": "fa-solid fa-cloud-rain", "text": "Monsoon: June to September" }
       ]
     },
-    "conclusion": "Arnala Beach remains a popular local escape for Mumbai residents, offering both cultural vibrance and natural calm."
+    "conclusion": "Its proximity to the railway line and peaceful shoreline makes it a top choice for day-trippers from Mumbai."
   },
   "activities": [
     {
-      "icon": "fa-solid fa-umbrella-beach",
-      "title": "Beach Walks & Picnics",
-      "description": "Enjoy scenic walks, family outings, and beach games on the wide sandy shore.",
-      "info": ["Best during mornings and sunsets", "Local stalls offer snacks and beverages"]
-    },
-    {
       "icon": "fa-solid fa-ship",
-      "title": "Boat Ride to Arnala Fort",
-      "description": "Take a short boat trip to explore Arnala Fort, surrounded by sea walls and scenic views.",
-      "info": ["Boats available near fishing jetty", "Visit early morning for calm waters"]
+      "title": "Arnala Fort Visit",
+      "description": "Take a short boat ride from the shore to explore the historic Arnala Fort.",
+      "info": ["Boat services run based on tides", "Explore the old watchtowers and water tanks"]
     },
     {
-      "icon": "fa-solid fa-fish",
-      "title": "Fishing Village Experience",
-      "description": "Witness daily life of local fishermen and traditional fish markets near the shore.",
-      "info": ["Ideal for photography enthusiasts", "Respect local customs and privacy"]
+      "icon": "fa-solid fa-horse",
+      "title": "Beach Rides",
+      "description": "Enjoy traditional horse and camel rides along the sandy stretches of the beach.",
+      "info": ["Popular during weekends", "Managed by local operators"]
     }
   ],
   "attractions": [
     {
-      "image": "/assets/images/beaches/06/img1.jpg",
+      "image": "/assets/images/beaches/06/img3.jpg",
       "title": "Arnala Fort",
-      "description": "A 16th-century fort built by the Portuguese, accessible by a 10-minute boat ride from the beach.",
-      "distance": "1 km offshore",
-      "icon": "fa-solid fa-landmark",
-      "value": "Historic site"
-    },
-    {
-      "image": "/assets/images/beaches/06/img2.jpg",
-      "title": "Virar & Rajodi Beaches",
-      "description": "Nearby beaches offering water sports and quieter settings.",
-      "distance": "5–7 km",
-      "icon": "fa-solid fa-umbrella-beach",
-      "value": "Nearby Beaches"
+      "description": "An island fort featuring strong bastions and a history involving Portuguese and Maratha forces.",
+      "distance": "1 km (by boat)",
+      "icon": "fas fa-chess-rook",
+      "value": "Island Fort"
     }
   ],
   "marineLife": {
-    "intro": "Arnala’s coastal waters are home to small marine species and fishing zones used by local communities.",
+    "intro": "The waters around Arnala are rich in local fish species and support a thriving traditional fishing community.",
     "items": [
-      {
-        "icon": "fa-solid fa-fish",
-        "title": "Local Fish Varieties",
-        "description": "Commonly caught species include pomfret, mackerel, and surmai."
-      },
-      {
-        "icon": "fa-solid fa-water",
-        "title": "Tidal Life",
-        "description": "Shellfish, crabs, and small mollusks can often be spotted near the rocks."
-      }
+      { "icon": "fa-solid fa-fish", "title": "Local Catch", "description": "Common sightings of Pomfret, Bombay Duck, and Mackerel at the local landing sites." },
+      { "icon": "fa-solid fa-water", "title": "Tidal Life", "description": "Shellfish, crabs, and small mollusks can often be spotted near the rocks." }
     ],
     "conclusion": [
       "Fishing remains an integral part of local livelihood.",
@@ -121,8 +97,10 @@
     { "src": "/assets/images/beaches/06/img3.jpg", "thumb": "/assets/images/beaches/06/img3.jpg", "alt": "Arnala Fort boat ride" }
   ],
   "bookingTips": [
-    { "icon": "fa-solid fa-hotel", "description": "Budget resorts and homestays are available near the beach." },
-    { "icon": "fa-solid fa-utensils", "description": "Try local seafood at beachside stalls and eateries." },
-    { "icon": "fa-solid fa-info-circle", "description": "Visit early morning or late evening to avoid heat and crowds." }
-  ]
+    { "icon": "fa-solid fa-hotel", "description": "Resorts are available for day-use and overnight stays; book in advance for weekends." }
+  ],
+  "coordinates": {
+    "lat": 19.4528,
+    "lng": 72.7389
+  }
 }

@@ -5,9 +5,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
 import Image from "next/image";
-import { useLanguage } from "./components/context/LanguageContext";
+import { motion } from "framer-motion";
 
-// Import category sliders (assume paths exist)
+// Context & Components
+import { useLanguage } from "./components/context/LanguageContext";
 import BeachList from "./components/beaches/BeachList";
 import HillList from "./components/HillList";
 import FortList from "./components/FortList";
@@ -15,103 +16,100 @@ import NatureList from "./components/NatureList";
 import ReligiousList from "./components/ReligiousList";
 import CulturalList from "./components/CulturalList";
 import Translator from "./components/commonComponents/Translator";
-
 import MaharashtraChat from "./components/MaharashtraChat";
+import InteractiveMap from "./components/InteractiveMap";
 
+// Custom Hooks
 import useFastParallax from "@/hooks/useFastParallax";
 
 export default function Home() {
   const { language } = useLanguage();
 
-  // AOS init
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1000, once: true });
   }, []);
 
-  // Enable parallax & reveal for .scrollsmooth elements
+  // Parallax hook for smooth editorial movement
   useFastParallax({ multiplier: 1.6, disableBelow: 768 });
 
-  // IntersectionObserver for .section-title reveal (keeps your original behavior)
-  useEffect(() => {
-    const titles = Array.from(document.querySelectorAll<HTMLElement>(".section-title"));
-    if (!titles.length) return;
-    const io = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          const el = entry.target as HTMLElement;
-          if (entry.isIntersecting) {
-            el.classList.add("reveal");
-            obs.unobserve(el);
-          }
-        });
-      },
-      { threshold: 0.28 }
-    );
-
-    titles.forEach((t) => io.observe(t));
-    return () => io.disconnect();
-  }, []);
-
   const sections = [
-    { id: "beaches", title: "Beaches", image: "/assets/images/home_iocn/beach-umbrella.svg", link: "/beaches" },
-    { id: "hill-stations", title: "Hill Stations", image: "/assets/images/home_iocn/hills.svg", link: "/hills" },
-    { id: "forts", title: "Forts", image: "/assets/images/home_iocn/castle-3.svg", link: "/forts" },
-    { id: "wildlife", title: "Wildlife & Nature", image: "/assets/images/home_iocn/tree.svg", link: "/nature" },
-    { id: "religious", title: "Religious Places", image: "/assets/images/home_iocn/temple.svg", link: "/religious" },
-    { id: "culture", title: "Cultural & Unique", image: "/assets/images/home_iocn/castle.svg", link: "/culture" },
+    { id: "beaches", title: "Beaches", image: "/assets/images/home_iocn/beach-umbrella.svg", link: "/beaches", color: "#e6f7ff" },
+    { id: "hill-stations", title: "Hill Stations", image: "/assets/images/home_iocn/hills.svg", link: "/hills", color: "#f6ffed" },
+    { id: "forts", title: "Forts", image: "/assets/images/home_iocn/castle-3.svg", link: "/forts", color: "#fff7e6" },
+    { id: "wildlife", title: "Wildlife & Nature", image: "/assets/images/home_iocn/tree.svg", link: "/nature", color: "#f9f0ff" },
+    { id: "religious", title: "Religious Places", image: "/assets/images/home_iocn/temple.svg", link: "/religious", color: "#fff1f0" },
+    { id: "culture", title: "Cultural & Unique", image: "/assets/images/home_iocn/castle.svg", link: "/culture", color: "#fcffe6" },
   ];
 
   return (
-    <>
-      {/* Top Banner */}
-      <header className="shadow-sm">
-        <div className="banner">
-          <div className="text-center py-5">
-            <h1 className="display-4 text-white fw-bold">
-              <Translator text="Explore Maharashtra" targetLang={language} />
-            </h1>
-            <p className="lead text-white">
-              <Translator text="Discover Beaches, Forts, Nature, and Culture of Maharashtra" targetLang={language} />
-            </p>
+    <main className="bg-light-soft">
+      {/* 🎭 LUXURY HERO SECTION */}
+      <header className="hero-editorial">
+        {/* Left Side: Visual Storyteller */}
+        <div className="hero-visual-pane">
+          <div className="hero-bg-zoom">
+            <Image 
+              src="/assets/images/hero-maharashtra.png" 
+              alt="Maharashtra Landscape" 
+              fill 
+              priority 
+              className="object-cover"
+            />
+            <div className="hero-vignette"></div>
           </div>
         </div>
+
+        {/* Right Side: Content & Action */}
+        <div className="hero-content-pane">
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="content-wrapper"
+          >
+            <div className="editorial-badge">
+              <span className="dot"></span>
+              <Translator text="The Great State" targetLang={language} />
+            </div>
+            
+            <h1 className="display-1 fw-black text-white mb-4">
+              Explore <br /> 
+              <span className="text-outline">Maharashtra</span>
+            </h1>
+
+            <p className="description-text">
+              <Translator text="Uncover history, nature, and spirit across India's most diverse landscape. From the Sahyadri peaks to the Konkan shores." targetLang={language} />
+            </p>
+
+            <div className="action-area mt-5">
+              <a href="#overview" className="btn-luxury">
+                <span className="btn-text"><Translator text="Start Your Journey" targetLang={language} /></span>
+                <span className="btn-arrow">→</span>
+              </a>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Bottom Floating Stats (Optional Attractive Detail) */}
+        <div className="hero-floating-footer d-none d-md-flex">
+          <div className="stat-item"><strong>720km</strong> Coastline</div>
+          <div className="stat-item"><strong>350+</strong> Forts</div>
+          <div className="stat-item"><strong>UNESCO</strong> Heritage Sites</div>
+        </div>
       </header>
-
-      {/* Overview */}
-      <section className="container text-center py-5 home" id="overview">
-        <h2 className="section-title mt-2">
-          <Translator text="Overview" targetLang={language} />
-        </h2>
-        <p>
-          <Translator
-            text="Explore Maharashtra is your trusted travel companion, dedicated to showcasing the rich cultural heritage, natural beauty, and historic wonders of Maharashtra."
-            targetLang={language}
-          />
-        </p>
-        <p>
-          <Translator
-            text="Whether you're a weekend explorer, a history buff, or a nature lover, our platform offers in-depth insights, travel guides, and local tips to make your journey unforgettable."
-            targetLang={language}
-          />
-        </p>
-        <Link href="/about" className="btn btn-outline-dark mt-2 w-auto">
-          <Translator text="Read More" targetLang={language} />
-        </Link>
-      </section>
-
-      {/* Section Cards */}
-      <section className="container homeLinks py-5">
-        <div className="row g-4">
-          {sections.map((section) => (
-            <div className="col" id={section.id} key={section.id}>
-              <Link href={section.link}>
-                <div className="card text-center shadow-sm hover:shadow-lg transition-all duration-300">
-                  <div className="card-body p-4">
-                    <Image src={section.image} alt={section.title} width={100} height={100} className="m-auto" />
-                    <h3 className="card-title mt-3">
-                      <Translator text={section.title} targetLang={language} />
-                    </h3>
+      {/* 🧩 BENTO CATEGORY GRID */}
+      <section className="container py-5">
+        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
+          {sections.map((section, idx) => (
+            <div key={section.id} data-aos="fade-up" data-aos-delay={idx * 100}>
+              <Link href={section.link} className="text-decoration-none">
+                <div className="magazine-card" style={{ backgroundColor: section.color }}>
+                  <div className="magazine-icon-box">
+                    <Image src={section.image} alt={section.title} width={60} height={60} />
                   </div>
+                  <h3 className="magazine-card-title">
+                    <Translator text={section.title} targetLang={language} />
+                  </h3>
                 </div>
               </Link>
             </div>
@@ -119,32 +117,269 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Beaches (moved completely into BeachList) */}
-      <BeachList />
-      {/* Hill stations */}
-      <HillList />
-      {/* Forts */}
-      <FortList />
+      {/* 🗺️ GEOGRAPHICAL INTERACTIVE MAP */}
+      <div id="map-explorer" data-aos="fade-up">
+        <InteractiveMap />
+      </div>
 
-      {/* Wildlife */}
-      <NatureList />
 
-      {/* Religious */}
-      <ReligiousList />
+      {/* 🏔️ CONTENT LISTINGS (Horizontal Sliders) */}
+      <div className="content-staggered">
+        <div className="slider-item"><BeachList /></div>
+        <div className="slider-item"><HillList /></div>
+        <div className="slider-item"><FortList /></div>
+        <div className="slider-item"><NatureList /></div>
+        <div className="slider-item"><ReligiousList /></div>
+        <div className="slider-item"><CulturalList /></div>
+      </div>
 
-      {/* Cultural */}
-      <CulturalList />
 
-      <MaharashtraChat />
+      {/* <MaharashtraChat /> */}
 
-      {/* small responsive tweaks scoped */}
       <style jsx>{`
-        .parallax-wrapper { height: 56vh; }
-        @media (max-width: 768px) {
-          .parallax-wrapper { height: 40vh; }
-          .parallax-content h1 { font-size: 26px !important; }
+        .bg-light-soft { background: #fff; }
+        
+        /* Hero Styling */
+        .hero-container {
+          position: relative;
+          height: 95vh;
+          overflow: hidden;
+          background: #111;
         }
+        .hero-bg-zoom {
+          position: absolute;
+          inset: 0;
+          animation: slowZoom 30s infinite alternate linear;
+        }
+        .hero-img-dim { filter: brightness(0.6) contrast(1.1); }
+        @keyframes slowZoom {
+          from { transform: scale(1); }
+          to { transform: scale(1.18); }
+        }
+        .hero-glass-card {
+          background: rgba(0, 0, 0, 0.25);
+          backdrop-filter: blur(15px);
+          -webkit-backdrop-filter: blur(15px);
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          border-radius: 3.5rem;
+          max-width: 850px;
+          z-index: 10;
+        }
+        .hero-title-editorial {
+          font-size: clamp(3.2rem, 8vw, 6.5rem);
+          line-height: 0.9;
+          letter-spacing: -2px;
+        }
+        .text-accent { color: #00aaff; font-style: italic; }
+
+        /* Typography & Overlays */
+        .section-title-editorial {
+          font-size: clamp(2.5rem, 5vw, 3.8rem);
+          font-weight: 800;
+          color: #1a1a1a;
+          letter-spacing: -1.5px;
+        }
+        .body-text-editorial {
+          font-size: 1.35rem;
+          color: #555;
+          line-height: 1.8;
+          font-weight: 300;
+        }
+
+        /* Bento Grid Glass Hover Effects */
+        .magazine-card {
+          position: relative;
+          padding: 1.5rem 0.5rem;
+          border-radius: 1rem;
+          text-align: center;
+          transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+          height: 100%;
+          border: 1px solid rgba(0,0,0,0.03);
+          overflow: hidden;
+          z-index: 1;
+        }
+        .magazine-card::before {
+          content: "";
+          position: absolute;
+          top: 0; left: 0; right: 0; bottom: 0;
+          background: linear-gradient(135deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 60%);
+          opacity: 0;
+          transition: opacity 0.5s ease;
+          z-index: -1;
+        }
+        .magazine-card:hover {
+          transform: translateY(-15px) scale(1.02);
+          box-shadow: 0 35px 70px rgba(0,0,0,0.08), inset 0 0 0 2px rgba(255,255,255,0.6);
+        }
+        .magazine-card:hover::before { opacity: 1; }
+        .magazine-icon-box {
+              background: transparent;
+    border-radius: 0.1rem;
+    margin: 0 auto 1rem;
+    padding: 0;
+    transition: all .5s cubic-bezier(.175, .885, .32, 1.275);
+    display: inline-block;
+    box-shadow: unset;
+        }
+        .magazine-card:hover .magazine-icon-box {
+          transform: scale(1.18) rotate(-10deg);
+        }
+
+        /* UI Buttons */
+        .btn-magazine {
+          background: #fff;
+          color: #111;
+          padding: 1.3rem 3.5rem;
+          border-radius: 100px;
+          text-decoration: none;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          transition: all 0.4s ease;
+        }
+        .btn-magazine:hover { 
+          background: #00aaff; 
+          color: #fff; 
+          transform: translateY(-5px);
+          box-shadow: 0 20px 40px rgba(0, 170, 255, 0.3);
+        }
+        .btn-outline-editorial {
+            border: 2px solid #1a1a1a;
+            padding: 1.1rem 2.8rem;
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 800;
+            border-radius: 14px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .btn-outline-editorial:hover { background: #1a1a1a; color: #fff; }
+
+        .py-6 { padding: 10rem 0; }
+        .slider-item { padding: 0; }
+
+        @media (max-width: 768px) {
+          .hero-container { height: 85vh; }
+          .py-6 { padding: 5rem 0; }
+          .magazine-card { padding: 2.5rem 1rem; }
+        }
+          .hero-editorial {
+          position: relative;
+          height: 100vh;
+          display: flex;
+          background: #0a0a0a;
+          overflow: hidden;
+        }
+
+        /* Split Screen Logic */
+        .hero-visual-pane {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          z-index: 1;
+        }
+
+        .hero-vignette {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%);
+          z-index: 2;
+        }
+
+        .hero-content-pane {
+          position: relative;
+          z-index: 3;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 10%;
+        }
+
+        .content-wrapper {
+          max-width: 800px;
+          text-align: center;
+        }
+
+        /* Typography */
+        .fw-black { font-weight: 900; letter-spacing: -2px; }
+        .text-outline {
+          color: transparent;
+          -webkit-text-stroke: 1px rgba(255,255,255,0.8);
+          font-style: italic;
+        }
+
+        .editorial-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(10px);
+          padding: 8px 20px;
+          border-radius: 100px;
+          color: #00aaff;
+          font-weight: 700;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          font-size: 0.75rem;
+          margin-bottom: 2rem;
+        }
+
+        .description-text {
+          font-size: 1.25rem;
+          color: rgba(255,255,255,0.7);
+          font-weight: 300;
+          line-height: 1.6;
+        }
+
+        /* Luxury Button */
+        .btn-luxury {
+          display: inline-flex;
+          align-items: center;
+          gap: 20px;
+          background: #fff;
+          color: #000;
+          padding: 18px 40px;
+          border-radius: 100px;
+          text-decoration: none;
+          font-weight: 800;
+          transition: 0.4s;
+        }
+
+        .btn-luxury:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 20px 40px rgba(0, 170, 255, 0.3);
+          background: #00aaff;
+          color: white;
+        }
+
+        .hero-floating-footer {
+          position: absolute;
+          bottom: 40px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 4;
+          display: flex;
+          gap: 40px;
+          color: white;
+          background: rgba(0,0,0,0.4);
+          backdrop-filter: blur(10px);
+          padding: 15px 40px;
+          border-radius: 100px;
+          border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .stat-item strong { color: #00aaff; margin-right: 5px; }
+
+        @media (max-width: 768px) {
+          .display-1 { font-size: 3.5rem; }
+          .hero-floating-footer { display: none; }
+        }
+          .magazine-card-title{
+          font-size:1rem;
+          color: var(--primary-color);
+          }
       `}</style>
-    </>
+    </main>
   );
 }

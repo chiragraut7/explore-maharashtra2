@@ -5,6 +5,7 @@
   "bannerImage": "/assets/images/hills/03.jpg",
   "insideBannerImage": "/assets/images/hills/03/bannerimg.jpg",
   "color": "#2e7d32",
+  "coordinates": {"lat": 18.7481, "lng": 73.4072},
   "overview": [
     "Lonavala, located between Mumbai and Pune, is one of Maharashtra’s most visited hill stations. Known for its lush green valleys, stunning waterfalls, ancient caves, and pleasant climate, it is rightly called the 'Jewel of the Sahyadris.'",
     "Perched at an altitude of 624 meters, Lonavala transforms into a paradise during the monsoon when mist covers the hills, and streams gush through the dense forests."
@@ -86,7 +87,7 @@
       "title": "Lohagad Fort",
       "description": "A historic fort that offers a panoramic view of the Pawna Dam and lush valleys.",
       "distance": "11 km from Lonavala",
-      "icon": "fa-solid fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Trekking spot"
     },
     {

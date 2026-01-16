@@ -4,6 +4,7 @@
   "subtitle": "Birthplace of Chhatrapati Shivaji Maharaj – Symbol of Maratha Pride",
   "bannerImage": "/images/forts/shivneri/shivneri-banner.jpg",
   "color": "#4b3621",
+  "coordinates": { "lat": 19.1983, "lng": 73.8617 },
   "overview": [
     "Shivneri Fort, located near Junnar in Pune district, holds immense historical importance as the birthplace of Chhatrapati Shivaji Maharaj in 1630. It stands as a symbol of Maratha pride, courage, and the beginnings of the Swarajya movement.",
     "The fort, known for its strong defensive architecture and spiritual significance, features several ancient structures, water reservoirs, and scenic views of the surrounding Sahyadri ranges."
@@ -15,7 +16,7 @@
       "description": "A historic monument marking the birthplace of the founder of the Maratha Empire, Chhatrapati Shivaji Maharaj."
     },
     {
-      "icon": "fa-solid fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "title": "Ancient Fort Architecture",
       "description": "Famous for its strong walls, seven gates, and rock-cut water tanks, representing classic Maratha military design."
     }

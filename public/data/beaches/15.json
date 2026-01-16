@@ -5,6 +5,10 @@
   "bannerImage": "/assets/images/beaches/guhagar-banner.jpg",
   "insideBannerImage": "/assets/images/beaches/15/bannerImg.jpg",
   "color": "#0284C7",
+  "coordinates": {
+    "lat": 17.4812,
+    "lng": 73.1895
+  },
   "overview": [
     "Guhagar Beach, located in the Ratnagiri district of Maharashtra, is one of the cleanest and most serene beaches along the Konkan coast. The beach stretches for about 6 km, covered in soft white sand and lined with suru trees, creating a peaceful and scenic atmosphere.",
     "Known for its calm waters, coconut groves, and cultural charm, Guhagar also hosts the famous Vyadeshwar Temple dedicated to Lord Shiva. The town offers a perfect blend of spirituality and seaside beauty, making it a great escape for families and solitude seekers."

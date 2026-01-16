@@ -4,6 +4,7 @@
   "subtitle": "The Cave Temple Where Goddess Parvati Worshipped Lord Ganesha",
   "bannerImage": "/images/religious/lenyadri/banner.jpg",
   "color": "#d97706",
+  "coordinates": { "lat": 19.2417, "lng": 73.8875 },
   "overview": [
     "The Girijatmaj Temple at Lenyadri, near Junnar in Pune district, is one of the eight revered Ashtavinayak Temples of Maharashtra. This temple holds a unique place as it is carved into a mountain cave complex and symbolizes divine motherhood.",
     "According to legend, Goddess Parvati performed penance here and was blessed with Lord Ganesha as her son—hence the name ‘Girijatmaj’, meaning ‘Son of the Mountain Goddess’.",
@@ -110,7 +111,7 @@
       "title": "Shivneri Fort",
       "description": "Birthplace of Chhatrapati Shivaji Maharaj, located just 7 km from Lenyadri.",
       "distance": "7 km",
-      "icon": "fa-solid fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Historical Site"
     },
     {

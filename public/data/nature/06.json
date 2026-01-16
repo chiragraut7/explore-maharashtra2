@@ -4,6 +4,7 @@
   "subtitle": "A Scenic Hill Retreat and Wildlife Haven in the Satpura Ranges",
   "bannerImage": "/images/nature/chikhaldara/banner.jpg",
   "color": "#2e7d32",
+  "coordinates": { "lat": 21.2100, "lng": 77.7200 },
   "overview": [
     "Chikhaldara, located in the Amravati district, is the only hill station in the Vidarbha region of Maharashtra. Nestled at an altitude of about 1118 meters, it offers a rare combination of lush forests, wildlife, waterfalls, and panoramic viewpoints.",
     "The Chikhaldara Wildlife Sanctuary, part of the Melghat Tiger Reserve, is home to tigers, leopards, sloth bears, and a rich variety of flora and fauna.",
@@ -101,7 +102,7 @@
       "title": "Gavilgad Fort",
       "description": "An ancient hill fort offering panoramic views of the surrounding forest and valleys.",
       "distance": "3 km from Chikhaldara town",
-      "icon": "fa-solid fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Historic fort and scenic viewpoint"
     },
     {

@@ -5,6 +5,7 @@
   "bannerImage": "/assets/images/hills/10.jpg",
   "insideBannerImage": "/assets/images/hills/10/bannerimg.jpg",
   "color": "#0c3b2e",
+  "coordinates": {"lat": 15.9625, "lng": 73.9978},
   "overview": [
     "Amboli, known as the ‘Queen of the Sahyadri Hills’, is a picturesque hill station located in the Sindhudurg district of Maharashtra.",
     "It is the last hill station before the coastal plains of Goa begin and lies at an altitude of about 690 meters above sea level.",

@@ -5,6 +5,7 @@
   "bannerImage": "/assets/images/hills/01.jpg",
   "insideBannerImage": "/assets/images/hills/01/bannerimg.jpg",
   "color": "#3b7d5c",
+  "coordinates": { "lat": 17.9308, "lng": 73.6477 },
   "overview": [
     "Mahabaleshwar, nestled in the Satara district, is the most popular hill station in Maharashtra. Located at an altitude of 1,353 meters, it offers a refreshing escape with its lush greenery, valleys, and misty landscapes.",
     "This charming town served as the summer capital during British rule and still carries traces of colonial architecture and old-world charm.",

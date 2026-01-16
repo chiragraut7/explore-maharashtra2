@@ -4,6 +4,7 @@
   "subtitle": "A Scenic Trek Amidst the Sahyadri Mountains",
   "bannerImage": "/images/nature/rajmachi/banner.jpg",
   "color": "#2e7d32",
+  "coordinates": { "lat": 18.8286, "lng": 73.3953 },
   "overview": [
     "Rajmachi Fort, located near Lonavala in the Sahyadri mountain range, is one of Maharashtra’s most beloved trekking and nature destinations. Surrounded by dense forests, waterfalls, and misty hills, it offers breathtaking views and a rich historical legacy.",
     "The region consists of two fortified peaks — Shrivardhan and Manaranjan — along with a small scenic village that attracts trekkers, campers, and nature photographers throughout the year."
@@ -108,7 +109,7 @@
       "title": "Manaranjan Fort",
       "description": "The second fortified peak with ancient walls and bastions overlooking deep gorges.",
       "distance": "Within the fort complex",
-      "icon": "fas fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Less crowded and perfect for solitude seekers."
     },
     {

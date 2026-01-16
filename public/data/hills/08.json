@@ -5,6 +5,7 @@
   "bannerImage": "/assets/images/hills/08.jpg",
   "insideBannerImage": "/assets/images/hills/08/bannerimg.jpg",
   "color": "#3c8b57",
+  "coordinates": {"lat": 20.0910, "lng": 75.1810},
   "overview": [
     "Mhaismal is a serene and lesser-known hill station located near Aurangabad in Maharashtra. It sits gracefully in the Sahyadri ranges, offering sweeping views of lush greenery, valleys, and nearby historical marvels.",
     "Situated at an altitude of about 1067 meters, Mhaismal becomes particularly charming during the monsoon when the entire region turns green and mist-covered.",
@@ -110,7 +111,7 @@
       "title": "Daulatabad Fort",
       "description": "Historic fort with magnificent architecture and panoramic views of the plains.",
       "distance": "25 km from Mhaismal",
-      "icon": "fa-solid fa-fort-awesome",
+      "icon": "fas fa-chess-rook",
       "value": "Perfect for history lovers and trekkers"
     }
   ],
