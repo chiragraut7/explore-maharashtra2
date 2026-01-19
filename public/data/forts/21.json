@@ -2,7 +2,8 @@
   "id": "21",
   "title": "Ajinkyatara Fort",
   "subtitle": "The Sentinel Fort Overlooking Satara City",
-  "bannerImage": "/images/forts/ajinkyatara-fort/ajinkyatara-banner.jpg",
+  "bannerImage": "/assets/images/forts/21.jpg",
+  "insideBannerImage": "/assets/images/forts/21/bannerimg.jpg",
   "color": "#b87333",
   "coordinates": { "lat": 17.6714, "lng": 73.9939 },
   "overview": [

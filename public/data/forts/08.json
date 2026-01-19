@@ -2,7 +2,8 @@
   "id": "08",
   "title": "Lohagad Fort",
   "subtitle": "The Iron Fort of Maharashtra",
-  "bannerImage": "/images/forts/lohagad/lohagad-banner.jpg",
+  "bannerImage": "/assets/images/forts/08.jpg",
+  "insideBannerImage": "/assets/images/forts/08/bannerimg.jpg",
   "color": "#5a3e1b",
   "coordinates": { "lat": 18.7056, "lng": 73.4833 },
   "overview": [

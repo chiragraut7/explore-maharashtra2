@@ -2,7 +2,8 @@
   "id": "22",
   "title": "Randha Falls",
   "subtitle": "Majestic Waterfall on the Pravara River near Bhandardara",
-  "bannerImage": "/images/nature/randha/banner.jpg",
+  "bannerImage": "/assets/images/nature/22.jpg",
+  "insideBannerImage": "/assets/images/nature/22/bannerimg.jpg",
   "color": "#00796b",
   "coordinates": { "lat": 19.5478, "lng": 73.7444 },
   "overview": [

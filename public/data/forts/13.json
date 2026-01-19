@@ -2,7 +2,8 @@
   "id": "13",
   "title": "Korigad Fort",
   "subtitle": "Scenic Hill Fort Overlooking Aamby Valley near Lonavala",
-  "bannerImage": "/images/forts/korigad/korigad-banner.jpg",
+  "bannerImage": "/assets/images/forts/13.jpg",
+  "insideBannerImage": "/assets/images/forts/13/bannerimg.jpg",
   "color": "#6b21a8",
   "coordinates": { "lat": 18.6186, "lng": 73.3853 },
   "overview": [

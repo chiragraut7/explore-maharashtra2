@@ -2,7 +2,8 @@
   "id": "02",
   "title": "Bhandardara",
   "subtitle": "A Serene Hill Station by the Pravara River",
-  "bannerImage": "/images/nature/bhandardara/banner.jpg",
+  "bannerImage": "/assets/images/nature/02.png",
+  "insideBannerImage": "/assets/images/nature/02/bannerimg.jpg",
   "color": "#4a90e2",
   "coordinates": { "lat": 19.5447, "lng": 73.7706 },
   "overview": [

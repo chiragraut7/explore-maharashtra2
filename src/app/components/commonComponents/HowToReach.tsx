@@ -23,7 +23,7 @@ interface HowToReachProps {
 const HowToReach: React.FC<HowToReachProps> = ({ 
   transport = [], 
   color = "#00aaff",
-  mainImage = "/assets/images/map-placeholder.jpg" 
+  mainImage = "/assets/images/map-placeholder.png" 
 }) => {
   const { language } = useLanguage();
 
@@ -103,7 +103,7 @@ const HowToReach: React.FC<HowToReachProps> = ({
             ))}
             
             {/* Helpful Note Footer */}
-            <div className="mt-2 p-3 rounded-3 bg-light border-start border-4" style={{ borderColor: color }}>
+            <div className="mt-2 p-3 rounded-3 bg-light border-2" style={{ borderColor: color }}>
               <p className="small mb-0 text-muted italic">
                 <i className="fas fa-info-circle me-1" style={{ color }}></i>
                 <Translator 

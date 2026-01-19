@@ -2,7 +2,8 @@
   "id": "11",
   "title": "Rajmachi Fort & Nature Trail",
   "subtitle": "A Scenic Trek Amidst the Sahyadri Mountains",
-  "bannerImage": "/images/nature/rajmachi/banner.jpg",
+  "bannerImage": "/assets/images/nature/11.jpg",
+  "insideBannerImage": "/assets/images/nature/11/bannerimg.jpg",
   "color": "#2e7d32",
   "coordinates": { "lat": 18.8286, "lng": 73.3953 },
   "overview": [

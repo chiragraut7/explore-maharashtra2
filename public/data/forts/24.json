@@ -2,7 +2,8 @@
   "id": "24",
   "title": "Anjaneri Fort",
   "subtitle": "The Mythical Birthplace of Lord Hanuman near Nashik",
-  "bannerImage": "/images/forts/anjaneri/banner.jpg",
+  "bannerImage": "/assets/images/forts/24.jpg",
+  "insideBannerImage": "/assets/images/forts/24/bannerimg.jpg",
   "color": "#c87f3d",
   "coordinates": { "lat": 19.9197, "lng": 73.5758 },
   "overview": [

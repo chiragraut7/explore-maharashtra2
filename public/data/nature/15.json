@@ -2,7 +2,8 @@
   "id": "15",
   "title": "Chandoli National Park",
   "subtitle": "A Tranquil Haven of Wildlife and Nature in the Sahyadris",
-  "bannerImage": "/images/nature/chandoli/banner.jpg",
+  "bannerImage": "/assets/images/nature/15.jpg",
+  "insideBannerImage": "/assets/images/nature/15/bannerimg.jpg",
   "color": "#2e7d32",
   "coordinates": { "lat": 17.1558, "lng": 73.8569 },
   "overview": [

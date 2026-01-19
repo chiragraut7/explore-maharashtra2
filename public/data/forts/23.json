@@ -2,7 +2,8 @@
   "id": "23",
   "title": "Daulatabad Fort (Devgiri Fort)",
   "subtitle": "A Marvel of Defense and Architecture near Aurangabad",
-  "bannerImage": "/images/forts/daulatabad/daulatabad-banner.jpg",
+  "bannerImage": "/assets/images/forts/23.jpg",
+  "insideBannerImage": "/assets/images/forts/23/bannerimg.jpg",
   "color": "#8b7355",
   "coordinates": { "lat": 19.9406, "lng": 75.2117 },
   "overview": [

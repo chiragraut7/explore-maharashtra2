@@ -2,7 +2,8 @@
   "id": "19",
   "title": "Ratnagiri Fort (Bhagwati Fort)",
   "subtitle": "A Coastal Guardian Overlooking the Arabian Sea",
-  "bannerImage": "/images/forts/ratnagiri-fort/banner.jpg",
+  "bannerImage": "/assets/images/forts/19.jpg",
+  "insideBannerImage": "/assets/images/forts/19/bannerimg.jpg",
   "color": "#0a3d62",
   "coordinates": { "lat": 17.0108, "lng": 73.2708 },
   "overview": [

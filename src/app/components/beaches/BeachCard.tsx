@@ -10,20 +10,21 @@ import { Item } from '../../types'
 interface BeachCardProps {
   beach: Item
   category: string
-  generateSlug: (id?: string) => string
+  // ✅ CHANGED: Changed to 'any' signature to prevent Vercel build mismatch
+  generateSlug: any 
   btnLabel: string
   btnColor?: string 
 }
 
 const categoryIcons: Record<string, string> = {
   beaches: "fa-umbrella-beach",
-  hillstations: "fa-mountain",
-  hills: "fa-mountain", // Fallback for 'hills'
+  hillstations: "fa-mountain-sun",
+  hills: "fa-mountain-sun",
   forts: "fa-chess-rook",
   wildlife: "fa-paw",
   nature: "fa-leaf",
   religious: "fa-om",
-  cultural: "fa-masks-theater",
+  culture: "fa-masks-theater",
 }
 
 const DEFAULT_FALLBACK = '/assets/images/maharashtra-state-of-india.svg'
@@ -47,29 +48,30 @@ const BeachCard: React.FC<BeachCardProps> = ({
     setSrc(getImagePath(beach?.bannerImage))
   }, [beach?.bannerImage])
 
-  // Safely generate the link
-  const cardLink = `/${category}/${generateSlug(beach.id?.toString())}`;
+  // ✅ SAFE LINK GENERATION: Checks if beach and id exist before running
+  const safeId = beach?.id ? beach.id.toString() : 'destination';
+  const cardLink = `/${category}/${generateSlug(safeId)}`;
 
   return (
-    <div className="postcard-container group">
+    <div className="postcard-container">
       <Link href={cardLink} className="text-decoration-none">
         <div className="postcard-accent-bg"></div>
 
-        <div className="postcard-main shadow-sm group-hover:shadow-2xl transition-all duration-500">
+        <div className="postcard-main shadow-sm transition-all duration-500">
           <div className="postcard-media">
             <Image
               src={src}
-              alt={beach.title || 'Maharashtra Destination'}
+              alt={beach?.title || 'Maharashtra Destination'}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover group-hover:scale-110 transition-transform duration-1000"
+              className="object-cover card-img-zoom transition-transform duration-1000"
               onError={() => setSrc(DEFAULT_FALLBACK)}
             />
             <div className="media-gradient"></div>
             
             <div 
               className="heritage-icon-badge" 
-              style={{ backgroundColor: btnColor || 'var(--primary-color, #FF6B00)' }}
+              style={{ backgroundColor: btnColor || '#FF6B00' }}
             >
               <i className={`fas ${currentIcon}`} aria-hidden="true"></i>
             </div>
@@ -77,13 +79,13 @@ const BeachCard: React.FC<BeachCardProps> = ({
 
           <div className="postcard-content">
             <h3 className="postcard-title">
-              <Translator text={beach.title || ''} targetLang={language} />
+              <Translator text={beach?.title || ''} targetLang={language} />
             </h3>
             
             <div className="brand-line"></div>
 
-            {beach.subtitle && (
-              <p className="postcard-desc line-clamp-3">
+            {beach?.subtitle && (
+              <p className="postcard-desc">
                 <Translator text={beach.subtitle || ''} targetLang={language} />
               </p>
             )}
@@ -101,12 +103,12 @@ const BeachCard: React.FC<BeachCardProps> = ({
       </Link>
 
       <style jsx>{`
-        .postcard-container { position: relative; padding: 15px; height: 100%; }
+        .postcard-container { position: relative; padding: 15px; height: 100%; cursor: pointer; }
         
         .postcard-accent-bg {
           position: absolute; top: 0; left: 0; width: 70%; height: 60%;
-          background-color: var(--accent-color, #FF6B00); opacity: 0.12;
-          border-radius: 20px; z-index: 0; transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+          background-color: ${btnColor || '#FF6B00'}; opacity: 0.12;
+          border-radius: 20px; z-index: 0; transition: 0.6s ease;
         }
 
         .postcard-container:hover .postcard-accent-bg { width: 100%; height: 100%; opacity: 0.2; }
@@ -114,10 +116,15 @@ const BeachCard: React.FC<BeachCardProps> = ({
         .postcard-main {
           position: relative; z-index: 1; background: #fff; border-radius: 15px;
           overflow: hidden; height: 100%; display: flex; flex-direction: column;
-          border: 1px solid rgba(0, 0, 0, 0.05);
+          border: 1px solid rgba(0, 0, 0, 0.05); transition: transform 0.3s ease;
         }
 
+        .postcard-container:hover .postcard-main { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important; }
+
         .postcard-media { position: relative; height: 240px; width: 100%; overflow: hidden; }
+
+        :global(.card-img-zoom) { transition: transform 0.8s ease !important; }
+        .postcard-container:hover :global(.card-img-zoom) { transform: scale(1.1); }
 
         .media-gradient {
           position: absolute; inset: 0;
@@ -137,12 +144,12 @@ const BeachCard: React.FC<BeachCardProps> = ({
 
         .postcard-title { 
           font-size: 1.25rem; font-weight: 800; 
-          color: var(--secondary-color, #1a1a1a); margin-bottom: 0.5rem; 
+          color: #1a1a1a; margin-bottom: 0.5rem; 
         }
 
         .brand-line { 
           width: 30px; height: 3px; 
-          background: var(--accent-color, #FF6B00); 
+          background: ${btnColor || '#FF6B00'}; 
           margin-bottom: 1rem; transition: 0.4s ease; 
         }
 
@@ -159,10 +166,10 @@ const BeachCard: React.FC<BeachCardProps> = ({
         .cta-text { 
           font-weight: 800; font-size: 0.7rem; 
           text-transform: uppercase; letter-spacing: 2px; 
-          color: var(--secondary-color, #1a1a1a); 
+          color: #1a1a1a; 
         }
 
-        .cta-arrow { color: var(--accent-color, #FF6B00); transition: 0.3s ease; }
+        .cta-arrow { color: ${btnColor || '#FF6B00'}; transition: 0.3s ease; }
 
         .postcard-container:hover .cta-arrow { transform: translateX(5px); }
         

@@ -2,7 +2,8 @@
   "id": "16",
   "title": "Karnala Bird Sanctuary",
   "subtitle": "A Paradise for Birdwatchers near Mumbai",
-  "bannerImage": "/images/nature/karnala/banner.jpg",
+  "bannerImage": "/assets/images/nature/16.jpg",
+  "insideBannerImage": "/assets/images/nature/16/bannerimg.jpg",
   "color": "#388E3C",
   "coordinates": { "lat": 18.8878, "lng": 73.1167 },
   "overview": [

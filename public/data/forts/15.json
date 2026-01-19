@@ -2,7 +2,8 @@
   "id": "15",
   "title": "Vasai Fort",
   "subtitle": "Historic Portuguese Citadel near Mumbai",
-  "bannerImage": "/images/forts/vasai/vasai-banner.jpg",
+  "bannerImage": "/assets/images/forts/15.jpg",
+  "insideBannerImage": "/assets/images/forts/15/bannerimg.jpg",
   "color": "#4338ca",
   "coordinates": { "lat": 19.3303, "lng": 72.7936 },
   "overview": [

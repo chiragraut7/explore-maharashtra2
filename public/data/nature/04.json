@@ -2,7 +2,8 @@
   "id": "04",
   "title": "Tamhini Ghat",
   "subtitle": "A Scenic Mountain Pass with Waterfalls and Misty Valleys",
-  "bannerImage": "/assets/images/nature/tamhini-banner.jpg",
+  "bannerImage": "/assets/images/nature/04.png",
+  "insideBannerImage": "/assets/images/nature/04/bannerimg.jpg",
   "color": "#2e8b57",
   "coordinates": { "lat": 18.4419, "lng": 73.4359 },
   "overview": [

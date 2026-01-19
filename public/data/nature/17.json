@@ -2,7 +2,8 @@
   "id": "17",
   "title": "Lonar Lake",
   "subtitle": "The Meteoric Marvel of Maharashtra",
-  "bannerImage": "/images/nature/lonar/banner.jpg",
+  "bannerImage": "/assets/images/nature/17.jpg",
+  "insideBannerImage": "/assets/images/nature/17/bannerimg.jpg",
   "color": "#3A8D8E",
   "coordinates": { "lat": 19.9761, "lng": 76.5072 },
   "overview": [

@@ -2,7 +2,8 @@
   "id": "13",
   "title": "Dajipur Wildlife Sanctuary",
   "subtitle": "The Bison Sanctuary of Maharashtra",
-  "bannerImage": "/images/nature/dajipur/banner.jpg",
+  "bannerImage": "/assets/images/nature/13.jpg",
+  "insideBannerImage": "/assets/images/nature/13/bannerimg.jpg",
   "color": "#2E7D32",
   "coordinates": { "lat": 16.3837, "lng": 73.8635 },
   "overview": [

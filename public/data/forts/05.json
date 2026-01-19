@@ -2,7 +2,8 @@
   "id": "05",
   "title": "Purandar Fort",
   "subtitle": "The Fort of Heritage and Strategic Power",
-  "bannerImage": "/images/forts/purandar/purandar-banner.jpg",
+  "bannerImage": "/assets/images/forts/05.png",
+  "insideBannerImage": "/assets/images/forts/05/bannerimg.jpg",
   "color": "#8b4513",
   "coordinates": { "lat": 18.2750, "lng": 73.9750 },
   "overview": [

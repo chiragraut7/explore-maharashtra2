@@ -2,7 +2,8 @@
   "id": "11",
   "title": "Harishchandragad Fort",
   "subtitle": "Ancient Fort of Sahyadri – Home to Konkan Kada and Kedareshwar Cave Temple",
-  "bannerImage": "/images/forts/harishchandragad/harishchandragad-banner.jpg",
+  "bannerImage": "/assets/images/forts/11.jpg",
+  "insideBannerImage": "/assets/images/forts/11/bannerimg.jpg",
   "color": "#3a4f3c",
   "coordinates": { "lat": 19.3853, "lng": 73.7761 },
   "overview": [

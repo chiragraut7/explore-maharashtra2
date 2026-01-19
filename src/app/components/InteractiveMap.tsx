@@ -1,28 +1,57 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import L from 'leaflet'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import 'leaflet/dist/leaflet.css'
 import Link from 'next/link'
 
-const createIcon = (color: string) => new L.DivIcon({
-  html: `<div style="background: ${color}; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 4px 12px rgba(0,0,0,0.3);"></div>`,
-  className: 'custom-marker',
-  iconSize: [16, 16]
-})
+// ✅ It is SAFE to import CSS at the top level in Next.js/Turbopack. 
+// It does not depend on the 'window' object.
+import 'leaflet/dist/leaflet.css'
 
 const InteractiveMap = () => {
   const [locations, setLocations] = useState<any[]>([])
   const [filter, setFilter] = useState('all')
+  const [MapComponents, setMapComponents] = useState<any>(null)
 
   useEffect(() => {
     fetch('/api/locations')
       .then(res => res.json())
       .then(data => setLocations(data))
+
+    const initMap = async () => {
+      try {
+        // Load JS libraries dynamically
+        const L = (await import('leaflet')).default;
+        const { MapContainer, TileLayer, Marker, Popup } = await import('react-leaflet');
+
+        const createIcon = (color: string) => new L.DivIcon({
+          html: `<div style="background: ${color}; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 4px 12px rgba(0,0,0,0.3);"></div>`,
+          className: 'custom-marker',
+          iconSize: [16, 16]
+        });
+
+        setMapComponents({ MapContainer, TileLayer, Marker, Popup, createIcon });
+      } catch (error) {
+        console.error("Leaflet failed to load:", error);
+      }
+    };
+
+    initMap();
   }, [])
 
   const filtered = filter === 'all' ? locations : locations.filter(l => l.category === filter)
+
+  if (!MapComponents) {
+    return (
+      <div className="magazine-map-section pb-4">
+        <div className="container text-center py-5 bg-light rounded-4">
+           <div className="spinner-border text-dark" role="status"></div>
+           <p className="mt-3 text-muted">Initialising Map...</p>
+        </div>
+      </div>
+    );
+  }
+
+  const { MapContainer, TileLayer, Marker, Popup, createIcon } = MapComponents;
 
   return (
     <div className="magazine-map-section pb-4">
@@ -41,7 +70,7 @@ const InteractiveMap = () => {
         </div>
 
         <div className="map-canvas-wrapper mb-5">
-          <MapContainer center={[19.0, 74.5]} zoom={6.5} style={{ height: '450px', width: '100%' }}>
+          <MapContainer center={[19.0, 74.5]} zoom={6.5} style={{ height: '450px', width: '100%', zIndex: 1 }}>
             <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" />
             
             {filtered.map((loc) => (
@@ -78,26 +107,15 @@ const InteractiveMap = () => {
           font-size: 0.7rem; letter-spacing: 1px; transition: 0.3s;
         }
         .mag-pill.active { background: #111; color: #fff; border-color: #111; }
-
-        .map-canvas-wrapper { 
-          border: 5px solid var(--primary-color); border-radius: 0rem; 
-          overflow: hidden; box-shadow: unset;
-        }
-
-        /* Popup Styling */
+        .map-canvas-wrapper { border: 5px solid #111; overflow: hidden; }
         .leaflet-popup-content-wrapper { padding: 0; overflow: hidden; border-radius: 20px; }
         .leaflet-popup-content { margin: 0; width: 240px !important; }
         .popup-img { width: 100%; height: 120px; object-fit: cover; }
         .popup-body { padding: 15px; }
-        .cat-tag { font-size: 9px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; display: block; }
-        .btn-view { 
-          font-size: 11px; font-weight: 800; color: #111; 
-          text-decoration: none; border-bottom: 2px solid #111; 
-          display: inline-block; margin-top: 5px;
-        }
+        .btn-view { font-size: 11px; font-weight: 800; color: #111; text-decoration: none; border-bottom: 2px solid #111; }
       `}</style>
     </div>
   )
 }
 
-export default InteractiveMap
+export default InteractiveMap;

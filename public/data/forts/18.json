@@ -2,7 +2,8 @@
   "id": "18",
   "title": "Suvarnadurg Fort",
   "subtitle": "The Golden Sea Fort of Konkan",
-  "bannerImage": "/images/forts/suvarnadurg-fort/suvarnadurg-fort-view.jpg",
+  "bannerImage": "/assets/images/forts/18.jpg",
+  "insideBannerImage": "/assets/images/forts/18/bannerimg.jpg",
   "color": "#d4af37",
   "coordinates": { "lat": 17.8114, "lng": 73.0800 },
   "overview": [

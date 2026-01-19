@@ -2,7 +2,8 @@
   "id": "09",
   "title": "Tadoba Andhari Tiger Reserve",
   "subtitle": "Maharashtra’s Oldest and Largest National Park",
-  "bannerImage": "/images/nature/tadoba-banner.jpg",
+  "bannerImage": "/assets/images/nature/09.jpg",
+  "insideBannerImage": "/assets/images/nature/09/bannerimg.jpg",
   "color": "#2d6a4f",
   "coordinates": { "lat": 20.2158, "lng": 79.3117 },
   "overview": [

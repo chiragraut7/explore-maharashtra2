@@ -2,7 +2,8 @@
   "id": "18",
   "title": "Radhanagari Wildlife Sanctuary",
   "subtitle": "A Haven for the Mighty Indian Bison",
-  "bannerImage": "/images/nature/radhanagari/banner.jpg",
+  "bannerImage": "/assets/images/nature/18.jpg",
+  "insideBannerImage": "/assets/images/nature/18/bannerimg.jpg",
   "color": "#1B5E20",
   "coordinates": { "lat": 16.3683, "lng": 73.9317 },
   "overview": [

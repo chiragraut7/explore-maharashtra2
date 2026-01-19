@@ -2,7 +2,8 @@
   "id": "10",
   "title": "Shivneri Fort",
   "subtitle": "Birthplace of Chhatrapati Shivaji Maharaj – Symbol of Maratha Pride",
-  "bannerImage": "/images/forts/shivneri/shivneri-banner.jpg",
+  "bannerImage": "/assets/images/forts/10.jpg",
+  "insideBannerImage": "/assets/images/forts/10/bannerimg.jpg",
   "color": "#4b3621",
   "coordinates": { "lat": 19.1983, "lng": 73.8617 },
   "overview": [

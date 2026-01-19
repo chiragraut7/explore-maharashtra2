@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
+import { motion, useScroll, useSpring, AnimatePresence, useTransform } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useLanguage } from '../components/context/LanguageContext'
@@ -13,9 +13,13 @@ import Translator from "../components/commonComponents/Translator";
 export default function CategoryPage() {
   const { language } = useLanguage();
   const { category } = useParams() as { category: string };
+  
+  // DATA STATES
   const [items, setItems] = useState<any[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [favorites, setFavorites] = useState<string[]>([]);
+  
+  // UI STATES
   const [activeShare, setActiveShare] = useState<number | null>(null);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [isZoomed, setIsZoomed] = useState<number | null>(null);
@@ -23,14 +27,47 @@ export default function CategoryPage() {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start center", "end center"]
+    offset: ["start start", "end end"]
   });
 
   const scaleY = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
+  const bannerY = useTransform(scrollYProgress, [0, 0.5], [0, 120]);
+
+  // --- DYNAMIC STORAGE KEY ---
+  const storageKey = `favs_${category}`;
+
+  // --- ASSET PATHS ---
+  // IMPORTANT: Place your common image here: /public/assets/images/common-things-to-do.jpg
+  const commonThingsToDoImage = "/assets/images/common-things-to-do.jpg";
+
+ const getBannerImage = (cat: string) => {
+    const images: Record<string, string> = {
+      beaches: "/assets/images/beachHomeBanner.jpg",
+      forts: "/assets/images/fortsHomeBanner.jpg",
+      hills: "/assets/images/hillsHomeBanner.jpg",
+      nature: "/assets/images/natureHomeBanner.jpg",
+      religious: "/assets/images/religiousHomeBanner.jpg",
+      culture: "/assets/images/culturalHomeBanner.jpg",
+    };
+    return images[cat?.toLowerCase()] || "/assets/images/beachHomeBanner.jpg";
+  };
+
+  const getCategoryIcon = (cat: string) => {
+    const icons: Record<string, string> = {
+      beaches: "fa-umbrella-beach",
+      hills: "fa-mountain-sun",
+      forts: "fa-chess-rook",
+      nature: "fa-paw",
+      religious: "fa-om",
+      culture: "fa-masks-theater",
+    };
+    return icons[cat?.toLowerCase()] || "fa-map-marked-alt"; 
+  };
 
   useEffect(() => {
-    const savedFavs = localStorage.getItem('travel_favs');
+    const savedFavs = localStorage.getItem(storageKey);
     if (savedFavs) setFavorites(JSON.parse(savedFavs));
+    
     AOS.init({ duration: 800, once: false });
     
     async function fetchItems() {
@@ -41,21 +78,12 @@ export default function CategoryPage() {
       } catch(e) {}
     }
     if (category) fetchItems();
-  }, [category]);
+  }, [category, storageKey]);
 
-  const handleShare = (platform: string, item: any) => {
-    const url = typeof window !== 'undefined' ? `${window.location.origin}/${category}/${item.slug || item.id}` : '';
-    if (platform === 'whatsapp') window.open(`https://wa.me/?text=${encodeURIComponent(url)}`);
-    if (platform === 'copy') {
-        navigator.clipboard.writeText(url);
-        alert("Link copied!");
-    }
-    setActiveShare(null);
-  };
-
+  // --- TOGGLE FAVORITE ---
   const toggleFavorite = (e: React.MouseEvent, itemId: string) => {
     e.stopPropagation();
-    const uniqueId = `${category}-${itemId}`;
+    const uniqueId = itemId; 
     let updatedFavs = [...favorites];
     if (updatedFavs.includes(uniqueId)) {
       updatedFavs = updatedFavs.filter(id => id !== uniqueId);
@@ -63,19 +91,24 @@ export default function CategoryPage() {
       updatedFavs.push(uniqueId);
     }
     setFavorites(updatedFavs);
-    localStorage.setItem('travel_favs', JSON.stringify(updatedFavs));
+    localStorage.setItem(storageKey, JSON.stringify(updatedFavs));
   };
 
-  const getCategoryIcon = (cat: string) => {
-    const icons: Record<string, string> = {
-      beaches: "fa-umbrella-beach",
-      hillstations: "fa-mountain",
-      forts: "fa-chess-rook",
-      wildlife: "fa-paw",
-      religious: "fa-om",
-      cultural: "fa-masks-theater",
-    };
-    return icons[cat?.toLowerCase()] || "fa-map-marked-alt"; 
+  const removeAllFavorites = () => {
+    if (window.confirm(`Clear all saved ${category}?`)) {
+        setFavorites([]);
+        localStorage.removeItem(storageKey);
+    }
+  };
+
+  const handleShare = (platform: string, item: any) => {
+    const url = typeof window !== 'undefined' ? `${window.location.origin}/${category}/${item.slug || item.id}` : '';
+    if (platform === 'whatsapp') window.open(`https://wa.me/?text=${encodeURIComponent(url)}`);
+    if (platform === 'copy') { 
+        navigator.clipboard.writeText(url);
+        alert("Link copied!");
+    }
+    setActiveShare(null);
   };
 
   const filteredItems = items.filter(item => 
@@ -86,27 +119,67 @@ export default function CategoryPage() {
     <div className="min-vh-100 bg-dot-pattern" ref={containerRef}>
       <motion.div className="fixed-top" style={{ scaleX: scrollYProgress, height: '4px', background: 'var(--primary-color)', transformOrigin: '0%', zIndex: 9999 }} />
 
-      <header className="position-relative overflow-hidden banner-gradient pt-5">
-        <div className="container text-center z-2 pb-5 pt-5">
-           <motion.h1 initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="display-4 text-white fw-bold mb-4">
-             <Translator text={category.charAt(0).toUpperCase() + category.slice(1)} targetLang={language}/>
-           </motion.h1>
+      <header className="category-hero-container">
+        
+        {/* FAVORITES HUD */}
+        <div className="fav-hud-top d-flex gap-2">
+            <AnimatePresence mode="wait">
+                <motion.div 
+                    key={favorites.length}
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    exit={{ scale: 0.8, opacity: 0 }}
+                    className="backdrop-blur-md bg-white/10 border border-white/20 rounded-pill px-3 py-2 d-flex align-items-center gap-2 text-white shadow-lg"
+                >
+                    <i className={`fas fa-heart ${favorites.length > 0 ? 'text-danger animate-pulse' : 'text-white/50'}`}></i>
+                    <span className="fw-bold">{favorites.length}</span>
+                    <span style={{ fontSize: '0.7rem' }}>
+                        <Translator text="Saved" targetLang={language}/> 
+                        <span className="ms-1 opacity-50 text-uppercase" style={{fontSize: '0.6rem'}}>({category})</span>
+                    </span>
+                </motion.div>
+            </AnimatePresence>
+            
+            {favorites.length > 0 && (
+                <button onClick={removeAllFavorites} className="btn-clear-favs backdrop-blur-md">
+                   <i className="fas fa-trash-alt"></i>
+                </button>
+            )}
+        </div>
+
+        <motion.div className="hero-image-wrapper">
+          <Image src={getBannerImage(category)} alt={category} fill priority className="object-fit-cover" />
+          <div className="hero-overlay-dark" />
+        </motion.div>
+
+        <div className="container text-center z-10 position-relative pt-5">
+           <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.6 }}>
+             <span className="category-label mb-2 d-inline-block">
+               <Translator text="Maharashtra Tourism" targetLang={language} />
+             </span>
+             <h1 className="display-3 text-white fw-black text-uppercase tracking-tighter mb-4">
+               <Translator text={category} targetLang={language}/>
+             </h1>
+           </motion.div>
+           
            <div className="row justify-content-center px-3">
-              <div className="col-md-6 backdrop-blur-md bg-white/20 border border-white/30 rounded-pill p-1 shadow-lg d-flex align-items-center">
+              <div className="col-md-6 backdrop-blur-md bg-white/10 border border-white/20 rounded-pill p-1 shadow-lg d-flex align-items-center">
                 <i className="fas fa-search text-white ms-3 opacity-75"></i>
-                <input type="text" className="form-control bg-transparent border-0 text-white placeholder-white shadow-none px-3" placeholder={`Search...`} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+                <input type="text" className="form-control bg-transparent border-0 text-white placeholder-white shadow-none px-3" placeholder={`Search in ${category}...`} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
               </div>
            </div>
         </div>
-        <div className="waves-container">
-            <svg className="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
-                <path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" fill="#fcfaf8" />
+
+        <div className="hero-curve-mask">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L1440 120L1440 0C1440 0 1110 90 720 90C330 90 0 0 0 0L0 120Z" fill="#fcfaf8"/>
             </svg>
         </div>
       </header>
 
-      <section className="container position-relative py-5">
-        <div className="position-absolute start-50 translate-middle-x d-none d-md-block timeline-line-container">
+      {/* --- MAIN TIMELINE SECTION --- */}
+      <section className="container position-relative py-5 z-10">
+        <div className="timeline-line-container d-none d-md-block">
             <div className="timeline-track" />
             <motion.div className="timeline-progress" style={{ scaleY, originY: 0 }} />
         </div>
@@ -115,50 +188,32 @@ export default function CategoryPage() {
           <AnimatePresence mode="popLayout">
             {filteredItems.map((item, index) => {
               const rawId = item.slug || item.id || `item-${index}`;
-              const isFav = favorites.includes(`${category}-${rawId}`);
-              const isHovered = hoveredIndex === index;
-
+              const isFav = favorites.includes(rawId);
+              
               return (
-                <motion.div 
-                  key={rawId} 
-                  className="col-12 mb-5 position-relative"
-                  onMouseEnter={() => setHoveredIndex(index)}
-                  onMouseLeave={() => { setHoveredIndex(null); setActiveShare(null); setIsZoomed(null); }}
-                >
-                  {/* Subtle Node */}
+                <motion.div key={rawId} className="col-12 mb-5 position-relative" onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)} >
                   <div className="d-none d-md-flex position-absolute start-50 translate-middle timeline-node">
-                    <motion.div 
-                      animate={{ 
-                        scale: isHovered ? 1.2 : 1, 
-                        boxShadow: isHovered ? `0 0 10px var(--primary-color)` : `0 0 0px transparent` 
-                      }} 
-                      className="outer-node"
-                    >
-                        <div className="inner-node" style={{ backgroundColor: isHovered ? 'var(--primary-color)' : '#ccc' }}></div>
+                    <motion.div animate={{ scale: isFav ? 1.3 : 1, borderColor: isFav ? '#ff4d4d' : 'rgba(0,0,0,0.1)' }} className="outer-node" >
+                        <div className="inner-node" style={{ backgroundColor: isFav ? '#ff4d4d' : '#ccc' }}></div>
                     </motion.div>
                   </div>
 
                   <div className={`row justify-content-center align-items-center ${index % 2 !== 0 ? 'flex-md-row-reverse' : ''}`}>
                     <div className="col-md-5 col-lg-4 px-3" data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}>
-                      
-                      {/* COMPACT CARD HEIGHT: 320px */}
-                      <div 
-                        className="group position-relative overflow-hidden rounded-4 shadow-lg border-0 card-main-container" 
-                        style={{ height: '270px', cursor: 'pointer' }}
-                        onClick={() => setIsZoomed(isZoomed === index ? null : index)}
-                      >
-                        <Image 
-                          src={item.bannerImage || '/assets/images/placeholder.jpg'} 
-                          alt="img" 
-                          fill 
-                          className={`object-fit-cover transition-transform duration-1000 ${isZoomed === index ? 'scale-125' : 'group-hover:scale-110'}`} 
-                        />
+                      <div className="group position-relative overflow-hidden rounded-4 shadow-lg border-0 card-main-container" style={{ height: '270px', cursor: 'pointer' }} onClick={() => setIsZoomed(isZoomed === index ? null : index)} >
+                        <Image src={item.bannerImage || '/assets/images/placeholder.jpg'} alt="img" fill className={`object-fit-cover transition-transform duration-1000 ${isZoomed === index ? 'scale-125' : 'group-hover:scale-110'}`} />
                         
                         <div className="position-absolute top-0 w-100 p-3 z-3 d-flex justify-content-between align-items-start">
                            <div className="d-flex gap-2">
-                              <button onClick={(e) => toggleFavorite(e, rawId)} className="rounded-circle border-0 d-flex align-items-center justify-content-center backdrop-blur-md bg-black/40 text-white action-trigger" style={{ width: '34px', height: '34px' }}>
-                                 <i className={`${isFav ? 'fas fa-heart text-danger' : 'far fa-heart'} small`}></i>
+                              {/* HEART ACTION */}
+                              <button 
+                                onClick={(e) => toggleFavorite(e, rawId)} 
+                                className={`rounded-circle border-0 d-flex align-items-center justify-content-center backdrop-blur-md text-white action-trigger ${isFav ? 'bg-danger' : 'bg-black/40'}`} 
+                                style={{ width: '34px', height: '34px', transition: '0.3s' }}
+                              >
+                                 <i className={`${isFav ? 'fas fa-heart text-white' : 'far fa-heart'} small`}></i>
                               </button>
+                              
                               <div className="d-flex align-items-center">
                                  <button onClick={(e) => { e.stopPropagation(); setActiveShare(activeShare === index ? null : index); }} className="rounded-circle border-0 d-flex align-items-center justify-content-center backdrop-blur-md bg-black/40 text-white action-trigger" style={{ width: '34px', height: '34px' }}>
                                    <i className="fas fa-share-alt small"></i>
@@ -173,13 +228,9 @@ export default function CategoryPage() {
                                  </AnimatePresence>
                               </div>
                            </div>
-
-                           <motion.div 
-                              className="rounded-circle d-flex align-items-center justify-content-center backdrop-blur-md bg-white/10 border border-white/30" 
-                              style={{ width: '36px', height: '36px' }}
-                           >
+                           <div className="rounded-circle d-flex align-items-center justify-content-center backdrop-blur-md bg-white/10 border border-white/30" style={{ width: '36px', height: '36px' }}>
                                <i className={`fas ${getCategoryIcon(category)} text-white small`}></i>
-                           </motion.div>
+                           </div>
                         </div>
 
                         <div className="position-absolute inset-0 bg-gradient-to-t from-black/95 via-black/10 to-transparent" />
@@ -187,7 +238,6 @@ export default function CategoryPage() {
                         <div className="position-absolute bottom-0 start-0 end-0 m-3 p-3 rounded-4 backdrop-blur-lg bg-white/5 border border-white/10 transition-all duration-500 group-hover:-translate-y-2">
                            <div className="d-flex justify-content-between align-items-center mb-1">
                               <h3 className="fw-bold h6 mb-0 text-white"><Translator text={item.title || item.name} targetLang={language} /></h3>
-                              {/* New Distance Tag */}
                               {item.distance && (
                                 <span className="badge rounded-pill bg-primary/20 border border-primary/30" style={{ fontSize: '0.6rem' }}>
                                   <i className="fas fa-car me-1"></i>{item.distance}
@@ -204,7 +254,6 @@ export default function CategoryPage() {
                            </div>
                         </div>
                       </div>
-
                     </div>
                     <div className="col-md-5 col-lg-4 d-none d-md-block"></div>
                   </div>
@@ -215,37 +264,53 @@ export default function CategoryPage() {
         </div>
       </section>
 
-      <style jsx global>{`
-        .bg-dot-pattern {
-          background-color: #fcfaf8;
-          background-image: radial-gradient(#d5d5d5 0.7px, transparent 0.7px);
-          background-size: 20px 20px;
-        }
 
-        .timeline-line-container { width: 1.5px; height: 100%; top: 0; z-index: 1; }
-        .timeline-track { position: absolute; inset: 0; background: rgba(0,0,0,0.05); }
+      <style jsx global>{`
+        .bg-dot-pattern { background-color: #fcfaf8; background-image: radial-gradient(#d5d5d5 0.7px, transparent 0.7px); background-size: 20px 20px; }
+        .bg-dot-pattern header { margin-bottom: -2rem; }
+        
+        .category-hero-container { height: 70vh; position: relative; overflow: hidden; display: flex; align-items: center; background: #000; }
+        .hero-image-wrapper { position: absolute; inset: 0; z-index: 1; }
+        .hero-overlay-dark { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.8)); z-index: 2; }
+        
+        /* FAVORITES HUD */
+        .fav-hud-top { position: absolute; top: 80px; right: 25px; z-index: 100; }
+        .btn-clear-favs { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; transition: 0.3s; }
+        .btn-clear-favs:hover { background: #dc3545; border-color: #dc3545; }
+
+        .category-label { text-transform: uppercase; letter-spacing: 6px; font-size: 0.75rem; color: var(--primary-color); font-weight: 800; border-bottom: 2px solid var(--primary-color); }
+        .fw-black { font-weight: 900; }
+        .tracking-tighter { letter-spacing: -2px; }
+        .hero-curve-mask { position: absolute; bottom: -1px; left: 0; width: 100%; z-index: 5; }
+        .hero-curve-mask svg { width: 100%; height: auto; display: block; }
+        
+        /* TIMELINE CSS */
+        .timeline-line-container { width: 2px; top: 50px; bottom: 50px; height: auto; position: absolute; left: 50%; transform: translateX(-50%); z-index: 1; }
+        .timeline-track { position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.05) 5%, rgba(0,0,0,0.05) 95%, transparent 100%); }
         .timeline-progress { position: absolute; top: 0; width: 100%; height: 100%; background: var(--primary-color); }
         
         .timeline-node { top: 50%; z-index: 10; }
         .outer-node { width: 14px; height: 14px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(0,0,0,0.08); transition: 0.3s ease-out; }
         .inner-node { width: 5px; height: 5px; border-radius: 50%; transition: 0.3s; }
 
-        .premium-btn { 
-          position: relative; display: inline-flex; align-items: center; 
-          padding: 8px 24px; background: var(--primary-color); color: white !important; 
-          border-radius: 50px; font-weight: 700; font-size: 0.6rem; 
-          text-transform: uppercase; letter-spacing: 1.2px; overflow: hidden; 
-          transition: 0.4s; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none;
-        }
+        .premium-btn { position: relative; display: inline-flex; align-items: center; padding: 8px 24px; background: var(--primary-color); color: white !important; border-radius: 50px; font-weight: 700; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 1.2px; overflow: hidden; transition: 0.4s; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; border: none; }
         .btn-shine { position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent); transition: 0.6s; }
         .premium-btn:hover .btn-shine { left: 100%; }
 
-        .banner-gradient { background: linear-gradient(135deg, var(--primary-color) 0%, #081426 100%); }
-        .waves-container { height: 60px; overflow: hidden; }
         .action-trigger { transition: 0.3s; cursor: pointer; }
-        .action-trigger:hover { transform: scale(1.05); background: var(--primary-color) !important; }
+        .action-trigger:hover { transform: scale(1.05); }
         .btn-share-sm { background: transparent; border: none; font-size: 0.8rem; padding: 0 6px; transition: 0.2s; }
         .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .hover-danger:hover { background-color: #dc3545 !important; border-color: #dc3545 !important; }
+
+        @media (max-width: 768px) { 
+            .category-hero-container { height: 60vh; } 
+            .timeline-line-container { display: none; } 
+            .fav-hud-top { top: 20px; }
+            .things-to-do-card { height: 300px !important; }
+            .things-to-do-card .p-5 { padding: 1.5rem !important; }
+        }
+        .category-hero-container .top-0 {top:50px !important}
       `}</style>
     </div>
   );

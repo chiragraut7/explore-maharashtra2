@@ -2,7 +2,8 @@
   "id": "07",
   "title": "Rajmachi Fort",
   "subtitle": "Twin Fortresses Overlooking the Sahyadri Ranges",
-  "bannerImage": "/images/forts/rajmachi/rajmachi-banner.jpg",
+  "bannerImage": "/assets/images/forts/07.jpg",
+  "insideBannerImage": "/assets/images/forts/07/bannerimg.jpg",
   "color": "#166534",
   "coordinates": { "lat": 18.8286, "lng": 73.3953 },
   "overview": [

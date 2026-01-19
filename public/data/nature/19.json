@@ -2,7 +2,8 @@
   "id": "19",
   "title": "Sagareshwar Wildlife Sanctuary",
   "subtitle": "A Man-Made Forest and Sacred Sanctuary in Sangli",
-  "bannerImage": "/images/nature/sagareshwar/banner.jpg",
+  "bannerImage": "/assets/images/nature/19.jpg",
+  "insideBannerImage": "/assets/images/nature/19/bannerimg.jpg",
   "color": "#4caf50",
   "coordinates": { "lat": 17.1425, "lng": 74.4556 },
   "overview": [

@@ -2,7 +2,8 @@
   "id": "05",
   "title": "Kaas Plateau",
   "subtitle": "The Valley of Flowers of Maharashtra – A UNESCO Biodiversity Site",
-  "bannerImage": "/assets/images/nature/kaas-plateau.jpg",
+  "bannerImage": "/assets/images/nature/05.png",
+  "insideBannerImage": "/assets/images/nature/05/bannerimg.jpg",
   "color": "#7b4b94",
   "coordinates": { "lat": 17.7208, "lng": 73.8247 },
   "overview": [

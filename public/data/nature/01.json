@@ -2,7 +2,8 @@
   "id": "01",
   "title": "Amboli Ghat",
   "subtitle": "The Queen of Sahyadri – A misty paradise in the Western Ghats",
-  "bannerImage": "/assets/images/nature/amboli-ghat.jpg",
+  "bannerImage": "/assets/images/nature/01.png",
+  "insideBannerImage": "/assets/images/nature/01/bannerimg.jpg",
   "color": "#2d5b4c",
   "coordinates": { "lat": 15.9625, "lng": 73.9978 },
   "overview": [

@@ -2,7 +2,8 @@
   "id": "24",
   "title": "Pench National Park",
   "subtitle": "The Land of Mowgli and the Jungle Book",
-  "bannerImage": "/images/nature/pench/banner.jpg",
+  "bannerImage": "/assets/images/nature/24.jpg",
+  "insideBannerImage": "/assets/images/nature/24/bannerimg.jpg",
   "color": "#2e7d32",
   "coordinates": { "lat": 21.6558, "lng": 79.2242 },
   "overview": [

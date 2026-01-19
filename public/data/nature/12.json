@@ -2,7 +2,8 @@
   "id": "12",
   "title": "Phansad Wildlife Sanctuary",
   "subtitle": "A coastal forest paradise rich in biodiversity near Alibaug",
-  "bannerImage": "/assets/images/nature/phansad.jpg",
+  "bannerImage": "/assets/images/nature/12.jpg",
+  "insideBannerImage": "/assets/images/nature/12/bannerimg.jpg",
   "color": "#1b3a2d",
   "coordinates": { "lat": 18.4236, "lng": 72.9303 },
   "overview": [

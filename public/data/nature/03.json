@@ -2,7 +2,8 @@
   "id": "03",
   "title": "Bhimashankar Wildlife Sanctuary",
   "subtitle": "Sacred Forests of the Western Ghats",
-  "bannerImage": "/images/nature/bhimashankar/banner.jpg",
+  "bannerImage": "/assets/images/nature/03.png",
+  "insideBannerImage": "/assets/images/nature/03/bannerimg.jpg",
   "color": "#1B4D3E",
   "coordinates": { "lat": 19.0721, "lng": 73.5358 },
   "overview": [

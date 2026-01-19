@@ -2,7 +2,8 @@
   "id": "22",
   "title": "Panhala",
   "subtitle": "The Historic Hill Station of Shivaji Maharaj",
-  "bannerImage": "/images/hillstations/panhala/banner.jpg",
+  "bannerImage": "/assets/images/forts/22.jpg",
+  "insideBannerImage": "/assets/images/forts/22/bannerimg.jpg",
   "color": "#4a5d73",
   "coordinates": { "lat": 16.8114, "lng": 74.1103 },
   "overview": [

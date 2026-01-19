@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 
 // Context & Components
@@ -17,7 +18,19 @@ import ReligiousList from "./components/ReligiousList";
 import CulturalList from "./components/CulturalList";
 import Translator from "./components/commonComponents/Translator";
 import MaharashtraChat from "./components/MaharashtraChat";
-import InteractiveMap from "./components/InteractiveMap";
+
+// ✅ CRITICAL FIX: Load the Map with SSR disabled to prevent build crashes
+const InteractiveMap = dynamic(() => import("./components/InteractiveMap"), { 
+  ssr: false,
+  loading: () => (
+    <div className="container py-5 text-center bg-light rounded-4" style={{ height: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div>
+        <div className="spinner-border text-primary mb-2" role="status"></div>
+        <p className="text-muted small fw-bold">Mapping the Great State...</p>
+      </div>
+    </div>
+  )
+});
 
 // Custom Hooks
 import useFastParallax from "@/hooks/useFastParallax";
@@ -45,7 +58,6 @@ export default function Home() {
     <main className="bg-light-soft">
       {/* 🎭 LUXURY HERO SECTION */}
       <header className="hero-editorial">
-        {/* Left Side: Visual Storyteller */}
         <div className="hero-visual-pane">
           <div className="hero-bg-zoom">
             <Image 
@@ -59,7 +71,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right Side: Content & Action */}
         <div className="hero-content-pane">
           <motion.div 
             initial={{ opacity: 0, x: 50 }}
@@ -90,15 +101,15 @@ export default function Home() {
           </motion.div>
         </div>
 
-        {/* Bottom Floating Stats (Optional Attractive Detail) */}
         <div className="hero-floating-footer d-none d-md-flex">
           <div className="stat-item"><strong>720km</strong> Coastline</div>
           <div className="stat-item"><strong>350+</strong> Forts</div>
           <div className="stat-item"><strong>UNESCO</strong> Heritage Sites</div>
         </div>
       </header>
+
       {/* 🧩 BENTO CATEGORY GRID */}
-      <section className="container py-5">
+      <section className="container py-5"  id="overview">
         <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
           {sections.map((section, idx) => (
             <div key={section.id} data-aos="fade-up" data-aos-delay={idx * 100}>
@@ -118,10 +129,14 @@ export default function Home() {
       </section>
 
       {/* 🗺️ GEOGRAPHICAL INTERACTIVE MAP */}
-      <div id="map-explorer" data-aos="fade-up">
-        <InteractiveMap />
-      </div>
-
+      {/* Wrapped in a container to maintain editorial spacing */}
+      <section className="container mb-5" id="map-explorer" data-aos="fade-up">
+         <div className="section-header mb-4 text-center">
+            <h2 className="fw-bold"><Translator text="Explore the Map" targetLang={language} /></h2>
+            <p className="text-muted"><Translator text="Navigate through the diverse regions of the Great State" targetLang={language} /></p>
+         </div>
+         <InteractiveMap />
+      </section>
 
       {/* 🏔️ CONTENT LISTINGS (Horizontal Sliders) */}
       <div className="content-staggered">
@@ -133,11 +148,8 @@ export default function Home() {
         <div className="slider-item"><CulturalList /></div>
       </div>
 
-
-      {/* <MaharashtraChat /> */}
-
       <style jsx>{`
-        .bg-light-soft { background: #fff; }
+                .bg-light-soft { background: #fff; }
         
         /* Hero Styling */
         .hero-container {
@@ -170,7 +182,7 @@ export default function Home() {
           line-height: 0.9;
           letter-spacing: -2px;
         }
-        .text-accent { color: #00aaff; font-style: italic; }
+        .text-accent { color: var(--primary-color); font-style: italic; }
 
         /* Typography & Overlays */
         .section-title-editorial {
@@ -238,7 +250,7 @@ export default function Home() {
           transition: all 0.4s ease;
         }
         .btn-magazine:hover { 
-          background: #00aaff; 
+          background: var(--primary-color); 
           color: #fff; 
           transform: translateY(-5px);
           box-shadow: 0 20px 40px rgba(0, 170, 255, 0.3);
@@ -317,7 +329,7 @@ export default function Home() {
           backdrop-filter: blur(10px);
           padding: 8px 20px;
           border-radius: 100px;
-          color: #00aaff;
+          color: var(--primary-color);
           font-weight: 700;
           letter-spacing: 3px;
           text-transform: uppercase;
@@ -349,7 +361,7 @@ export default function Home() {
         .btn-luxury:hover {
           transform: translateY(-5px);
           box-shadow: 0 20px 40px rgba(0, 170, 255, 0.3);
-          background: #00aaff;
+          background: var(--primary-color);
           color: white;
         }
 
@@ -369,7 +381,7 @@ export default function Home() {
           border: 1px solid rgba(255,255,255,0.1);
         }
 
-        .stat-item strong { color: #00aaff; margin-right: 5px; }
+        .stat-item strong { color: var(--primary-color); margin-right: 5px; }
 
         @media (max-width: 768px) {
           .display-1 { font-size: 3.5rem; }

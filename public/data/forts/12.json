@@ -2,7 +2,8 @@
   "id": "12",
   "title": "Tikona Fort",
   "subtitle": "The Triangular Fort of the Sahyadris",
-  "bannerImage": "/images/forts/tikona/tikona-banner.jpg",
+  "bannerImage": "/assets/images/forts/12.png",
+  "insideBannerImage": "/assets/images/forts/12/bannerimg.jpg",
   "color": "#9c6b30",
   "coordinates": { "lat": 18.6300, "lng": 73.5133 },
   "overview": [

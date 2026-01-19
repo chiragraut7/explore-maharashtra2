@@ -2,7 +2,8 @@
   "id": "14",
   "title": "Karnala Fort",
   "subtitle": "The Fort within a Bird Sanctuary",
-  "bannerImage": "/images/forts/karnala/karnala-banner.jpg",
+  "bannerImage": "/assets/images/forts/14.jpg",
+  "insideBannerImage": "/assets/images/forts/14/bannerimg.jpg",
   "color": "#4b674a",
   "coordinates": { "lat": 18.8878, "lng": 73.1167 },
   "overview": [

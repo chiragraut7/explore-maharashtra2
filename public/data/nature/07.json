@@ -2,7 +2,8 @@
   "id": "07",
   "title": "Malshej Ghat",
   "subtitle": "The Misty Mountain Pass of Maharashtra",
-  "bannerImage": "/images/nature/malshej/banner.jpg",
+  "bannerImage": "/assets/images/nature/07.png",
+  "insideBannerImage": "/assets/images/nature/07/bannerimg.jpg",
   "color": "#3c8d40",
   "coordinates": { "lat": 19.3400, "lng": 73.7700 },
   "overview": [

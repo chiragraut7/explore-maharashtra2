@@ -2,7 +2,8 @@
   "id": "14",
   "title": "Navegaon National Park",
   "subtitle": "A Serene Forest Haven in Gondia",
-  "bannerImage": "/images/nature/navegaon/banner.jpg",
+  "bannerImage": "/assets/images/nature/14.jpg",
+  "insideBannerImage": "/assets/images/nature/14/bannerimg.jpg",
   "color": "#388e3c",
   "coordinates": { "lat": 20.9403, "lng": 80.1706 },
   "overview": [

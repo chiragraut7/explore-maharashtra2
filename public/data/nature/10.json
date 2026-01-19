@@ -2,7 +2,8 @@
   "id": "10",
   "title": "Melghat Tiger Reserve",
   "subtitle": "A Majestic Wilderness in the Satpura Ranges",
-  "bannerImage": "/images/nature/melghat-banner.jpg",
+  "bannerImage": "/assets/images/nature/10.jpg",
+  "insideBannerImage": "/assets/images/nature/10/bannerimg.jpg",
   "color": "#30534a",
   "coordinates": { "lat": 21.3653, "lng": 77.1047 },
   "overview": [

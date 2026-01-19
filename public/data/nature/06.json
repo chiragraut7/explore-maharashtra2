@@ -2,7 +2,8 @@
   "id": "06",
   "title": "Chikhaldara Wildlife Sanctuary",
   "subtitle": "A Scenic Hill Retreat and Wildlife Haven in the Satpura Ranges",
-  "bannerImage": "/images/nature/chikhaldara/banner.jpg",
+  "bannerImage": "/assets/images/nature/06.jpg",
+  "insideBannerImage": "/assets/images/nature/06/bannerimg.jpg",
   "color": "#2e7d32",
   "coordinates": { "lat": 21.2100, "lng": 77.7200 },
   "overview": [

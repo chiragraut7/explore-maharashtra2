@@ -2,7 +2,8 @@
   "id": "21",
   "title": "Thoseghar Waterfall",
   "subtitle": "Maharashtra’s Majestic Cascading Wonder",
-  "bannerImage": "/assets/images/nature/thoseghar-waterfall.jpg",
+  "bannerImage": "/assets/images/nature/21.jpg",
+  "insideBannerImage": "/assets/images/nature/21/bannerimg.jpg",
   "color": "#1e88e5",
   "coordinates": { "lat": 17.5997, "lng": 73.8539 },
   "overview": [

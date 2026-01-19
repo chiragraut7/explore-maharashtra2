@@ -2,7 +2,8 @@
   "id": "04",
   "title": "Sinhagad Fort",
   "subtitle": "The Fort of the Brave Lion",
-  "bannerImage": "/images/forts/sinhagad/sinhagad-banner.jpg",
+  "bannerImage": "/assets/images/forts/04.png",
+  "insideBannerImage": "/assets/images/forts/04/bannerimg.jpg",
   "color": "#6a3b12",
   "coordinates": { "lat": 18.3663, "lng": 73.7554 },
   "overview": [

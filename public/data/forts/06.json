@@ -2,7 +2,8 @@
   "id": "06",
   "title": "Torna Fort",
   "subtitle": "Prachandgad – The First Fort Captured by Chhatrapati Shivaji Maharaj",
-  "bannerImage": "/images/forts/torna/torna-banner.jpg",
+  "bannerImage": "/assets/images/forts/06.jpg",
+  "insideBannerImage": "/assets/images/forts/06/bannerimg.jpg",
   "color": "#6b3e26",
   "coordinates": { "lat": 18.2764, "lng": 73.6128 },
   "overview": [

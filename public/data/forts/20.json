@@ -2,7 +2,8 @@
   "id": "20",
   "title": "Vijaydurg Fort",
   "subtitle": "The Gibraltar of the East and Maratha Naval Stronghold",
-  "bannerImage": "/images/forts/vijaydurg/vijaydurg-banner.jpg",
+  "bannerImage": "/assets/images/forts/20.jpg",
+  "insideBannerImage": "/assets/images/forts/20/bannerimg.jpg",
   "color": "#2b5a7d",
   "overview": [
     "Known as the 'Gibraltar of the East', Vijaydurg Fort is one of Maharashtra’s oldest and strongest sea forts. Originally built by Raja Bhoja II of the Shilahar dynasty and later expanded by Chhatrapati Shivaji Maharaj, it stands majestically on the Konkan coast.",

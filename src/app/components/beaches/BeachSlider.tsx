@@ -8,24 +8,25 @@ import { Navigation, Autoplay, FreeMode, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import 'swiper/css/free-mode' // Added for smooth gliding
+import 'swiper/css/free-mode'
 
 import BeachCard from './BeachCard'
 import { Item } from '@/app/types'
 
 interface BeachSliderProps {
   beaches: Item[]
-  category: string
-  generateSlug: (id?: string) => string
+  category: string;
+  // ✅ This signature matches the requirement for optional IDs
+  generateSlug: (id?: string) => string 
 }
 
 const categoryMeta: Record<string, { color: string; icon: string; label: string }> = {
   beaches: { color: '#0077be', icon: 'fa-umbrella-beach', label: 'Discover Shore' },
-  hills: { color: '#2d5a27', icon: 'fa-cloud-sun-rain', label: 'Explore Peaks' },
-  forts: { color: '#7b5a3e', icon: 'fa-chess-rook', label: 'Visit Fortress' },
-  nature: { color: '#1b4332', icon: 'fa-paw', label: 'Into the Wild' },
-  religious: { color: '#f29100', icon: 'fa-om', label: 'Seek Blessings' },
-  cultural: { color: '#6a0dad', icon: 'fa-masks-theater', label: 'Experience Art' },
+  hills: { color: '#2d5a27', icon: 'fa-mountain-sun', label: 'Explore Peaks' },
+  forts: { color: '#e2b23c', icon: 'fa-chess-rook', label: 'Visit Fortress' },
+  nature: { color: '#86a373', icon: 'fa-leaf', label: 'Into the Wild' },
+  religious: { color: '#f25135', icon: 'fa-om', label: 'Seek Blessings' },
+  culture: { color: '#d10068', icon: 'fa-masks-theater', label: 'Experience Art' },
 }
 
 const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSlug }) => {
@@ -57,7 +58,7 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
         modules={[Navigation, Autoplay, FreeMode, Pagination]}
         spaceBetween={30}
         slidesPerView={3}
-        freeMode={true} // Enabled for "Magazine" gliding feel
+        freeMode={true}
         grabCursor={true}
         navigation={{
           nextEl: '.swiper-next-custom',
@@ -87,14 +88,14 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
               category={category}
               generateSlug={generateSlug}
               btnLabel={currentMeta.label}
-              btnColor={currentMeta.color} // Passing brand color to card
+              btnColor={currentMeta.color}
             />
           </SwiperSlide>
         ))}
       </Swiper>
 
       {/* 📊 Thematic Progress Bar */}
-      <div className="progress-wrapper">
+      <div className="progress-wrapper mb-4">
         <div className="custom-progress-bar"></div>
       </div>
 
@@ -121,47 +122,36 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
           display: flex; align-items: center; justify-content: center;
           font-size: 1.4rem; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-
         .premium-slider-wrapper:hover .category-icon-box {
           transform: scale(1.1) rotate(-8deg);
           box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
         }
-
         .accent-line { width: 40px; height: 4px; margin-top: 4px; border-radius: 2px; }
         .tracking-widest { letter-spacing: 0.25em; }
-
         .progress-wrapper {
           height: 2px; width: 100%; background: rgba(0,0,0,0.05);
           border-radius: 10px; overflow: hidden; position: relative;
         }
-
         :global(.custom-progress-bar .swiper-pagination-progressbar-fill) {
           background: ${currentMeta.color} !important;
         }
-
         .swiper-prev-custom, .swiper-next-custom {
           width: 44px; height: 44px; background: #fff;
           border: 1px solid rgba(0,0,0,0.06); color: #444;
           border-radius: 50%; cursor: pointer;
           display: flex; align-items: center; justify-content: center;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: all 0.3s ease;
         }
-
         .swiper-prev-custom:hover, .swiper-next-custom:hover {
           background: ${currentMeta.color}; color: #fff;
           border-color: ${currentMeta.color}; transform: translateY(-2px);
         }
-
         .scroll-hint { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: #888; }
         .hint-arrow { animation: nudge 2s infinite; color: ${currentMeta.color}; }
-
         @keyframes nudge {
           0%, 100% { transform: translateX(0); }
           50% { transform: translateX(6px); }
         }
-
-        :global(.swiper-button-next), :global(.swiper-button-prev) { display: none !important; }
-
         @media (max-width: 768px) {
            .category-icon-box { width: 40px; height: 40px; font-size: 1.1rem; }
            .scroll-hint-container { display: none !important; }
@@ -171,4 +161,4 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
   )
 }
 
-export default BeachSlider
+export default BeachSlider;

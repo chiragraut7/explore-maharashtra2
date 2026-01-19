@@ -2,7 +2,8 @@
   "id": "16",
   "title": "Murud-Janjira Fort",
   "subtitle": "The Invincible Sea Fort of Maharashtra",
-  "bannerImage": "/images/forts/murud-janjira/murud-banner.jpg",
+  "bannerImage": "/assets/images/forts/16.jpg",
+  "insideBannerImage": "/assets/images/forts/16/bannerimg.jpg",
   "color": "#0f766e",
   "coordinates": { "lat": 18.2994, "lng": 72.9631 },
   "overview": [

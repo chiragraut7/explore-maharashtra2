@@ -2,7 +2,8 @@
   "id": "23",
   "title": "Matheran Hill Forest",
   "subtitle": "A Tranquil Eco-Sensitive Hill with Red Soil Trails and Dense Greenery",
-  "bannerImage": "/images/nature/matheran/banner.jpg",
+  "bannerImage": "/assets/images/nature/23.jpg",
+  "insideBannerImage": "/assets/images/nature/23/bannerimg.jpg",
   "color": "#4caf50",
   "coordinates": { "lat": 18.9850, "lng": 73.2678 },
   "overview": [

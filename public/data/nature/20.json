@@ -2,7 +2,8 @@
   "id": "20",
   "title": "Devkund Waterfall",
   "subtitle": "The Hidden Gem of Raigad District",
-  "bannerImage": "/images/nature/devkund/banner.jpg",
+  "bannerImage": "/assets/images/nature/20.jpg",
+  "insideBannerImage": "/assets/images/nature/20/bannerimg.jpg",
   "color": "#3baea0",
   "coordinates": { "lat": 18.4261, "lng": 73.3422 },
   "overview": [
