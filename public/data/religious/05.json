@@ -2,7 +2,8 @@
   "id": "05",
   "title": "Trimbakeshwar Jyotirlinga Temple",
   "subtitle": "One of the twelve sacred Jyotirlingas dedicated to Lord Shiva",
-  "bannerImage": "/images/religious/trimbakeshwar/banner.jpg",
+  "bannerImage": "/assets/images/religious/05.jpg",
+  "insideBannerImage": "/assets/images/religious/05/bannerimg.jpg",
   "color": "#c9b9a6",
   "coordinates": { "lat": 19.9325, "lng": 73.5308 },
   "overview": [

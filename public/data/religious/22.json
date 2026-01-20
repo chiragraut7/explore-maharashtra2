@@ -2,7 +2,8 @@
   "id": "22",
   "title": "Baneshwar Temple, Nasrapur",
   "subtitle": "An Ancient Shiva Temple Amidst Nature near Pune",
-  "bannerImage": "/images/religious/test/baneshwar-nasrapur/banner.jpg",
+  "bannerImage": "/assets/images/religious/22.jpg",
+  "insideBannerImage": "/assets/images/religious/22/bannerimg.jpg",
   "color": "#4b6043",
   "coordinates": { "lat": 18.2567, "lng": 73.8822 },
   "overview": [

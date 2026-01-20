@@ -2,7 +2,8 @@
   "id": "15",
   "title": "Gajanan Maharaj Temple",
   "subtitle": "Sacred Shrine of Saint Gajanan Maharaj, Shegaon",
-  "bannerImage": "/images/religious/shegaon/banner.jpg",
+  "bannerImage": "/assets/images/religious/15.jpg",
+  "insideBannerImage": "/assets/images/religious/15/bannerimg.jpg",
   "color": "#e0b45c",
   "coordinates": { "lat": 20.8419, "lng": 76.6931 },
   "overview": [

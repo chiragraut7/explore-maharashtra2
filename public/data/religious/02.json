@@ -2,7 +2,8 @@
   "id": "02",
   "title": "Pandharpur Vitthal Rukmini Temple",
   "subtitle": "The Spiritual Capital of Maharashtra’s Bhakti Movement",
-  "bannerImage": "/images/religious/pandharpur/banner.jpg",
+  "bannerImage": "/assets/images/religious/02.jpg",
+  "insideBannerImage": "/assets/images/religious/02/bannerimg.jpg",
   "color": "#e07a5f",
   "coordinates": { "lat": 17.6775, "lng": 75.3275 },
   "overview": [

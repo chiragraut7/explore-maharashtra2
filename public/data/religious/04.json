@@ -2,7 +2,8 @@
   "id": "04",
   "title": "Mahalaxmi Temple, Kolhapur",
   "subtitle": "One of the Shakti Peethas of Goddess Laxmi",
-  "bannerImage": "/images/religious/mahalaxmi-kolhapur/banner.jpg",
+  "bannerImage": "/assets/images/religious/04.jpg",
+  "insideBannerImage": "/assets/images/religious/04/bannerimg.jpg",
   "color": "#B91C1C",
   "coordinates": { "lat": 16.6944, "lng": 74.2239 },
   "overview": [

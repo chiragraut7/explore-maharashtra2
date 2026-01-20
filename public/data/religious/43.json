@@ -2,7 +2,8 @@
   "id": "43",
   "title": "Saptashrungi Temple",
   "subtitle": "Abode of Goddess Saptashrungi Nivasini in the Sahyadris",
-  "bannerImage": "/images/religious/vani/banner.jpg",
+  "bannerImage": "/assets/images/religious/43.jpg",
+  "insideBannerImage": "/assets/images/religious/43/bannerimg.jpg",
   "color": "#e85d04",
   "coordinates": { "lat": 20.3889, "lng": 73.9103 },
   "overview": [

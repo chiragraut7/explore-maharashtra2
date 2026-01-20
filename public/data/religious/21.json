@@ -2,7 +2,8 @@
   "id": "21",
   "title": "Mumbadevi Temple",
   "subtitle": "The Ancient Goddess Who Gave Mumbai Its Name",
-  "bannerImage": "/images/religious/mumbadevi/banner.jpg",
+  "bannerImage": "/assets/images/religious/21.jpg",
+  "insideBannerImage": "/assets/images/religious/21/bannerimg.jpg",
   "color": "#D97706",
   "coordinates": { "lat": 18.9519, "lng": 72.8319 },
   "overview": [

@@ -2,7 +2,8 @@
   "id": "12",
   "title": "Shani Shingnapur Temple",
   "subtitle": "The village protected by Lord Shani — where doors have no locks",
-  "bannerImage": "/images/religious/shani-shingnapur/banner.jpg",
+  "bannerImage": "/assets/images/religious/12.jpg",
+  "insideBannerImage": "/assets/images/religious/12/bannerimg.jpg",
   "color": "#d9c6a5",
   "coordinates": { "lat": 19.3989, "lng": 74.8219 },
   "overview": [

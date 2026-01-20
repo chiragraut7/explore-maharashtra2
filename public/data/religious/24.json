@@ -2,7 +2,8 @@
   "id": "24",
   "title": "Siddhivinayak Temple, Siddhatek",
   "subtitle": "The second Ashtavinayak shrine – Lord Ganesha as the Bestower of Success",
-  "bannerImage": "/images/religious/siddhatek/banner.jpg",
+  "bannerImage": "/assets/images/religious/24.jpg",
+  "insideBannerImage": "/assets/images/religious/24/bannerimg.jpg",
   "color": "#e07b39",
   "coordinates": { "lat": 18.3333, "lng": 74.8333 },
   "overview": [

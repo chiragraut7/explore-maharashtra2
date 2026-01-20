@@ -2,7 +2,8 @@
   "id": "06",
   "title": "Aundha Nagnath Temple",
   "subtitle": "The First Jyotirlinga of Lord Shiva in Maharashtra",
-  "bannerImage": "/images/religious/aundha-nagnath/banner.jpg",
+  "bannerImage": "/assets/images/religious/06.jpg",
+  "insideBannerImage": "/assets/images/religious/06/bannerimg.jpg",
   "color": "#5c4b8a",
   "coordinates": { "lat": 19.5336, "lng": 77.0422 },
   "overview": [

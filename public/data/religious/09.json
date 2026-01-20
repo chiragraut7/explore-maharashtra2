@@ -2,7 +2,8 @@
   "id": "siddhivinayak-temple",
   "title": "Siddhivinayak Temple",
   "subtitle": "The Most Revered Ganesh Temple of Mumbai",
-  "bannerImage": "/images/religious/siddhivinayak/banner.jpg",
+  "bannerImage": "/assets/images/religious/09.jpg",
+  "insideBannerImage": "/assets/images/religious/09/bannerimg.jpg",
   "color": "#f4b400",
   "coordinates": { "lat": 19.0169, "lng": 72.8303 },
   "overview": [

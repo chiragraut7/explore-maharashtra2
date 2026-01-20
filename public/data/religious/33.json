@@ -2,7 +2,8 @@
   "id": "33",
   "title": "Ramtek Temple",
   "subtitle": "A Sacred Hill Shrine Dedicated to Lord Rama near Nagpur",
-  "bannerImage": "/images/religious/ramtek-temple/banner.jpg",
+  "bannerImage": "/assets/images/religious/33.jpg",
+  "insideBannerImage": "/assets/images/religious/33/bannerimg.jpg",
   "color": "#C04000",
   "coordinates": { "lat": 21.3931, "lng": 79.3275 },
   "overview": [

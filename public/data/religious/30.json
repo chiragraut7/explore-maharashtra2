@@ -2,7 +2,8 @@
   "id": "30",
   "title": "Mahaganapati Temple",
   "subtitle": "Ranjangaon, Pune",
-  "bannerImage": "/images/religious/mahaganapati-ranjangaon/banner.jpg",
+  "bannerImage": "/assets/images/religious/30.jpg",
+  "insideBannerImage": "/assets/images/religious/30/bannerimg.jpg",
   "color": "#f9c74f",
   "coordinates": { "lat": 18.7533, "lng": 74.4753 },
   "overview": [

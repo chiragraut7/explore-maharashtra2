@@ -2,7 +2,8 @@
   "id": "31",
   "title": "Jyotiba Temple, Kolhapur",
   "subtitle": "Abode of Lord Jyotiba — The Guardian Deity of Kolhapur",
-  "bannerImage": "/images/religious/jyotiba-temple/banner.jpg",
+  "bannerImage": "/assets/images/religious/31.jpg",
+  "insideBannerImage": "/assets/images/religious/31/bannerimg.jpg",
   "color": "#7C3AED",
   "coordinates": { "lat": 16.7933, "lng": 74.1803 },
   "overview": [

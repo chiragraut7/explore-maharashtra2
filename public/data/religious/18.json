@@ -2,7 +2,8 @@
   "id": "18",
   "title": "Shri Vitthal-Rukmini Temple",
   "subtitle": "Dehu, Pune",
-  "bannerImage": "/images/religious/vitthal-dehu/banner.jpg",
+  "bannerImage": "/assets/images/religious/18.jpg",
+  "insideBannerImage": "/assets/images/religious/18/bannerimg.jpg",
   "color": "#f7e6b2",
   "coordinates": { "lat": 16.3333, "lng": 73.3000 },
   "overview": [

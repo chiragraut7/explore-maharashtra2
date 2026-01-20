@@ -2,7 +2,8 @@
   "id": "40",
   "title": "Mahalaxmi Temple, Mumbai",
   "subtitle": "A Sacred Seaside Shrine Dedicated to Goddess Mahalaxmi",
-  "bannerImage": "/images/religious/test/mahalaxmi-mumbai/banner.jpg",
+  "bannerImage": "/assets/images/religious/40.jpg",
+  "insideBannerImage": "/assets/images/religious/40/bannerimg.jpg",
   "color": "#b22222",
   "coordinates": { "lat": 18.9772, "lng": 72.8067 },
   "overview": [

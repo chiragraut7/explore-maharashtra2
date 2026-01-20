@@ -2,7 +2,8 @@
   "id": "00",
   "title": "Bail Pola Festival",
   "subtitle": "A Farmer’s Celebration of Strength and Gratitude",
-  "bannerImage": "/images/cultural/bail-pola-festival/banner.jpg",
+  "bannerImage": "/assets/images/culture/00.jpg",
+  "insideBannerImage": "/assets/images/culture/00/bannerimg.jpg",
   "color": "#9C661F",
   "overview": [
     "Bail Pola is one of Maharashtra’s most heartfelt rural festivals, celebrated by farmers to honor their bulls — the unsung heroes of agriculture. It symbolizes respect, gratitude, and the deep bond between humans and animals that sustain rural life.",

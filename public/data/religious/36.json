@@ -2,7 +2,8 @@
   "id": "36",
   "title": "Kopeshwar Temple, Khidrapur",
   "subtitle": "An Architectural Marvel Dedicated to Lord Shiva and Vishnu",
-  "bannerImage": "/images/religious/test/kopeshwar-khidrapur/banner.jpg",
+  "bannerImage": "/assets/images/religious/36.jpg",
+  "insideBannerImage": "/assets/images/religious/36/bannerimg.jpg",
   "color": "#4b2e83",
   "coordinates": { "lat": 16.5911, "lng": 74.6947 },
   "overview": [

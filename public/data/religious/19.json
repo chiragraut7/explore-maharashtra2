@@ -2,7 +2,8 @@
   "id": "19",
   "title": "Kunkeshwar Temple",
   "subtitle": "Seaside Shiva Temple of Devotion and Beauty in Sindhudurg",
-  "bannerImage": "/images/religious/kunkeshwar/banner.jpg",
+  "bannerImage": "/assets/images/religious/19.jpg",
+  "insideBannerImage": "/assets/images/religious/19/bannerimg.jpg",
   "color": "#0f766e",
   "coordinates": { "lat": 16.3333, "lng": 73.3000 },
   "overview": [

@@ -2,7 +2,8 @@
   "id": "03",
   "title": "Tulja Bhavani Temple",
   "subtitle": "Divine Abode of Goddess Bhavani in Osmanabad",
-  "bannerImage": "/images/religious/tuljapur/banner.jpg",
+  "bannerImage": "/assets/images/religious/03.jpg",
+  "insideBannerImage": "/assets/images/religious/03/bannerimg.jpg",
   "color": "#C2410C",
   "coordinates": { "lat": 18.0114, "lng": 76.1256 },
   "overview": [

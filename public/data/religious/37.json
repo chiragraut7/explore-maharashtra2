@@ -2,7 +2,8 @@
   "id": "37",
   "title": "Kalaram Temple",
   "subtitle": "A Sacred Shrine Dedicated to Lord Rama in Nashik",
-  "bannerImage": "/images/religious/kalaram/banner.jpg",
+  "bannerImage": "/assets/images/religious/37.jpg",
+  "insideBannerImage": "/assets/images/religious/37/bannerimg.jpg",
   "color": "#9C27B0",
   "coordinates": { "lat": 20.0075, "lng": 73.7919 },
   "overview": [

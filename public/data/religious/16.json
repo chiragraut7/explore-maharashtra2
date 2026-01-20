@@ -2,7 +2,8 @@
   "id": "16",
   "title": "Dattatreya Temple, Gangapur",
   "subtitle": "A Sacred Abode of Lord Dattatreya on the Banks of Bhima River",
-  "bannerImage": "/images/religious/test/dattatreya-gangapur/banner.jpg",
+  "bannerImage": "/assets/images/religious/16.jpg",
+  "insideBannerImage": "/assets/images/religious/16/bannerimg.jpg",
   "color": "#6b4226",
   "coordinates": { "lat": 17.1856, "lng": 76.2625 },
   "overview": [

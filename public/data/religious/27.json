@@ -2,7 +2,8 @@
   "id": "27",
   "title": "Chintamani Temple, Theur",
   "subtitle": "The Lord Who Removes Worries — Fifth Temple of the Sacred Ashtavinayak Yatra",
-  "bannerImage": "/images/religious/theur/banner.jpg",
+  "bannerImage": "/assets/images/religious/27.jpg",
+  "insideBannerImage": "/assets/images/religious/27/bannerimg.jpg",
   "color": "#ef4444",
   "coordinates": { "lat": 18.5258, "lng": 73.9903 },
   "overview": [

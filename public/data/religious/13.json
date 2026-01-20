@@ -2,7 +2,8 @@
   "id": "13",
   "title": "Ekvira Devi Temple",
   "subtitle": "Ancient Cave Temple of Goddess Ekvira near Lonavala",
-  "bannerImage": "/images/religious/ekvira/banner.jpg",
+  "bannerImage": "/assets/images/religious/13.jpg",
+  "insideBannerImage": "/assets/images/religious/13/bannerimg.jpg",
   "color": "#c2410c",
   "coordinates": { "lat": 18.7594, "lng": 73.4736 },
   "overview": [

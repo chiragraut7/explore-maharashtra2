@@ -2,7 +2,8 @@
   "id": "32",
   "title": "Yogeshwari Devi Temple",
   "subtitle": "Ambajogai, Beed District",
-  "bannerImage": "/images/religious/yogeshwari-ambajogai/banner.jpg",
+  "bannerImage": "/assets/images/religious/32.jpg",
+  "insideBannerImage": "/assets/images/religious/32/bannerimg.jpg",
   "color": "#f8e5cc",
   "coordinates": { "lat": 18.7303, "lng": 76.4464 },
   "overview": [

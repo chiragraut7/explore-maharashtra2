@@ -2,7 +2,8 @@
   "id": "35",
   "title": "Sant Tukaram Maharaj Temple, Dehu",
   "subtitle": "A Sacred Abode of the Great Saint Tukaram Maharaj near Pune",
-  "bannerImage": "/images/religious/tukaram-dehu/banner.jpg",
+  "bannerImage": "/assets/images/religious/35.jpg",
+  "insideBannerImage": "/assets/images/religious/35/bannerimg.jpg",
   "color": "#C67C2F",
   "coordinates": { "lat": 18.7189, "lng": 73.7667 },
   "overview": [

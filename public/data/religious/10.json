@@ -2,7 +2,8 @@
     "id": "10",
     "title": "Bhimashankar Temple",
     "subtitle": "Sacred Jyotirlinga of Lord Shiva Amid the Sahyadris",
-    "bannerImage": "/images/religious/bhimashankar/banner.jpg",
+  "bannerImage": "/assets/images/religious/10.jpg",
+  "insideBannerImage": "/assets/images/religious/10/bannerimg.jpg",
     "color": "#5A7D3C",
     "coordinates": { "lat": 19.0721, "lng": 73.5358 },
     "overview": [

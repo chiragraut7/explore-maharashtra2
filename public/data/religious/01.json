@@ -2,7 +2,8 @@
   "id": "01",
   "title": "Shirdi Sai Baba Temple",
   "subtitle": "The Sacred Abode of Shri Sai Baba in Ahmednagar",
-  "bannerImage": "/images/religious/shirdi/banner.jpg",
+  "bannerImage": "/assets/images/religious/01.jpg",
+  "insideBannerImage": "/assets/images/religious/01/bannerimg.jpg",
   "color": "#FFB300",
   "coordinates": { "lat": 19.7663, "lng": 74.4764 },
   "overview": [

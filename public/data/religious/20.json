@@ -2,7 +2,8 @@
   "id": "20",
   "title": "Parli Vaijnath Temple",
   "subtitle": "One of the Twelve Jyotirlingas of Lord Shiva",
-  "bannerImage": "/images/religious/parli-vaijnath/banner.jpg",
+  "bannerImage": "/assets/images/religious/20.jpg",
+  "insideBannerImage": "/assets/images/religious/20/bannerimg.jpg",
   "color": "#B91C1C",
   "coordinates": { "lat": 18.8486, "lng": 76.5367 },
   "overview": [

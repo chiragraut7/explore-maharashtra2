@@ -2,7 +2,8 @@
   "id": "14",
   "title": "Akkalkot Swami Samarth Temple",
   "subtitle": "The Sacred Abode of Shri Swami Samarth Maharaj in Solapur District",
-  "bannerImage": "/images/religious/akkalkot/banner.jpg",
+  "bannerImage": "/assets/images/religious/14.jpg",
+  "insideBannerImage": "/assets/images/religious/14/bannerimg.jpg",
   "color": "#D97706",
   "coordinates": { "lat": 17.5186, "lng": 76.2081 },
   "overview": [

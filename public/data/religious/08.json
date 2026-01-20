@@ -2,7 +2,8 @@
   "id": "08",
   "title": "Jejuri Khandoba Temple",
   "subtitle": "The Golden Hill Shrine of Lord Khandoba — Guardian Deity of Maharashtra",
-  "bannerImage": "/images/religious/jejuri/banner.jpg",
+  "bannerImage": "/assets/images/religious/08.jpg",
+  "insideBannerImage": "/assets/images/religious/08/bannerimg.jpg",
   "color": "#D97706",
   "coordinates": { "lat": 18.2753, "lng": 74.1594 },
   "overview": [

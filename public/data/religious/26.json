@@ -2,7 +2,8 @@
   "id": "26",
   "title": "Varadvinayak Temple, Mahad",
   "subtitle": "The Granter of Wishes among the revered Ashtavinayak Temples",
-  "bannerImage": "/images/religious/mahad/banner.jpg",
+  "bannerImage": "/assets/images/religious/26.jpg",
+  "insideBannerImage": "/assets/images/religious/26/bannerimg.jpg",
   "color": "#f59e0b",
   "coordinates": { "lat": 18.8167, "lng": 73.3583 },
   "overview": [

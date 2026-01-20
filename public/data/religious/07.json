@@ -2,7 +2,8 @@
   "id": "07",
   "title": "Grishneshwar Temple",
   "subtitle": "The Twelfth and Final Jyotirlinga of Lord Shiva near Ellora Caves",
-  "bannerImage": "/images/religious/grishneshwar/banner.jpg",
+  "bannerImage": "/assets/images/religious/07.jpg",
+  "insideBannerImage": "/assets/images/religious/07/bannerimg.jpg",
   "color": "#8B0000",
   "coordinates": { "lat": 20.0247, "lng": 75.1692 },
   "overview": [

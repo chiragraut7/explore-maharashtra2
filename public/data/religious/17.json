@@ -2,7 +2,8 @@
   "id": "17",
   "title": "Vitthal-Rukmini Temple, Alandi",
   "subtitle": "Sacred Town of Sant Dnyaneshwar Maharaj on the Banks of Indrayani River",
-  "bannerImage": "/images/religious/vitthal-alandi/banner.jpg",
+  "bannerImage": "/assets/images/religious/17.avif",
+  "insideBannerImage": "/assets/images/religious/17/bannerimg.jpg",
   "color": "#B45F06",
   "coordinates": { "lat": 18.6758, "lng": 73.8906 },
   "overview": [

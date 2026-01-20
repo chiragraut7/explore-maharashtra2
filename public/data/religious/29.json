@@ -2,7 +2,8 @@
   "id": "29",
   "title": "Vighneshwar Temple, Ozar",
   "subtitle": "The Remover of Obstacles – One of the Sacred Ashtavinayak Temples",
-  "bannerImage": "/images/religious/vighneshwar-ozar/banner.jpg",
+  "bannerImage": "/assets/images/religious/29.jpg",
+  "insideBannerImage": "/assets/images/religious/29/bannerimg.jpg",
   "color": "#f5a623",
   "coordinates": { "lat": 19.1667, "lng": 74.0000 },
   "overview": [

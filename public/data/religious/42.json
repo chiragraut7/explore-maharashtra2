@@ -2,7 +2,8 @@
   "id": "42",
   "title": "Shri Nrusinha Saraswati Temple, Narsobachi Wadi",
   "subtitle": "A Sacred Abode of Lord Dattatreya on the Banks of River Krishna",
-  "bannerImage": "/images/religious/narsobachi-wadi/banner.jpg",
+  "bannerImage": "/assets/images/religious/42.jpg",
+  "insideBannerImage": "/assets/images/religious/42/bannerimg.jpg",
   "color": "#8B0000",
   "coordinates": { "lat": 16.6853, "lng": 74.6044 },
   "overview": [

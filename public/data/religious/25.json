@@ -2,7 +2,8 @@
   "id": "25",
   "title": "Ballaleshwar Temple, Pali",
   "subtitle": "The only Ashtavinayak temple named after its devotee Ballal",
-  "bannerImage": "/images/religious/pali/banner.jpg",
+  "bannerImage": "/assets/images/religious/25.jpg",
+  "insideBannerImage": "/assets/images/religious/25/bannerimg.jpg",
   "color": "#f97316",
   "coordinates": { "lat": 18.5364, "lng": 73.2208 },
   "overview": [

@@ -2,7 +2,8 @@
   "id": "28",
   "title": "Girijatmaj Temple, Lenyadri",
   "subtitle": "The Cave Temple Where Goddess Parvati Worshipped Lord Ganesha",
-  "bannerImage": "/images/religious/lenyadri/banner.jpg",
+  "bannerImage": "/assets/images/religious/28.jpg",
+  "insideBannerImage": "/assets/images/religious/28/bannerimg.jpg",
   "color": "#d97706",
   "coordinates": { "lat": 19.2417, "lng": 73.8875 },
   "overview": [
