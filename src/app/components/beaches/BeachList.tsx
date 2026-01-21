@@ -40,7 +40,7 @@ const BeachList: React.FC = () => {
       {/* 🌊 HERO BANNER */}
       <div className="banner-wrapper mb-5">
         <ParallaxBanner
-          image="/assets/images/beachHomeBanner.jpg"
+          image="/assets/images/bannerImages/beahces.jpg"
           title="Konkan Coast"
         />
         <div className="banner-bottom-fade"></div>
@@ -53,11 +53,11 @@ const BeachList: React.FC = () => {
           <div className="col-lg-6 position-relative mb-5 mb-lg-0">
             <motion.div style={{ y: yImage }} className="beach-main-frame shadow-lg">
               <Image
-                src="/assets/images/info3.jpg"
+                src="/assets/images/bannerImages/beahces_1.jpg"
                 alt="Konkan Coastline"
                 width={800}
                 height={1000}
-                className="img-fluid heritage-img"
+                className="img-fluid heritage-img rounded-3"
               />
               {/* Floating Heritage Icon Badge */}
               <div className="beach-badge">
@@ -67,11 +67,11 @@ const BeachList: React.FC = () => {
             
             <div className="beach-sub-frame shadow-2xl d-none d-md-block">
               <Image
-                src="/assets/images/maharashtra-state-of-india.svg" // Or a secondary beach image
+                src="/assets/images/bannerImages/beahces_2.jpg"
                 alt="Coastal Map"
                 width={400}
                 height={300}
-                className="img-fluid rounded-3 bg-white p-3"
+                className="img-fluid rounded-3"
               />
             </div>
           </div>

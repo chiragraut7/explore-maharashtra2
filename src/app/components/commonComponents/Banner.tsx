@@ -5,12 +5,12 @@ import Translator from "../commonComponents/Translator";
 
 // ✅ 1. Define your common images map here
 const CATEGORY_BANNERS: Record<string, string> = {
-  beaches: "/assets/images/beachHomeBanner.jpg",
-  forts: "/assets/images/fortsHomeBanner.jpg",
-  hills: "/assets/images/hillsHomeBanner.jpg",
-  nature: "/assets/images/natureHomeBanner.jpg",
-  religious: "/assets/images/religiousHomeBanner.jpg",
-  culture: "/assets/images/culturalHomeBanner.jpg",
+      beaches: "/assets/images/bannerImages/beahces.jpg",
+      forts: "/assets/images/bannerImages/forts.jpg",
+      hills: "/assets/images/bannerImages/hills.jpg",
+      nature: "/assets/images/bannerImages/nature.jpg",
+      religious: "/assets/images/bannerImages/religious.jpg",
+      culture: "/assets/images/bannerImages/culture.jpg",
   
   // Aliases (just in case your data uses slightly different names)
   wildlife: "/assets/images/natureHomeBanner.jpg",

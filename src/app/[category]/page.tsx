@@ -42,14 +42,14 @@ export default function CategoryPage() {
 
  const getBannerImage = (cat: string) => {
     const images: Record<string, string> = {
-      beaches: "/assets/images/beachHomeBanner.jpg",
-      forts: "/assets/images/fortsHomeBanner.jpg",
-      hills: "/assets/images/hillsHomeBanner.jpg",
-      nature: "/assets/images/natureHomeBanner.jpg",
-      religious: "/assets/images/religiousHomeBanner.jpg",
-      culture: "/assets/images/culturalHomeBanner.jpg",
+      beaches: "/assets/images/bannerImages/beahces.jpg",
+      forts: "/assets/images/bannerImages/forts.jpg",
+      hills: "/assets/images/bannerImages/hills.jpg",
+      nature: "/assets/images/bannerImages/nature.jpg",
+      religious: "/assets/images/bannerImages/religious.jpg",
+      culture: "/assets/images/bannerImages/culture.jpg",
     };
-    return images[cat?.toLowerCase()] || "/assets/images/beachHomeBanner.jpg";
+    return images[cat?.toLowerCase()] || "/assets/images/bannerImages/beahces.jpg";
   };
 
   const getCategoryIcon = (cat: string) => {
@@ -267,7 +267,6 @@ export default function CategoryPage() {
 
       <style jsx global>{`
         .bg-dot-pattern { background-color: #fcfaf8; background-image: radial-gradient(#d5d5d5 0.7px, transparent 0.7px); background-size: 20px 20px; }
-        .bg-dot-pattern header { margin-bottom: -2rem; }
         
         .category-hero-container { height: 70vh; position: relative; overflow: hidden; display: flex; align-items: center; background: #000; }
         .hero-image-wrapper { position: absolute; inset: 0; z-index: 1; }
@@ -285,7 +284,7 @@ export default function CategoryPage() {
         .hero-curve-mask svg { width: 100%; height: auto; display: block; }
         
         /* TIMELINE CSS */
-        .timeline-line-container { width: 2px; top: 50px; bottom: 50px; height: auto; position: absolute; left: 50%; transform: translateX(-50%); z-index: 1; }
+        .timeline-line-container { width: 3px; top: 50px; bottom: 50px; height: auto; position: absolute; left: 50%; transform: translateX(-50%); z-index: 1; }
         .timeline-track { position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.05) 5%, rgba(0,0,0,0.05) 95%, transparent 100%); }
         .timeline-progress { position: absolute; top: 0; width: 100%; height: 100%; background: var(--primary-color); }
         

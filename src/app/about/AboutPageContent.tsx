@@ -148,7 +148,7 @@ export default function AboutPageContent() {
         }
         .hero-parallax-bg {
           position: absolute; inset: 0;
-          background: url('https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=80&w=1600') center/cover no-repeat fixed;
+          background: url('/assets/images/bannerImages/aboutBanner.jpg') center/cover no-repeat fixed;
           z-index: 0;
         }
         .hero-overlay {

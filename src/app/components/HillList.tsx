@@ -42,7 +42,7 @@ const HillList: React.FC = () => {
       {/* ⛰️ HERO BANNER */}
       <div className="banner-wrapper mb-5">
         <ParallaxBanner
-          image="/assets/images/hillsHomeBanner.jpg"
+          image="/assets/images/bannerImages/hills.jpg"
           title="Hill Stations"
         />
         <div className="banner-bottom-fade"></div>
@@ -55,11 +55,11 @@ const HillList: React.FC = () => {
           <div className="col-lg-6 position-relative mb-5 mb-lg-0">
             <div className="hill-main-frame shadow-lg">
               <Image
-                src="/assets/images/hillsHomeImg.jpg"
+                src="/assets/images/bannerImages/hills_1.jpg"
                 alt="Hill Station Hero"
                 width={800}
                 height={1000}
-                className="img-fluid heritage-img"
+                className="img-fluid rounded-3 heritage-img"
               />
               {/* Decorative Brand Badge */}
               <div className="hill-badge">
@@ -69,7 +69,7 @@ const HillList: React.FC = () => {
             
             <div className="hill-sub-frame shadow-2xl d-none d-md-block">
               <Image
-                src="/assets/images/hillsHomeImg1.jpg"
+                src="/assets/images/bannerImages/hills_2.jpg"
                 alt="Misty Valleys"
                 width={400}
                 height={300}
@@ -170,7 +170,6 @@ const HillList: React.FC = () => {
         .hill-main-frame {
           position: relative;
           z-index: 2;
-          border-left: 12px solid var(--secondary-color);
         }
 
         .hill-sub-frame {

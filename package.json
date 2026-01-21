@@ -18,7 +18,7 @@
     "aos": "^2.3.4",
     "axios": "^1.13.2",
     "bootstrap": "^5.3.8",
-    "framer-motion": "^12.26.2",
+    "framer-motion": "^12.27.5",
     "leaflet": "^1.9.4",
     "lenis": "^1.3.17",
     "next": "^16.0.10",

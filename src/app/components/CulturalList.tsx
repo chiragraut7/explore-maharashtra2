@@ -48,7 +48,7 @@ const CulturalList: React.FC = () => {
       {/* 🎭 HERO BANNER */}
       <div className="banner-wrapper mb-5">
         <ParallaxBanner
-          image="/assets/images/culturalHomeBanner.jpg"
+          image="/assets/images/bannerImages/culture.jpg"
           title="Cultural & Unique"
         />
         <div className="banner-bottom-fade"></div>
@@ -61,11 +61,11 @@ const CulturalList: React.FC = () => {
           <div className="col-lg-6 position-relative mb-5 mb-lg-0">
             <motion.div style={{ y: yImage }} className="culture-main-frame shadow-lg">
               <Image
-                src="/assets/images/culturalHomeImg1.jpg"
+                src="/assets/images/bannerImages/culture_1.jpg"
                 alt="Traditional Maharashtrian Arts"
                 width={800}
                 height={1000}
-                className="img-fluid heritage-img"
+                className="img-fluid rounded-3 heritage-img"
               />
               {/* Floating Culture Badge (Mask Icon) */}
               <div className="culture-badge">
@@ -75,11 +75,11 @@ const CulturalList: React.FC = () => {
             
             <div className="culture-sub-frame shadow-2xl d-none d-md-block">
               <Image
-                src="/assets/images/culturalHomeImg.jpg"
+                src="/assets/images/bannerImages/culture_2.jpg"
                 alt="Local Craftsmanship"
                 width={450}
                 height={350}
-                className="img-fluid shadow-sm"
+                className="img-fluid rounded-3 shadow-sm"
               />
             </div>
           </div>

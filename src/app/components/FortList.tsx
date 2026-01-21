@@ -48,7 +48,7 @@ const FortList: React.FC = () => {
       {/* 🏰 HERO BANNER */}
       <div className="banner-wrapper mb-5">
         <ParallaxBanner
-          image="/assets/images/fortsHomeBanner.jpg"
+          image="/assets/images/bannerImages/forts.jpg"
           title="Forts of Maharashtra"
         />
         <div className="banner-bottom-fade"></div>
@@ -61,11 +61,11 @@ const FortList: React.FC = () => {
           <div className="col-lg-6 position-relative mb-5 mb-lg-0">
             <motion.div style={{ y: yImage }} className="fort-main-frame shadow-lg">
               <Image
-                src="/assets/images/fortsHomeImg1.jpg"
+                src="/assets/images/bannerImages/forts_1.jpg"
                 alt="Maratha Fort Architecture"
                 width={800}
                 height={1000}
-                className="img-fluid heritage-img"
+                className="img-fluid rounded-3 heritage-img"
               />
               {/* Floating Fort Badge */}
               <div className="fort-badge">
@@ -75,11 +75,11 @@ const FortList: React.FC = () => {
             
             <div className="fort-sub-frame shadow-2xl d-none d-md-block">
               <Image
-                src="/assets/images/fortsHomeImg.jpg"
+                src="/assets/images/bannerImages/forts_2.jpg"
                 alt="Breathtaking View"
                 width={450}
                 height={350}
-                className="img-fluid shadow-sm"
+                className="img-fluid rounded-3 shadow-sm"
               />
             </div>
           </div>

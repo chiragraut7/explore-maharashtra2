@@ -48,7 +48,7 @@ const NatureList: React.FC = () => {
       {/* 🌿 HERO BANNER */}
       <div className="banner-wrapper mb-5">
         <ParallaxBanner
-          image="/assets/images/natureHomeBanner.jpg"
+          image="/assets/images/bannerImages/nature.jpg"
           title="Wildlife & Nature"
         />
         <div className="banner-bottom-fade"></div>
@@ -61,11 +61,11 @@ const NatureList: React.FC = () => {
           <div className="col-lg-6 position-relative mb-5 mb-lg-0">
             <motion.div style={{ y: yImage }} className="nature-main-frame shadow-lg">
               <Image
-                src="/assets/images/natureHomeImg1.jpg"
+          src="/assets/images/bannerImages/nature_1.jpg"
                 alt="Maharashtra Wilderness"
                 width={800}
                 height={1000}
-                className="img-fluid heritage-img"
+                className="img-fluid rounded-3 heritage-img"
               />
               {/* Floating Nature Badge */}
               <div className="nature-badge">
@@ -75,7 +75,7 @@ const NatureList: React.FC = () => {
             
             <div className="nature-sub-frame shadow-2xl d-none d-md-block">
               <Image
-                src="/assets/images/natureHomeImg.jpg"
+          src="/assets/images/bannerImages/nature_2.jpg"
                 alt="National Park View"
                 width={450}
                 height={350}

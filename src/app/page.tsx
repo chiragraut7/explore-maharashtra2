@@ -61,7 +61,7 @@ export default function Home() {
         <div className="hero-visual-pane">
           <div className="hero-bg-zoom">
             <Image 
-              src="/assets/images/hero-maharashtra.png" 
+              src="/assets/images/maharashtra-hero.jpg" 
               alt="Maharashtra Landscape" 
               fill 
               priority 

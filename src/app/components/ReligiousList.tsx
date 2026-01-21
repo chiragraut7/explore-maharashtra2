@@ -48,7 +48,7 @@ const ReligiousList: React.FC = () => {
       {/* 🕉️ HERO BANNER */}
       <div className="banner-wrapper mb-5">
         <ParallaxBanner
-          image="/assets/images/religiousHomeBanner.jpg"
+          image="/assets/images/bannerImages/religious.jpg"
           title="Religious Places"
         />
         <div className="banner-bottom-fade"></div>
@@ -61,11 +61,11 @@ const ReligiousList: React.FC = () => {
           <div className="col-lg-6 position-relative mb-5 mb-lg-0">
             <motion.div style={{ y: yImage }} className="spiritual-main-frame shadow-lg">
               <Image
-                src="/assets/images/religiousHomeImg1.jpg"
+                src="/assets/images/bannerImages/religious_1.jpg"
                 alt="Sacred Temple Architecture"
                 width={800}
                 height={1000}
-                className="img-fluid heritage-img"
+                className="img-fluid rounded-3 heritage-img"
               />
               {/* Floating Spiritual Badge */}
               <div className="spiritual-badge">
@@ -75,11 +75,11 @@ const ReligiousList: React.FC = () => {
             
             <div className="spiritual-sub-frame shadow-2xl d-none d-md-block">
               <Image
-                src="/assets/images/religiousHomeImg.jpg"
+                src="/assets/images/bannerImages/religious_2.jpg"
                 alt="Devotees and Rituals"
                 width={450}
                 height={350}
-                className="img-fluid shadow-sm"
+                className="img-fluid rounded-3 shadow-sm"
               />
             </div>
           </div>

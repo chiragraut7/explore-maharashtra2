@@ -2450,3 +2450,6 @@ html {
   margin-bottom: 0rem !important;
   padding-bottom: 0 !important;
 }
+.hero-curve-mask{
+  display: none !important;
+}
