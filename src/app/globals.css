@@ -2453,3 +2453,7 @@ html {
 .hero-curve-mask{
   display: none !important;
 }
+#dynamicModal .modal-body{
+    height: calc(100dvh - 120px);
+    overflow: auto;
+}
