@@ -23,11 +23,13 @@ import MaharashtraChat from "./components/MaharashtraChat";
 const InteractiveMap = dynamic(() => import("./components/InteractiveMap"), { 
   ssr: false,
   loading: () => (
-    <div className="container py-5 text-center bg-light rounded-4" style={{ height: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <div>
-        <div className="spinner-border text-primary mb-2" role="status"></div>
-        <p className="text-muted small fw-bold">Mapping the Great State...</p>
-      </div>
+    <div className="container py-5">
+        <div className="d-flex align-items-center justify-content-center bg-white rounded-5 shadow-sm border" style={{ height: '450px' }}>
+           <div className="text-center">
+              <div className="spinner-border text-primary mb-3" role="status"></div>
+              <p className="small fw-bold letter-spacing-2 text-muted text-uppercase">Loading Atlas...</p>
+           </div>
+        </div>
     </div>
   )
 });
@@ -56,7 +58,8 @@ export default function Home() {
 
   return (
     <main className="bg-light-soft">
-      {/* 🎭 LUXURY HERO SECTION */}
+      
+      {/* 🎭 1. LUXURY HERO SECTION */}
       <header className="hero-editorial">
         <div className="hero-visual-pane">
           <div className="hero-bg-zoom">
@@ -73,8 +76,8 @@ export default function Home() {
 
         <div className="hero-content-pane">
           <motion.div 
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             className="content-wrapper"
           >
@@ -103,43 +106,76 @@ export default function Home() {
 
         <div className="hero-floating-footer d-none d-md-flex">
           <div className="stat-item"><strong>720km</strong> Coastline</div>
+          <div className="stat-separator"></div>
           <div className="stat-item"><strong>350+</strong> Forts</div>
+          <div className="stat-separator"></div>
           <div className="stat-item"><strong>UNESCO</strong> Heritage Sites</div>
         </div>
       </header>
 
-      {/* 🧩 BENTO CATEGORY GRID */}
-      <section className="container py-5"  id="overview">
-        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
+      {/* 🧩 2. BENTO CATEGORY GRID */}
+      <section className="container py-5 position-relative" id="overview" style={{ zIndex: 2 }}>
+        
+        {/* Section Header */}
+        <div className="text-center mb-5" data-aos="fade-up">
+            <span className="badge bg-white border text-dark px-3 py-2 rounded-pill text-uppercase letter-spacing-2 fw-bold mb-3 shadow-sm">
+                <Translator text="Discover by Interest" targetLang={language} />
+            </span>
+            <h2 className="display-5 fw-bold mt-2">
+                <Translator text="Choose Your Adventure" targetLang={language} />
+            </h2>
+        </div>
+
+        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
           {sections.map((section, idx) => (
             <div key={section.id} data-aos="fade-up" data-aos-delay={idx * 100}>
               <Link href={section.link} className="text-decoration-none">
-                <div className="magazine-card" style={{ backgroundColor: section.color }}>
-                  <div className="magazine-icon-box">
-                    <Image src={section.image} alt={section.title} width={60} height={60} />
+                <motion.div 
+                    whileHover={{ y: -8 }}
+                    className="category-card h-100"
+                >
+                  {/* Background Blob for depth */}
+                  <div className="card-blob" style={{ background: section.color }}></div>
+                  
+                  <div className="card-content">
+                      <div 
+                        className="icon-squircle mb-3" 
+                        style={{ backgroundColor: `${section.color}15`, color: section.color }}
+                      >
+                        <Image src={section.image} alt={section.title} width={50} height={50} className="category-icon" />
+                      </div>
+                      
+                      <h3 className="h6 fw-bold text-dark mb-1">
+                        <Translator text={section.title} targetLang={language} />
+                      </h3>
+                      <span className="small text-muted text-uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.5px' }}>
+                        <Translator text="Explore" targetLang={language} />
+                      </span>
                   </div>
-                  <h3 className="magazine-card-title">
-                    <Translator text={section.title} targetLang={language} />
-                  </h3>
-                </div>
+                </motion.div>
               </Link>
             </div>
           ))}
         </div>
       </section>
 
-      {/* 🗺️ GEOGRAPHICAL INTERACTIVE MAP */}
-      {/* Wrapped in a container to maintain editorial spacing */}
+      {/* 🗺️ 3. GEOGRAPHICAL INTERACTIVE MAP */}
       <section className="container mb-5" id="map-explorer" data-aos="fade-up">
-         <div className="section-header mb-4 text-center">
-            <h2 className="fw-bold"><Translator text="Explore the Map" targetLang={language} /></h2>
-            <p className="text-muted"><Translator text="Navigate through the diverse regions of the Great State" targetLang={language} /></p>
+         <div className="bg-white p-4 rounded-5 shadow-sm border position-relative overflow-hidden">
+             <div className="section-header mb-4 text-center">
+                <h2 className="fw-bold h4 mb-1">
+                    <Translator text="Explore the Map" targetLang={language} />
+                </h2>
+                <p className="text-muted small">
+                    <Translator text="Navigate through the diverse regions of the Great State" targetLang={language} />
+                </p>
+             </div>
+             <InteractiveMap />
          </div>
-         <InteractiveMap />
       </section>
 
-      {/* 🏔️ CONTENT LISTINGS (Horizontal Sliders) */}
-      <div className="content-staggered">
+      {/* 🏔️ 4. CONTENT LISTINGS (Horizontal Sliders) */}
+      <div className="content-staggered pb-5">
         <div className="slider-item"><BeachList /></div>
         <div className="slider-item"><HillList /></div>
         <div className="slider-item"><FortList /></div>
@@ -148,249 +184,144 @@ export default function Home() {
         <div className="slider-item"><CulturalList /></div>
       </div>
 
-      <style jsx>{`
-                .bg-light-soft { background: #fff; }
-        
-        /* Hero Styling */
-        .hero-container {
+      <MaharashtraChat />
+
+      <style jsx global>{`
+        /* --- GLOBAL --- */
+        .bg-light-soft { background-color: #f9f9f9; }
+        .letter-spacing-2 { letter-spacing: 2px; }
+
+        /* --- HERO SECTION --- */
+        .hero-editorial {
           position: relative;
           height: 95vh;
-          overflow: hidden;
-          background: #111;
-        }
-        .hero-bg-zoom {
-          position: absolute;
-          inset: 0;
-          animation: slowZoom 30s infinite alternate linear;
-        }
-        .hero-img-dim { filter: brightness(0.6) contrast(1.1); }
-        @keyframes slowZoom {
-          from { transform: scale(1); }
-          to { transform: scale(1.18); }
-        }
-        .hero-glass-card {
-          background: rgba(0, 0, 0, 0.25);
-          backdrop-filter: blur(15px);
-          -webkit-backdrop-filter: blur(15px);
-          border: 1px solid rgba(255, 255, 255, 0.12);
-          border-radius: 3.5rem;
-          max-width: 850px;
-          z-index: 10;
-        }
-        .hero-title-editorial {
-          font-size: clamp(3.2rem, 8vw, 6.5rem);
-          line-height: 0.9;
-          letter-spacing: -2px;
-        }
-        .text-accent { color: var(--primary-color); font-style: italic; }
-
-        /* Typography & Overlays */
-        .section-title-editorial {
-          font-size: clamp(2.5rem, 5vw, 3.8rem);
-          font-weight: 800;
-          color: #1a1a1a;
-          letter-spacing: -1.5px;
-        }
-        .body-text-editorial {
-          font-size: 1.35rem;
-          color: #555;
-          line-height: 1.8;
-          font-weight: 300;
-        }
-
-        /* Bento Grid Glass Hover Effects */
-        .magazine-card {
-          position: relative;
-          padding: 1.5rem 0.5rem;
-          border-radius: 1rem;
-          text-align: center;
-          transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-          height: 100%;
-          border: 1px solid rgba(0,0,0,0.03);
-          overflow: hidden;
-          z-index: 1;
-        }
-        .magazine-card::before {
-          content: "";
-          position: absolute;
-          top: 0; left: 0; right: 0; bottom: 0;
-          background: linear-gradient(135deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 60%);
-          opacity: 0;
-          transition: opacity 0.5s ease;
-          z-index: -1;
-        }
-        .magazine-card:hover {
-          transform: translateY(-15px) scale(1.02);
-          box-shadow: 0 35px 70px rgba(0,0,0,0.08), inset 0 0 0 2px rgba(255,255,255,0.6);
-        }
-        .magazine-card:hover::before { opacity: 1; }
-        .magazine-icon-box {
-              background: transparent;
-    border-radius: 0.1rem;
-    margin: 0 auto 1rem;
-    padding: 0;
-    transition: all .5s cubic-bezier(.175, .885, .32, 1.275);
-    display: inline-block;
-    box-shadow: unset;
-        }
-        .magazine-card:hover .magazine-icon-box {
-          transform: scale(1.18) rotate(-10deg);
-        }
-
-        /* UI Buttons */
-        .btn-magazine {
-          background: #fff;
-          color: #111;
-          padding: 1.3rem 3.5rem;
-          border-radius: 100px;
-          text-decoration: none;
-          font-weight: 800;
-          text-transform: uppercase;
-          letter-spacing: 1.5px;
-          transition: all 0.4s ease;
-        }
-        .btn-magazine:hover { 
-          background: var(--primary-color); 
-          color: #fff; 
-          transform: translateY(-5px);
-          box-shadow: 0 20px 40px rgba(0, 170, 255, 0.3);
-        }
-        .btn-outline-editorial {
-            border: 2px solid #1a1a1a;
-            padding: 1.1rem 2.8rem;
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 800;
-            border-radius: 14px;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-        .btn-outline-editorial:hover { background: #1a1a1a; color: #fff; }
-
-        .py-6 { padding: 10rem 0; }
-        .slider-item { padding: 0; }
-
-        @media (max-width: 768px) {
-          .hero-container { height: 85vh; }
-          .py-6 { padding: 5rem 0; }
-          .magazine-card { padding: 2.5rem 1rem; }
-        }
-          .hero-editorial {
-          position: relative;
-          height: 100vh;
           display: flex;
           background: #0a0a0a;
           overflow: hidden;
         }
-
-        /* Split Screen Logic */
         .hero-visual-pane {
-          position: absolute;
-          inset: 0;
-          width: 100%;
-          z-index: 1;
+          position: absolute; inset: 0; width: 100%; z-index: 1;
         }
-
+        .hero-bg-zoom {
+          position: absolute; inset: 0;
+          animation: slowZoom 40s infinite alternate linear;
+        }
         .hero-vignette {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%);
+          position: absolute; inset: 0;
+          background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 100%);
           z-index: 2;
+        }
+        @keyframes slowZoom {
+          from { transform: scale(1); }
+          to { transform: scale(1.15); }
         }
 
         .hero-content-pane {
-          position: relative;
-          z-index: 3;
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          position: relative; z-index: 3; width: 100%;
+          display: flex; align-items: center; justify-content: center;
           padding: 0 10%;
         }
+        .content-wrapper { max-width: 800px; text-align: center; }
 
-        .content-wrapper {
-          max-width: 800px;
-          text-align: center;
+        .editorial-badge {
+          display: inline-flex; align-items: center; gap: 10px;
+          background: rgba(255, 255, 255, 0.15);
+          backdrop-filter: blur(10px);
+          padding: 8px 20px; border-radius: 100px;
+          color: #fff; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+          font-size: 0.75rem; border: 1px solid rgba(255,255,255,0.2);
+          margin-bottom: 2rem;
         }
+        .dot { width: 6px; height: 6px; background: #00aaff; border-radius: 50%; }
 
-        /* Typography */
         .fw-black { font-weight: 900; letter-spacing: -2px; }
         .text-outline {
           color: transparent;
-          -webkit-text-stroke: 1px rgba(255,255,255,0.8);
-          font-style: italic;
+          -webkit-text-stroke: 1px rgba(255,255,255,0.9);
+          font-style: italic; font-family: serif;
         }
-
-        .editorial-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          background: rgba(255, 255, 255, 0.1);
-          backdrop-filter: blur(10px);
-          padding: 8px 20px;
-          border-radius: 100px;
-          color: var(--primary-color);
-          font-weight: 700;
-          letter-spacing: 3px;
-          text-transform: uppercase;
-          font-size: 0.75rem;
-          margin-bottom: 2rem;
-        }
-
         .description-text {
-          font-size: 1.25rem;
-          color: rgba(255,255,255,0.7);
-          font-weight: 300;
-          line-height: 1.6;
+          font-size: 1.25rem; color: rgba(255,255,255,0.85); font-weight: 300; line-height: 1.6;
         }
 
-        /* Luxury Button */
         .btn-luxury {
-          display: inline-flex;
-          align-items: center;
-          gap: 20px;
-          background: #fff;
-          color: #000;
-          padding: 18px 40px;
-          border-radius: 100px;
-          text-decoration: none;
-          font-weight: 800;
-          transition: 0.4s;
+          display: inline-flex; align-items: center; gap: 15px;
+          background: #fff; color: #000;
+          padding: 16px 40px; border-radius: 100px;
+          text-decoration: none; font-weight: 800;
+          transition: 0.3s;
         }
-
         .btn-luxury:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 20px 40px rgba(0, 170, 255, 0.3);
-          background: var(--primary-color);
-          color: white;
+          transform: translateY(-3px);
+          box-shadow: 0 10px 30px rgba(255,255,255,0.2);
         }
 
         .hero-floating-footer {
-          position: absolute;
-          bottom: 40px;
-          left: 50%;
-          transform: translateX(-50%);
-          z-index: 4;
-          display: flex;
-          gap: 40px;
-          color: white;
-          background: rgba(0,0,0,0.4);
-          backdrop-filter: blur(10px);
-          padding: 15px 40px;
-          border-radius: 100px;
-          border: 1px solid rgba(255,255,255,0.1);
+          position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+          z-index: 4; display: flex; gap: 30px;
+          color: white; background: rgba(0,0,0,0.5); backdrop-filter: blur(12px);
+          padding: 12px 30px; border-radius: 100px; border: 1px solid rgba(255,255,255,0.15);
+          font-size: 0.85rem; font-weight: 500;
+        }
+        .stat-item strong { color: #00aaff; margin-right: 5px; }
+        .stat-separator { width: 1px; height: 15px; background: rgba(255,255,255,0.3); }
+
+        /* --- BENTO GRID CARD STYLES --- */
+        .category-card {
+            position: relative;
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(0,0,0,0.04);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
         }
 
-        .stat-item strong { color: var(--primary-color); margin-right: 5px; }
+        .category-card:hover {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border-color: rgba(0,0,0,0.0);
+        }
 
+        .card-blob {
+            position: absolute;
+            top: -20%; right: -20%;
+            width: 120px; height: 120px;
+            border-radius: 50%;
+            opacity: 0.15; filter: blur(40px);
+            transition: transform 0.5s ease;
+        }
+
+        .category-card:hover .card-blob {
+            transform: scale(1.5); opacity: 0.25;
+        }
+
+        .card-content {
+            position: relative; z-index: 2; width: 100%;
+            display: flex; flex-direction: column; align-items: center;
+        }
+
+        .icon-squircle {
+            width: 64px; height: 64px;
+            border-radius: 20px; /* Squircle */
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 1rem;
+            transition: transform 0.4s ease;
+            background: #f8f9fa;
+        }
+
+        .category-card:hover .icon-squircle {
+            transform: rotate(-10deg) scale(1.1);
+        }
+
+        /* --- RESPONSIVE --- */
         @media (max-width: 768px) {
           .display-1 { font-size: 3.5rem; }
+          .hero-container { height: 85vh; }
           .hero-floating-footer { display: none; }
         }
-          .magazine-card-title{
-          font-size:1rem;
-          color: var(--primary-color);
-          }
       `}</style>
     </main>
   );
