@@ -112,7 +112,7 @@ export default function CategoryPage() {
       
       {/* --- HERO SECTION --- */}
         <header className="category-hero-container">
-          <motion.div className="hero-image-wrapper" style={{ y: heroParallaxY }}>
+          <motion.div className="hero-image-wrapper">
             <Image src={getBannerImage(category)} alt={category} fill priority className="object-fit-cover" />
             <div className="hero-overlay-gradient" />
           </motion.div>
@@ -120,9 +120,6 @@ export default function CategoryPage() {
           <motion.div style={{ opacity: heroOpacity }} className="container text-center z-10 position-relative hero-content-box">
              {/* ... Hero Content ... */}
              <motion.div 
-               initial={{ y: 30, opacity: 0, scale: 0.95 }} 
-               animate={{ y: 0, opacity: 1, scale: 1 }} 
-               transition={{ duration: 0.8, ease: "easeOut" }}
              >
                <div className="d-inline-flex align-items-center justify-content-center border border-white/30 rounded-full px-4 py-1 mb-3 glass-badge">
                   <i className={`fas ${getCategoryIcon(category)} me-2 text-warning`}></i>
