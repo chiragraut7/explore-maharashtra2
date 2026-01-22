@@ -16,10 +16,9 @@ interface TransportItem {
 interface HowToReachProps {
   transport?: TransportItem[];
   color?: string;
-  mainImage?: string; // Optional: Image of a map or the destination entrance
+  mainImage?: string; 
 }
 
-// -------------------- Component --------------------
 const HowToReach: React.FC<HowToReachProps> = ({ 
   transport = [], 
   color = "#00aaff",
@@ -30,97 +29,133 @@ const HowToReach: React.FC<HowToReachProps> = ({
   if (!transport.length) return null;
 
   return (
-    <section id="reach" className="mb-5">
-      <SectionTitle title="How to Reach" color={color} />
+    <section id="reach" className="mb-5 position-relative">
+      
+      {/* --- HEADER --- */}
+      <div 
+        className="d-flex align-items-center mb-4 pb-2" 
+        style={{ borderBottom: `1px solid ${color}20` }}
+      >
+        <div 
+          className="d-flex align-items-center justify-content-center me-3 rounded-circle"
+          style={{ 
+            width: '40px', height: '40px', 
+            backgroundColor: `${color}15`, color: color 
+          }}
+        >
+          <i className="fas fa-map-signs fs-6"></i>
+        </div>
+        <div>
+          <h2 className="h5 fw-bold mb-0 text-dark">
+            <Translator text="How to Reach" targetLang={language} />
+          </h2>
+          <span className="text-uppercase fw-bold text-muted" style={{ fontSize: '0.65rem', letterSpacing: '0.5px' }}>
+            <Translator text="Travel Guide & Routes" targetLang={language} />
+          </span>
+        </div>
+      </div>
 
-      <div className="row g-0 rounded-4 overflow-hidden shadow-sm bg-white border content-box-compact">
+      <div className="row g-0 rounded-4 overflow-hidden border flex-lg-row-reverse" style={{boxShadow: '0 8px 30px rgba(0,0,0,0.04)'}}>
         
-        {/* 🗺️ LEFT: STICKY MAP/LOCATION IMAGE */}
-        <div className="col-lg-4 p-0 bg-light">
-          <div className="sticky-media-compact">
+        {/* 🗺️ RIGHT: STICKY MAP IMAGE */}
+        <div className="col-lg-5 p-0 bg-light border-start">
+          <div className="sticky-media-wrapper h-100 position-relative">
             <Image
               src={mainImage}
               alt="Location Map"
               fill
-              className="object-cover grayscale-hover"
+              className="object-cover"
               sizes="(max-width: 991px) 100vw, 33vw"
             />
             <div className="image-overlay-subtle" />
-            <div className="image-label-mini">
-              <span className="badge-text-mini text-uppercase">
-                <i className="fas fa-map-marked-alt me-1"></i>
-                <Translator text="Travel Guide" targetLang={language} />
-              </span>
+            
+            <div className="position-absolute bottom-0 end-0 m-3">
+                <span className="badge bg-black/50 backdrop-blur border border-white/20 text-white rounded-pill px-3 py-2 shadow-sm" style={{fontSize: '0.75rem'}}>
+                    <i className="fas fa-location-arrow me-2"></i>
+                    <Translator text="Getting There" targetLang={language} />
+                </span>
             </div>
           </div>
         </div>
 
-        {/* ✈️ RIGHT: TRANSPORT MODES LIST */}
-        <div className="col-lg-8">
-          <div className="p-3 p-md-4">
-            {transport.map((item, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: idx * 0.1 }}
-                viewport={{ once: true }}
-                className={`d-flex align-items-start mb-4 ${idx !== transport.length - 1 ? 'pb-4 border-bottom' : ''}`}
-              >
-                {/* Modern Icon Circle */}
-                <div 
-                  className="flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle border border-2"
-                  style={{ 
-                    width: '50px', 
-                    height: '50px', 
-                    borderColor: `${color}30`,
-                    color: color,
-                    backgroundColor: `${color}05`
+        {/* ✈️ LEFT: TIMELINE LIST */}
+        <div className="col-lg-7 bg-white position-relative">
+           {/* Vertical Connector Line */}
+           <div className="position-absolute start-0 top-0 bottom-0 d-none d-sm-block" style={{left: '3.5rem', width: '1px', background: '#f0f0f0', zIndex: 0}}></div>
+
+          <div className="p-0 h-100">
+            {transport.map((item, idx) => {
+              const isEven = idx % 2 === 0;
+
+              return (
+                <motion.div 
+                  key={idx}
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  
+                  className={`transport-row p-3 p-md-4 position-relative ${isEven ? 'bg-white' : ''}`}
+                  style={{
+                    backgroundColor: isEven ? '#fff' : `${color}05`, // Subtle tint
+                    borderBottom: '1px solid #f9f9f9',
+                    borderLeft: isEven ? '4px solid transparent' : `4px solid ${color}`
                   }}
                 >
-                  <i className={`${item.icon || 'fas fa-route'} fs-5`} />
-                </div>
+                  <div className="d-flex align-items-start position-relative z-1">
+                    
+                    {/* Icon Box */}
+                    <div 
+                      className="compact-icon me-3 flex-shrink-0" 
+                      style={{ 
+                        color: color, 
+                        backgroundColor: `${color}15`,
+                        width: '40px', height: '40px',
+                        borderRadius: '10px'
+                      }}
+                    >
+                      <i className={`${item.icon || 'fas fa-route'} fs-6`} />
+                    </div>
 
-                <div className="ms-3 flex-grow-1">
-                  <h3 className="h6 fw-bold mb-2 text-dark text-uppercase letter-spacing-1">
-                    <Translator text={item.title || ""} targetLang={language} />
-                  </h3>
-                  
-                  {item.details && (
-                    <ul className="list-unstyled mb-0">
-                      {item.details.map((line, lineIdx) => (
-                        <li key={lineIdx} className="d-flex align-items-start mb-1 text-muted small">
-                          <span className="me-2" style={{ color }}>•</span>
-                          <span className="lh-sm">
-                            <Translator text={line} targetLang={language} />
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              </motion.div>
-            ))}
-            
-            {/* Helpful Note Footer */}
-            <div className="mt-2 p-3 rounded-3 bg-light border-2" style={{ borderColor: color }}>
-              <p className="small mb-0 text-muted italic">
-                <i className="fas fa-info-circle me-1" style={{ color }}></i>
-                <Translator 
-                  text="Travel times may vary based on weather conditions and local traffic." 
-                  targetLang={language} 
-                />
-              </p>
+                    <div className="flex-grow-1">
+                      <h3 className="h6 fw-bold mb-2 text-dark text-uppercase letter-spacing-1">
+                        <Translator text={item.title || ""} targetLang={language} />
+                      </h3>
+                      
+                      {item.details && (
+                        <ul className="list-unstyled mb-0">
+                          {item.details.map((line, lineIdx) => (
+                            <li key={lineIdx} className="d-flex align-items-start mb-2 text-secondary small">
+                              <i className="fas fa-check-circle me-2 mt-1 opacity-50" style={{ fontSize: '0.7rem', color }}></i>
+                              <span className="lh-sm" style={{ fontSize: '0.85rem' }}>
+                                <Translator text={line} targetLang={language} />
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
+
+            {/* Footer Note */}
+            <div className="p-3 bg-light-subtle border-top">
+                <p className="small mb-0 text-muted fst-italic d-flex align-items-center">
+                    <i className="fas fa-info-circle me-2" style={{ color }}></i>
+                    <Translator 
+                        text="Travel times may vary based on weather & traffic." 
+                        targetLang={language} 
+                    />
+                </p>
             </div>
           </div>
         </div>
       </div>
 
       <style jsx>{`
-        .letter-spacing-1 { letter-spacing: 1px; }
-        .content-box-compact { border-color: #eee !important; }
-
-        .sticky-media-compact {
+        .sticky-media-wrapper {
           position: sticky;
           top: 0;
           height: 100%;
@@ -128,34 +163,42 @@ const HowToReach: React.FC<HowToReachProps> = ({
           overflow: hidden;
         }
 
-        .grayscale-hover {
-          filter: grayscale(20%);
-          transition: filter 0.5s ease;
-        }
-        .grayscale-hover:hover {
-          filter: grayscale(0%);
-        }
+        .object-cover { object-fit: cover; }
+        .bg-light-subtle { background-color: #f8f9fa; }
+        .letter-spacing-1 { letter-spacing: 0.5px; }
 
         .image-overlay-subtle {
           position: absolute;
           inset: 0;
-          background: linear-gradient(to top, rgba(0,0,0,0.1), transparent);
+          background: linear-gradient(to top, rgba(0,0,0,0.2), transparent);
         }
 
-        .image-label-mini {
-          position: absolute;
-          bottom: 15px;
-          left: 15px;
-          background: rgba(0,0,0,0.7);
-          padding: 4px 12px;
-          border-radius: 6px;
-          backdrop-filter: blur(4px);
+        /* Hover Effect */
+        .transport-row {
+            transition: all 0.2s ease;
+        }
+        .transport-row:hover {
+            background-color: #fff !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            z-index: 2;
+            transform: translateX(2px);
         }
 
-        .badge-text-mini { color: white; font-weight: 700; font-size: 0.65rem; letter-spacing: 1px; }
+        /* Icon Styling */
+        .compact-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: transform 0.2s;
+        }
+        .transport-row:hover .compact-icon {
+            transform: scale(1.1);
+            background-color: ${color} !important;
+            color: #fff !important;
+        }
 
         @media (max-width: 991px) {
-          .sticky-media-compact { height: 220px; position: relative; min-height: 220px; }
+          .sticky-media-wrapper { height: 220px; position: relative; min-height: 220px; }
         }
       `}</style>
     </section>

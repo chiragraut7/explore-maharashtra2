@@ -25,14 +25,14 @@ const Footer = ({ color = "#E57717" }) => {
     <footer className="footer-root mt-0 p-0">
       {/* --- CALL TO ACTION STRIP --- */}
       <div className="container py-5">
-        <div className="row align-items-center g-4">
+        <div className="row align-items-center justify-content-center g-4">
           <div className="col-lg-7">
-            <h2 className="display-5 fw-bold text-dark mb-0 tracking-tight">
+            <h2 className="display-5 fw-bold text-white my-0 tracking-tight">
               Begin your odyssey into the <br />
               <span style={{ color }}>Great Deccan Plateau.</span>
             </h2>
           </div>
-          <div className="col-lg-5 text-lg-end">
+          {/* <div className="col-lg-5 text-lg-end">
             <div className="d-inline-flex align-items-center gap-4 p-3 rounded-4 bg-white shadow-sm border">
               <div className="text-start">
                 <p className="text-uppercase small text-muted fw-bold mb-0 ls-1">Verified Guide</p>
@@ -43,7 +43,7 @@ const Footer = ({ color = "#E57717" }) => {
                 Get in Touch
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

@@ -16,7 +16,11 @@ import type { ModalData } from '@/type/types';
 export default function AboutPageContent() {
   const { language } = useLanguage();
   const { modals, loading } = useModalsPreload();
+  
+  // State for Modal Data AND Modal Image
   const [activeModal, setActiveModal] = useState<ModalData | null>(null);
+  const [activeImage, setActiveImage] = useState<string | null>(null);
+  
   const pathname = usePathname();
   
   const containerRef = useRef(null);
@@ -38,26 +42,20 @@ export default function AboutPageContent() {
     closeModal();
   }, [pathname]);
 
-  // 2. SCROLL LOCK EFFECT (Stronger version to fight SmoothScroll)
+  // 2. SCROLL LOCK EFFECT
   useEffect(() => {
     if (activeModal) {
       const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-      
-      // We use !important to force override the SmoothScroll library's styles
       document.body.style.setProperty('overflow', 'hidden', 'important');
       document.body.style.paddingRight = `${scrollbarWidth}px`;
       document.body.classList.add('modal-open');
-      
-      // Optional: If your smooth scroll uses the html tag
       document.documentElement.style.setProperty('overflow', 'hidden', 'important');
-
     } else {
       document.body.style.overflow = '';
       document.body.style.paddingRight = '';
       document.body.classList.remove('modal-open');
       document.documentElement.style.overflow = '';
     }
-
     return () => {
       document.body.style.overflow = '';
       document.body.style.paddingRight = '';
@@ -66,13 +64,17 @@ export default function AboutPageContent() {
     };
   }, [activeModal]);
 
-  const handleViewMore = (modalId: string) => {
+  const handleViewMore = (modalId: string, imageFileName: string) => {
     const key = modalId.replace('#', '').replace('Modal', '');
-    if (modals[key]) setActiveModal(modals[key]);
+    if (modals[key]) {
+      setActiveModal(modals[key]);
+      setActiveImage(imageFileName);
+    }
   };
 
   const closeModal = () => {
     setActiveModal(null);
+    setActiveImage(null);
   };
 
   return (
@@ -83,10 +85,11 @@ export default function AboutPageContent() {
           style={{ scaleX: scrollYProgress, height: '4px', background: '#ff5722', transformOrigin: '0%', zIndex: 1020 }} 
         />
 
-        {/* --- Header & Timeline Sections (No Changes Here) --- */}
+        {/* --- Header --- */}
         <header className="about-hero position-relative overflow-hidden">
           <div className="hero-parallax-bg"></div>
-          <div className="hero-overlay"></div>
+          <div className="hero-glass-overlay"></div>
+          
           <div className="container position-relative z-2 text-center text-white">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -103,6 +106,7 @@ export default function AboutPageContent() {
           </div>
         </header>
 
+        {/* --- Timeline Section --- */}
         <section className="container py-5 position-relative">
           <div className="timeline-wrapper">
             <div className="timeline-track d-none d-md-block">
@@ -118,11 +122,20 @@ export default function AboutPageContent() {
                       className="timeline-glass-card shadow-sm"
                       data-aos={i % 2 === 0 ? 'fade-right' : 'fade-left'}
                     >
+                      {/* Timeline Card Image */}
+                      <div className="timeline-image-container">
+                        <img 
+                          src={`/assets/images/bannerImages/${item.image}`} 
+                          alt={item.title} 
+                          className="timeline-card-img"
+                        />
+                      </div>
+
                       <div className="timeline-year-badge">
                           <Translator text={item.year} targetLang={language} />
                       </div>
 
-                      <div className="card-inner-content p-4 p-lg-5">
+                      <div className="card-inner-content p-4 p-lg-5 pt-4">
                         <h3 className="fw-bold h4 mb-3 text-dark">
                           <Translator text={item.title} targetLang={language} />
                         </h3>
@@ -131,7 +144,7 @@ export default function AboutPageContent() {
                         </p>
                         <button
                           className="btn-read-more"
-                          onClick={() => handleViewMore(item.modalId)}
+                          onClick={() => handleViewMore(item.modalId, item.image)}
                         >
                           <Translator text="Read More" targetLang={language} />
                           <i className="fas fa-chevron-right ms-2 arrow-icon"></i>
@@ -167,8 +180,7 @@ export default function AboutPageContent() {
               tabIndex={-1} 
               aria-modal="true" 
               role="dialog"
-              data-lenis-prevent="true" // Tells Lenis Scroll to ignore this
-              // Stops the SmoothScroll from hijacking the wheel/touch events
+              data-lenis-prevent="true"
               onWheel={(e) => e.stopPropagation()} 
               onTouchMove={(e) => e.stopPropagation()}
               style={{ 
@@ -181,7 +193,7 @@ export default function AboutPageContent() {
                 left: 0,
                 width: '100%',
                 height: '100%',
-                overscrollBehavior: 'contain' // Prevents scroll chaining to body
+                overscrollBehavior: 'contain'
               }}
               onClick={(e) => {
                 if (e.target === e.currentTarget) closeModal();
@@ -198,23 +210,25 @@ export default function AboutPageContent() {
                   className="modal-content border-0 shadow-lg rounded-4 overflow-hidden"
                   style={{ pointerEvents: 'auto' }}
                 >
-                  <div className="modal-header border-0 bg-light px-4">
-                    <h5 className="modal-title fw-bold">
-                      <Translator text={activeModal.title} targetLang={language} />
-                    </h5>
+                  <div className="modal-header border-0 bg-transparent position-absolute top-0 end-0 z-3 p-3">
                     <button 
                       type="button" 
-                      className="btn-close shadow-none" 
+                      className="btn-close btn-close-white shadow-none" 
                       onClick={closeModal}
                       aria-label="Close"
+                      style={{ filter: 'invert(1) grayscale(100%) brightness(200%)' }}
                     ></button>
                   </div>
+                  
                   <div className="modal-body p-0">
-                     {loading ? (
-                       <div className="p-5 text-center"><div className="spinner-border text-primary"></div></div>
-                     ) : (
-                       <ModalContent modal={activeModal} />
-                     )}
+                      {loading ? (
+                        <div className="p-5 text-center"><div className="spinner-border text-primary"></div></div>
+                      ) : (
+                        <div className="p-0"> 
+                           {/* Passing the activeImage prop to the ModalContent */}
+                           <ModalContent modal={activeModal} image={activeImage} />
+                        </div>
+                      )}
                   </div>
                 </div>
               </div>
@@ -224,31 +238,42 @@ export default function AboutPageContent() {
       </ModalPortal>
 
       <style jsx global>{`
-        /* Your Existing CSS */
-        .about-hero { height: 45vh; display: flex; align-items: center; justify-content: center; }
+        .about-hero { height: 70vh; display: flex; align-items: center; justify-content: center; }
+        
         .hero-parallax-bg {
           position: absolute; inset: 0;
-          background: url('/assets/images/bannerImages/aboutBanner.jpg') center/cover no-repeat fixed;
+          background: url('/assets/images/bannerImages/about_8.jpg') center/cover no-repeat fixed;
           z-index: 0;
         }
-        .hero-overlay {
+
+        .hero-glass-overlay {
           position: absolute; inset: 0;
-          background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+          background: rgba(0, 0, 0, 0.4); 
+          backdrop-filter: blur(5px); 
+          -webkit-backdrop-filter: blur(5px);
           z-index: 1;
         }
+
         .timeline-track { position: absolute; left: 50%; transform: translateX(-50%); width: 4px; height: 100%; background: #e9ecef; z-index: 1; top:0; }
         .timeline-progress { width: 100%; height: 100%; background: #ff5722; transform-origin: top; }
-        .timeline-glass-card { background: #ffffff; border-radius: 25px; position: relative; border: 1px solid rgba(0,0,0,0.03); transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .timeline-glass-card { background: #ffffff; border-radius: 25px; position: relative; border: 1px solid rgba(0,0,0,0.03); transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); overflow: hidden; }
         .row-left .timeline-glass-card { text-align: right; margin-right: 25px; }
         .row-right .timeline-glass-card { text-align: left; margin-left: 25px; }
-        .timeline-year-badge { position: absolute; top: -18px; background: #ff5722; color: white; padding: 6px 20px; border-radius: 50px; font-weight: 700; font-size: 0.8rem; box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3); z-index: 5; }
+        
+        .timeline-image-container { width: 100%; height: 220px; overflow: hidden; }
+        .timeline-card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .timeline-glass-card:hover .timeline-card-img { transform: scale(1.05); }
+
+        .timeline-year-badge { position: absolute; top: 15px; background: #ff5722; color: white; padding: 6px 20px; border-radius: 50px; font-weight: 700; font-size: 0.8rem; box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3); z-index: 5; }
         .row-left .timeline-year-badge { right: 30px; }
         .row-right .timeline-year-badge { left: 30px; }
+        
         .timeline-outer-node { width: 44px; height: 44px; background: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 4px solid #ff5722; z-index: 10; }
         .timeline-inner-node { width: 14px; height: 14px; background: #007bff; border-radius: 50%; }
         .btn-read-more { border: none; background: transparent; color: #ff5722; font-weight: 700; padding: 0; transition: 0.3s; display: inline-flex; align-items: center; }
         .btn-read-more:hover .arrow-icon { transform: translateX(5px); }
         .card-description { line-height: 1.7; font-size: 0.95rem; }
+        
         @media (max-width: 768px) {
           .timeline-track { display: none; }
           .timeline-glass-card { text-align: left !important; margin: 0 10px 40px 10px !important; }
@@ -259,13 +284,62 @@ export default function AboutPageContent() {
   );
 }
 
+// Updated with Historically Accurate Content
 const timelineItems = [
-  { year: '2nd BCE', title: 'Ancient Maharashtra', description: 'The awe-inspiring Ajanta & Ellora Caves were carved out of solid rock – symbols of ancient Indian art and Buddhism.', modalId: '#ancientModal' },
-  { year: '8th–13th', title: 'Yadava & Chalukya Era', description: 'Flourishing of Hindu temples, literature, and trade in the Deccan region under powerful local dynasties.', modalId: '#yadavaModal' },
-  { year: '17th', title: 'Maratha Empire', description: 'Chhatrapati Shivaji Maharaj established forts and unified Maratha pride, birthing the vision of Swarajya.', modalId: '#marathaModal' },
-  { year: '1818', title: 'British Rule', description: 'After the defeat of the Marathas, Maharashtra became part of the Bombay Presidency under British administration.', modalId: '#britishModal' },
-  { year: '1947', title: 'Independence', description: 'Maharashtra played a key role in the Quit India Movement and India’s final fight for freedom.', modalId: '#independenceModal' },
-  { year: '1960', title: 'State Formation', description: 'The modern state of Maharashtra was officially formed on May 1st, 1960, after the Samyukta Maharashtra Movement.', modalId: '#formationModal' },
-  { year: '1980s', title: 'Industrial Boom', description: 'Mumbai rose as India’s financial capital with booming industries and a massive migration for economic opportunities.', modalId: '#industrialModal' },
-  { year: '2000s', title: 'Tourism Growth', description: 'Maharashtra became a tourism hotspot, investing in heritage conservation and eco-tourism across the state.', modalId: '#tourismModal' }
+  { 
+    year: '2nd BCE – 10th CE', 
+    title: 'Ancient Heritage', 
+    description: 'The awe-inspiring Ajanta & Ellora Caves were carved from solid rock, standing as timeless symbols of ancient Indian art and spirituality.', 
+    modalId: '#ancientModal',
+    image: 'about_1.jpg' 
+  },
+  { 
+    year: '6th – 14th Century', 
+    title: 'Chalukya & Yadava Era', 
+    description: 'A golden age of art and culture, witnessing the rise of magnificent Hindu temples, literature, and flourishing trade across the Deccan.', 
+    modalId: '#yadavaModal',
+    image: 'about_2.jpg' 
+  },
+  { 
+    year: '17th Century', 
+    title: 'Maratha Empire', 
+    description: 'Chhatrapati Shivaji Maharaj established the Maratha Empire, unifying the region and igniting the spirit of Swarajya (Self-Rule).', 
+    modalId: '#marathaModal',
+    image: 'about_3.jpg' 
+  },
+  { 
+    year: '1818 – 1947', 
+    title: 'British Era', 
+    description: 'Following the fall of the Peshwas, the region became part of the Bombay Presidency, becoming a hub for education and social reform.', 
+    modalId: '#britishModal',
+    image: 'about_4.jpg' 
+  },
+  { 
+    year: '1947', 
+    title: 'Independence', 
+    description: 'Maharashtra played a pivotal role in India’s freedom struggle, notably hosting the launch of the historic Quit India Movement in 1942.', 
+    modalId: '#independenceModal',
+    image: 'about_5.jpg' 
+  },
+  { 
+    year: '1960', 
+    title: 'State Formation', 
+    description: 'The modern state of Maharashtra was born on May 1st, 1960, following the Samyukta Maharashtra Movement’s fight for a linguistic state.', 
+    modalId: '#formationModal',
+    image: 'about_6.jpg' 
+  },
+  { 
+    year: '1990s', 
+    title: 'Financial & Industrial Hub', 
+    description: 'Post-liberalization, Mumbai cemented its status as India’s financial capital, driving a massive wave of industrial and economic growth.', 
+    modalId: '#industrialModal',
+    image: 'about_7.jpg' 
+  },
+  { 
+    year: '2000s – Present', 
+    title: 'Tourism & IT Growth', 
+    description: 'Maharashtra has evolved into a global destination, blending its rich heritage tourism with booming IT hubs in Pune and Mumbai.', 
+    modalId: '#tourismModal',
+    image: 'about_8.jpg' 
+  }
 ];

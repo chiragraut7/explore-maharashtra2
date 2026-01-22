@@ -2440,7 +2440,6 @@ html {
         background:#d10068/* Deep Green for Beach Badge Contrast */
         }
 
-#overview,
 #highlights
 {
   margin-bottom: 1.5rem !important;
@@ -2456,4 +2455,271 @@ html {
 #dynamicModal .modal-body{
     height: calc(100dvh - 120px);
     overflow: auto;
+}
+
+/* ========================================= */
+/* 1. ON-PAGE GALLERY GRID                   */
+/* ========================================= */
+
+.gallery-box {
+  position: relative;
+  width: 100%;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Featured (Left) Image Height */
+.featured-box {
+  height: 416px;
+}
+
+/* Grid (Right) Image Height */
+.sub-box {
+  height: 204px;
+}
+
+.object-cover {
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-box:hover .object-cover {
+  transform: scale(1.1);
+}
+
+.hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.gallery-box:hover .hover-overlay {
+  opacity: 1;
+}
+
+.more-images-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  backdrop-filter: blur(2px);
+}
+
+/* ========================================= */
+/* 2. LIGHTBOX OVERLAY (Fullscreen)          */
+/* ========================================= */
+
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000; /* Pure Black Background */
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- TOP BAR --- */
+.lb-top-bar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3); /* Slight transparent overlay */
+  z-index: 1000;
+}
+
+.lb-counter {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.lb-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  opacity: 0.7;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.action-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.close-btn {
+  font-size: 1.5rem;
+}
+
+/* --- MAIN IMAGE STAGE --- */
+.lb-main-stage {
+  flex: 1; /* Takes all available height */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Navigation Arrows (Left/Right) */
+.nav-arrow {
+  position: absolute;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2rem;
+  padding: 20px;
+  cursor: pointer;
+  z-index: 100;
+  transition: 0.2s;
+}
+
+.nav-arrow:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Image Wrapper */
+.lb-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 90vw;
+  max-height: calc(100vh - 180px); /* Adjust for header/footer space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.object-contain {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+/* Caption Text */
+.lb-caption {
+  margin-top: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.caption-line {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.text-muted {
+  color: #aaa;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- BOTTOM THUMBNAIL STRIP --- */
+.lb-bottom-strip {
+  height: 100px;
+  width: 100%;
+  background: #000;
+  border-top: 1px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.thumbnails-track {
+  display: flex;
+  gap: 2px; /* Tiny gap like screenshot */
+  overflow-x: auto;
+  height: 100%;
+  max-width: 95vw;
+  align-items: center;
+  scrollbar-width: none;
+}
+
+.thumbnails-track::-webkit-scrollbar {
+  display: none;
+}
+
+.thumb-item {
+  width: 80px;
+  height: 60px;
+  flex-shrink: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+  border: 2px solid transparent; /* Default border */
+  position: relative;
+}
+
+.thumb-item:hover {
+  opacity: 0.8;
+}
+
+/* ACTIVE STATE: The Red Border */
+.thumb-item.active {
+  opacity: 1;
+  border: 2px solid #e74c3c; /* Matches your screenshot red */
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========================================= */
+/* MOBILE RESPONSIVE                         */
+/* ========================================= */
+@media (max-width: 767px) {
+  .featured-box { height: 300px; }
+  .sub-box { height: 140px; }
+  
+  .lb-top-bar { height: 50px; padding: 0 10px; }
+  .lb-actions .action-btn { display: none; } /* Hide icons on mobile */
+  .lb-actions .close-btn { display: block; } /* Keep close btn */
+  
+  .nav-arrow { font-size: 1.5rem; padding: 10px; }
+  .lb-bottom-strip { height: 70px; }
+  .thumb-item { width: 60px; height: 45px; }
 }

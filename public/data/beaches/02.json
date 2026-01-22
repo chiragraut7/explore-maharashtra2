@@ -252,29 +252,74 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/02/img14.jpg",
-      "thumb": "/assets/images/beaches/02/img14.jpg",
-      "alt": "Evening by the Beach"
+      "src": "/assets/images/beaches/02/img1.jpg",
+      "thumb": "/assets/images/beaches/02/img1.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/02/img2.jpg",
+      "thumb": "/assets/images/beaches/02/img2.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/02/img3.jpg",
+      "thumb": "/assets/images/beaches/02/img3.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/02/img4.jpg",
+      "thumb": "/assets/images/beaches/02/img4.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/02/img5.jpg",
+      "thumb": "/assets/images/beaches/02/img5.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/02/img6.jpg",
+      "thumb": "/assets/images/beaches/02/img6.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/02/img7.jpg",
+      "thumb": "/assets/images/beaches/02/img7.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/02/img8.jpg",
+      "thumb": "/assets/images/beaches/02/img8.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/02/img9.jpg",
+      "thumb": "/assets/images/beaches/02/img9.jpg",
+      "alt": ""
     },
     {
       "src": "/assets/images/beaches/02/img10.jpg",
       "thumb": "/assets/images/beaches/02/img10.jpg",
-      "alt": "Evening by the Beach"
-    },
-    {
-      "src": "/assets/images/beaches/02/img13.jpg",
-      "thumb": "/assets/images/beaches/02/img13.jpg",
-      "alt": "Evening by the Beach"
+      "alt": ""
     },
     {
       "src": "/assets/images/beaches/02/img11.jpg",
       "thumb": "/assets/images/beaches/02/img11.jpg",
-      "alt": "Evening by the Beach"
+      "alt": ""
     },
     {
       "src": "/assets/images/beaches/02/img12.jpg",
       "thumb": "/assets/images/beaches/02/img12.jpg",
-      "alt": "Evening by the Beach"
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/02/img13.jpg",
+      "thumb": "/assets/images/beaches/02/img13.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/02/img14.jpg",
+      "thumb": "/assets/images/beaches/02/img14.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [
