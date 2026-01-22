@@ -32,21 +32,25 @@ const InteractiveMap = () => {
         const L = (await import('leaflet')).default;
         const { MapContainer, TileLayer, Marker, Popup, ZoomControl } = await import('react-leaflet');
 
-        // Custom "Ripple" Marker (SMALLER SIZE)
-        const createIcon = (color: string) => new L.DivIcon({
-          html: `
-            <div class="marker-container">
-               <div class="pin-head" style="background-color: ${color}; box-shadow: 0 4px 10px ${color}50;">
-                  <i class="fas fa-map-marker-alt"></i>
-               </div>
-               <div class="pin-pulse" style="background-color: ${color}"></div>
-            </div>
-          `,
-          className: 'custom-leaflet-icon',
-          iconSize: [32, 32], // Reduced Size
-          iconAnchor: [16, 32], // Center bottom anchor
-          popupAnchor: [0, -36] // Popup above pin
-        });
+        // Custom "Ripple" Marker with DYNAMIC ICON
+        const createIcon = (color: string, category: string) => {
+            const iconClass = CATEGORY_ICONS[category] || 'fa-map-marker-alt';
+            
+            return new L.DivIcon({
+              html: `
+                <div class="marker-container">
+                   <div class="pin-head" style="background-color: ${color}; box-shadow: 0 2px 8px ${color}40;">
+                      <i class="fas ${iconClass}"></i>
+                   </div>
+                   <div class="pin-pulse" style="background-color: ${color}"></div>
+                </div>
+              `,
+              className: 'custom-leaflet-icon',
+              iconSize: [32, 32], 
+              iconAnchor: [16, 32], 
+              popupAnchor: [0, -36] 
+            });
+        };
 
         setMapComponents({ MapContainer, TileLayer, Marker, Popup, ZoomControl, createIcon });
       } catch (error) {
@@ -118,7 +122,8 @@ const InteractiveMap = () => {
               <Marker 
                 key={loc.id} 
                 position={[loc.coordinates.lat, loc.coordinates.lng]} 
-                icon={createIcon(loc.color || '#00aaff')}
+                // Pass both color and category to createIcon
+                icon={createIcon(loc.color || '#00aaff', loc.category)}
               >
                 <Popup className="premium-glass-popup" closeButton={false} minWidth={280}>
                   <div className="popup-card">
@@ -244,7 +249,8 @@ const InteractiveMap = () => {
             position: relative;
             z-index: 2;
         }
-        .pin-head i { transform: rotate(45deg); font-size: 10px; /* Smaller icon font */ }
+        /* Rotate icon back to upright and scale it down */
+        .pin-head i { transform: rotate(45deg); font-size: 10px; }
         
         /* Pulse Effect */
         .pin-pulse {

@@ -19,7 +19,7 @@ import CulturalList from "./components/CulturalList";
 import Translator from "./components/commonComponents/Translator";
 import MaharashtraChat from "./components/MaharashtraChat";
 
-// ✅ CRITICAL FIX: Load the Map with SSR disabled to prevent build crashes
+// ✅ CRITICAL FIX: Load the Map with SSR disabled
 const InteractiveMap = dynamic(() => import("./components/InteractiveMap"), { 
   ssr: false,
   loading: () => (
@@ -44,16 +44,16 @@ export default function Home() {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  // Parallax hook for smooth editorial movement
   useFastParallax({ multiplier: 1.6, disableBelow: 768 });
 
+  // ✅ UPDATED: Used FA Icons instead of Images
   const sections = [
-    { id: "beaches", title: "Beaches", image: "/assets/images/home_iocn/beach-umbrella.svg", link: "/beaches", color: "#e6f7ff" },
-    { id: "hill-stations", title: "Hill Stations", image: "/assets/images/home_iocn/hills.svg", link: "/hills", color: "#f6ffed" },
-    { id: "forts", title: "Forts", image: "/assets/images/home_iocn/castle-3.svg", link: "/forts", color: "#fff7e6" },
-    { id: "wildlife", title: "Wildlife & Nature", image: "/assets/images/home_iocn/tree.svg", link: "/nature", color: "#f9f0ff" },
-    { id: "religious", title: "Religious Places", image: "/assets/images/home_iocn/temple.svg", link: "/religious", color: "#fff1f0" },
-    { id: "culture", title: "Cultural & Unique", image: "/assets/images/home_iocn/castle.svg", link: "/culture", color: "#fcffe6" },
+    { id: "beaches", title: "Beaches", icon: "fa-umbrella-beach", link: "/beaches", color: "#00aaff" }, // Blue
+    { id: "hill-stations", title: "Hill Stations", icon: "fa-mountain-sun", link: "/hills", color: "#4caf50" }, // Green
+    { id: "forts", title: "Forts", icon: "fa-chess-rook", link: "/forts", color: "#795548" }, // Brown
+    { id: "wildlife", title: "Wildlife", icon: "fa-paw", link: "/nature", color: "#ff9800" }, // Orange
+    { id: "religious", title: "Religious", icon: "fa-gopuram", link: "/religious", color: "#e91e63" }, // Pink
+    { id: "culture", title: "Culture", icon: "fa-masks-theater", link: "/culture", color: "#673ab7" }, // Purple
   ];
 
   return (
@@ -113,10 +113,10 @@ export default function Home() {
         </div>
       </header>
 
-      {/* 🧩 2. BENTO CATEGORY GRID */}
+      {/* 🧩 2. BENTO CATEGORY GRID (Updated with FA Icons) */}
       <section className="container py-5 position-relative" id="overview" style={{ zIndex: 2 }}>
         
-        {/* Section Header */}
+        {/* Header */}
         <div className="text-center mb-5" data-aos="fade-up">
             <span className="badge bg-white border text-dark px-3 py-2 rounded-pill text-uppercase letter-spacing-2 fw-bold mb-3 shadow-sm">
                 <Translator text="Discover by Interest" targetLang={language} />
@@ -138,11 +138,13 @@ export default function Home() {
                   <div className="card-blob" style={{ background: section.color }}></div>
                   
                   <div className="card-content">
+                      {/* Icon Squircle */}
                       <div 
                         className="icon-squircle mb-3" 
                         style={{ backgroundColor: `${section.color}15`, color: section.color }}
                       >
-                        <Image src={section.image} alt={section.title} width={50} height={50} className="category-icon" />
+                        {/* ✅ REPLACED IMAGE WITH FA ICON */}
+                        <i className={`fas ${section.icon} fs-4`}></i>
                       </div>
                       
                       <h3 className="h6 fw-bold text-dark mb-1">
@@ -174,7 +176,7 @@ export default function Home() {
          </div>
       </section>
 
-      {/* 🏔️ 4. CONTENT LISTINGS (Horizontal Sliders) */}
+      {/* 🏔️ 4. CONTENT LISTINGS */}
       <div className="content-staggered pb-5">
         <div className="slider-item"><BeachList /></div>
         <div className="slider-item"><HillList /></div>
@@ -191,42 +193,29 @@ export default function Home() {
         .bg-light-soft { background-color: #f9f9f9; }
         .letter-spacing-2 { letter-spacing: 2px; }
 
-        /* --- HERO SECTION --- */
+        /* --- HERO --- */
         .hero-editorial {
-          position: relative;
-          height: 95vh;
-          display: flex;
-          background: #0a0a0a;
-          overflow: hidden;
+          position: relative; height: 95vh; display: flex;
+          background: #0a0a0a; overflow: hidden;
         }
-        .hero-visual-pane {
-          position: absolute; inset: 0; width: 100%; z-index: 1;
-        }
-        .hero-bg-zoom {
-          position: absolute; inset: 0;
-          animation: slowZoom 40s infinite alternate linear;
-        }
+        .hero-visual-pane { position: absolute; inset: 0; width: 100%; z-index: 1; }
+        .hero-bg-zoom { position: absolute; inset: 0; animation: slowZoom 40s infinite alternate linear; }
         .hero-vignette {
           position: absolute; inset: 0;
           background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 100%);
           z-index: 2;
         }
-        @keyframes slowZoom {
-          from { transform: scale(1); }
-          to { transform: scale(1.15); }
-        }
+        @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.15); } }
 
         .hero-content-pane {
           position: relative; z-index: 3; width: 100%;
-          display: flex; align-items: center; justify-content: center;
-          padding: 0 10%;
+          display: flex; align-items: center; justify-content: center; padding: 0 10%;
         }
         .content-wrapper { max-width: 800px; text-align: center; }
 
         .editorial-badge {
           display: inline-flex; align-items: center; gap: 10px;
-          background: rgba(255, 255, 255, 0.15);
-          backdrop-filter: blur(10px);
+          background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px);
           padding: 8px 20px; border-radius: 100px;
           color: #fff; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
           font-size: 0.75rem; border: 1px solid rgba(255,255,255,0.2);
@@ -236,25 +225,18 @@ export default function Home() {
 
         .fw-black { font-weight: 900; letter-spacing: -2px; }
         .text-outline {
-          color: transparent;
-          -webkit-text-stroke: 1px rgba(255,255,255,0.9);
+          color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,0.9);
           font-style: italic; font-family: serif;
         }
-        .description-text {
-          font-size: 1.25rem; color: rgba(255,255,255,0.85); font-weight: 300; line-height: 1.6;
-        }
+        .description-text { font-size: 1.25rem; color: rgba(255,255,255,0.85); font-weight: 300; line-height: 1.6; }
 
         .btn-luxury {
           display: inline-flex; align-items: center; gap: 15px;
           background: #fff; color: #000;
           padding: 16px 40px; border-radius: 100px;
-          text-decoration: none; font-weight: 800;
-          transition: 0.3s;
+          text-decoration: none; font-weight: 800; transition: 0.3s;
         }
-        .btn-luxury:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 10px 30px rgba(255,255,255,0.2);
-        }
+        .btn-luxury:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(255,255,255,0.2); }
 
         .hero-floating-footer {
           position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
@@ -286,17 +268,14 @@ export default function Home() {
         }
 
         .card-blob {
-            position: absolute;
-            top: -20%; right: -20%;
+            position: absolute; top: -20%; right: -20%;
             width: 120px; height: 120px;
             border-radius: 50%;
             opacity: 0.15; filter: blur(40px);
             transition: transform 0.5s ease;
         }
 
-        .category-card:hover .card-blob {
-            transform: scale(1.5); opacity: 0.25;
-        }
+        .category-card:hover .card-blob { transform: scale(1.5); opacity: 0.25; }
 
         .card-content {
             position: relative; z-index: 2; width: 100%;
@@ -305,18 +284,15 @@ export default function Home() {
 
         .icon-squircle {
             width: 64px; height: 64px;
-            border-radius: 20px; /* Squircle */
+            border-radius: 20px;
             display: flex; align-items: center; justify-content: center;
             margin-bottom: 1rem;
             transition: transform 0.4s ease;
             background: #f8f9fa;
         }
 
-        .category-card:hover .icon-squircle {
-            transform: rotate(-10deg) scale(1.1);
-        }
+        .category-card:hover .icon-squircle { transform: rotate(-10deg) scale(1.1); }
 
-        /* --- RESPONSIVE --- */
         @media (max-width: 768px) {
           .display-1 { font-size: 3.5rem; }
           .hero-container { height: 85vh; }
