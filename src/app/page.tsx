@@ -177,7 +177,7 @@ export default function Home() {
       </section>
 
       {/* 🏔️ 4. CONTENT LISTINGS */}
-      <div className="content-staggered pb-5">
+      <div className="content-staggered">
         <div className="slider-item"><BeachList /></div>
         <div className="slider-item"><HillList /></div>
         <div className="slider-item"><FortList /></div>
@@ -233,7 +233,7 @@ export default function Home() {
         .btn-luxury {
           display: inline-flex; align-items: center; gap: 15px;
           background: #fff; color: #000;
-          padding: 16px 40px; border-radius: 100px;
+          padding: 10px 25px; border-radius: 100px;
           text-decoration: none; font-weight: 800; transition: 0.3s;
         }
         .btn-luxury:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(255,255,255,0.2); }
