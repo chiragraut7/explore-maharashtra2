@@ -54,7 +54,7 @@ const Overview: React.FC<OverviewProps> = ({ content, color = "#00aaff" }) => {
 
         {/* Title Text */}
         <div>
-          <h2 className="h5 fw-bold mb-0 text-dark">
+          <h2 className="h4 fw-bold mb-0 text-dark text-start">
             <Translator text={title} targetLang={language} />
           </h2>
           <span 

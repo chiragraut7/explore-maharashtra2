@@ -1,169 +1,190 @@
 {
-  "id": "dashavatar",
+  "id": "03",
   "title": "Dashavatar Folk Theatre",
-  "subtitle": "Traditional Art of Konkan",
+  "subtitle": "The 800-Year-Old Theatre of Gods",
   "bannerImage": "/assets/images/culture/03.jpg",
   "insideBannerImage": "/assets/images/culture/03/bannerimg.jpg",
   "color": "#f5d48a",
   "overview": [
-    "Dashavatar is one of Maharashtra’s oldest and most vibrant forms of traditional folk theatre, popular in the Konkan region. The word ‘Dashavatar’ means the ‘Ten Incarnations’ of Lord Vishnu. The performance combines mythological themes, music, dance, and drama to convey moral and spiritual lessons.",
-    "Performed during religious festivals and village fairs, Dashavatar is known for its colorful costumes, expressive acting, and live musical accompaniment with traditional instruments like mridangam, cymbals, and harmonium."
+    "Dashavatar is an 800-year-old folk theatre form indigenous to the Sindhudurg district of Konkan. As the name suggests, it dramatizes the ten incarnations of Lord Vishnu, blending mythology with sharp social commentary.",
+    "Performed without a written script, the plays rely heavily on the improvisation and wit of the actors. The performance traditionally begins at midnight and continues until dawn, serving as both entertainment and moral education for the village community."
   ],
   "highlights": [
     {
-      "icon": "fas fa-masks-theater",
-      "title": "Mythological Storytelling",
-      "description": "Each performance depicts one of Lord Vishnu’s ten incarnations, blending divine themes with human emotions."
+      "icon": "fas fa-theater-masks",
+      "title": "No Scripts",
+      "description": "Actors improvise dialogue on the spot, reacting to the audience and current events, making every show unique."
     },
     {
-      "icon": "fas fa-drum",
-      "title": "Live Music & Dance",
-      "description": "Actors perform with traditional musical instruments, creating an energetic atmosphere that engages the audience."
+      "icon": "fas fa-clock",
+      "title": "Midnight to Dawn",
+      "description": "A test of endurance and devotion, these plays run for 6-8 hours through the night in open-air temples."
     }
   ],
   "geography": {
     "image": "/images/cultural/dashavatar/geography.jpg",
-    "intro": "Dashavatar is primarily performed in the coastal Konkan belt of Maharashtra, especially in Sindhudurg and Ratnagiri districts. It is an integral part of village festivities and temple rituals.",
+    "intro": "Dashavatar is strictly a Konkan phenomenon, thriving in the red-soil villages of Sindhudurg and Ratnagiri, particularly in Sawantwadi, Kudal, and Vengurla.",
     "details": [
       {
         "icon": "fas fa-map-pin",
-        "label": "Region",
-        "value": "Konkan, Maharashtra"
+        "label": "Heartland",
+        "value": "Sawantwadi, Kudal, Vengurla"
       },
       {
-        "icon": "fas fa-landmark",
-        "label": "Popular Districts",
-        "value": "Sindhudurg, Ratnagiri"
+        "icon": "fas fa-user-friends",
+        "label": "Patrons",
+        "value": "Village Temples (Devasthans)"
       },
       {
-        "icon": "fas fa-users",
-        "label": "Main Performers",
-        "value": "Local village troupes"
+        "icon": "fas fa-language",
+        "label": "Language",
+        "value": "Malvani (Konkani-Marathi dialect)"
       },
       {
-        "icon": "fas fa-calendar-alt",
-        "label": "Festival Time",
-        "value": "Post-harvest and temple festival seasons"
+        "icon": "fas fa-drum",
+        "label": "Key Instrument",
+        "value": "Mridangam & Cymbals"
       },
       {
-        "icon": "fas fa-mountain",
-        "label": "Setting",
-        "value": "Open-air village stages or temple courtyards"
+        "icon": "fas fa-palette",
+        "label": "Makeup",
+        "value": "Natural pigments, rice paste, and wood ash"
       }
     ],
     "climate": {
-      "description": "Dashavatar performances thrive in the pleasant tropical climate of the Konkan region, often taking place during cool evenings after monsoon.",
+      "description": "The performance season is dictated by the agricultural cycle and the monsoon.",
       "seasons": [
         {
           "icon": "fas fa-sun",
-          "text": "Performances usually begin after the monsoon, during festive months of October–February."
+          "text": "Peak Season (Nov-May): After the harvest, when temples host annual fairs ('Jatra')."
         },
         {
           "icon": "fas fa-cloud-rain",
-          "text": "Rainy season rehearsals prepare troupes for winter shows."
+          "text": "Off Season (June-Oct): Troupes rest during the heavy Konkan monsoon."
         }
       ]
     },
-    "conclusion": "The geography and rural charm of the Konkan coast give Dashavatar its authentic setting and cultural depth."
+    "conclusion": "To see Dashavatar is to see the soul of the Konkan—vibrant, devout, and deeply connected to the land."
   },
   "activities": [
     {
-      "icon": "fas fa-theater-masks",
-      "title": "Watch Live Performances",
-      "description": "Experience a night of music, acting, and devotion as local troupes perform mythological plays.",
-      "info": ["Held in village fairs and temple festivals.", "Shows typically begin after sunset and continue till midnight."]
+      "icon": "fas fa-eye",
+      "title": "Watch a 'Jatra' Performance",
+      "description": "Sit on the cow-dung floor of a village temple courtyard under the stars and watch gods and demons battle until sunrise.",
+      "info": [
+        "Look for the 'Sankasur' character—a demon who provides comic relief.",
+        "The entry of the 'Matsya' (Fish) avatar is visually stunning."
+      ]
     },
     {
-      "icon": "fas fa-music",
-      "title": "Enjoy Folk Music",
-      "description": "Dashavatar features soulful tunes with mridangam, cymbals, and harmonium.",
-      "info": ["Live musicians perform alongside actors.", "Rhythms change with each avatar’s theme."]
+      "icon": "fas fa-paint-brush",
+      "title": "Backstage Access",
+      "description": "Arrive early (around 10 PM) to watch the actors apply intricate makeup layers using traditional stones and oils.",
+      "info": [
+        "It takes 3-4 hours for a lead actor to get ready.",
+        "Observe the ritual prayer ('Nandi') before the curtain rises."
+      ]
     },
     {
-      "icon": "fas fa-users",
-      "title": "Meet Local Artists",
-      "description": "Interact with village artists who dedicate generations to preserving this theatre tradition.",
-      "info": ["Learn about costume design and makeup.", "Support their art by attending performances."]
+      "icon": "fas fa-store",
+      "title": "Explore Sawantwadi Arts",
+      "description": "Visit Sawantwadi town, famous for the wooden toys and Ganjifa art that share the same aesthetic as Dashavatar props.",
+      "info": [
+        "Buy wooden masks inspired by the theatre characters.",
+        "Visit the Sawantwadi Palace museum."
+      ]
     }
   ],
   "attractions": [
     {
-      "image": "/images/cultural/dashavatar/sindhudurg.jpg",
-      "title": "Sindhudurg District Festivals",
-      "description": "Experience vibrant Dashavatar performances during temple fairs in Sindhudurg villages.",
-      "distance": "Regional",
-      "icon": "fas fa-map-marker-alt",
-      "value": "Sindhudurg Konkan"
+      "image": "/images/cultural/dashavatar/sawantwadi.jpg",
+      "title": "Sawantwadi & Kudal",
+      "description": "The twin towns are the nerve centers of Dashavatar, hosting the most famous troupes (Mandals).",
+      "distance": "Sindhudurg District",
+      "icon": "fas fa-crown",
+      "value": "Cultural Hub"
     },
     {
-      "image": "/images/cultural/dashavatar/ratnagiri.jpg",
-      "title": "Ratnagiri Cultural Nights",
-      "description": "Local troupes stage traditional stories with devotion and dramatic expression.",
-      "distance": "Regional",
-      "icon": "fas fa-landmark",
-      "value": "Ratnagiri Konkan"
+      "image": "/images/cultural/dashavatar/walawal.jpg",
+      "title": "Walawal & Chendvan",
+      "description": "Villages known for their ancient temples where performances have continued unbroken for centuries.",
+      "distance": "Near Kudal",
+      "icon": "fas fa-gopuram",
+      "value": "Historic Venues"
     }
   ],
-  "marineLife": {
-    "intro": "Though not connected to marine life, Dashavatar’s roots in the Konkan coastal belt make it spiritually and culturally tied to the sea-faring traditions of the region.",
+  "culturalContext": {
+    "intro": "Dashavatar is the 'Adivasi' (Original) theatre of Maharashtra, predating modern Marathi theatre by centuries.",
     "items": [
       {
-        "icon": "fas fa-water",
-        "title": "Konkan Coastal Heritage",
-        "description": "The performances reflect the life and beliefs of fishing and farming communities near the coast."
+        "icon": "fas fa-book-dead",
+        "title": "Mythology Preserved",
+        "description": "It has kept the complex stories of the Puranas alive in the minds of illiterate farmers for generations."
       },
       {
-        "icon": "fas fa-hand-holding-heart",
-        "title": "Cultural Preservation",
-        "description": "Dashavatar keeps the rural art and storytelling spirit alive across generations."
+        "icon": "fas fa-venus-mars",
+        "title": "Gender Roles",
+        "description": "Traditionally, all roles, including female deities, are played by men, a skill passed down father-to-son."
       }
     ],
     "conclusion": [
-      "Dashavatar mirrors the devotion and artistry of Konkan’s people.",
-      "It’s a living cultural tradition connecting myth, art, and spirituality."
+      "In an era of Netflix, Dashavatar survives because it is not just a show; it is a ritual offering to the village deity."
     ]
   },
   "howToReach": [
     {
       "icon": "fas fa-train",
-      "title": "By Train",
-      "details": ["Nearest major stations: Ratnagiri and Kudal.", "Regular trains from Mumbai, Pune, and Goa."]
-    },
-    {
-      "icon": "fas fa-road",
-      "title": "By Road",
-      "details": ["Easily accessible via Mumbai-Goa Highway (NH66).", "Local buses connect villages during festival season."]
+      "title": "By Train (Konkan Railway)",
+      "details": [
+        "Get off at Kudal (KUDL) or Sawantwadi Road (SWV). These are the closest stations to the action.",
+        "Performances happen in villages 10-20km from these stations."
+      ]
     },
     {
       "icon": "fas fa-plane",
       "title": "By Air",
-      "details": ["Nearest airport: Chipi (Sindhudurg Airport) – 30 km.", "Taxi and local transport available to nearby villages."]
+      "details": [
+        "New Chipi Airport (SDW) in Sindhudurg is just 30 mins from the heartland.",
+        "Goa's Mopa Airport (GOX) is also very close (approx. 1 hour drive)."
+      ]
+    },
+    {
+      "icon": "fas fa-car",
+      "title": "Local Travel",
+      "details": [
+        "Dashavatar happens deep in villages. You will need to hire a local auto-rickshaw or taxi to reach the temple at night.",
+        "Ask locals for 'Dashavatar Natak' schedules."
+      ]
     }
   ],
   "gallery": [
     {
       "src": "/images/cultural/dashavatar/gallery1.jpg",
       "thumb": "/images/cultural/dashavatar/gallery1-thumb.jpg",
-      "alt": "Dashavatar stage performance"
+      "alt": "The Narasimha Avatar in full fury",
+      "author": "Konkan Art Archive",
+      "location": "Kudal"
     },
     {
       "src": "/images/cultural/dashavatar/gallery2.jpg",
       "thumb": "/images/cultural/dashavatar/gallery2-thumb.jpg",
-      "alt": "Artists performing Vishnu avatars"
+      "alt": "Backstage makeup session",
+      "author": "Travel Maharashtra",
+      "location": "Sawantwadi"
     }
   ],
   "bookingTips": [
     {
-      "icon": "fas fa-calendar-check",
-      "description": "Check local village fair schedules before visiting to witness live Dashavatar performances."
+      "icon": "fas fa-calendar-alt",
+      "description": "There is no 'booking'. Shows are free and open to all. Just turn up at the village temple during the annual fair."
     },
     {
-      "icon": "fas fa-camera",
-      "description": "Seek permission before photographing performances, as rituals are often sacred."
+      "icon": "fas fa-coffee",
+      "description": "Prepare for an all-nighter. Carry a mat to sit on and plenty of tea/coffee."
     },
     {
-      "icon": "fas fa-heart",
-      "description": "Support local artists by contributing to village cultural trusts or attending live shows."
+      "icon": "fas fa-language",
+      "description": "The language is Malvani (a rapid dialect). Focus on the visual spectacle if you don't understand the words."
     }
   ]
 }
