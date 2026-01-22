@@ -2407,7 +2407,7 @@ html {
           display: inline-flex;
           align-items: center;
           color: #fff;
-          padding: 1rem 2.5rem;
+          padding: .5rem 1.5rem;
           text-decoration: none;
           font-weight: 700;
           border-radius: 5px;
@@ -2647,10 +2647,11 @@ html {
 
 .text-muted {
   color: #aaa;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+    text-transform: none;
+    letter-spacing: unset;
+    font-size: .8rem !important;
 }
+
 
 /* --- BOTTOM THUMBNAIL STRIP --- */
 .lb-bottom-strip {

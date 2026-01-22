@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react"; // Added useState
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import { useLanguage } from "../context/LanguageContext";
@@ -19,12 +19,17 @@ interface HowToReachProps {
   mainImage?: string; 
 }
 
+const FALLBACK_MAP = "/assets/images/map-placeholder.png";
+
 const HowToReach: React.FC<HowToReachProps> = ({ 
   transport = [], 
   color = "#00aaff",
-  mainImage = "/assets/images/map-placeholder.png" 
+  mainImage = FALLBACK_MAP 
 }) => {
   const { language } = useLanguage();
+  
+  // State to handle image loading errors
+  const [imgSrc, setImgSrc] = useState<string | null>(null);
 
   if (!transport.length) return null;
 
@@ -61,11 +66,12 @@ const HowToReach: React.FC<HowToReachProps> = ({
         <div className="col-lg-5 p-0 bg-light border-start">
           <div className="sticky-media-wrapper h-100 position-relative">
             <Image
-              src={mainImage}
+              src="/assets/images/map-placeholder.png" // Uses state if error, otherwise prop
               alt="Location Map"
               fill
               className="object-cover"
               sizes="(max-width: 991px) 100vw, 33vw"
+              onError={() => setImgSrc(FALLBACK_MAP)} // ✅ Automatically switches on error
             />
             <div className="image-overlay-subtle" />
             

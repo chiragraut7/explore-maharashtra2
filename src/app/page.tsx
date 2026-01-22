@@ -195,7 +195,7 @@ export default function Home() {
 
         /* --- HERO --- */
         .hero-editorial {
-          position: relative; height: 95vh; display: flex;
+          position: relative; height: 100vh; display: flex;
           background: #0a0a0a; overflow: hidden;
         }
         .hero-visual-pane { position: absolute; inset: 0; width: 100%; z-index: 1; }
