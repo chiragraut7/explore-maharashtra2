@@ -74,7 +74,7 @@ const UniversalContent: React.FC<UniversalContentProps> = ({ content, color = "#
         <div className="col-lg-5 p-0 bg-light border-start">
           <div className="sticky-media-wrapper h-100 position-relative">
             <Image
-              src={content.mainImage || "/assets/images/nature-placeholder.jpg"}
+              src={"/assets/images/nature-placeholder.jpg"}
               alt={content.title || "Feature Image"}
               fill
               className="object-cover"
