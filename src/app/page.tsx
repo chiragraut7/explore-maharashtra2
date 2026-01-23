@@ -186,7 +186,7 @@ export default function Home() {
         <div className="slider-item"><CulturalList /></div>
       </div>
 
-      <MaharashtraChat />
+      {/* <MaharashtraChat /> */}
 
       <style jsx global>{`
         /* --- GLOBAL --- */

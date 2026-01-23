@@ -87,7 +87,7 @@ export default function ItemPage() {
   useEffect(() => {
     if (!category || !id) return
     setLoading(true)
-    
+
     // Load Data
     fetch(`/api/${category}/${id}`)
       .then(res => res.json())
@@ -146,7 +146,7 @@ export default function ItemPage() {
   const navLinks = [
     { id: 'overview', label: 'Overview', icon: 'fa-binoculars' }, // Changed Icon
     { id: 'highlights', label: 'Trip Highlights', icon: 'fa-star' }, // Changed Label
-    { id: 'geography', label: 'Geography', icon: 'fa-map-marked-alt' }, 
+    { id: 'geography', label: 'Geography', icon: 'fa-map-marked-alt' },
     { id: 'activities', label: 'Things to Do', icon: 'fa-person-running' },
     { id: 'attractions', label: 'Attractions', icon: 'fa-camera-retro' },
     { id: 'gallery', label: 'Gallery', icon: 'fa-images' },
@@ -157,7 +157,7 @@ export default function ItemPage() {
     <>
       {/* 🔴 FIXED SINGLE SAVE BUTTON */}
       <div className="fav-single-btn">
-        <motion.button 
+        <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={toggleCurrentItem}
@@ -178,7 +178,7 @@ export default function ItemPage() {
         <Banner
           title={data.title}
           subtitle={data.subtitle}
-          category={category as string} 
+          category={category as string}
           image={data.insideBannerImage ?? data.bannerImage}
           color={data.color}
           view={view}
@@ -186,41 +186,6 @@ export default function ItemPage() {
         />
 
         {/* Mobile FAB */}
-        {view === 'info' && (
-          <div className="d-lg-none fixed-bottom p-3 d-flex justify-content-end" style={{ zIndex: 9999 }}>
-            <button 
-              className="btn shadow-lg rounded-circle p-0 d-flex align-items-center justify-content-center"
-              style={{ background: data.color || '#ff5722', width: '56px', height: '56px', color: '#fff' }}
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            >
-              <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-list-ul'} fs-4`}></i>
-            </button>
-            
-            <AnimatePresence>
-              {isMobileMenuOpen && (
-                <motion.div 
-                  initial={{ opacity: 0, scale: 0.8, y: 20 }}
-                  animate={{ opacity: 1, scale: 1, y: 0 }}
-                  exit={{ opacity: 0, scale: 0.8, y: 20 }}
-                  className="mobile-nav-popup shadow-lg bg-white rounded-4 p-2 mb-2 border"
-                  style={{ position: 'absolute', bottom: '70px', right: '0', width: '220px' }}
-                >
-                  {navLinks.map((link) => (
-                    <a 
-                      key={link.id} 
-                      href={`#${link.id}`} 
-                      className="d-flex align-items-center p-3 text-decoration-none text-dark border-bottom small fw-bold"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      <i className={`fas ${link.icon} me-3`} style={{ color: data.color }}></i>
-                      {link.label}
-                    </a>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-        )}
 
         <div className="container-fluid py-5 px-lg-5">
           <div className="row g-4 justify-content-center">
@@ -251,13 +216,15 @@ export default function ItemPage() {
             )}
 
             <div className={view === 'info' ? "col-lg-9" : "col-lg-10"}>
+              
+
               <AnimatePresence mode="wait">
                 {view === 'info' ? (
                   <motion.div key="info" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
-                    
+
                     {/* 1. OVERVIEW */}
                     <div id="overview" className="mb-5">
-                            <Overview content={data.overview} color={data.color} />
+                      <Overview content={data.overview} color={data.color} />
                     </div>
 
                     {/* 2. HIGHLIGHTS */}
@@ -269,35 +236,35 @@ export default function ItemPage() {
                     <div id="geography">
                       <Geography content={data.geography} coordinates={data.coordinates} color={data.color} />
                     </div>
-                    
+
                     {/* 4. ACTIVITIES */}
                     <div id="activities" className="mb-5">
-                      <Activities 
-                        activities={data.activities} 
+                      <Activities
+                        activities={data.activities}
                         color={data.color}
-                        category={category} 
+                        category={category}
                       />
                     </div>
 
                     {/* 5. ATTRACTIONS */}
                     <div id="attractions" className="mb-5">
-                      <Attractions 
-                        items={data.attractions} 
-                        color={data.color} 
-                        category={category} 
+                      <Attractions
+                        items={data.attractions}
+                        color={data.color}
+                        category={category}
                       />
-                      
+
                       {/* 6. MARINE LIFE / UNIVERSAL CONTENT */}
                       {data.marineLife && (
-                         <div className="mt-5">
-                            <MarineLife 
-                                content={{
-                                    ...data.marineLife,
-                                    mainImage: data.insideBannerImage || data.bannerImage 
-                                }} 
-                                color={data.color} 
-                            />
-                         </div>
+                        <div className="mt-5">
+                          <MarineLife
+                            content={{
+                              ...data.marineLife,
+                              mainImage: data.insideBannerImage || data.bannerImage
+                            }}
+                            color={data.color}
+                          />
+                        </div>
                       )}
                     </div>
 
@@ -308,9 +275,9 @@ export default function ItemPage() {
 
                     {/* 8. HOW TO REACH */}
                     <div id="reach" className="mb-5">
-                      <HowToReach 
-                        transport={data.howToReach} 
-                        color={data.color} 
+                      <HowToReach
+                        transport={data.howToReach}
+                        color={data.color}
                         mainImage={data.geography?.image || data.insideBannerImage}
                       />
                     </div>
@@ -322,6 +289,41 @@ export default function ItemPage() {
                   </motion.div>
                 )}
               </AnimatePresence>
+              {view === 'info' && (
+                <div className="d-lg-none sticky-bottom p-3 d-flex justify-content-end" style={{ zIndex: 9999 }}>
+                  <button
+                    className="btn shadow-lg rounded-circle p-0 d-flex align-items-center justify-content-center"
+                    style={{ background: data.color || '#ff5722', width: '56px', height: '56px', color: '#fff' }}
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                  >
+                    <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-list-ul'} fs-4`}></i>
+                  </button>
+
+                  <AnimatePresence>
+                    {isMobileMenuOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.8, y: 20 }}
+                        className="mobile-nav-popup shadow-lg bg-white rounded-4 p-2 mb-2 border"
+                        style={{ position: 'absolute', bottom: '70px', right: '0', width: '220px' }}
+                      >
+                        {navLinks.map((link) => (
+                          <a
+                            key={link.id}
+                            href={`#${link.id}`}
+                            className="d-flex align-items-center p-3 text-decoration-none text-dark border-bottom small fw-bold"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                            <i className={`fas ${link.icon} me-3`} style={{ color: data.color }}></i>
+                            {link.label}
+                          </a>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -366,6 +368,11 @@ export default function ItemPage() {
             border-color: #fff;
             box-shadow: 0 4px 20px rgba(255, 0, 0, 0.2);
           }
+            .sticky-bottom {
+  bottom: 100px;
+  z-index: 1020; /* similar to bootstrap fixed */
+}
+
 
           @media (max-width: 768px) {
             .fav-single-btn { top: 80px; right: 20px; }

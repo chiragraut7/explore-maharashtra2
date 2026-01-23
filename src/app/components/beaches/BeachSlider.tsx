@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay, FreeMode, Pagination } from 'swiper/modules'
 
@@ -15,11 +15,11 @@ import { Item } from '@/app/types'
 
 interface BeachSliderProps {
   beaches: Item[]
-  category: string;
-  // ✅ This signature matches the requirement for optional IDs
+  category: string
   generateSlug: (id?: string) => string 
 }
 
+// Configuration for Colors, Icons, and Labels per category
 const categoryMeta: Record<string, { color: string; icon: string; label: string }> = {
   beaches: { color: '#0077be', icon: 'fa-umbrella-beach', label: 'Discover Shore' },
   hills: { color: '#2d5a27', icon: 'fa-mountain-sun', label: 'Explore Peaks' },
@@ -30,12 +30,20 @@ const categoryMeta: Record<string, { color: string; icon: string; label: string 
 }
 
 const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSlug }) => {
+  // Default to 'beaches' style if category not found
   const currentMeta = categoryMeta[category] || categoryMeta.beaches;
+  
+  // State to hold navigation button DOM elements
+  const [prevEl, setPrevEl] = useState<HTMLElement | null>(null);
+  const [nextEl, setNextEl] = useState<HTMLElement | null>(null);
+
+  // Unique class for this category's progress bar to prevent conflicts
+  const paginationClass = `custom-progress-${category}`;
 
   return (
     <div className="relative premium-slider-wrapper">
       
-      {/* 🏷️ Magazine Style Header */}
+      {/* --- HEADER SECTION --- */}
       <div className="d-flex align-items-center mb-4 slider-header px-2">
         <div 
           className="category-icon-box shadow-sm me-3" 
@@ -54,20 +62,27 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
         </div>
       </div>
 
+      {/* --- SWIPER CAROUSEL --- */}
       <Swiper
         modules={[Navigation, Autoplay, FreeMode, Pagination]}
         spaceBetween={30}
         slidesPerView={3}
         freeMode={true}
         grabCursor={true}
-        navigation={{
-          nextEl: '.swiper-next-custom',
-          prevEl: '.swiper-prev-custom',
-        }}
+        
+        // Critical Props for Reliability
+        observer={true} 
+        observeParents={true}
+
+        // Connect navigation directly to our state elements
+        navigation={{ prevEl, nextEl }}
+        
+        // Scoped pagination class
         pagination={{
           type: 'progressbar',
-          el: '.custom-progress-bar',
+          el: `.${paginationClass}`, 
         }}
+
         loop={beaches.length > 3}
         autoplay={{ 
           delay: 4500, 
@@ -81,8 +96,8 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
         }}
         className="pb-5"
       >
-        {beaches.map((item) => (
-          <SwiperSlide key={item.id}>
+        {beaches.map((item, index) => (
+          <SwiperSlide key={item.id || index}>
             <BeachCard
               beach={item}
               category={category}
@@ -94,18 +109,28 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
         ))}
       </Swiper>
 
-      {/* 📊 Thematic Progress Bar */}
+      {/* --- PROGRESS BAR --- */}
       <div className="progress-wrapper mb-4">
-        <div className="custom-progress-bar"></div>
+        <div className={paginationClass}></div>
       </div>
 
-      {/* 🏹 Navigation & Interaction Hints */}
+      {/* --- NAVIGATION CONTROLS --- */}
       <div className="d-flex justify-content-between align-items-center mt-4 px-2">
         <div className="d-flex gap-3">
-          <button className="swiper-prev-custom shadow-sm" aria-label="Previous">
+          {/* Ref callback sets the state immediately on render */}
+          <button 
+            ref={(node) => setPrevEl(node)} 
+            className="swiper-nav-btn shadow-sm" 
+            aria-label="Previous Slide"
+          >
             <i className="fas fa-chevron-left"></i>
           </button>
-          <button className="swiper-next-custom shadow-sm" aria-label="Next">
+          
+          <button 
+            ref={(node) => setNextEl(node)} 
+            className="swiper-nav-btn shadow-sm" 
+            aria-label="Next Slide"
+          >
             <i className="fas fa-chevron-right"></i>
           </button>
         </div>
@@ -117,6 +142,7 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
       </div>
 
       <style jsx>{`
+        /* Icon Box Animation */
         .category-icon-box {
           width: 52px; height: 52px; border-radius: 12px;
           display: flex; align-items: center; justify-content: center;
@@ -126,32 +152,44 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
           transform: scale(1.1) rotate(-8deg);
           box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
         }
+
+        /* Typography & Accents */
         .accent-line { width: 40px; height: 4px; margin-top: 4px; border-radius: 2px; }
         .tracking-widest { letter-spacing: 0.25em; }
+        
+        /* Progress Bar Container */
         .progress-wrapper {
           height: 2px; width: 100%; background: rgba(0,0,0,0.05);
           border-radius: 10px; overflow: hidden; position: relative;
         }
-        :global(.custom-progress-bar .swiper-pagination-progressbar-fill) {
+        
+        /* Dynamic Color for Progress Bar Fill */
+        :global(.${paginationClass} .swiper-pagination-progressbar-fill) {
           background: ${currentMeta.color} !important;
         }
-        .swiper-prev-custom, .swiper-next-custom {
+
+        /* Nav Buttons */
+        .swiper-nav-btn {
           width: 44px; height: 44px; background: #fff;
           border: 1px solid rgba(0,0,0,0.06); color: #444;
           border-radius: 50%; cursor: pointer;
           display: flex; align-items: center; justify-content: center;
           transition: all 0.3s ease;
         }
-        .swiper-prev-custom:hover, .swiper-next-custom:hover {
+        .swiper-nav-btn:hover {
           background: ${currentMeta.color}; color: #fff;
           border-color: ${currentMeta.color}; transform: translateY(-2px);
         }
+
+        /* Scroll Hint Text */
         .scroll-hint { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: #888; }
         .hint-arrow { animation: nudge 2s infinite; color: ${currentMeta.color}; }
+        
         @keyframes nudge {
           0%, 100% { transform: translateX(0); }
           50% { transform: translateX(6px); }
         }
+
         @media (max-width: 768px) {
            .category-icon-box { width: 40px; height: 40px; font-size: 1.1rem; }
            .scroll-hint-container { display: none !important; }

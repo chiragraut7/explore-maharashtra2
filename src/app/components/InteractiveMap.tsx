@@ -31,6 +31,9 @@ const InteractiveMap = () => {
       try {
         const L = (await import('leaflet')).default;
         const { MapContainer, TileLayer, Marker, Popup, ZoomControl } = await import('react-leaflet');
+        
+        // --- NEW: Import Cluster Library ---
+        const MarkerClusterGroup = (await import('react-leaflet-cluster')).default;
 
         // Custom "Ripple" Marker with DYNAMIC ICON
         const createIcon = (color: string, category: string) => {
@@ -52,7 +55,19 @@ const InteractiveMap = () => {
             });
         };
 
-        setMapComponents({ MapContainer, TileLayer, Marker, Popup, ZoomControl, createIcon });
+        // --- NEW: Custom Cluster Bubble Icon ---
+        const createClusterCustomIcon = function (cluster: any) {
+          return new L.DivIcon({
+            html: `<span class="cluster-pill">${cluster.getChildCount()}</span>`,
+            className: 'custom-marker-cluster',
+            iconSize: [40, 40]
+          });
+        };
+
+        setMapComponents({ 
+            MapContainer, TileLayer, Marker, Popup, ZoomControl, 
+            MarkerClusterGroup, createIcon, createClusterCustomIcon // Export new components
+        });
       } catch (error) {
         console.error("Leaflet failed to load:", error);
       }
@@ -77,7 +92,7 @@ const InteractiveMap = () => {
     );
   }
 
-  const { MapContainer, TileLayer, Marker, Popup, ZoomControl, createIcon } = MapComponents;
+  const { MapContainer, TileLayer, Marker, Popup, ZoomControl, MarkerClusterGroup, createIcon, createClusterCustomIcon } = MapComponents;
 
   return (
     <div className="position-relative map-widget-container">
@@ -117,46 +132,55 @@ const InteractiveMap = () => {
           
           <ZoomControl position="bottomright" />
 
-          {filtered.map((loc: any) => (
-            loc.coordinates && (
-              <Marker 
-                key={loc.id} 
-                position={[loc.coordinates.lat, loc.coordinates.lng]} 
-                // Pass both color and category to createIcon
-                icon={createIcon(loc.color || '#00aaff', loc.category)}
-              >
-                <Popup className="premium-glass-popup" closeButton={false} minWidth={280}>
-                  <div className="popup-card">
-                    {/* Image */}
-                    <div className="popup-media">
-                        <img 
-                            src={loc.image || "/assets/images/map-placeholder.png"} 
-                            alt={loc.name} 
-                            className="popup-img"
-                        />
-                        <div className="popup-badge">
-                            <i className={`fas ${CATEGORY_ICONS[loc.category] || 'fa-map-pin'} me-1`}></i>
-                            {loc.category}
+          {/* --- NEW: WRAP MARKERS IN CLUSTER GROUP --- */}
+          <MarkerClusterGroup
+             chunkedLoading
+             iconCreateFunction={createClusterCustomIcon}
+             maxClusterRadius={60}
+             spiderfyOnMaxZoom={true}
+          >
+            {filtered.map((loc: any) => (
+                loc.coordinates && (
+                <Marker 
+                    key={loc.id} 
+                    position={[loc.coordinates.lat, loc.coordinates.lng]} 
+                    // Pass both color and category to createIcon
+                    icon={createIcon(loc.color || '#00aaff', loc.category)}
+                >
+                    <Popup className="premium-glass-popup" closeButton={false} minWidth={280}>
+                    <div className="popup-card">
+                        {/* Image */}
+                        <div className="popup-media">
+                            <img 
+                                src={loc.image || "/assets/images/map-placeholder.png"} 
+                                alt={loc.name} 
+                                className="popup-img"
+                            />
+                            <div className="popup-badge">
+                                <i className={`fas ${CATEGORY_ICONS[loc.category] || 'fa-map-pin'} me-1`}></i>
+                                {loc.category}
+                            </div>
+                        </div>
+                        
+                        {/* Content */}
+                        <div className="popup-details">
+                        <h5 className="popup-title">{loc.name}</h5>
+                        <p className="popup-subtitle">{loc.subtitle || "Discover this location"}</p>
+                        
+                        <Link href={`/${loc.category}/${loc.id}`} className="popup-action-btn">
+                            <span>Explore Guide</span>
+                            <div className="btn-icon-circle">
+                                <i className="fas fa-arrow-right"></i>
+                            </div>
+                        </Link>
                         </div>
                     </div>
-                    
-                    {/* Content */}
-                    <div className="popup-details">
-                      <h5 className="popup-title">{loc.name}</h5>
-                      <p className="popup-subtitle">{loc.subtitle || "Discover this location"}</p>
-                      
-                      <Link href={`/${loc.category}/${loc.id}`} className="popup-action-btn">
-                        <span>Explore Guide</span>
-                        <div className="btn-icon-circle">
-                            <i className="fas fa-arrow-right"></i>
-                        </div>
-                      </Link>
-                    </div>
-                  </div>
-                </Popup>
-              </Marker>
-            )
-          ))}
+                    </Popup>
+                </Marker>
+                )
+            ))}
+          </MarkerClusterGroup>
+
         </MapContainer>
         
         {/* Inner Shadow Gradient for Depth */}
@@ -164,7 +188,29 @@ const InteractiveMap = () => {
       </div>
 
       <style jsx global>{`
-        /* --- CONTAINER --- */
+        /* --- NEW: CLUSTER STYLES --- */
+        .custom-marker-cluster {
+            background: rgba(255, 87, 34, 0.85); /* Orange Glass */
+            border: 2px solid white;
+            border-radius: 50%;
+            text-align: center;
+            color: white;
+            font-weight: 800;
+            font-size: 14px;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
+            transition: transform 0.2s ease;
+        }
+        .custom-marker-cluster:hover {
+            transform: scale(1.1);
+            background: #ff5722;
+            cursor: pointer;
+        }
+        .cluster-pill { pointer-events: none; }
+
+        /* --- EXISTING STYLES --- */
         .map-widget-container {
             perspective: 1000px;
         }

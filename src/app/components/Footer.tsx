@@ -53,7 +53,7 @@ const Footer = ({ color = "#E57717" }) => {
         style={{ background: "#0a0a0a", borderRadius: "60px 60px 0 0" }}
       >
         <div className="container py-5">
-          <div className="row g-5">
+          <div className="row g-5 justify-content-around">
 
             {/* BRAND BIOGRAPHY */}
             <div className="col-lg-4 col-md-12 text-start">
@@ -119,7 +119,7 @@ const Footer = ({ color = "#E57717" }) => {
             </div>
 
             {/* NEWSLETTER */}
-            <div className="col-lg-4 col-md-6">
+            {/* <div className="col-lg-4 col-md-6">
               <h6 className="nav-title">Newsletter</h6>
               <p className="small text-secondary mb-4 opacity-75">
                 Curated itineraries, heritage stories, and hidden gem alerts delivered to your inbox.
@@ -138,7 +138,7 @@ const Footer = ({ color = "#E57717" }) => {
                   Join
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <hr className="my-5 border-secondary opacity-10" />
