@@ -155,14 +155,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/mayureshwar/1.jpg",
-      "thumb": "/images/religious/mayureshwar/thumb1.jpg",
-      "alt": "Mayureshwar Temple Front View"
-    },
-    {
-      "src": "/images/religious/mayureshwar/2.jpg",
-      "thumb": "/images/religious/mayureshwar/thumb2.jpg",
-      "alt": "Inner Sanctum and Carvings"
+      "src": "/assets/images/religious/23.jpg",
+      "thumb": "/assets/images/religious/23.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

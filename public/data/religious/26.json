@@ -163,14 +163,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/mahad/1.jpg",
-      "thumb": "/images/religious/mahad/thumb1.jpg",
-      "alt": "Varadvinayak Temple Mahad Front View"
-    },
-    {
-      "src": "/images/religious/mahad/2.jpg",
-      "thumb": "/images/religious/mahad/thumb2.jpg",
-      "alt": "Sacred Pond beside Varadvinayak Temple"
+      "src": "/assets/images/religious/26.jpg",
+      "thumb": "/assets/images/religious/26.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

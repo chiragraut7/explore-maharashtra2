@@ -160,14 +160,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/cultural/kirtan-pravachan/gallery1.jpg",
-      "thumb": "/images/cultural/kirtan-pravachan/gallery1-thumb.jpg",
-      "alt": "Kirtankar performing in a temple"
-    },
-    {
-      "src": "/images/cultural/kirtan-pravachan/gallery2.jpg",
-      "thumb": "/images/cultural/kirtan-pravachan/gallery2-thumb.jpg",
-      "alt": "Devotees listening to Pravachan"
+      "src": "/assets/images/culture/07.jpg",
+      "thumb": "/assets/images/culture/07.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

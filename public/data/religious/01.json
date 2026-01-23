@@ -153,14 +153,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/shirdi/1.jpg",
-      "thumb": "/images/religious/shirdi/thumb1.jpg",
-      "alt": "Shirdi Sai Baba Temple Front View"
-    },
-    {
-      "src": "/images/religious/shirdi/2.jpg",
-      "thumb": "/images/religious/shirdi/thumb2.jpg",
-      "alt": "Devotees during Aarti"
+      "src": "/assets/images/religious/01.jpg",
+      "thumb": "/assets/images/religious/01.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

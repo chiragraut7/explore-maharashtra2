@@ -154,14 +154,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/parli-vaijnath/1.jpg",
-      "thumb": "/images/religious/parli-vaijnath/thumb1.jpg",
-      "alt": "Parli Vaijnath Temple Front View"
-    },
-    {
-      "src": "/images/religious/parli-vaijnath/2.jpg",
-      "thumb": "/images/religious/parli-vaijnath/thumb2.jpg",
-      "alt": "Devotees performing Aarti"
+      "src": "/assets/images/religious/20.jpg",
+      "thumb": "/assets/images/religious/20.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

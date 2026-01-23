@@ -171,19 +171,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/test/mahalaxmi-mumbai/1.jpg",
-      "thumb": "/images/religious/test/mahalaxmi-mumbai/thumb1.jpg",
-      "alt": "Mahalaxmi Temple view from the entrance"
-    },
-    {
-      "src": "/images/religious/test/mahalaxmi-mumbai/2.jpg",
-      "thumb": "/images/religious/test/mahalaxmi-mumbai/thumb2.jpg",
-      "alt": "Devotees offering prayers during Navratri"
-    },
-    {
-      "src": "/images/religious/test/mahalaxmi-mumbai/3.jpg",
-      "thumb": "/images/religious/test/mahalaxmi-mumbai/thumb3.jpg",
-      "alt": "Seaside view near Mahalaxmi Temple"
+      "src": "/assets/images/religious/40.jpg",
+      "thumb": "/assets/images/religious/40.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

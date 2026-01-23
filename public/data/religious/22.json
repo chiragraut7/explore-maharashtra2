@@ -155,14 +155,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/test/baneshwar-nasrapur/1.jpg",
-      "thumb": "/images/religious/test/baneshwar-nasrapur/thumb1.jpg",
-      "alt": "Baneshwar Temple main entrance"
-    },
-    {
-      "src": "/images/religious/test/baneshwar-nasrapur/2.jpg",
-      "thumb": "/images/religious/test/baneshwar-nasrapur/thumb2.jpg",
-      "alt": "Baneshwar Waterfall near the temple"
+      "src": "/assets/images/religious/22.jpg",
+      "thumb": "/assets/images/religious/22.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

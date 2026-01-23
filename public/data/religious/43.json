@@ -135,10 +135,11 @@
     }
   ],
   "gallery": [
-    { "src": "/images/religious/vani/1.jpg", "thumb": "/images/religious/vani/thumb1.jpg", "alt": "Saptashrungi Temple hill view" },
-    { "src": "/images/religious/vani/2.jpg", "thumb": "/images/religious/vani/thumb2.jpg", "alt": "Devotees climbing the steps" },
-    { "src": "/images/religious/vani/3.jpg", "thumb": "/images/religious/vani/thumb3.jpg", "alt": "Aerial view of temple and Sahyadris" },
-    { "src": "/images/religious/vani/4.jpg", "thumb": "/images/religious/vani/thumb4.jpg", "alt": "Evening aarti at the temple" }
+    {
+      "src": "/assets/images/religious/43.jpg",
+      "thumb": "/assets/images/religious/43.jpg",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     { "icon": "fa-solid fa-ticket-alt", "description": "Use the ropeway for quicker access during crowded festival days." },

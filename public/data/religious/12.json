@@ -118,8 +118,11 @@
     }
   ],
   "gallery": [
-    { "src": "/images/religious/shani-shingnapur/1.jpg", "thumb": "/images/religious/shani-shingnapur/thumb1.jpg", "alt": "Shani Shingnapur Temple" },
-    { "src": "/images/religious/shani-shingnapur/2.jpg", "thumb": "/images/religious/shani-shingnapur/thumb2.jpg", "alt": "Open-Air Idol of Lord Shani" }
+    {
+      "src": "/assets/images/religious/12.jpg",
+      "thumb": "/assets/images/religious/12.jpg",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     { "icon": "fas fa-calendar-check", "description": "Visit on Saturdays or Amavasya for special rituals and large gatherings." },

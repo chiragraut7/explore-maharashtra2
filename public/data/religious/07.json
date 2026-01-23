@@ -154,14 +154,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/grishneshwar/1.jpg",
-      "thumb": "/images/religious/grishneshwar/thumb1.jpg",
-      "alt": "Grishneshwar Temple Entrance"
-    },
-    {
-      "src": "/images/religious/grishneshwar/2.jpg",
-      "thumb": "/images/religious/grishneshwar/thumb2.jpg",
-      "alt": "Main Shikhara of Grishneshwar Temple"
+      "src": "/assets/images/religious/07.jpg",
+      "thumb": "/assets/images/religious/07.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

@@ -135,10 +135,11 @@
     }
   ],
   "gallery": [
-    { "src": "/images/religious/ekvira/1.jpg", "thumb": "/images/religious/ekvira/thumb1.jpg", "alt": "Ekvira Devi Temple view" },
-    { "src": "/images/religious/ekvira/2.jpg", "thumb": "/images/religious/ekvira/thumb2.jpg", "alt": "Devotees climbing the temple steps" },
-    { "src": "/images/religious/ekvira/3.jpg", "thumb": "/images/religious/ekvira/thumb3.jpg", "alt": "Karla Caves near Ekvira Temple" },
-    { "src": "/images/religious/ekvira/4.jpg", "thumb": "/images/religious/ekvira/thumb4.jpg", "alt": "Goddess Ekvira idol decked in flowers" }
+    {
+      "src": "/assets/images/religious/13.jpg",
+      "thumb": "/assets/images/religious/13.jpg",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     { "icon": "fa-solid fa-ticket-alt", "description": "Visit early morning to avoid crowds and heat during the climb." },

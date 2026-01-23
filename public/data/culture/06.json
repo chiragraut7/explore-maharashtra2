@@ -160,14 +160,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/cultural/jatra-festival/gallery1.jpg",
-      "thumb": "/images/cultural/jatra-festival/gallery1-thumb.jpg",
-      "alt": "Devotees at a Jatra fair"
-    },
-    {
-      "src": "/images/cultural/jatra-festival/gallery2.jpg",
-      "thumb": "/images/cultural/jatra-festival/gallery2-thumb.jpg",
-      "alt": "Colorful night illumination during Jatra"
+      "src": "/assets/images/culture/06.avif",
+      "thumb": "/assets/images/culture/06.avif",
+      "alt": ""
     }
   ],
   "bookingTips": [

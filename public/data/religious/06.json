@@ -170,19 +170,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/aundha-nagnath/1.jpg",
-      "thumb": "/images/religious/aundha-nagnath/thumb1.jpg",
-      "alt": "Aundha Nagnath Temple Entrance"
-    },
-    {
-      "src": "/images/religious/aundha-nagnath/2.jpg",
-      "thumb": "/images/religious/aundha-nagnath/thumb2.jpg",
-      "alt": "Temple Architecture and Carvings"
-    },
-    {
-      "src": "/images/religious/aundha-nagnath/3.jpg",
-      "thumb": "/images/religious/aundha-nagnath/thumb3.jpg",
-      "alt": "Devotees during Maha Shivaratri"
+      "src": "/assets/images/religious/06.jpg",
+      "thumb": "/assets/images/religious/06.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

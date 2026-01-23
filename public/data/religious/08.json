@@ -165,19 +165,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/jejuri/1.jpg",
-      "thumb": "/images/religious/jejuri/thumb1.jpg",
-      "alt": "Jejuri Khandoba Temple Hill"
-    },
-    {
-      "src": "/images/religious/jejuri/2.jpg",
-      "thumb": "/images/religious/jejuri/thumb2.jpg",
-      "alt": "Bhandara Festival Turmeric Clouds"
-    },
-    {
-      "src": "/images/religious/jejuri/3.jpg",
-      "thumb": "/images/religious/jejuri/thumb3.jpg",
-      "alt": "Devotees at Jejuri Steps"
+      "src": "/assets/images/religious/08.jpg",
+      "thumb": "/assets/images/religious/08.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

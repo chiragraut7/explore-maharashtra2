@@ -171,19 +171,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/vitthal-alandi/1.jpg",
-      "thumb": "/images/religious/vitthal-alandi/thumb1.jpg",
-      "alt": "Vitthal-Rukmini Temple Alandi"
-    },
-    {
-      "src": "/images/religious/vitthal-alandi/2.jpg",
-      "thumb": "/images/religious/vitthal-alandi/thumb2.jpg",
-      "alt": "Indrayani River Ghat at Alandi"
-    },
-    {
-      "src": "/images/religious/vitthal-alandi/3.jpg",
-      "thumb": "/images/religious/vitthal-alandi/thumb3.jpg",
-      "alt": "Sant Dnyaneshwar Palkhi Procession from Alandi"
+      "src": "/assets/images/religious/17.avif",
+      "thumb": "/assets/images/religious/17.avif",
+      "alt": ""
     }
   ],
   "bookingTips": [

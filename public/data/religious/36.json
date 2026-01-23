@@ -171,19 +171,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/test/kopeshwar-khidrapur/1.jpg",
-      "thumb": "/images/religious/test/kopeshwar-khidrapur/thumb1.jpg",
-      "alt": "Kopeshwar Temple main view"
-    },
-    {
-      "src": "/images/religious/test/kopeshwar-khidrapur/2.jpg",
-      "thumb": "/images/religious/test/kopeshwar-khidrapur/thumb2.jpg",
-      "alt": "Carved pillars of Kopeshwar Temple"
-    },
-    {
-      "src": "/images/religious/test/kopeshwar-khidrapur/3.jpg",
-      "thumb": "/images/religious/test/kopeshwar-khidrapur/thumb3.jpg",
-      "alt": "Circular mandapa of Kopeshwar Temple"
+      "src": "/assets/images/religious/36.jpg",
+      "thumb": "/assets/images/religious/36.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

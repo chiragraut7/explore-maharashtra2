@@ -155,14 +155,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/siddhivinayak/gallery1.jpg",
-      "thumb": "/images/religious/siddhivinayak/thumb1.jpg",
-      "alt": "Main Sanctum of Siddhivinayak Temple"
-    },
-    {
-      "src": "/images/religious/siddhivinayak/gallery2.jpg",
-      "thumb": "/images/religious/siddhivinayak/thumb2.jpg",
-      "alt": "Devotees during Aarti"
+      "src": "/assets/images/religious/09.jpg",
+      "thumb": "/assets/images/religious/09.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

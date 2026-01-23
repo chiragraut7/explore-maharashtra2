@@ -161,19 +161,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/mahaganapati-ranjangaon/gallery1.jpg",
-      "thumb": "/images/religious/mahaganapati-ranjangaon/gallery1-thumb.jpg",
-      "alt": "Mahaganapati Temple Front View"
-    },
-    {
-      "src": "/images/religious/mahaganapati-ranjangaon/gallery2.jpg",
-      "thumb": "/images/religious/mahaganapati-ranjangaon/gallery2-thumb.jpg",
-      "alt": "Mahaganapati Idol"
-    },
-    {
-      "src": "/images/religious/mahaganapati-ranjangaon/gallery3.jpg",
-      "thumb": "/images/religious/mahaganapati-ranjangaon/gallery3-thumb.jpg",
-      "alt": "Temple Complex Architecture"
+      "src": "/assets/images/religious/30.jpg",
+      "thumb": "/assets/images/religious/30.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

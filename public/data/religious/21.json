@@ -170,19 +170,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/mumbadevi/1.jpg",
-      "thumb": "/images/religious/mumbadevi/thumb1.jpg",
-      "alt": "Mumbadevi Temple Entrance"
-    },
-    {
-      "src": "/images/religious/mumbadevi/2.jpg",
-      "thumb": "/images/religious/mumbadevi/thumb2.jpg",
-      "alt": "Idol of Goddess Mumbadevi"
-    },
-    {
-      "src": "/images/religious/mumbadevi/3.jpg",
-      "thumb": "/images/religious/mumbadevi/thumb3.jpg",
-      "alt": "Zaveri Bazaar near Mumbadevi Temple"
+      "src": "/assets/images/religious/21.jpg",
+      "thumb": "/assets/images/religious/21.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

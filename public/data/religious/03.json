@@ -170,19 +170,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/tuljapur/1.jpg",
-      "thumb": "/images/religious/tuljapur/thumb1.jpg",
-      "alt": "Tulja Bhavani Temple Entrance"
-    },
-    {
-      "src": "/images/religious/tuljapur/2.jpg",
-      "thumb": "/images/religious/tuljapur/thumb2.jpg",
-      "alt": "Idol of Goddess Bhavani"
-    },
-    {
-      "src": "/images/religious/tuljapur/3.jpg",
-      "thumb": "/images/religious/tuljapur/thumb3.jpg",
-      "alt": "Devotees during Navratri Festival"
+      "src": "/assets/images/religious/03.jpg",
+      "thumb": "/assets/images/religious/03.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

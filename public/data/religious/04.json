@@ -154,14 +154,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/mahalaxmi-kolhapur/1.jpg",
-      "thumb": "/images/religious/mahalaxmi-kolhapur/thumb1.jpg",
-      "alt": "Mahalaxmi Temple Kolhapur Front View"
-    },
-    {
-      "src": "/images/religious/mahalaxmi-kolhapur/2.jpg",
-      "thumb": "/images/religious/mahalaxmi-kolhapur/thumb2.jpg",
-      "alt": "Devotees during Kirnotsav"
+      "src": "/assets/images/religious/04.jpg",
+      "thumb": "/assets/images/religious/04.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

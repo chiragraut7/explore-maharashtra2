@@ -134,8 +134,11 @@
     }
   ],
   "gallery": [
-    { "src": "/images/religious/pandharpur/temple1.jpg", "thumb": "/images/religious/pandharpur/temple1_thumb.jpg", "alt": "Pandharpur Vitthal Temple" },
-    { "src": "/images/religious/pandharpur/wari.jpg", "thumb": "/images/religious/pandharpur/wari_thumb.jpg", "alt": "Wari Procession at Pandharpur" }
+    {
+      "src": "/assets/images/religious/02.jpg",
+      "thumb": "/assets/images/religious/02.jpg",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     { "icon": "fas fa-ticket-alt", "description": "Plan your trip during Ashadhi or Kartik Ekadashi for a grand experience." },

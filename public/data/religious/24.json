@@ -155,14 +155,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/siddhatek/1.jpg",
-      "thumb": "/images/religious/siddhatek/thumb1.jpg",
-      "alt": "Siddhivinayak Temple Front View"
-    },
-    {
-      "src": "/images/religious/siddhatek/2.jpg",
-      "thumb": "/images/religious/siddhatek/thumb2.jpg",
-      "alt": "Bhima River near Siddhatek Temple"
+      "src": "/assets/images/religious/24.jpg",
+      "thumb": "/assets/images/religious/24.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

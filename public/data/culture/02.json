@@ -168,18 +168,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/cultural/dahi-handi/gallery1.jpg",
-      "thumb": "/images/cultural/dahi-handi/thumb1.jpg",
-      "alt": "A 9-tier human pyramid about to break the pot",
-      "author": "Mumbai Tourism",
-      "location": "Thane"
-    },
-    {
-      "src": "/images/cultural/dahi-handi/gallery2.jpg",
-      "thumb": "/images/cultural/dahi-handi/thumb2.jpg",
-      "alt": "Crowds cheering as water is splashed on Govindas",
-      "author": "Street Photographer",
-      "location": "Dadar"
+      "src": "/assets/images/culture/02.jpg",
+      "thumb": "/assets/images/culture/02.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

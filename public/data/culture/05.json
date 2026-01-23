@@ -146,18 +146,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/cultural/gudi-padwa/gallery1.jpg",
-      "thumb": "/images/cultural/gudi-padwa/gallery1-thumb.jpg",
-      "alt": "Women riding bikes in Nauvari sarees during Shobha Yatra",
-      "author": "Mumbai Times",
-      "location": "Girgaon"
-    },
-    {
-      "src": "/images/cultural/gudi-padwa/gallery2.jpg",
-      "thumb": "/images/cultural/gudi-padwa/gallery2-thumb.jpg",
-      "alt": "Traditional Gudi hoisted outside a window",
-      "author": "Maharashtra Culture",
-      "location": "Pune"
+      "src": "/assets/images/culture/05.jpg",
+      "thumb": "/assets/images/culture/05.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

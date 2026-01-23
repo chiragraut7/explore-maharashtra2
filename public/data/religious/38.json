@@ -169,19 +169,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/test/kamakhya-nagthane/1.jpg",
-      "thumb": "/images/religious/test/kamakhya-nagthane/thumb1.jpg",
-      "alt": "Kamakhya Devi Temple at Nagthane"
-    },
-    {
-      "src": "/images/religious/test/kamakhya-nagthane/2.jpg",
-      "thumb": "/images/religious/test/kamakhya-nagthane/thumb2.jpg",
-      "alt": "Entrance of Kamakhya Devi Temple"
-    },
-    {
-      "src": "/images/religious/test/kamakhya-nagthane/3.jpg",
-      "thumb": "/images/religious/test/kamakhya-nagthane/thumb3.jpg",
-      "alt": "Navratri celebrations at Kamakhya Temple, Nagthane"
+      "src": "/assets/images/religious/38.jpg",
+      "thumb": "/assets/images/religious/38.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

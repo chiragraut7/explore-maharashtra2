@@ -144,10 +144,11 @@
     }
   ],
   "gallery": [
-    { "src": "/images/religious/kunkeshwar/1.jpg", "thumb": "/images/religious/kunkeshwar/thumb1.jpg", "alt": "Kunkeshwar Temple sea view" },
-    { "src": "/images/religious/kunkeshwar/2.jpg", "thumb": "/images/religious/kunkeshwar/thumb2.jpg", "alt": "Lord Shiva idol at Kunkeshwar" },
-    { "src": "/images/religious/kunkeshwar/3.jpg", "thumb": "/images/religious/kunkeshwar/thumb3.jpg", "alt": "Kunkeshwar Beach at sunset" },
-    { "src": "/images/religious/kunkeshwar/4.jpg", "thumb": "/images/religious/kunkeshwar/thumb4.jpg", "alt": "Devotees during Maha Shivaratri festival" }
+    {
+      "src": "/assets/images/religious/19.jpg",
+      "thumb": "/assets/images/religious/19.jpg",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     { "icon": "fa-solid fa-hotel", "description": "Stay in nearby Devgad or Malvan for better accommodation options." },

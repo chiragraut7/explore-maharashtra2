@@ -153,14 +153,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/akkalkot/1.jpg",
-      "thumb": "/images/religious/akkalkot/thumb1.jpg",
-      "alt": "Akkalkot Swami Samarth Temple Main Entrance"
-    },
-    {
-      "src": "/images/religious/akkalkot/2.jpg",
-      "thumb": "/images/religious/akkalkot/thumb2.jpg",
-      "alt": "Devotees performing Aarti at the temple"
+      "src": "/assets/images/religious/14.jpg",
+      "thumb": "/assets/images/religious/14.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

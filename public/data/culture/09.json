@@ -160,14 +160,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/cultural/lezim-dance/gallery1.jpg",
-      "thumb": "/images/cultural/lezim-dance/gallery1-thumb.jpg",
-      "alt": "Lezim performers in uniform"
-    },
-    {
-      "src": "/images/cultural/lezim-dance/gallery2.jpg",
-      "thumb": "/images/cultural/lezim-dance/gallery2-thumb.jpg",
-      "alt": "Women performing Lezim during festival"
+      "src": "/assets/images/culture/09.jpg",
+      "thumb": "/assets/images/culture/09.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

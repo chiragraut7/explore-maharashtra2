@@ -143,19 +143,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/yogeshwari-ambajogai/gallery1.jpg",
-      "thumb": "/images/religious/yogeshwari-ambajogai/gallery1-thumb.jpg",
-      "alt": "Yogeshwari Devi Temple"
-    },
-    {
-      "src": "/images/religious/yogeshwari-ambajogai/gallery2.jpg",
-      "thumb": "/images/religious/yogeshwari-ambajogai/gallery2-thumb.jpg",
-      "alt": "Temple Entrance"
-    },
-    {
-      "src": "/images/religious/yogeshwari-ambajogai/gallery3.jpg",
-      "thumb": "/images/religious/yogeshwari-ambajogai/gallery3-thumb.jpg",
-      "alt": "Temple Architecture"
+      "src": "/assets/images/religious/32.jpg",
+      "thumb": "/assets/images/religious/32.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

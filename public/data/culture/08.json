@@ -137,14 +137,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/cultural/lavani-dance/gallery1.jpg",
-      "thumb": "/images/cultural/lavani-dance/thumb1.jpg",
-      "alt": "Lavani Performance"
-    },
-    {
-      "src": "/images/cultural/lavani-dance/gallery2.jpg",
-      "thumb": "/images/cultural/lavani-dance/thumb2.jpg",
-      "alt": "Lavani Artists in Traditional Attire"
+      "src": "/assets/images/culture/08.jpg",
+      "thumb": "/assets/images/culture/08.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

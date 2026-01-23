@@ -152,19 +152,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/cultural/tamasha/gallery1.jpg",
-      "thumb": "/images/cultural/tamasha/gallery1-thumb.jpg",
-      "alt": "Tamasha Folk Performance"
-    },
-    {
-      "src": "/images/cultural/tamasha/gallery2.jpg",
-      "thumb": "/images/cultural/tamasha/gallery2-thumb.jpg",
-      "alt": "Lavani Dancers on Stage"
-    },
-    {
-      "src": "/images/cultural/tamasha/gallery3.jpg",
-      "thumb": "/images/cultural/tamasha/gallery3-thumb.jpg",
-      "alt": "Traditional Musicians in Tamasha"
+      "src": "/assets/images/culture/15.jpg",
+      "thumb": "/assets/images/culture/15.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

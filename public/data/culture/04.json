@@ -158,18 +158,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/cultural/ganesh-chaturthi/gallery1.jpg",
-      "thumb": "/images/cultural/ganesh-chaturthi/gallery1-thumb.jpg",
-      "alt": "The massive crowd at Lalbaugcha Raja",
-      "author": "Mumbai Live",
-      "location": "Lalbaug, Mumbai"
-    },
-    {
-      "src": "/images/cultural/ganesh-chaturthi/gallery2.jpg",
-      "thumb": "/images/cultural/ganesh-chaturthi/gallery2-thumb.jpg",
-      "alt": "Dhol Tasha Pathak performing in Pune",
-      "author": "Pune Culture",
-      "location": "Laxmi Road, Pune"
+      "src": "/assets/images/culture/04.jpg",
+      "thumb": "/assets/images/culture/04.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

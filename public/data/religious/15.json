@@ -126,10 +126,11 @@
     }
   ],
   "gallery": [
-    { "src": "/images/religious/shegaon/1.jpg", "thumb": "/images/religious/shegaon/thumb1.jpg", "alt": "Main temple complex" },
-    { "src": "/images/religious/shegaon/2.jpg", "thumb": "/images/religious/shegaon/thumb2.jpg", "alt": "Anand Sagar lake" },
-    { "src": "/images/religious/shegaon/3.jpg", "thumb": "/images/religious/shegaon/thumb3.jpg", "alt": "Gajanan Maharaj idol" },
-    { "src": "/images/religious/shegaon/4.jpg", "thumb": "/images/religious/shegaon/thumb4.jpg", "alt": "Temple premises" }
+    {
+      "src": "/assets/images/religious/15.jpg",
+      "thumb": "/assets/images/religious/15.jpg",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     { "icon": "fa-solid fa-hotel", "description": "Book accommodation in advance, especially during festivals like Gajanan Maharaj Jayanti." },

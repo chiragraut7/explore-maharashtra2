@@ -126,14 +126,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/cultural/nag-puja.jpg",
-      "thumb": "/images/cultural/nag-puja-thumb.jpg",
-      "alt": "Devotees offering milk to snake idols"
-    },
-    {
-      "src": "/images/cultural/snake-worship.jpg",
-      "thumb": "/images/cultural/snake-worship-thumb.jpg",
-      "alt": "Women performing Nag Panchami rituals at home"
+      "src": "/assets/images/culture/10.webp",
+      "thumb": "/assets/images/culture/10.webp",
+      "alt": ""
     }
   ],
   "bookingTips": [

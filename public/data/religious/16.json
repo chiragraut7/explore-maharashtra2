@@ -155,14 +155,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/test/dattatreya-gangapur/1.jpg",
-      "thumb": "/images/religious/test/dattatreya-gangapur/thumb1.jpg",
-      "alt": "Main shrine of Lord Dattatreya at Gangapur"
-    },
-    {
-      "src": "/images/religious/test/dattatreya-gangapur/2.jpg",
-      "thumb": "/images/religious/test/dattatreya-gangapur/thumb2.jpg",
-      "alt": "Bhima-Amarja Sangam near the temple"
+      "src": "/assets/images/religious/16.jpg",
+      "thumb": "/assets/images/religious/16.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

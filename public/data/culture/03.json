@@ -159,18 +159,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/cultural/dashavatar/gallery1.jpg",
-      "thumb": "/images/cultural/dashavatar/gallery1-thumb.jpg",
-      "alt": "The Narasimha Avatar in full fury",
-      "author": "Konkan Art Archive",
-      "location": "Kudal"
-    },
-    {
-      "src": "/images/cultural/dashavatar/gallery2.jpg",
-      "thumb": "/images/cultural/dashavatar/gallery2-thumb.jpg",
-      "alt": "Backstage makeup session",
-      "author": "Travel Maharashtra",
-      "location": "Sawantwadi"
+      "src": "/assets/images/culture/03.jpg",
+      "thumb": "/assets/images/culture/03.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

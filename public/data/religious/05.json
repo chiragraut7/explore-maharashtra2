@@ -118,8 +118,11 @@
     }
   ],
   "gallery": [
-    { "src": "/images/religious/trimbakeshwar/1.jpg", "thumb": "/images/religious/trimbakeshwar/thumb1.jpg", "alt": "Trimbakeshwar Temple Front View" },
-    { "src": "/images/religious/trimbakeshwar/2.jpg", "thumb": "/images/religious/trimbakeshwar/thumb2.jpg", "alt": "Kusavarta Kund" }
+    {
+      "src": "/assets/images/religious/05.jpg",
+      "thumb": "/assets/images/religious/05.jpg",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     { "icon": "fas fa-calendar-alt", "description": "Visit during Maha Shivratri or Shravan month for major celebrations." },

@@ -160,18 +160,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/cultural/bharud/gallery1.jpg",
-      "thumb": "/images/cultural/bharud/gallery1-thumb.jpg",
-      "alt": "A Bharudkar performing in traditional attire",
-      "author": "Maharashtra Culture Dept",
-      "location": "Paithan"
-    },
-    {
-      "src": "/images/cultural/bharud/gallery2.jpg",
-      "thumb": "/images/cultural/bharud/gallery2-thumb.jpg",
-      "alt": "Devotees dancing to Bharud music",
-      "author": "Wari Pilgrimage Archive",
-      "location": "Pandharpur"
+      "src": "/assets/images/culture/01.avif",
+      "thumb": "/assets/images/culture/01.avif",
+      "alt": ""
     }
   ],
   "bookingTips": [

@@ -85,8 +85,11 @@
     }
   ],
   "gallery": [
-    { "src": "/images/cultural/warli-art/gallery1.jpg", "thumb": "/images/cultural/warli-art/thumb1.jpg", "alt": "Warli Wall Painting" },
-    { "src": "/images/cultural/warli-art/gallery2.jpg", "thumb": "/images/cultural/warli-art/thumb2.jpg", "alt": "Tribal Artists" }
+    {
+      "src": "/assets/images/culture/16.jpg",
+      "thumb": "/assets/images/culture/16.jpg",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     { "icon": "fas fa-calendar", "description": "Attend workshops organized by local NGOs or art centers." },

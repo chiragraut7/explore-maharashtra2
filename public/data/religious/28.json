@@ -171,14 +171,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/lenyadri/1.jpg",
-      "thumb": "/images/religious/lenyadri/thumb1.jpg",
-      "alt": "Girijatmaj Temple Cave Entrance"
-    },
-    {
-      "src": "/images/religious/lenyadri/2.jpg",
-      "thumb": "/images/religious/lenyadri/thumb2.jpg",
-      "alt": "Steps Leading to Girijatmaj Temple"
+      "src": "/assets/images/religious/28.jpg",
+      "thumb": "/assets/images/religious/28.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

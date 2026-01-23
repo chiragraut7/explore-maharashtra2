@@ -154,14 +154,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/narsobachi-wadi/1.jpg",
-      "thumb": "/images/religious/narsobachi-wadi/thumb1.jpg",
-      "alt": "Main Temple of Shri Nrusinha Saraswati"
-    },
-    {
-      "src": "/images/religious/narsobachi-wadi/2.jpg",
-      "thumb": "/images/religious/narsobachi-wadi/thumb2.jpg",
-      "alt": "Krishna River Ghat near Temple"
+      "src": "/assets/images/religious/42.jpg",
+      "thumb": "/assets/images/religious/42.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

@@ -126,10 +126,11 @@
     }
   ],
   "gallery": [
-    { "src": "/images/religious/mahur/1.jpg", "thumb": "/images/religious/mahur/thumb1.jpg", "alt": "Renuka Devi Temple on hilltop" },
-    { "src": "/images/religious/mahur/2.jpg", "thumb": "/images/religious/mahur/thumb2.jpg", "alt": "Main temple entrance" },
-    { "src": "/images/religious/mahur/3.jpg", "thumb": "/images/religious/mahur/thumb3.jpg", "alt": "Anasuya Devi Temple" },
-    { "src": "/images/religious/mahur/4.jpg", "thumb": "/images/religious/mahur/thumb4.jpg", "alt": "Lord Dattatreya Temple" }
+    {
+      "src": "/assets/images/religious/11.jpg",
+      "thumb": "/assets/images/religious/11.jpg",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     { "icon": "fa-solid fa-hotel", "description": "Limited accommodation is available near the temple; book in advance during festivals." },

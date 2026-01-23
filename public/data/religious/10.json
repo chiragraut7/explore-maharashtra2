@@ -152,16 +152,11 @@
       }
     ],
     "gallery": [
-      {
-        "src": "/images/religious/bhimashankar/1.jpg",
-        "thumb": "/images/religious/bhimashankar/thumb1.jpg",
-        "alt": "Bhimashankar Temple View"
-      },
-      {
-        "src": "/images/religious/bhimashankar/2.jpg",
-        "thumb": "/images/religious/bhimashankar/thumb2.jpg",
-        "alt": "Surrounding Sahyadri Forest"
-      }
+    {
+      "src": "/assets/images/religious/10.jpg",
+      "thumb": "/assets/images/religious/10.jpg",
+      "alt": ""
+    }
     ],
     "bookingTips": [
       {

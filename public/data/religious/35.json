@@ -171,19 +171,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/tukaram-dehu/1.jpg",
-      "thumb": "/images/religious/tukaram-dehu/thumb1.jpg",
-      "alt": "Sant Tukaram Maharaj Temple Dehu"
-    },
-    {
-      "src": "/images/religious/tukaram-dehu/2.jpg",
-      "thumb": "/images/religious/tukaram-dehu/thumb2.jpg",
-      "alt": "Indrayani River Ghat near Dehu Temple"
-    },
-    {
-      "src": "/images/religious/tukaram-dehu/3.jpg",
-      "thumb": "/images/religious/tukaram-dehu/thumb3.jpg",
-      "alt": "Devotees during Tukaram Palkhi"
+      "src": "/assets/images/religious/35.jpg",
+      "thumb": "/assets/images/religious/35.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

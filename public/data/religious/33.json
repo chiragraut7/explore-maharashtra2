@@ -179,19 +179,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/ramtek-temple/1.jpg",
-      "thumb": "/images/religious/ramtek-temple/thumb1.jpg",
-      "alt": "Ramtek Temple Hilltop View"
-    },
-    {
-      "src": "/images/religious/ramtek-temple/2.jpg",
-      "thumb": "/images/religious/ramtek-temple/thumb2.jpg",
-      "alt": "Main Shrine of Lord Rama at Ramtek"
-    },
-    {
-      "src": "/images/religious/ramtek-temple/3.jpg",
-      "thumb": "/images/religious/ramtek-temple/thumb3.jpg",
-      "alt": "Khindsi Lake near Ramtek"
+      "src": "/assets/images/religious/33.jpg",
+      "thumb": "/assets/images/religious/33.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

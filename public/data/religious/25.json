@@ -155,14 +155,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/pali/1.jpg",
-      "thumb": "/images/religious/pali/thumb1.jpg",
-      "alt": "Ballaleshwar Temple Pali Front View"
-    },
-    {
-      "src": "/images/religious/pali/2.jpg",
-      "thumb": "/images/religious/pali/thumb2.jpg",
-      "alt": "Devotees offering prayers at Ballaleshwar Temple"
+      "src": "/assets/images/religious/25.jpg",
+      "thumb": "/assets/images/religious/25.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

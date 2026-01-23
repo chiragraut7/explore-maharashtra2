@@ -163,19 +163,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/vighneshwar-ozar/1.jpg",
-      "thumb": "/images/religious/vighneshwar-ozar/thumb1.jpg",
-      "alt": "Vighneshwar Temple Front View"
-    },
-    {
-      "src": "/images/religious/vighneshwar-ozar/2.jpg",
-      "thumb": "/images/religious/vighneshwar-ozar/thumb2.jpg",
-      "alt": "Golden Dome of Vighneshwar Temple"
-    },
-    {
-      "src": "/images/religious/vighneshwar-ozar/3.jpg",
-      "thumb": "/images/religious/vighneshwar-ozar/thumb3.jpg",
-      "alt": "Temple Entrance at Ozar"
+      "src": "/assets/images/religious/29.jpg",
+      "thumb": "/assets/images/religious/29.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

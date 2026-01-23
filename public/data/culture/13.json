@@ -152,19 +152,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/cultural/powada/gallery1.jpg",
-      "thumb": "/images/cultural/powada/gallery1-thumb.jpg",
-      "alt": "Powada Performance on Stage"
-    },
-    {
-      "src": "/images/cultural/powada/gallery2.jpg",
-      "thumb": "/images/cultural/powada/gallery2-thumb.jpg",
-      "alt": "Artist Singing Powada"
-    },
-    {
-      "src": "/images/cultural/powada/gallery3.jpg",
-      "thumb": "/images/cultural/powada/gallery3-thumb.jpg",
-      "alt": "Traditional Instruments Used in Powada"
+      "src": "/assets/images/culture/13.jpg",
+      "thumb": "/assets/images/culture/13.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [

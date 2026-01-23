@@ -168,14 +168,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/religious/theur/1.jpg",
-      "thumb": "/images/religious/theur/thumb1.jpg",
-      "alt": "Chintamani Temple Theur Entrance"
-    },
-    {
-      "src": "/images/religious/theur/2.jpg",
-      "thumb": "/images/religious/theur/thumb2.jpg",
-      "alt": "Main Idol of Lord Chintamani"
+      "src": "/assets/images/religious/27.jpg",
+      "thumb": "/assets/images/religious/27.jpg",
+      "alt": ""
     }
   ],
   "bookingTips": [
