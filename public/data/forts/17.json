@@ -126,14 +126,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/sindhudurg/gallery1.jpg",
-      "thumb": "/images/forts/sindhudurg/gallery1.jpg",
-      "alt": "Aerial view of Sindhudurg Island Fort"
-    },
-    {
-      "src": "/images/forts/sindhudurg/gallery4.jpg",
-      "thumb": "/images/forts/sindhudurg/gallery4.jpg",
-      "alt": "Sunset over the Arabian Sea from the bastions"
+      "src": "/assets/images/forts/17.png",
+      "thumb": "/assets/images/forts/17.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

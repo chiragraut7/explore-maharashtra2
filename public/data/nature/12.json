@@ -154,14 +154,9 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/phansad-forest.jpg",
-      "thumb": "/assets/images/nature/phansad-forest.jpg",
-      "alt": "Phansad Forest Trail"
-    },
-    {
-      "src": "/assets/images/nature/phansad-birds.jpg",
-      "thumb": "/assets/images/nature/phansad-birds.jpg",
-      "alt": "Birdwatching at Phansad Sanctuary"
+      "src": "/assets/images/nature/12.png",
+      "thumb": "/assets/images/nature/12.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

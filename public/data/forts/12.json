@@ -158,14 +158,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/tikona/gallery1.jpg",
-      "thumb": "/images/forts/tikona/gallery1-thumb.jpg",
-      "alt": "Tikona Fort top view"
-    },
-    {
-      "src": "/images/forts/tikona/gallery2.jpg",
-      "thumb": "/images/forts/tikona/gallery2-thumb.jpg",
-      "alt": "Pawna Lake view from Tikona Fort"
+      "src": "/assets/images/forts/12.png",
+      "thumb": "/assets/images/forts/12.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

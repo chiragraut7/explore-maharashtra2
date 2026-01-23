@@ -153,14 +153,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/vasai/gallery1.jpg",
-      "thumb": "/images/forts/vasai/gallery1-thumb.jpg",
-      "alt": "Vasai Fort Ruins"
-    },
-    {
-      "src": "/images/forts/vasai/gallery2.jpg",
-      "thumb": "/images/forts/vasai/gallery2-thumb.jpg",
-      "alt": "Sea View from Vasai Fort"
+      "src": "/assets/images/forts/15.png",
+      "thumb": "/assets/images/forts/15.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

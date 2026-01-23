@@ -169,19 +169,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/purandar/gallery1.jpg",
-      "thumb": "/images/forts/purandar/thumb1.jpg",
-      "alt": "Balekilla view from base village"
-    },
-    {
-      "src": "/images/forts/purandar/gallery2.jpg",
-      "thumb": "/images/forts/purandar/thumb2.jpg",
-      "alt": "Kedareshwar Temple on Purandar Fort"
-    },
-    {
-      "src": "/images/forts/purandar/gallery3.jpg",
-      "thumb": "/images/forts/purandar/thumb3.jpg",
-      "alt": "Panoramic view from Purandar summit"
+      "src": "/assets/images/forts/05.png",
+      "thumb": "/assets/images/forts/05.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

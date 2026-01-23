@@ -153,14 +153,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/tung/tung1.jpg",
-      "thumb": "/images/forts/tung/tung1-thumb.jpg",
-      "alt": "Tung Fort peak view"
-    },
-    {
-      "src": "/images/forts/tung/tung2.jpg",
-      "thumb": "/images/forts/tung/tung2-thumb.jpg",
-      "alt": "View of Pawna Lake from Tung Fort"
+      "src": "/assets/images/forts/25.png",
+      "thumb": "/assets/images/forts/25.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

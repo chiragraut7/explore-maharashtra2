@@ -118,8 +118,11 @@
     }
   ],
   "gallery": [
-    { "src": "/assets/images/nature/tamhini1.jpg", "thumb": "/assets/images/nature/tamhini1-thumb.jpg", "alt": "Tamhini Ghat waterfall" },
-    { "src": "/assets/images/nature/tamhini2.jpg", "thumb": "/assets/images/nature/tamhini2-thumb.jpg", "alt": "Misty Tamhini valley" }
+    {
+      "src": "/assets/images/nature/04.png",
+      "thumb": "/assets/images/nature/04.png",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     {

@@ -161,14 +161,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/pench/pench1.jpg",
-      "thumb": "/images/nature/pench/pench1_thumb.jpg",
-      "alt": "Tiger in Pench National Park"
-    },
-    {
-      "src": "/images/nature/pench/pench2.jpg",
-      "thumb": "/images/nature/pench/pench2_thumb.jpg",
-      "alt": "Pench River and Forest View"
+      "src": "/assets/images/nature/24.png",
+      "thumb": "/assets/images/nature/24.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

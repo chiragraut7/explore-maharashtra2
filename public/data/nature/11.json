@@ -169,19 +169,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/rajmachi/rajmachi1.jpg",
-      "thumb": "/images/nature/rajmachi/rajmachi1_thumb.jpg",
-      "alt": "Rajmachi Fort and Green Valleys"
-    },
-    {
-      "src": "/images/nature/rajmachi/rajmachi2.jpg",
-      "thumb": "/images/nature/rajmachi/rajmachi2_thumb.jpg",
-      "alt": "Misty Trails of Rajmachi"
-    },
-    {
-      "src": "/images/nature/rajmachi/rajmachi3.jpg",
-      "thumb": "/images/nature/rajmachi/rajmachi3_thumb.jpg",
-      "alt": "Camping under the stars at Rajmachi"
+      "src": "/assets/images/nature/11.png",
+      "thumb": "/assets/images/nature/11.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

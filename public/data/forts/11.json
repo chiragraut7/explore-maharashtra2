@@ -180,19 +180,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/harishchandragad/gallery1.jpg",
-      "thumb": "/images/forts/harishchandragad/thumb1.jpg",
-      "alt": "Konkan Kada view from Harishchandragad"
-    },
-    {
-      "src": "/images/forts/harishchandragad/gallery2.jpg",
-      "thumb": "/images/forts/harishchandragad/thumb2.jpg",
-      "alt": "Kedareshwar Temple inside Harishchandragad cave"
-    },
-    {
-      "src": "/images/forts/harishchandragad/gallery3.jpg",
-      "thumb": "/images/forts/harishchandragad/thumb3.jpg",
-      "alt": "Taramati Peak sunrise at Harishchandragad"
+      "src": "/assets/images/forts/11.png",
+      "thumb": "/assets/images/forts/11.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

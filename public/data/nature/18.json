@@ -154,14 +154,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/radhanagari/gallery1.jpg",
-      "thumb": "/images/nature/radhanagari/thumb1.jpg",
-      "alt": "Indian Bison in Radhanagari Sanctuary"
-    },
-    {
-      "src": "/images/nature/radhanagari/gallery2.jpg",
-      "thumb": "/images/nature/radhanagari/thumb2.jpg",
-      "alt": "Radhanagari Dam and forest landscape"
+      "src": "/assets/images/nature/18.png",
+      "thumb": "/assets/images/nature/18.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

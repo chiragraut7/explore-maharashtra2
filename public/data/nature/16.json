@@ -154,14 +154,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/karnala/gallery1.jpg",
-      "thumb": "/images/nature/karnala/thumb1.jpg",
-      "alt": "Colorful bird spotted in Karnala Sanctuary"
-    },
-    {
-      "src": "/images/nature/karnala/gallery2.jpg",
-      "thumb": "/images/nature/karnala/thumb2.jpg",
-      "alt": "Trekking trail leading to Karnala Fort"
+      "src": "/assets/images/nature/16.png",
+      "thumb": "/assets/images/nature/16.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

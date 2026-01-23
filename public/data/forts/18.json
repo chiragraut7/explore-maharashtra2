@@ -127,14 +127,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/suvarnadurg-fort/fort-view.jpg",
-      "thumb": "/images/forts/suvarnadurg-fort/fort-view-thumb.jpg",
-      "alt": "Suvarnadurg Fort view from the sea"
-    },
-    {
-      "src": "/images/forts/suvarnadurg-fort/sunset.jpg",
-      "thumb": "/images/forts/suvarnadurg-fort/sunset-thumb.jpg",
-      "alt": "Sunset over Suvarnadurg Fort"
+      "src": "/assets/images/forts/18.png",
+      "thumb": "/assets/images/forts/18.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

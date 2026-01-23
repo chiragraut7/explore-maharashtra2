@@ -153,14 +153,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/devkund/devkund1.jpg",
-      "thumb": "/images/nature/devkund/devkund1_thumb.jpg",
-      "alt": "Devkund Waterfall Main Pool"
-    },
-    {
-      "src": "/images/nature/devkund/devkund2.jpg",
-      "thumb": "/images/nature/devkund/devkund2_thumb.jpg",
-      "alt": "Trek Path to Devkund Waterfall"
+      "src": "/assets/images/nature/20.png",
+      "thumb": "/assets/images/nature/20.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

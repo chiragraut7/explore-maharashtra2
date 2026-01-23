@@ -169,19 +169,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/randha/randha1.jpg",
-      "thumb": "/images/nature/randha/randha1_thumb.jpg",
-      "alt": "Randha Falls during monsoon"
-    },
-    {
-      "src": "/images/nature/randha/randha2.jpg",
-      "thumb": "/images/nature/randha/randha2_thumb.jpg",
-      "alt": "Misty gorge view of Randha Falls"
-    },
-    {
-      "src": "/images/nature/randha/randha3.jpg",
-      "thumb": "/images/nature/randha/randha3_thumb.jpg",
-      "alt": "Surrounding greenery of Randha Falls"
+      "src": "/assets/images/nature/22.png",
+      "thumb": "/assets/images/nature/22.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

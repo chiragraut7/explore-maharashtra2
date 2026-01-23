@@ -126,14 +126,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/vijaydurg/gallery1.jpg",
-      "thumb": "/images/forts/vijaydurg/gallery1.jpg",
-      "alt": "Ramparts of Vijaydurg Sea Fort"
-    },
-    {
-      "src": "/images/forts/vijaydurg/gallery4.jpg",
-      "thumb": "/images/forts/vijaydurg/gallery4.jpg",
-      "alt": "Sunset over the Arabian Sea from Vijaydurg"
+      "src": "/assets/images/forts/20.png",
+      "thumb": "/assets/images/forts/20.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

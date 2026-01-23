@@ -153,14 +153,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/karnala/karnala1.jpg",
-      "thumb": "/images/forts/karnala/karnala1-thumb.jpg",
-      "alt": "Karnala Fort pinnacle"
-    },
-    {
-      "src": "/images/forts/karnala/karnala2.jpg",
-      "thumb": "/images/forts/karnala/karnala2-thumb.jpg",
-      "alt": "View from Karnala Fort top"
+      "src": "/assets/images/forts/14.png",
+      "thumb": "/assets/images/forts/14.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

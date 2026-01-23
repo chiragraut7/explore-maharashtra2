@@ -164,19 +164,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/rajmachi/gallery1.jpg",
-      "thumb": "/images/forts/rajmachi/gallery1-thumb.jpg",
-      "alt": "Rajmachi Fort in Monsoon"
-    },
-    {
-      "src": "/images/forts/rajmachi/gallery2.jpg",
-      "thumb": "/images/forts/rajmachi/gallery2-thumb.jpg",
-      "alt": "Trek Route to Rajmachi"
-    },
-    {
-      "src": "/images/forts/rajmachi/gallery3.jpg",
-      "thumb": "/images/forts/rajmachi/gallery3-thumb.jpg",
-      "alt": "Shrivardhan Fort Top View"
+      "src": "/assets/images/forts/07.png",
+      "thumb": "/assets/images/forts/07.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

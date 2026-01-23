@@ -117,9 +117,11 @@
     }
   ],
   "gallery": [
-    { "src": "/images/nature/tadoba-tiger.jpg", "thumb": "/images/nature/tadoba-tiger-thumb.jpg", "alt": "Tiger in Tadoba" },
-    { "src": "/images/nature/tadoba-safari.jpg", "thumb": "/images/nature/tadoba-safari-thumb.jpg", "alt": "Jeep Safari in Tadoba" },
-    { "src": "/images/nature/tadoba-lake-birds.jpg", "thumb": "/images/nature/tadoba-lake-birds-thumb.jpg", "alt": "Birds at Tadoba Lake" }
+    {
+      "src": "/assets/images/nature/09.png",
+      "thumb": "/assets/images/nature/09.png",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     { "icon": "fas fa-ticket-alt", "description": "Book safari permits online in advance from Maharashtra Forest Department’s official portal." },

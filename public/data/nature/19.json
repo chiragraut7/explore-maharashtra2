@@ -161,14 +161,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/sagareshwar/sagareshwar1.jpg",
-      "thumb": "/images/nature/sagareshwar/sagareshwar1_thumb.jpg",
-      "alt": "Sagareshwar Temple and Forest"
-    },
-    {
-      "src": "/images/nature/sagareshwar/sagareshwar2.jpg",
-      "thumb": "/images/nature/sagareshwar/sagareshwar2_thumb.jpg",
-      "alt": "Panoramic view of Sagareshwar Hills"
+      "src": "/assets/images/nature/19.png",
+      "thumb": "/assets/images/nature/19.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

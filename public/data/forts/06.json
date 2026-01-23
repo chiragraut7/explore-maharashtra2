@@ -154,14 +154,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/torna/gallery1.jpg",
-      "thumb": "/images/forts/torna/thumb1.jpg",
-      "alt": "Torna Fort aerial view"
-    },
-    {
-      "src": "/images/forts/torna/gallery2.jpg",
-      "thumb": "/images/forts/torna/thumb2.jpg",
-      "alt": "Sunrise from Torna Fort"
+      "src": "/assets/images/forts/06.png",
+      "thumb": "/assets/images/forts/06.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

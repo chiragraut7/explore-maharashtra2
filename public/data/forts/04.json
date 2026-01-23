@@ -169,19 +169,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/sinhagad/gallery1.jpg",
-      "thumb": "/images/forts/sinhagad/thumb1.jpg",
-      "alt": "View of Sinhagad Fort from base village"
-    },
-    {
-      "src": "/images/forts/sinhagad/gallery2.jpg",
-      "thumb": "/images/forts/sinhagad/thumb2.jpg",
-      "alt": "Tanaji Malusare Samadhi at Sinhagad"
-    },
-    {
-      "src": "/images/forts/sinhagad/gallery3.jpg",
-      "thumb": "/images/forts/sinhagad/thumb3.jpg",
-      "alt": "Sunrise view from Sinhagad Fort top"
+      "src": "/assets/images/forts/04.png",
+      "thumb": "/assets/images/forts/04.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

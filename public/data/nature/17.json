@@ -154,14 +154,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/lonar/gallery1.jpg",
-      "thumb": "/images/nature/lonar/thumb1.jpg",
-      "alt": "Aerial view of Lonar Crater Lake"
-    },
-    {
-      "src": "/images/nature/lonar/gallery2.jpg",
-      "thumb": "/images/nature/lonar/thumb2.jpg",
-      "alt": "Sunset over Lonar Lake rim"
+      "src": "/assets/images/nature/17.png",
+      "thumb": "/assets/images/nature/17.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

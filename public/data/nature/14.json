@@ -161,14 +161,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/navegaon/navegaon1.jpg",
-      "thumb": "/images/nature/navegaon/navegaon1_thumb.jpg",
-      "alt": "Navegaon Lake"
-    },
-    {
-      "src": "/images/nature/navegaon/navegaon2.jpg",
-      "thumb": "/images/nature/navegaon/navegaon2_thumb.jpg",
-      "alt": "Navegaon Forest and Birds"
+      "src": "/assets/images/nature/14.png",
+      "thumb": "/assets/images/nature/14.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

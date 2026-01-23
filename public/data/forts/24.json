@@ -118,8 +118,11 @@
     }
   ],
   "gallery": [
-    { "src": "/images/forts/anjaneri/gallery1.jpg", "thumb": "/images/forts/anjaneri/gallery1-thumb.jpg", "alt": "Anjaneri Hills Trek Path" },
-    { "src": "/images/forts/anjaneri/gallery2.jpg", "thumb": "/images/forts/anjaneri/gallery2-thumb.jpg", "alt": "Anjani Mata Temple atop the hill" }
+    {
+      "src": "/assets/images/forts/24.png",
+      "thumb": "/assets/images/forts/24.png",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     { "icon": "fa-solid fa-clock", "description": "Start early morning to avoid afternoon heat during the climb." },

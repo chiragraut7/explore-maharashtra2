@@ -153,14 +153,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/korigad/gallery1.jpg",
-      "thumb": "/images/forts/korigad/gallery1-thumb.jpg",
-      "alt": "Korigad Fort Top View"
-    },
-    {
-      "src": "/images/forts/korigad/gallery2.jpg",
-      "thumb": "/images/forts/korigad/gallery2-thumb.jpg",
-      "alt": "Koraidevi Temple at Korigad"
+      "src": "/assets/images/forts/13.png",
+      "thumb": "/assets/images/forts/13.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

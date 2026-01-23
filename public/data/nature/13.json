@@ -154,14 +154,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/dajipur/gallery1.jpg",
-      "thumb": "/images/nature/dajipur/thumb1.jpg",
-      "alt": "Indian Bison grazing in Dajipur Sanctuary"
-    },
-    {
-      "src": "/images/nature/dajipur/gallery2.jpg",
-      "thumb": "/images/nature/dajipur/thumb2.jpg",
-      "alt": "Dense green forest of Dajipur"
+      "src": "/assets/images/nature/13.png",
+      "thumb": "/assets/images/nature/13.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

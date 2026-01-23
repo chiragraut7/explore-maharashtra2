@@ -153,14 +153,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/daulatabad/daulatabad1.jpg",
-      "thumb": "/images/forts/daulatabad/daulatabad1-thumb.jpg",
-      "alt": "Daulatabad Fort view"
-    },
-    {
-      "src": "/images/forts/daulatabad/daulatabad2.jpg",
-      "thumb": "/images/forts/daulatabad/daulatabad2-thumb.jpg",
-      "alt": "Chand Minar at Daulatabad"
+      "src": "/assets/images/forts/23.png",
+      "thumb": "/assets/images/forts/23.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

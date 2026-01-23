@@ -169,14 +169,9 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/kaas-flowers.jpg",
-      "thumb": "/assets/images/nature/kaas-flowers-thumb.jpg",
-      "alt": "Colorful flowers blooming on Kaas Plateau"
-    },
-    {
-      "src": "/assets/images/nature/kaas-butterflies.jpg",
-      "thumb": "/assets/images/nature/kaas-butterflies-thumb.jpg",
-      "alt": "Butterflies fluttering among the flowers"
+      "src": "/assets/images/nature/05.png",
+      "thumb": "/assets/images/nature/05.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

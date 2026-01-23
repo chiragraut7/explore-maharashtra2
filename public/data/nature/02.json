@@ -153,14 +153,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/bhandardara/bhandardara1.jpg",
-      "thumb": "/images/nature/bhandardara/bhandardara1_thumb.jpg",
-      "alt": "Arthur Lake and Wilson Dam"
-    },
-    {
-      "src": "/images/nature/bhandardara/bhandardara2.jpg",
-      "thumb": "/images/nature/bhandardara/bhandardara2_thumb.jpg",
-      "alt": "Randha Waterfalls during Monsoon"
+      "src": "/assets/images/nature/02.png",
+      "thumb": "/assets/images/nature/02.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

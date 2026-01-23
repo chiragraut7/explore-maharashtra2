@@ -153,14 +153,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/visapur/visapur1.jpg",
-      "thumb": "/images/forts/visapur/visapur1-thumb.jpg",
-      "alt": "Visapur Fort plateau"
-    },
-    {
-      "src": "/images/forts/visapur/visapur2.jpg",
-      "thumb": "/images/forts/visapur/visapur2-thumb.jpg",
-      "alt": "View of Lohagad from Visapur"
+      "src": "/assets/images/forts/09.png",
+      "thumb": "/assets/images/forts/09.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

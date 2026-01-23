@@ -154,14 +154,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/bhimashankar/gallery1.jpg",
-      "thumb": "/images/nature/bhimashankar/thumb1.jpg",
-      "alt": "Bhimashankar Temple surrounded by misty hills"
-    },
-    {
-      "src": "/images/nature/bhimashankar/gallery2.jpg",
-      "thumb": "/images/nature/bhimashankar/thumb2.jpg",
-      "alt": "Shekru – Indian Giant Squirrel on tree branch"
+      "src": "/assets/images/nature/03.png",
+      "thumb": "/assets/images/nature/03.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

@@ -134,9 +134,11 @@
     }
   ],
   "gallery": [
-    { "src": "/images/nature/melghat-tiger.jpg", "thumb": "/images/nature/melghat-tiger-thumb.jpg", "alt": "Tiger at Melghat" },
-    { "src": "/images/nature/melghat-safari.jpg", "thumb": "/images/nature/melghat-safari-thumb.jpg", "alt": "Safari vehicle in forest" },
-    { "src": "/images/nature/melghat-forest.jpg", "thumb": "/images/nature/melghat-forest-thumb.jpg", "alt": "Dense forest view" }
+    {
+      "src": "/assets/images/nature/10.png",
+      "thumb": "/assets/images/nature/10.png",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     { "icon": "fas fa-ticket-alt", "description": "Book safaris online in advance through the official Melghat Tiger Reserve portal." },

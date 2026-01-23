@@ -154,14 +154,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/ratnagiri-fort/gallery1.jpg",
-      "thumb": "/images/forts/ratnagiri-fort/thumb1.jpg",
-      "alt": "Sea view from Ratnagiri Fort bastions"
-    },
-    {
-      "src": "/images/forts/ratnagiri-fort/gallery2.jpg",
-      "thumb": "/images/forts/ratnagiri-fort/thumb2.jpg",
-      "alt": "Bhagwati Temple inside Ratnagiri Fort"
+      "src": "/assets/images/forts/19.png",
+      "thumb": "/assets/images/forts/19.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

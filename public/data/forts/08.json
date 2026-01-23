@@ -169,19 +169,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/lohagad/gallery1.jpg",
-      "thumb": "/images/forts/lohagad/thumb1.jpg",
-      "alt": "Lohagad Fort entrance in monsoon"
-    },
-    {
-      "src": "/images/forts/lohagad/gallery2.jpg",
-      "thumb": "/images/forts/lohagad/thumb2.jpg",
-      "alt": "Vinchu Kata viewpoint from top"
-    },
-    {
-      "src": "/images/forts/lohagad/gallery3.jpg",
-      "thumb": "/images/forts/lohagad/thumb3.jpg",
-      "alt": "Pawna Lake view from Lohagad"
+      "src": "/assets/images/forts/08.png",
+      "thumb": "/assets/images/forts/08.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

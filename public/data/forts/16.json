@@ -161,19 +161,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/murud-janjira/gallery1.jpg",
-      "thumb": "/images/forts/murud-janjira/gallery1-thumb.jpg",
-      "alt": "Murud-Janjira Fort from Sea"
-    },
-    {
-      "src": "/images/forts/murud-janjira/gallery2.jpg",
-      "thumb": "/images/forts/murud-janjira/gallery2-thumb.jpg",
-      "alt": "Boat Ride to Janjira Fort"
-    },
-    {
-      "src": "/images/forts/murud-janjira/gallery3.jpg",
-      "thumb": "/images/forts/murud-janjira/gallery3-thumb.jpg",
-      "alt": "Ancient Cannons of Janjira"
+      "src": "/assets/images/forts/16.png",
+      "thumb": "/assets/images/forts/16.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

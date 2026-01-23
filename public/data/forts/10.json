@@ -153,14 +153,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/shivneri/gallery1.jpg",
-      "thumb": "/images/forts/shivneri/thumb1.jpg",
-      "alt": "View of Shivneri Fort entrance gate"
-    },
-    {
-      "src": "/images/forts/shivneri/gallery2.jpg",
-      "thumb": "/images/forts/shivneri/thumb2.jpg",
-      "alt": "Birthplace monument inside Shivneri Fort"
+      "src": "/assets/images/forts/10.png",
+      "thumb": "/assets/images/forts/10.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

@@ -169,14 +169,9 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/thoseghar-monsoon.jpg",
-      "thumb": "/assets/images/nature/thoseghar-monsoon-thumb.jpg",
-      "alt": "Thoseghar Waterfall during monsoon"
-    },
-    {
-      "src": "/assets/images/nature/thoseghar-viewpoint.jpg",
-      "thumb": "/assets/images/nature/thoseghar-viewpoint-thumb.jpg",
-      "alt": "Viewpoint overlooking the waterfall"
+      "src": "/assets/images/nature/21.png",
+      "thumb": "/assets/images/nature/21.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

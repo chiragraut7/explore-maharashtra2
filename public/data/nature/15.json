@@ -169,19 +169,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/chandoli/chandoli1.jpg",
-      "thumb": "/images/nature/chandoli/chandoli1_thumb.jpg",
-      "alt": "Dense forest trails in Chandoli National Park"
-    },
-    {
-      "src": "/images/nature/chandoli/chandoli2.jpg",
-      "thumb": "/images/nature/chandoli/chandoli2_thumb.jpg",
-      "alt": "Wildlife spotting at Chandoli"
-    },
-    {
-      "src": "/images/nature/chandoli/chandoli3.jpg",
-      "thumb": "/images/nature/chandoli/chandoli3_thumb.jpg",
-      "alt": "Scenic views from Prachitgad Fort"
+      "src": "/assets/images/nature/15.png",
+      "thumb": "/assets/images/nature/15.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

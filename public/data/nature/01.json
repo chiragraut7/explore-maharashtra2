@@ -164,14 +164,9 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/nature/amboli-fog.jpg",
-      "thumb": "/assets/images/nature/amboli-fog-thumb.jpg",
-      "alt": "Misty roads at Amboli Ghat"
-    },
-    {
-      "src": "/assets/images/nature/amboli-forest.jpg",
-      "thumb": "/assets/images/nature/amboli-forest-thumb.jpg",
-      "alt": "Dense forests around Amboli"
+      "src": "/assets/images/nature/01.png",
+      "thumb": "/assets/images/nature/01.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

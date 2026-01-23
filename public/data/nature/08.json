@@ -154,14 +154,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/koyna/gallery1.jpg",
-      "thumb": "/images/nature/koyna/thumb1.jpg",
-      "alt": "Misty Forest Trails at Koyna"
-    },
-    {
-      "src": "/images/nature/koyna/gallery2.jpg",
-      "thumb": "/images/nature/koyna/thumb2.jpg",
-      "alt": "Koyna Dam Backwaters and Green Hills"
+      "src": "/assets/images/nature/08.png",
+      "thumb": "/assets/images/nature/08.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

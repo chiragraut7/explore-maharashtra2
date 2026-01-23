@@ -139,9 +139,11 @@
     }
   ],
   "gallery": [
-    { "src": "/images/hillstations/panhala/gallery1.jpg", "thumb": "/images/hillstations/panhala/thumb1.jpg", "alt": "Panhala Fort" },
-    { "src": "/images/hillstations/panhala/gallery2.jpg", "thumb": "/images/hillstations/panhala/thumb2.jpg", "alt": "Sajja Kothi" },
-    { "src": "/images/hillstations/panhala/gallery3.jpg", "thumb": "/images/hillstations/panhala/thumb3.jpg", "alt": "Sunset at Pariksha Point" }
+    {
+      "src": "/assets/images/forts/22.png",
+      "thumb": "/assets/images/forts/22.png",
+      "alt": ""
+    }
   ],
   "bookingTips": [
     {

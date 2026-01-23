@@ -153,14 +153,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/nature/malshej/malshej1.jpg",
-      "thumb": "/images/nature/malshej/malshej1_thumb.jpg",
-      "alt": "Malshej Ghat Waterfalls"
-    },
-    {
-      "src": "/images/nature/malshej/malshej2.jpg",
-      "thumb": "/images/nature/malshej/malshej2_thumb.jpg",
-      "alt": "Viewpoint with Clouds at Malshej"
+      "src": "/assets/images/nature/07.png",
+      "thumb": "/assets/images/nature/07.png",
+      "alt": ""
     }
   ],
   "bookingTips": [

@@ -127,14 +127,9 @@
   ],
   "gallery": [
     {
-      "src": "/images/forts/ajinkyatara-fort/ajinkyatara-view.jpg",
-      "thumb": "/images/forts/ajinkyatara-fort/ajinkyatara-view-thumb.jpg",
-      "alt": "Ajinkyatara Fort view over Satara city"
-    },
-    {
-      "src": "/images/forts/ajinkyatara-fort/sunset.jpg",
-      "thumb": "/images/forts/ajinkyatara-fort/sunset-thumb.jpg",
-      "alt": "Sunset at Ajinkyatara Fort"
+      "src": "/assets/images/forts/21.png",
+      "thumb": "/assets/images/forts/21.png",
+      "alt": ""
     }
   ],
   "bookingTips": [
