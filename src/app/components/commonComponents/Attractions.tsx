@@ -24,7 +24,7 @@ interface AttractionsProps {
 
 // -------------------- Constants --------------------
 // Robust online fallback to ensure image always shows
-const FALLBACK_IMAGE = "https://placehold.co/600x800/f0f0f0/999999?text=No+Image";
+const FALLBACK_IMAGE = "/assets/images/attractions.png";
 
 // Define your common attraction feature images here
 // Make sure these files exist in your 'public' folder

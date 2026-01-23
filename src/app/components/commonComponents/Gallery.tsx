@@ -19,7 +19,7 @@ interface GalleryProps {
   color?: string;
 }
 
-const FALLBACK_IMAGE = "https://placehold.co/600x400/000000/FFFFFF?text=No+Image";
+const FALLBACK_IMAGE = "/assets/images/FFFFFF.svg";
 
 const Gallery: React.FC<GalleryProps> = ({ images = [], color = "#00aaff" }) => {
   const { language } = useLanguage(); // Use context for translations
