@@ -117,7 +117,7 @@ export default function CategoryPage() {
             <div className="hero-overlay-gradient" />
           </motion.div>
 
-          <motion.div style={{ opacity: heroOpacity }} className="container text-center z-10 position-relative hero-content-box">
+          <motion.div className="container text-center z-10 position-relative hero-content-box">
              {/* ... Hero Content ... */}
              <motion.div 
              >
