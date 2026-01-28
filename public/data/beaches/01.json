@@ -185,19 +185,19 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/01/img1.jpg",
-      "thumb": "/assets/images/beaches/01/img1.jpg",
-      "alt": "Alibaug Beach Shoreline"
+      "src": "/assets/images/beaches/01/img1.png",
+      "thumb": "/assets/images/beaches/01/img1.png",
+      "alt": ""
     },
     {
-      "src": "/assets/images/beaches/01/img2.jpg",
-      "thumb": "/assets/images/beaches/01/img2.jpg",
-      "alt": "Kolaba Fort Entrance"
+      "src": "/assets/images/beaches/01/img2.png",
+      "thumb": "/assets/images/beaches/01/img2.png",
+      "alt": ""
     },
     {
-      "src": "/assets/images/beaches/01/img3.jpg",
-      "thumb": "/assets/images/beaches/01/img3.jpg",
-      "alt": "Sunset at Alibaug"
+      "src": "/assets/images/beaches/01/img3.png",
+      "thumb": "/assets/images/beaches/01/img3.png",
+      "alt": ""
     }
   ],
   "hotels": [

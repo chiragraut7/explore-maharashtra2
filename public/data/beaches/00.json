@@ -200,19 +200,54 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/00/img1.jpg",
-      "thumb": "/assets/images/beaches/00/img1.jpg",
-      "alt": "Malvan Beach View"
+      "src": "/assets/images/beaches/00/img1.png",
+      "thumb": "/assets/images/beaches/00/img1.png",
+      "alt": ""
     },
     {
-      "src": "/assets/images/beaches/00/img2.jpg",
-      "thumb": "/assets/images/beaches/00/img2.jpg",
-      "alt": "Boats at Malvan"
+      "src": "/assets/images/beaches/00/img2.png",
+      "thumb": "/assets/images/beaches/00/img2.png",
+      "alt": ""
     },
     {
-      "src": "/assets/images/beaches/00/img5.jpg",
-      "thumb": "/assets/images/beaches/00/img5.jpg",
-      "alt": "Sindhudurg Fort"
+      "src": "/assets/images/beaches/00/img3.png",
+      "thumb": "/assets/images/beaches/00/img3.png",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/00/img4.png",
+      "thumb": "/assets/images/beaches/00/img4.png",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/00/img5.png",
+      "thumb": "/assets/images/beaches/00/img5.png",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/00/img6.png",
+      "thumb": "/assets/images/beaches/00/img6.png",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/00/img7.png",
+      "thumb": "/assets/images/beaches/00/img7.png",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/00/img8.png",
+      "thumb": "/assets/images/beaches/00/img8.png",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/00/img9.png",
+      "thumb": "/assets/images/beaches/00/img9.png",
+      "alt": ""
+    },
+    {
+      "src": "/assets/images/beaches/00/img10.png",
+      "thumb": "/assets/images/beaches/00/img10.png",
+      "alt": ""
     }
   ],
   "bookingTips": [
@@ -234,7 +269,7 @@
     }
   ],
   "coordinates": {
-    "lat": 16.0617,
-    "lng": 73.4619
+    "lat": 16.0498978,
+    "lng": 73.4664126
   }
 }

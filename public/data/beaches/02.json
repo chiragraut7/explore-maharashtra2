@@ -252,73 +252,73 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/beaches/02/img1.jpg",
-      "thumb": "/assets/images/beaches/02/img1.jpg",
+      "src": "/assets/images/beaches/02/img12.png",
+      "thumb": "/assets/images/beaches/02/img12.png",
       "alt": ""
     },
     {
-      "src": "/assets/images/beaches/02/img2.jpg",
-      "thumb": "/assets/images/beaches/02/img2.jpg",
+      "src": "/assets/images/beaches/02/img13.png",
+      "thumb": "/assets/images/beaches/02/img13.png",
       "alt": ""
     },
     {
-      "src": "/assets/images/beaches/02/img3.jpg",
-      "thumb": "/assets/images/beaches/02/img3.jpg",
+      "src": "/assets/images/beaches/02/img14.png",
+      "thumb": "/assets/images/beaches/02/img14.png",
       "alt": ""
     },
     {
-      "src": "/assets/images/beaches/02/img4.jpg",
-      "thumb": "/assets/images/beaches/02/img4.jpg",
+      "src": "/assets/images/beaches/02/img2.png",
+      "thumb": "/assets/images/beaches/02/img2.png",
       "alt": ""
     },
     {
-      "src": "/assets/images/beaches/02/img5.jpg",
-      "thumb": "/assets/images/beaches/02/img5.jpg",
+      "src": "/assets/images/beaches/02/img1.png",
+      "thumb": "/assets/images/beaches/02/img1.png",
       "alt": ""
     },
     {
-      "src": "/assets/images/beaches/02/img6.jpg",
-      "thumb": "/assets/images/beaches/02/img6.jpg",
+      "src": "/assets/images/beaches/02/img3.png",
+      "thumb": "/assets/images/beaches/02/img3.png",
       "alt": ""
     },
     {
-      "src": "/assets/images/beaches/02/img7.jpg",
-      "thumb": "/assets/images/beaches/02/img7.jpg",
+      "src": "/assets/images/beaches/02/img4.png",
+      "thumb": "/assets/images/beaches/02/img4.png",
       "alt": ""
     },
     {
-      "src": "/assets/images/beaches/02/img8.jpg",
-      "thumb": "/assets/images/beaches/02/img8.jpg",
+      "src": "/assets/images/beaches/02/img5.png",
+      "thumb": "/assets/images/beaches/02/img5.png",
       "alt": ""
     },
     {
-      "src": "/assets/images/beaches/02/img9.jpg",
-      "thumb": "/assets/images/beaches/02/img9.jpg",
+      "src": "/assets/images/beaches/02/img6.png",
+      "thumb": "/assets/images/beaches/02/img6.png",
       "alt": ""
     },
     {
-      "src": "/assets/images/beaches/02/img10.jpg",
-      "thumb": "/assets/images/beaches/02/img10.jpg",
+      "src": "/assets/images/beaches/02/img7.png",
+      "thumb": "/assets/images/beaches/02/img7.png",
       "alt": ""
     },
     {
-      "src": "/assets/images/beaches/02/img11.jpg",
-      "thumb": "/assets/images/beaches/02/img11.jpg",
+      "src": "/assets/images/beaches/02/img8.png",
+      "thumb": "/assets/images/beaches/02/img8.png",
       "alt": ""
     },
     {
-      "src": "/assets/images/beaches/02/img12.jpg",
-      "thumb": "/assets/images/beaches/02/img12.jpg",
+      "src": "/assets/images/beaches/02/img9.png",
+      "thumb": "/assets/images/beaches/02/img9.png",
       "alt": ""
     },
     {
-      "src": "/assets/images/beaches/02/img13.jpg",
-      "thumb": "/assets/images/beaches/02/img13.jpg",
+      "src": "/assets/images/beaches/02/img10.png",
+      "thumb": "/assets/images/beaches/02/img10.png",
       "alt": ""
     },
     {
-      "src": "/assets/images/beaches/02/img14.jpg",
-      "thumb": "/assets/images/beaches/02/img14.jpg",
+      "src": "/assets/images/beaches/02/img11.png",
+      "thumb": "/assets/images/beaches/02/img11.png",
       "alt": ""
     }
   ],
@@ -345,8 +345,8 @@
     }
   ],
   "coordinates": {
-    "lat": 19.6387,
-    "lng": 72.7188
+    "lat": 19.613069,
+    "lng": 72.7298444
   }
   
 }
