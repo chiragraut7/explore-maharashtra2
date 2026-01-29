@@ -14,6 +14,14 @@ const Footer = ({ color = "#E57717" }) => {
     { label: "Culture", href: "/culture" },
   ];
 
+  // Essential for AdSense Approval
+  const legalLinks = [
+    { label: "About Us", href: "/about" },
+    { label: "Contact Us", href: "/contact" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms & Conditions", href: "/terms" },
+  ];
+
   const socialLinks = [
     { icon: "instagram", href: "#" },
     { icon: "youtube", href: "#" },
@@ -22,28 +30,16 @@ const Footer = ({ color = "#E57717" }) => {
   ];
 
   return (
-    <footer className="footer-root mt-0 p-0">
+    <footer className="footer-root mt-0 p-0 overflow-hidden">
       {/* --- CALL TO ACTION STRIP --- */}
       <div className="container py-5">
         <div className="row align-items-center justify-content-center g-4">
-          <div className="col-lg-7">
+          <div className="col-lg-12 text-center">
             <h2 className="display-5 fw-bold text-white my-0 tracking-tight">
               Begin your odyssey into the <br />
               <span style={{ color }}>Great Deccan Plateau.</span>
             </h2>
           </div>
-          {/* <div className="col-lg-5 text-lg-end">
-            <div className="d-inline-flex align-items-center gap-4 p-3 rounded-4 bg-white shadow-sm border">
-              <div className="text-start">
-                <p className="text-uppercase small text-muted fw-bold mb-0 ls-1">Verified Guide</p>
-                <p className="fw-bold text-dark mb-0">Maharashtra Tourism</p>
-              </div>
-              <div className="vr opacity-25" style={{ height: "40px" }}></div>
-              <Link href="/contact" className="btn btn-dark rounded-pill px-4 py-2 fw-bold">
-                Get in Touch
-              </Link>
-            </div>
-          </div> */}
         </div>
       </div>
 
@@ -53,15 +49,15 @@ const Footer = ({ color = "#E57717" }) => {
         style={{ background: "#0a0a0a", borderRadius: "60px 60px 0 0" }}
       >
         <div className="container py-5">
-          <div className="row g-5 justify-content-around">
+          <div className="row g-5">
 
             {/* BRAND BIOGRAPHY */}
             <div className="col-lg-4 col-md-12 text-start">
-              <div className="mb-4 bg-white d-inline-block p-2 rounded-4 shadow-sm text-start">
-                <Image src="/assets/images/logo_icon.png" alt="Logo" width={100} height={55} />
+              <div className="mb-4 bg-white d-inline-block p-2 rounded-4 shadow-sm">
+                <Image src="/assets/images/logo_icon.png" alt="Explore Maharashtra Logo" width={100} height={55} />
               </div>
 
-              <p className="text-secondary small lh-lg mb-4 pe-lg-5 text-start">
+              <p className="text-secondary small lh-lg mb-4 pe-lg-5">
                 Explore Maharashtra is your premier digital gateway to the royal lineage, 
                 maritime legacy, and the mist-covered peaks of the Sahyadris. Join us in 
                 celebrating the vibrant soul of India's heartland.
@@ -69,19 +65,19 @@ const Footer = ({ color = "#E57717" }) => {
 
               <div className="social-row">
                 {socialLinks.map((s) => (
-  <Link
-    key={s.icon}
-    href={s.href}
-    className="social-neon-btn"
-    style={{ "--accent-color": color } as any} // Pass color to CSS variable
-  >
-    <i style={{ "color": color } as any} className={`fs-4 fab fa-${s.icon}`}></i>
-  </Link>
-))}
+                  <Link
+                    key={s.icon}
+                    href={s.href}
+                    className="social-neon"
+                    style={{ "--accent": color } as any}
+                  >
+                    <i className={`fab fa-${s.icon}`}></i>
+                  </Link>
+                ))}
               </div>
             </div>
 
-            {/* QUICK NAVIGATION */}
+            {/* DESTINATIONS NAVIGATION */}
             <div className="col-lg-4 col-md-6">
               <h6 className="nav-title">Discover More</h6>
               <div className="row">
@@ -89,12 +85,8 @@ const Footer = ({ color = "#E57717" }) => {
                   <ul className="list-unstyled nav-list">
                     {navigationLinks.slice(0, 3).map((link) => (
                       <li key={link.label}>
-                        <Link
-                          href={link.href}
-                          className="footer-link"
-                          style={{ "color": color } as any}
-                        >
-                          <span style={{ "color": color } as any}>{link.label}</span>
+                        <Link href={link.href} className="footer-link" style={{ "--accent": color } as any}>
+                          {link.label}
                         </Link>
                       </li>
                     ))}
@@ -104,11 +96,7 @@ const Footer = ({ color = "#E57717" }) => {
                   <ul className="list-unstyled nav-list">
                     {navigationLinks.slice(3).map((link) => (
                       <li key={link.label}>
-                        <Link
-                          href={link.href}
-                          className="footer-link"
-                          style={{ "--accent": color } as any}
-                        >
+                        <Link href={link.href} className="footer-link" style={{ "--accent": color } as any}>
                           {link.label}
                         </Link>
                       </li>
@@ -118,46 +106,33 @@ const Footer = ({ color = "#E57717" }) => {
               </div>
             </div>
 
-            {/* NEWSLETTER */}
-            {/* <div className="col-lg-4 col-md-6">
-              <h6 className="nav-title">Newsletter</h6>
-              <p className="small text-secondary mb-4 opacity-75">
-                Curated itineraries, heritage stories, and hidden gem alerts delivered to your inbox.
-              </p>
-
-              <div className="subscribe-pill p-1 d-flex bg-white bg-opacity-5 rounded-pill border border-white border-opacity-10">
-                <input
-                  type="email"
-                  className="form-control border-0 bg-transparent text-white px-3 shadow-none"
-                  placeholder="Your Email Address"
-                />
-                <button
-                  className="btn rounded-pill px-4 fw-bold"
-                  style={{ background: color, color: "#fff" }}
-                >
-                  Join
-                </button>
+            {/* LEGAL & SUPPORT (CRITICAL FOR ADSENSE) */}
+            <div className="col-lg-4 col-md-6">
+              <h6 className="nav-title">Support & Legal</h6>
+              <ul className="list-unstyled nav-list">
+                {legalLinks.map((link) => (
+                  <li key={link.label}>
+                    <Link href={link.href} className="footer-link" style={{ "--accent": color } as any}>
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-4">
+                <p className="small text-secondary mb-1">Direct Correspondence:</p>
+                <p className="small fw-bold text-white">info@goexploremaharashtra.in</p>
               </div>
-            </div> */}
+            </div>
           </div>
 
           <hr className="my-5 border-secondary opacity-10" />
 
           {/* CREDITS */}
-          <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 pb-3">
-            <p className="mb-0 small text-secondary opacity-50">
+          <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 pb-3">
+            <p className="mb-0 small text-secondary opacity-50 text-center">
               © {new Date().getFullYear()} **Explore Maharashtra**. All rights reserved.
             </p>
-            {/*<div className="d-flex align-items-center gap-2">
-              <span className="small text-secondary opacity-50">Proudly Made in India</span>
-              <div
-                className="px-3 py-1 rounded-pill bg-white bg-opacity-5 border border-white border-opacity-10 small fw-bold"
-                style={{ color }}
-              >
-                Maharashtra Tourism Partner 🚩
-              </div>
-            </div>
-*/}          </div>
+          </div>
         </div>
       </div>
 
@@ -171,10 +146,9 @@ const Footer = ({ color = "#E57717" }) => {
           letter-spacing: 3px;
           font-size: 0.75rem;
           font-weight: 800;
-          margin-bottom: 2rem;
+          margin-bottom: 1.5rem;
         }
 
-        /* SOCIAL ICONS */
         .social-row { display: flex; gap: 14px; }
         .social-neon {
           width: 44px; height: 44px; border-radius: 50%;
@@ -189,44 +163,23 @@ const Footer = ({ color = "#E57717" }) => {
           color: #fff;
           transform: translateY(-5px);
           background: var(--accent);
-          box-shadow: 0 0 20px var(--accent), 0 10px 20px rgba(0,0,0,0.4);
+          box-shadow: 0 0 20px var(--accent);
           border-color: var(--accent);
         }
 
-        /* NAVIGATION LINKS */
-        .nav-list li { margin-bottom: 15px; }
+        .nav-list li { margin-bottom: 12px; }
         .footer-link {
           position: relative;
           display: inline-block;
-          padding-left: 15px;
+          padding-left: 0;
           color: rgba(255,255,255,0.6);
           text-decoration: none;
           transition: all 0.3s ease;
-          font-size: 0.95rem;
-        }
-        .footer-link::before {
-          content: "";
-          position: absolute;
-          left: 0; top: 50%;
-          width: 5px; height: 5px;
-          background: var(--accent);
-          border-radius: 50%;
-          transform: translateY(-50%) scale(0);
-          transition: all 0.3s ease;
+          font-size: 0.9rem;
         }
         .footer-link:hover {
-          color: #fff;
-          transform: translateX(8px);
-        }
-        .footer-link:hover::before {
-          transform: translateY(-50%) scale(1);
-        }
-
-        /* NEWSLETTER */
-        .subscribe-pill { backdrop-filter: blur(10px); }
-        .subscribe-pill input::placeholder {
-          color: rgba(255,255,255,0.3);
-          font-size: 0.85rem;
+          color: var(--accent);
+          transform: translateX(5px);
         }
       `}</style>
     </footer>

@@ -36,6 +36,9 @@ export default function CategoryPage() {
   const [viewMode, setViewMode] = useState<ViewMode>('timeline');
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
+  // 🏛️ Culture Check
+  const isCulture = category?.toLowerCase() === 'culture';
+
   // ☁️ Weather & Location States
   const [weather, setWeather] = useState<{ temp: number; text: string; icon: string; forecast: any[] } | null>(null);
   const [showForecast, setShowForecast] = useState(false);
@@ -44,12 +47,17 @@ export default function CategoryPage() {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: containerRef, offset: ["start 0%", "end 100%"] });
   const scaleY = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
-  const heroParallaxY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
 
   const storageKey = `favs_${category}`;
-  const getBannerImage = (cat: string) => "/assets/images/bannerImages/beahces.jpg";
+  const getBannerImage = (cat: string) => `/assets/images/bannerImages/${cat === 'beaches' ? 'beahces' : cat}.jpg`;
 
+  /* --- DATA FETCHING & EFFECTS --- */
   useEffect(() => {
+    // 🛡️ Safety: If user is on culture page, ensure they aren't stuck in map mode
+    if (isCulture && viewMode === 'map') {
+      setViewMode('timeline');
+    }
+
     const savedFavs = localStorage.getItem(storageKey);
     if (savedFavs) setFavorites(JSON.parse(savedFavs));
     AOS.init({ duration: 800, once: false });
@@ -61,25 +69,24 @@ export default function CategoryPage() {
         const data = json.success ? json.data : [];
         setItems(data);
         
-        // Initial weather fetch for the first item in the category
         if (data[0]?.coordinates) {
           fetchWeatherData(data[0].coordinates.lat, data[0].coordinates.lng);
         }
-      } catch(e) {}
+      } catch(e) { console.error("Fetch Error:", e); }
     }
     if (category) fetchItems();
 
-    // Get user location for distance calculations
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((pos) => {
         setUserCoords({ lat: pos.coords.latitude, lng: pos.coords.longitude });
       });
     }
-  }, [category, storageKey]);
+  }, [category, isCulture, storageKey]);
 
+  /* --- WEATHER ENGINE --- */
   const fetchWeatherData = async (lat: number, lon: number) => {
     try {
-      const res = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&daily=temperature_2m_max,weathercode&timezone=auto`);
+      const res = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&daily=temperature_2m_max&timezone=auto`);
       const data = await res.json();
       
       const forecastData = data.daily.time.slice(1, 4).map((time: string, i: number) => ({
@@ -96,6 +103,7 @@ export default function CategoryPage() {
     } catch (e) { console.error("Weather error", e); }
   };
 
+  /* --- GEOSPATIAL ENGINE --- */
   const calculateDistance = (lat2: number, lon2: number) => {
     if (!userCoords) return null;
     const R = 6371; 
@@ -118,7 +126,7 @@ export default function CategoryPage() {
 
   const handleShare = (e: React.MouseEvent, item: any) => {
     e.stopPropagation();
-    const url = typeof window !== 'undefined' ? window.location.href + "/" + (item.slug || item.id) : "";
+    const url = typeof window !== 'undefined' ? `${window.location.origin}/${category}/${item.slug || item.id}` : "";
     if (navigator.share) {
       navigator.share({ title: item.title, text: item.subtitle, url }).catch(() => {});
     } else {
@@ -134,14 +142,12 @@ export default function CategoryPage() {
   return (
     <div className="min-vh-100 bg-page-gradient overflow-x-hidden" ref={containerRef} style={{ position: 'relative' }}>
       
-     
-
       {/* --- HERO SECTION --- */}
       <header className={`category-hero-container ${viewMode === 'map' ? 'hero-map-mode' : ''}`}>
-        <motion.div className="hero-image-wrapper">
+        <div className="hero-image-wrapper">
           <Image src={getBannerImage(category)} alt={category} fill priority className="object-fit-cover shadow-inner" />
           <div className="hero-overlay-gradient" />
-        </motion.div>
+        </div>
 
         <div className="container text-center z-10 position-relative hero-content-box">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -168,7 +174,8 @@ export default function CategoryPage() {
                   { mode: 'timeline', icon: 'fa-route', label: 'Timeline' },
                   { mode: 'grid', icon: 'fa-th-large', label: 'Grid' },
                   { mode: 'list', icon: 'fa-list-ul', label: 'List' },
-                  { mode: 'map', icon: 'fa-map-marked-alt', label: 'Atlas' }
+                  // 🗺️ Atlas Switcher: Only added if NOT culture
+                  ...(!isCulture ? [{ mode: 'map', icon: 'fa-map-marked-alt', label: 'Atlas' }] : [])
                 ].map((btn) => (
                   <button 
                     key={btn.mode}
@@ -192,44 +199,20 @@ export default function CategoryPage() {
       <section className={`${viewMode === 'map' ? 'map-section-active' : 'container py-5 position-relative'}`}>
         <AnimatePresence mode="wait">
            {viewMode !== 'map' && (
-        <motion.div className="fixed-top" style={{ scaleX: scrollYProgress, height: '4px', background: 'linear-gradient(90deg, #ff5722, #ff9f43)', transformOrigin: '0%', zIndex: 9999 }} />
-      )}
-          {/* 🗺️ ATLAS VIEW WITH INTERACTIVE WEATHER */}
-          {viewMode === 'map' && (
-            <motion.div 
-                key="map" initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} 
-                className="map-wrapper-premium shadow-2xl position-relative"
-            >
-               {/* 🌤️ WEATHER INTERACTIVE WIDGET */}
+             <motion.div className="fixed-top" style={{ scaleX: scrollYProgress, height: '4px', background: 'linear-gradient(90deg, #ff5722, #ff9f43)', transformOrigin: '0%', zIndex: 9999 }} />
+           )}
+
+          {/* 🗺️ ATLAS VIEW (Hidden if Culture) */}
+          {viewMode === 'map' && !isCulture && (
+            <motion.div key="map" initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} className="map-wrapper-premium shadow-2xl position-relative">
                {weather && (
-                 <motion.div 
-                    className={`weather-container-luxury ${showForecast ? 'expanded' : ''}`}
-                    onClick={() => setShowForecast(!showForecast)}
-                    initial={{ x: -20, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                 >
+                 <motion.div className={`weather-container-luxury ${showForecast ? 'expanded' : ''}`} onClick={() => setShowForecast(!showForecast)}>
                     <div className="d-flex align-items-center gap-3">
                         <div className="weather-main-icon"><i className={`fas ${weather.icon}`}></i></div>
                         <div className="text-start">
-                            <div className="weather-temp-large">{weather.temp}°C</div>
-                            <div className="weather-label">Forecast <i className={`fas fa-chevron-${showForecast ? 'left' : 'right'} ms-1 small`}></i></div>
+                            <div className="weather-temp-large text-white">{weather.temp}°C</div>
+                            <div className="weather-label text-white/60">Forecast</div>
                         </div>
-
-                        <AnimatePresence>
-                          {showForecast && (
-                            <motion.div 
-                                initial={{ width: 0, opacity: 0 }} animate={{ width: 'auto', opacity: 1 }} exit={{ width: 0, opacity: 0 }}
-                                className="forecast-panel d-flex gap-4 ms-3 ps-3 border-start border-white/20"
-                            >
-                                {weather.forecast.map((day, idx) => (
-                                    <div key={idx} className="forecast-day text-center">
-                                        <div className="day-name">{day.date}</div>
-                                        <div className="day-temp">{day.temp}°</div>
-                                    </div>
-                                ))}
-                            </motion.div>
-                          )}
-                        </AnimatePresence>
                     </div>
                  </motion.div>
                )}
@@ -243,13 +226,12 @@ export default function CategoryPage() {
               <div className="timeline-track d-none d-md-block"><motion.div className="timeline-progress" style={{ scaleY }} /></div>
               {filteredItems.map((item, index) => {
                 const isLeft = index % 2 === 0;
-                const isHovered = hoveredIndex === index;
                 const dist = item.coordinates ? calculateDistance(item.coordinates.lat, item.coordinates.lng) : null;
                 return (
                   <div key={item.id} className={`timeline-row d-flex w-100 mb-5 align-items-center ${isLeft ? 'flex-row' : 'flex-row-reverse'}`}>
                     <div className="col-12 col-md-5">
-                      <motion.div initial={{ opacity: 0, x: isLeft ? -50 : 50 }} whileInView={{ opacity: 1, x: 0 }} className="luxury-card shadow-xl rounded-5 overflow-hidden" onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
-                        <Image src={item.bannerImage || '/assets/images/placeholder.jpg'} alt="" fill className={`object-fit-cover transition-all duration-1000 ${isHovered ? 'scale-110' : ''}`} />
+                      <motion.div className="luxury-card shadow-xl rounded-5 overflow-hidden" onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
+                        <Image src={item.bannerImage || '/assets/images/placeholder.jpg'} alt="" fill className={`object-fit-cover transition-all duration-1000 ${hoveredIndex === index ? 'scale-110' : ''}`} />
                         <div className="card-overlay" />
                         <div className="card-actions">
                            <button onClick={(e) => toggleFavorite(e, item.slug || item.id)} className={`action-btn ${favorites.includes(item.slug || item.id) ? 'active' : ''}`}><i className="fas fa-heart"></i></button>
@@ -258,18 +240,18 @@ export default function CategoryPage() {
                         </div>
                         <div className="card-content text-white p-4">
                           <h3 className="fw-bold h4 mb-1">{item.title}</h3>
-                          <div className={`hover-reveal-grid ${isHovered ? 'show' : ''}`}>
+                          <div className={`hover-reveal-grid ${hoveredIndex === index ? 'show' : ''}`}>
                                 <div className="overflow-hidden">
-                                    <p className="small mb-3 opacity-80 line-clamp-2">{item.subtitle}</p>
-                                    <Link href={`/${category}/${item.slug || item.id}`} className="btn-luxury-action">EXPLORE GUIDE</Link>
-                                </div>
+                             <p className="small mb-3 opacity-80 line-clamp-2">{item.subtitle}</p>
+                             <Link href={`/${category}/${item.slug || item.id}`} className="btn-luxury-action">EXPLORE GUIDE</Link>
+                             </div>
                           </div>
-                          <motion.div animate={{ width: isHovered ? '100%' : '40px' }} className="h-1 bg-warning mt-3 rounded-full" />
+                          <motion.div animate={{ width: hoveredIndex === index ? '100%' : '40px' }} className="h-1 bg-warning mt-3 rounded-full" />
                         </div>
                       </motion.div>
                     </div>
-                    <div className="col-md-2 d-none d-md-flex justify-content-center position-relative">
-                       <div className="timeline-node"><motion.div className="timeline-dot" animate={{ scale: isHovered ? 1.6 : 1, backgroundColor: isHovered ? '#ffc107' : '#ff5722' }} /></div>
+                    <div className="col-md-2 d-none d-md-flex justify-content-center">
+                        <div className="timeline-node"><div className="timeline-dot" /></div>
                     </div>
                     <div className="col-md-5"></div>
                   </div>
@@ -283,17 +265,18 @@ export default function CategoryPage() {
             <motion.div key="grid" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                {filteredItems.map((item, index) => (
                   <div key={item.id} className="col">
-                     <div className="luxury-card rounded-5 overflow-hidden shadow-sm position-relative bg-white" style={{ height: '400px' }} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
+                     <div className="luxury-card rounded-5 overflow-hidden shadow-sm position-relative" style={{ height: '400px' }} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
                         <Image src={item.bannerImage} alt="" fill className="object-fit-cover transition-transform duration-700" style={{ transform: hoveredIndex === index ? 'scale(1.1)' : 'scale(1)' }} />
                         <div className="card-overlay" />
                         <div className="card-content position-absolute bottom-0 w-100 p-4 text-white z-10">
                            <h4 className="fw-bold h5 mb-1">{item.title}</h4>
                            <div className={`hover-reveal-grid ${hoveredIndex === index ? 'show' : ''}`}>
+                            
                                 <div className="overflow-hidden">
                               <p className="small opacity-75 mb-3 line-clamp-2">{item.subtitle}</p>
                               <div className="d-flex gap-2">
                                 <Link href={`/${category}/${item.slug || item.id}`} className="btn-luxury-action flex-grow-1">DETAILS</Link>
-                                <button onClick={(e) => handleShare(e, item)} className="action-btn-sm"><i className="fas fa-share-alt"></i></button>
+                                <button onClick={(e) => handleShare(e, item)} className="action-btn"><i className="fas fa-share-alt"></i></button>
                               </div>
                               </div>
                            </div>
@@ -304,28 +287,25 @@ export default function CategoryPage() {
             </motion.div>
           )}
 
-          {/* 📜 LUXURY LIST VIEW */}
+          {/* 📜 LIST VIEW */}
           {viewMode === 'list' && (
             <motion.div key="list" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }} className="d-flex flex-column gap-3">
                {filteredItems.map((item) => {
                  const dist = item.coordinates ? calculateDistance(item.coordinates.lat, item.coordinates.lng) : null;
                  return (
-                  <motion.div key={item.id} whileHover={{ x: 10, backgroundColor: "rgba(255, 255, 255, 1)" }} className="list-card-premium d-flex align-items-center gap-3 p-2 bg-white rounded-4 shadow-sm border border-light">
+                  <motion.div key={item.id} whileHover={{ x: 10 }} className="list-card-premium d-flex align-items-center gap-3 p-2 bg-white rounded-4 shadow-sm border border-light">
                     <div className="position-relative rounded-3 overflow-hidden shadow-sm" style={{ width: '110px', height: '75px', flexShrink: 0 }}>
                       <Image src={item.bannerImage} alt={item.title} fill className="object-fit-cover" />
                     </div>
                     <div className="flex-grow-1 min-w-0 text-start">
                       <div className="d-flex align-items-center gap-2 mb-1">
-                        <h6 className="mb-0 fw-bold text-dark text-truncate" style={{ fontSize: '1.05rem' }}>{item.title}</h6>
+                        <h6 className="mb-0 fw-bold text-dark text-truncate">{item.title}</h6>
                         {dist && <span className="badge bg-light text-dark border small">{dist} km</span>}
                       </div>
                       <p className="text-muted small mb-0 line-clamp-1 opacity-75">{item.subtitle}</p>
                     </div>
-                    <div className="d-flex align-items-center gap-2 pe-2">
-                      <button onClick={(e) => handleShare(e, item)} className="btn-action-glass"><i className="fas fa-share-alt"></i></button>
-                      <Link href={`/${category}/${item.slug || item.id}`} className="btn-view-premium">
-                        VIEW <i className="fas fa-chevron-right ms-2 small"></i>
-                      </Link>
+                    <div className="pe-2">
+                      <Link href={`/${category}/${item.slug || item.id}`} className="btn-view-premium">VIEW</Link>
                     </div>
                   </motion.div>
                  );
@@ -334,7 +314,6 @@ export default function CategoryPage() {
           )}
         </AnimatePresence>
       </section>
-
       <style jsx global>{`
         :root { --p-gradient: linear-gradient(135deg, #ff5722 0%, #ff9f43 100%); }
         .bg-page-gradient { background: #fdfdfd; }

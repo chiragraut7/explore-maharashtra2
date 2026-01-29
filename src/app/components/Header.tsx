@@ -37,24 +37,19 @@ export default function Header() {
     }
   }, [isMenuOpen]);
 
-  // 2. Favorites Logic (Read from Storage)
+  // 2. Favorites Logic (Functional Sync)
   const updateFavorites = () => {
     if (!pathname) return;
     
     const pathParts = pathname.split('/').filter(p => p);
 
-    // --- FIX STARTS HERE ---
-    // If pathParts.length is greater than 1, we are on a DETAIL page (e.g., /beaches/00)
-    // We want to hide the HUD on detail pages.
+    // Hide HUD on Detail pages (length > 1) or Home/Static pages (length === 0)
     if (pathParts.length !== 1) {
-        setFavoritesCount(0); // Setting to 0 hides the component
+        setFavoritesCount(0);
         return;
     }
-    // --- FIX ENDS HERE ---
 
-    const cat = pathParts[0]; // e.g. "beaches"
-
-    // Check against known categories (optional, but good for safety)
+    const cat = pathParts[0];
     const validCategories = ["beaches", "forts", "hills", "nature", "religious", "culture"];
     
     if (validCategories.includes(cat)) {
@@ -68,26 +63,27 @@ export default function Header() {
 
   useEffect(() => {
     updateFavorites();
-    // Listen for updates from CategoryPage
+    // Listen for hearting events from CategoryPage
     window.addEventListener('favorites_updated', updateFavorites);
-    // Reset filter UI when path changes
+    // Reset toggle UI when navigating
     setIsFilterActive(false); 
     
     return () => window.removeEventListener('favorites_updated', updateFavorites);
   }, [pathname]);
 
-  // 3. Dispatch Commands to CategoryPage
+  // 3. Command Dispatchers
   const handleToggleFilter = () => {
     const newState = !isFilterActive;
     setIsFilterActive(newState);
-    // Send signal to CategoryPage
+    // Notify CategoryPage to filter results
     window.dispatchEvent(new CustomEvent('toggle_fav_filter', { detail: newState }));
   };
 
   const handleClearAll = () => {
-    // Send signal to CategoryPage to handle the clearing logic
-    window.dispatchEvent(new Event('req_clear_favs'));
-    setIsFilterActive(false);
+    if (window.confirm("Clear all saved destinations in this category?")) {
+        window.dispatchEvent(new Event('req_clear_favs'));
+        setIsFilterActive(false);
+    }
   };
 
   const navItems = [
@@ -99,6 +95,7 @@ export default function Header() {
     { title: "Wildlife", href: "/nature" },
     { title: "Religious", href: "/religious" },
     { title: "Culture", href: "/culture" },
+    { title: "Contact Us", href: "/contact" },
   ];
 
   return (
@@ -106,7 +103,7 @@ export default function Header() {
       <header className={`header-main ${isScrolled || isMenuOpen ? 'scrolled' : ''}`}>
         <nav className="navbar container-fluid px-lg-5 px-4 py-3 d-flex justify-content-between align-items-center">
           
-          <Link href="/" className="navbar-brand bg-white p-2 rounded-lg">
+          <Link href="/" className="navbar-brand bg-white p-2 rounded-lg shadow-sm">
             <Image
               src="/assets/images/logo.png"
               alt="Logo"
@@ -119,7 +116,7 @@ export default function Header() {
 
           <div className="d-flex align-items-center gap-4">
             
-            {/* --- FAVORITES HUD --- */}
+            {/* --- FAVORITES HUD (Functional) --- */}
             <AnimatePresence>
                 {favoritesCount > 0 && (
                     <motion.div 
@@ -129,26 +126,25 @@ export default function Header() {
                         className="d-flex align-items-center gap-2"
                     >
                         <motion.div 
-                            className={`glass-pill d-flex align-items-center gap-2 px-3 py-2 cursor-pointer ${isFilterActive ? 'bg-danger border-danger text-white' : (isScrolled ? 'text-dark border-dark' : 'text-white')}`}
+                            className={`glass-pill d-flex align-items-center gap-2 px-3 py-2 cursor-pointer ${isFilterActive ? 'active-state' : (isScrolled ? 'text-dark border-dark' : 'text-white')}`}
                             onClick={handleToggleFilter}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
                             <i className={`fas fa-heart ${isFilterActive ? 'text-white' : 'text-danger'} pulse-anim`}></i>
                             <span className="fw-bold">{favoritesCount}</span>
-                            <div className="d-none d-md-flex flex-column lh-1 ms-1">
+                            <div className="d-none d-md-flex flex-column lh-1 ms-1 text-start">
                                 <span style={{ fontSize: '0.6rem', fontWeight: 700, opacity: 0.9 }}>
                                     <Translator text={isFilterActive ? "SHOWING SAVED" : "SAVED"} targetLang={language}/> 
                                 </span>
                             </div>
                         </motion.div>
 
-                        {/* Clear Button */}
                         <motion.button 
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             onClick={handleClearAll} 
-                            className={`btn-clear-favs glass-circle ${isScrolled ? 'text-dark border-dark' : 'text-white'}`}
+                            className={`btn-clear-favs glass-circle border-0 ${isScrolled ? 'text-dark border-dark' : 'text-white'}`}
                         >
                             <i className="fas fa-trash-alt"></i>
                         </motion.button>
@@ -195,6 +191,7 @@ export default function Header() {
         
         .glass-pill { background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 50px; transition: 0.3s; }
         .header-main.scrolled .glass-pill { background: rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.1); }
+        .active-state { background: #dc3545 !important; color: white !important; border-color: #dc3545 !important; }
         
         .glass-circle { width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); transition: 0.3s; }
         .header-main.scrolled .glass-circle { border: 1px solid rgba(0,0,0,0.1); }
@@ -225,7 +222,7 @@ export default function Header() {
         .menu-nav-link.active::after { width: 100%; border-right: none; }
         .menu-sidebar { position: absolute; right: 50px; top: 0; bottom: 0; justify-content: center; border-left: 1px solid rgba(0,0,0,0.05); }
         .vertical-lang-btn { background: none; border: none; color: ${themeOrange}; writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 5px; font-weight: 800; cursor: pointer; padding: 20px; transition: 0.3s; }
-        .menu-nav-link span { text-decoration: none; font-weight: bold; color: ${themeOrange}; }
+        .text-start { text-align: left; }
         @media (max-width: 768px) { .menu-nav-link { font-size: 2.2rem; } .menu-sidebar { display: none; } }
       `}</style>
     </>
