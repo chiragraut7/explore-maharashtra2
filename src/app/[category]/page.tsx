@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -10,17 +10,18 @@ import "aos/dist/aos.css";
 import { useLanguage } from '../components/context/LanguageContext'
 import Translator from "../components/commonComponents/Translator";
 import dynamic from "next/dynamic";
+import React from "react"; // Added for React.Fragment
 import NativeAd from "../components/Ads/NativeAd";
 
 // ✅ Dynamic import for Map to prevent SSR errors
-const MapExplorer = dynamic(() => import("../components/MapExplorer"), {
+const MapExplorer = dynamic(() => import("../components/MapExplorer"), { 
   ssr: false,
   loading: () => (
     <div className="map-skeleton d-flex align-items-center justify-content-center bg-dark rounded-5 h-100">
-      <div className="text-center">
-        <div className="spinner-grow text-warning mb-3"></div>
-        <p className="text-white/50 small fw-bold tracking-widest uppercase">Initializing Atlas...</p>
-      </div>
+        <div className="text-center">
+            <div className="spinner-grow text-warning mb-3"></div>
+            <p className="text-white/50 small fw-bold tracking-widest uppercase">Initializing Atlas...</p>
+        </div>
     </div>
   )
 });
@@ -30,7 +31,7 @@ type ViewMode = 'timeline' | 'grid' | 'list' | 'map';
 export default function CategoryPage() {
   const { language } = useLanguage();
   const { category } = useParams() as { category: string };
-
+  
   const [items, setItems] = useState<any[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [favorites, setFavorites] = useState<string[]>([]);
@@ -50,10 +51,11 @@ export default function CategoryPage() {
   const scaleY = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
 
   const storageKey = `favs_${category}`;
-  const getBannerImage = (cat: string) => "/assets/images/bannerImages/beahces.jpg";
+  const getBannerImage = (cat: string) => `/assets/images/bannerImages/${cat === 'beaches' ? 'beahces' : cat}.jpg`;
 
   /* --- DATA FETCHING & EFFECTS --- */
   useEffect(() => {
+    // 🛡️ Safety: If user is on culture page, ensure they aren't stuck in map mode
     if (isCulture && viewMode === 'map') {
       setViewMode('timeline');
     }
@@ -61,18 +63,18 @@ export default function CategoryPage() {
     const savedFavs = localStorage.getItem(storageKey);
     if (savedFavs) setFavorites(JSON.parse(savedFavs));
     AOS.init({ duration: 800, once: false });
-
+    
     async function fetchItems() {
       try {
         const res = await fetch(`/api/${category}`);
         const json = await res.json();
         const data = json.success ? json.data : [];
         setItems(data);
-
+        
         if (data[0]?.coordinates) {
           fetchWeatherData(data[0].coordinates.lat, data[0].coordinates.lng);
         }
-      } catch (e) { console.error("Fetch Error:", e); }
+      } catch(e) { console.error("Fetch Error:", e); }
     }
     if (category) fetchItems();
 
@@ -88,7 +90,7 @@ export default function CategoryPage() {
     try {
       const res = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&daily=temperature_2m_max&timezone=auto`);
       const data = await res.json();
-
+      
       const forecastData = data.daily.time.slice(1, 4).map((time: string, i: number) => ({
         date: new Date(time).toLocaleDateString('en-US', { weekday: 'short' }),
         temp: Math.round(data.daily.temperature_2m_max[i + 1]),
@@ -106,12 +108,12 @@ export default function CategoryPage() {
   /* --- GEOSPATIAL ENGINE --- */
   const calculateDistance = (lat2: number, lon2: number) => {
     if (!userCoords) return null;
-    const R = 6371;
+    const R = 6371; 
     const dLat = (lat2 - userCoords.lat) * Math.PI / 180;
     const dLon = (lon2 - userCoords.lng) * Math.PI / 180;
     const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-      Math.cos(userCoords.lat * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+              Math.cos(userCoords.lat * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+              Math.sin(dLon / 2) * Math.sin(dLon / 2);
     const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
     return Math.round(R * c);
   };
@@ -128,20 +130,20 @@ export default function CategoryPage() {
     e.stopPropagation();
     const url = typeof window !== 'undefined' ? `${window.location.origin}/${category}/${item.slug || item.id}` : "";
     if (navigator.share) {
-      navigator.share({ title: item.title, text: item.subtitle, url }).catch(() => { });
+      navigator.share({ title: item.title, text: item.subtitle, url }).catch(() => {});
     } else {
       navigator.clipboard.writeText(url);
       alert("Link copied to clipboard!");
     }
   };
 
-  const filteredItems = items.filter(item =>
+  const filteredItems = items.filter(item => 
     (item.title || item.name || "").toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <div className="min-vh-100 bg-page-gradient overflow-x-hidden" ref={containerRef} style={{ position: 'relative' }}>
-
+      
       {/* --- HERO SECTION --- */}
       <header className={`category-hero-container ${viewMode === 'map' ? 'hero-map-mode' : ''}`}>
         <div className="hero-image-wrapper">
@@ -156,10 +158,10 @@ export default function CategoryPage() {
               <Translator text="Maharashtra Heritage Guide" targetLang={language} />
             </div>
             <h1 className={`${viewMode === 'map' ? 'h3 mb-3' : 'display-1 mb-4'} text-white fw-black text-uppercase hero-title transition-all duration-700`}>
-              <Translator text={category} targetLang={language} />
+              <Translator text={category} targetLang={language}/>
             </h1>
           </motion.div>
-
+          
           <div className="row justify-content-center align-items-center g-3 px-3">
             <div className="col-md-5">
               <div className="luxury-search-bar shadow-2xl">
@@ -167,18 +169,19 @@ export default function CategoryPage() {
                 <input type="text" placeholder="Find a destination..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
               </div>
             </div>
-
+            
             <div className="col-auto">
               <div className="luxury-switcher">
                 {[
                   { mode: 'timeline', icon: 'fa-route', label: 'Timeline' },
                   { mode: 'grid', icon: 'fa-th-large', label: 'Grid' },
                   { mode: 'list', icon: 'fa-list-ul', label: 'List' },
+                  // 🗺️ Atlas Switcher: Only added if NOT culture
                   ...(!isCulture ? [{ mode: 'map', icon: 'fa-map-marked-alt', label: 'Atlas' }] : [])
                 ].map((btn) => (
-                  <button
+                  <button 
                     key={btn.mode}
-                    onClick={() => setViewMode(btn.mode as ViewMode)}
+                    onClick={() => setViewMode(btn.mode as ViewMode)} 
                     className={`switcher-btn ${viewMode === btn.mode ? 'active' : ''}`}
                   >
                     <i className={`fas ${btn.icon}`}></i>
@@ -197,166 +200,148 @@ export default function CategoryPage() {
       {/* --- CONTENT AREA --- */}
       <section className={`${viewMode === 'map' ? 'map-section-active' : 'container py-5 position-relative'}`}>
         <AnimatePresence mode="wait">
-          {viewMode !== 'map' && (
-            <motion.div className="fixed-top" style={{ scaleX: scrollYProgress, height: '4px', background: 'linear-gradient(90deg, #ff5722, #ff9f43)', transformOrigin: '0%', zIndex: 9999 }} />
-          )}
+           {viewMode !== 'map' && (
+             <motion.div className="fixed-top" style={{ scaleX: scrollYProgress, height: '4px', background: 'linear-gradient(90deg, #ff5722, #ff9f43)', transformOrigin: '0%', zIndex: 9999 }} />
+           )}
 
-          {/* 🗺️ ATLAS VIEW */}
+          {/* 🗺️ ATLAS VIEW (Hidden if Culture) */}
           {viewMode === 'map' && !isCulture && (
             <motion.div key="map" initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} className="map-wrapper-premium shadow-2xl position-relative">
-              {weather && (
-                <motion.div className={`weather-container-luxury ${showForecast ? 'expanded' : ''}`} onClick={() => setShowForecast(!showForecast)}>
-                  <div className="d-flex align-items-center gap-3">
-                    <div className="weather-main-icon"><i className={`fas ${weather.icon}`}></i></div>
-                    <div className="text-start">
-                      <div className="weather-temp-large text-white">{weather.temp}°C</div>
-                      <div className="weather-label text-white/60">Forecast</div>
+               {weather && (
+                 <motion.div className={`weather-container-luxury ${showForecast ? 'expanded' : ''}`} onClick={() => setShowForecast(!showForecast)}>
+                    <div className="d-flex align-items-center gap-3">
+                        <div className="weather-main-icon"><i className={`fas ${weather.icon}`}></i></div>
+                        <div className="text-start">
+                            <div className="weather-temp-large text-white">{weather.temp}°C</div>
+                            <div className="weather-label text-white/60">Forecast</div>
+                        </div>
                     </div>
-                  </div>
-                </motion.div>
-              )}
-              <MapExplorer locations={filteredItems} category={category} userCoords={userCoords} />
+                 </motion.div>
+               )}
+               <MapExplorer locations={filteredItems} category={category} userCoords={userCoords} />
             </motion.div>
           )}
 
-          {/* LISTINGS WRAPPER */}
-          <div className="row g-4 justify-content-center">
-            {filteredItems.map((item, index) => {
-              const isLeft = index % 2 === 0;
-              const isHovered = hoveredIndex === index;
-              const dist = item.coordinates ? calculateDistance(item.coordinates.lat, item.coordinates.lng) : null;
+          {/* 🛣️ TIMELINE VIEW */}
+          {viewMode === 'timeline' && (
+            <motion.div key="timeline" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="timeline-wrapper">
+              <div className="timeline-track d-none d-md-block"><motion.div className="timeline-progress" style={{ scaleY }} /></div>
+              {filteredItems.map((item, index) => {
+                const isLeft = index % 2 === 0;
+                const dist = item.coordinates ? calculateDistance(item.coordinates.lat, item.coordinates.lng) : null;
+                return (
+                  <React.Fragment key={item.id}>
+                    {/* --- NATIVE AD INJECTION --- */}
+                    {index > 0 && index % 3 === 0 && (
+                      <div className="row justify-content-center mb-5" data-aos="fade-up">
+                        <div className="col-lg-8">
+                          <NativeAd slot="YOUR_AD_SLOT_ID" />
+                        </div>
+                      </div>
+                    )}
+                    <div className={`timeline-row d-flex w-100 mb-5 align-items-center ${isLeft ? 'flex-row' : 'flex-row-reverse'}`}>
+                      <div className="col-12 col-md-5">
+                        <motion.div className="luxury-card shadow-xl rounded-5 overflow-hidden" onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
+                          <Image src={item.bannerImage || '/assets/images/placeholder.jpg'} alt="" fill className={`object-fit-cover transition-all duration-1000 ${hoveredIndex === index ? 'scale-110' : ''}`} />
+                          <div className="card-overlay" />
+                          <div className="card-actions">
+                             <button onClick={(e) => toggleFavorite(e, item.slug || item.id)} className={`action-btn ${favorites.includes(item.slug || item.id) ? 'active' : ''}`}><i className="fas fa-heart"></i></button>
+                             {dist && <span className="dist-badge">{dist} km away</span>}
+                             <button onClick={(e) => handleShare(e, item)} className="action-btn"><i className="fas fa-share-alt"></i></button>
+                          </div>
+                          <div className="card-content text-white p-4">
+                            <h3 className="fw-bold h4 mb-1">{item.title}</h3>
+                            <div className={`hover-reveal-grid ${hoveredIndex === index ? 'show' : ''}`}>
+                                  <div className="overflow-hidden">
+                               <p className="small mb-3 opacity-80 line-clamp-2">{item.subtitle}</p>
+                               <Link href={`/${category}/${item.slug || item.id}`} className="btn-luxury-action">EXPLORE GUIDE</Link>
+                               </div>
+                            </div>
+                            <motion.div animate={{ width: hoveredIndex === index ? '100%' : '40px' }} className="h-1 bg-warning mt-3 rounded-full" />
+                          </div>
+                        </motion.div>
+                      </div>
+                      <div className="col-md-2 d-none d-md-flex justify-content-center">
+                          <div className="timeline-node"><div className="timeline-dot" /></div>
+                      </div>
+                      <div className="col-md-5"></div>
+                    </div>
+                  </React.Fragment>
+                );
+              })}
+            </motion.div>
+          )}
 
-              return (
-                <React.Fragment key={item.id}>
-
-                  {/* --- ADS SECTION: SHOWS AFTER EVERY 3RD ITEM --- */}
+          {/* 🖼️ GRID VIEW */}
+          {viewMode === 'grid' && (
+            <motion.div key="grid" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+               {filteredItems.map((item, index) => (
+                 <React.Fragment key={item.id}>
+                  {/* --- NATIVE AD INJECTION --- */}
                   {index > 0 && index % 3 === 0 && (
-                    <div className="col-12 w-100" data-aos="fade-up">
-                      <NativeAd slot="YOUR_AD_SLOT_ID_HERE" />
+                    <div className="col-12 mb-4" data-aos="fade-up">
+                      <NativeAd slot="YOUR_AD_SLOT_ID" />
                     </div>
                   )}
-
-                  {/* 🛣️ TIMELINE VIEW */}
-                  {viewMode === 'timeline' && (
-                    <motion.div key="timeline" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="timeline-wrapper w-100 position-relative">
-
-                      {/* --- THE BACKBONE LINE: placed here so it stays behind everything --- */}
-                      <div className="timeline-track d-none d-md-block">
-                        <motion.div className="timeline-progress" style={{ scaleY }} />
-                      </div>
-
-                      <div className="row g-4 justify-content-center">
-                        {filteredItems.map((item, index) => {
-                          const isLeft = index % 2 === 0;
-                          const isHovered = hoveredIndex === index;
-                          const dist = item.coordinates ? calculateDistance(item.coordinates.lat, item.coordinates.lng) : null;
-
-                          return (
-                            <React.Fragment key={item.id}>
-
-                              {/* ADS INJECTION */}
-                              {index > 0 && index % 3 === 0 && (
-                                <div className="col-12 w-100 mb-5" data-aos="fade-up">
-                                  <NativeAd slot="YOUR_AD_SLOT_ID_HERE" />
-                                </div>
-                              )}
-
-                              {/* TIMELINE ROW */}
-                              <div className={`timeline-row d-flex w-100 mb-5 align-items-center ${isLeft ? 'flex-row' : 'flex-row-reverse'}`}>
-                                <div className="col-12 col-md-5">
-                                  <motion.div
-                                    className="luxury-card shadow-xl rounded-5 overflow-hidden text-start"
-                                    onMouseEnter={() => setHoveredIndex(index)}
-                                    onMouseLeave={() => setHoveredIndex(null)}
-                                  >
-                                    <Image src={item.bannerImage || '/assets/images/placeholder.jpg'} alt={item.title} fill className={`object-fit-cover transition-all duration-1000 ${isHovered ? 'scale-110' : ''}`} />
-                                    <div className="card-overlay" />
-                                    <div className="card-actions">
-                                      <button onClick={(e) => toggleFavorite(e, item.slug || item.id)} className={`action-btn ${favorites.includes(item.slug || item.id) ? 'active' : ''}`}><i className="fas fa-heart"></i></button>
-                                      {dist && <span className="dist-badge">{dist} km away</span>}
-                                      <button onClick={(e) => handleShare(e, item)} className="action-btn"><i className="fas fa-share-alt"></i></button>
-                                    </div>
-                                    <div className="card-content text-white p-4">
-                                      <h3 className="fw-bold h4 mb-1">{item.title}</h3>
-                                      <div className={`hover-reveal-grid ${isHovered ? 'show' : ''}`}>
-                                        <div className="overflow-hidden">
-                                          <p className="small mb-3 opacity-80 line-clamp-2">{item.subtitle}</p>
-                                          <Link href={`/${category}/${item.slug || item.id}`} className="btn-luxury-action text-decoration-none">EXPLORE GUIDE</Link>
-                                        </div>
-                                      </div>
-                                      <motion.div animate={{ width: isHovered ? '100%' : '40px' }} className="h-1 bg-warning mt-3 rounded-full" />
-                                    </div>
-                                  </motion.div>
-                                </div>
-
-                                {/* CENTER NODE (DOT) */}
-                                <div className="col-md-2 d-none d-md-flex justify-content-center position-relative">
-                                  <div className="timeline-node">
-                                    <motion.div
-                                      className="timeline-dot"
-                                      animate={{ scale: isHovered ? 1.6 : 1, backgroundColor: isHovered ? '#ffc107' : '#ff5722' }}
-                                    />
-                                  </div>
-                                </div>
-
-                                <div className="col-md-5"></div>
-                              </div>
-                            </React.Fragment>
-                          );
-                        })}
-                      </div>
-                    </motion.div>
-                  )}
-                  {/* 🖼️ GRID VIEW */}
-                  {viewMode === 'grid' && (
-                    <div className="col-md-4">
-                      <motion.div className="luxury-card rounded-5 overflow-hidden shadow-sm position-relative text-start" style={{ height: '400px' }} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
+                  <div className="col">
+                      <div className="luxury-card rounded-5 overflow-hidden shadow-sm position-relative" style={{ height: '400px' }} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
                         <Image src={item.bannerImage} alt="" fill className="object-fit-cover transition-transform duration-700" style={{ transform: hoveredIndex === index ? 'scale(1.1)' : 'scale(1)' }} />
                         <div className="card-overlay" />
                         <div className="card-content position-absolute bottom-0 w-100 p-4 text-white z-10">
-                          <h4 className="fw-bold h5 mb-1">{item.title}</h4>
-                          <div className={`hover-reveal-grid ${hoveredIndex === index ? 'show' : ''}`}>
-                            <div className="overflow-hidden">
-                              <p className="small opacity-75 mb-3 line-clamp-2">{item.subtitle}</p>
-                              <div className="d-flex gap-2">
-                                <Link href={`/${category}/${item.slug || item.id}`} className="btn-luxury-action flex-grow-1 text-decoration-none text-center">DETAILS</Link>
-                                <button onClick={(e) => handleShare(e, item)} className="action-btn-sm border-0"><i className="fas fa-share-alt"></i></button>
-                              </div>
+                            <h4 className="fw-bold h5 mb-1">{item.title}</h4>
+                            <div className={`hover-reveal-grid ${hoveredIndex === index ? 'show' : ''}`}>
+                             
+                                 <div className="overflow-hidden">
+                               <p className="small opacity-75 mb-3 line-clamp-2">{item.subtitle}</p>
+                               <div className="d-flex gap-2">
+                                 <Link href={`/${category}/${item.slug || item.id}`} className="btn-luxury-action flex-grow-1">DETAILS</Link>
+                                 <button onClick={(e) => handleShare(e, item)} className="action-btn"><i className="fas fa-share-alt"></i></button>
+                               </div>
+                               </div>
                             </div>
-                          </div>
                         </div>
-                      </motion.div>
-                    </div>
-                  )}
+                      </div>
+                  </div>
+                 </React.Fragment>
+               ))}
+            </motion.div>
+          )}
 
-                  {/* 📜 LIST VIEW */}
-                  {viewMode === 'list' && (
-                    <motion.div whileHover={{ x: 10 }} className="list-card-premium d-flex align-items-center gap-3 p-2 bg-white rounded-4 shadow-sm border border-light w-100 mb-3">
+          {/* 📜 LIST VIEW */}
+          {viewMode === 'list' && (
+            <motion.div key="list" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }} className="d-flex flex-column gap-3">
+               {filteredItems.map((item, index) => {
+                 const dist = item.coordinates ? calculateDistance(item.coordinates.lat, item.coordinates.lng) : null;
+                 return (
+                  <React.Fragment key={item.id}>
+                    {/* --- NATIVE AD INJECTION --- */}
+                    {index > 0 && index % 6 === 0 && (
+                      <div className="w-100 my-2" data-aos="fade-up">
+                        <NativeAd slot="YOUR_AD_SLOT_ID" />
+                      </div>
+                    )}
+                    <motion.div whileHover={{ x: 10 }} className="list-card-premium d-flex align-items-center gap-3 p-2 bg-white rounded-4 shadow-sm border border-light">
                       <div className="position-relative rounded-3 overflow-hidden shadow-sm" style={{ width: '110px', height: '75px', flexShrink: 0 }}>
                         <Image src={item.bannerImage} alt={item.title} fill className="object-fit-cover" />
                       </div>
                       <div className="flex-grow-1 min-w-0 text-start">
                         <div className="d-flex align-items-center gap-2 mb-1">
                           <h6 className="mb-0 fw-bold text-dark text-truncate">{item.title}</h6>
-                          {item.coordinates && calculateDistance(item.coordinates.lat, item.coordinates.lng) &&
-                            <span className="badge bg-light text-dark border small">{calculateDistance(item.coordinates.lat, item.coordinates.lng)} km</span>
-                          }
+                          {dist && <span className="badge bg-light text-dark border small">{dist} km</span>}
                         </div>
                         <p className="text-muted small mb-0 line-clamp-1 opacity-75">{item.subtitle}</p>
                       </div>
                       <div className="pe-2">
-                        <Link href={`/${category}/${item.slug || item.id}`} className="btn-view-premium text-decoration-none">VIEW</Link>
+                        <Link href={`/${category}/${item.slug || item.id}`} className="btn-view-premium">VIEW</Link>
                       </div>
                     </motion.div>
-                  )}
-
-                </React.Fragment>
-              );
-            })}
-          </div>
+                  </React.Fragment>
+                 );
+               })}
+            </motion.div>
+          )}
         </AnimatePresence>
       </section>
-
       <style jsx global>{`
         :root { --p-gradient: linear-gradient(135deg, #ff5722 0%, #ff9f43 100%); }
         .bg-page-gradient { background: #fdfdfd; }
@@ -373,7 +358,7 @@ export default function CategoryPage() {
         .luxury-switcher { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(15px); padding: 6px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); display: flex; gap: 4px; }
         .switcher-btn { position: relative; border: none; background: transparent; padding: 10px 18px; border-radius: 14px; color: rgba(255,255,255,0.6); display: flex; align-items: center; gap: 10px; font-size: 0.8rem; font-weight: 700; transition: 0.3s; z-index: 1; text-transform: uppercase; }
         .switcher-btn.active { color: #000; }
-        .active-bg { position: absolute; inset: 0; background: #ffc107; border-radius: 14px; z-index: -1; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3); }
+        .active-bg { position: absolute; inset: 0; background: #ff5722; border-radius: 14px; z-index: -1; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3); }
 
         /* 🌤️ WEATHER INTERACTIVE WIDGET */
         .weather-container-luxury { position: absolute; top: 25px; left: 25px; z-index: 1100; background: rgba(10, 10, 10, 0.75); backdrop-filter: blur(15px); padding: 12px 20px; border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.15); color: white; cursor: pointer; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -381,7 +366,7 @@ export default function CategoryPage() {
         .weather-temp-large { font-size: 1.6rem; font-weight: 900; line-height: 1; }
         .weather-label { font-size: 0.65rem; text-transform: uppercase; opacity: 0.6; }
         .forecast-day .day-name { font-size: 0.6rem; text-transform: uppercase; opacity: 0.5; font-weight: 700; }
-        .forecast-day .day-temp { font-size: 1rem; font-weight: 800; color: #ffc107; }
+        .forecast-day .day-temp { font-size: 1rem; font-weight: 800; color: #ff5722; }
 
         .map-wrapper-premium { height: 70vh; border-radius: 40px; border: 10px solid #fff; position: relative; overflow: hidden; background:#111 }
         .map-section-active { padding: 20px; }
@@ -394,7 +379,7 @@ export default function CategoryPage() {
         .hover-reveal-grid.show { grid-template-rows: 1fr; opacity: 1; margin-top: 12px; }
         
         /* 📜 LIST ITEM UI */
-        .list-card-premium { border-left: 5px solid #ffc107 !important; transition: 0.3s; }
+        .list-card-premium { border-left: 5px solid #ff5722 !important; transition: 0.3s; }
         .btn-action-glass { width: 36px; height: 36px; border-radius: 50%; background: #f8f9fa; color: #666; display: flex; align-items: center; justify-content: center; border:none; }
         .btn-view-premium { background: #111; color: #fff; border-radius: 100px; padding: 7px 18px; font-size: 0.7rem; font-weight: 800; text-decoration: none; display: flex; align-items: center; }
 
@@ -409,8 +394,6 @@ export default function CategoryPage() {
     height: 420px;
     position: relative;
     z-index: 5;
-    background: #1a1a1a;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
     cursor: pointer;
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
@@ -461,15 +444,15 @@ export default function CategoryPage() {
 }
 
 .action-btn:hover {
-    background: #ffc107;
+    background: #ff5722;
     color: #000;
     transform: scale(1.1) rotate(10deg);
-    border-color: #ffc107;
+    border-color: #ff5722;
 }
 
 .action-btn.active {
-    background: #ff4d4d;
-    border-color: #ff4d4d;
+    background: #ff5722;
+    border-color: #ff5722;
     animation: heartPulse 1.5s infinite;
 }
 
@@ -625,10 +608,10 @@ export default function CategoryPage() {
 .editorial-pill .dot {
     width: 8px;
     height: 8px;
-    background: #ffc107;
+    background: #ff5722;
     border-radius: 50%;
     margin-right: 12px;
-    box-shadow: 0 0 10px #ffc107;
+    box-shadow: 0 0 10px #ff5722;
     animation: pulse 2s infinite;
 }
 
@@ -657,7 +640,7 @@ export default function CategoryPage() {
 }
 
 .luxury-search-bar i {
-    color: #ffc107;
+    color: #ff5722;
     font-size: 1.1rem;
 }
 
