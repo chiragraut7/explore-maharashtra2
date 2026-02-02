@@ -32,7 +32,6 @@ export const metadata = {
     canonical: "/",
   },
   verification: {
-    // This is the "Safety" verification method you needed
     google: "nWdKg1FTf44kQHUOT4ikINwbPxuW5EdyCCDDHJK35qw",
   },
   icons: {
@@ -48,6 +47,22 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>
+        {/* --- Google Tag Manager --- */}
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-PW39ZFWG');
+            `,
+          }}
+        />
+
+        {/* --- Google AdSense --- */}
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8239510590682431"
@@ -56,6 +71,16 @@ export default function RootLayout({ children }: RootLayoutProps) {
         />
       </head>
       <body className={quicksand.className}>
+        {/* --- GTM Noscript Fallback (Required for accuracy) --- */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PW39ZFWG"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+
         <SmoothScroll>
           <BootstrapClient />
           <LanguageProvider>
