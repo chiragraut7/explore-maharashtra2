@@ -47,7 +47,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>
-        {/* --- Google Tag Manager --- */}
+        {/* --- 1. Google Tag Manager (GTM) --- */}
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -62,7 +62,25 @@ export default function RootLayout({ children }: RootLayoutProps) {
           }}
         />
 
-        {/* --- Google AdSense --- */}
+        {/* --- 2. Google Analytics (GA4) --- */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-PW1K1P3MC7"
+        />
+        <Script
+          id="ga4-config"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-PW1K1P3MC7');
+            `,
+          }}
+        />
+
+        {/* --- 3. Google AdSense --- */}
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8239510590682431"
@@ -71,7 +89,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         />
       </head>
       <body className={quicksand.className}>
-        {/* --- GTM Noscript Fallback (Required for accuracy) --- */}
+        {/* --- GTM Noscript Fallback --- */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-PW39ZFWG"
