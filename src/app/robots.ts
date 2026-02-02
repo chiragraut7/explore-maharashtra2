@@ -6,11 +6,16 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
-      allow: '/',
+      allow: [
+        '/',
+        '/assets/images/', // ✅ Explicitly allow heritage images for Google Image Search
+      ],
       disallow: [
-        '/api/',       // Prevents bots from crawling your backend routes
-        '/_next/',     // Ignores Next.js internal build files
-        '/static/',    // Ignores static chunks
+        '/api/',       // Prevents bots from crawling your raw JSON data
+        '/_next/',     // Ignores internal Next.js build files
+        '/search?',    // Prevents indexing of infinite search result combinations
+        '/admin/',     // Hide your CMS or admin panel if it exists
+        '/private/',   // Hide any private project folders
       ],
     },
     sitemap: `${baseUrl}/sitemap.xml`,
