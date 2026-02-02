@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "aos/dist/aos.css";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 import { ReactNode } from "react";
 import { Quicksand } from "next/font/google";
@@ -63,6 +64,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <Footer />
           </LanguageProvider>
         </SmoothScroll>
+        <Analytics />
       </body>
     </html>
   );
