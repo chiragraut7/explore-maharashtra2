@@ -112,12 +112,12 @@ export default function Home({ categoryData = {} }: { categoryData?: any }) {
                       
                       <h3 className="h6 fw-bold text-dark mb-1"><Translator text={section.title} targetLang={language} /></h3>
 
-                      <div className="mt-2 d-flex align-items-center gap-1" style={{ opacity: 0.5 }}>
+                      {/* <div className="mt-2 d-flex align-items-center gap-1" style={{ opacity: 0.5 }}>
                         <i className="far fa-clock" style={{ fontSize: '0.5rem' }}></i>
                         <span style={{ fontSize: '0.55rem', fontWeight: 600 }}>
                           Updated {categoryData[section.id]?.lastUpdated || 'Recently'}
                         </span>
-                      </div>
+                      </div> */}
                   </div>
                 </motion.div>
               </Link>
