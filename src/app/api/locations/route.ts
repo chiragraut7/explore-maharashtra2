@@ -2,22 +2,31 @@ import { NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
 
-export async function GET() {
-  // 1️⃣ List all categories to scan
+export async function GET(request: Request) {
+  // 🛡️ 1. Security Handshake Check
+  const ADMIN_KEY = process.env.ADMIN_SECRET_KEY;
+  const authToken = request.headers.get('x-admin-token');
+
+  // Verify that the token matches your environment variable
+  if (!authToken || authToken !== ADMIN_KEY) {
+    return NextResponse.json(
+      { success: false, message: 'Unauthorized' }, 
+      { status: 401 }
+    );
+  }
+
+  // List all categories to scan
   const categories = ['beaches', 'cultural', 'forts', 'hills', 'nature', 'religious'];
 
   try {
-    // 2️⃣ Use Promise.all to scan all category directories in parallel
     const allCategoryResults = await Promise.all(
       categories.map(async (cat) => {
         const dirPath = path.join(process.cwd(), 'public', 'data', cat);
 
         try {
-          // Check if directory exists
           await fs.access(dirPath);
           const files = (await fs.readdir(dirPath)).filter(f => f.endsWith('.json'));
 
-          // Read all JSON files in this category folder
           return await Promise.all(
             files.map(async (file) => {
               try {
@@ -25,7 +34,6 @@ export async function GET() {
                 const fileContent = await fs.readFile(filePath, 'utf8');
                 const item = JSON.parse(fileContent);
 
-                // Map JSON fields to Map requirements
                 return {
                   id: item.id,
                   name: item.title,
@@ -42,19 +50,20 @@ export async function GET() {
             })
           );
         } catch (err) {
-          // If a category folder doesn't exist, skip it safely
-          return [];
+          return []; // Skip safely if directory doesn't exist
         }
       })
     );
 
-    // 3️⃣ Flatten the nested arrays and remove any null results
+    // Flatten and clean the results
     const allData = allCategoryResults.flat().filter(item => item !== null);
 
+    // 🛡️ Always return a valid array to prevent frontend f.map crashes
     return NextResponse.json(allData);
 
   } catch (error) {
     console.error("🌍 Global Map API Error:", error);
-    return NextResponse.json({ error: "Data fetch failed" }, { status: 500 });
+    // Even on error, return an object or array the frontend expects
+    return NextResponse.json([], { status: 500 });
   }
 }

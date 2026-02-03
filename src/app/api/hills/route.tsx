@@ -2,21 +2,33 @@ import { NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
 
-export async function GET() {
+export async function GET(request: Request) {
+  // 🛡️ 1. Security Handshake Check
+  const ADMIN_KEY = process.env.ADMIN_SECRET_KEY;
+  const authToken = request.headers.get('x-admin-token');
+
+  // Verify token matches the environment variable set in Vercel
+  if (!authToken || authToken !== ADMIN_KEY) {
+    return NextResponse.json(
+      { success: false, message: 'Unauthorized' }, 
+      { status: 401 }
+    );
+  }
+
   try {
-    // 1️⃣ Path to your local hills station data
+    // 2. Path to your local hills station data
     const dirPath = path.join(process.cwd(), 'public/data/hills');
     
-    // 2️⃣ Asynchronous read to keep the server responsive
     let files: string[];
     try {
+      await fs.access(dirPath); // Check if directory exists
       files = await fs.readdir(dirPath);
     } catch (err) {
-      // If the hills folder doesn't exist yet, return empty array safely
+      // If folder is missing, return success with empty array safely
       return NextResponse.json({ success: true, data: [] });
     }
 
-    // 3️⃣ Filter JSON files and read in parallel for speed
+    // 3. Filter JSON files and read in parallel for speed
     const jsonFiles = files.filter((file) => file.endsWith('.json'));
     
     const data = await Promise.all(
@@ -26,7 +38,7 @@ export async function GET() {
           const content = await fs.readFile(filePath, 'utf-8');
           const parsed = JSON.parse(content);
           
-          // Flatten data if a single JSON file contains an array
+          // Ensure we return an array of objects
           return Array.isArray(parsed) ? parsed : [parsed];
         } catch (parseErr) {
           console.error(`❌ Error parsing hill station file: ${file}`, parseErr);
@@ -35,9 +47,10 @@ export async function GET() {
       })
     );
 
-    // 4️⃣ Combine all results into one clean list
+    // 4. Combine all results into one clean list
     const allHills = data.flat();
 
+    // 🛡️ Always return a standardized structure to prevent frontend f.map crashes
     return NextResponse.json({ 
       success: true, 
       count: allHills.length,
@@ -46,8 +59,9 @@ export async function GET() {
 
   } catch (error: any) {
     console.error("⛰️ Hills API Error:", error.message);
+    // Return empty array on error to keep the frontend stable
     return NextResponse.json(
-      { success: false, error: "Internal Server Error" }, 
+      { success: false, data: [], error: "Internal Server Error" }, 
       { status: 500 }
     );
   }
