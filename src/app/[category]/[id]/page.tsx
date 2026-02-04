@@ -269,7 +269,7 @@ export default function ItemPage() {
                     </div>
 
                     {/* 7. GALLERY */}
-                    <div id="gallery" className="mb-5">
+                    <div id="gallery" className="mb-5 d-none">
                       <Gallery images={data.gallery} color={data.color} />
                     </div>
 
