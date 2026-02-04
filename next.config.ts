@@ -28,14 +28,14 @@ const securityHeaders = [
   {
     key: 'Content-Security-Policy',
     value: `
-      default-src 'self';
-      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://www.google-analytics.com;
-      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-      img-src 'self' blob: data: https://*.basemaps.cartocdn.com https://www.goexploremaharashtra.in https://*.googleapis.com https://*.gstatic.com;
-      font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
-      connect-src 'self' https://www.google-analytics.com https://api.open-meteo.com;
-      frame-src 'self' https://www.googletagmanager.com https://googleads.g.doubleclick.net;
-    `.replace(/\s{2,}/g, ' ').trim()
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://www.google-analytics.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+    img-src 'self' blob: data: https://*.basemaps.cartocdn.com https://www.goexploremaharashtra.in https://*.googleapis.com https://*.gstatic.com;
+    font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+    connect-src 'self' https://www.google-analytics.com https://api.open-meteo.com;
+    frame-src 'self' https://www.googletagmanager.com https://googleads.g.doubleclick.net;
+  `.replace(/\s{2,}/g, ' ').trim()
   }
 ];
 
