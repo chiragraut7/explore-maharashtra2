@@ -40,11 +40,41 @@ const securityHeaders = [
 ];
 
 const nextConfig = {
+  // 1. Existing Security Headers
   async headers() {
     return [
       {
         source: '/(.*)',
         headers: securityHeaders,
+      },
+    ];
+  },
+
+  // 2. New Domain Redirect Logic
+  async redirects() {
+    return [
+      {
+        // Matches both goexploremaharashtra.com and www.goexploremaharashtra.com
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'goexploremaharashtra.com',
+          },
+        ],
+        destination: 'https://www.goexploremaharashtra.in/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.goexploremaharashtra.com',
+          },
+        ],
+        destination: 'https://www.goexploremaharashtra.in/:path*',
+        permanent: true,
       },
     ];
   },
