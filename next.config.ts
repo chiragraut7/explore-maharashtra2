@@ -28,19 +28,19 @@ const securityHeaders = [
   {
     key: 'Content-Security-Policy',
     value: `
-    default-src 'self';
-    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://www.google-analytics.com;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-    img-src 'self' blob: data: https://*.basemaps.cartocdn.com https://www.goexploremaharashtra.in https://*.googleapis.com https://*.gstatic.com;
-    font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com;
-    connect-src 'self' https://www.google-analytics.com https://api.open-meteo.com;
-    frame-src 'self' https://www.googletagmanager.com https://googleads.g.doubleclick.net;
-  `.replace(/\s{2,}/g, ' ').trim()
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://www.google-analytics.com https://tpc.googlesyndication.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+      img-src 'self' blob: data: https://*.basemaps.cartocdn.com https://www.goexploremaharashtra.in https://*.googleapis.com https://*.gstatic.com https://pagead2.googlesyndication.com https://ad.doubleclick.net https://*.google-analytics.com;
+      font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+      connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://api.open-meteo.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://ep1.adtrafficquality.google;
+      frame-src 'self' https://www.googletagmanager.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com;
+    `.replace(/\s{2,}/g, ' ').trim()
   }
 ];
 
 const nextConfig = {
-  // 1. Existing Security Headers
+  // 1. Security Headers with Updated CSP for AdSense
   async headers() {
     return [
       {
@@ -50,11 +50,10 @@ const nextConfig = {
     ];
   },
 
-  // 2. New Domain Redirect Logic
+  // 2. Domain Redirect Logic (.com -> .in)
   async redirects() {
     return [
       {
-        // Matches both goexploremaharashtra.com and www.goexploremaharashtra.com
         source: '/:path*',
         has: [
           {
@@ -80,4 +79,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
