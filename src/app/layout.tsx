@@ -71,7 +71,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </Script>
 
         <Analytics />
-      </body>
+      </body> 
     </html>
   );
 }
