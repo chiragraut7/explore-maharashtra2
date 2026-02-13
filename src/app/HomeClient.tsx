@@ -18,6 +18,47 @@ import ReligiousList from "./components/ReligiousList";
 import CulturalList from "./components/CulturalList";
 import Translator from "./components/commonComponents/Translator";
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  // 'absolute' ensures the title ignores the "%s | Explore Maharashtra" template
+  // This prevents it from looking like "Home | Explore Maharashtra"
+  title: {
+    absolute: "Explore Maharashtra: The Ultimate Heritage & Travel Guide" 
+  },
+  
+  description: "Your complete guide to Maharashtra tourism. Discover hidden Konkan beaches, trek the majestic Sahyadri forts, explore misty hill stations like Mahabaleshwar, and experience the divine spiritual journeys of Shirdi and Ashtavinayak.",
+  
+  keywords: [
+    "Maharashtra Tourism", 
+    "Konkan Beaches", 
+    "Shivaji Maharaj Forts", 
+    "Mahabaleshwar", 
+    "Lonavala", 
+    "Shirdi", 
+    "Tarkarli", 
+    "Western Ghats"
+  ],
+
+  // Open Graph (For how it looks when shared on WhatsApp/Facebook)
+  openGraph: {
+    title: "Explore Maharashtra | Land of Saints & Warriors",
+    description: "Plan your perfect trip. From 720km of coastline to the highest peaks of the Sahyadris.",
+    url: "https://goexploremaharashtra.in",
+    siteName: "Explore Maharashtra",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "/assets/images/bannerImages/beaches.jpg", // Uses your best banner image
+        width: 1200,
+        height: 630,
+        alt: "Sunset over the Konkan Coast",
+      },
+    ],
+  },
+
+};
 // Animated Counter Hook/Component
 const CountingNumber = ({ value }: { value: number }) => {
   const [displayValue, setDisplayValue] = useState(0);
