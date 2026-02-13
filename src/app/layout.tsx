@@ -21,7 +21,7 @@ const quicksand = Quicksand({ subsets: ["latin"], weight: ["500", "700"], displa
 
 export const metadata = {
   metadataBase: new URL("https://goexploremaharashtra.in"),
-  title: { default: "GoExploreMaharashtra | Heritage & Travel Guide", template: "%s | GoExploreMaharashtra" },
+  title: { default: "Explore Maharashtra | Heritage & Travel Guide", template: "%s | Explore Maharashtra" },
   description: "Explore the pristine beaches, majestic forts, and misty hill stations of Maharashtra.",
   verification: { google: "nWdKg1FTf44kQHUOT4ikINwbPxuW5EdyCCDDHJK35qw" },
 };
