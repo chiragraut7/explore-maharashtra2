@@ -41,7 +41,7 @@ export default function CuisineHeritagePage() {
       setFilteredDishes(dishes.filter(d => d.type.includes(filter)));
     }
   }, [filter, dishes]);
-
+ 
   useEffect(() => {
     if (activeDish) {
       const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
