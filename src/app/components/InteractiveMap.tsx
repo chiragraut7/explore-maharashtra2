@@ -152,7 +152,7 @@ const InteractiveMap = () => {
                         {/* Image */}
                         <div className="popup-media">
                             <img 
-                                src={loc.image || "/assets/images/map-placeholder.png"} 
+                                src={loc.image || "/assets/images/map-placeholder.jpg"} 
                                 alt={loc.name} 
                                 className="popup-img"
                             />

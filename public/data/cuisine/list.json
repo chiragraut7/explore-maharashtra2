@@ -1,0 +1,359 @@
+[
+  {
+    "id": "vada-pav",
+    "name": "Vada Pav",
+    "region": "Mumbai / Konkan",
+    "type": "Street Food",
+    "description": "The 'Indian Burger' – a spicy potato fritter served in a soft bun with dry garlic chutney.",
+    "image": "/assets/images/food/vada-pav.jpg",
+    "recipe": {
+      "prepTime": "30 mins",
+      "ingredients": ["Potatoes", "Gram flour", "Green chilies", "Ginger-garlic paste", "Pav buns"],
+      "steps": [
+        "Sauté mashed potatoes with spices and green chili paste.",
+        "Dip potato balls in gram flour batter and deep fry.",
+        "Serve in pav with spicy red garlic chutney."
+      ]
+    }
+  },
+  {
+    "id": "misal-pav",
+    "name": "Misal Pav",
+    "region": "Nashik / Kolhapur",
+    "type": "Breakfast",
+    "description": "A fiery sprouts curry topped with crunchy farsan and served with soft bread.",
+    "image": "/assets/images/food/misal-pav.jpg",
+    "recipe": {
+      "prepTime": "45 mins",
+      "ingredients": ["Moth bean sprouts", "Farsan", "Goda Masala", "Onions", "Tomatoes"],
+      "steps": [
+        "Cook sprouts and prepare a spicy thin gravy (Kat).",
+        "Layer sprouts, farsan, and onions in a bowl.",
+        "Pour the hot gravy over and serve with Pav."
+      ]
+    }
+  },
+  {
+    "id": "pithla-bhakri",
+    "name": "Pithla Bhakri",
+    "region": "Khandesh / Desh",
+    "type": "Heritage Meal",
+    "description": "A rustic, thick gram-flour curry served with handmade sorghum (Jowar) bread.",
+    "image": "/assets/images/food/pithla-bhakri.jpg",
+    "recipe": {
+      "prepTime": "20 mins",
+      "ingredients": ["Gram flour (Besan)", "Garlic", "Green chilies", "Cumin seeds", "Jowar flour"],
+      "steps": [
+        "Make a gram flour slurry and sauté with garlic and chilies.",
+        "Cook until thick and steamy.",
+        "Serve with hot, handmade Bhakri."
+      ]
+    }
+  },
+  {
+    "id": "puran-poli",
+    "name": "Puran Poli",
+    "region": "Statewide",
+    "type": "Festive Dessert",
+    "description": "A sweet, buttery flatbread stuffed with a paste of chana dal and jaggery.",
+    "image": "/assets/images/food/puran-poli.jpg",
+    "recipe": {
+      "prepTime": "60 mins",
+      "ingredients": ["Chana dal", "Jaggery", "Wheat flour", "Cardamom", "Ghee"],
+      "steps": [
+        "Cook dal with jaggery and mash into a smooth paste (Puran).",
+        "Stuff inside wheat dough and roll thin.",
+        "Roast with ghee until golden spots appear."
+      ]
+    }
+  },
+  {
+    "id": "solkadhi",
+    "name": "Solkadhi",
+    "region": "Konkan Coast",
+    "type": "Appetizer",
+    "description": "A refreshing pink digestive drink made from coconut milk and kokum fruit.",
+    "image": "/assets/images/food/solkadhi.jpg",
+    "recipe": {
+      "prepTime": "15 mins",
+      "ingredients": ["Coconut milk", "Kokum extract", "Garlic", "Green chili"],
+      "steps": [
+        "Mix fresh coconut milk with kokum extract.",
+        "Add crushed garlic and chili for a spicy kick.",
+        "Chill and serve as a digestive."
+      ]
+    }
+  },
+  {
+    "id": "bharli-vangi",
+    "name": "Bharli Vangi",
+    "region": "Deccan Plains",
+    "type": "Main Course",
+    "description": "Small brinjals stuffed with a nutty, spicy masala of peanuts and coconut.",
+    "image": "/assets/images/food/bharli-vangi.jpg",
+    "recipe": {
+      "prepTime": "40 mins",
+      "ingredients": ["Brinjals", "Peanuts", "Dry coconut", "Sesame", "Goda Masala"],
+      "steps": [
+        "Stuff slit brinjals with roasted peanut-coconut masala.",
+        "Slow-cook in a pan until the brinjals are tender.",
+        "Serve with rice or Bhakri."
+      ]
+    }
+  },
+  {
+    "id": "ukadiche-modak",
+    "name": "Ukadiche Modak",
+    "region": "Konkan / Pune",
+    "type": "Sacred Dessert",
+    "description": "Steamed rice flour dumplings filled with fresh coconut and jaggery.",
+    "image": "/assets/images/food/modak.jpg",
+    "recipe": {
+      "prepTime": "50 mins",
+      "ingredients": ["Rice flour", "Fresh coconut", "Jaggery", "Cardamom", "Ghee"],
+      "steps": [
+        "Cook coconut and jaggery for the sweet filling.",
+        "Prepare steamed rice flour dough and shape into petals.",
+        "Stuff, seal, and steam until glossy."
+      ]
+    }
+  },
+  {
+    "id": "bombil-fry",
+    "name": "Bombil Fry",
+    "region": "Coastal / Mumbai",
+    "type": "Seafood",
+    "description": "Crispy fried Bombay Duck fish coated in semolina (rava).",
+    "image": "/assets/images/food/bombil-fry.jpg",
+    "recipe": {
+      "prepTime": "25 mins",
+      "ingredients": ["Bombay Duck fish", "Semolina (Rava)", "Turmeric", "Chili powder"],
+      "steps": [
+        "Flatten fish to remove moisture and marinate with spices.",
+        "Coat with semolina and rice flour.",
+        "Fry until golden and extremely crispy."
+      ]
+    }
+  },
+  {
+    "id": "tambada-pandhara-rassa",
+    "name": "Kolhapuri Rassa",
+    "region": "Kolhapur",
+    "type": "Non-Veg Specialty",
+    "description": "A duo of mutton broths: Tambada (Spicy Red) and Pandhara (White Coconut-based).",
+    "image": "/assets/images/food/kolhapuri-rassa.jpg",
+    "recipe": {
+      "prepTime": "55 mins",
+      "ingredients": ["Mutton", "Kolhapuri Kanda-Lasun Masala", "Coconut milk", "Whole spices"],
+      "steps": [
+        "Pressure cook mutton to get the stock.",
+        "For Tambada: Sauté Masala and add stock for a thin fiery gravy.",
+        "For Pandhara: Mix stock with coconut milk and mild spices."
+      ]
+    }
+  },
+  {
+    "id": "kanda-poha",
+    "name": "Kanda Poha",
+    "region": "Statewide",
+    "type": "Breakfast",
+    "description": "Flattened rice sautéed with onions, turmeric, and crunchy peanuts.",
+    "image": "/assets/images/food/poha.jpg",
+    "recipe": {
+      "prepTime": "15 mins",
+      "ingredients": ["Poha", "Onions", "Peanuts", "Mustard seeds", "Green chilies"],
+      "steps": [
+        "Wash and drain poha. Keep aside.",
+        "Temper mustard seeds, onions, and peanuts until golden.",
+        "Mix poha with turmeric, salt, and lemon. Steam for 2 mins."
+      ]
+    }
+  },
+  {
+    "id": "sabudana-khichdi",
+    "name": "Sabudana Khichdi",
+    "region": "Statewide",
+    "type": "Fasting Food",
+    "description": "A chewy, savory mix of soaked tapioca pearls and roasted peanuts.",
+    "image": "/assets/images/food/sabudana.jpg",
+    "recipe": {
+      "prepTime": "20 mins",
+      "ingredients": ["Sabudana", "Peanuts", "Potatoes", "Cumin seeds", "Green chilies"],
+      "steps": [
+        "Soak sabudana overnight until fluffy.",
+        "Mix with crushed roasted peanuts.",
+        "Sauté cumin, chilies, and potatoes; add sabudana and cook until translucent."
+      ]
+    }
+  },
+  {
+    "id": "thalipeeth",
+    "name": "Thalipeeth",
+    "region": "Paschim Maharashtra",
+    "type": "Savory Pancake",
+    "description": "A multi-grain pancake made with 'Bhajani' flour, onions, and cilantro.",
+    "image": "/assets/images/food/thalipeeth.jpg",
+    "recipe": {
+      "prepTime": "30 mins",
+      "ingredients": ["Bhajani flour", "Onions", "Coriander", "Green chilies", "Curd"],
+      "steps": [
+        "Knead a dough of Bhajani flour with onions and spices.",
+        "Flatten by hand on a wet cloth into a circle.",
+        "Roast on a griddle with holes for oil until crispy."
+      ]
+    }
+  },
+  {
+    "id": "shrikhand",
+    "name": "Shrikhand",
+    "region": "Statewide",
+    "type": "Dessert",
+    "description": "A thick, creamy hung-yogurt dessert flavored with saffron and cardamom.",
+    "image": "/assets/images/food/shrikhand.jpg",
+    "recipe": {
+      "prepTime": "12 hours (including hanging)",
+      "ingredients": ["Yogurt", "Powdered Sugar", "Saffron", "Cardamom", "Nuts"],
+      "steps": [
+        "Hang yogurt in a muslin cloth to remove all whey (Chakka).",
+        "Mix Chakka with sugar until smooth.",
+        "Fold in saffron milk and cardamom powder."
+      ]
+    }
+  },
+  {
+    "id": "varhadi-thecha",
+    "name": "Kharda/Thecha",
+    "region": "Vidarbha / Khandesh",
+    "type": "Condiment",
+    "description": "A fiery, coarse paste made from roasted green chilies and garlic.",
+    "image": "/assets/images/food/thecha.jpg",
+    "recipe": {
+      "prepTime": "10 mins",
+      "ingredients": ["Green chilies", "Garlic", "Oil", "Salt", "Cumin"],
+      "steps": [
+        "Roast chilies and garlic in oil until blistered.",
+        "Crush coarsely using a mortar and pestle with salt.",
+        "Serve with hot Bhakri."
+      ]
+    }
+  },
+  {
+    "id": "amti",
+    "name": "Maharashtrian Amti",
+    "region": "Desh",
+    "type": "Dal",
+    "description": "A sweet, tangy, and spicy pigeon pea dal flavored with Goda Masala.",
+    "image": "/assets/images/food/amti.jpg",
+    "recipe": {
+      "prepTime": "25 mins",
+      "ingredients": ["Tur Dal", "Goda Masala", "Tamarind", "Jaggery", "Curry leaves"],
+      "steps": [
+        "Cook tur dal until mushy.",
+        "Add Goda Masala, tamarind pulp, and jaggery.",
+        "Temper with mustard seeds, asafoetida, and curry leaves."
+      ]
+    }
+  },
+  {
+    "id": "saoji-chicken",
+    "name": "Saoji Chicken",
+    "region": "Vidarbha (Nagpur)",
+    "type": "Non-Veg Specialty",
+    "description": "A legendary, ultra-spicy curry from the Halba Koshti community, known for its unique blend of 32 spices.",
+    "image": "/assets/images/food/saoji-chicken.jpg",
+    "recipe": {
+      "prepTime": "50 mins",
+      "ingredients": ["Chicken", "Saoji Masala", "Dry Coconut", "Poppy seeds", "Stone flower"],
+      "steps": [
+        "Dry roast the Saoji masala spices until dark and aromatic.",
+        "Sauté onions and coconut paste until oil separates.",
+        "Slow-cook the chicken in the spice base until it develops a deep, dark 'Tari' (oil layer)."
+      ]
+    }
+  },
+  {
+    "id": "vangi-bharit",
+    "name": "Vangi Bharit",
+    "region": "Khandesh (Jalgaon)",
+    "type": "Side Dish",
+    "description": "Smoky mashed eggplant prepared with spring onions and peanuts, specifically famous during the 'Farit' festivals.",
+    "image": "/assets/images/food/vangi-bharit.jpg",
+    "recipe": {
+      "prepTime": "25 mins",
+      "ingredients": ["Large Eggplant", "Spring Onions", "Green chili paste", "Peanuts"],
+      "steps": [
+        "Roast the eggplant over an open flame until the skin is charred.",
+        "Peel and mash the smoky pulp.",
+        "Sauté with plenty of spring onions, peanuts, and green chili paste. Do not overcook."
+      ]
+    }
+  },
+  {
+    "id": "kothimbir-vadi",
+    "name": "Kothimbir Vadi",
+    "region": "Pune / Desh",
+    "type": "Snack",
+    "description": "Savory cilantro and gram flour cakes that are steamed and then fried to crispy perfection.",
+    "image": "/assets/images/food/kothimbir-vadi.jpg",
+    "recipe": {
+      "prepTime": "35 mins",
+      "ingredients": ["Coriander leaves", "Besan", "Sesame seeds", "Green chilies"],
+      "steps": [
+        "Mix a thick batter of chopped coriander, gram flour, and spices.",
+        "Steam the batter as a block until firm.",
+        "Cut into squares and deep-fry until the exterior is crunchy."
+      ]
+    }
+  },
+  {
+    "id": "chakli",
+    "name": "Bhajani Chakli",
+    "region": "Statewide",
+    "type": "Snack/Faral",
+    "description": "A crunchy, spiral-shaped savory snack made from a special multi-grain flour called 'Bhajani'.",
+    "image": "/assets/images/food/chakli.jpg",
+    "recipe": {
+      "prepTime": "45 mins",
+      "ingredients": ["Bhajani flour", "Butter", "Ajwain", "Sesame seeds"],
+      "steps": [
+        "Knead the Bhajani flour with hot water and butter for a soft dough.",
+        "Use a 'Chakli Press' to create spiral shapes.",
+        "Deep fry on a medium flame until they stop bubbling and become crisp."
+      ]
+    }
+  },
+  {
+    "id": "shev-bhaji",
+    "name": "Shev Bhaji",
+    "region": "Khandesh / Nashik",
+    "type": "Main Course",
+    "description": "A spicy, watery gravy (rassa) served with thick, spicy sev (fried gram flour noodles).",
+    "image": "/assets/images/food/shev-bhaji.jpg",
+    "recipe": {
+      "prepTime": "20 mins",
+      "ingredients": ["Thick Ghati Shev", "Onion-Coconut paste", "Kala Masala", "Ginger"],
+      "steps": [
+        "Prepare a thin, spicy red gravy using Kala Masala and roasted onion paste.",
+        "Bring the gravy to a boil.",
+        "Add the thick shev just before serving to keep it from getting too soggy."
+      ]
+    }
+  },
+  {
+    "id": "basundi",
+    "name": "Basundi",
+    "region": "Desh / Paschim Maharashtra",
+    "type": "Dessert",
+    "description": "Sweetened condensed milk flavored with nutmeg, cardamom, and a bounty of dry fruits.",
+    "image": "/assets/images/food/basundi.jpg",
+    "recipe": {
+      "prepTime": "40 mins",
+      "ingredients": ["Full-fat Milk", "Sugar", "Cardamom", "Charoli (Chironji)", "Saffron"],
+      "steps": [
+        "Boil milk in a thick-bottomed pan, reducing it to half its volume.",
+        "Scrape the cream from the sides and mix it back in.",
+        "Add sugar and spices, and garnish with roasted nuts and saffron."
+      ]
+    }
+  }
+]

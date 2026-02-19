@@ -2,7 +2,7 @@
   "id": "06",
   "title": "Jatra Festival",
   "subtitle": "Vibrant Rural Fairs of Maharashtra",
-  "bannerImage": "/assets/images/culture/06.avif",
+  "bannerImage": "/assets/images/culture/06.jpg",
   "insideBannerImage": "/assets/images/culture/06/bannerimg.jpg",
   "color": "#e48a3c",
   "overview": [
@@ -160,8 +160,8 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/culture/06.avif",
-      "thumb": "/assets/images/culture/06.avif",
+      "src": "/assets/images/culture/06.jpg",
+      "thumb": "/assets/images/culture/06.jpg",
       "alt": ""
     }
   ],

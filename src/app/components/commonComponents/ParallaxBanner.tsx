@@ -12,7 +12,7 @@ interface ParallaxBannerProps {
 }
 
 const ParallaxBanner: React.FC<ParallaxBannerProps> = ({
-  image = "/assets/images/beachBanner.png",
+  image = "/assets/images/beachBanner.jpg",
   title = "Konkan Coast",
   subtitle = "Discover the hidden gems of Maharashtra",
 }) => {

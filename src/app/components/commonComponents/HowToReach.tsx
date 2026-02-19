@@ -19,7 +19,7 @@ interface HowToReachProps {
   mainImage?: string; 
 }
 
-const FALLBACK_MAP = "/assets/images/map-placeholder.png";
+const FALLBACK_MAP = "/assets/images/map-placeholder.jpg";
 
 const HowToReach: React.FC<HowToReachProps> = ({ 
   transport = [], 
@@ -66,7 +66,7 @@ const HowToReach: React.FC<HowToReachProps> = ({
         <div className="col-lg-5 p-0 bg-light border-start">
           <div className="sticky-media-wrapper h-100 position-relative">
             <Image
-              src="/assets/images/map-placeholder.png" // Uses state if error, otherwise prop
+              src="/assets/images/map-placeholder.jpg" // Uses state if error, otherwise prop
               alt="Location Map"
               fill
               className="object-cover"

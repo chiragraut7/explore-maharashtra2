@@ -24,21 +24,21 @@ interface AttractionsProps {
 
 // -------------------- Constants --------------------
 // Robust online fallback to ensure image always shows
-const FALLBACK_IMAGE = "/assets/images/attractions.png";
+const FALLBACK_IMAGE = "/assets/images/attractions.jpg";
 
 // Define your common attraction feature images here
 // Make sure these files exist in your 'public' folder
 const CATEGORY_ATTRACTION_IMAGES: Record<string, string> = {
   // Ensure these files exist in public/assets/images/
-  beaches: "/assets/images/attractions.png",
-  forts: "/assets/images/attractions.png",
+  beaches: "/assets/images/attractions.jpg",
+  forts: "/assets/images/attractions.jpg",
   
   // Note the extension .png based on your previous preference
-  hills: "/assets/images/attractions.png", 
+  hills: "/assets/images/attractions.jpg", 
   
-  nature: "/assets/images/attractions.png",
-  religious: "/assets/images/attractions.png",
-  culture: "/assets/images/attractions.png",
+  nature: "/assets/images/attractions.jpg",
+  religious: "/assets/images/attractions.jpg",
+  culture: "/assets/images/attractions.jpg",
 };
 
 // -------------------- Component --------------------

@@ -2,7 +2,7 @@
   "id": "01",
   "title": "Bharud: The Folk Wisdom of Maharashtra",
   "subtitle": "Spiritual Enlightenment through Humor & Satire",
-  "bannerImage": "/assets/images/culture/01.avif",
+  "bannerImage": "/assets/images/culture/01.jpg",
   "insideBannerImage": "/assets/images/culture/01/bannerimg.jpg",
   "color": "#b07b3d",
   "overview": [
@@ -160,8 +160,8 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/culture/01.avif",
-      "thumb": "/assets/images/culture/01.avif",
+      "src": "/assets/images/culture/01.jpg",
+      "thumb": "/assets/images/culture/01.jpg",
       "alt": ""
     }
   ],

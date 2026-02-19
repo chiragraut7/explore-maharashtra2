@@ -2,7 +2,7 @@
   "id": "10",
   "title": "Nag Panchami",
   "subtitle": "A Sacred Festival Worshipping Serpents",
-  "bannerImage": "/assets/images/culture/10.webp",
+  "bannerImage": "/assets/images/culture/10.jpg",
   "insideBannerImage": "/assets/images/culture/10/bannerimg.jpg",
   "color": "#7B3F00",
   "overview": [
@@ -126,8 +126,8 @@
   ],
   "gallery": [
     {
-      "src": "/assets/images/culture/10.webp",
-      "thumb": "/assets/images/culture/10.webp",
+      "src": "/assets/images/culture/10.jpg",
+      "thumb": "/assets/images/culture/10.jpg",
       "alt": ""
     }
   ],

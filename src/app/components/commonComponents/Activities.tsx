@@ -29,12 +29,12 @@ interface ActivitiesProps {
 
 // -------------------- Image Mapping --------------------
 const CATEGORY_THINGS_TO_DO_IMAGES: Record<string, string> = {
-  beaches: "/assets/images/things-to-do-beach.png",
-  forts: "/assets/images/things-to-do-fort.png",
-  hills: "/assets/images/things-to-do-hill.png",
-  nature: "/assets/images/things-to-do-wildlife.png",
-  religious: "/assets/images/things-to-do-religious.png",
-  culture: "/assets/images/things-to-do-cultural.png",
+  beaches: "/assets/images/things-to-do-beach.jpg",
+  forts: "/assets/images/things-to-do-fort.jpg",
+  hills: "/assets/images/things-to-do-hill.jpg",
+  nature: "/assets/images/things-to-do-wildlife.jpg",
+  religious: "/assets/images/things-to-do-religious.jpg",
+  culture: "/assets/images/things-to-do-cultural.jpg",
 };
 
 const Activities: React.FC<ActivitiesProps> = ({ activities = [], color = "#00aaff", category = "" }) => {
