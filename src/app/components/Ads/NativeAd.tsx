@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Translator from "../commonComponents/Translator";
 import { useLanguage } from "../context/LanguageContext";
 
@@ -10,14 +10,21 @@ interface NativeAdProps {
 
 export default function NativeAd({ slot }: NativeAdProps) {
   const { language } = useLanguage();
+  
+  // Ref prevents double-injection of ads during Next.js development (Strict Mode)
+  const adLoaded = useRef(false);
 
   useEffect(() => {
-    try {
-      ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-    } catch (e) {
-      console.error("AdSense Error:", e);
+    // Only push the ad initialization once per component mount
+    if (!adLoaded.current) {
+      try {
+        ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+        adLoaded.current = true;
+      } catch (e) {
+        console.error("AdSense Error:", e);
+      }
     }
-  }, []);
+  }, [slot]); // Re-run if the ad slot changes
 
   return (
     <div className="native-ad-container mx-auto my-5 w-100">
@@ -34,7 +41,8 @@ export default function NativeAd({ slot }: NativeAdProps) {
           style={{ display: "block", textAlign: "center" }}
           data-ad-layout="in-article"
           data-ad-format="fluid"
-          data-ad-client="ca-pub-8239510590682431"
+          // Uses your secure environment variable for the correct Publisher ID
+          data-ad-client={process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID}
           data-ad-slot={slot}
         ></ins>
         
