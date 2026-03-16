@@ -7,9 +7,9 @@ const securityHeaders = [
   { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   { key: 'Referrer-Policy', value: 'origin-when-cross-origin' },
-{
-  key: 'Content-Security-Policy',
-  value: `
+  {
+    key: 'Content-Security-Policy',
+    value: `
     default-src 'self';
     script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://www.google-analytics.com https://tpc.googlesyndication.com https://ep2.adtrafficquality.google;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
@@ -19,7 +19,7 @@ const securityHeaders = [
     frame-src 'self' https://www.googletagmanager.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com https://ep2.adtrafficquality.google;
     frame-ancestors 'self';
   `.replace(/\s{2,}/g, ' ').trim()
-}
+  }
 ];
 
 const nextConfig = {
@@ -28,6 +28,14 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Redirect non-www to www (for the .in domain)
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'goexploremaharashtra.in' }],
+        destination: 'https://www.goexploremaharashtra.in/:path*',
+        permanent: true,
+      },
+      // Your existing .com redirects
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'goexploremaharashtra.com' }],
