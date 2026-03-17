@@ -24,18 +24,31 @@ const securityHeaders = [
 
 const nextConfig = {
   async headers() {
-    return [{ source: '/(.*)', headers: securityHeaders }];
+    return [
+      {
+        // Apply security headers to all routes EXCEPT ads.txt and robots.txt
+        source: '/((?!ads\\.txt|robots\\.txt).*)',
+        headers: securityHeaders,
+      },
+      {
+        // Specific headers for ads.txt to ensure Google can crawl it
+        source: '/ads.txt',
+        headers: [
+          { key: 'Content-Type', value: 'text/plain; charset=utf-8' },
+          { key: 'Cache-Control', value: 'public, max-age=0, must-revalidate' },
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+        ],
+      },
+    ];
   },
   async redirects() {
     return [
-      // Redirect non-www to www (for the .in domain)
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'goexploremaharashtra.in' }],
         destination: 'https://www.goexploremaharashtra.in/:path*',
         permanent: true,
       },
-      // Your existing .com redirects
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'goexploremaharashtra.com' }],
