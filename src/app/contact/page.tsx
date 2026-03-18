@@ -16,14 +16,14 @@ export default function ContactPage() {
       btnText: "Send an Email",
       href: "mailto:info@goexploremaharashtra.in",
       color: "#3b82f6"
-    },
-    {
-      title: "WhatsApp",
-      value: "Connect for Quick Inquiries",
-      icon: "fa-whatsapp",
-      btnText: "Open WhatsApp",
-      href: "https://wa.me/your-number-here", // Add your number
-      color: "#25D366"
+    // },
+    // {
+    //   title: "WhatsApp",
+    //   value: "Connect for Quick Inquiries",
+    //   icon: "fa-whatsapp",
+    //   btnText: "Open WhatsApp",
+    //   href: "https://wa.me/your-number-here", // Add your number
+    //   color: "#25D366"
     }
   ];
 
