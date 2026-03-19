@@ -235,7 +235,7 @@ export default function CategoryPage() {
                     {index > 0 && index % 3 === 0 && (
                       <div className="row justify-content-center mb-5" data-aos="fade-up">
                         <div className="col-lg-8">
-                          <NativeAd slot="YOUR_AD_SLOT_ID" />
+                          <NativeAd slot="4165467790" />
                         </div>
                       </div>
                     )}
@@ -280,7 +280,7 @@ export default function CategoryPage() {
                   {/* --- NATIVE AD INJECTION --- */}
                   {index > 0 && index % 3 === 0 && (
                     <div className="col-12 mb-4" data-aos="fade-up">
-                      <NativeAd slot="YOUR_AD_SLOT_ID" />
+                      <NativeAd slot="4165467790" />
                     </div>
                   )}
                   <div className="col">
@@ -317,7 +317,7 @@ export default function CategoryPage() {
                     {/* --- NATIVE AD INJECTION --- */}
                     {index > 0 && index % 6 === 0 && (
                       <div className="w-100 my-2" data-aos="fade-up">
-                        <NativeAd slot="YOUR_AD_SLOT_ID" />
+                        <NativeAd slot="4165467790" />
                       </div>
                     )}
                     <motion.div whileHover={{ x: 10 }} className="list-card-premium d-flex align-items-center gap-3 p-2 bg-white rounded-4 shadow-sm border border-light">
