@@ -17,6 +17,9 @@ import SmoothScroll from "./components/SmoothScroll";
 // 🚀 Import the new loader
 import AdSenseLoader from "./components/Ads/AdSenseLoader";
 
+// 🚀 1. Import the new modal component
+import GreetingModal from "./components/GreetingModal";
+
 const quicksand = Quicksand({ subsets: ["latin"], weight: ["500", "700"], display: "swap" });
 
 export const metadata = {
@@ -34,6 +37,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {process.env.NEXT_PUBLIC_GTM_ID && <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />}
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />}
         <AdSenseLoader />
+
+        {/* 🚀 2. Add the modal here */}
+        <GreetingModal />
 
         <SmoothScroll>
           <BootstrapClient />
