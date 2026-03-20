@@ -24,7 +24,7 @@ const Footer = ({ color = "#E57717" }) => {
 
   const socialLinks = [
     { icon: "instagram", href: "https://www.instagram.com/explore_maharashtra01/" },
-    { icon: "youtube", href: "https://www.youtube.com/channel/UCVP1CK7z1Gwh45HVXpfWxKw" },
+    { icon: "youtube", href: "https://www.youtube.com/@GoExploreMaharashtra" },
     // { icon: "facebook-f", href: "#" },
     // { icon: "x-twitter", href: "#" },
   ];
