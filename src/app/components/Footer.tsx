@@ -23,10 +23,10 @@ const Footer = ({ color = "#E57717" }) => {
   ];
 
   const socialLinks = [
-    { icon: "instagram", href: "#" },
-    { icon: "youtube", href: "#" },
-    { icon: "facebook-f", href: "#" },
-    { icon: "x-twitter", href: "#" },
+    { icon: "instagram", href: "https://www.instagram.com/explore_maharashtra01/" },
+    { icon: "youtube", href: "https://www.youtube.com/channel/UCVP1CK7z1Gwh45HVXpfWxKw" },
+    // { icon: "facebook-f", href: "#" },
+    // { icon: "x-twitter", href: "#" },
   ];
 
   return (
@@ -69,7 +69,7 @@ const Footer = ({ color = "#E57717" }) => {
                     key={s.icon}
                     href={s.href}
                     className="social-neon"
-                    style={{ "--accent": color } as any}
+                    // style={{ "--accent": color } as any}
                   >
                     <i className={`fab fa-${s.icon}`}></i>
                   </Link>
@@ -158,6 +158,7 @@ const Footer = ({ color = "#E57717" }) => {
           color: rgba(255,255,255,0.6);
           text-decoration: none;
           transition: all 0.35s ease;
+          font-size: 1.2rem;
         }
         .social-neon:hover {
           color: #fff;
@@ -181,6 +182,9 @@ const Footer = ({ color = "#E57717" }) => {
           color: var(--accent);
           transform: translateX(5px);
         }
+          a {
+          color: var(--accent);
+}
       `}</style>
     </footer>
   );

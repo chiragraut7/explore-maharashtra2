@@ -2773,3 +2773,8 @@ html {
           font-weight: 800;
           opacity: 0.4;
         }
+
+        
+          a {
+          color: var(--primary-color);
+}
