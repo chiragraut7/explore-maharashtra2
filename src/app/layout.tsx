@@ -18,7 +18,7 @@ import SmoothScroll from "./components/SmoothScroll";
 import AdSenseLoader from "./components/Ads/AdSenseLoader";
 
 // 🚀 1. Import the new modal component
-import GreetingModal from "./components/GreetingModal";
+// import GreetingModal from "./components/GreetingModal";
 
 const quicksand = Quicksand({ subsets: ["latin"], weight: ["500", "700"], display: "swap" });
 
@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <AdSenseLoader />
 
         {/* 🚀 2. Add the modal here */}
-        <GreetingModal />
+        {/* <GreetingModal /> */}
 
         <SmoothScroll>
           <BootstrapClient />
