@@ -2726,3 +2726,50 @@ html {
   .lb-bottom-strip { height: 70px; }
   .thumb-item { width: 60px; height: 45px; }
 }
+
+
+
+.custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #ea580c; border-radius: 10px; }
+        
+        .category-link {
+          font-size: 8px;
+          font-weight: 900;
+          color: #ea580c;
+          text-decoration: none !important;
+        }
+        
+        .pill-compact {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.7rem 1.2rem;
+          background: #f8fafc;
+          border: 1px solid #f1f5f9;
+          border-radius: 0.75rem;
+          color: #475569;
+          font-size: 0.8rem;
+          font-weight: 700;
+          text-decoration: none !important;
+          transition: 0.2s ease;
+        }
+        
+        .pill-compact:hover {
+          background: #fffaf5;
+          color: #ea580c;
+          border-color: #fdba74;
+          transform: translateX(3px);
+        }
+
+        .beach-style:hover {
+          background: #f0f9ff;
+          color: #0284c7;
+          border-color: #bae6fd;
+        }
+
+        .temp-tag {
+          font-size: 10px;
+          font-weight: 800;
+          opacity: 0.4;
+        }
