@@ -1,11 +1,15 @@
   {
     "id": "10",
+    "urlId": "bhimashankar-temple",
     "title": "Bhimashankar Temple",
     "subtitle": "Sacred Jyotirlinga of Lord Shiva Amid the Sahyadris",
-  "bannerImage": "/assets/images/religious/10.jpg",
-  "insideBannerImage": "/assets/images/religious/10/bannerimg.jpg",
+    "bannerImage": "/assets/images/religious/10.jpg",
+    "insideBannerImage": "/assets/images/religious/10/bannerimg.jpg",
     "color": "#5A7D3C",
-    "coordinates": { "lat": 19.0721, "lng": 73.5358 },
+    "coordinates": {
+      "lat": 19.0721,
+      "lng": 73.5358
+    },
     "overview": [
       "Bhimashankar, one of the twelve Jyotirlingas of Lord Shiva, lies deep within the Sahyadri hills of Maharashtra. The temple combines ancient Nagara architecture with a peaceful forest ambiance, making it both a sacred pilgrimage and nature retreat.",
       "The region also houses the Bhimashankar Wildlife Sanctuary, home to rare flora and fauna including the state animal, the Giant Indian Squirrel (Shekru)."
@@ -152,11 +156,11 @@
       }
     ],
     "gallery": [
-    {
-      "src": "/assets/images/religious/10.jpg",
-      "thumb": "/assets/images/religious/10.jpg",
-      "alt": ""
-    }
+      {
+        "src": "/assets/images/religious/10.jpg",
+        "thumb": "/assets/images/religious/10.jpg",
+        "alt": ""
+      }
     ],
     "bookingTips": [
       {

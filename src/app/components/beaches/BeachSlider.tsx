@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay, FreeMode, Pagination } from 'swiper/modules'
 
@@ -33,12 +33,10 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
   // Default to 'beaches' style if category not found
   const currentMeta = categoryMeta[category] || categoryMeta.beaches;
   
-  // State to hold navigation button DOM elements
-  const [prevEl, setPrevEl] = useState<HTMLElement | null>(null);
-  const [nextEl, setNextEl] = useState<HTMLElement | null>(null);
-
-  // Unique class for this category's progress bar to prevent conflicts
+  // ✅ Create unique classes so multiple sliders on the same page don't control each other
   const paginationClass = `custom-progress-${category}`;
+  const prevButtonClass = `custom-prev-${category}`;
+  const nextButtonClass = `custom-next-${category}`;
 
   return (
     <div className="relative premium-slider-wrapper">
@@ -74,8 +72,11 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
         observer={true} 
         observeParents={true}
 
-        // Connect navigation directly to our state elements
-        navigation={{ prevEl, nextEl }}
+        // ✅ Connect navigation using CSS classes instead of React State
+        navigation={{ 
+          prevEl: `.${prevButtonClass}`, 
+          nextEl: `.${nextButtonClass}` 
+        }}
         
         // Scoped pagination class
         pagination={{
@@ -117,18 +118,16 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
       {/* --- NAVIGATION CONTROLS --- */}
       <div className="d-flex justify-content-between align-items-center mt-4 px-2">
         <div className="d-flex gap-3">
-          {/* Ref callback sets the state immediately on render */}
+          {/* ✅ Attached the unique class names here */}
           <button 
-            ref={(node) => setPrevEl(node)} 
-            className="swiper-nav-btn shadow-sm" 
+            className={`swiper-nav-btn shadow-sm ${prevButtonClass}`} 
             aria-label="Previous Slide"
           >
             <i className="fas fa-chevron-left"></i>
           </button>
           
           <button 
-            ref={(node) => setNextEl(node)} 
-            className="swiper-nav-btn shadow-sm" 
+            className={`swiper-nav-btn shadow-sm ${nextButtonClass}`} 
             aria-label="Next Slide"
           >
             <i className="fas fa-chevron-right"></i>
@@ -175,10 +174,15 @@ const BeachSlider: React.FC<BeachSliderProps> = ({ beaches, category, generateSl
           border-radius: 50%; cursor: pointer;
           display: flex; align-items: center; justify-content: center;
           transition: all 0.3s ease;
+          z-index: 10;
         }
         .swiper-nav-btn:hover {
           background: ${currentMeta.color}; color: #fff;
           border-color: ${currentMeta.color}; transform: translateY(-2px);
+        }
+        .swiper-nav-btn.swiper-button-disabled {
+          opacity: 0.5; cursor: not-allowed;
+          background: #f8f9fa; color: #ccc; border-color: #eee;
         }
 
         /* Scroll Hint Text */

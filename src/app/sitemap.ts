@@ -1,12 +1,17 @@
 import { MetadataRoute } from 'next';
 
-// 💡 TIP: If you have a local lib/data file, import it here 
-// to avoid network overhead during build time.
-// import { getAllDestinations } from '@/lib/db'; 
+// 🚀 Helper function to create clean SEO slugs from titles
+const generateSlug = (text: string) => {
+  if (!text) return '';
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-') // Replace spaces and special chars with hyphens
+    .replace(/(^-|-$)+/g, '');   // Remove hyphens from the start or end
+};
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.goexploremaharashtra.in';
-  const categories = ['forts', 'beaches', 'hills', 'wildlife', 'religious', 'culture'];
+  const categories = ['forts', 'beaches', 'hills', 'nature', 'religious', 'culture'];
   
   // Generate Category URLs
   const categoryUrls: MetadataRoute.Sitemap = categories.map((cat) => ({
@@ -20,17 +25,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   
   try {
     const fetchPromises = categories.map(async (cat) => {
-      // Use cache: 'no-store' or revalidate to ensure fresh data
       const res = await fetch(`${baseUrl}/api/${cat}`, { next: { revalidate: 3600 } });
       const json = await res.json();
       
-      if (json.success && Array.isArray(json.data)) {
-        return json.data.map((item: any) => ({
-          url: `${baseUrl}/${cat}/${item.slug || item.id}`,
-          lastModified: item.updatedAt ? new Date(item.updatedAt) : new Date(),
-          changeFrequency: 'weekly' as const,
-          priority: 0.7,
-        }));
+      const dataList = json.success ? json.data : json; 
+
+      if (Array.isArray(dataList)) {
+        return dataList.map((item: any) => {
+          // ✅ FIX: Try urlId first, then auto-generate from title, then fallback to id
+          const finalSlug = item.urlId || generateSlug(item.title) || item.id;
+
+          return {
+            url: `${baseUrl}/${cat}/${finalSlug}`,
+            lastModified: item.updatedAt ? new Date(item.updatedAt) : new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.7,
+          };
+        });
       }
       return [];
     });

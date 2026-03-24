@@ -1,9 +1,10 @@
 {
   "id": "25",
+  "urlId": "tung-fort",
   "title": "Tung Fort (Kathingad)",
   "subtitle": "The Needle-Shaped Fort Overlooking Pawna Lake",
-  "bannerImage": "/assets/images/forts/24.jpg",
-  "insideBannerImage": "/assets/images/forts/24/bannerimg.jpg",
+  "bannerImage": "/assets/images/forts/25.jpg",
+  "insideBannerImage": "/assets/images/forts/25/bannerimg.jpg",
   "color": "#6b4f3f",
   "coordinates": { "lat": 18.6564, "lng": 73.4406 },
   "overview": [

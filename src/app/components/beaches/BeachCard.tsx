@@ -10,8 +10,7 @@ import { Item } from '../../types'
 interface BeachCardProps {
   beach: Item
   category: string
-  // ✅ CHANGED: Changed to 'any' signature to prevent Vercel build mismatch
-  generateSlug: any 
+  generateSlug?: any // Made optional just in case
   btnLabel: string
   btnColor?: string 
 }
@@ -48,9 +47,12 @@ const BeachCard: React.FC<BeachCardProps> = ({
     setSrc(getImagePath(beach?.bannerImage))
   }, [beach?.bannerImage])
 
-  // ✅ SAFE LINK GENERATION: Checks if beach and id exist before running
-  const safeId = beach?.id ? beach.id.toString() : 'destination';
-  const cardLink = `/${category}/${generateSlug(safeId)}`;
+  // ✅ SAFE LINK GENERATION: Prioritize 'urlId' (e.g., 'malvan-beach') over numeric 'id'
+  const targetId = beach?.urlId || beach?.id?.toString() || 'destination';
+  
+  // Apply generateSlug if it's passed as a prop, otherwise use targetId directly
+  const finalSlug = generateSlug ? generateSlug(targetId) : targetId;
+  const cardLink = `/${category}/${finalSlug}`;
 
   return (
     <div className="postcard-container">

@@ -48,6 +48,8 @@ type GeographyContent = {
 }
 
 type Destination = {
+  id?: string
+  urlId?: string
   title: string
   subtitle?: string
   bannerImage?: string
@@ -60,6 +62,7 @@ type Destination = {
   activities?: any[]
   attractions?: any[]
   marineLife?: any
+  culturalContext?: any // Added for Culture pages
   gallery?: any[]
   howToReach?: any[]
 }
@@ -68,7 +71,7 @@ export default function ItemPage() {
   const { language } = useLanguage()
   const params = useParams()
   const category = params?.category as string
-  const id = params?.id as string
+  const urlParamId = params?.id as string // This is "malvan-beach"
 
   const [data, setData] = useState<Destination | null>(null)
   const [loading, setLoading] = useState(true)
@@ -79,27 +82,50 @@ export default function ItemPage() {
   // Favorites state
   const [favorites, setFavorites] = useState<string[]>([])
   const storageKey = `favs_${category}`
-  const isCurrentItemSaved = favorites.includes(id);
+  // Use the URL param ("malvan-beach") to check favorites consistently
+  const isCurrentItemSaved = favorites.includes(urlParamId);
 
   const { scrollYProgress } = useScroll()
   const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30 })
 
   useEffect(() => {
-    if (!category || !id) return
+    if (!category || !urlParamId) return
     setLoading(true)
 
-    // Load Data
-    fetch(`/api/${category}/${id}`)
-      .then(res => res.json())
-      .then((json: Destination) => setData(json))
-      .catch(err => console.error('Failed to fetch data', err))
-      .finally(() => setLoading(false))
+    const fetchDestinationData = async () => {
+      try {
+        // Step 1: Fetch the full category list to map "urlId" to actual "id"
+        const listRes = await fetch(`/api/${category}`);
+        const listJson = await listRes.json();
+        const itemsList = listJson.success ? listJson.data : listJson;
+
+        // Find the item matching the urlId (e.g., "malvan-beach") or fallback to normal id ("00")
+        const matchedItem = itemsList.find((item: any) => item.urlId === urlParamId || item.id === urlParamId);
+
+        if (matchedItem && matchedItem.id) {
+          // Step 2: Now fetch the actual detailed JSON file using the real ID (e.g., "00")
+          const detailRes = await fetch(`/api/${category}/${matchedItem.id}`);
+          const detailJson = await detailRes.json();
+          setData(detailJson);
+        } else {
+          console.error("Item not found in category list");
+          setData(null);
+        }
+      } catch (err) {
+        console.error('Failed to fetch data', err);
+        setData(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchDestinationData();
 
     // Load Favorites
     const savedFavs = localStorage.getItem(storageKey)
     if (savedFavs) setFavorites(JSON.parse(savedFavs))
 
-  }, [category, id, storageKey])
+  }, [category, urlParamId, storageKey])
 
   useEffect(() => {
     if (loading || view !== 'info') return
@@ -123,9 +149,9 @@ export default function ItemPage() {
   const toggleCurrentItem = () => {
     let updatedFavs = [...favorites];
     if (isCurrentItemSaved) {
-      updatedFavs = updatedFavs.filter(favId => favId !== id);
+      updatedFavs = updatedFavs.filter(favId => favId !== urlParamId);
     } else {
-      updatedFavs.push(id);
+      updatedFavs.push(urlParamId);
     }
     setFavorites(updatedFavs);
     localStorage.setItem(storageKey, JSON.stringify(updatedFavs));
@@ -140,12 +166,11 @@ export default function ItemPage() {
     </div>
   )
 
-  if (!data) return <div className="text-center py-5">Data not found</div>
+  if (!data) return <div className="text-center py-5">Data not found. Please check the URL.</div>
 
-  // ✅ UPDATED NAV LINKS (Overview Icon & Highlights Label)
   const navLinks = [
-    { id: 'overview', label: 'Overview', icon: 'fa-binoculars' }, // Changed Icon
-    { id: 'highlights', label: 'Trip Highlights', icon: 'fa-star' }, // Changed Label
+    { id: 'overview', label: 'Overview', icon: 'fa-binoculars' }, 
+    { id: 'highlights', label: 'Trip Highlights', icon: 'fa-star' }, 
     { id: 'geography', label: 'Geography', icon: 'fa-map-marked-alt' },
     { id: 'activities', label: 'Things to Do', icon: 'fa-person-running' },
     { id: 'attractions', label: 'Attractions', icon: 'fa-camera-retro' },
@@ -185,8 +210,6 @@ export default function ItemPage() {
           setView={setView}
         />
 
-        {/* Mobile FAB */}
-
         <div className="container-fluid py-5 px-lg-5">
           <div className="row g-4 justify-content-center">
 
@@ -217,7 +240,6 @@ export default function ItemPage() {
 
             <div className={view === 'info' ? "col-lg-9" : "col-lg-10"}>
               
-
               <AnimatePresence mode="wait">
                 {view === 'info' ? (
                   <motion.div key="info" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
@@ -254,12 +276,12 @@ export default function ItemPage() {
                         category={category}
                       />
 
-                      {/* 6. MARINE LIFE / UNIVERSAL CONTENT */}
-                      {data.marineLife && (
+                      {/* 6. UNIVERSAL CONTENT (Marine Life / Cultural Context) */}
+                      {(data.marineLife || data.culturalContext) && (
                         <div className="mt-5">
                           <MarineLife
                             content={{
-                              ...data.marineLife,
+                              ...(data.marineLife || data.culturalContext),
                               mainImage: data.insideBannerImage || data.bannerImage
                             }}
                             color={data.color}
@@ -289,6 +311,8 @@ export default function ItemPage() {
                   </motion.div>
                 )}
               </AnimatePresence>
+
+              {/* Mobile FAB */}
               {view === 'info' && (
                 <div className="d-lg-none sticky-bottom p-3 d-flex justify-content-end" style={{ zIndex: 9999 }}>
                   <button
@@ -369,10 +393,9 @@ export default function ItemPage() {
             box-shadow: 0 4px 20px rgba(255, 0, 0, 0.2);
           }
             .sticky-bottom {
-  bottom: 100px;
-  z-index: 1020; /* similar to bootstrap fixed */
-}
-
+            bottom: 100px;
+            z-index: 1020; 
+          }
 
           @media (max-width: 768px) {
             .fav-single-btn { top: 80px; right: 20px; }

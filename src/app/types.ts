@@ -1,5 +1,6 @@
 export interface Item {
   id?: string | number
+  urlId?: string;
   slug?: string
   title?: string
   name?: string

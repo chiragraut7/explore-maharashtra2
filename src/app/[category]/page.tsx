@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 import { useLanguage } from '../components/context/LanguageContext'
 import Translator from "../components/commonComponents/Translator";
 import dynamic from "next/dynamic";
-import React from "react"; // Added for React.Fragment
+import React from "react"; 
 import NativeAd from "../components/Ads/NativeAd";
 
 // ✅ Dynamic import for Map to prevent SSR errors
@@ -128,7 +128,8 @@ export default function CategoryPage() {
 
   const handleShare = (e: React.MouseEvent, item: any) => {
     e.stopPropagation();
-    const url = typeof window !== 'undefined' ? `${window.location.origin}/${category}/${item.slug || item.id}` : "";
+    // ✅ Updated to use urlId
+    const url = typeof window !== 'undefined' ? `${window.location.origin}/${category}/${item.urlId || item.id}` : "";
     if (navigator.share) {
       navigator.share({ title: item.title, text: item.subtitle, url }).catch(() => {});
     } else {
@@ -229,6 +230,9 @@ export default function CategoryPage() {
               {filteredItems.map((item, index) => {
                 const isLeft = index % 2 === 0;
                 const dist = item.coordinates ? calculateDistance(item.coordinates.lat, item.coordinates.lng) : null;
+                // ✅ Extract ID using urlId
+                const currentId = item.urlId || item.id;
+                
                 return (
                   <React.Fragment key={item.id}>
                     {/* --- NATIVE AD INJECTION --- */}
@@ -245,7 +249,7 @@ export default function CategoryPage() {
                           <Image src={item.bannerImage || '/assets/images/placeholder.jpg'} alt="" fill className={`object-fit-cover transition-all duration-1000 ${hoveredIndex === index ? 'scale-110' : ''}`} />
                           <div className="card-overlay" />
                           <div className="card-actions">
-                             <button onClick={(e) => toggleFavorite(e, item.slug || item.id)} className={`action-btn ${favorites.includes(item.slug || item.id) ? 'active' : ''}`}><i className="fas fa-heart"></i></button>
+                             <button onClick={(e) => toggleFavorite(e, currentId)} className={`action-btn ${favorites.includes(currentId) ? 'active' : ''}`}><i className="fas fa-heart"></i></button>
                              {dist && <span className="dist-badge">{dist} km away</span>}
                              <button onClick={(e) => handleShare(e, item)} className="action-btn"><i className="fas fa-share-alt"></i></button>
                           </div>
@@ -254,7 +258,8 @@ export default function CategoryPage() {
                             <div className={`hover-reveal-grid ${hoveredIndex === index ? 'show' : ''}`}>
                                   <div className="overflow-hidden">
                                <p className="small mb-3 opacity-80 line-clamp-2">{item.subtitle}</p>
-                               <Link href={`/${category}/${item.slug || item.id}`} className="btn-luxury-action">EXPLORE GUIDE</Link>
+                               {/* ✅ Updated Link */}
+                               <Link href={`/${category}/${currentId}`} className="btn-luxury-action">EXPLORE GUIDE</Link>
                                </div>
                             </div>
                             <motion.div animate={{ width: hoveredIndex === index ? '100%' : '40px' }} className="h-1 bg-warning mt-3 rounded-full" />
@@ -277,31 +282,32 @@ export default function CategoryPage() {
             <motion.div key="grid" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                {filteredItems.map((item, index) => (
                  <React.Fragment key={item.id}>
-                  {/* --- NATIVE AD INJECTION --- */}
-                  {index > 0 && index % 3 === 0 && (
-                    <div className="col-12 mb-4" data-aos="fade-up">
-                      <NativeAd slot="4165467790" />
-                    </div>
-                  )}
-                  <div className="col">
-                      <div className="luxury-card rounded-5 overflow-hidden shadow-sm position-relative" style={{ height: '400px' }} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
-                        <Image src={item.bannerImage} alt="" fill className="object-fit-cover transition-transform duration-700" style={{ transform: hoveredIndex === index ? 'scale(1.1)' : 'scale(1)' }} />
-                        <div className="card-overlay" />
-                        <div className="card-content position-absolute bottom-0 w-100 p-4 text-white z-10">
-                            <h4 className="fw-bold h5 mb-1">{item.title}</h4>
-                            <div className={`hover-reveal-grid ${hoveredIndex === index ? 'show' : ''}`}>
+                 {/* --- NATIVE AD INJECTION --- */}
+                 {index > 0 && index % 3 === 0 && (
+                   <div className="col-12 mb-4" data-aos="fade-up">
+                     <NativeAd slot="4165467790" />
+                   </div>
+                 )}
+                 <div className="col">
+                     <div className="luxury-card rounded-5 overflow-hidden shadow-sm position-relative" style={{ height: '400px' }} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
+                       <Image src={item.bannerImage} alt="" fill className="object-fit-cover transition-transform duration-700" style={{ transform: hoveredIndex === index ? 'scale(1.1)' : 'scale(1)' }} />
+                       <div className="card-overlay" />
+                       <div className="card-content position-absolute bottom-0 w-100 p-4 text-white z-10">
+                           <h4 className="fw-bold h5 mb-1">{item.title}</h4>
+                           <div className={`hover-reveal-grid ${hoveredIndex === index ? 'show' : ''}`}>
                              
-                                 <div className="overflow-hidden">
+                               <div className="overflow-hidden">
                                <p className="small opacity-75 mb-3 line-clamp-2">{item.subtitle}</p>
                                <div className="d-flex gap-2">
-                                 <Link href={`/${category}/${item.slug || item.id}`} className="btn-luxury-action flex-grow-1">DETAILS</Link>
+                                 {/* ✅ Updated Link */}
+                                 <Link href={`/${category}/${item.urlId || item.id}`} className="btn-luxury-action flex-grow-1">DETAILS</Link>
                                  <button onClick={(e) => handleShare(e, item)} className="action-btn"><i className="fas fa-share-alt"></i></button>
                                </div>
                                </div>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
+                           </div>
+                       </div>
+                     </div>
+                 </div>
                  </React.Fragment>
                ))}
             </motion.div>
@@ -332,7 +338,8 @@ export default function CategoryPage() {
                         <p className="text-muted small mb-0 line-clamp-1 opacity-75">{item.subtitle}</p>
                       </div>
                       <div className="pe-2">
-                        <Link href={`/${category}/${item.slug || item.id}`} className="btn-view-premium">VIEW</Link>
+                        {/* ✅ Updated Link */}
+                        <Link href={`/${category}/${item.urlId || item.id}`} className="btn-view-premium">VIEW</Link>
                       </div>
                     </motion.div>
                   </React.Fragment>
@@ -342,6 +349,7 @@ export default function CategoryPage() {
           )}
         </AnimatePresence>
       </section>
+      
       <style jsx global>{`
         :root { --p-gradient: linear-gradient(135deg, #ff5722 0%, #ff9f43 100%); }
         .bg-page-gradient { background: #fdfdfd; }
@@ -390,291 +398,291 @@ export default function CategoryPage() {
         .line-clamp-1 { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
         .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         /* --- LUXURY CARD BASE --- */
-.luxury-card {
-    height: 420px;
-    position: relative;
-    z-index: 5;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-    cursor: pointer;
-    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-}
+        .luxury-card {
+            height: 420px;
+            position: relative;
+            z-index: 5;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            cursor: pointer;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
 
-/* --- OVERLAY GRADIENTS --- */
-.card-overlay {
-    position: absolute;
-    inset: 0;
-    /* Layer 1: Dark base */
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
-    z-index: 2;
-    transition: opacity 0.5s ease;
-}
+        /* --- OVERLAY GRADIENTS --- */
+        .card-overlay {
+            position: absolute;
+            inset: 0;
+            /* Layer 1: Dark base */
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+            z-index: 2;
+            transition: opacity 0.5s ease;
+        }
 
-.luxury-card:hover .card-overlay {
-    /* Layer 2: Deeper focus on hover */
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
-}
+        .luxury-card:hover .card-overlay {
+            /* Layer 2: Deeper focus on hover */
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+        }
 
-/* --- ICON BUTTONS (Glassmorphism) --- */
-.card-actions {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    pointer-events: none; /* Allows hover to trigger card underneath */
-}
+        /* --- ICON BUTTONS (Glassmorphism) --- */
+        .card-actions {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            pointer-events: none; /* Allows hover to trigger card underneath */
+        }
 
-.action-btn {
-    pointer-events: auto;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+        .action-btn {
+            pointer-events: auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
 
-.action-btn:hover {
-    background: #ff5722;
-    color: #000;
-    transform: scale(1.1) rotate(10deg);
-    border-color: #ff5722;
-}
+        .action-btn:hover {
+            background: #ff5722;
+            color: #000;
+            transform: scale(1.1) rotate(10deg);
+            border-color: #ff5722;
+        }
 
-.action-btn.active {
-    background: #ff5722;
-    border-color: #ff5722;
-    animation: heartPulse 1.5s infinite;
-}
+        .action-btn.active {
+            background: #ff5722;
+            border-color: #ff5722;
+            animation: heartPulse 1.5s infinite;
+        }
 
-/* --- CONTENT REVEAL --- */
-.card-content {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    z-index: 10;
-    transition: transform 0.5s ease;
-}
+        /* --- CONTENT REVEAL --- */
+        .card-content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            z-index: 10;
+            transition: transform 0.5s ease;
+        }
 
-.card-content h3 {
-    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
-    letter-spacing: -0.5px;
-    margin-bottom: 5px;
-}
+        .card-content h3 {
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+            letter-spacing: -0.5px;
+            margin-bottom: 5px;
+        }
 
-.expandable-content {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
-    opacity: 0;
-}
+        .expandable-content {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+            opacity: 0;
+        }
 
-.expandable-content.show {
-    grid-template-rows: 1fr;
-    opacity: 1;
-}
+        .expandable-content.show {
+            grid-template-rows: 1fr;
+            opacity: 1;
+        }
 
-/* --- EXPLORE BUTTON --- */
-.btn-luxury-action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 14px;
-    margin-top: 15px;
-    background: var(--p-gradient);
-    border-radius: 14px;
-    color: white;
-    font-weight: 800;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: none;
-}
+        /* --- EXPLORE BUTTON --- */
+        .btn-luxury-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 14px;
+            margin-top: 15px;
+            background: var(--p-gradient);
+            border-radius: 14px;
+            color: white;
+            font-weight: 800;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+        }
 
-.btn-luxury-action:hover {
-    letter-spacing: 3px;
-    box-shadow: 0 10px 25px rgba(255, 87, 34, 0.4);
-    transform: translateY(-2px);
-}
+        .btn-luxury-action:hover {
+            letter-spacing: 3px;
+            box-shadow: 0 10px 25px rgba(255, 87, 34, 0.4);
+            transform: translateY(-2px);
+        }
 
-/* --- THE GLOW LINE --- */
-.luxury-card .h-1.bg-warning {
-    height: 3px !important;
-    background: var(--p-gradient) !important;
-    box-shadow: 0 0 15px rgba(255, 159, 67, 0.6);
-    transition: width 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-}
+        /* --- THE GLOW LINE --- */
+        .luxury-card .h-1.bg-warning {
+            height: 3px !important;
+            background: var(--p-gradient) !important;
+            box-shadow: 0 0 15px rgba(255, 159, 67, 0.6);
+            transition: width 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
 
-/* --- ANIMATIONS --- */
-@keyframes heartPulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.15); }
-    100% { transform: scale(1); }
-}
+        /* --- ANIMATIONS --- */
+        @keyframes heartPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
 
-/* Hover State for the whole card */
-.luxury-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6);
-    border-color: rgba(255, 193, 7, 0.5);
-}
-    /* --- HERO CONTAINER BASE --- */
-.category-hero-container {
-    height: 75vh;
-    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background: #050505; /* Deep luxury black */
-}
+        /* Hover State for the whole card */
+        .luxury-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6);
+            border-color: rgba(255, 193, 7, 0.5);
+        }
+        /* --- HERO CONTAINER BASE --- */
+        .category-hero-container {
+            height: 75vh;
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #050505; /* Deep luxury black */
+        }
 
-/* --- DYNAMIC MODES --- */
-.hero-map-mode {
-    height: 35vh;
-    border-bottom: 2px solid rgba(255, 193, 7, 0.3);
-}
+        /* --- DYNAMIC MODES --- */
+        .hero-map-mode {
+            height: 35vh;
+            border-bottom: 2px solid rgba(255, 193, 7, 0.3);
+        }
 
-/* --- THE IMAGE ENGINE --- */
-.hero-image-wrapper {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    transform: scale(1.1); /* Prevents white edges during parallax */
-}
+        /* --- THE IMAGE ENGINE --- */
+        .hero-image-wrapper {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            transform: scale(1.1); /* Prevents white edges during parallax */
+        }
 
-.hero-overlay-gradient {
-    position: absolute;
-    inset: 0;
-    /* Layer 1: Dark base for readability */
-    background: linear-gradient(
-        to bottom, 
-        rgba(0,0,0,0.1) 0%, 
-        rgba(0,0,0,0.4) 50%, 
-        rgba(0,0,0,0.9) 100%
-    );
-    /* Layer 2: Side vignettes for cinematic focus */
-    box-shadow: inset 0 0 150px rgba(0,0,0,0.6);
-    z-index: 2;
-}
+        .hero-overlay-gradient {
+            position: absolute;
+            inset: 0;
+            /* Layer 1: Dark base for readability */
+            background: linear-gradient(
+                to bottom, 
+                rgba(0,0,0,0.1) 0%, 
+                rgba(0,0,0,0.4) 50%, 
+                rgba(0,0,0,0.9) 100%
+            );
+            /* Layer 2: Side vignettes for cinematic focus */
+            box-shadow: inset 0 0 150px rgba(0,0,0,0.6);
+            z-index: 2;
+        }
 
-/* --- TYPOGRAPHY: THE TITLE --- */
-.hero-title {
-    font-size: clamp(3rem, 10vw, 7rem); /* Responsive fluid font */
-    font-weight: 950;
-    letter-spacing: -4px;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 0;
-    line-height: 0.9;
-    /* Cinematic Text Shadow */
-    text-shadow: 0 15px 40px rgba(0,0,0,0.6);
-    background: linear-gradient(to bottom, #fff 40%, #ccc 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+        /* --- TYPOGRAPHY: THE TITLE --- */
+        .hero-title {
+            font-size: clamp(3rem, 10vw, 7rem); /* Responsive fluid font */
+            font-weight: 950;
+            letter-spacing: -4px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 0;
+            line-height: 0.9;
+            /* Cinematic Text Shadow */
+            text-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            background: linear-gradient(to bottom, #fff 40%, #ccc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-/* --- EDITORIAL BADGE --- */
-.editorial-pill {
-    display: inline-flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    padding: 8px 24px;
-    border-radius: 100px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.75rem;
-    letter-spacing: 4px;
-    font-weight: 800;
-    text-transform: uppercase;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
+        /* --- EDITORIAL BADGE --- */
+        .editorial-pill {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 8px 24px;
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.75rem;
+            letter-spacing: 4px;
+            font-weight: 800;
+            text-transform: uppercase;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
 
-.editorial-pill .dot {
-    width: 8px;
-    height: 8px;
-    background: #ff5722;
-    border-radius: 50%;
-    margin-right: 12px;
-    box-shadow: 0 0 10px #ff5722;
-    animation: pulse 2s infinite;
-}
+        .editorial-pill .dot {
+            width: 8px;
+            height: 8px;
+            background: #ff5722;
+            border-radius: 50%;
+            margin-right: 12px;
+            box-shadow: 0 0 10px #ff5722;
+            animation: pulse 2s infinite;
+        }
 
-/* --- LUXURY SEARCH BAR --- */
-.luxury-search-bar {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 100px;
-    padding: 14px 28px;
-    display: flex;
-    align-items: center;
-    color: white;
-    transition: all 0.4s ease;
-    width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
-}
+        /* --- LUXURY SEARCH BAR --- */
+        .luxury-search-bar {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 100px;
+            padding: 14px 28px;
+            display: flex;
+            align-items: center;
+            color: white;
+            transition: all 0.4s ease;
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+        }
 
-.luxury-search-bar:focus-within {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 193, 7, 0.5);
-    transform: translateY(-2px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-}
+        .luxury-search-bar:focus-within {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 193, 7, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
 
-.luxury-search-bar i {
-    color: #ff5722;
-    font-size: 1.1rem;
-}
+        .luxury-search-bar i {
+            color: #ff5722;
+            font-size: 1.1rem;
+        }
 
-.luxury-search-bar input {
-    background: transparent;
-    border: none;
-    color: white;
-    outline: none;
-    width: 100%;
-    font-weight: 500;
-    font-size: 0.95rem;
-    margin-left: 10px;
-}
+        .luxury-search-bar input {
+            background: transparent;
+            border: none;
+            color: white;
+            outline: none;
+            width: 100%;
+            font-weight: 500;
+            font-size: 0.95rem;
+            margin-left: 10px;
+        }
 
-.luxury-search-bar input::placeholder {
-    color: rgba(255, 255, 255, 0.4);
-}
+        .luxury-search-bar input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
 
-/* --- ANIMATIONS --- */
-@keyframes pulse {
-    0% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.4); opacity: 0.6; }
-    100% { transform: scale(1); opacity: 1; }
-}
+        /* --- ANIMATIONS --- */
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.4); opacity: 0.6; }
+            100% { transform: scale(1); opacity: 1; }
+        }
 
-/* Optional: Subtle mask at the bottom for smooth scroll transition */
-.hero-curve-mask {
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    z-index: 5;
-    transform: rotate(180deg);
-}
+        /* Optional: Subtle mask at the bottom for smooth scroll transition */
+        .hero-curve-mask {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            z-index: 5;
+            transform: rotate(180deg);
+        }
       `}</style>
     </div>
   );
