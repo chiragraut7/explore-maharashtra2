@@ -167,7 +167,7 @@ const InteractiveMap = () => {
                         <h5 className="popup-title">{loc.name}</h5>
                         <p className="popup-subtitle">{loc.subtitle || "Discover this location"}</p>
                         
-                        <Link href={`/${loc.category}/${loc.id}`} className="popup-action-btn">
+                        <Link href={`/${loc.category}/${loc.urlId || loc.id}`} className="popup-action-btn">
                             <span>Explore Guide</span>
                             <div className="btn-icon-circle">
                                 <i className="fas fa-arrow-right"></i>

@@ -79,7 +79,7 @@ export default function MapExplorer({ locations, category }: any) {
                     <p className="popup-place-desc">{loc.subtitle}</p>
                     
                     <div className="d-flex gap-2 mt-3">
-                        <Link href={`/${category}/${loc.slug || loc.id}`} className="flex-grow-1 popup-btn-guide">
+                        <Link href={`/${category}/${loc.urlId || loc.id}`} className="flex-grow-1 popup-btn-guide">
                            GUIDE <i className="fas fa-book-open ms-1"></i>
                         </Link>
                         <button onClick={() => openGoogleMaps(loc.coordinates.lat, loc.coordinates.lng)} className="popup-btn-nav">

@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { url } from 'inspector';
 
 export async function GET() {
   const categories = ['beaches', 'cultural', 'forts', 'hills', 'nature', 'religious'];
@@ -22,6 +23,7 @@ export async function GET() {
             // We map your JSON fields to the Map's requirements
             allData.push({
               id: item.id,
+              urlId: item.urlId,
               name: item.title, // Using 'title' from your JSON
               subtitle: item.subtitle,
               image: item.bannerImage,
