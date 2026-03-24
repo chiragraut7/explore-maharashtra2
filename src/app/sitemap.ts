@@ -1,12 +1,14 @@
 import { MetadataRoute } from 'next';
 
-// 🚀 Helper function to create clean SEO slugs from titles
+// 🚀 Smarter helper function to create clean SEO slugs
 const generateSlug = (text: string) => {
   if (!text) return '';
   return text
+    .split('(')[0]               // 👈 FIX: Removes alternative names like "(Bhagwati Fort)"
+    .trim()                      // Removes leftover spaces
     .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-') // Replace spaces and special chars with hyphens
-    .replace(/(^-|-$)+/g, '');   // Remove hyphens from the start or end
+    .replace(/[^a-z0-9]+/g, '-') // Replaces spaces and special chars with hyphens
+    .replace(/(^-|-$)+/g, '');   // Removes hyphens from the start or end
 };
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -32,7 +34,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
       if (Array.isArray(dataList)) {
         return dataList.map((item: any) => {
-          // ✅ FIX: Try urlId first, then auto-generate from title, then fallback to id
+          // It will try urlId first. If it's missing from the API, 
+          // the new generateSlug will clean up the title perfectly!
           const finalSlug = item.urlId || generateSlug(item.title) || item.id;
 
           return {

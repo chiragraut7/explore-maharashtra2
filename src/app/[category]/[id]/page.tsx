@@ -174,7 +174,7 @@ export default function ItemPage() {
     { id: 'geography', label: 'Geography', icon: 'fa-map-marked-alt' },
     { id: 'activities', label: 'Things to Do', icon: 'fa-person-running' },
     { id: 'attractions', label: 'Attractions', icon: 'fa-camera-retro' },
-    { id: 'gallery', label: 'Gallery', icon: 'fa-images' },
+    // { id: 'gallery', label: 'Gallery', icon: 'fa-images' },
     { id: 'reach', label: 'How to Reach', icon: 'fa-map-signs' },
   ]
 
